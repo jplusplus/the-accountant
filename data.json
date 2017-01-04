@@ -431,7 +431,7 @@
         "value_min": 1
       },
       "text@en": "Trash collection must now be externalized. You do not know how much it cost the city because you did not do proper analysis. Which company do you pick?",
-            "explainer_title@en": "Deregulation and privatization",
+      "explainer_title@en": "Deregulation and privatization",
       "explainer_body@en": "Public administrations have transfered a lot of their competencies to private companies, either via public-private partnerships or via deregulation. It offers a lot of opportunities for conflicts of interests.<br><br>It is hard to know how much a service costs to the city because it can involve people from different departments (e.g some municipal employees can work for the trash collection one day and for another department the next). To do such estimates would require analytical accounting, which cities rarely do.",
       "choices": [
         {
