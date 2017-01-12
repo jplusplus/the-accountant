@@ -1,617 +1,736 @@
 {
-	"vars": {
-		"resources": {
-			"value": 10,
-			"category": "city",
-			"label@en": "Resources"
-		},
-		"expenditures": {
-			"value": 9,
-			"category": "city",
-			"label@en": "Expenditures"
-		},
-		"reserves": {
-			"value": 50,
-			"category": "city",
-			"label@en": "Reserves"
-		},
-		"personal_account": {
-			"value": 1000,
-			"category": "player",
-			"label@en": "Personal account"
-		},
-		"risk_police": {
-			"value": 0,
-			"category": "risk"
-		},
-		"risk_contractors": {
-			"value": 0,
-			"category": "risk"
-		},
-		"risk_political": {
-			"value": 0,
-			"category": "risk"
-		},
-		"risk_revolving_door": {
-			"value": 0,
-			"category": "risk"
-		},
-		"gift_company2": {
-			"value": 0,
-			"category": "choice"
-		},
-		"own_company": {
-			"value": 0,
-			"category": "choice"
-		},
-		"shell_company": {
-			"value": 0,
-			"category": "choice"
-		},
-		"trash_company": {
-			"value": 0,
-			"category": "choice"
-		},
-		"invitation": {
-			"value": 0,
-			"category": "choice"
-		},
-		"revolving_door": {
-			"value": 0,
-			"category": "choice"
-		}
-	},
-	"steps": [{
-		"year": 1993,
-		"text@en": "You are a young, energetic assistant at the city hall of a large European city. To advance in your career, you will have to make choices. Be careful.",
-		"choices": [{
-			"text@en": "Go"
-		}]
-	}, {
-		"year": 1994,
-		"text@en": "You issued a public tender for a new road segment, which you estimated at 10 million. Which offer do you pick?",
-		"explainer_title@en": "How to spot a cartel?",
-		"explainer_body@en": "Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous.",
-		"choices": [{
-			"text@en": "Public Works plc. made an offer at 9 million",
-			"var_changes": {
-				"reserves": -9,
-				"risk_contractors": 1
-			}
-		}, {
-			"text@en": "City Construction Limited made an offer at 20 million",
-			"var_changes": {
-				"reserves": -20,
-				"gift_company2": 1
-			}
-		}, {
-			"text@en": "Public Building plc made an offer at 21 million",
-			"var_changes": {
-				"reserves": -21,
-				"risk_contractors": 1
-			}
-		}]
-	}, {
-		"year": 1994,
-  		"condition": {
-			"var": "gift_company2",
-			"min": 1
-		},
-		"text@en": "The boss of City Construction Limited wants to thank you personnally and gives you a brand new car, which he doesn't need. Do you accept it?",
-		"explainer_title@en": "How to react to gifts?",
-		"explainer_body@en": "Public officials are usually prohibited from accepting gifts above a certain value (10€ to 500€). However, you can accept the gift if it is intended for you as a private person, or for your spouse. By refusing a gift, you risk angering the person who made it.",
-		"choices": [{
-			"text@en": "Sure",
-			"var_changes": {
-				"personal_account": 15000,
-				"risk_police": 1
-			}
-		}, {
-			"text@en": "No, thank you",
-			"var_changes": {
-				"risk_contractors": 1
-			}
-		}]
-	}, {
-		"year": 1995,
-		"text@en": "More and more people come to you for a house in social housing. What can you do?",
-		"explainer_title@en": "How can you organize bribes?",
-		"explainer_body@en": "Bribery is not as common in Europe as in other parts of the world, but it is rampant is some sectors. In public housing, some officials ask for envoleppes of money to be given directly. For car inspection, some service centers will be pleased if you leave a gift or bills of cash on the passenger seat.<br><br>Read more under <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> at Cooking Budgets.",
-		"choices": [{
-			"text@en": "Offer to speed their requests in exchange for $5000 in an envoleppe",
-			"var_changes": {
-				"personal_account": 5000,
-				"risk_police": 2
-			}
-		}, {
-			"text@en": "Increase funding to the social housing program",
-			"var_changes": {
-				"expenditures": 4
-			}
-		}, {
-			"text@en": "Ignore them",
-			"var_changes": {
-				"risk_political": 1
-			}
-		}]
-	}, {
-		"year": 1996,
-		"text@en": "The head of the local football team, a friend of the mayor, wants a new training center. City hall has a nice piece of real estate that you value at 10 million.",
-		"explainer_title@en": "Spotting corruption in land sales",
-		"explainer_body@en": "Cities often own large plots of land. They can either sell them at market prices or at lower prices, to make a gift to the buyer. It is usually hard to spot such transactions, because there isn't much of a market for big sales of land in a city.",
-		"choices": [{
-			"text@en": "Sell for 10 million",
-			"var_changes": {
-				"risk_political": 1,
-				"reserves": 10
-			}
-		}, {
-			"text@en": "Sell for 4 million",
-			"var_changes": {
-				"reserves": 4
-			}
-		}]
-	}, {
-		"year": 1997,
-		"text@en": "You issued a public tender for a new roundabout, which you estimated at 5 million. Which offer do you pick?",
-		"explainer_title@en": "How to spot a cartel?",
-		"explainer_body@en": "Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous.",
-		"choices": [{
-			"text@en": "Public Works plc. made an offer for 10 million",
-			"var_changes": {
-				"reserves": -10,
-				"personal_account": 1000
-			}
-		}, {
-			"text@en": "City Construction Limited made an offer for 10.2 million",
-			"var_changes": {
-				"reserves": -10.2,
-				"risk_contractors": 1
-			}
-		}, {
-			"text@en": "Public Building plc made an offer for 11 million",
-			"var_changes": {
-				"reserves": -11,
-				"risk_contractors": 1
-			}
-		}]
-	}, {
-		"year": 1998,
-		"text@en": "Would you like to create your own public works company?",
-		"explainer_title@en": "Conflicts of interest",
-		"explainer_body@en": "People in politics or in the administration can own companies that receive public contracts. In some countries, it is forbidden for companies owned by public servants or politiciants to receive money from public contracts.",
-		"choices": [{
-			"text@en": "Yes",
-			"var_changes": {
-				"own_company": 1
-			}
-		}, {
-			"text@en": "No",
-			"var_changes": {
-				"own_company": 0
-			}
-		}]
-	}, {
-		"year": 1998,
-  		"condition": {
-			"var": "own_company",
-			"min": 1
-		},
-		"text@en": "Who should be the nominal owner of the company?",
-		"explainer_title@en": "Conflicts of interest",
-		"explainer_body@en": "People in politics or in the administration can own companies that receive public contracts. In some countries, it is forbidden for companies owned by public servants or politiciants to receive money from public contracts.",
-		"choices": [{
-			"text@en": "You personnally",
-			"var_changes": {
-				"risk_police": 2
-			}
-		}, {
-			"text@en": "Your spouse or partner",
-			"var_changes": {
-				"risk_police": 1
-			}
-		}, {
-			"text@en": "A shell company in a tax heaven",
-			"var_changes": {
-				"risk_police": 0,
-				"shell_company": 1
-			}
-		}]
-	}, {
-		"year": 1999,
-  		"condition": {
-			"var": "own_company",
-			"min": 1
-		},
-		"text@en": "You issued a public tender for a new school, which you estimated at 3 million. Which offer do you pick?",
-		"explainer_title@en": "How to spot a cartel?",
-		"explainer_body@en": "Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous.",
-		"choices": [{
-			"text@en": "Your company made an offer for 5 million",
-			"var_changes": {
-				"reserves": -5,
-				"risk_police": 1,
-				"personal_account": 100000
-			}
-		}, {
-			"text@en": "Public Works plc. made an offer for 5.5 million",
-			"var_changes": {
-				"reserves": -5.5,
-				"risk_contractors": 1
-			}
-		}, {
-			"text@en": "City Construction Limited made an offer for 6 million",
-			"var_changes": {
-				"reserves": -6,
-				"risk_contractors": 1
-			}
-		}]
-	}, {
-		"year": 1999,
-  		"condition": {
-			"var": "own_company",
-			"max": 0
-		},
-		"text@en": "You issued a public tender for a new school, which you estimated at 3 million. Which offer do you pick?",
-		"explainer_title@en": "How to spot a cartel?",
-		"explainer_body@en": "Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous.",
-		"choices": [{
-			"text@en": "Public Building plc made an offer for 5 million",
-			"var_changes": {
-				"reserves": -5,
-				"personal_account": 1000
-			}
-		}, {
-			"text@en": "Public Works plc. made an offer for 5.5 million",
-			"var_changes": {
-				"reserves": -5.5,
-				"risk_contractors": 1
-			}
-		}, {
-			"text@en": "City Construction Limited made an offer for 6 million",
-			"var_changes": {
-				"reserves": -6,
-				"risk_contractors": 1
-			}
-		}]
-	}, {
-		"year": 2000,
-		"text@en": "Amazon has just arrived in town! You happen to have access to the credit card of your department.",
-		"explainer_title@en": "Using the official credit card",
-		"explainer_body@en": "It can be tempting to use the credit card of the city or the government to buy stuff for you. Because it's very easy to trace, it can be dangerous!<br><br>Read more under <a href='http://www.cookingbudgets.com/the-credit-card/' target='_blank'>The Credit Card</a> at Cooking Budgets.",
-		"choices": [{
-			"text@en": "Buy lots of stuff online!",
-			"var_changes": {
-				"risk_police": 4,
-				"personal_account": 1000
-			}
-		}, {
-			"text@en": "Do nothing",
-			"var_changes": {
-				"risk_police": 0
-			}
-		}]
-	}, {
-		"year": 2001,
-		"text@en": "It's election year. The mayor would like you to buy advertising for her campaign using city funds.",
-		"explainer_title@en": "Political communication using public funds",
-		"explainer_body@en": "Politicians can control public companies, either directly or through patronage networks. They might require them to buy advertising in newspapers that advertise their performance as a politician and not the company itself. It's very hard for prosecutors to prove that the advertising was not done in the interest of the company.<br><br>Read more under <a href='http://www.cookingbudgets.com/ads/' target='_blank'>Ads, ads, ads</a> at Cooking Budgets.",
-		"choices": [{
-			"text@en": "No way, it's unethical",
-			"var_changes": {
-				"risk_political": 2
-			}
-		}, {
-			"text@en": "Sure, you'll run ads praising her actions",
-			"var_changes": {
-				"reserves": -0.5
-			}
-		}]
-	}, {
-		"year": 2002,
-		"text@en": "The football club is in trouble. They need 12 million in cash. Would you accept to buy back the plot of land you sold them, and rent it back at a cheap price?",
-		"explainer_title@en": "Leasing public space to private companies",
-		"explainer_body@en": "The easiest way to support a private company for a politician is to buy their building with public funds and rent it back to the company at a low price. The operation is hard to trace and fully legal.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-emphyteutic-scam/' target='_blank'>The Emphyteutic Scam</a> at Cooking Budgets.",
-		"choices": [{
-			"text@en": "Sure, a healthy football club for a healthy city!",
-			"var_changes": {
-				"reserves": -12,
-				"resources": 0.2
-			}
-		}, {
-			"text@en": "No way, football clubs are private companies, they don't need a bail out.",
-			"var_changes": {
-				"risk_political": 1
-			}
-		}]
-	}, {
-		"year": 2003,
-		"text@en": "The boss of Public Works plc. asks you to pass a public tender of 100,000 to repair a road that doesn't exist. He offers to split the money 50/50.",
-		"explainer_title@en": "Fake public contracts",
-		"explainer_body@en": "It can happen that contracts are passed to renovate a place or a road that does not exist. It can be risky, because it is easy to prove the contract is bogus.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-invisible-public-work/' target='_blank'>The Invisible Public Work</a> at Cooking Budgets.",
-		"choices": [{
-			"text@en": "Accept",
-			"var_changes": {
-				"personal_account": 50000,
-				"risk_police": 1
-			}
-		}, {
-			"text@en": "Decline",
-			"var_changes": {
-				"risk_contractors": 1
-			}
-		}]
-	}, {
-		"year": 2004,
-		"text@en": "You hear that someone at the bus company, owned by the city, keeps some of the cash clients pay.",
-		"explainer_title@en": "Keeping money from the city",
-		"explainer_body@en": "It can happen that rogue employees keep some money from public services such as transport, where payments are often made in cash.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-broken-cash-machine/' target='_blank'>The Broken Cash Machine</a> at Cooking Budgets.",
-		"choices": [{
-			"text@en": "Offer him protection in exchange for a split of the money.",
-			"var_changes": {
-				"personal_account": 10000,
-				"risk_police": 1
-			}
-		}, {
-			"text@en": "Report him to the police.",
-			"var_changes": {
-				"personal_account": 0,
-				"resources": 0.2
-			}
-		}, {
-			"text@en": "Do nothing.",
-			"var_changes": {
-				"personal_account": 0
-			}
-		}]
-	}, {
-		"year": 2005,
-		"text@en": "The mayor wants to build a new stadium for the local football team.",
-		"explainer_title@en": "Public-private partnerships",
-		"explainer_body@en": "Since the 1980's, it is popular for public administrations to do public-private partnerships. Such partnerships involve a private company doing some of the work, usually building a equipment or operating it, while the administration contributes to the costs. In exchange, the private company can keep the revenues of the equipment it built.<br><br>The goal was to allow public administrations to provide public services without spending much money. In practice, private companies take almost no risks with such contracts and public administrations end up paying as much as they would have without the partnership. But it is usually hidden in the accounts of the public administration.",
-		"choices": [{
-			"text@en": "The city should build one (one-off cost: 10 million).",
-			"var_changes": {
-				"reserves": -10
-			}
-		}, {
-			"text@en": "Let's do a public-private partnership (no cost now, but you have to pay the contractor 1 million per year for the next 20 years)",
-			"var_changes": {
-				"expenditures": 1
-			}
-		}]
-	}, {
-		"year": 2006,
-		"text@en": "You hear that trash collection will soon be deregulated.",
-		"explainer_title@en": "Deregulation and privatization",
-		"explainer_body@en": "Public administrations have transfered a lot of their competencies to private companies, either via public-private partnerships or via deregulation. It offers a lot of opportunities for conflicts of interests.<br><br>It is hard to know how much a service costs to the city because it can involve people from different departments (e.g some municipal employees can work for the trash collection one day and for another department the next). To do such estimates would require analytical accounting, which cities rarely do.",
-		"choices": [{
-			"text@en": "Set up a trash collection company.",
-			"var_changes": {
-				"trash_company": 1
-			}
-		}, {
-			"text@en": "Do nothing.",
-			"var_changes": {
-				"trash_company": 0
-			}
-		}]
-	}, {
-		"year": 2007,
-  		"condition": {
-			"var": "trash_company",
-			"min": 1
-		},
-		"text@en": "Trash collection must now be externalized. You do not know how much it cost the city because you did not do proper analysis. Which company do you pick?",
-		"explainer_title@en": "Deregulation and privatization",
-		"explainer_body@en": "Public administrations have transfered a lot of their competencies to private companies, either via public-private partnerships or via deregulation. It offers a lot of opportunities for conflicts of interests.<br><br>It is hard to know how much a service costs to the city because it can involve people from different departments (e.g some municipal employees can work for the trash collection one day and for another department the next). To do such estimates would require analytical accounting, which cities rarely do.",
-		"choices": [{
-			"text@en": "Your company made an offer at 1 million per year",
-			"var_changes": {
-				"resources": -1,
-				"personal_account": 10000
-			}
-		}, {
-			"text@en": "Voelia Environment made an offer at 900,000 per year",
-			"var_changes": {
-				"resources": -0.9
-			}
-		}]
-	}, {
-		"year": 2007,
-  		"condition": {
-			"var": "trash_company",
-			"max": 0
-		},
-		"text@en": "Trash collection must now be externalized. You do not know how much it cost the city because you did not do proper analysis. Which company do you pick?",
-		"explainer_title@en": "Deregulation and privatization",
-		"explainer_body@en": "Public administrations have transfered a lot of their competencies to private companies, either via public-private partnerships or via deregulation. It offers a lot of opportunities for conflicts of interests.<br><br>It is hard to know how much a service costs to the city because it can involve people from different departments (e.g some municipal employees can work for the trash collection one day and for another department the next). To do such estimates would require analytical accounting, which cities rarely do.",
-		"choices": [{
-			"text@en": "SATI Waste Management made an offer at 1.2 million per year",
-			"var_changes": {
-				"resources": -1.2
-			}
-		}, {
-			"text@en": "Voelia Environment made an offer at 900,000 per year",
-			"var_changes": {
-				"resources": -0.9
-			}
-		}]
-	}, {
-		"year": 2008,
-		"text@en": "The contractor for the new stadium is behind schedule. They do not want to pay the late penalty fee of 2 million.",
-		"explainer_title@en": "The fine print in public contracts",
-		"explainer_body@en": "Building contracts usually involve a series of clauses, such as penalties for delays. However, the client (in this case, the city) must activate the clause, or, if the contractor refuses to pay, take it to court. Legal teams are used to such situations, but for a small administration, or in case of politically sensitive issues, it is easy to ignore some clauses in the contract.",
-		"choices": [{
-			"text@en": "Take the contractor to court to get the money.",
-			"var_changes": {
-				"reserves": 2,
-				"risk_political": 1
-			}
-		}, {
-			"text@en": "Ignore the delay.",
-			"var_changes": {
-				"risk_political": 0
-			}
-		}]
-	}, {
-		"year": 2009,
-		"text@en": "A friend of yours, dean of the city university, tells you over dinner in an expensive restaurant that he runs a scheme where students can pay $1,000 to obtain their degrees.",
-		"explainer_title@en": "Selling university degrees",
-		"explainer_body@en": "The sale of university degree is not uncommon in Europe. As with any story of corruption, people have an incentive to keep silent, because it would make the whole university look bad if it became news.",
-		"choices": [{
-			"text@en": "Call the police.",
-			"var_changes": {
-				"risk_political": 1
-			},
-			"feedback@en": "The police starts an investigation and you become 'the friend of the corrupt university professor'."
-		}, {
-			"text@en": "Let him pick up the bill.",
-			"var_changes": {
-				"personal_account": 100
-			}
-		}]
-	}, {
-		"year": 2010,
-		"text@en": "An accountant just had an idea: Instead of accounting for the revenues of social housing every year, the city could account at once for the revenues of the next 20 years. This will artificially increase the city reserves, but reduce future resources.",
-		"explainer_title@en": "Accounting tricks",
-		"explainer_body@en": "Contrary to popular belief, accounting is very flexible. It has to be flexible, because it needs to honestly represent the financial situation of an institutions and specific situations can be very different from one another.<br><br>One trick consists in considering that all future revenues from a specific revenue stream are actually just one big sum of money that can be accounted for as a lump sum, even if it is paid later. There are times when it is legitimate to do so (e.g you sign a huge contract for something delivered right away but for which the client pays in installments) and cases when it is not (e.g accounting for rents as if they were just one sale).",
-		"choices": [{
-			"text@en": "Accept! The appearance of wealth is better than nothing.",
-			"var_changes": {
-				"reserves": 20,
-				"resources": -3
-			},
-			"feedback@en": ""
-		}, {
-			"text@en": "Refuse! Accounting should not be fiddled with.",
-			"var_changes": {
-				"reserves": 0
-			}
-		}]
-	}, {
-		"year": 2011,
-		"text@en": "You spouse just got fired.",
-		"explainer_title@en": "Hiring relatives",
-		"explainer_body@en": "In some countries, it is forbidden to hire a relative as an assistant. While it might not be a legal risk (after all, your spouse might be the most qualified person for a job), it is a political one. It is safer to ask one of the companies you're in friendly terms with to do the hire (you can then award a public contract to the company in question to finance the new position).",
-		"choices": [{
-			"text@en": "Hire him as an assistant.",
-			"var_changes": {
-				"risk_political": 1
-			},
-			"feedback@en": ""
-		}, {
-			"text@en": "Ask City Construction Limited to hire him.",
-			"var_changes": {
-				"risk_political": 0
-			},
-			"feedback@en": ""
-		}, {
-			"text@en": "You should not mix private and professonal life.",
-			"var_changes": {
-				"personal_account": -1000
-			}
-		}]
-	}, {
-		"year": 2012,
-		"text@en": "The boss of City Construction Limited invites you for a holiday in their chalet in Switzerland to discuss a possible job opportunity for you, as the boss of a new subsidiary they want to create.",
-		"explainer_title@en": "The Revolving Door",
-		"explainer_body@en": "After a career in the administration, public officials are often invited to work in the private sectors. Their contacts and their in-depth knowledge of how an administration works are very valuable for a private company. Sometimes, the promise of having a plump job is enough to convince a public official to take a decision in favor of a private company.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-revolving-door/' target='_blank'>The Revolving Door</a> at Cooking Budgets.",
-		"choices": [{
-			"text@en": "Accept the invitation.",
-			"var_changes": {
-				"personal_account": 100,
-				"invitation": 1
-			},
-			"feedback@en": "How sweet can life be in Switzerland! As an aside, the boss of City Construction Limited tells you they'd love to build a new swimming pool in your town."
-		}, {
-			"text@en": "Decline.",
-			"var_changes": {
-				"risk_political": 0
-			},
-			"feedback@en": ""
-		}]
-	}, {
-		"year": 2013,
-  		"condition": {
-			"var": "invitation",
-			"min": 1
-		},
-		"text@en": "You pass a public tender for a new swimming pool (estimated cost: 1 million). Which offer do you pick?",
-		"explainer_title@en": "The Revolving Door",
-		"explainer_body@en": "After a career in the administration, public officials are often invited to work in the private sectors. Their contacts and their in-depth knowledge of how an administration works are very valuable for a private company. Sometimes, the promise of having a plump job is enough to convince a public official to take a decision in favor of a private company.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-revolving-door/' target='_blank'>The Revolving Door</a> at Cooking Budgets.",
-		"choices": [{
-			"text@en": "City Construction Limited made an offer at 10 million.",
-			"var_changes": {
-				"reserves": -10,
-				"risk_revolving_door": 1,
-				"revolving_door": 1
-			},
-			"feedback@en": ""
-		}, {
-			"text@en": "Choose not to award the tender.",
-			"var_changes": {
-				"risk_contractors": 1
-			},
-			"feedback@en": ""
-		}]
-	}, {
-		"year": 2013,
-  		"condition": {
-			"var": "invitation",
-			"max": 0
-		},
-		"text@en": "You pass a public tender for the rehabilitation of a city park (estimated cost: 500,000). Which offer do you pick?",
-		"explainer_title@en": "How to spot a cartel?",
-		"explainer_body@en": "Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous.",
-		"choices": [{
-			"text@en": "You company made an offer at 1 million.",
-			"var_changes": {
-				"reserves": -1,
-				"personal_account": 100000
-			},
-			"feedback@en": ""
-		}, {
-			"text@en": "City Construction Limited made an offer at 1.2 million.",
-			"var_changes": {
-				"reserves": -1.2,
-				"risk_contractors": 1
-			},
-			"feedback@en": ""
-		}, {
-			"text@en": "Public Building plc made an offer at 1.3 million.",
-			"var_changes": {
-				"reserves": -1.3,
-				"risk_contractors": 1
-			},
-			"feedback@en": ""
-		}]
-	}],
-	"endings": [{
-  		"condition": {
-			"var": "risk_political",
-			"min": 2
-		},
-		"text@en": "<h2>You're fired!</h2><p>Your choices have made you unpopular. The mayor requests a career change for you. You're now in charge of welcoming guests at the city museum. How culturally enriching!</p>"
-	}, {
-  		"condition": {
-			"var": "risk_police",
-			"min": 2
-		},
-		"text@en": "<h2>Busted!</h2><p>The anticorruption police charged you with misapropriation of public funds. Relax, you probably won't go to prison, but the mayor demands that you resign.</p>"
-	}, {
-  		"condition": {
-			"var": "risk_contractors",
-			"min": 2
-		},
-		"text@en": "<h2>Career change!</h2><p>Public work contractors told the mayor's office that they could not work with you. You are being reassigned to the Parks and Gardens department. How great that you can work outside now!</p>"
-	}, {
-  		"condition": {
-			"var": "risk_revolving_door",
-			"min": 1
-		},
-		"text@en": "<h2>New career</h2><p>City Construction Limited makes you an offer you can't refuse, if only to ensure the financial well-being of your spouse and children. Bye-bye, public sector! Hello, business!</p>"
-	}, {
-		"text@en": "<h2>Celebrating 20 years</h2><p>How time flies! 20 years already! In just another 20, you can be in retirement.</p>"
-	}]
+  "vars":{
+    "resources":{
+      "value":10,
+      "category":"city",
+      "label@en":"Resources"
+    },
+    "expenditures":{
+      "value":9,
+      "category":"city",
+      "label@en":"Expenditures"
+    },
+    "reserves":{
+      "value":50,
+      "category":"city",
+      "label@en":"Reserves"
+    },
+    "personal_account":{
+      "value":1000,
+      "category":"player",
+      "label@en":"Personal account"
+    },
+    "risk_police":{
+      "value":0,
+      "category":"risk"
+    },
+    "risk_contractors":{
+      "value":0,
+      "category":"risk"
+    },
+    "risk_political":{
+      "value":0,
+      "category":"risk"
+    },
+    "risk_revolving_door":{
+      "value":0,
+      "category":"risk"
+    },
+    "gift_company2":{
+      "value":0,
+      "category":"choice"
+    },
+    "own_company":{
+      "value":0,
+      "category":"choice"
+    },
+    "shell_company":{
+      "value":0,
+      "category":"choice"
+    },
+    "trash_company":{
+      "value":0,
+      "category":"choice"
+    },
+    "invitation":{
+      "value":0,
+      "category":"choice"
+    },
+    "revolving_door":{
+      "value":0,
+      "category":"choice"
+    }
+  },
+  "steps":[
+    {
+      "year":1993,
+      "text@en":"You are a young, energetic assistant at the city hall of a large European city. To advance in your career, you will have to make choices. Be careful.",
+      "choices":[
+        {
+          "text@en":"Go"
+        }
+      ]
+    },
+    {
+      "year":1994,
+      "text@en":"You issued a public tender for a new road segment, which you estimated at 10 million. Which offer do you pick?",
+      "explainer_title@en":"How to spot a cartel?",
+      "explainer_body@en":"Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous.",
+      "choices":[
+        {
+          "text@en":"Public Works plc. made an offer at 9 million",
+          "var_changes":{
+            "reserves":-9,
+            "risk_contractors":1
+          }
+        },
+        {
+          "text@en":"City Construction Limited made an offer at 20 million",
+          "var_changes":{
+            "reserves":-20,
+            "gift_company2":1
+          }
+        },
+        {
+          "text@en":"Public Building plc made an offer at 21 million",
+          "var_changes":{
+            "reserves":-21,
+            "risk_contractors":1
+          }
+        }
+      ]
+    },
+    {
+      "year":1994,
+      "condition":{
+        "var":"gift_company2",
+        "min":1
+      },
+      "text@en":"The boss of City Construction Limited wants to thank you personnally and gives you a brand new car, which he doesn't need. Do you accept it?",
+      "explainer_title@en":"How to react to gifts?",
+      "explainer_body@en":"Public officials are usually prohibited from accepting gifts above a certain value (10€ to 500€). However, you can accept the gift if it is intended for you as a private person, or for your spouse. By refusing a gift, you risk angering the person who made it.",
+      "choices":[
+        {
+          "text@en":"Sure",
+          "var_changes":{
+            "personal_account":15000,
+            "risk_police":1
+          }
+        },
+        {
+          "text@en":"No, thank you",
+          "var_changes":{
+            "risk_contractors":1
+          }
+        }
+      ]
+    },
+    {
+      "year":1995,
+      "text@en":"More and more people come to you for a house in social housing. What can you do?",
+      "explainer_title@en":"How can you organize bribes?",
+      "explainer_body@en":"Bribery is not as common in Europe as in other parts of the world, but it is rampant is some sectors. In public housing, some officials ask for envoleppes of money to be given directly. For car inspection, some service centers will be pleased if you leave a gift or bills of cash on the passenger seat.<br><br>Read more under <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> at Cooking Budgets.",
+      "choices":[
+        {
+          "text@en":"Offer to speed their requests in exchange for $5000 in an envoleppe",
+          "var_changes":{
+            "personal_account":5000,
+            "risk_police":2
+          }
+        },
+        {
+          "text@en":"Increase funding to the social housing program",
+          "var_changes":{
+            "expenditures":4
+          }
+        },
+        {
+          "text@en":"Ignore them",
+          "var_changes":{
+            "risk_political":1
+          }
+        }
+      ]
+    },
+    {
+      "year":1996,
+      "text@en":"The head of the local football team, a friend of the mayor, wants a new training center. City hall has a nice piece of real estate that you value at 10 million.",
+      "explainer_title@en":"Spotting corruption in land sales",
+      "explainer_body@en":"Cities often own large plots of land. They can either sell them at market prices or at lower prices, to make a gift to the buyer. It is usually hard to spot such transactions, because there isn't much of a market for big sales of land in a city.",
+      "choices":[
+        {
+          "text@en":"Sell for 10 million",
+          "var_changes":{
+            "risk_political":1,
+            "reserves":10
+          }
+        },
+        {
+          "text@en":"Sell for 4 million",
+          "var_changes":{
+            "reserves":4
+          }
+        }
+      ]
+    },
+    {
+      "year":1997,
+      "text@en":"You issued a public tender for a new roundabout, which you estimated at 5 million. Which offer do you pick?",
+      "explainer_title@en":"How to spot a cartel?",
+      "explainer_body@en":"Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous.",
+      "choices":[
+        {
+          "text@en":"Public Works plc. made an offer for 10 million",
+          "var_changes":{
+            "reserves":-10,
+            "personal_account":1000
+          }
+        },
+        {
+          "text@en":"City Construction Limited made an offer for 10.2 million",
+          "var_changes":{
+            "reserves":-10.2,
+            "risk_contractors":1
+          }
+        },
+        {
+          "text@en":"Public Building plc made an offer for 11 million",
+          "var_changes":{
+            "reserves":-11,
+            "risk_contractors":1
+          }
+        }
+      ]
+    },
+    {
+      "year":1998,
+      "text@en":"Would you like to create your own public works company?",
+      "explainer_title@en":"Conflicts of interest",
+      "explainer_body@en":"People in politics or in the administration can own companies that receive public contracts. In some countries, it is forbidden for companies owned by public servants or politiciants to receive money from public contracts.",
+      "choices":[
+        {
+          "text@en":"Yes",
+          "var_changes":{
+            "own_company":1
+          }
+        },
+        {
+          "text@en":"No",
+          "var_changes":{
+            "own_company":0
+          }
+        }
+      ]
+    },
+    {
+      "year":1998,
+      "condition":{
+        "var":"own_company",
+        "min":1
+      },
+      "text@en":"Who should be the nominal owner of the company?",
+      "explainer_title@en":"Conflicts of interest",
+      "explainer_body@en":"People in politics or in the administration can own companies that receive public contracts. In some countries, it is forbidden for companies owned by public servants or politiciants to receive money from public contracts.",
+      "choices":[
+        {
+          "text@en":"You personnally",
+          "var_changes":{
+            "risk_police":2
+          }
+        },
+        {
+          "text@en":"Your spouse or partner",
+          "var_changes":{
+            "risk_police":1
+          }
+        },
+        {
+          "text@en":"A shell company in a tax heaven",
+          "var_changes":{
+            "risk_police":0,
+            "shell_company":1
+          }
+        }
+      ]
+    },
+    {
+      "year":1999,
+      "condition":{
+        "var":"own_company",
+        "min":1
+      },
+      "text@en":"You issued a public tender for a new school, which you estimated at 3 million. Which offer do you pick?",
+      "explainer_title@en":"How to spot a cartel?",
+      "explainer_body@en":"Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous.",
+      "choices":[
+        {
+          "text@en":"Your company made an offer for 5 million",
+          "var_changes":{
+            "reserves":-5,
+            "risk_police":1,
+            "personal_account":100000
+          }
+        },
+        {
+          "text@en":"Public Works plc. made an offer for 5.5 million",
+          "var_changes":{
+            "reserves":-5.5,
+            "risk_contractors":1
+          }
+        },
+        {
+          "text@en":"City Construction Limited made an offer for 6 million",
+          "var_changes":{
+            "reserves":-6,
+            "risk_contractors":1
+          }
+        }
+      ]
+    },
+    {
+      "year":1999,
+      "condition":{
+        "var":"own_company",
+        "max":0
+      },
+      "text@en":"You issued a public tender for a new school, which you estimated at 3 million. Which offer do you pick?",
+      "explainer_title@en":"How to spot a cartel?",
+      "explainer_body@en":"Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous.",
+      "choices":[
+        {
+          "text@en":"Public Building plc made an offer for 5 million",
+          "var_changes":{
+            "reserves":-5,
+            "personal_account":1000
+          }
+        },
+        {
+          "text@en":"Public Works plc. made an offer for 5.5 million",
+          "var_changes":{
+            "reserves":-5.5,
+            "risk_contractors":1
+          }
+        },
+        {
+          "text@en":"City Construction Limited made an offer for 6 million",
+          "var_changes":{
+            "reserves":-6,
+            "risk_contractors":1
+          }
+        }
+      ]
+    },
+    {
+      "year":2000,
+      "text@en":"Amazon has just arrived in town! You happen to have access to the credit card of your department.",
+      "explainer_title@en":"Using the official credit card",
+      "explainer_body@en":"It can be tempting to use the credit card of the city or the government to buy stuff for you. Because it's very easy to trace, it can be dangerous!<br><br>Read more under <a href='http://www.cookingbudgets.com/the-credit-card/' target='_blank'>The Credit Card</a> at Cooking Budgets.",
+      "choices":[
+        {
+          "text@en":"Buy lots of stuff online!",
+          "var_changes":{
+            "risk_police":4,
+            "personal_account":1000
+          }
+        },
+        {
+          "text@en":"Do nothing",
+          "var_changes":{
+            "risk_police":0
+          }
+        }
+      ]
+    },
+    {
+      "year":2001,
+      "text@en":"It's election year. The mayor would like you to buy advertising for her campaign using city funds.",
+      "explainer_title@en":"Political communication using public funds",
+      "explainer_body@en":"Politicians can control public companies, either directly or through patronage networks. They might require them to buy advertising in newspapers that advertise their performance as a politician and not the company itself. It's very hard for prosecutors to prove that the advertising was not done in the interest of the company.<br><br>Read more under <a href='http://www.cookingbudgets.com/ads/' target='_blank'>Ads, ads, ads</a> at Cooking Budgets.",
+      "choices":[
+        {
+          "text@en":"No way, it's unethical",
+          "var_changes":{
+            "risk_political":2
+          }
+        },
+        {
+          "text@en":"Sure, you'll run ads praising her actions",
+          "var_changes":{
+            "reserves":-0.5
+          }
+        }
+      ]
+    },
+    {
+      "year":2002,
+      "text@en":"The football club is in trouble. They need 12 million in cash. Would you accept to buy back the plot of land you sold them, and rent it back at a cheap price?",
+      "explainer_title@en":"Leasing public space to private companies",
+      "explainer_body@en":"The easiest way to support a private company for a politician is to buy their building with public funds and rent it back to the company at a low price. The operation is hard to trace and fully legal.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-emphyteutic-scam/' target='_blank'>The Emphyteutic Scam</a> at Cooking Budgets.",
+      "choices":[
+        {
+          "text@en":"Sure, a healthy football club for a healthy city!",
+          "var_changes":{
+            "reserves":-12,
+            "resources":0.2
+          }
+        },
+        {
+          "text@en":"No way, football clubs are private companies, they don't need a bail out.",
+          "var_changes":{
+            "risk_political":1
+          }
+        }
+      ]
+    },
+    {
+      "year":2003,
+      "text@en":"The boss of Public Works plc. asks you to pass a public tender of 100,000 to repair a road that doesn't exist. He offers to split the money 50/50.",
+      "explainer_title@en":"Fake public contracts",
+      "explainer_body@en":"It can happen that contracts are passed to renovate a place or a road that does not exist. It can be risky, because it is easy to prove the contract is bogus.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-invisible-public-work/' target='_blank'>The Invisible Public Work</a> at Cooking Budgets.",
+      "choices":[
+        {
+          "text@en":"Accept",
+          "var_changes":{
+            "personal_account":50000,
+            "risk_police":1
+          }
+        },
+        {
+          "text@en":"Decline",
+          "var_changes":{
+            "risk_contractors":1
+          }
+        }
+      ]
+    },
+    {
+      "year":2004,
+      "text@en":"You hear that someone at the bus company, owned by the city, keeps some of the cash clients pay.",
+      "explainer_title@en":"Keeping money from the city",
+      "explainer_body@en":"It can happen that rogue employees keep some money from public services such as transport, where payments are often made in cash.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-broken-cash-machine/' target='_blank'>The Broken Cash Machine</a> at Cooking Budgets.",
+      "choices":[
+        {
+          "text@en":"Offer him protection in exchange for a split of the money.",
+          "var_changes":{
+            "personal_account":10000,
+            "risk_police":1
+          }
+        },
+        {
+          "text@en":"Report him to the police.",
+          "var_changes":{
+            "personal_account":0,
+            "resources":0.2
+          }
+        },
+        {
+          "text@en":"Do nothing.",
+          "var_changes":{
+            "personal_account":0
+          }
+        }
+      ]
+    },
+    {
+      "year":2005,
+      "text@en":"The mayor wants to build a new stadium for the local football team.",
+      "explainer_title@en":"Public-private partnerships",
+      "explainer_body@en":"Since the 1980's, it is popular for public administrations to do public-private partnerships. Such partnerships involve a private company doing some of the work, usually building a equipment or operating it, while the administration contributes to the costs. In exchange, the private company can keep the revenues of the equipment it built.<br><br>The goal was to allow public administrations to provide public services without spending much money. In practice, private companies take almost no risks with such contracts and public administrations end up paying as much as they would have without the partnership. But it is usually hidden in the accounts of the public administration.",
+      "choices":[
+        {
+          "text@en":"The city should build one (one-off cost: 10 million).",
+          "var_changes":{
+            "reserves":-10
+          }
+        },
+        {
+          "text@en":"Let's do a public-private partnership (no cost now, but you have to pay the contractor 1 million per year for the next 20 years)",
+          "var_changes":{
+            "expenditures":1
+          }
+        }
+      ]
+    },
+    {
+      "year":2006,
+      "text@en":"You hear that trash collection will soon be deregulated.",
+      "explainer_title@en":"Deregulation and privatization",
+      "explainer_body@en":"Public administrations have transfered a lot of their competencies to private companies, either via public-private partnerships or via deregulation. It offers a lot of opportunities for conflicts of interests.<br><br>It is hard to know how much a service costs to the city because it can involve people from different departments (e.g some municipal employees can work for the trash collection one day and for another department the next). To do such estimates would require analytical accounting, which cities rarely do.",
+      "choices":[
+        {
+          "text@en":"Set up a trash collection company.",
+          "var_changes":{
+            "trash_company":1
+          }
+        },
+        {
+          "text@en":"Do nothing.",
+          "var_changes":{
+            "trash_company":0
+          }
+        }
+      ]
+    },
+    {
+      "year":2007,
+      "condition":{
+        "var":"trash_company",
+        "min":1
+      },
+      "text@en":"Trash collection must now be externalized. You do not know how much it cost the city because you did not do proper analysis. Which company do you pick?",
+      "explainer_title@en":"Deregulation and privatization",
+      "explainer_body@en":"Public administrations have transfered a lot of their competencies to private companies, either via public-private partnerships or via deregulation. It offers a lot of opportunities for conflicts of interests.<br><br>It is hard to know how much a service costs to the city because it can involve people from different departments (e.g some municipal employees can work for the trash collection one day and for another department the next). To do such estimates would require analytical accounting, which cities rarely do.",
+      "choices":[
+        {
+          "text@en":"Your company made an offer at 1 million per year",
+          "var_changes":{
+            "resources":-1,
+            "personal_account":10000
+          }
+        },
+        {
+          "text@en":"Voelia Environment made an offer at 900,000 per year",
+          "var_changes":{
+            "resources":-0.9
+          }
+        }
+      ]
+    },
+    {
+      "year":2007,
+      "condition":{
+        "var":"trash_company",
+        "max":0
+      },
+      "text@en":"Trash collection must now be externalized. You do not know how much it cost the city because you did not do proper analysis. Which company do you pick?",
+      "explainer_title@en":"Deregulation and privatization",
+      "explainer_body@en":"Public administrations have transfered a lot of their competencies to private companies, either via public-private partnerships or via deregulation. It offers a lot of opportunities for conflicts of interests.<br><br>It is hard to know how much a service costs to the city because it can involve people from different departments (e.g some municipal employees can work for the trash collection one day and for another department the next). To do such estimates would require analytical accounting, which cities rarely do.",
+      "choices":[
+        {
+          "text@en":"SATI Waste Management made an offer at 1.2 million per year",
+          "var_changes":{
+            "resources":-1.2
+          }
+        },
+        {
+          "text@en":"Voelia Environment made an offer at 900,000 per year",
+          "var_changes":{
+            "resources":-0.9
+          }
+        }
+      ]
+    },
+    {
+      "year":2008,
+      "text@en":"The contractor for the new stadium is behind schedule. They do not want to pay the late penalty fee of 2 million.",
+      "explainer_title@en":"The fine print in public contracts",
+      "explainer_body@en":"Building contracts usually involve a series of clauses, such as penalties for delays. However, the client (in this case, the city) must activate the clause, or, if the contractor refuses to pay, take it to court. Legal teams are used to such situations, but for a small administration, or in case of politically sensitive issues, it is easy to ignore some clauses in the contract.",
+      "choices":[
+        {
+          "text@en":"Take the contractor to court to get the money.",
+          "var_changes":{
+            "reserves":2,
+            "risk_political":1
+          }
+        },
+        {
+          "text@en":"Ignore the delay.",
+          "var_changes":{
+            "risk_political":0
+          }
+        }
+      ]
+    },
+    {
+      "year":2009,
+      "text@en":"A friend of yours, dean of the city university, tells you over dinner in an expensive restaurant that he runs a scheme where students can pay $1,000 to obtain their degrees.",
+      "explainer_title@en":"Selling university degrees",
+      "explainer_body@en":"The sale of university degree is not uncommon in Europe. As with any story of corruption, people have an incentive to keep silent, because it would make the whole university look bad if it became news.",
+      "choices":[
+        {
+          "text@en":"Call the police.",
+          "var_changes":{
+            "risk_political":1
+          },
+          "feedback@en":"The police starts an investigation and you become 'the friend of the corrupt university professor'."
+        },
+        {
+          "text@en":"Let him pick up the bill.",
+          "var_changes":{
+            "personal_account":100
+          }
+        }
+      ]
+    },
+    {
+      "year":2010,
+      "text@en":"An accountant just had an idea: Instead of accounting for the revenues of social housing every year, the city could account at once for the revenues of the next 20 years. This will artificially increase the city reserves, but reduce future resources.",
+      "explainer_title@en":"Accounting tricks",
+      "explainer_body@en":"Contrary to popular belief, accounting is very flexible. It has to be flexible, because it needs to honestly represent the financial situation of an institutions and specific situations can be very different from one another.<br><br>One trick consists in considering that all future revenues from a specific revenue stream are actually just one big sum of money that can be accounted for as a lump sum, even if it is paid later. There are times when it is legitimate to do so (e.g you sign a huge contract for something delivered right away but for which the client pays in installments) and cases when it is not (e.g accounting for rents as if they were just one sale).",
+      "choices":[
+        {
+          "text@en":"Accept! The appearance of wealth is better than nothing.",
+          "var_changes":{
+            "reserves":20,
+            "resources":-3
+          },
+          "feedback@en":""
+        },
+        {
+          "text@en":"Refuse! Accounting should not be fiddled with.",
+          "var_changes":{
+            "reserves":0
+          }
+        }
+      ]
+    },
+    {
+      "year":2011,
+      "text@en":"You spouse just got fired.",
+      "explainer_title@en":"Hiring relatives",
+      "explainer_body@en":"In some countries, it is forbidden to hire a relative as an assistant. While it might not be a legal risk (after all, your spouse might be the most qualified person for a job), it is a political one. It is safer to ask one of the companies you're in friendly terms with to do the hire (you can then award a public contract to the company in question to finance the new position).",
+      "choices":[
+        {
+          "text@en":"Hire him as an assistant.",
+          "var_changes":{
+            "risk_political":1
+          },
+          "feedback@en":""
+        },
+        {
+          "text@en":"Ask City Construction Limited to hire him.",
+          "var_changes":{
+            "risk_political":0
+          },
+          "feedback@en":""
+        },
+        {
+          "text@en":"You should not mix private and professonal life.",
+          "var_changes":{
+            "personal_account":-1000
+          }
+        }
+      ]
+    },
+    {
+      "year":2012,
+      "text@en":"The boss of City Construction Limited invites you for a holiday in their chalet in Switzerland to discuss a possible job opportunity for you, as the boss of a new subsidiary they want to create.",
+      "explainer_title@en":"The Revolving Door",
+      "explainer_body@en":"After a career in the administration, public officials are often invited to work in the private sectors. Their contacts and their in-depth knowledge of how an administration works are very valuable for a private company. Sometimes, the promise of having a plump job is enough to convince a public official to take a decision in favor of a private company.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-revolving-door/' target='_blank'>The Revolving Door</a> at Cooking Budgets.",
+      "choices":[
+        {
+          "text@en":"Accept the invitation.",
+          "var_changes":{
+            "personal_account":100,
+            "invitation":1
+          },
+          "feedback@en":"How sweet can life be in Switzerland! As an aside, the boss of City Construction Limited tells you they'd love to build a new swimming pool in your town."
+        },
+        {
+          "text@en":"Decline.",
+          "var_changes":{
+            "risk_political":0
+          },
+          "feedback@en":""
+        }
+      ]
+    },
+    {
+      "year":2013,
+      "condition":{
+        "var":"invitation",
+        "min":1
+      },
+      "text@en":"You pass a public tender for a new swimming pool (estimated cost: 1 million). Which offer do you pick?",
+      "explainer_title@en":"The Revolving Door",
+      "explainer_body@en":"After a career in the administration, public officials are often invited to work in the private sectors. Their contacts and their in-depth knowledge of how an administration works are very valuable for a private company. Sometimes, the promise of having a plump job is enough to convince a public official to take a decision in favor of a private company.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-revolving-door/' target='_blank'>The Revolving Door</a> at Cooking Budgets.",
+      "choices":[
+        {
+          "text@en":"City Construction Limited made an offer at 10 million.",
+          "var_changes":{
+            "reserves":-10,
+            "risk_revolving_door":1,
+            "revolving_door":1
+          },
+          "feedback@en":""
+        },
+        {
+          "text@en":"Choose not to award the tender.",
+          "var_changes":{
+            "risk_contractors":1
+          },
+          "feedback@en":""
+        }
+      ]
+    },
+    {
+      "year":2013,
+      "condition":{
+        "var":"invitation",
+        "max":0
+      },
+      "text@en":"You pass a public tender for the rehabilitation of a city park (estimated cost: 500,000). Which offer do you pick?",
+      "explainer_title@en":"How to spot a cartel?",
+      "explainer_body@en":"Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous.",
+      "choices":[
+        {
+          "text@en":"You company made an offer at 1 million.",
+          "var_changes":{
+            "reserves":-1,
+            "personal_account":100000
+          },
+          "feedback@en":""
+        },
+        {
+          "text@en":"City Construction Limited made an offer at 1.2 million.",
+          "var_changes":{
+            "reserves":-1.2,
+            "risk_contractors":1
+          },
+          "feedback@en":""
+        },
+        {
+          "text@en":"Public Building plc made an offer at 1.3 million.",
+          "var_changes":{
+            "reserves":-1.3,
+            "risk_contractors":1
+          },
+          "feedback@en":""
+        }
+      ]
+    }
+  ],
+  "endings":[
+    {
+      "condition":{
+        "var":"risk_political",
+        "min":2
+      },
+      "text@en":"<h2>You're fired!</h2><p>Your choices have made you unpopular. The mayor requests a career change for you. You're now in charge of welcoming guests at the city museum. How culturally enriching!</p>"
+    },
+    {
+      "condition":{
+        "var":"risk_police",
+        "min":2
+      },
+      "text@en":"<h2>Busted!</h2><p>The anticorruption police charged you with misapropriation of public funds. Relax, you probably won't go to prison, but the mayor demands that you resign.</p>"
+    },
+    {
+      "condition":{
+        "var":"risk_contractors",
+        "min":2
+      },
+      "text@en":"<h2>Career change!</h2><p>Public work contractors told the mayor's office that they could not work with you. You are being reassigned to the Parks and Gardens department. How great that you can work outside now!</p>"
+    },
+    {
+      "condition":{
+        "var":"risk_revolving_door",
+        "min":1
+      },
+      "text@en":"<h2>New career</h2><p>City Construction Limited makes you an offer you can't refuse, if only to ensure the financial well-being of your spouse and children. Bye-bye, public sector! Hello, business!</p>"
+    },
+    {
+      "text@en":"<h2>Celebrating 20 years</h2><p>How time flies! 20 years already! In just another 20, you can be in retirement.</p>"
+    }
+  ]
 }
