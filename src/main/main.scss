@@ -1,0 +1,23 @@
+.main {
+
+  &__toolbar {
+    border-bottom: 2px solid $corduroy;
+    background: rgba($body-bg, .5);
+
+    &__var {
+      padding:$spacer;
+    }
+  }
+
+  &__steps {
+    position: fixed;
+    bottom:0;
+    left:0;
+    right:0;
+
+    &__item {
+      margin:$spacer;
+    }
+  }
+
+}

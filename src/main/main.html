@@ -1,1 +1,26 @@
-<h1>{{ $ctrl.main }}</h1>
+<div class="main">
+
+  <div class="main__toolbar">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs main__toolbar__var" ng-repeat="(name, value) in $ctrl.game.vars">
+          {{ name }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main__steps">
+    <div class="main__steps__item card card-block" ng-repeat="step in $ctrl.game.steps | filter:$ctrl.game.isCurrent">
+      <p>{{ step.text }}</p>
+      <ul class="list-unstyled row">
+        <li class="col-lg" ng-repeat="choice in step.choices">
+          <button class="btn btn-block btn-primary" ng-click="step.select(choice)">
+            {{ choice.text }}
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</div>

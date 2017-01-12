@@ -1,3 +1,29 @@
-body {
-  background-color: lightgrey;
-}
+@import url(//fonts.googleapis.com/css?family=Open+Sans:300,400,600,900);
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css);
+
+$font-family-sans-serif: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+$gray-nurse: #e1e5e0;
+$clay-ash: #baccb9;
+$foggy-gray: #c8c8b6;
+$corduroy: #576a67;
+$burnt-sienna: #e57453;
+$tradewind: #5fbbb5;
+$breake-bay: #62a4a0;
+
+$brand-primary:$burnt-sienna;
+$brand-secondary: $tradewind;
+$brand-success: $breake-bay;
+$brand-inverse:darken($brand-primary, 35);
+
+$body-bg: $gray-nurse;
+$body-color: $corduroy;
+
+$enable-shadows: false;
+$enable-rounded: false;
+$enable-gradients: true;
+$enable-transitions: true;
+$enable-flex: true;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "main/main.scss"
