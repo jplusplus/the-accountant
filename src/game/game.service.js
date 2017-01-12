@@ -2,7 +2,7 @@ export default gameService;
 import _ from 'lodash';
 
 /* ngInject */
-function gameService($log, Step) {
+function gameService($log, Step, Var) {
   // Symbols declarion for private attributes and methods
   const _meta = Symbol('meta');
   const _vars = Symbol('vars');
@@ -14,17 +14,35 @@ function gameService($log, Step) {
       this[_meta] = angular.copy(require('./game.json'));
       // Build step using meta data
       this[_meta].steps = this[_meta].steps.map(meta => new Step(meta, this));
-      // Prepare vars and party
-      this.prepare();
+      // Prepare vars according to choice's history
+      this.apply();
       // Notice the user
       $log.info(`Starting game with ${this.steps.length} steps`);
     }
-    prepare() {
-      // Initialize vars
-      this[_vars] = angular.copy(this[_meta].vars);
-    }
     isCurrent(step) {
       return step.isCurrent();
+    }
+    update(changes) {
+      _.forEach(changes, (value, key) => {
+        // Set the value accordingly
+        this.var(key).update(value);
+      });
+    }
+    var(name) {
+      return _.find(this.vars, {name});
+    }
+    select(choice) {
+      this.history.push(choice);
+      // Apply changes
+      this.update(choice.changes);
+    }
+    apply() {
+      // Create new vars
+      this[_vars] = _.map(this[_meta].vars, (value, name) => {
+        return new Var(angular.extend({name}, value), this);
+      });
+      // Apply existing choices
+      this.history.forEach(choice => this.update(choice.changes));
     }
     get history() {
       // Instanciate history if needed
@@ -46,6 +64,9 @@ function gameService($log, Step) {
     }
     get years() {
       return _(this.steps).map('year').compact().uniq().sort().value();
+    }
+    get risks() {
+      return _.filter(this.vars, {category: 'risk'});
     }
   }
   return Game;

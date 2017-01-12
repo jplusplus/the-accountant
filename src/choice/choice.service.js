@@ -11,6 +11,9 @@ function ChoiceService() {
       this[_step] = step;
       this[_meta] = angular.copy(meta);
     }
+    get changes() {
+      return this[_meta].var_changes;
+    }
     get index() {
       return this.step.choices.indexOf(this);
     }

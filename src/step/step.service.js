@@ -18,7 +18,7 @@ function StepService(Choice, $log) {
       return this.game.stepIndex === this.index;
     }
     select(choice) {
-      this.game.history.push(choice);
+      this.game.select(choice);
       // Add info to the log
       $log.info('Step %s: choice %s', this.index, choice.index);
     }

@@ -3,8 +3,8 @@
   <div class="main__toolbar">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xs main__toolbar__var" ng-repeat="(name, value) in $ctrl.game.vars">
-          {{ name }}
+        <div class="col-lg main__toolbar__var" ng-repeat="risk in $ctrl.game.risks">
+          {{ risk.label }}: {{ risk.value }}
         </div>
       </div>
     </div>
