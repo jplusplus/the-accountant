@@ -1,7 +1,6 @@
 <!doctype html>
 <html ng-app="app">
   <head>
-    <base href="/">
     <meta charset="utf-8">
     <title ng-bind="'app.title' | translate">Journalism++</title>
     <meta name="description" content="">
@@ -34,6 +33,10 @@
     <meta name="mobile-web-app-capable" content="yes">
 
     <link rel="preload" href="">
+    <script type="text/javascript">
+      var href = document.location.protocol + "//" + document.location.host + document.location.pathname;
+      document.write("<base href='" + href + "' />");
+    </script>
   </head>
   <body>
     <ui-view></ui-view>
