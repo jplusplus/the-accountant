@@ -1,6 +1,6 @@
 export default VarService;
 
-/* ngInject */
+/** @ngInject */
 function VarService() {
   // Symbols declarion for private attributes and methods
   const _meta = Symbol('meta');

@@ -1,7 +1,7 @@
 export default ChoiceService;
 import _ from 'lodash';
 
-/* ngInject */
+/** @ngInject */
 function ChoiceService() {
   // Symbols declarion for private attributes and methods
   const _meta = Symbol('meta');

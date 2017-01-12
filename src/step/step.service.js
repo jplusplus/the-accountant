@@ -1,6 +1,6 @@
 export default StepService;
 
-/* ngInject */
+/** @ngInject */
 function StepService(Choice, $log) {
   // Symbols declarion for private attributes and methods
   const _meta = Symbol('meta');

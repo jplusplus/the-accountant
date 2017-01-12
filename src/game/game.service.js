@@ -1,7 +1,7 @@
 export default gameService;
 import _ from 'lodash';
 
-/* ngInject */
+/** @ngInject */
 function gameService($log, Step, Var) {
   // Symbols declarion for private attributes and methods
   const _meta = Symbol('meta');
