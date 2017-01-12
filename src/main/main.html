@@ -11,6 +11,9 @@
   </div>
 
   <div class="main__vars">
+    <div ng-if="$ctrl.game.isOver()" class="alert alert-danger lead">
+      Game over!
+    </div>
     <table class="table table-striped table-sm">
       <thead class="thead-inverse">
         <tr>
@@ -35,7 +38,8 @@
     </table>
   </div>
 
-  <div class="main__steps">
+
+  <div class="main__steps" ng-if="!$ctrl.game.isOver()">
     <div class="main__steps__item card card-block" ng-repeat="step in $ctrl.game.steps | filter:$ctrl.game.isCurrent">
       <p>{{ step.text }}</p>
       <ul class="list-unstyled row">

@@ -22,6 +22,9 @@ function gameService($log, Step, Var) {
     isCurrent(step) {
       return step.isCurrent();
     }
+    isOver() {
+      return _.some(this.history, _.method('hasConsequences')) || !this.step;
+    }
     update(changes) {
       _.forEach(changes, (value, key) => {
         // Set the value accordingly
