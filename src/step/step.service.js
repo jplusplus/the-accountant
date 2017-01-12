@@ -22,6 +22,9 @@ function StepService(Choice, $log) {
       // Add info to the log
       $log.info('Step %s: choice %s', this.index, choice.index);
     }
+    get assert() {
+      return true;
+    }
     get choices() {
       return this[_choices];
     }

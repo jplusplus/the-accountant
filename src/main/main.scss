@@ -9,6 +9,16 @@
     }
   }
 
+  &__vars {
+    opacity: .7;
+    max-width: 440px;
+    border:$table-border-color 1px solid;
+    margin:$spacer;
+    table {
+      margin:0;
+    }
+  }
+
   &__steps {
     position: fixed;
     bottom:0;

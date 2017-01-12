@@ -21,6 +21,9 @@ function VarService() {
           break;
       }
     }
+    toString() {
+      return this.name;
+    }
     get value() {
       return this[_meta].value;
     }

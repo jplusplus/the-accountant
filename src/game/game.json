@@ -93,9 +93,9 @@
 		}]
 	}, {
 		"year": 1994,
-		"condition": {
+  		"condition": {
 			"var": "gift_company2",
-			"value_min": 1
+			"min": 1
 		},
 		"text@en": "The boss of City Construction Limited wants to thank you personnally and gives you a brand new car, which he doesn't need. Do you accept it?",
 		"explainer_title@en": "How to react to gifts?",
@@ -193,9 +193,9 @@
 		}]
 	}, {
 		"year": 1998,
-		"condition": {
+  		"condition": {
 			"var": "own_company",
-			"value_min": 1
+			"min": 1
 		},
 		"text@en": "Who should be the nominal owner of the company?",
 		"explainer_title@en": "Conflicts of interest",
@@ -219,9 +219,9 @@
 		}]
 	}, {
 		"year": 1999,
-		"condition": {
+  		"condition": {
 			"var": "own_company",
-			"value_min": 1
+			"min": 1
 		},
 		"text@en": "You issued a public tender for a new school, which you estimated at 3 million. Which offer do you pick?",
 		"explainer_title@en": "How to spot a cartel?",
@@ -248,9 +248,9 @@
 		}]
 	}, {
 		"year": 1999,
-		"condition": {
+  		"condition": {
 			"var": "own_company",
-			"value_max": 0
+			"max": 0
 		},
 		"text@en": "You issued a public tender for a new school, which you estimated at 3 million. Which offer do you pick?",
 		"explainer_title@en": "How to spot a cartel?",
@@ -398,9 +398,9 @@
 		}]
 	}, {
 		"year": 2007,
-		"condition": {
+  		"condition": {
 			"var": "trash_company",
-			"value_min": 1
+			"min": 1
 		},
 		"text@en": "Trash collection must now be externalized. You do not know how much it cost the city because you did not do proper analysis. Which company do you pick?",
 		"explainer_title@en": "Deregulation and privatization",
@@ -419,9 +419,9 @@
 		}]
 	}, {
 		"year": 2007,
-		"condition": {
+  		"condition": {
 			"var": "trash_company",
-			"value_max": 0
+			"max": 0
 		},
 		"text@en": "Trash collection must now be externalized. You do not know how much it cost the city because you did not do proper analysis. Which company do you pick?",
 		"explainer_title@en": "Deregulation and privatization",
@@ -533,9 +533,9 @@
 		}]
 	}, {
 		"year": 2013,
-		"condition": {
+  		"condition": {
 			"var": "invitation",
-			"value_min": 1
+			"min": 1
 		},
 		"text@en": "You pass a public tender for a new swimming pool (estimated cost: 1 million). Which offer do you pick?",
 		"explainer_title@en": "The Revolving Door",
@@ -557,9 +557,9 @@
 		}]
 	}, {
 		"year": 2013,
-		"condition": {
+  		"condition": {
 			"var": "invitation",
-			"value_max": 0
+			"max": 0
 		},
 		"text@en": "You pass a public tender for the rehabilitation of a city park (estimated cost: 500,000). Which offer do you pick?",
 		"explainer_title@en": "How to spot a cartel?",
@@ -588,27 +588,27 @@
 		}]
 	}],
 	"endings": [{
-		"condition": {
+  		"condition": {
 			"var": "risk_political",
-			"value_min": 2
+			"min": 2
 		},
 		"text@en": "<h2>You're fired!</h2><p>Your choices have made you unpopular. The mayor requests a career change for you. You're now in charge of welcoming guests at the city museum. How culturally enriching!</p>"
 	}, {
-		"condition": {
+  		"condition": {
 			"var": "risk_police",
-			"value_min": 2
+			"min": 2
 		},
 		"text@en": "<h2>Busted!</h2><p>The anticorruption police charged you with misapropriation of public funds. Relax, you probably won't go to prison, but the mayor demands that you resign.</p>"
 	}, {
-		"condition": {
+  		"condition": {
 			"var": "risk_contractors",
-			"value_min": 2
+			"min": 2
 		},
 		"text@en": "<h2>Career change!</h2><p>Public work contractors told the mayor's office that they could not work with you. You are being reassigned to the Parks and Gardens department. How great that you can work outside now!</p>"
 	}, {
-		"condition": {
+  		"condition": {
 			"var": "risk_revolving_door",
-			"value_min": 1
+			"min": 1
 		},
 		"text@en": "<h2>New career</h2><p>City Construction Limited makes you an offer you can't refuse, if only to ensure the financial well-being of your spouse and children. Bye-bye, public sector! Hello, business!</p>"
 	}, {

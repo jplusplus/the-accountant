@@ -35,6 +35,11 @@ function gameService($log, Step, Var) {
       this.history.push(choice);
       // Apply changes
       this.update(choice.changes);
+      // Take risk according to the current variables
+      if (choice.takeRisks()) {
+        // We loose!
+        $log.info('Losing causes: %s', choice.consequences.join(', '));
+      }
     }
     apply() {
       // Create new vars
@@ -44,20 +49,26 @@ function gameService($log, Step, Var) {
       // Apply existing choices
       this.history.forEach(choice => this.update(choice.changes));
     }
+    takeRisks() {
+      // Create a list of risk vars that make the player loose
+      return _.filter(this.risks, risk => {
+        return Math.random() <= risk.value / 5;
+      });
+    }
     get history() {
       // Instanciate history if needed
       this[_history] = this[_history] || [];
       // Return the array
       return this[_history];
     }
-    get steps() {
-      return this[_meta].steps;
-    }
     get vars() {
       return this[_vars];
     }
     get stepIndex() {
       return this.history.length;
+    }
+    get steps() {
+      return _.filter(this[_meta].steps, {assert: true});
     }
     get step() {
       return this.steps[this.stepIndex];
