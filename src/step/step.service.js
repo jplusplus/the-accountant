@@ -14,6 +14,9 @@ function StepService(Choice, $log) {
       // Create choices
       this[_choices] = this[_meta].choices.map(meta => new Choice(meta, this));
     }
+    hasCondition() {
+      return this[_meta].hasOwnProperty('condition');
+    }
     isCurrent() {
       return this.game.stepIndex === this.index;
     }
@@ -23,6 +26,14 @@ function StepService(Choice, $log) {
       $log.info('Step %s: choice %s', this.index, choice.index);
     }
     get assert() {
+      // Minimum value condition
+      if (this.condition.hasOwnProperty('min')) {
+        return this.game.var(this.condition.var).value >= this.condition.min;
+      // Maximum value condition
+      } else if (this.condition.hasOwnProperty('max')) {
+        return this.game.var(this.condition.var).value <= this.condition.max;
+      }
+      // No condition (or unkown)
       return true;
     }
     get choices() {
@@ -36,6 +47,9 @@ function StepService(Choice, $log) {
     }
     get game() {
       return this[_game];
+    }
+    get condition() {
+      return this[_meta].condition || {};
     }
   }
   return Step;
