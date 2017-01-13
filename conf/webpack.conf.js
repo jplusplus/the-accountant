@@ -5,6 +5,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FailPlugin = require('webpack-fail-plugin');
 const DashboardPlugin = require('webpack-dashboard/plugin');
+const WebpackNotifierPlugin = require('webpack-notifier');
 const autoprefixer = require('autoprefixer');
 
 module.exports = {
@@ -49,6 +50,7 @@ module.exports = {
   },
   plugins: [
     new DashboardPlugin({ port: 3030 }),
+    new WebpackNotifierPlugin({ title: 'Temptation city' }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.NoErrorsPlugin(),
     FailPlugin,
