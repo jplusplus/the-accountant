@@ -52,9 +52,11 @@
     </div>
   </div>
 
-
-  <div class="main__steps" ng-if="!$ctrl.game.isOver()">
+  <div class="main__steps">
     <div class="main__steps__item card card-block" ng-repeat="step in $ctrl.game.steps | filter:$ctrl.game.isCurrent">
+      <div>
+        <span class="badge badge-info">{{ step.year }}</span>
+      </div>
       <p>{{ step.text }}</p>
       <ul class="list-unstyled row">
         <li class="col-lg my-1" ng-repeat="choice in step.choices">
@@ -63,6 +65,18 @@
           </button>
         </li>
       </ul>
+    </div>
+  </div>
+
+  <div class="main__feedback" ng-if="$ctrl.showFeedback">
+    <div class="main__feedback__overlay" ng-click="$ctrl.showFeedback = false"></div>
+    <div class="main__feedback__card card card-block">
+      <p class="lead">{{ $ctrl.game.feedback }}</p>
+      <div class="text-right">
+        <button class="btn btn-primary" ng-click="$ctrl.showFeedback = false">
+          Got it!
+        </button>
+      </div>
     </div>
   </div>
 

@@ -24,6 +24,9 @@ function ChoiceService() {
     hasConsequences() {
       return this.consequences.length;
     }
+    hasFeedback() {
+      return this[_meta].hasOwnProperty('feedback@en');
+    }
     get consequences() {
       return this[_consequences] || [];
     }
@@ -34,7 +37,10 @@ function ChoiceService() {
       return this.step.choices.indexOf(this);
     }
     get text() {
-      return this[_meta]['text@en'];
+      return this[_meta]['text@en'] || null;
+    }
+    get feedback() {
+      return this[_meta]['feedback@en'] || null;
     }
     get step() {
       return this[_step];

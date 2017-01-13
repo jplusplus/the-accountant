@@ -2,7 +2,7 @@ export default gameService;
 import _ from 'lodash';
 
 /** @ngInject */
-function gameService($log, Step, Var) {
+function gameService($log, $rootScope, Step, Var) {
   // Symbols declarion for private attributes and methods
   const _meta = Symbol('meta');
   const _vars = Symbol('vars');
@@ -25,6 +25,9 @@ function gameService($log, Step, Var) {
     isOver() {
       return _.some(this.history, _.method('hasConsequences'));
     }
+    hasFeedback() {
+      return this.history.length ? _.last(this.history).hasFeedback() : false;
+    }
     update(changes) {
       _.forEach(changes, (value, key) => {
         // Set the value accordingly
@@ -43,6 +46,8 @@ function gameService($log, Step, Var) {
         // We loose!
         $log.info('Losing causes: %s', choice.consequences.join(', '));
       }
+      // Send event to the root scope
+      $rootScope.$broadcast('game:selection', choice);
     }
     apply() {
       // Create new vars
@@ -51,6 +56,9 @@ function gameService($log, Step, Var) {
       });
       // Apply existing choices
       this.history.forEach(choice => this.update(choice.changes));
+    }
+    get feedback() {
+      return this.hasFeedback() ? _.last(this.history).feedback : null;
     }
     get consequences() {
       return _(this.history).map('consequences').flatten().uniq().value();

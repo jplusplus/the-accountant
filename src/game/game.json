@@ -67,7 +67,8 @@
       "text@en":"You are a young, energetic assistant at the city hall of a large European city. To advance in your career, you will have to make choices. Be careful.",
       "choices":[
         {
-          "text@en":"Go"
+          "text@en":"Go",
+          "feedback@en":"This game is very well desgined by the amazing team of Journalism++."
         }
       ]
     },

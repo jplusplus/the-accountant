@@ -46,8 +46,11 @@ function StepService(Choice, $log) {
     get index() {
       return this.game.steps.indexOf(this);
     }
+    get year() {
+      return Number(this[_meta].year);
+    }
     get text() {
-      return this[_meta]['text@en'];
+      return this[_meta]['text@en'] || null;
     }
     get game() {
       return this[_game];
