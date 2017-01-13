@@ -2,19 +2,19 @@
   "vars": {
     "resources": {
       "value": 10,
-      "private": true,
+      "private": false,
       "category": "city",
       "label@en": "Resources"
     },
     "expenditures": {
       "value": 9,
-      "private": true,
+      "private": false,
       "category": "city",
       "label@en": "Expenditures"
     },
     "reserves": {
       "value": 50,
-      "private": true,
+      "private": false,
       "category": "city",
       "label@en": "Reserves"
     },
@@ -27,16 +27,19 @@
     "risk_police": {
       "value": 0,
       "private": false,
+      "icon": "balance-scale",
       "category": "risk"
     },
     "risk_contractors": {
       "value": 0,
       "private": false,
+      "icon": "industry",
       "category": "risk"
     },
     "risk_political": {
       "value": 0,
       "private": false,
+      "icon": "handshake-o",
       "category": "risk"
     },
     "risk_revolving_door": {

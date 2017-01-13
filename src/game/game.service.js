@@ -123,6 +123,9 @@ function gameService($log, $rootScope, Step, Var, Ending) {
     get publicRisks() {
       return _.filter(this.vars, {category: 'risk', public: true});
     }
+    get publicVars() {
+      return _.filter(this.vars, {public: true});
+    }
   }
   return Game;
 }

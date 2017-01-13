@@ -46,6 +46,9 @@ function VarService() {
     get private() {
       return this[_meta].private;
     }
+    get icon() {
+      return this[_meta].icon;
+    }
     get public() {
       return !this.private;
     }

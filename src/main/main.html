@@ -1,5 +1,5 @@
 <div class="main" ng-class="{'main--has-feedback': $ctrl.showFeedback}">
-  <div class="main__toolbar">
+  <div class="main__toolbar" ng-dblclick="debug = !debug">
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm main__toolbar__var">
@@ -9,7 +9,7 @@
           </div>
         </div>
         <div class="col-sm main__toolbar__var" ng-repeat="risk in $ctrl.game.publicRisks">
-          {{ risk.label }}
+          <i class="fa fa-{{ risk.icon }}"></i> {{ risk.label }}
           <div class="main__toolbar__var__risk container-fluid">
             <div class="row">
               <div ng-repeat="value in risk.cases"
@@ -19,11 +19,22 @@
             </div>
           </div>
         </div>
+        <a class="col-sm main__toolbar__var main__toolbar__var--city" ng-click="$ctrl.showCityVars = !$ctrl.showCityVars">
+          <i class="fa fa-bank fa-2x"></i>
+        </a>
+      </div>
+    </div>
+    <div class="main__toolbar__city-vars" ng-if="!$ctrl.showCityVars">
+      <div class="col-sm main__toolbar__var" ng-repeat="var in $ctrl.game.publicVars|filter:{category: 'city'}">
+        {{ var.label }}
+        <div class="main__toolbar__var__digit">
+          €{{ var.value | number }} millions
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="main__debug small" ng-if="true">
+  <div class="main__debug small" ng-if="debug">
     <div class="row">
       <div class="main__debug__vars col-sm-4">
         <table class="table table-striped table-sm">
@@ -86,13 +97,27 @@
     </div>
   </div>
 
-  <div class="main__feedback" ng-if="$ctrl.showFeedback">
-    <div class="main__feedback__overlay" ng-click="$ctrl.showFeedback = false"></div>
-    <div class="main__feedback__card card card-block">
+  <div class="main__modal" ng-if="$ctrl.showFeedback">
+    <div class="main__modal__overlay" ng-click="$ctrl.showFeedback = false"></div>
+    <div class="main__modal__card card card-block">
       <p class="lead">{{ $ctrl.game.feedback }}</p>
       <div class="text-right">
         <button class="btn btn-primary" ng-click="$ctrl.showFeedback = false">
           Got it!
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="main__modal" ng-if="$ctrl.game.isOver()">
+    <div class="main__modal__overlay"></div>
+    <div class="main__modal__card card card-block">
+      <div ng-repeat="var in $ctrl.game.consequences">
+        <div ng-repeat="ending in $ctrl.game.endingsFor(var.name)" ng-bind-html="ending.text | unsafe"></div>
+      </div>
+      <div class="text-right">
+        <button class="btn btn-primary" ng-click="$ctrl.playAgain()">
+          Play again
         </button>
       </div>
     </div>
