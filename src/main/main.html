@@ -24,7 +24,7 @@
         </a>
       </div>
     </div>
-    <div class="main__toolbar__city-vars" ng-if="!$ctrl.showCityVars">
+    <div class="main__toolbar__city-vars" ng-if="$ctrl.showCityVars">
       <div class="col-sm main__toolbar__var" ng-repeat="var in $ctrl.game.publicVars|filter:{category: 'city'}">
         {{ var.label }}
         <div class="main__toolbar__var__digit">
