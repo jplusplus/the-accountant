@@ -82,10 +82,16 @@
   </div>
 
   <div class="main__steps">
-    <div class="main__steps__item card card-block" ng-repeat="step in $ctrl.game.steps | filter:$ctrl.game.isCurrent">
-      <div>
-        <span class="badge badge-info">{{ step.year }}</span>
+    <div class="main__steps__timeline container-fluid">
+      <div class="row">
+        <div ng-repeat="year in $ctrl.game.years" class="col main__steps__timeline__year"  ng-class="{ 'main__steps__timeline__year--active':  year <= $ctrl.game.step.year }">
+          <div class="main__steps__timeline__year__label">
+            {{ ::year }}
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="main__steps__item card card-block" ng-repeat="step in $ctrl.game.steps | filter:$ctrl.game.isCurrent">
       <p>{{ step.text }}</p>
       <ul class="list-unstyled row">
         <li class="col-lg my-1" ng-repeat="choice in step.choices">

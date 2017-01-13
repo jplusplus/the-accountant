@@ -105,6 +105,41 @@
     left:0;
     right:0;
 
+    &__timeline {
+
+      margin:$spacer;
+
+      &__year {
+        height:.5rem;
+        background: $brand-secondary;
+        position: relative;
+        filter:grayscale(100);
+        white-space: nowrap;
+        padding:0;
+        @include transition(600ms);
+
+        &--active {
+          filter:grayscale(0);
+        }
+
+        &:nth-child(even) {
+          background: lighten($brand-secondary, 10);
+        }
+
+        &__label {
+          font-size: .6rem;
+          position: absolute;
+          bottom:100%;
+          left:50%;
+          transform: translateX(-50%);
+        }
+
+        &:nth-child(even) &__label {
+          display: none;
+        }
+      }
+    }
+
     &__item {
       margin:$spacer;
     }
