@@ -60,6 +60,12 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       // Send event to the root scope
       $rootScope.$broadcast('game:selection', choice);
     }
+    undo() {
+      // Remove the last choice
+      this.history.pop();
+      // And apply the whole history
+      this.apply();
+    }
     apply() {
       // Create new vars
       this[_vars] = _.map(this[_meta].vars, (value, name) => {

@@ -92,7 +92,7 @@
       </div>
     </div>
     <div class="main__steps__item card card-block" ng-repeat="step in $ctrl.game.steps | filter:$ctrl.game.isCurrent">
-      <p>{{ step.text }}</p>
+      <p class="lead">{{ step.text }}</p>
       <ul class="list-unstyled row">
         <li class="col-lg my-1" ng-repeat="choice in step.choices">
           <button class="btn btn-block btn-primary" ng-click="step.select(choice)">
@@ -100,6 +100,9 @@
           </button>
         </li>
       </ul>
+      <button class="btn btn-link btn-sm main__steps__item__undo" ng-click="$ctrl.game.undo()" ng-if="$ctrl.game.history.length">
+        Undo the last action
+      </button>
     </div>
   </div>
 
