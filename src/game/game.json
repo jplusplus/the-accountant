@@ -2,58 +2,71 @@
   "vars": {
     "resources": {
       "value": 10,
+      "private": true,
       "category": "city",
       "label@en": "Resources"
     },
     "expenditures": {
       "value": 9,
+      "private": true,
       "category": "city",
       "label@en": "Expenditures"
     },
     "reserves": {
       "value": 50,
+      "private": true,
       "category": "city",
       "label@en": "Reserves"
     },
     "personal_account": {
       "value": 1000,
+      "private": true,
       "category": "player",
       "label@en": "Personal account"
     },
     "risk_police": {
       "value": 0,
+      "private": false,
       "category": "risk"
     },
     "risk_contractors": {
       "value": 0,
+      "private": false,
       "category": "risk"
     },
     "risk_political": {
       "value": 0,
+      "private": false,
       "category": "risk"
     },
     "risk_revolving_door": {
       "value": 0,
+      "private": true,
       "category": "risk"
     },
     "gift_company2": {
       "value": 0,
+      "private": true,
       "category": "choice"
     },
     "own_company": {
       "value": 0,
+      "private": true,
       "category": "choice"
     },
     "shell_company": {
       "value": 0,
+      "private": true,
       "category": "choice"
     },
     "trash_company": {
       "value": 0,
+      "private": true,
       "category": "choice"
     },
     "revolving_door": {
       "value": 0,
+      "private": true,
       "category": "choice"
     }
   },
