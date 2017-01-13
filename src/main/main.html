@@ -115,7 +115,7 @@
     </div>
   </div>
 
-  <div class="main__modal" ng-if="$ctrl.game.isOver()">
+  <div class="main__modal" ng-if="$ctrl.game.isOver() && !$ctrl.showFeedback">
     <div class="main__modal__overlay"></div>
     <div class="main__modal__card card card-block">
       <div ng-repeat="var in $ctrl.game.consequences">

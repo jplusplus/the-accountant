@@ -173,6 +173,17 @@
     bottom:0;
     overflow: auto;
 
+    @include transition(600ms);
+
+    &.ng-leave.ng-leave-active,
+    &.ng-enter {
+      opacity: 0;
+    }
+
+    &.ng-leave, &.ng-enter-active {
+      opacity: 1;
+    }
+
     &__overlay {
       background: rgba(black, .5);
       position: absolute;

@@ -25,10 +25,16 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       return step.isCurrent();
     }
     isOver() {
-      return _.some(this.history, _.method('hasConsequences'));
+      return _.some(this.history, _.method('hasConsequences')) || !this.hasStepsAhead();
     }
     hasFeedback() {
       return this.history.length ? _.last(this.history).hasFeedback() : false;
+    }
+    hasStepsAhead() {
+      return this.stepsAhead.length > 0;
+    }
+    hasStepsBehind() {
+      return this.stepsBehind.length > 0;
     }
     update(changes) {
       _.forEach(changes, (value, key) => {
