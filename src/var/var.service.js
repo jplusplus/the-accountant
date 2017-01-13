@@ -1,4 +1,5 @@
 export default VarService;
+import _ from 'lodash';
 
 /** @ngInject */
 function VarService() {
@@ -24,6 +25,9 @@ function VarService() {
     toString() {
       return this.name;
     }
+    isWorthIt() {
+      return _.some(this.game.endingsFor(this.name), _.property('assert'));
+    }
     get value() {
       return this[_meta].value;
     }
@@ -32,6 +36,9 @@ function VarService() {
     }
     get name() {
       return this[_meta].name;
+    }
+    get game() {
+      return this[_game];
     }
     get category() {
       return this[_meta].category;

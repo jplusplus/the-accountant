@@ -2,7 +2,7 @@ export default gameService;
 import _ from 'lodash';
 
 /** @ngInject */
-function gameService($log, $rootScope, Step, Var) {
+function gameService($log, $rootScope, Step, Var, Ending) {
   // Symbols declarion for private attributes and methods
   const _meta = Symbol('meta');
   const _vars = Symbol('vars');
@@ -14,6 +14,8 @@ function gameService($log, $rootScope, Step, Var) {
       this[_meta] = angular.copy(require('./game.json'));
       // Build step using meta data
       this[_meta].steps = this[_meta].steps.map(meta => new Step(meta, this));
+      // Build step using meta data
+      this[_meta].endings = this[_meta].endings.map(meta => new Ending(meta, this));
       // Prepare vars according to choice's history
       this.apply();
       // Notice the user
@@ -36,6 +38,9 @@ function gameService($log, $rootScope, Step, Var) {
     }
     var(name) {
       return _.find(this.vars, {name});
+    }
+    endingsFor(name) {
+      return _.filter(this.endingsWithVar, ending => ending.var.name === name);
     }
     select(choice) {
       this.history.push(choice);
@@ -87,7 +92,13 @@ function gameService($log, $rootScope, Step, Var) {
       return this.step.index;
     }
     get steps() {
-      return _.filter(this[_meta].steps);
+      return this[_meta].steps;
+    }
+    get endings() {
+      return this[_meta].endings;
+    }
+    get endingsWithVar() {
+      return _.filter(this.endings, _.method('hasCondition'));
     }
     get stepsBehind() {
       // Collect step from history step

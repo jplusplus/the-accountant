@@ -8,6 +8,7 @@ import Game from './game/game.service.js';
 import Step from './step/step.service.js';
 import Choice from './choice/choice.service.js';
 import Var from './var/var.service.js';
+import Ending from './ending/ending.service.js';
 import routesConfig from './routes';
 
 // Import SCSS with webpack
@@ -23,4 +24,5 @@ angular
   .service('Step', Step)
   .service('Choice', Choice)
   .service('Var', Var)
+  .service('Ending', Ending)
   .component('main', main);
