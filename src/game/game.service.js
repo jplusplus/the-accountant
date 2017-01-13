@@ -52,7 +52,10 @@ function gameService($log, Step, Var) {
       // Apply existing choices
       this.history.forEach(choice => this.update(choice.changes));
     }
-    // LList of choices made by the player
+    get consequences() {
+      return _(this.history).map('consequences').flatten().uniq().value();
+    }
+    // List of choices made by the player
     get history() {
       // Instanciate history if needed
       this[_history] = this[_history] || [];
@@ -61,14 +64,13 @@ function gameService($log, Step, Var) {
     }
     // List of step seen or currently seen by the player
     get journey() {
-      // Collect step from history step
-      const steps = _.map(this.history, _.property('step'));
-      // Start index
-      const from = steps.length ? _.last(steps).index + 1 : 0;
-      // Find the next step
-      steps.push(_.find(this.steps.slice(from), {assert: true}));
-      // Return the steps
-      return steps;
+      // Do not add any step if the party is over
+      if (this.isOver()) {
+        // Get only steps from the past
+        return this.stepsBehind;
+      }
+      // Get steps from the past and the first ahead
+      return this.stepsBehind.concat(this.stepsAhead.slice(0, 1));
     }
     get vars() {
       return this[_vars];
@@ -78,6 +80,17 @@ function gameService($log, Step, Var) {
     }
     get steps() {
       return _.filter(this[_meta].steps);
+    }
+    get stepsBehind() {
+      // Collect step from history step
+      return _.map(this.history, 'step');
+    }
+    get stepsAhead() {
+      const steps = this.stepsBehind;
+      // Start index
+      const from = steps.length ? _.last(steps).index + 1 : 0;
+      // Step must be valid
+      return _.filter(this.steps.slice(from), {assert: true});
     }
     get step() {
       return this.isOver() ? null : _.last(this.journey);
