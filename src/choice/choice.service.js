@@ -16,7 +16,7 @@ function ChoiceService() {
     takeRisks() {
       // Create a list of risk vars that make the player loose
       this[_consequences] = _.filter(this.step.game.risks, risk => {
-        return Math.random() <= risk.value / 5;
+        return Math.random() * 20 <= risk.value;
       });
       // Return true if that choice has consequences
       return this.hasConsequences();

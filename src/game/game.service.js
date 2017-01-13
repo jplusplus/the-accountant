@@ -23,7 +23,7 @@ function gameService($log, Step, Var) {
       return step.isCurrent();
     }
     isOver() {
-      return _.some(this.history, _.method('hasConsequences')) || !this.step;
+      return _.some(this.history, _.method('hasConsequences'));
     }
     update(changes) {
       _.forEach(changes, (value, key) => {
@@ -52,29 +52,35 @@ function gameService($log, Step, Var) {
       // Apply existing choices
       this.history.forEach(choice => this.update(choice.changes));
     }
-    takeRisks() {
-      // Create a list of risk vars that make the player loose
-      return _.filter(this.risks, risk => {
-        return Math.random() <= risk.value / 5;
-      });
-    }
+    // LList of choices made by the player
     get history() {
       // Instanciate history if needed
       this[_history] = this[_history] || [];
       // Return the array
       return this[_history];
     }
+    // List of step seen or currently seen by the player
+    get journey() {
+      // Collect step from history step
+      const steps = _.map(this.history, _.property('step'));
+      // Start index
+      const from = steps.length ? _.last(steps).index + 1 : 0;
+      // Find the next step
+      steps.push(_.find(this.steps.slice(from), {assert: true}));
+      // Return the steps
+      return steps;
+    }
     get vars() {
       return this[_vars];
     }
     get stepIndex() {
-      return this.history.length;
+      return this.step.index;
     }
     get steps() {
-      return _.filter(this[_meta].steps, {assert: true});
+      return _.filter(this[_meta].steps);
     }
     get step() {
-      return this.steps[this.stepIndex];
+      return this.isOver() ? null : _.last(this.journey);
     }
     get years() {
       return _(this.steps).map('year').compact().uniq().sort().value();

@@ -1,4 +1,5 @@
 export default StepService;
+import _ from 'lodash';
 
 /** @ngInject */
 function StepService(Choice, $log) {
@@ -18,7 +19,7 @@ function StepService(Choice, $log) {
       return this[_meta].hasOwnProperty('condition');
     }
     isCurrent() {
-      return this.game.stepIndex === this.index;
+      return this.game.step === this;
     }
     select(choice) {
       this.game.select(choice);
@@ -38,6 +39,9 @@ function StepService(Choice, $log) {
     }
     get choices() {
       return this[_choices];
+    }
+    get selection() {
+      return _.find(this.game.history, {step: this});
     }
     get index() {
       return this.game.steps.indexOf(this);

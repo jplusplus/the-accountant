@@ -9,12 +9,10 @@
     }
   }
 
-  &__vars {
-    opacity: .7;
-    max-width: 440px;
-    border:$table-border-color 1px solid;
+  &__debug {
     margin:$spacer;
-    table {
+    &__vars table {
+      border:$table-border-color 1px solid;
       margin:0;
     }
   }
