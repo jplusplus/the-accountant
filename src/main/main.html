@@ -118,9 +118,7 @@
   <div class="main__modal" ng-if="$ctrl.game.isOver() && !$ctrl.showFeedback">
     <div class="main__modal__overlay"></div>
     <div class="main__modal__card card card-block">
-      <div ng-repeat="var in $ctrl.game.consequences">
-        <div ng-repeat="ending in $ctrl.game.endingsFor(var.name)" ng-bind-html="ending.text | unsafe"></div>
-      </div>
+      <div ng-bind-html="$ctrl.game.end.text | unsafe"></div>
       <div class="text-right">
         <button class="btn btn-primary" ng-click="$ctrl.playAgain()">
           Play again

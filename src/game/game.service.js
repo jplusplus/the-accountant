@@ -100,6 +100,15 @@ function gameService($log, $rootScope, Step, Var, Ending) {
     get steps() {
       return this[_meta].steps;
     }
+    get end() {
+      // Did we had consequences?
+      if (this.consequences.length) {
+        // Get the last ending for the last consequence
+        return _.last(this.endingsFor(_.last(this.consequences).name));
+      }
+      // Last ending is the default
+      return _.last(this.endings);
+    }
     get endings() {
       return this[_meta].endings;
     }
