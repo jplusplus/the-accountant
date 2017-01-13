@@ -20,7 +20,7 @@
     },
     "personal_account": {
       "value": 1000,
-      "private": true,
+      "private": false,
       "category": "player",
       "label@en": "Personal account"
     },

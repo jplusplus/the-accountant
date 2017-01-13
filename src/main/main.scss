@@ -3,9 +3,58 @@
   &__toolbar {
     border-bottom: 2px solid $corduroy;
     background: rgba($body-bg, .5);
+    padding:$spacer/2;
 
     &__var {
-      padding:$spacer;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+
+      &__digit {
+        font-weight: bolder;
+        font-size: 1.2rem;
+        line-height: 1rem;
+      }
+
+      &__risk {
+        border:1px solid $corduroy;
+        max-width: 200px;
+        margin:auto;
+
+        &__case {
+          padding:0;
+          border-right:1px solid $corduroy;
+          position: relative;
+          display: block;
+
+          &:last-child {
+            border-right:0;
+          }
+
+          &:after {
+            content:"";
+            display: block;
+            width: 100%;
+            padding-bottom:100%;
+          }
+
+          &--active {
+            $max: $brand-danger;
+            $min: $brand-warning;
+            &:nth-child(1)  { background-color:mix($max, $min, 10); }
+            &:nth-child(2)  { background-color:mix($max, $min, 20); }
+            &:nth-child(3)  { background-color:mix($max, $min, 30); }
+            &:nth-child(4)  { background-color:mix($max, $min, 40); }
+            &:nth-child(4)  { background-color:mix($max, $min, 40); }
+            &:nth-child(5)  { background-color:mix($max, $min, 50); }
+            &:nth-child(6)  { background-color:mix($max, $min, 60); }
+            &:nth-child(7)  { background-color:mix($max, $min, 70); }
+            &:nth-child(8)  { background-color:mix($max, $min, 80); }
+            &:nth-child(9)  { background-color:mix($max, $min, 90); }
+            &:nth-child(10) { background-color:mix($max, $min, 100); }
+          }
+        }
+      }
     }
   }
 

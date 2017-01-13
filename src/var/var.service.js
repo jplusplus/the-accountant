@@ -49,6 +49,9 @@ function VarService() {
     get public() {
       return !this.private;
     }
+    get cases() {
+      return _.range(1, 11);
+    }
   }
   return Var;
 }
