@@ -74,6 +74,10 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
+angular-animate@^1.6.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/angular-animate/-/angular-animate-1.6.1.tgz#19e3b82b7392e2bbdd83af33c0af0d85437f3a14"
+
 "angular-cookies@>=1.2.26 <1.6":
   version "1.5.10"
   resolved "https://registry.yarnpkg.com/angular-cookies/-/angular-cookies-1.5.10.tgz#3bd1f137c04f86d27d88c02b6352752354787b6c"

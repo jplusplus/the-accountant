@@ -1,5 +1,6 @@
 // External modules
 import angular from 'angular';
+import 'angular-animate';
 import 'angular-ui-router';
 import 'angular-translate';
 // Internal modules
@@ -18,6 +19,7 @@ import './index.scss';
 angular
   .module('app', [
     'pascalprecht.translate',
+    'ngAnimate',
     'ui.router'
   ])
   .config(routesConfig)
