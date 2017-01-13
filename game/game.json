@@ -2,41 +2,44 @@
   "vars": {
     "resources": {
       "value": 10,
-      "private": true,
+      "private": false,
       "category": "city",
       "label@en": "Resources"
     },
     "expenditures": {
       "value": 9,
-      "private": true,
+      "private": false,
       "category": "city",
       "label@en": "Expenditures"
     },
     "reserves": {
       "value": 50,
-      "private": true,
+      "private": false,
       "category": "city",
       "label@en": "Reserves"
     },
     "personal_account": {
       "value": 1000,
-      "private": true,
+      "private": false,
       "category": "player",
       "label@en": "Personal account"
     },
     "risk_police": {
       "value": 0,
       "private": false,
+      "icon": "balance-scale",
       "category": "risk"
     },
     "risk_contractors": {
       "value": 0,
       "private": false,
+      "icon": "industry",
       "category": "risk"
     },
     "risk_political": {
       "value": 0,
       "private": false,
+      "icon": "handshake-o",
       "category": "risk"
     },
     "risk_revolving_door": {
@@ -76,8 +79,7 @@
       "text@en": "You are a young, energetic assistant at the city hall of a large European city. To advance in your career, you will have to make choices. Be careful.",
       "choices": [
         {
-          "text@en": "Go",
-          "feedback@en": "This game is very well desgined by the amazing team of Journalism++."
+          "text@en": "Go"
         }
       ]
     },
