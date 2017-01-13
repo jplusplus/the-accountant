@@ -62,9 +62,11 @@ function gameService($log, $rootScope, Step, Var, Ending) {
     }
     undo() {
       // Remove the last choice
-      this.history.pop();
+      const choice = this.history.pop();
       // And apply the whole history
       this.apply();
+      // Send event to the root scope
+      $rootScope.$broadcast('game:undo', choice);
     }
     apply() {
       // Create new vars

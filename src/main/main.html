@@ -81,7 +81,7 @@
     </div>
   </div>
 
-  <div class="main__steps">
+  <div class="main__steps" data-action="{{ $ctrl.lastAction }}">
     <div class="main__steps__timeline container-fluid">
       <div class="row">
         <div ng-repeat="year in $ctrl.game.years" class="col main__steps__timeline__year"  ng-class="{ 'main__steps__timeline__year--active':  year <= $ctrl.game.step.year }">
@@ -92,7 +92,7 @@
       </div>
     </div>
     <div class="main__steps__item card card-block" ng-repeat="step in $ctrl.game.steps | filter:$ctrl.game.isCurrent">
-      <p class="lead">{{ step.text }}</p>
+      <p class="lead"> {{ step.text }}</p>
       <ul class="list-unstyled row">
         <li class="col-lg my-1" ng-repeat="choice in step.choices">
           <button class="btn btn-block btn-primary" ng-click="step.select(choice)">
@@ -123,6 +123,9 @@
     <div class="main__modal__card card card-block">
       <div ng-bind-html="$ctrl.game.end.text | unsafe"></div>
       <div class="text-right">
+        <button class="btn btn-link float-left" ng-click="$ctrl.game.undo()">
+          Undo the last action
+        </button>
         <button class="btn btn-primary" ng-click="$ctrl.playAgain()">
           Play again
         </button>

@@ -151,21 +151,31 @@
       &.ng-enter {
         opacity: 0;
         transform: translateX(100%);
+
+        [data-action=undo] & {
+          transform: translateX(-100%);
+        }
       }
 
       &.ng-leave.ng-leave-active {
         opacity: 0;
         transform: translateX(-100%);
+
+        [data-action=undo] & {
+          transform: translateX(100%);
+        }
       }
 
       &.ng-leave, &.ng-enter-active {
         opacity: 1;
-        transform: translateX(0) scale(1);
+        transform: translateX(0);
       }
+
 
       .btn {
         cursor: pointer;
       }
+
     }
   }
 
