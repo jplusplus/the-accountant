@@ -43,6 +43,12 @@ function VarService() {
     get category() {
       return this[_meta].category;
     }
+    get private() {
+      return this[_meta].private;
+    }
+    get public() {
+      return !this.private;
+    }
   }
   return Var;
 }
