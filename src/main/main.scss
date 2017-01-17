@@ -1,15 +1,22 @@
 .main {
 
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  box-shadow: 0 0 50vh 0 $stonewall inset;
+
   &__toolbar {
-    border-bottom: 2px solid $corduroy;
-    background: rgba($body-bg, .5);
+    background: transparent;
     position: relative;
 
     &__var {
       text-align: center;
       text-transform: uppercase;
-      font-size: 0.9rem;
+      font-size: 1rem;
       padding:$spacer/2;
+      font-family: $headings-font-family;
 
       .main &--city {
         background: $brand-inverse;
@@ -36,13 +43,13 @@
       }
 
       &__risk {
-        border:1px solid $corduroy;
+        border:1px dotted $body-color;
         max-width: 200px;
         margin:auto;
 
         &__case {
           padding:0;
-          border-right:1px solid $corduroy;
+          border-right:1px dotted $body-color;
           position: relative;
           display: block;
           background-color: $body-bg;
@@ -60,8 +67,8 @@
           }
 
           &--active {
-            $max: $brand-danger;
-            $min: $brand-warning;
+            $max: $bittersweet;
+            $min: $brand-secondary;
             &:nth-child(1)  { background-color:mix($max, $min, 10); }
             &:nth-child(2)  { background-color:mix($max, $min, 20); }
             &:nth-child(3)  { background-color:mix($max, $min, 30); }
@@ -96,17 +103,22 @@
     &__vars table {
       border:$table-border-color 1px solid;
       margin:0;
+      thead th {
+        color: white;
+      }
     }
   }
 
   &__steps {
     position: fixed;
     bottom:0;
-    left:0;
+    left:50%;
     right:0;
+    transform: translate(-50%);
+    width:100%;
+    max-width: 880px;
 
     &__timeline {
-
       margin:$spacer;
 
       &__year {
@@ -127,11 +139,12 @@
         }
 
         &__label {
-          font-size: .6rem;
+          font-size: .8rem;
           position: absolute;
           bottom:100%;
           left:50%;
           transform: translateX(-50%);
+          font-family: $headings-font-family;
         }
 
         &:nth-child(even) &__label {
@@ -142,8 +155,9 @@
 
     &__item {
       margin:$spacer;
+      border-bottom-width: 0.5rem;
       position: absolute;
-      bottom:2rem;
+      bottom:3rem;
       left:0;
       right:0;
       @include transition(600ms);
@@ -153,7 +167,7 @@
         transform: translateX(100%);
 
         [data-action=undo] & {
-          transform: translateX(-100%);
+          transform: translateX(0%);
         }
       }
 
@@ -174,6 +188,12 @@
 
       .btn {
         cursor: pointer;
+        white-space: normal;
+        height:100%;
+
+        &.btn-primary {
+          border-bottom: darken($btn-primary-bg, 10) solid .5em;
+        }
       }
 
     }
