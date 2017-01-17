@@ -15,8 +15,8 @@ function ChoiceService() {
     }
     takeRisks() {
       // Create a list of risk vars that make the player loose
-      this[_consequences] = _.filter(this.step.game.risks, risk => {
-        return risk.isWorthIt() && Math.random() * 20 <= risk.value;
+      this[_consequences] = _.filter(this.risks, risk => {
+        return Math.random() * 20 <= risk.value;
       });
       // Return true if that choice has consequences
       return this.hasConsequences();
@@ -26,6 +26,16 @@ function ChoiceService() {
     }
     hasFeedback() {
       return this[_meta].hasOwnProperty('feedback@en');
+    }
+    // Risks related to that choices
+    get risks() {
+      // Variables changed by this choice (the risk must be included)
+      const changes = _.keys(this.changes);
+      // Filter risks list to the one included in the changes
+      return _.filter(this.step.game.risks, risk => {
+        // Some risk may not be worth it, yet
+        return changes.indexOf(risk.name) && risk.isWorthIt();
+      });
     }
     get consequences() {
       return this[_consequences] || [];
