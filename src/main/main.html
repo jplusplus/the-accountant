@@ -91,18 +91,26 @@
         </div>
       </div>
     </div>
-    <div class="main__steps__item card card-block" ng-repeat="step in $ctrl.game.steps | filter:$ctrl.game.isCurrent">
-      <p> {{ step.text }}</p>
-      <ul class="list-unstyled row">
-        <li class="col-lg my-1" ng-class="{ 'col-lg-6': step.choices.length > 3 }" ng-repeat="choice in step.choices">
-          <button class="btn btn-block btn-primary" ng-click="step.select(choice)">
-            {{ choice.text }}
-          </button>
-        </li>
-      </ul>
-      <button class="btn btn-link btn-sm main__steps__item__undo" ng-click="$ctrl.game.undo()" ng-if="$ctrl.game.history.length">
-        Undo the last action
-      </button>
+    <div class="main__steps__item slide card card-block" ng-repeat="step in $ctrl.game.journey">
+      <p class="main__steps__item__slice slide" ng-repeat="sentence in step.text | limitTo:(step.slice + 1)" ng-click="step.nextSlice()">
+        <span class="main__steps__item__slice__wrapper">
+          {{ sentence }}
+        </span>
+      </p>
+      <fieldset ng-disabled="!step.isCurrent()" class="main__steps__item__choices slide" ng-if="step.isLastSlice()">
+        <ul class="list-unstyled row mb-0">
+          <li class="col-lg my-1" ng-class="{ 'col-lg-6': step.choices.length > 3 }" ng-repeat="choice in step.choices">
+            <button class="btn btn-block btn-primary" ng-click="step.select(choice)" ng-class="{ active: step.selection == choice }">
+              {{ choice.text }}
+            </button>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset ng-if="!$first" ng-disabled="!$last">
+        <button class="btn btn-block btn-link btn-sm main__steps__item__undo" ng-click="$ctrl.game.undo()">
+          Undo the last action
+        </button>
+      </fieldset>
     </div>
   </div>
 

@@ -6,6 +6,7 @@ import 'angular-translate';
 // Internal modules
 import {main} from './main/main.js';
 import unsafe from './unsafe/unsafe.filter.js';
+import slide from './slide/slide.animation.js';
 import Game from './game/game.service.js';
 import Step from './step/step.service.js';
 import Choice from './choice/choice.service.js';
@@ -24,6 +25,7 @@ angular
   ])
   .config(routesConfig)
   .filter('unsafe', unsafe)
+  .animation('.slide', slide)
   .service('Game', Game)
   .service('Step', Step)
   .service('Choice', Choice)

@@ -111,15 +111,20 @@
 
   &__steps {
     position: fixed;
-    bottom:0;
+    bottom:4rem;
     left:50%;
     right:0;
     transform: translate(-50%);
     width:100%;
     max-width: 880px;
+    overflow: visible;
 
     &__timeline {
-      margin:$spacer;
+      margin:$spacer * 2 $spacer;
+      position: absolute;
+      top:100%;
+      left:0;
+      right:0;
 
       &__year {
         height:.5rem;
@@ -154,48 +159,56 @@
     }
 
     &__item {
-      margin:$spacer;
+      margin:0 $spacer;
       border-bottom-width: 0.5rem;
-      position: absolute;
-      bottom:3rem;
-      left:0;
-      right:0;
       @include transition(600ms);
 
-      &.ng-enter {
-        opacity: 0;
-        transform: translateX(100%);
+      &__slice {
+        margin-bottom:2px;
 
-        [data-action=undo] & {
-          transform: translateX(0%);
+        &__wrapper {
+          font-size:1.1rem;
+          padding:$spacer / 2;
+          background: darken($card-bg, 5);
+          display: inline-block;
+          border-radius: 0.5rem;
         }
       }
 
-      &.ng-leave.ng-leave-active {
-        opacity: 0;
-        transform: translateX(-100%);
+      &__choices {
+        margin-top: $spacer;
 
-        [data-action=undo] & {
-          transform: translateX(100%);
+        li:first-child .btn {
+          border-radius:0.5rem 0 0 0.5rem;
+        }
+
+        li:last-child .btn {
+          border-radius:0 0.5rem 0.5rem 0;
+        }
+
+        li:first-child:last-child .btn {
+          border-radius:0.5rem;
+        }
+
+        li:not(:first-child) {
+          padding-left:2px;
+        }
+
+        li:not(:last-child) {
+          padding-right:2px;
         }
       }
-
-      &.ng-leave, &.ng-enter-active {
-        opacity: 1;
-        transform: translateX(0);
-      }
-
 
       .btn {
         cursor: pointer;
         white-space: normal;
         height:100%;
 
-        &.btn-primary {
-          border-bottom: darken($btn-primary-bg, 10) solid .5em;
+        &:not(.active):disabled {
+          opacity: .3;
+          filter:grayscale(100);
         }
       }
-
     }
   }
 

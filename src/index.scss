@@ -1,11 +1,10 @@
-@import url(//fonts.googleapis.com/css?family=VT323|Lato:300,400,600,900);
+@import url(//fonts.googleapis.com/css?family=Lato:300,400,600,900);
 @import url(//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css);
 
 $font-family-sans-serif: 'Lato', 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-$headings-font-family: 'VT323', monospace;
 
 $tarawera: #09233B;
-$bittersweet: #fa7b69;
+$bittersweet: #f85038;
 $goldenrod: #fdd66b;
 $scandal: #dcf5fb;
 $stonewall: #908570;
@@ -14,8 +13,7 @@ $bermuda: #99ffff;
 $copperfield: #dc8459;
 
 
-$brand-primary: $bermuda;
-$brand-success: $bittersweet;
+$brand-primary: $bittersweet;
 $brand-secondary: #F9CF98;
 $brand-warning: $copperfield;
 $brand-inverse: #2E3646;
@@ -23,8 +21,8 @@ $brand-inverse: #2E3646;
 $body-bg: #E5DBCE;
 $body-color: #323334;
 
-$btn-primary-color: mix($brand-primary, $brand-inverse, 30);
-$link-color: $btn-primary-color;
+$btn-primary-color: white;
+$link-color: mix($brand-primary, $body-color);
 
 $card-bg: #F7F7F7;
 $card-border-color: white;

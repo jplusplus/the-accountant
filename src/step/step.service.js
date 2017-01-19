@@ -7,6 +7,7 @@ function StepService(Choice, $log) {
   const _meta = Symbol('meta');
   const _game = Symbol('game');
   const _choices = Symbol('choices');
+  const _slice = Symbol('_slice');
 
   class Step {
     constructor(meta, game) {
@@ -21,10 +22,22 @@ function StepService(Choice, $log) {
     isCurrent() {
       return this.game.step === this;
     }
+    isLastSlice() {
+      return this.slice === this.text.length - 1;
+    }
     select(choice) {
       this.game.select(choice);
       // Add info to the log
       $log.info('Step %s: choice %s', this.index, choice.index);
+    }
+    nextSlice() {
+      this.slice = this.slice + 1;
+    }
+    set slice(val) {
+      this[_slice] = Math.max(0, Math.min(this.text.length - 1, val));
+    }
+    get slice() {
+      return this[_slice] || 0;
     }
     get assert() {
       // Minimum value condition
@@ -50,7 +63,7 @@ function StepService(Choice, $log) {
       return Number(this[_meta].year);
     }
     get text() {
-      return this[_meta]['text@en'] || null;
+      return _.castArray(this[_meta]['text@en'] || null);
     }
     get game() {
       return this[_game];
