@@ -76,7 +76,12 @@
   "steps": [
     {
       "year": 1993,
-      "text@en": "You are a young, energetic assistant at the city hall of a large European city. To advance in your career, you will have to make choices. Be careful.",
+      "text@en": [
+        "Hello, fellow traveller!",
+        "I so glad to see you here!",
+        "I've been waiting for you since a long time.",
+        "You are a young, energetic assistant at the city hall of a large European city. To advance in your career, you will have to make choices. Be careful."
+      ],
       "choices": [
         {
           "text@en": "Go"
@@ -85,7 +90,10 @@
     },
     {
       "year": 1994,
-      "text@en": "You issued a public tender for a new road segment, which you estimated at 10 million. Which offer do you pick?",
+      "text@en": [
+        "You issued a public tender for a new road segment, which you estimated at 10 million.",
+        " Which offer do you pick?"
+      ],
       "explainer_title@en": "How to spot a cartel?",
       "explainer_body@en": "Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous.",
       "choices": [
