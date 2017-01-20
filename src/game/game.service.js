@@ -59,6 +59,8 @@ function gameService($log, $rootScope, Step, Var, Ending) {
         // We loose!
         $log.info('Losing causes: %s', choice.consequences.join(', '));
       }
+      // Reset the current step's slice
+      this.step.slice = 0;
       // Send event to the root scope
       $rootScope.$broadcast('game:selection', choice);
     }

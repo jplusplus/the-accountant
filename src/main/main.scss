@@ -43,21 +43,21 @@
 
       &__digit {
         font-weight: bolder;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         line-height: 1rem;
       }
 
       &__risk {
-        border:1px dotted $body-color;
+        border:1px solid white;
         max-width: 200px;
         margin:auto;
 
         &__case {
           padding:0;
-          border-right:1px dotted $body-color;
+          border-right:1px solid white;
           position: relative;
           display: block;
-          background-color: $body-bg;
+          background-color: transparent;
           @include transition(600ms);
 
           &:last-child {
