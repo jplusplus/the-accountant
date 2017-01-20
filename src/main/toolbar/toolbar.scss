@@ -11,10 +11,9 @@
   overflow: visible;
 
   &__link {
-    width:100%;
-    height:$toolbar-width * 0.8;
+    padding:0;
+    margin:$spacer / 2 0;
     text-align: center;
-    vertical-align: middle;
     position: relative;
     cursor: pointer;
 
@@ -26,24 +25,18 @@
     }
 
     a {
+      display: block;
       color:inherit;
+      width:100%;
+      height:$toolbar-width * 0.8;
     }
 
-    &.active a {
-      color: $brand-inverse;
-    }
-  }
-
-  &__var, &__link {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1rem;
-    padding:$spacer / 2;
-    margin:$spacer / 2 0;
-    font-family: $headings-font-family;
-
-    .main &.active {
+    &.active {
       position: relative;
+
+      a {
+        color: $brand-inverse;
+      }
 
       &:before {
         z-index: -1;
@@ -57,6 +50,16 @@
         border-radius: 0.5rem 0 0 0.5rem;
       }
     }
+  }
+
+  &__var {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding:$spacer / 2;
+    margin:$spacer / 2 0;
+    font-family: $headings-font-family;
+
 
     &__digit {
       font-weight: bolder;
@@ -112,16 +115,5 @@
     border-color:rgba(white, 0.1);
     margin:$spacer $spacer / 2;
     padding:0;
-  }
-
-  &__city-vars {
-    max-width: 440px;
-    width:100%;
-    background: $brand-inverse;
-    color: white;
-    padding:$spacer;
-    position: absolute;
-    top:0;
-    left:100%;
   }
 }

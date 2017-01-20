@@ -84,7 +84,8 @@
       ],
       "choices": [
         {
-          "text@en": "Go"
+          "text@en": "Go",
+          "feedback@en": "And do not forget: the force is strong."
         }
       ]
     },
