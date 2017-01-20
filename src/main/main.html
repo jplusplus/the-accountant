@@ -9,9 +9,9 @@
           Undo the last action
         </button>
       </fieldset>
-      <p class="main__steps__item__slice" ng-repeat="sentence in step.text | limitTo:(step.slice + 1)" ng-click="step.nextSlice()">
+      <p class="main__steps__item__slice" ng-repeat="slice in step.slices | limitTo:(step.slice + 1)" ng-click="step.nextSlice()">
         <span class="main__steps__item__slice__wrapper">
-          {{ sentence }}
+          {{ slice.text }}
         </span>
       </p>
       <fieldset ng-disabled="!step.isCurrent()" class="main__steps__item__choices" ng-if="step.isLastSlice()">

@@ -25,6 +25,10 @@ export const main = {
       };
       // Continue to the next slice OR the next step if possible
       this.continue = () => {
+        // Party is over
+        if (this.game.step === null) {
+          return;
+        }
         // THis is the last slice and therre is only one choose
         if (this.game.step.isLastSlice() && this.game.step.choices.length === 1) {
           // Select the default value

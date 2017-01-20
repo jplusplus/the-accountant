@@ -2,12 +2,13 @@ export default StepService;
 import _ from 'lodash';
 
 /** @ngInject */
-function StepService(Choice, $log, $rootScope) {
+function StepService(Choice, Slice, $log, $rootScope) {
   // Symbols declarion for private attributes and methods
   const _meta = Symbol('meta');
   const _game = Symbol('game');
   const _choices = Symbol('choices');
   const _slice = Symbol('_slice');
+  const _slices = Symbol('_slices');
 
   class Step {
     constructor(meta, game) {
@@ -15,6 +16,8 @@ function StepService(Choice, $log, $rootScope) {
       this[_meta] = angular.copy(meta);
       // Create choices
       this[_choices] = this[_meta].choices.map(meta => new Choice(meta, this));
+      // Create slices
+      this[_slices] = this[_meta].texts.map(slice => new Slice(slice, this));
       // Ensure those method arround bound to the current instance
       ['nextSlice', 'select', 'isLastSlice', 'isCurrent', 'hasCondition'].forEach(m => {
         this[m] = this[m].bind(this);
@@ -27,7 +30,7 @@ function StepService(Choice, $log, $rootScope) {
       return this.game.step === this;
     }
     isLastSlice() {
-      return this.slice === this.text.length - 1;
+      return this.slice === this.slices.length - 1;
     }
     select(choice = _.last(this.choices)) {
       this.game.select(choice);
@@ -42,16 +45,16 @@ function StepService(Choice, $log, $rootScope) {
     // Express reading time of the current slice in milliseconds
     get readingTime() {
       // We read approximativly 270 word per minute
-      return this.lastSlice.split(' ').length * 60 / 270 * 1000;
+      return this.lastSlice.text.split(' ').length * 60 / 270 * 1000;
     }
     set slice(val) {
-      this[_slice] = Math.max(0, Math.min(this.text.length - 1, val));
+      this[_slice] = Math.max(0, Math.min(this.slices.length - 1, val));
     }
     get slice() {
       return this[_slice] || 0;
     }
     get lastSlice() {
-      return this.text[this.slice];
+      return this.slices[this.slice];
     }
     get assert() {
       // Minimum value condition
@@ -76,8 +79,8 @@ function StepService(Choice, $log, $rootScope) {
     get year() {
       return Number(this[_meta].year);
     }
-    get text() {
-      return _.castArray(this[_meta]['text@en'] || null);
+    get slices() {
+      return this[_slices];
     }
     get game() {
       return this[_game];
