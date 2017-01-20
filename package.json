@@ -4,6 +4,7 @@
     "angular-animate": "^1.6.1",
     "angular-cookies": "^1.6.1",
     "angular-dynamic-locale": "^0.1.32",
+    "angular-hotkeys": "^1.7.0",
     "angular-translate": "^2.13.1",
     "angular-translate-loader-static-files": "^2.13.1",
     "angular-translate-storage-cookie": "^2.13.1",

@@ -29,7 +29,7 @@ function StepService(Choice, $log, $rootScope) {
     isLastSlice() {
       return this.slice === this.text.length - 1;
     }
-    select(choice) {
+    select(choice = _.last(this.choices)) {
       this.game.select(choice);
       // Add info to the log
       $log.info('Step %s: choice %s', this.index, choice.index);

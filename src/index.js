@@ -4,6 +4,7 @@ import 'angular-animate';
 import 'angular-ui-router';
 import 'angular-translate';
 import 'angularjs-scroll-glue';
+import 'angular-hotkeys';
 // Internal modules
 import {main} from './main/main.js';
 import {mainDebug} from './main/debug/debug.js';
@@ -26,7 +27,8 @@ angular
     'pascalprecht.translate',
     'ngAnimate',
     'ui.router',
-    'luegg.directives'
+    'luegg.directives',
+    'cfp.hotkeys'
   ])
   .config(routesConfig)
   .filter('unsafe', unsafe)

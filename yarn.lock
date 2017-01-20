@@ -90,6 +90,10 @@ angular-dynamic-locale@^0.1.32:
   version "0.1.32"
   resolved "https://registry.yarnpkg.com/angular-dynamic-locale/-/angular-dynamic-locale-0.1.32.tgz#d07fea75281f25ba94a5be5b46df2a02c5e35836"
 
+angular-hotkeys@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/angular-hotkeys/-/angular-hotkeys-1.7.0.tgz#052e6b6f44dfcd824427798b7f10e1917e8700a1"
+
 angular-translate-loader-static-files@^2.13.1:
   version "2.13.1"
   resolved "https://registry.yarnpkg.com/angular-translate-loader-static-files/-/angular-translate-loader-static-files-2.13.1.tgz#61f0365fa749bc10afd6952eb1fa36de5f03569d"
