@@ -91,6 +91,31 @@
     }
   }
 
+  .main__picture {
+    position: absolute;
+    right:0;
+    bottom:0;
+    top:0;
+    width: calc(100% - #{$panel-width} - #{$toolbar-width});
+    overflow: hidden;
+    z-index:-1;
+    @include transition(1600ms);
+
+    &.ng-hide {
+      opacity: 0;
+    }
+
+    &__img {
+      min-width:100%;
+      min-height:100%;
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+
   &__timeline {
     position: absolute;
     bottom:0;

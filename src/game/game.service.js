@@ -147,6 +147,17 @@ function gameService($log, $rootScope, Step, Var, Ending) {
     get years() {
       return _(this.steps).map('year').compact().uniq().sort().value();
     }
+    get pictures() {
+      return this[_meta].years;
+    }
+    get picture() {
+      // Find the closest years
+      const year = _.chain(this.pictures).keys().sort().findLast(year => {
+        return year <= this.step.year;
+      });
+      // Return the picture for this year
+      return this.pictures[year];
+    }
     get risks() {
       return _.filter(this.vars, {category: 'risk'});
     }
