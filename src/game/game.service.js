@@ -59,17 +59,14 @@ function gameService($log, $rootScope, Step, Var, Ending) {
         // We loose!
         $log.info('Losing causes: %s', choice.consequences.join(', '));
       }
-      // Party is not over yet
-      if (this.step !== null) {
-        // Reset the current step's slice
-        this.step.slice = 0;
-      }
       // Send event to the root scope
       $rootScope.$broadcast('game:selection', choice);
     }
     undo() {
       // Remove the last choice
       const choice = this.history.pop();
+      // Reset the current step's slice
+      choice.undo();
       // And apply the whole history
       this.apply();
       // Send event to the root scope
@@ -131,8 +128,8 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       return _.filter(this.endings, _.method('hasCondition'));
     }
     get stepsBehind() {
-      // Collect step from history step
-      return _.map(this.history, 'step');
+      // Collect step from history step that are done
+      return _.chain(this.history).map('step').filter(_.method('isDone')).value();
     }
     get stepsAhead() {
       const steps = this.stepsBehind;

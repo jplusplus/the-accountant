@@ -101,7 +101,17 @@
       ],
       "choices": [
         {
-          "text@en": "Go"
+          "text@en": "Go",
+          "feedback": [
+            {
+              "character": "mayor",
+              "text@en": "Oh no."
+            },
+            {
+              "character": "mayor",
+              "text@en": "No no no."
+            }
+          ]
         }
       ]
     },

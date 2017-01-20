@@ -9,12 +9,12 @@
           Undo the last action
         </button>
       </fieldset>
-      <p class="main__steps__item__slice" ng-repeat="slice in step.slices | limitTo:(step.slice + 1)" ng-click="step.nextSlice()">
+      <p class="main__steps__item__slice" ng-repeat="slice in step.slices | limitTo:(step.slice + 1)">
         <span class="main__steps__item__slice__wrapper">
           {{ slice.text }}
         </span>
       </p>
-      <fieldset ng-disabled="!step.isCurrent()" class="main__steps__item__choices" ng-if="step.isLastSlice()">
+      <fieldset ng-disabled="step.selection" class="main__steps__item__choices" ng-if="step.isLastSlice()">
         <div class="list-unstyled row mb-0">
           <div class="col-lg mt-1 main__steps__item__choices__btn" ng-class="{ 'col-lg-6': step.choices.length > 3 }" ng-repeat="choice in step.choices">
             <button class="btn btn-block btn-primary" ng-click="step.select(choice)" ng-class="{ active: step.selection == choice }">
@@ -23,11 +23,13 @@
           </div>
         </div>
       </fieldset>
-      <p class="main__steps__item__slice main__steps__item__slice--feedback mt-4" ng-if="step.selection.feedback">
-        <span class="main__steps__item__slice__wrapper">
-          {{ step.selection.feedback }}
-        </span>
-      </p>
+      <div class="mt-4" ng-if="step.selection && step.selection.hasFeedback()">
+        <p class="main__steps__item__slice main__steps__item__slice--feedback"  ng-repeat="slice in step.selection.feedback">
+          <span class="main__steps__item__slice__wrapper">
+            {{ slice.text }}
+          </span>
+        </p>
+      </div>
     </div>
   </div>
 

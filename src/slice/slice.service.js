@@ -4,11 +4,11 @@ export default SliceService;
 function SliceService() {
   // Symbols declarion for private attributes and methods
   const _meta = Symbol('meta');
-  const _step = Symbol('step');
+  const _parent = Symbol('parent');
 
   class Choice {
-    constructor(meta, step) {
-      this[_step] = step;
+    constructor(meta, parent) {
+      this[_parent] = parent;
       this[_meta] = angular.copy(meta);
     }
     get text() {
@@ -17,8 +17,8 @@ function SliceService() {
     get character() {
       return this[_meta].character;
     }
-    get step() {
-      return this[_step];
+    get parent() {
+      return this[_parent];
     }
   }
   return Choice;

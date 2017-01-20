@@ -2,14 +2,17 @@ export default ChoiceService;
 import _ from 'lodash';
 
 /** @ngInject */
-function ChoiceService() {
+function ChoiceService(Slice, Slicable) {
   // Symbols declarion for private attributes and methods
   const _meta = Symbol('meta');
   const _step = Symbol('step');
   const _consequences = Symbol('consequences');
 
-  class Choice {
+  class Choice extends Slicable {
     constructor(meta, step) {
+      // Create slices using the parent constructor
+      super(meta.feedback);
+      // Set private properties
       this[_step] = step;
       this[_meta] = angular.copy(meta);
     }
@@ -25,7 +28,12 @@ function ChoiceService() {
       return this.consequences.length;
     }
     hasFeedback() {
-      return this[_meta].hasOwnProperty('feedback@en');
+      return this[_meta].hasOwnProperty('feedback');
+    }
+    undo() {
+      this.slice = 0;
+      // Undo the parent step
+      _.without(this.step.game.stepsAhead, this.step).forEach(_.method('undo'));
     }
     // Risks related to that choices
     get risks() {
@@ -50,7 +58,7 @@ function ChoiceService() {
       return this[_meta]['text@en'] || null;
     }
     get feedback() {
-      return this[_meta]['feedback@en'] || null;
+      return this.slices;
     }
     get step() {
       return this[_step];

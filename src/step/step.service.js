@@ -2,24 +2,23 @@ export default StepService;
 import _ from 'lodash';
 
 /** @ngInject */
-function StepService(Choice, Slice, $log, $rootScope) {
+function StepService(Choice, Slice, Slicable, $rootScope, $log) {
   // Symbols declarion for private attributes and methods
   const _meta = Symbol('meta');
   const _game = Symbol('game');
   const _choices = Symbol('choices');
-  const _slice = Symbol('_slice');
-  const _slices = Symbol('_slices');
 
-  class Step {
+  class Step extends Slicable {
     constructor(meta, game) {
+      // Create slices using the parent constructor
+      super(meta.texts);
+      // Set private properties
       this[_game] = game;
       this[_meta] = angular.copy(meta);
       // Create choices
       this[_choices] = this[_meta].choices.map(meta => new Choice(meta, this));
-      // Create slices
-      this[_slices] = this[_meta].texts.map(slice => new Slice(slice, this));
       // Ensure those method arround bound to the current instance
-      ['nextSlice', 'select', 'isLastSlice', 'isCurrent', 'hasCondition'].forEach(m => {
+      ['nextSlice', 'select', 'isLastSlice', 'isCurrent', 'hasCondition', 'undo'].forEach(m => {
         this[m] = this[m].bind(this);
       });
     }
@@ -29,8 +28,8 @@ function StepService(Choice, Slice, $log, $rootScope) {
     isCurrent() {
       return this.game.step === this;
     }
-    isLastSlice() {
-      return this.slice === this.slices.length - 1;
+    isDone() {
+      return this.isLastSlice() && this.selection; // && this.selection.isLastSlice();
     }
     select(choice = _.last(this.choices)) {
       this.game.select(choice);
@@ -38,23 +37,12 @@ function StepService(Choice, Slice, $log, $rootScope) {
       $log.info('Step %s: choice %s', this.index, choice.index);
     }
     nextSlice() {
-      this.slice = this.slice + 1;
+      super.nextSlice();
       // Broadcast the event about this slice
       $rootScope.$broadcast('game:step:slice:next', this);
     }
-    // Express reading time of the current slice in milliseconds
-    get readingTime() {
-      // We read approximativly 270 word per minute
-      return this.lastSlice.text.split(' ').length * 60 / 270 * 1000;
-    }
-    set slice(val) {
-      this[_slice] = Math.max(0, Math.min(this.slices.length - 1, val));
-    }
-    get slice() {
-      return this[_slice] || 0;
-    }
-    get lastSlice() {
-      return this.slices[this.slice];
+    undo() {
+      this.slice = 0;
     }
     get assert() {
       // Minimum value condition
@@ -78,9 +66,6 @@ function StepService(Choice, Slice, $log, $rootScope) {
     }
     get year() {
       return Number(this[_meta].year);
-    }
-    get slices() {
-      return this[_slices];
     }
     get game() {
       return this[_game];
