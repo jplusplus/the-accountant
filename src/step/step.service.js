@@ -16,7 +16,7 @@ function StepService(Choice, $log, $rootScope) {
       // Create choices
       this[_choices] = this[_meta].choices.map(meta => new Choice(meta, this));
       // Ensure those method arround bound to the current instance
-      ['nextSlice'].forEach(m => {
+      ['nextSlice', 'select', 'isLastSlice', 'isCurrent', 'hasCondition'].forEach(m => {
         this[m] = this[m].bind(this);
       });
     }

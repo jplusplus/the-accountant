@@ -6,8 +6,9 @@ import 'angular-translate';
 import 'angularjs-scroll-glue';
 // Internal modules
 import {main} from './main/main.js';
-import {mainToolbar} from './main/toolbar/toolbar.js';
 import {mainDebug} from './main/debug/debug.js';
+import {mainToolbar} from './main/toolbar/toolbar.js';
+import {mainVars} from './main/vars/vars.js';
 import unsafe from './unsafe/unsafe.filter.js';
 import slide from './slide/slide.animation.js';
 import Game from './game/game.service.js';
@@ -36,5 +37,6 @@ angular
   .service('Var', Var)
   .service('Ending', Ending)
   .component('main', main)
+  .component('mainDebug', mainDebug)
   .component('mainToolbar', mainToolbar)
-  .component('mainDebug', mainDebug);
+  .component('mainVars', mainVars);

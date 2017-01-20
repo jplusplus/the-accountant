@@ -8,6 +8,14 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
   $stateProvider
     .state('main', {
       url: '/',
-      component: 'main'
+      component: 'main',
+      resolve: {
+        /** @ngInject */
+        game: Game => new Game()
+      }
+    })
+    .state('main.vars', {
+      url: 'vars',
+      component: 'mainVars'
     });
 }

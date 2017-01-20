@@ -6,22 +6,6 @@
   bottom:0;
   box-shadow: 0 0 50vh 0 $stonewall inset;
 
-  &__debug {
-    position: absolute;
-    right:0;
-    bottom:0;
-    top:0;
-    width: calc(100% - #{$panel-width} - #{$toolbar-width});
-
-    &__vars table {
-      border:$table-border-color 1px solid;
-      margin:0;
-      thead th {
-        color: white;
-      }
-    }
-  }
-
   &__steps {
     background: white;
     position: fixed;

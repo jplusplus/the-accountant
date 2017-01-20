@@ -18,22 +18,15 @@
       </div>
     </div>
   </div>
-  <div class="main__toolbar__var main__toolbar__var--city">
-    <a ng-click="$ctrl.showCityVars = !$ctrl.showCityVars">
-      <i class="fa fa-bank fa-2x"></i>
+  <hr class="main__toolbar__separator" />
+  <div class="main__toolbar__link" ui-sref-active-eq="active">
+    <a ui-sref="main.vars">
+      <i class="fa fa-line-chart fa-2x"></i>
     </a>
   </div>
-  <div class="main__toolbar__var main__toolbar__var--conversation">
-    <a ng-click="">
+  <div class="main__toolbar__link" ui-sref-active-eq="active">
+    <a ui-sref="main">
       <i class="fa fa-comments-o fa-2x"></i>
     </a>
-  </div>
-  <div class="main__toolbar__city-vars" ng-if="$ctrl.showCityVars">
-    <div class="col-sm main__toolbar__var" ng-repeat="var in $ctrl.game.publicVars|filter:{category: 'city'}">
-      {{ var.label }}
-      <div class="main__toolbar__var__digit">
-        €{{ var.value | number }} millions
-      </div>
-    </div>
   </div>
 </div>

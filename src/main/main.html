@@ -2,7 +2,7 @@
   <main-toolbar game="$ctrl.game" ng-dblclick="debug = !debug"></main-toolbar>
   <main-debug game="$ctrl.game" ng-if="debug"></main-debug>
 
-  <div class="main__steps" scroll-glue data-last-action="{{ $ctrl.lastAction }}">
+  <div class="main__steps" ui-view scroll-glue data-last-action="{{ $ctrl.lastAction }}">
     <div class="main__steps__item card card-block" ng-repeat="step in $ctrl.game.journey">
       <fieldset ng-if="!$first" ng-disabled="!$last">
         <button class="btn btn-block btn-link btn-sm main__steps__item__undo mb-4" ng-click="$ctrl.game.undo()">
