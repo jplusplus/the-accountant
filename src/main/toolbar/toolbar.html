@@ -1,0 +1,39 @@
+<div class="main__toolbar">
+  <div class="main__toolbar__var">
+    <i class="fa fa-money"></i>
+    <span class="sr-only">Your bank account</span>
+    <div class="main__toolbar__var__digit">
+      €{{ $ctrl.game.var('personal_account').value | number }}
+    </div>
+  </div>
+  <div class="main__toolbar__var" ng-repeat="risk in $ctrl.game.publicRisks">
+    <i class="fa fa-{{ risk.icon }}"></i>
+    <span class="sr-only">{{ risk.label }}</span>
+    <div class="main__toolbar__var__risk container-fluid">
+      <div class="row">
+        <div ng-repeat="value in risk.cases"
+             class="main__toolbar__var__risk__case col"
+             ng-class="{'main__toolbar__var__risk__case--active': value <= risk.value}">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main__toolbar__var main__toolbar__var--city">
+    <a ng-click="$ctrl.showCityVars = !$ctrl.showCityVars">
+      <i class="fa fa-bank fa-2x"></i>
+    </a>
+  </div>
+  <div class="main__toolbar__var main__toolbar__var--conversation">
+    <a ng-click="">
+      <i class="fa fa-comments-o fa-2x"></i>
+    </a>
+  </div>
+  <div class="main__toolbar__city-vars" ng-if="$ctrl.showCityVars">
+    <div class="col-sm main__toolbar__var" ng-repeat="var in $ctrl.game.publicVars|filter:{category: 'city'}">
+      {{ var.label }}
+      <div class="main__toolbar__var__digit">
+        €{{ var.value | number }} millions
+      </div>
+    </div>
+  </div>
+</div>
