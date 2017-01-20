@@ -23,8 +23,13 @@
     &__item {
       margin:0.5rem;
 
-      &:not(:last-child) {
+      &:not(:last-child) &__slice,
+      &:not(:last-child) &__choices {
         opacity:0.4;
+      }
+
+      &:nth-last-child(2) &__slice--feedback {
+        opacity: 1;
       }
 
       &__slice {
