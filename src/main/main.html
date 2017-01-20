@@ -23,6 +23,11 @@
           </div>
         </div>
       </fieldset>
+      <p class="main__steps__item__slice mt-4" ng-if="step.selection.feedback">
+        <span class="main__steps__item__slice__wrapper">
+          {{ step.selection.feedback }}
+        </span>
+      </p>
     </div>
   </div>
 
@@ -34,18 +39,6 @@
             {{ ::year }}
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="main__modal" ng-if="$ctrl.showFeedback">
-    <div class="main__modal__overlay" ng-click="$ctrl.showFeedback = false"></div>
-    <div class="main__modal__card card card-block">
-      <p class="lead">{{ $ctrl.game.feedback }}</p>
-      <div class="text-right">
-        <button class="btn btn-primary" ng-click="$ctrl.showFeedback = false">
-          Got it!
-        </button>
       </div>
     </div>
   </div>
