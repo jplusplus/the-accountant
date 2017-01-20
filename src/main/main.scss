@@ -14,7 +14,7 @@
     bottom:0;
     background: $brand-inverse;
     color: white;
-    width:5rem;
+    width: $toolbar-width;
     z-index:1000;
     overflow: visible;
 
@@ -27,7 +27,7 @@
 
       .main &--city {
         width:100%;
-        height:5rem;
+        height:$toolbar-width;
         text-align: center;
         vertical-align: middle;
         position: relative;
@@ -108,7 +108,7 @@
     right:0;
     bottom:0;
     top:0;
-    width: calc(100% - 880px - 5rem);
+    width: calc(100% - #{$panel-width} - #{$toolbar-width});
 
     &__vars table {
       border:$table-border-color 1px solid;
@@ -124,9 +124,9 @@
     position: fixed;
     bottom:4rem;
     top:0;
-    left:5rem;
-    width:100%;
-    max-width: 880px;
+    left:$toolbar-width;
+    width:calc(100% - #{$toolbar-width});
+    max-width: $panel-width;
     overflow: auto;
     border:0.5rem solid $brand-inverse;
     border-left:0;
@@ -135,6 +135,10 @@
 
     &__item {
       margin:0.5rem;
+
+      &:not(:last-child) {
+        opacity:0.4;
+      }
 
       &__slice {
         margin-bottom:2px;
@@ -151,24 +155,34 @@
       &__choices {
         margin-top: $spacer;
 
-        li:first-child .btn {
-          border-radius:0.5rem 0 0 0.5rem;
-        }
-
-        li:last-child .btn {
-          border-radius:0 0.5rem 0.5rem 0;
-        }
-
-        li:first-child:last-child .btn {
+        &__btn:first-child:last-child .btn {
           border-radius:0.5rem;
         }
 
-        li:not(:first-child) {
-          padding-left:2px;
+        &__btn:first-child .btn {
+          border-radius:0.5rem 0.5rem 0 0;
         }
 
-        li:not(:last-child) {
-          padding-right:2px;
+        &__btn:last-child .btn {
+          border-radius:0 0 0.5rem 0.5rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+          &__btn:first-child .btn {
+            border-radius:0.5rem 0 0 0.5rem;
+          }
+
+          &__btn:last-child .btn {
+            border-radius:0 0.5rem 0.5rem 0;
+          }
+
+          &__btn:not(:first-child) {
+            padding-left:2px;
+          }
+
+          &__btn:not(:last-child) {
+            padding-right:2px;
+          }
         }
       }
 
@@ -188,10 +202,10 @@
   &__timeline {
     position: absolute;
     bottom:0;
-    left:5rem;
-    width:100%;
+    left: $toolbar-width;
+    width:calc(100% - #{$toolbar-width});
     padding:$spacer * 2 $spacer;
-    max-width: 880px;
+    max-width: $panel-width;
     background: white;
     height:4rem;
     border:0.5rem solid $brand-inverse;

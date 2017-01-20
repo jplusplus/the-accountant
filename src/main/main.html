@@ -20,8 +20,13 @@
         </div>
       </div>
       <div class="main__toolbar__var main__toolbar__var--city">
-        <a class="" ng-click="$ctrl.showCityVars = !$ctrl.showCityVars">
+        <a ng-click="$ctrl.showCityVars = !$ctrl.showCityVars">
           <i class="fa fa-bank fa-2x"></i>
+        </a>
+      </div>
+      <div class="main__toolbar__var main__toolbar__var--conversation">
+        <a ng-click="">
+          <i class="fa fa-comments-o fa-2x"></i>
         </a>
       </div>
       <div class="main__toolbar__city-vars" ng-if="$ctrl.showCityVars">
@@ -93,13 +98,13 @@
         </span>
       </p>
       <fieldset ng-disabled="!step.isCurrent()" class="main__steps__item__choices" ng-if="step.isLastSlice()">
-        <ul class="list-unstyled row mb-0">
-          <li class="col-lg my-1" ng-class="{ 'col-lg-6': step.choices.length > 3 }" ng-repeat="choice in step.choices">
+        <div class="list-unstyled row mb-0">
+          <div class="col-lg mt-1 main__steps__item__choices__btn" ng-class="{ 'col-lg-6': step.choices.length > 3 }" ng-repeat="choice in step.choices">
             <button class="btn btn-block btn-primary" ng-click="step.select(choice)" ng-class="{ active: step.selection == choice }">
               {{ choice.text }}
             </button>
-          </li>
-        </ul>
+          </div>
+        </div>
       </fieldset>
     </div>
   </div>

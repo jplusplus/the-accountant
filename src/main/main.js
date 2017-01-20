@@ -3,9 +3,10 @@ export const main = {
   /** @ngInject */
   controller(Game, $scope, $timeout) {
     // Method to start a new party
-    this.playAgain = () => {
+    this.playAgain = this.start = () => {
       // Simply create a new instance of game
       this.game = new Game();
+      this.waitNextSlice();
     };
     // Create a timeout to go to the next slice
     this.waitNextSlice = () => {
@@ -28,7 +29,6 @@ export const main = {
     // Go automaticaly to the next slice
     $scope.$on('game:step:slice:next', this.waitNextSlice);
     // Create a gave
-    this.game = new Game();
-    this.waitNextSlice();
+    this.start();
   }
 };
