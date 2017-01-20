@@ -65,16 +65,17 @@
     }
 
     &__risk {
-      border:1px solid white;
-      max-width: 200px;
+      border:1px solid $brand-inverse;
+      width: $toolbar-width - $spacer;
+      white-space: nowrap;
       margin:auto;
 
       &__case {
         padding:0;
-        border-right:1px solid white;
+        border-right:1px solid $brand-inverse;
         position: relative;
         display: block;
-        background-color: transparent;
+        background-color: rgba(white, 0.1);
         @include transition(600ms);
 
         &:last-child {

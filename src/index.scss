@@ -41,6 +41,8 @@ $panel-width:  map-get($grid-breakpoints, md);
 
 @import "main/main.scss";
 @import "main/toolbar/toolbar.scss";
+@import "main/debug/debug.scss";
+@import "main/vars/vars.scss";
 
 body {
   background:url("~/images/blackdenim.png") repeat $body-bg;

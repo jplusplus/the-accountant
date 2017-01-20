@@ -1,10 +1,9 @@
-<div class="main__vars">
-  <pre>
-    {{  $ctrl.game | json }}
-  </pre>
-  <div class="col-sm main__vars" ng-repeat="var in $ctrl.game.publicVars|filter:{category: 'city'}">
-    {{ var.label }}
-    <div class="main__vars__digit">
+<div class="main__vars container-fluid">
+  <div class="row main__vars__item" ng-repeat="var in $ctrl.game.publicVars|filter:{category: 'city'}">
+    <div class="main__vars__item__label col">
+      {{ var.label }}
+    </div>
+    <div class="main__vars__item__value col">
       €{{ var.value | number }} millions
     </div>
   </div>
