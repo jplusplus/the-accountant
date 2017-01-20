@@ -75,5 +75,8 @@
     "extends": [
       "xo-space/esnext"
     ]
+  },
+  "dependencies": {
+    "angularjs-scroll-glue": "^2.1.0"
   }
 }

@@ -3,6 +3,7 @@ import angular from 'angular';
 import 'angular-animate';
 import 'angular-ui-router';
 import 'angular-translate';
+import 'angularjs-scroll-glue';
 // Internal modules
 import {main} from './main/main.js';
 import unsafe from './unsafe/unsafe.filter.js';
@@ -21,7 +22,8 @@ angular
   .module('app', [
     'pascalprecht.translate',
     'ngAnimate',
-    'ui.router'
+    'ui.router',
+    'luegg.directives'
   ])
   .config(routesConfig)
   .filter('unsafe', unsafe)
