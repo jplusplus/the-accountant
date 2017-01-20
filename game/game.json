@@ -73,6 +73,11 @@
       "category": "choice"
     }
   },
+  "years": {
+    "1993": "images/years/1993.jpeg",
+    "1996": "images/years/1996.jpeg",
+    "1998": "images/years/1998.jpeg"
+  },
   "steps": [
     {
       "year": 1993,
