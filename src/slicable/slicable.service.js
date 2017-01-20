@@ -13,12 +13,19 @@ function SlicableService(Slice) {
       this[_meta] = angular.copy(meta);
       // Create slices
       this[_slices] = _.castArray(this[_meta]).map(slice => new Slice(slice, this));
+      // Ensure those method arround bound to the current instance
+      ['nextSlice', 'isLastSlice'].forEach(m => {
+        this[m] = this[m].bind(this);
+      });
     }
     isLastSlice() {
       return this.slice === this.slices.length - 1;
     }
     nextSlice() {
       this.slice = this.slice + 1;
+    }
+    finalSlice() {
+      this.slice = this.slices.length - 1;
     }
     // Express reading time of the current slice in milliseconds
     get readingTime() {

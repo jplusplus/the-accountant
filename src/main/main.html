@@ -24,7 +24,7 @@
         </div>
       </fieldset>
       <div class="mt-4" ng-if="step.selection && step.selection.hasFeedback()">
-        <p class="main__steps__item__slice main__steps__item__slice--feedback"  ng-repeat="slice in step.selection.feedback">
+        <p class="main__steps__item__slice main__steps__item__slice--feedback"  ng-repeat="slice in step.selection.slices | limitTo:(step.selection.slice + 1)">
           <span class="main__steps__item__slice__wrapper">
             {{ slice.text }}
           </span>

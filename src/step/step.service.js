@@ -18,7 +18,7 @@ function StepService(Choice, Slice, Slicable, $rootScope, $log) {
       // Create choices
       this[_choices] = this[_meta].choices.map(meta => new Choice(meta, this));
       // Ensure those method arround bound to the current instance
-      ['nextSlice', 'select', 'isLastSlice', 'isCurrent', 'hasCondition', 'undo'].forEach(m => {
+      ['select', 'isCurrent', 'hasCondition', 'undo'].forEach(m => {
         this[m] = this[m].bind(this);
       });
     }
@@ -29,7 +29,7 @@ function StepService(Choice, Slice, Slicable, $rootScope, $log) {
       return this.game.step === this;
     }
     isDone() {
-      return this.isLastSlice() && this.selection; // && this.selection.isLastSlice();
+      return this.isLastSlice() && this.selection && this.selection.isLastSlice();
     }
     select(choice = _.last(this.choices)) {
       this.game.select(choice);

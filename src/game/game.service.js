@@ -18,6 +18,10 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       this[_meta].endings = this[_meta].endings.map(meta => new Ending(meta, this));
       // Prepare vars according to choice's history
       this.apply();
+      // Ensure those method arround bound to the current instance
+      ['nextSlice'].forEach(m => {
+        this[m] = this[m].bind(this);
+      });
       // Notice the user
       $log.info(`Starting game with ${this.steps.length} steps`);
       // And broadcast a starting event
@@ -79,6 +83,26 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       });
       // Apply existing choices
       this.history.forEach(choice => this.update(choice.changes));
+    }
+    nextSlice() {
+      return this.targetSlice.nextSlice();
+    }
+    finalSlice() {
+      return this.targetSlice.finalSlice();
+    }
+    get readingTime() {
+      return this.targetSlice.readingTime;
+    }
+    get targetSlice() {
+      // Next slice within the step's selection
+      if (this.step.selection && this.step.isLastSlice()) {
+        return this.step.selection;
+      }
+      // Next slice within the step by default
+      return this.step;
+    }
+    get slice() {
+      return this.step.slice + (this.step.selection ? this.step.selection.slice : 0);
     }
     get feedback() {
       return this.hasFeedback() ? _.last(this.history).feedback : null;
