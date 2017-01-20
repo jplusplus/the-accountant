@@ -2,7 +2,7 @@ export default StepService;
 import _ from 'lodash';
 
 /** @ngInject */
-function StepService(Choice, $log) {
+function StepService(Choice, $log, $rootScope) {
   // Symbols declarion for private attributes and methods
   const _meta = Symbol('meta');
   const _game = Symbol('game');
@@ -15,6 +15,10 @@ function StepService(Choice, $log) {
       this[_meta] = angular.copy(meta);
       // Create choices
       this[_choices] = this[_meta].choices.map(meta => new Choice(meta, this));
+      // Ensure those method arround bound to the current instance
+      ['nextSlice'].forEach(m => {
+        this[m] = this[m].bind(this);
+      });
     }
     hasCondition() {
       return this[_meta].hasOwnProperty('condition');
@@ -32,12 +36,22 @@ function StepService(Choice, $log) {
     }
     nextSlice() {
       this.slice = this.slice + 1;
+      // Broadcast the event about this slice
+      $rootScope.$broadcast('game:step:slice:next', this);
+    }
+    // Express reading time of the current slice in milliseconds
+    get readingTime() {
+      // We read approximativly 270 word per minute
+      return this.lastSlice.split(' ').length * 60 / 270 * 1000;
     }
     set slice(val) {
       this[_slice] = Math.max(0, Math.min(this.text.length - 1, val));
     }
     get slice() {
       return this[_slice] || 0;
+    }
+    get lastSlice() {
+      return this.text[this.slice];
     }
     get assert() {
       // Minimum value condition

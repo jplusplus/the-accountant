@@ -1,5 +1,4 @@
 .main {
-
   position: fixed;
   top:0;
   left:0;
@@ -9,7 +8,15 @@
 
   &__toolbar {
     background: transparent;
-    position: relative;
+    position: absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    background: $brand-inverse;
+    color: white;
+    width:5rem;
+    z-index:1000;
+    overflow: visible;
 
     &__var {
       text-align: center;
@@ -19,10 +26,8 @@
       font-family: $headings-font-family;
 
       .main &--city {
-        background: $brand-inverse;
-        color: white !important;
-        padding:0;
-        max-width:4rem;
+        width:100%;
+        height:5rem;
         text-align: center;
         vertical-align: middle;
         position: relative;
@@ -92,14 +97,19 @@
       color: white;
       padding:$spacer;
       position: absolute;
-      top:100%;
-      right:0;
+      top:0;
+      left:100%;
     }
   }
 
 
   &__debug {
-    margin:$spacer;
+    position: absolute;
+    right:0;
+    bottom:0;
+    top:0;
+    width: calc(100% - 880px - 5rem);
+
     &__vars table {
       border:$table-border-color 1px solid;
       margin:0;
@@ -110,19 +120,21 @@
   }
 
   &__steps {
+    background: white;
     position: fixed;
     bottom:4rem;
-    left:50%;
-    transform: translate(-50%);
+    top:0;
+    left:5rem;
     width:100%;
     max-width: 880px;
-    max-height: 80vh;
     overflow: auto;
+    border:0.5rem solid $brand-inverse;
+    border-left:0;
+    border-bottom:0;
+    z-index:500;
 
     &__item {
-      margin:0 $spacer;
-      border-bottom-width: 0.5rem;
-      @include transition(600ms);
+      margin:0.5rem;
 
       &__slice {
         margin-bottom:2px;
@@ -176,11 +188,15 @@
   &__timeline {
     position: absolute;
     bottom:0;
-    left:50%;
-    transform: translate(-50%);
+    left:5rem;
     width:100%;
-    padding:$spacer;
+    padding:$spacer * 2 $spacer;
     max-width: 880px;
+    background: white;
+    height:4rem;
+    border:0.5rem solid $brand-inverse;
+    border-left:0;
+    border-top:0;
 
     &__year {
       height:.5rem;
@@ -221,7 +237,7 @@
     right:0;
     bottom:0;
     overflow: auto;
-
+    z-index:2000;
     @include transition(600ms);
 
     &.ng-leave.ng-leave-active,

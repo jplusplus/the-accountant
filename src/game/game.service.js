@@ -20,6 +20,8 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       this.apply();
       // Notice the user
       $log.info(`Starting game with ${this.steps.length} steps`);
+      // And broadcast a starting event
+      $rootScope.$broadcast('game:start', this);
     }
     isCurrent(step) {
       return step.isCurrent();

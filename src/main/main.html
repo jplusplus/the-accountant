@@ -1,82 +1,81 @@
 <div class="main" ng-class="{'main--has-feedback': $ctrl.showFeedback}">
   <div class="main__toolbar" ng-dblclick="debug = !debug">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm main__toolbar__var">
-          Your bank account
-          <div class="main__toolbar__var__digit">
-            €{{ $ctrl.game.var('personal_account').value | number }}
-          </div>
+      <div class="main__toolbar__var">
+        <i class="fa fa-money"></i>
+        <span class="sr-only">Your bank account</span>
+        <div class="main__toolbar__var__digit">
+          €{{ $ctrl.game.var('personal_account').value | number }}
         </div>
-        <div class="col-sm main__toolbar__var" ng-repeat="risk in $ctrl.game.publicRisks">
-          <i class="fa fa-{{ risk.icon }}"></i> {{ risk.label }}
-          <div class="main__toolbar__var__risk container-fluid">
-            <div class="row">
-              <div ng-repeat="value in risk.cases"
-                   class="main__toolbar__var__risk__case col"
-                   ng-class="{'main__toolbar__var__risk__case--active': value <= risk.value}">
-              </div>
+      </div>
+      <div class="main__toolbar__var" ng-repeat="risk in $ctrl.game.publicRisks">
+        <i class="fa fa-{{ risk.icon }}"></i>
+        <span class="sr-only">{{ risk.label }}</span>
+        <div class="main__toolbar__var__risk container-fluid">
+          <div class="row">
+            <div ng-repeat="value in risk.cases"
+                 class="main__toolbar__var__risk__case col"
+                 ng-class="{'main__toolbar__var__risk__case--active': value <= risk.value}">
             </div>
           </div>
         </div>
-        <a class="col-sm main__toolbar__var main__toolbar__var--city" ng-click="$ctrl.showCityVars = !$ctrl.showCityVars">
+      </div>
+      <div class="main__toolbar__var main__toolbar__var--city">
+        <a class="" ng-click="$ctrl.showCityVars = !$ctrl.showCityVars">
           <i class="fa fa-bank fa-2x"></i>
         </a>
       </div>
-    </div>
-    <div class="main__toolbar__city-vars" ng-if="$ctrl.showCityVars">
-      <div class="col-sm main__toolbar__var" ng-repeat="var in $ctrl.game.publicVars|filter:{category: 'city'}">
-        {{ var.label }}
-        <div class="main__toolbar__var__digit">
-          €{{ var.value | number }} millions
+      <div class="main__toolbar__city-vars" ng-if="$ctrl.showCityVars">
+        <div class="col-sm main__toolbar__var" ng-repeat="var in $ctrl.game.publicVars|filter:{category: 'city'}">
+          {{ var.label }}
+          <div class="main__toolbar__var__digit">
+            €{{ var.value | number }} millions
+          </div>
         </div>
       </div>
     </div>
   </div>
 
   <div class="main__debug small" ng-if="debug">
-    <div class="row">
-      <div class="main__debug__vars col-sm-4">
-        <table class="table table-striped table-sm">
-          <thead class="thead-inverse">
-            <tr>
-              <th style="width: 40%">Label</th>
-              <th>Category</th>
-              <th>Value</th>
-              <th>Worth it</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr ng-repeat="var in $ctrl.game.vars">
-              <td>
-                {{ var.label }}
-              </td>
-              <td>
-                {{ var.category }}
-              </td>
-              <td>
-                {{ var.value }}
-              </td>
-              <td>
-                <span class="badge badge-danger" ng-if="var.isWorthIt()">DANGER</span>
-                <span class="badge badge-success" ng-if="!var.isWorthIt()">OK</span>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="main__debug__journey card card-block col-sm-8">
-        <ol>
-          <li ng-repeat="step in $ctrl.game.journey">
-            {{ step.text }}
-            <div ng-if="step.selection">
-              ↪️ <span class="badge badge-default">{{ step.selection.text }}</span>
-            </div>
-          </li>
-        </ol>
-        <div ng-if="$ctrl.game.isOver()" class="alert alert-danger">
-          Game over: <span class="badge badge-danger" ng-repeat="var in $ctrl.game.consequences">{{ var }}</span>
-        </div>
+    <div class="main__debug__vars">
+      <table class="table table-striped table-sm">
+        <thead class="thead-inverse">
+          <tr>
+            <th style="width: 40%">Label</th>
+            <th>Category</th>
+            <th>Value</th>
+            <th>Worth it</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="var in $ctrl.game.vars">
+            <td>
+              {{ var.label }}
+            </td>
+            <td>
+              {{ var.category }}
+            </td>
+            <td>
+              {{ var.value }}
+            </td>
+            <td>
+              <span class="badge badge-danger" ng-if="var.isWorthIt()">DANGER</span>
+              <span class="badge badge-success" ng-if="!var.isWorthIt()">OK</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="main__debug__journey card card-block">
+      <ol>
+        <li ng-repeat="step in $ctrl.game.journey">
+          {{ step.text }}
+          <div ng-if="step.selection">
+            ↪️ <span class="badge badge-default">{{ step.selection.text }}</span>
+          </div>
+        </li>
+      </ol>
+      <div ng-if="$ctrl.game.isOver()" class="alert alert-danger">
+        Game over: <span class="badge badge-danger" ng-repeat="var in $ctrl.game.consequences">{{ var }}</span>
       </div>
     </div>
   </div>
@@ -84,7 +83,7 @@
   <div class="main__steps" scroll-glue data-last-action="{{ $ctrl.lastAction }}">
     <div class="main__steps__item card card-block" ng-repeat="step in $ctrl.game.journey">
       <fieldset ng-if="!$first" ng-disabled="!$last">
-        <button class="btn btn-block btn-link btn-sm main__steps__item__undo mb-1" ng-click="$ctrl.game.undo()">
+        <button class="btn btn-block btn-link btn-sm main__steps__item__undo mb-4" ng-click="$ctrl.game.undo()">
           Undo the last action
         </button>
       </fieldset>
