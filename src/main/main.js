@@ -42,6 +42,7 @@ export const main = {
       };
       // Go automaticaly to the next slice
       $scope.$on('game:slice:next', this.waitNextSlice);
+      $scope.$on('game:selection', this.waitNextSlice);
       // Create a gave
       this.waitNextSlice();
       // Watch keyboard

@@ -9,7 +9,7 @@
           Undo the last action
         </button>
       </fieldset>
-      <p class="main__steps__item__slice" ng-repeat="slice in step.slices | limitTo:(step.slice + 1)">
+      <p class="main__steps__item__slice" ng-repeat="slice in step.slices | limitTo:(step.slice + 1)" ng-click="$ctrl.game.nextSlice()">
         <span class="main__steps__item__slice__wrapper">
           {{ slice.text }}
         </span>
@@ -24,7 +24,7 @@
         </div>
       </fieldset>
       <div class="mt-4" ng-if="step.selection && step.selection.hasFeedback()">
-        <p class="main__steps__item__slice main__steps__item__slice--feedback"  ng-repeat="slice in step.selection.slices | limitTo:(step.selection.slice + 1)">
+        <p class="main__steps__item__slice main__steps__item__slice--feedback" ng-repeat="slice in step.selection.slices | limitTo:(step.selection.slice + 1)"  ng-click="$ctrl.game.nextSlice()">
           <span class="main__steps__item__slice__wrapper">
             {{ slice.text }}
           </span>
