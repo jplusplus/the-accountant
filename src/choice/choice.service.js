@@ -31,7 +31,7 @@ function ChoiceService(Slice, Slicable) {
       return this[_meta].hasOwnProperty('feedback');
     }
     undo() {
-      this.slice = 0;
+      this.slice = -1;
       // Undo the parent step
       _.without(this.step.game.stepsAhead, this.step).forEach(_.method('undo'));
     }

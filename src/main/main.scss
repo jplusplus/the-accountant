@@ -37,7 +37,7 @@
 
         &__wrapper {
           font-size:1.1rem;
-          padding:$spacer / 2;
+          padding:$spacer / 4 $spacer / 2;
           background: darken($card-bg, 5);
           display: inline-block;
           border-radius: 0.5rem;

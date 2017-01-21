@@ -25,6 +25,9 @@ function StepService(Choice, Slice, Slicable, $rootScope, $log) {
     hasCondition() {
       return this[_meta].hasOwnProperty('condition');
     }
+    isPrevious() {
+      return this === this.game.journey.slice(-2)[0];
+    }
     isCurrent() {
       return this.game.step === this;
     }
@@ -42,7 +45,7 @@ function StepService(Choice, Slice, Slicable, $rootScope, $log) {
       $rootScope.$broadcast('game:step:slice:next', this);
     }
     undo() {
-      this.slice = 0;
+      this.slice = -1;
     }
     get assert() {
       // Minimum value condition
