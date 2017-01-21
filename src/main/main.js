@@ -4,7 +4,7 @@ export const main = {
     game: '<'
   },
   /** @ngInject */
-  controller($state, $scope, $timeout, $log, hotkeys) {
+  controller($state, $scope, $timeout, hotkeys, $transitions) {
     this.$onInit = () => {
       // Method to start a new party
       this.playAgain = this.start = () => {
@@ -42,7 +42,8 @@ export const main = {
       };
       // Go automaticaly to the next slice
       $scope.$on('game:slice:next', this.waitNextSlice);
-      $scope.$on('game:selection', this.waitNextSlice);
+      // Restart the timer when re-entering this state
+      $transitions.onSuccess({to: 'main'}, this.waitNextSlice);
       // Create a gave
       this.waitNextSlice();
       // Watch keyboard
