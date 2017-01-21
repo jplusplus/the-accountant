@@ -20,11 +20,17 @@
     border-bottom:0;
     z-index:500;
 
+    @include media-breakpoint-down(sm) {
+      font-size:0.9rem;
+      border:0;
+    }
+
     &__item {
       margin:0.5rem;
 
       @include media-breakpoint-down(sm) {
         font-size:0.9rem;
+        padding:0.4rem;
       }
 
       &:not(:last-child) &__slice,
@@ -132,6 +138,10 @@
     border:0.5rem solid $brand-inverse;
     border-left:0;
     border-top:0;
+
+    @include media-breakpoint-down(sm) {
+      border:0;
+    }
 
     &__year {
       height:.5rem;

@@ -13,6 +13,7 @@ export const main = {
       };
       // Create a timeout to go to the next slice
       this.waitNextSlice = () => {
+        this.year = this.game.step.year;
         // Cancel any existing timeout
         $timeout.cancel(this.nextSliceTimeout);
         // Party might be over
