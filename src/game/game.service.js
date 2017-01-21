@@ -55,6 +55,10 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       return _.filter(this.endingsWithVar, ending => ending.var.name === name);
     }
     select(choice) {
+      // Avoid adding a choice twice
+      if (this.history.indexOf(choice) > -1) {
+        return;
+      }
       this.history.push(choice);
       // Apply changes
       this.update(choice.changes);
@@ -85,7 +89,9 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       this.history.forEach(choice => this.update(choice.changes));
     }
     nextSlice() {
-      return this.targetSlice.nextSlice();
+      this.targetSlice.nextSlice();
+      // Emit an event
+      $rootScope.$broadcast("game:slice:next", this.targetSlice);
     }
     finalSlice() {
       return this.targetSlice.finalSlice();

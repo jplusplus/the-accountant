@@ -13,6 +13,8 @@ function SlicableService(Slice) {
       this[_meta] = angular.copy(meta);
       // Create slices
       this[_slices] = _.castArray(this[_meta]).map(slice => new Slice(slice, this));
+      // Start before 0 (ie no slice)
+      this[_slice] = -1;
       // Ensure those method arround bound to the current instance
       ['nextSlice', 'isLastSlice'].forEach(m => {
         this[m] = this[m].bind(this);
@@ -29,17 +31,21 @@ function SlicableService(Slice) {
     }
     // Express reading time of the current slice in milliseconds
     get readingTime() {
-      // We read approximativly 270 word per minute
-      return this.lastSlice.text.split(' ').length * 60 / 270 * 1000;
+      if (this.lastSlice !== null) {
+        // We read approximativly 270 word per minute
+        return this.lastSlice.text.split(' ').length * 60 / 270 * 1000;
+      }
+      // Default duration
+      return 0;
     }
     set slice(val) {
       this[_slice] = Math.max(0, Math.min(this.slices.length - 1, val));
     }
     get slice() {
-      return this[_slice] || 0;
+      return this[_slice];
     }
     get lastSlice() {
-      return this.slices[this.slice];
+      return this.slices[this.slice] || null;
     }
     get slices() {
       return this[_slices];
