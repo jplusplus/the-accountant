@@ -42,18 +42,6 @@
         opacity: 1;
       }
 
-      &__slice {
-        margin-bottom:2px;
-
-        &__wrapper {
-          font-size:1.1em;
-          padding:$spacer / 4 $spacer / 2;
-          background: darken($card-bg, 5);
-          display: inline-block;
-          border-radius: 0.5rem;
-        }
-      }
-
       &__choices {
         margin-top: $spacer;
 

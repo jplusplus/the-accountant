@@ -1,0 +1,16 @@
+<div class="slicable">
+  <p class="slicable__slice" ng-repeat="slice in $ctrl.slicable.slices | limitTo:($ctrl.slicable.slice + 1)" ng-click="$ctrl.game.nextSlice()">
+    <img ng-src="//api.adorable.io/avatars/18/{{ :: slice.character }}.png"  class="slicable__slice__avatar" alt="" ng-if="$last" />
+    <span class="slicable__slice__character" ng-if="$first">
+      {{ :: slice.character }}
+    </span>
+    <span class="slicable__slice__wrapper">
+      {{ :: slice.text }}
+    </span>
+  </p>
+  <p class="slicable__slice" ng-if="!$ctrl.slicable.isLastSlice()">
+    <span class="slicable__slice__wrapper slicable__slice__wrapper--typing">
+      <img src="//logo-js.herokuapp.com/loading-three-dots/999" height="8px" />
+    </span>
+  </p>
+</div>

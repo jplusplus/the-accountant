@@ -10,6 +10,7 @@ import {main} from './main/main.js';
 import {mainDebug} from './main/debug/debug.js';
 import {mainToolbar} from './main/toolbar/toolbar.js';
 import {mainVars} from './main/vars/vars.js';
+import {slicable} from './slicable/slicable.js';
 import unsafe from './unsafe/unsafe.filter.js';
 import slide from './slide/slide.animation.js';
 import Game from './game/game.service.js';
@@ -45,4 +46,5 @@ angular
   .component('main', main)
   .component('mainDebug', mainDebug)
   .component('mainToolbar', mainToolbar)
-  .component('mainVars', mainVars);
+  .component('mainVars', mainVars)
+  .component('slicable', slicable);
