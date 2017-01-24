@@ -19,6 +19,7 @@ import Slicable from './slicable/slicable.service.js';
 import Slice from './slice/slice.service.js';
 import Choice from './choice/choice.service.js';
 import Var from './var/var.service.js';
+import Character from './character/character.service.js';
 import Ending from './ending/ending.service.js';
 import routesConfig from './routes';
 
@@ -42,6 +43,7 @@ angular
   .service('Slice', Slice)
   .service('Choice', Choice)
   .service('Var', Var)
+  .service('Character', Character)
   .service('Ending', Ending)
   .component('main', main)
   .component('mainDebug', mainDebug)
