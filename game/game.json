@@ -76,6 +76,33 @@
       "category": "choice"
     }
   },
+  "characters": {
+    "mayor": {
+      "name@en": "Birgit Meyer",
+      "title@en": "Mayor",
+      "avatar": null
+    },
+    "lawyer": {
+      "name@en": "Jamila Ballard",
+      "title@en": "Lawyer",
+      "avatar": null
+    },
+    "construction-boss": {
+      "name@en": "Robert Gerber",
+      "title@en": "CEO of Concrete Company Ltd",
+      "avatar": null
+    },
+    "university-boss": {
+      "name@en": "Adrian Wynn",
+      "title@en": "Childhood friend",
+      "avatar": null
+    },
+    "football-boss": {
+      "name@en": "Martin Gomez",
+      "title@en": "President of the local football club",
+      "avatar": null
+    }
+  },
   "years": {
     "1993": "images/years/night.jpeg",
     "1996": "images/years/street.jpeg",
@@ -1646,23 +1673,6 @@
       ]
     }
   ],
-  "characters": {
-    "mayor": {
-      "name@en": "The Mayor"
-    },
-    "construction-boss": {
-      "name@en": "Boss of City Construction Limited"
-    },
-    "lawyer": {
-      "name@en": "Your lawyer"
-    },
-    "football-boss": {
-      "name@en": "Boss of the City F.C."
-    },
-    "university-boss": {
-      "name@en": "Director of the University"
-    }
-  },
   "endings": [
     {
       "condition": {
