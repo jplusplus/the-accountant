@@ -79,28 +79,28 @@
   "characters": {
     "mayor": {
       "name@en": "Birgit Meyer",
-      "title@en": "Mayor",
-      "avatar": null
+      "title@en": "The Mayor",
+      "avatar": "./images/avatars/mayor.jpg"
     },
     "lawyer": {
       "name@en": "Jamila Ballard",
-      "title@en": "Lawyer",
-      "avatar": null
+      "title@en": "Your lawyer",
+      "avatar": "./images/avatars/lawyer.jpg"
     },
     "construction-boss": {
       "name@en": "Robert Gerber",
-      "title@en": "CEO of Concrete Company Ltd",
-      "avatar": null
+      "title@en": "Boss of City Construction Limited",
+      "avatar": "./images/avatars/construction-boss.jpg"
     },
     "university-boss": {
       "name@en": "Adrian Wynn",
-      "title@en": "Childhood friend",
-      "avatar": null
+      "title@en": "Director of the University",
+      "avatar": "./images/avatars/university-boss.jpg"
     },
     "football-boss": {
       "name@en": "Martin Gomez",
-      "title@en": "President of the local football club",
-      "avatar": null
+      "title@en": "President of the City Football Club",
+      "avatar": "./images/avatars/football-boss.jpg"
     }
   },
   "years": {
