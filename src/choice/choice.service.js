@@ -11,7 +11,7 @@ function ChoiceService(Slice, Slicable) {
   class Choice extends Slicable {
     constructor(meta, step) {
       // Create slices using the parent constructor
-      super(meta.feedback);
+      super(meta.feedback || []);
       // Set private properties
       this[_step] = step;
       this[_meta] = angular.copy(meta);

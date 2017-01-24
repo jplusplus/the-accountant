@@ -80,27 +80,27 @@
     "mayor": {
       "name@en": "Birgit Meyer",
       "title@en": "The Mayor",
-      "avatar": null
+      "avatar": "./images/avatars/mayor.jpg"
     },
     "lawyer": {
       "name@en": "Jamila Ballard",
       "title@en": "Your lawyer",
-      "avatar": null
+      "avatar": "./images/avatars/lawyer.jpg"
     },
     "construction-boss": {
       "name@en": "Robert Gerber",
       "title@en": "Boss of City Construction Limited",
-      "avatar": null
+      "avatar": "./images/avatars/construction-boss.jpg"
     },
     "university-boss": {
       "name@en": "Adrian Wynn",
       "title@en": "Director of the University",
-      "avatar": null
+      "avatar": "./images/avatars/university-boss.jpg"
     },
     "football-boss": {
       "name@en": "Martin Gomez",
       "title@en": "President of the City Football Club",
-      "avatar": null
+      "avatar": "./images/avatars/football-boss.jpg"
     }
   },
   "years": {

@@ -1,7 +1,7 @@
 .slicable {
   &__slice {
     margin-bottom:2px;
-    padding-left:$line-height-base + $spacer;
+    padding-left:calc(36px + #{$spacer});
     position: relative;
 
     &__wrapper {
@@ -13,11 +13,12 @@
     }
 
     &__avatar {
+      border:1px solid rgba(black, 0.1);
       position: absolute;
       bottom:0;
       left:0;
-      width:$line-height-base + $spacer / 2;
-      border-radius: 50%;
+      width:36px;
+      border-radius: 3px;
     }
 
     &__character {
