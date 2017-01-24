@@ -79,29 +79,29 @@
 
   "characters_list": {
     "mayor": {
-    "name": "Birgit Meyer",
-    "title": "Mayor",
-    "avatar": "url"
+      "name": "Birgit Meyer",
+      "title": "Mayor",
+      "avatar": "url"
     },
     "lawyer": {
-    "name": "Jamila Ballard",
-    "title": "Lawyer",
-    "avatar": "url"
+      "name": "Jamila Ballard",
+      "title": "Lawyer",
+      "avatar": "url"
     },
     "construction-boss": {
-    "name": "Robert Gerber",
-    "title": "CEO of Concrete Company Ltd",
-    "avatar": "url"
+      "name": "Robert Gerber",
+      "title": "CEO of Concrete Company Ltd",
+      "avatar": "url"
     },
     "university-boss": {
-    "name": "Adrian Wynn",
-    "title": "Childhood friend",
-    "avatar": "url"
+      "name": "Adrian Wynn",
+      "title": "Childhood friend",
+      "avatar": "url"
     },
     "football_boss": {
-    "name": "Martin Gomez",
-    "title": "President of the local football club",
-    "avatar": "url"
+      "name": "Martin Gomez",
+      "title": "President of the local football club",
+      "avatar": "url"
     }
   },
 
