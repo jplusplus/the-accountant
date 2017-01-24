@@ -14,14 +14,14 @@
           </div>
         </div>
       </fieldset>
-      <fieldset ng-if="step.selection" ng-disabled="!step.isPrevious()">
+      <div class="mt-4" ng-if="step.selection && step.selection.hasFeedback()">
+        <slicable slicable="step.selection" game="$ctrl.game"></slicable>
+      </div>
+      <fieldset ng-if="step.isDone()" ng-disabled="!step.isPrevious()">
         <button class="btn btn-block btn-link btn-sm main__steps__item__undo my-2" ng-click="$ctrl.game.undo()">
           Undo the last action
         </button>
       </fieldset>
-      <div class="mt-4" ng-if="step.selection && step.selection.hasFeedback()">
-        <slicable slicable="step.selection" game="$ctrl.game"></slicable>
-      </div>
     </div>
   </div>
 
