@@ -81,27 +81,27 @@
     "mayor": {
       "name@en": "Birgit Meyer",
       "title@en": "Mayor",
-      "avatar": "url"
+      "avatar": null
     },
     "lawyer": {
       "name@en": "Jamila Ballard",
       "title@en": "Lawyer",
-      "avatar": "url"
+      "avatar": null
     },
     "construction-boss": {
       "name@en": "Robert Gerber",
       "title@en": "CEO of Concrete Company Ltd",
-      "avatar": "url"
+      "avatar": null
     },
     "university-boss": {
       "name@en": "Adrian Wynn",
       "title@en": "Childhood friend",
-      "avatar": "url"
+      "avatar": null
     },
     "football_boss": {
       "name@en": "Martin Gomez",
       "title@en": "President of the local football club",
-      "avatar": "url"
+      "avatar": null
     }
   },
 
