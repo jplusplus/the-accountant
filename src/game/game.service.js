@@ -96,6 +96,14 @@ function gameService($log, $rootScope, Step, Var, Ending) {
     finalSlice() {
       return this.targetSlice.finalSlice();
     }
+    findPicture(lastYear = this.step.year) {
+      // Find the closest years
+      const year = _.chain(this.pictures).keys().sort().findLast(y => {
+        return y <= lastYear;
+      });
+      // Return the picture for this year
+      return this.pictures[year];
+    }
     get readingTime() {
       return this.targetSlice.readingTime;
     }
@@ -178,12 +186,7 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       return this[_meta].years;
     }
     get picture() {
-      // Find the closest years
-      const year = _.chain(this.pictures).keys().sort().findLast(year => {
-        return year <= this.step.year;
-      });
-      // Return the picture for this year
-      return this.pictures[year];
+      return this.findPicture();
     }
     get risks() {
       return _.filter(this.vars, {category: 'risk'});

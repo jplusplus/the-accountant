@@ -1,3 +1,5 @@
+import _ from 'lodash';
+
 export const main = {
   template: require('./main.html'),
   bindings: {
@@ -40,6 +42,13 @@ export const main = {
         }
         // Cancel any existing timeout and restart it
         this.waitNextSlice();
+      };
+      this.visibleYears = () => {
+        const years = _.range(this.game.step.year - 1, this.game.step.year + 1);
+        // Remove years out of bounds and return the array
+        return years.filter(y => {
+          return y >= _.first(this.game.years) && y <= _.last(this.game.years);
+        });
       };
       // Go automaticaly to the next slice
       $scope.$on('game:slice:next', this.waitNextSlice);

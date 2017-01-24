@@ -3,25 +3,31 @@
   <main-debug game="$ctrl.game" ng-if="debug"></main-debug>
 
   <div class="main__steps" ui-view scroll-glue>
-    <div class="main__steps__item card card-block" ng-repeat="step in $ctrl.game.journey">
-      <slicable slicable="step" game="$ctrl.game"></slicable>
-      <fieldset ng-disabled="step.selection" class="main__steps__item__choices" ng-if="step.isLastSlice()">
-        <div class="list-unstyled row mb-0">
-          <div class="col-lg mt-1 main__steps__item__choices__btn" ng-class="{ 'col-lg-6': step.choices.length > 3 }" ng-repeat="choice in :: step.choices">
-            <button class="btn btn-block btn-primary" ng-click="step.select(choice)" ng-class="{ active: step.selection == choice }">
-              {{ :: choice.text }}
-            </button>
-          </div>
-        </div>
-      </fieldset>
-      <div class="mt-4" ng-if="step.selection && step.selection.hasFeedback()">
-        <slicable slicable="step.selection" game="$ctrl.game"></slicable>
+    <div ng-repeat="year in $ctrl.visibleYears()">
+      <div class="main__steps__year" ng-if="year <= $ctrl.game.step.year">
+        <img class="main__steps__year__banner" ng-src="{{::$ctrl.game.findPicture(year)}}" />
+        {{::year}}
       </div>
-      <fieldset ng-if="step.isDone()" ng-disabled="!step.isPrevious()">
-        <button class="btn btn-block btn-link btn-sm main__steps__item__undo my-2" ng-click="$ctrl.game.undo()">
-          Undo the last action
-        </button>
-      </fieldset>
+      <div class="main__steps__item card card-block" ng-repeat="step in $ctrl.game.journey|filter:{year}">
+        <slicable slicable="step" game="$ctrl.game"></slicable>
+        <fieldset ng-disabled="step.selection" class="main__steps__item__choices" ng-if="step.isLastSlice()">
+          <div class="list-unstyled row mb-0">
+            <div class="col-lg mt-1 main__steps__item__choices__btn" ng-class="{ 'col-lg-6': step.choices.length > 3 }" ng-repeat="choice in :: step.choices">
+              <button class="btn btn-block btn-primary" ng-click="step.select(choice)" ng-class="{ active: step.selection == choice }">
+                {{ :: choice.text }}
+              </button>
+            </div>
+          </div>
+        </fieldset>
+        <div class="mt-4" ng-if="step.selection && step.selection.hasFeedback()">
+          <slicable slicable="step.selection" game="$ctrl.game"></slicable>
+        </div>
+        <fieldset ng-if="step.isDone()" ng-disabled="!step.isPrevious()">
+          <button class="btn btn-block btn-link btn-sm main__steps__item__undo my-2" ng-click="$ctrl.game.undo()">
+            Undo the last action
+          </button>
+        </fieldset>
+      </div>
     </div>
   </div>
 
