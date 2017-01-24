@@ -26,6 +26,10 @@
       display: block;
       padding:$spacer / 4 $spacer / 2;
       color: $text-muted;
+
+      &__title {
+        color: $brand-warning;
+      }
     }
   }
 }
