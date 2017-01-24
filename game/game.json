@@ -74,9 +74,9 @@
     }
   },
   "years": {
-    "1993": "images/years/1993.jpeg",
-    "1996": "images/years/1996.jpeg",
-    "1998": "images/years/1998.jpeg"
+    "1993": "images/years/night.jpeg",
+    "1996": "images/years/street.jpeg",
+    "1998": "images/years/night.jpeg"
   },
   "steps": [
     {
@@ -101,17 +101,7 @@
       ],
       "choices": [
         {
-          "text@en": "Go",
-          "feedback": [
-            {
-              "character": "mayor",
-              "text@en": "Oh no."
-            },
-            {
-              "character": "mayor",
-              "text@en": "No no no."
-            }
-          ]
+          "text@en": "Go"
         }
       ]
     },
