@@ -1675,23 +1675,6 @@
       ]
     }
   ],
-  "characters": {
-    "mayor": {
-      "name@en": "The Mayor"
-    },
-    "construction-boss": {
-      "name@en": "Boss of City Construction Limited"
-    },
-    "lawyer": {
-      "name@en": "Your lawyer"
-    },
-    "football-boss": {
-      "name@en": "Boss of the City F.C."
-    },
-    "university-boss": {
-      "name@en": "Director of the University"
-    }
-  },
   "endings": [
     {
       "condition": {
