@@ -76,6 +76,35 @@
       "category": "choice"
     }
   },
+
+  "characters_list": {
+    "mayor": {
+    "name": "Birgit Meyer",
+    "title": "Mayor",
+    "avatar": "url"
+    },
+    "lawyer": {
+    "name": "Jamila Ballard",
+    "title": "Lawyer",
+    "avatar": "url"
+    },
+    "construction-boss": {
+    "name": "Robert Gerber",
+    "title": "CEO of Concrete Company Ltd",
+    "avatar": "url"
+    },
+    "university-boss": {
+    "name": "Adrian Wynn",
+    "title": "Childhood friend",
+    "avatar": "url"
+    },
+    "football_boss": {
+    "name": "Martin Gomez",
+    "title": "President of the local football club",
+    "avatar": "url"
+    }
+  },
+
   "years": {
     "1993": "images/years/night.jpeg",
     "1996": "images/years/street.jpeg",
