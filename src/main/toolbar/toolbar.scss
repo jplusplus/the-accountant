@@ -83,15 +83,14 @@
     &__risk {
       width: 100%;
       white-space: nowrap;
-      margin:auto;
+      margin:$spacer / 2 auto;
+      background-color: rgba($friar-gray, 0.6);
 
       &__case {
-        margin-top:$spacer / 2;
         padding:0;
         border-right:1px solid $brand-inverse;
         position: relative;
         display: block;
-        background-color: rgba(white, 0.1);
         @include transition(600ms);
 
         &:last-child {
@@ -106,8 +105,10 @@
         }
 
         &--active {
-          $max: $bittersweet;
+          animation: blink 1s linear 3 normal;
+
           $min: $brand-secondary;
+          $max: $bittersweet;
           &:nth-child(1)  { background-color:mix($max, $min, 10); }
           &:nth-child(2)  { background-color:mix($max, $min, 20); }
           &:nth-child(3)  { background-color:mix($max, $min, 30); }

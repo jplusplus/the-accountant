@@ -50,6 +50,12 @@ $panel-width:  map-get($grid-breakpoints, md);
 @import "main/vars/vars.scss";
 @import "slicable/slicable.scss";
 
+@keyframes blink {
+  50% {
+    background:inherit;
+  }
+}
+
 body {
   background:url("~/images/blackdenim.png") repeat $body-bg;
 }
