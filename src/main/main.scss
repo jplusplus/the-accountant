@@ -11,8 +11,8 @@
     position: fixed;
     bottom:4rem;
     top:0;
-    left:$toolbar-width;
-    width:calc(100% - #{$toolbar-width});
+    left:$toolbar-width-md;
+    width:calc(100% - #{$toolbar-width-md});
     max-width: $panel-width;
     overflow: auto;
     border:0.5rem solid $brand-inverse;
@@ -23,6 +23,8 @@
     @include media-breakpoint-down(sm) {
       font-size:0.9rem;
       border:0;
+      left:$toolbar-width-xs;
+      width:calc(100% - #{$toolbar-width-xs});
     }
 
     &__year {
@@ -118,7 +120,7 @@
     right:0;
     bottom:0;
     top:0;
-    width: calc(100% - #{$panel-width} - #{$toolbar-width});
+    width: calc(100% - #{$panel-width} - #{$toolbar-width-md});
     overflow: hidden;
     z-index:-1;
     @include transition(1600ms);
@@ -152,8 +154,8 @@
   &__timeline {
     position: absolute;
     bottom:0;
-    left: $toolbar-width;
-    width:calc(100% - #{$toolbar-width});
+    left: $toolbar-width-md;
+    width:calc(100% - #{$toolbar-width-md});
     padding:$spacer * 2 $spacer;
     max-width: $panel-width;
     background: white;
@@ -164,6 +166,8 @@
 
     @include media-breakpoint-down(sm) {
       border:0;
+      left:$toolbar-width-xs;
+      width:calc(100% - #{$toolbar-width-xs});
     }
 
     &__year {

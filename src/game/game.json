@@ -28,19 +28,22 @@
       "value": 0,
       "private": false,
       "icon": "balance-scale",
-      "category": "risk"
+      "category": "risk",
+      "label@en": "Legal risk"
     },
     "risk_contractors": {
       "value": 0,
       "private": false,
       "icon": "industry",
-      "category": "risk"
+      "category": "risk",
+      "label@en": "Industry mistrust"
     },
     "risk_political": {
       "value": 0,
       "private": false,
       "icon": "handshake-o",
-      "category": "risk"
+      "category": "risk",
+      "label@en": "Political rejection"
     },
     "risk_revolving_door": {
       "value": 0,

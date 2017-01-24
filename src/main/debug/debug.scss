@@ -3,7 +3,7 @@
   right:0;
   bottom:0;
   top:0;
-  width: calc(100% - #{$panel-width} - #{$toolbar-width});
+  width: calc(100% - #{$panel-width} - #{$toolbar-width-md});
 
   &__vars table {
     border:$table-border-color 1px solid;

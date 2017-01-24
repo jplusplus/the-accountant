@@ -6,29 +6,33 @@
   bottom:0;
   background: $brand-inverse;
   color: white;
-  width: $toolbar-width;
+  width: $toolbar-width-md;
   z-index:1000;
   overflow: visible;
+  text-align: center;
+
+  @include media-breakpoint-down(sm) {
+    width: $toolbar-width-xs;
+  }
 
   &__link {
-    padding:0;
     margin:$spacer / 2 0;
-    text-align: center;
     position: relative;
     cursor: pointer;
 
-    i.fa {
-      position: absolute;
-      top:50%;
-      left:50%;
-      transform: translate(-50%, -50%);
+    @include media-breakpoint-down(sm) {
+      font-size:1.5rem;
     }
 
     a {
+      padding:$spacer / 2;
       display: block;
       color:inherit;
       width:100%;
-      height:$toolbar-width * 0.8;
+
+      &:hover, &:active, &:focus {
+        text-decoration: none;
+      }
     }
 
     &.active {
@@ -36,44 +40,53 @@
 
       a {
         color: $brand-inverse;
-      }
-
-      &:before {
-        z-index: -1;
+        margin-left:$spacer / 2;
+        width: calc(100% - #{$spacer /2});
         background:white;
-        content:"";
-        position: absolute;
-        top:0;
-        left:$spacer / 2;
-        right:0;
-        bottom:0;
         border-radius: 0.5rem 0 0 0.5rem;
+        position: relative;
+
+        &:before, &:after {
+          content:"";
+          position: absolute;
+          bottom:100%;
+          right:0;
+          width:15px;
+          height:15px;
+          background:inherit;
+          clip-path: url(#corner-top-clip);
+        }
+
+        &:after {
+          top:100%;
+          bottom:auto;
+          clip-path: url(#corner-bottom-clip);
+        }
       }
     }
   }
 
   &__var {
-    text-align: center;
-    text-transform: uppercase;
     font-size: 1rem;
     padding:$spacer / 2;
     margin:$spacer / 2 0;
     font-family: $headings-font-family;
-
+    color: $friar-gray;
 
     &__digit {
+      color: white;
       font-weight: bolder;
       font-size: 1.1rem;
       line-height: 1rem;
     }
 
     &__risk {
-      border:1px solid $brand-inverse;
-      width: $toolbar-width - $spacer;
+      width: 100%;
       white-space: nowrap;
       margin:auto;
 
       &__case {
+        margin-top:$spacer / 2;
         padding:0;
         border-right:1px solid $brand-inverse;
         position: relative;

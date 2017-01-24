@@ -39,7 +39,9 @@ $enable-flex: true;
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
-$toolbar-width: 5rem;
+$toolbar-width-md: 15rem;
+$toolbar-width-xs: 5rem;
+
 $panel-width:  map-get($grid-breakpoints, md);
 
 @import "main/main.scss";

@@ -1,14 +1,14 @@
-<div class="main__toolbar">
+<div class="main__toolbar text-md-left">
   <div class="main__toolbar__var">
     <i class="fa fa-money"></i>
-    <span class="sr-only">Your bank account</span>
+    <span class="hidden-sm-down ml-1">Your bank account</span>
     <div class="main__toolbar__var__digit">
       €{{ $ctrl.game.var('personal_account').value | number }}
     </div>
   </div>
   <div class="main__toolbar__var" ng-repeat="risk in $ctrl.game.publicRisks">
     <i class="fa fa-{{ risk.icon }}"></i>
-    <span class="sr-only">{{ risk.label }}</span>
+    <span class="hidden-sm-down ml-1">{{ risk.label }}</span>
     <div class="main__toolbar__var__risk container-fluid">
       <div class="row">
         <div ng-repeat="value in risk.cases"
@@ -18,19 +18,34 @@
       </div>
     </div>
   </div>
-  <div class="main__toolbar__link" ui-sref-active-eq="active">
+  <div class="main__toolbar__link mt-4" ui-sref-active-eq="active">
     <a ui-sref="main">
-      <i class="fa fa-comments-o fa-2x"></i>
+      <i class="fa fa-comments-o"></i>
+      <span class="hidden-sm-down ml-1">Chats</span>
     </a>
   </div>
   <div class="main__toolbar__link" ui-sref-active-eq="active">
     <a ui-sref="main.vars">
-      <i class="fa fa-line-chart fa-2x"></i>
+      <i class="fa fa-line-chart"></i>
+      <span class="hidden-sm-down ml-1">Indicators</span>
     </a>
   </div>
   <div class="main__toolbar__link" ui-sref-active-eq="active">
     <a ui-sref="main.hints">
-      <i class="fa fa-ambulance fa-2x"></i>
+      <i class="fa fa-ambulance"></i>
+      <span class="hidden-sm-down ml-1">Hints</span>
     </a>
   </div>
+
+  <svg width="0" height="0">
+    <defs>
+      <clipPath id="corner-top-clip">
+        <path d="m 1.0215405,14.776462 c 3.061741,-0.61518 6.081326,-2.138306 8.294204,-4.183724 C 12.172685,7.951996 14.001268,4.7465539 14.77158,1.0288472 l 0.213185,-1.0288807 0.0076,7.4999991 0.0076,7.4999984 -7.4999995,-0.0091 -7.499932,-0.0092 1.021505,-0.205245 z" />
+      </clipPath>
+      <clipPath id="corner-bottom-clip">
+        <path d="M 14.776495,13.978424 C 14.161316,10.916683 12.63819,7.897098 10.592771,5.68422 7.9520295,2.82728 4.7465874,0.998697 1.0288807,0.228385 L 0,0.0152 7.4999991,0.0076 14.999998,0 l -0.0091,7.499999 -0.0092,7.499932 -0.205245,-1.021505 z" />
+      </clipPath>
+    </defs>
+  </svg>
+
 </div>
