@@ -76,7 +76,6 @@
       "category": "choice"
     }
   },
-
   "characters": {
     "mayor": {
       "name@en": "Birgit Meyer",
@@ -104,7 +103,6 @@
       "avatar": null
     }
   },
-
   "years": {
     "1993": "images/years/night.jpeg",
     "1996": "images/years/street.jpeg",
