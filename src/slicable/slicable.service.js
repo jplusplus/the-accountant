@@ -36,7 +36,7 @@ function SlicableService(Slice) {
         return this.lastSlice.text.split(' ').length * 60 / 270 * 1000;
       }
       // Default duration
-      return 0;
+      return 1200;
     }
     set slice(val) {
       this[_slice] = Math.max(0, Math.min(this.slices.length - 1, val));

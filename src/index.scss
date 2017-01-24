@@ -1,7 +1,8 @@
-@import url(//fonts.googleapis.com/css?family=Lato:300,400,600,900);
+@import url(//fonts.googleapis.com/css?family=Padauk:300,400,600,900|Dosis:300,400,600,900);
 @import url(//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css);
 
-$font-family-sans-serif: 'Lato', 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-sans-serif: 'Padauk', 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$headings-font-family: 'Dosis', $font-family-sans-serif;
 
 $tarawera: #09233B;
 $bittersweet: #f85038;
@@ -11,18 +12,20 @@ $stonewall: #908570;
 $cornflower-blue: #4ea1f7;
 $bermuda: #99ffff;
 $copperfield: #dc8459;
+$french-gray: #f5d069;
+$friar-gray: #7d7d7a;
 
 
-$brand-primary: $bittersweet;
+$brand-primary: #f5d069;
 $brand-secondary: #F9CF98;
 $brand-warning: $copperfield;
-$brand-inverse: #202838;
+$brand-inverse: #484846;
 
-$body-bg: #E5DBCE;
-$body-color: #323334;
+$body-bg: #e3e5e7;
+$body-color: #484846;
 
 $btn-primary-color: white;
-$link-color: mix($brand-primary, $body-color);
+$link-color: #d8b041;
 
 $card-bg: #F7F7F7;
 $card-border-color: white;
