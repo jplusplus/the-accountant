@@ -57,12 +57,12 @@
 
         &:before {
           bottom:calc(100% - 1px);
-          clip-path: url(#corner-top-clip);
+          clip-path: url('./#corner-top-clip');
         }
 
         &:after {
           top:calc(100% - 1px);
-          clip-path: url(#corner-bottom-clip);
+          clip-path: url('./#corner-bottom-clip');
         }
       }
     }
