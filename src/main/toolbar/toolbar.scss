@@ -49,17 +49,19 @@
         &:before, &:after {
           content:"";
           position: absolute;
-          bottom:100%;
           right:0;
           width:15px;
           height:15px;
           background:inherit;
+        }
+
+        &:before {
+          bottom:calc(100% - 1px);
           clip-path: url(#corner-top-clip);
         }
 
         &:after {
-          top:100%;
-          bottom:auto;
+          top:calc(100% - 1px);
           clip-path: url(#corner-bottom-clip);
         }
       }
