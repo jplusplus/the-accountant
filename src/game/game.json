@@ -760,7 +760,7 @@
               "text@en": "No, you did't, did you?"
             },
             {
-              "character": "construction-boss",
+              "character": "lawyer",
               "text@en": "As soon as the comptroller reads the credit card statements, you'll be fired!"
             }
           ]
@@ -1072,7 +1072,7 @@
             },
             {
               "character": "mayor",
-              "text@en": "I get stuff done, and it's the next mayors who pays!"
+              "text@en": "I get stuff done, and it's the next mayors who pay!"
             }
           ]
         }
@@ -1650,7 +1650,7 @@
       "explainer_body@en": "Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous.",
       "choices": [
         {
-          "text@en": "You company made an offer at 1 million.",
+          "text@en": "Your company made an offer at 1 million.",
           "var_changes": {
             "reserves": -1,
             "personal_account": 100000
