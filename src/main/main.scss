@@ -263,9 +263,9 @@
       bottom:100%;
       left:50%;
       transform: translate(-50%, 25%);
-      border:transparent $spacer solid;
-      border-bottom-color: $french-gray;
-      z-index:100000;
+      border:transparent $spacer * 1.5 solid;
+      border-bottom-color: white;
+      z-index:1;
       pointer-events: none;
     }
 
@@ -297,6 +297,20 @@
       padding:0.5rem 1rem;
       font-weight: bolder;
       font-family: $headings-font-family;
+      position: relative;
+      z-index:1;
+
+      &:before {
+        content:"";
+        position: absolute;
+        bottom:100%;
+        left:50%;
+        transform: translate(-50%, 0);
+        border:transparent $spacer solid;
+        border-bottom-color: $french-gray;
+        z-index:100000;
+        pointer-events: none;
+      }
     }
 
     &__body {
