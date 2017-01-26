@@ -1,13 +1,15 @@
 <div class="slicable">
-  <p class="slicable__slice" ng-repeat="slice in $ctrl.slicable.slices | limitTo:($ctrl.slicable.slice + 1)" ng-click="$ctrl.game.nextSlice()">
-    <img ng-src="{{::slice.character.avatar}}"  class="slicable__slice__avatar" alt="" ng-if="$last" />
-    <span class="slicable__slice__character" ng-if="$first">
-      {{::slice.character.name}} - <span class="slicable__slice__character__title">{{::slice.character.title}}</span>
-    </span>
-    <span class="slicable__slice__wrapper">
-      {{::slice.text}}
-    </span>
-  </p>
+  <div ng-repeat="cluster in $ctrl.slicable.clusters | filter:$ctrl.slicable.clusterFilter">
+    <p class="slicable__slice" ng-repeat="slice in cluster.slices | filter:$ctrl.slicable.sliceFilter" ng-click="$ctrl.game.nextSlice()">
+      <img ng-src="{{::slice.character.avatar}}"  class="slicable__slice__avatar" ng-if="$last" />
+      <span class="slicable__slice__character" ng-if="$first">
+        {{::slice.character.name}} - <span class="slicable__slice__character__title">{{::slice.character.title}}</span>
+      </span>
+      <span class="slicable__slice__wrapper">
+        {{::slice.text}}
+      </span>
+    </p>
+  </div>
   <p class="slicable__slice" ng-if="!$ctrl.slicable.isLastSlice()">
     <span class="slicable__slice__wrapper slicable__slice__wrapper--typing">
       <img src="//logo-js.herokuapp.com/loading-three-dots/999" height="8px" />

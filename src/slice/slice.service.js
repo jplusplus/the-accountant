@@ -22,6 +22,9 @@ function SliceService(Character) {
     get parent() {
       return this[_parent];
     }
+    get index() {
+      return this.parent.slices.indexOf(this);
+    }
     get meta() {
       return this[_meta];
     }

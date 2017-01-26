@@ -7,6 +7,7 @@ function SlicableService(Slice) {
   const _meta = Symbol('meta');
   const _slice = Symbol('slice');
   const _slices = Symbol('slices');
+  const _clusters = Symbol('clusters');
 
   class Slicable {
     constructor(meta) {
@@ -16,7 +17,7 @@ function SlicableService(Slice) {
       // Start before 0 (ie no slice)
       this[_slice] = -1;
       // Ensure those method arround bound to the current instance
-      ['nextSlice', 'isLastSlice'].forEach(m => {
+      ['nextSlice', 'isLastSlice', 'clusterFilter', 'sliceFilter'].forEach(m => {
         this[m] = this[m].bind(this);
       });
     }
@@ -28,6 +29,12 @@ function SlicableService(Slice) {
     }
     finalSlice() {
       this.slice = this.slices.length - 1;
+    }
+    clusterFilter(cluster, index) {
+      return cluster.slices.length * index <= this.slice;
+    }
+    sliceFilter(slice) {
+      return slice.index <= this.slice;
     }
     // Express reading time of the current slice in milliseconds
     get readingTime() {
@@ -49,6 +56,33 @@ function SlicableService(Slice) {
     }
     get slices() {
       return this[_slices];
+    }
+    // We regroup slices by "cluster" meaning they are regroupped by
+    // successive slices of the same character.
+    get clusters() {
+      if (this[_clusters]) {
+        return this[_clusters];
+      }
+      // Initialize clusters list
+      this[_clusters] = [];
+      // Iterates over ever slices
+      this.slices.forEach(slice => {
+        // Get last cluster
+        const last = _.last(this[_clusters]);
+        // Is there any cluster and is it the same character?
+        if (last && last.character.key === slice.character.key) {
+          // Add this slice
+          last.slices.push(slice);
+        // No cluster or a different character
+        } else {
+          // Create a cluster using the current slice
+          this[_clusters].push({
+            character: slice.character,
+            slices: [slice]
+          });
+        }
+      });
+      return this[_clusters];
     }
   }
   return Slicable;
