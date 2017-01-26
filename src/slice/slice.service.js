@@ -1,20 +1,17 @@
 export default SliceService;
 
 /** @ngInject */
-function SliceService(Character) {
+function SliceService(Character, I18n) {
   // Symbols declarion for private attributes and methods
-  const _meta = Symbol('meta');
   const _parent = Symbol('parent');
   const _character = Symbol('character');
 
-  class Slice {
+  class Slice extends I18n {
     constructor(meta, parent) {
+      super(meta);
+      // Create private properties
       this[_parent] = parent;
-      this[_meta] = angular.copy(meta);
       this[_character] = new Character(this.meta.character);
-    }
-    get text() {
-      return this[_meta]['text@en'] || null;
     }
     get character() {
       return this[_character];
@@ -24,9 +21,6 @@ function SliceService(Character) {
     }
     get index() {
       return this.parent.slices.indexOf(this);
-    }
-    get meta() {
-      return this[_meta];
     }
   }
   return Slice;

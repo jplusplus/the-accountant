@@ -2,15 +2,16 @@ import _ from 'lodash';
 export default SlicableService;
 
 /** @ngInject */
-function SlicableService(Slice) {
+function SlicableService(Slice, I18n) {
   // Symbols declarion for private attributes and methods
   const _meta = Symbol('meta');
   const _slice = Symbol('slice');
   const _slices = Symbol('slices');
   const _clusters = Symbol('clusters');
 
-  class Slicable {
+  class Slicable extends I18n {
     constructor(meta) {
+      super(meta);
       this[_meta] = angular.copy(meta);
       // Create slices
       this[_slices] = _.castArray(this[_meta]).map(slice => new Slice(slice, this));
@@ -40,7 +41,7 @@ function SlicableService(Slice) {
     get readingTime() {
       if (this.lastSlice !== null) {
         // We read approximativly 270 word per minute
-        return this.lastSlice.text.split(' ').length * 60 / 270 * 1000;
+        return this.lastSlice.t.text.split(' ').length * 60 / 270 * 1000;
       }
       // Default duration
       return 1200;

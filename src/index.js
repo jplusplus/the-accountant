@@ -14,6 +14,7 @@ import {slicable} from './slicable/slicable.js';
 import unsafe from './unsafe/unsafe.filter.js';
 import slide from './slide/slide.animation.js';
 import Game from './game/game.service.js';
+import I18n from './i18n/i18n.service.js';
 import Step from './step/step.service.js';
 import Slicable from './slicable/slicable.service.js';
 import Slice from './slice/slice.service.js';
@@ -38,6 +39,7 @@ angular
   .filter('unsafe', unsafe)
   .animation('.slide', slide)
   .service('Game', Game)
+  .service('I18n', I18n)
   .service('Step', Step)
   .service('Slicable', Slicable)
   .service('Slice', Slice)

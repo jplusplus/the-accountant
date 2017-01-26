@@ -2,13 +2,14 @@ export default VarService;
 import _ from 'lodash';
 
 /** @ngInject */
-function VarService() {
+function VarService(I18n) {
   // Symbols declarion for private attributes and methods
   const _meta = Symbol('meta');
   const _game = Symbol('game');
 
-  class Var {
+  class Var extends I18n {
     constructor(meta, game) {
+      super(meta);
       this[_meta] = angular.copy(meta);
       this[_game] = game;
     }
@@ -30,9 +31,6 @@ function VarService() {
     }
     get value() {
       return this[_meta].value;
-    }
-    get label() {
-      return this[_meta]['label@en'] || this[_meta].name;
     }
     get name() {
       return this[_meta].name;

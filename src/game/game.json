@@ -151,8 +151,10 @@
           "text@en": "We received three offers. Pick the best one."
         }
       ],
-      "explainer_title@en": "How to spot a cartel?",
-      "explainer_body@en": "Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous.",
+      "explainer": {
+        "title@en": "How to spot a cartel?",
+        "body@en": "Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous."
+      },
       "choices": [
         {
           "text@en": "Public Works plc. made an offer at 9 million",
@@ -237,8 +239,10 @@
           "text@en": "By the way, do you want this new BMW? I bought it last month but don't really need it."
         }
       ],
-      "explainer_title@en": "How to react to gifts?",
-      "explainer_body@en": "Public officials are usually prohibited from accepting gifts above a certain value (10€ to 500€). However, you can accept the gift if it is intended for you as a private person, or for your spouse. By refusing a gift, you risk angering the person who made it.",
+      "explainer": {
+        "title@en": "How to react to gifts?",
+        "body@en": "Public officials are usually prohibited from accepting gifts above a certain value (10€ to 500€). However, you can accept the gift if it is intended for you as a private person, or for your spouse. By refusing a gift, you risk angering the person who made it."
+      },
       "choices": [
         {
           "text@en": "Sure",
@@ -299,8 +303,10 @@
           "text@en": "Can you find a solution for them?"
         }
       ],
-      "explainer_title@en": "How can you organize bribes?",
-      "explainer_body@en": "Bribery is not as common in Europe as in other parts of the world, but it is rampant is some sectors. In public housing, some officials ask for envoleppes of money to be given directly. For car inspection, some service centers will be pleased if you leave a gift or bills of cash on the passenger seat.<br><br>Read more under <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> at Cooking Budgets.",
+      "explainer": {
+        "title@en": "How can you organize bribes?",
+        "body@en": "Bribery is not as common in Europe as in other parts of the world, but it is rampant is some sectors. In public housing, some officials ask for envoleppes of money to be given directly. For car inspection, some service centers will be pleased if you leave a gift or bills of cash on the passenger seat.<br><br>Read more under <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> at Cooking Budgets."
+      },
       "choices": [
         {
           "text@en": "Offer to speed their requests in exchange for $5000 in an enveloppe",
@@ -373,8 +379,10 @@
           "text@en": "There's this empty plot of land the city owns. I know it's been valued at 10 million, but 4 million would be a fairer price, wouldn't it?"
         }
       ],
-      "explainer_title@en": "Spotting corruption in land sales",
-      "explainer_body@en": "Cities often own large plots of land. They can either sell them at market prices or at lower prices, to make a gift to the buyer. It is usually hard to spot such transactions, because there isn't much of a market for big sales of land in a city.",
+      "explainer": {
+        "title@en": "Spotting corruption in land sales",
+        "body@en": "Cities often own large plots of land. They can either sell them at market prices or at lower prices, to make a gift to the buyer. It is usually hard to spot such transactions, because there isn't much of a market for big sales of land in a city."
+      },
       "choices": [
         {
           "text@en": "Sell for 10 million",
@@ -427,8 +435,10 @@
           "text@en": "We received three offers. Pick the best one."
         }
       ],
-      "explainer_title@en": "How to spot a cartel?",
-      "explainer_body@en": "Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous.",
+      "explainer": {
+        "title@en": "How to spot a cartel?",
+        "body@en": "Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous."
+      },
       "choices": [
         {
           "text@en": "Public Works plc. made an offer for 10 million",
@@ -495,8 +505,10 @@
           "text@en": "So, you want to create your own company?"
         }
       ],
-      "explainer_title@en": "Conflicts of interest",
-      "explainer_body@en": "People in politics or in the administration can own companies that receive public contracts. In some countries, it is forbidden for companies owned by public servants or politiciants to receive money from public contracts.",
+      "explainer": {
+        "title@en": "Conflicts of interest",
+        "body@en": "People in politics or in the administration can own companies that receive public contracts. In some countries, it is forbidden for companies owned by public servants or politiciants to receive money from public contracts."
+      },
       "choices": [
         {
           "text@en": "Yes",
@@ -534,8 +546,10 @@
           "text@en": "Who should be the nominal owner of the company?"
         }
       ],
-      "explainer_title@en": "Conflicts of interest",
-      "explainer_body@en": "People in politics or in the administration can own companies that receive public contracts. In some countries, it is forbidden for companies owned by public servants or politiciants to receive money from public contracts.",
+      "explainer": {
+        "title@en": "Conflicts of interest",
+        "body@en": "People in politics or in the administration can own companies that receive public contracts. In some countries, it is forbidden for companies owned by public servants or politiciants to receive money from public contracts."
+      },
       "choices": [
         {
           "text@en": "You personnally",
@@ -600,8 +614,10 @@
           "text@en": "We received three offers. Pick the best one."
         }
       ],
-      "explainer_title@en": "How to run a cartel?",
-      "explainer_body@en": "Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous.",
+      "explainer": {
+        "title@en": "How to run a cartel?",
+        "body@en": "Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous."
+      },
       "choices": [
         {
           "text@en": "Your company made an offer for 5 million",
@@ -677,8 +693,10 @@
           "text@en": "We received three offers. Pick the best one."
         }
       ],
-      "explainer_title@en": "How to spot a cartel?",
-      "explainer_body@en": "Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous.",
+      "explainer": {
+        "title@en": "How to spot a cartel?",
+        "body@en": "Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous."
+      },
       "choices": [
         {
           "text@en": "Public Building plc made an offer for 5 million",
@@ -745,8 +763,10 @@
           "text@en": "It'll make your work faster and benefit citizens!"
         }
       ],
-      "explainer_title@en": "Using the official credit card",
-      "explainer_body@en": "It can be tempting to use the credit card of the city or the government to buy stuff for you. Because it's very easy to trace, it can be dangerous!<br><br>Read more under <a href='http://www.cookingbudgets.com/the-credit-card/' target='_blank'>The Credit Card</a> at Cooking Budgets.",
+      "explainer": {
+        "title@en": "Using the official credit card",
+        "body@en": "It can be tempting to use the credit card of the city or the government to buy stuff for you. Because it's very easy to trace, it can be dangerous!<br><br>Read more under <a href='http://www.cookingbudgets.com/the-credit-card/' target='_blank'>The Credit Card</a> at Cooking Budgets."
+      },
       "choices": [
         {
           "text@en": "Use the credit card to buy DVDs on Amazon.com",
@@ -795,8 +815,10 @@
           "text@en": "I want you to run some ads that praise my work in the local paper, using city funds."
         }
       ],
-      "explainer_title@en": "Political communication using public funds",
-      "explainer_body@en": "Politicians can control public companies, either directly or through patronage networks. They might require them to buy advertising in newspapers that advertise their performance as a politician and not the company itself. It's very hard for prosecutors to prove that the advertising was not done in the interest of the company.<br><br>Read more under <a href='http://www.cookingbudgets.com/ads/' target='_blank'>Ads, ads, ads</a> at Cooking Budgets.",
+      "explainer": {
+        "title@en": "Political communication using public funds",
+        "body@en": "Politicians can control public companies, either directly or through patronage networks. They might require them to buy advertising in newspapers that advertise their performance as a politician and not the company itself. It's very hard for prosecutors to prove that the advertising was not done in the interest of the company.<br><br>Read more under <a href='http://www.cookingbudgets.com/ads/' target='_blank'>Ads, ads, ads</a> at Cooking Budgets."
+      },
       "choices": [
         {
           "text@en": "No way, it's unethical",
@@ -860,8 +882,10 @@
           "text@en": "That'd make everybody happy, wouldn't it? Voters would hate it if their team had to leave."
         }
       ],
-      "explainer_title@en": "Leasing public space to private companies",
-      "explainer_body@en": "The easiest way to support a private company for a politician is to buy their building with public funds and rent it back to the company at a low price. The operation is hard to trace and fully legal.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-emphyteutic-scam/' target='_blank'>The Emphyteutic Scam</a> at Cooking Budgets.",
+      "explainer": {
+        "title@en": "Leasing public space to private companies",
+        "body@en": "The easiest way to support a private company for a politician is to buy their building with public funds and rent it back to the company at a low price. The operation is hard to trace and fully legal.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-emphyteutic-scam/' target='_blank'>The Emphyteutic Scam</a> at Cooking Budgets."
+      },
       "choices": [
         {
           "text@en": "Sure, a healthy football club for a healthy city!",
@@ -922,8 +946,10 @@
           "text@en": "And we'll share the money."
         }
       ],
-      "explainer_title@en": "Fake public contracts",
-      "explainer_body@en": "It can happen that contracts are passed to renovate a place or a road that does not exist. It can be risky, because it is easy to prove the contract is bogus.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-invisible-public-work/' target='_blank'>The Invisible Public Work</a> at Cooking Budgets.",
+      "explainer": {
+        "title@en": "Fake public contracts",
+        "body@en": "It can happen that contracts are passed to renovate a place or a road that does not exist. It can be risky, because it is easy to prove the contract is bogus.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-invisible-public-work/' target='_blank'>The Invisible Public Work</a> at Cooking Budgets."
+      },
       "choices": [
         {
           "text@en": "Accept",
@@ -980,8 +1006,10 @@
           "text@en": "Give me a contract and I'll buy you the furniture you really deserve."
         }
       ],
-      "explainer_title@en": "Perks in office",
-      "explainer_body@en": "It",
+      "explainer": {
+        "title@en": "Perks in office",
+        "body@en": "It"
+      },
       "choices": [
         {
           "text@en": "You're right.",
@@ -1037,8 +1065,10 @@
           "text@en": "How should we arrange the financing?"
         }
       ],
-      "explainer_title@en": "Public-private partnerships",
-      "explainer_body@en": "Since the 1980's, it is popular for public administrations to do public-private partnerships. Such partnerships involve a private company doing some of the work, usually building a equipment or operating it, while the administration contributes to the costs. In exchange, the private company can keep the revenues of the equipment it built.<br><br>The goal was to allow public administrations to provide public services without spending much money. In practice, private companies take almost no risks with such contracts and public administrations end up paying as much as they would have without the partnership. But it is usually hidden in the accounts of the public administration.",
+      "explainer": {
+        "title@en": "Public-private partnerships",
+        "body@en": "Since the 1980's, it is popular for public administrations to do public-private partnerships. Such partnerships involve a private company doing some of the work, usually building a equipment or operating it, while the administration contributes to the costs. In exchange, the private company can keep the revenues of the equipment it built.<br><br>The goal was to allow public administrations to provide public services without spending much money. In practice, private companies take almost no risks with such contracts and public administrations end up paying as much as they would have without the partnership. But it is usually hidden in the accounts of the public administration."
+      },
       "choices": [
         {
           "text@en": "The city should build the stadium (one-off cost: 10 million).",
@@ -1094,8 +1124,10 @@
           "text@en": "Do you want to set up a trash collection company?"
         }
       ],
-      "explainer_title@en": "Deregulation and privatization",
-      "explainer_body@en": "Public administrations have transfered a lot of their competencies to private companies, either via public-private partnerships or via deregulation. It offers a lot of opportunities for conflicts of interests.<br><br>It is hard to know how much a service costs to the city because it can involve people from different departments (e.g some municipal employees can work for the trash collection one day and for another department the next). To do such estimates would require analytical accounting, which cities rarely do.",
+      "explainer": {
+        "title@en": "Deregulation and privatization",
+        "body@en": "Public administrations have transfered a lot of their competencies to private companies, either via public-private partnerships or via deregulation. It offers a lot of opportunities for conflicts of interests.<br><br>It is hard to know how much a service costs to the city because it can involve people from different departments (e.g some municipal employees can work for the trash collection one day and for another department the next). To do such estimates would require analytical accounting, which cities rarely do."
+      },
       "choices": [
         {
           "text@en": "Yes.",
@@ -1155,8 +1187,10 @@
           "text@en": "We passed a public tender anyway. Pick the best offer."
         }
       ],
-      "explainer_title@en": "Deregulation and privatization",
-      "explainer_body@en": "Public administrations have transfered a lot of their competencies to private companies, either via public-private partnerships or via deregulation. It offers a lot of opportunities for conflicts of interests.<br><br>It is hard to know how much a service costs to the city because it can involve people from different departments (e.g some municipal employees can work for the trash collection one day and for another department the next). To do such estimates would require analytical accounting, which cities rarely do.",
+      "explainer": {
+        "title@en": "Deregulation and privatization",
+        "body@en": "Public administrations have transfered a lot of their competencies to private companies, either via public-private partnerships or via deregulation. It offers a lot of opportunities for conflicts of interests.<br><br>It is hard to know how much a service costs to the city because it can involve people from different departments (e.g some municipal employees can work for the trash collection one day and for another department the next). To do such estimates would require analytical accounting, which cities rarely do."
+      },
       "choices": [
         {
           "text@en": "Your company made an offer at 1 million per year",
@@ -1213,8 +1247,10 @@
           "text@en": "We passed a public tender anyway. Pick the best offer."
         }
       ],
-      "explainer_title@en": "Deregulation and privatization",
-      "explainer_body@en": "Public administrations have transfered a lot of their competencies to private companies, either via public-private partnerships or via deregulation. It offers a lot of opportunities for conflicts of interests.<br><br>It is hard to know how much a service costs to the city because it can involve people from different departments (e.g some municipal employees can work for the trash collection one day and for another department the next). To do such estimates would require analytical accounting, which cities rarely do.",
+      "explainer": {
+        "title@en": "Deregulation and privatization",
+        "body@en": "Public administrations have transfered a lot of their competencies to private companies, either via public-private partnerships or via deregulation. It offers a lot of opportunities for conflicts of interests.<br><br>It is hard to know how much a service costs to the city because it can involve people from different departments (e.g some municipal employees can work for the trash collection one day and for another department the next). To do such estimates would require analytical accounting, which cities rarely do."
+      },
       "choices": [
         {
           "text@en": "SATI Waste Management made an offer at 1.2 million per year",
@@ -1266,8 +1302,10 @@
           "text@en": "Sort this out."
         }
       ],
-      "explainer_title@en": "The fine print in public contracts",
-      "explainer_body@en": "Building contracts usually involve a series of clauses, such as penalties for delays. However, the client (in this case, the city) must activate the clause, or, if the contractor refuses to pay, take it to court. Legal teams are used to such situations, but for a small administration, or in case of politically sensitive issues, it is easy to ignore some clauses in the contract.",
+      "explainer": {
+        "title@en": "The fine print in public contracts",
+        "body@en": "Building contracts usually involve a series of clauses, such as penalties for delays. However, the client (in this case, the city) must activate the clause, or, if the contractor refuses to pay, take it to court. Legal teams are used to such situations, but for a small administration, or in case of politically sensitive issues, it is easy to ignore some clauses in the contract."
+      },
       "choices": [
         {
           "text@en": "Take the contractor to court to get the money.",
@@ -1340,8 +1378,10 @@
           "text@en": "Smart, isn't it?"
         }
       ],
-      "explainer_title@en": "Selling university degrees",
-      "explainer_body@en": "The sale of university degree is not uncommon in Europe. As with any story of corruption, people have an incentive to keep silent, because it would make the whole university look bad if it became news.",
+      "explainer": {
+        "title@en": "Selling university degrees",
+        "body@en": "The sale of university degree is not uncommon in Europe. As with any story of corruption, people have an incentive to keep silent, because it would make the whole university look bad if it became news."
+      },
       "choices": [
         {
           "text@en": "Call the police.",
@@ -1397,8 +1437,10 @@
           "text@en": "Should we do it?"
         }
       ],
-      "explainer_title@en": "Accounting tricks",
-      "explainer_body@en": "Contrary to popular belief, accounting is very flexible. It has to be flexible, because it needs to honestly represent the financial situation of an institutions and specific situations can be very different from one another.<br><br>One trick consists in considering that all future revenues from a specific revenue stream are actually just one big sum of money that can be accounted for as a lump sum, even if it is paid later. There are times when it is legitimate to do so (e.g you sign a huge contract for something delivered right away but for which the client pays in installments) and cases when it is not (e.g accounting for rents as if they were just one sale).",
+      "explainer": {
+        "title@en": "Accounting tricks",
+        "body@en": "Contrary to popular belief, accounting is very flexible. It has to be flexible, because it needs to honestly represent the financial situation of an institutions and specific situations can be very different from one another.<br><br>One trick consists in considering that all future revenues from a specific revenue stream are actually just one big sum of money that can be accounted for as a lump sum, even if it is paid later. There are times when it is legitimate to do so (e.g you sign a huge contract for something delivered right away but for which the client pays in installments) and cases when it is not (e.g accounting for rents as if they were just one sale)."
+      },
       "choices": [
         {
           "text@en": "Accept! The appearance of wealth is better than nothing.",
@@ -1455,8 +1497,10 @@
           "text@en": "Here are your options."
         }
       ],
-      "explainer_title@en": "Hiring relatives",
-      "explainer_body@en": "In some countries, it is forbidden to hire a relative as an assistant. While it might not be a legal risk (after all, your spouse might be the most qualified person for a job), it is a political one. It is safer to ask one of the companies you're in friendly terms with to do the hire (you can then award a public contract to the company in question to finance the new position).",
+      "explainer": {
+        "title@en": "Hiring relatives",
+        "body@en": "In some countries, it is forbidden to hire a relative as an assistant. While it might not be a legal risk (after all, your spouse might be the most qualified person for a job), it is a political one. It is safer to ask one of the companies you're in friendly terms with to do the hire (you can then award a public contract to the company in question to finance the new position)."
+      },
       "choices": [
         {
           "text@en": "Hire him as an assistant.",
@@ -1532,8 +1576,10 @@
           "text@en": "Why don't you come to my chalet of Zug, Switzerland, to discuss this?"
         }
       ],
-      "explainer_title@en": "The Revolving Door",
-      "explainer_body@en": "After a career in the administration, public officials are often invited to work in the private sectors. Their contacts and their in-depth knowledge of how an administration works are very valuable for a private company. Sometimes, the promise of having a plump job is enough to convince a public official to take a decision in favor of a private company.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-revolving-door/' target='_blank'>The Revolving Door</a> at Cooking Budgets.",
+      "explainer": {
+        "title@en": "The Revolving Door",
+        "body@en": "After a career in the administration, public officials are often invited to work in the private sectors. Their contacts and their in-depth knowledge of how an administration works are very valuable for a private company. Sometimes, the promise of having a plump job is enough to convince a public official to take a decision in favor of a private company.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-revolving-door/' target='_blank'>The Revolving Door</a> at Cooking Budgets."
+      },
       "choices": [
         {
           "text@en": "Accept the invitation.",
@@ -1594,8 +1640,10 @@
           "text@en": "I'll let you review it."
         }
       ],
-      "explainer_title@en": "The Revolving Door",
-      "explainer_body@en": "After a career in the administration, public officials are often invited to work in the private sectors. Their contacts and their in-depth knowledge of how an administration works are very valuable for a private company. Sometimes, the promise of having a plump job is enough to convince a public official to take a decision in favor of a private company.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-revolving-door/' target='_blank'>The Revolving Door</a> at Cooking Budgets.",
+      "explainer": {
+        "title@en": "The Revolving Door",
+        "body@en": "After a career in the administration, public officials are often invited to work in the private sectors. Their contacts and their in-depth knowledge of how an administration works are very valuable for a private company. Sometimes, the promise of having a plump job is enough to convince a public official to take a decision in favor of a private company.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-revolving-door/' target='_blank'>The Revolving Door</a> at Cooking Budgets."
+      },
       "choices": [
         {
           "text@en": "City Construction Limited made an offer at 10 million.",
@@ -1646,8 +1694,10 @@
           "text@en": "We received three offers. Pick the best one."
         }
       ],
-      "explainer_title@en": "How to spot a cartel?",
-      "explainer_body@en": "Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous.",
+      "explainer": {
+        "title@en": "How to spot a cartel?",
+        "body@en": "Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous."
+      },
       "choices": [
         {
           "text@en": "Your company made an offer at 1 million.",

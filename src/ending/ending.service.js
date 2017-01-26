@@ -1,13 +1,14 @@
 export default EndingService;
 
 /** @ngInject */
-function EndingService() {
+function EndingService(I18n) {
   // Symbols declarion for private attributes and methods
   const _meta = Symbol('meta');
   const _game = Symbol('game');
 
-  class Ending {
+  class Ending extends I18n {
     constructor(meta, game) {
+      super(meta);
       this[_game] = game;
       this[_meta] = angular.copy(meta);
     }
@@ -30,9 +31,6 @@ function EndingService() {
     }
     get index() {
       return this.game.endings.indexOf(this);
-    }
-    get text() {
-      return this[_meta]['text@en'] || null;
     }
     get game() {
       return this[_game];
