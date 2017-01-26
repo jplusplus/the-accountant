@@ -10,13 +10,13 @@ import {main} from './main/main.js';
 import {mainDebug} from './main/debug/debug.js';
 import {mainToolbar} from './main/toolbar/toolbar.js';
 import {mainVars} from './main/vars/vars.js';
-import {slicable} from './slicable/slicable.js';
+import {stack} from './stack/stack.js';
 import unsafe from './unsafe/unsafe.filter.js';
 import slide from './slide/slide.animation.js';
 import Game from './game/game.service.js';
 import I18n from './i18n/i18n.service.js';
 import Step from './step/step.service.js';
-import Slicable from './slicable/slicable.service.js';
+import Stack from './stack/stack.service.js';
 import Slice from './slice/slice.service.js';
 import Choice from './choice/choice.service.js';
 import Var from './var/var.service.js';
@@ -41,7 +41,7 @@ angular
   .service('Game', Game)
   .service('I18n', I18n)
   .service('Step', Step)
-  .service('Slicable', Slicable)
+  .service('Stack', Stack)
   .service('Slice', Slice)
   .service('Choice', Choice)
   .service('Var', Var)
@@ -51,4 +51,4 @@ angular
   .component('mainDebug', mainDebug)
   .component('mainToolbar', mainToolbar)
   .component('mainVars', mainVars)
-  .component('slicable', slicable);
+  .component('stack', stack);

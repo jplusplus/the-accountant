@@ -1,7 +1,7 @@
-export const slicable = {
-  template: require('./slicable.html'),
+export const stack = {
+  template: require('./stack.html'),
   bindings: {
-    slicable: '<',
+    stack: '<',
     game: '<'
   }
 };

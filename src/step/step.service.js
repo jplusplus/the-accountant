@@ -2,13 +2,13 @@ export default StepService;
 import _ from 'lodash';
 
 /** @ngInject */
-function StepService(Choice, Slice, Slicable, $rootScope, $log) {
+function StepService(Choice, Slice, Stack, $rootScope, $log) {
   // Symbols declarion for private attributes and methods
   const _meta = Symbol('meta');
   const _game = Symbol('game');
   const _choices = Symbol('choices');
 
-  class Step extends Slicable {
+  class Step extends Stack {
     constructor(meta, game) {
       // Create slices using the parent constructor
       super(meta.texts);

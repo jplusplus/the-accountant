@@ -1,15 +1,15 @@
 import _ from 'lodash';
-export default SlicableService;
+export default StackService;
 
 /** @ngInject */
-function SlicableService(Slice, I18n) {
+function StackService(Slice, I18n) {
   // Symbols declarion for private attributes and methods
   const _meta = Symbol('meta');
   const _slice = Symbol('slice');
   const _slices = Symbol('slices');
   const _clusters = Symbol('clusters');
 
-  class Slicable extends I18n {
+  class Stack extends I18n {
     constructor(meta) {
       super(meta);
       this[_meta] = angular.copy(meta);
@@ -94,5 +94,5 @@ function SlicableService(Slice, I18n) {
       return this[_clusters];
     }
   }
-  return Slicable;
+  return Stack;
 }

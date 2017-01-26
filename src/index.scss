@@ -48,7 +48,7 @@ $panel-width:  map-get($grid-breakpoints, md);
 @import "main/toolbar/toolbar.scss";
 @import "main/debug/debug.scss";
 @import "main/vars/vars.scss";
-@import "slicable/slicable.scss";
+@import "stack/stack.scss";
 
 @keyframes blink {
   50% {

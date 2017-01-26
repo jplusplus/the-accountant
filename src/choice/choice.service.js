@@ -2,13 +2,13 @@ export default ChoiceService;
 import _ from 'lodash';
 
 /** @ngInject */
-function ChoiceService(Slice, Slicable) {
+function ChoiceService(Slice, Stack) {
   // Symbols declarion for private attributes and methods
   const _meta = Symbol('meta');
   const _step = Symbol('step');
   const _consequences = Symbol('consequences');
 
-  class Choice extends Slicable {
+  class Choice extends Stack {
     constructor(meta, step) {
       // Create slices using the parent constructor
       super(meta.feedback || []);

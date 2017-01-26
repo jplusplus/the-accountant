@@ -9,7 +9,7 @@
         {{::year}}
       </div>
       <div class="main__steps__item card card-block" ng-repeat="step in $ctrl.game.journey|filter:{year}">
-        <slicable slicable="step" game="$ctrl.game"></slicable>
+        <stack stack="step" game="$ctrl.game"></stack>
         <fieldset ng-disabled="step.selection" class="main__steps__item__choices" ng-if="step.isLastSlice()">
           <div class="list-unstyled row mb-0">
             <div class="col-lg mt-1 main__steps__item__choices__btn" ng-class="{ 'col-lg-6': step.choices.length > 3 }" ng-repeat="choice in :: step.choices">
@@ -20,7 +20,7 @@
           </div>
         </fieldset>
         <div class="mt-4" ng-if="step.selection && step.selection.hasFeedback()">
-          <slicable slicable="step.selection" game="$ctrl.game"></slicable>
+          <stack stack="step.selection" game="$ctrl.game"></stack>
         </div>
         <fieldset ng-if="step.isDone()" ng-disabled="!step.isPrevious()">
           <button class="btn btn-block btn-link btn-sm main__steps__item__undo my-2" ng-click="$ctrl.game.undo()">
