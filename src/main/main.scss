@@ -279,7 +279,7 @@
       pointer-events: none;
       opacity: 0;
       @include transition(400ms);
-      @include gradient-y(rgba(black, 0), rgba(black, 0.5));
+      @include gradient-y(rgba(black, 0), rgba(black, 0.4));
     }
 
     &--open:after {

@@ -1,0 +1,15 @@
+<div class="main__hints container-fluid">
+  <div ng-if="!$ctrl.game.hasHints()" class="m-4 p-4 bg-faded text-center">
+    <i class="fa fa-ambulance fa-4x text-muted"></i>
+    <h2>No hints yet</h2>
+    <p class="lead">
+      Hints are collected during the game.
+    </p>
+  </div>
+  <ul class="list-group mt-4" ng-if="$ctrl.game.hasHints()">
+    <li class="list-group-item" ng-repeat="hint in $ctrl.game.hints">
+      <h5 class="mb-2">{{::hint.title}}</h5>
+      <p class="mb-1" ng-bind-html="::hint.body | unsafe"></p>
+    </li>
+  </ul>
+</div>

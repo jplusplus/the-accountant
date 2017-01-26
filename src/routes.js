@@ -17,5 +17,9 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
     .state('main.vars', {
       url: 'vars',
       component: 'mainVars'
+    })
+    .state('main.hints', {
+      url: 'hints',
+      component: 'mainHints'
     });
 }

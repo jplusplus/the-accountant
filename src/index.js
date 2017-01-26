@@ -9,6 +9,7 @@ import 'angular-hotkeys';
 import {main} from './main/main.js';
 import {mainDebug} from './main/debug/debug.js';
 import {mainToolbar} from './main/toolbar/toolbar.js';
+import {mainHints} from './main/hints/hints.js';
 import {mainVars} from './main/vars/vars.js';
 import {stack} from './stack/stack.js';
 import unsafe from './unsafe/unsafe.filter.js';
@@ -50,5 +51,6 @@ angular
   .component('main', main)
   .component('mainDebug', mainDebug)
   .component('mainToolbar', mainToolbar)
+  .component('mainHints', mainHints)
   .component('mainVars', mainVars)
   .component('stack', stack);

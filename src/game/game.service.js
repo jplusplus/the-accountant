@@ -48,6 +48,9 @@ function gameService($log, $rootScope, Step, Var, Ending) {
     allowsNextSlice() {
       return this.step !== null && !this.targetSlice.isLastSlice();
     }
+    hasHints() {
+      return this.hints.length > 0;
+    }
     update(changes) {
       _.forEach(changes, (value, key) => {
         // Set the value accordingly
