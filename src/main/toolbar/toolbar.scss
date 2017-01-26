@@ -33,6 +33,20 @@
       &:hover, &:active, &:focus {
         text-decoration: none;
       }
+
+      i {
+        position: relative;
+        .badge {
+          display: inline-block;
+          position: absolute;
+          top:0;
+          left:100%;
+          font-size:0.4em;
+          transform: translate(-50%, -50%);
+          border-radius: 0.5em;
+          font-family: $font-family-sans-serif;
+        }
+      }
     }
 
     &.active {

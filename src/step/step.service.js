@@ -2,11 +2,12 @@ export default StepService;
 import _ from 'lodash';
 
 /** @ngInject */
-function StepService(Choice, Slice, Stack, $rootScope, $log) {
+function StepService(Choice, Slice, Stack, I18n, $rootScope, $log) {
   // Symbols declarion for private attributes and methods
   const _meta = Symbol('meta');
   const _game = Symbol('game');
   const _choices = Symbol('choices');
+  const _hint = Symbol('hint');
 
   class Step extends Stack {
     constructor(meta, game) {
@@ -15,15 +16,22 @@ function StepService(Choice, Slice, Stack, $rootScope, $log) {
       // Set private properties
       this[_game] = game;
       this[_meta] = angular.copy(meta);
+      this[_hint] = this.hasHint() ? new I18n(this[_meta].explainer) : null;
       // Create choices
       this[_choices] = this[_meta].choices.map(meta => new Choice(meta, this));
       // Ensure those method arround bound to the current instance
-      ['select', 'isCurrent', 'hasCondition', 'undo'].forEach(m => {
+      ['select', 'isCurrent', 'hasCondition', 'undo', 'displayHint'].forEach(m => {
         this[m] = this[m].bind(this);
       });
     }
     hasCondition() {
       return this[_meta].hasOwnProperty('condition');
+    }
+    hasHint() {
+      return this[_meta].hasOwnProperty('explainer');
+    }
+    displayHint() {
+      return this.hasHint() && !this.selection && this.isLastSlice();
     }
     isPrevious() {
       return this === this.game.journey.slice(-2)[0];
@@ -77,6 +85,9 @@ function StepService(Choice, Slice, Stack, $rootScope, $log) {
     }
     get condition() {
       return this[_meta].condition || {};
+    }
+    get hint() {
+      return this[_hint];
     }
   }
   return Step;

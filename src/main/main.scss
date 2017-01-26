@@ -56,6 +56,10 @@
     &__item {
       margin:0.5rem;
 
+      &:last-child {
+        margin-bottom:0;
+      }
+
       @include media-breakpoint-down(sm) {
         font-size:0.9rem;
         padding:0.4rem;
@@ -152,24 +156,53 @@
     }
   }
 
-
-  &__timeline {
+  &__footer {
     position: absolute;
     bottom:0;
+    top:0;
     left: $toolbar-width-md;
     width:calc(100% - #{$toolbar-width-md});
-    padding:$spacer * 2 $spacer;
     max-width: $panel-width;
-    background: white;
-    height:4rem;
-    border:0.5rem solid $brand-inverse;
+    overflow: hidden;
+    background: $brand-inverse;
+    border:0.5rem $brand-inverse solid;
     border-left:0;
     border-top:0;
+    pointer-events: none;
 
     @include media-breakpoint-down(sm) {
-      border:0;
       left:$toolbar-width-xs;
+      border:0;
       width:calc(100% - #{$toolbar-width-xs});
+    }
+  }
+
+  &__timeline, &__hint {
+    pointer-events: auto;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width:100%;
+    background: white;
+    z-index:600;
+
+    &.ng-enter, &.ng-leave {
+      @include transition(0.6s);
+    }
+
+    &.ng-leave,
+    &.ng-enter.ng-enter-active {
+      transform: translateX(0);
+    }
+  }
+
+  &__timeline {
+    padding:$spacer * 2 $spacer;
+    height:4rem;
+
+    &.ng-enter,
+    &.ng-leave.ng-leave-active {
+      transform: translateX(-100%);
     }
 
     &__year {
@@ -210,6 +243,65 @@
           display: block;
         }
       }
+    }
+  }
+
+  &__hint {
+    text-align: center;
+    background:white;
+    min-height: 4rem;
+    @include transition(400ms);
+
+    &.ng-enter,
+    &.ng-leave.ng-leave-active {
+      transform: translateX(100%);
+    }
+
+    &:before {
+      content:"";
+      position: absolute;
+      bottom:100%;
+      left:50%;
+      transform: translate(-50%, 25%);
+      border:transparent $spacer solid;
+      border-bottom-color: $french-gray;
+      z-index:100000;
+      pointer-events: none;
+    }
+
+    &:after {
+      content:"";
+      position: absolute;
+      left:0;
+      right: 0;
+      bottom:100%;
+      height:0;
+      pointer-events: none;
+      opacity: 0;
+      @include transition(400ms);
+      @include gradient-y(rgba(black, 0), rgba(black, 0.5));
+    }
+
+    &--open:after {
+      opacity: 1;
+      height: 8rem;
+    }
+
+    &__toggler {
+      cursor: pointer;
+      display: inline-block;
+      margin:$spacer / 2 0;
+      background: $french-gray;
+      border-radius: 0.5rem;
+      font-size: 1.1rem;
+      padding:0.5rem 1rem;
+      font-weight: bolder;
+      font-family: $headings-font-family;
+    }
+
+    &__body {
+      max-width: 450px;
+      margin: auto;
     }
   }
 

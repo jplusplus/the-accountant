@@ -14,7 +14,7 @@
           <div class="list-unstyled row mb-0">
             <div class="col-lg mt-1 main__steps__item__choices__btn" ng-class="{ 'col-lg-6': step.choices.length > 3 }" ng-repeat="choice in :: step.choices">
               <button class="btn btn-block btn-sm btn-primary" ng-click="step.select(choice)" ng-class="{ active: step.selection == choice }">
-                {{ :: choice.text }}
+                {{::choice.text}}
               </button>
             </div>
           </div>
@@ -35,14 +35,25 @@
     <img ng-src="{{ picture }}"  class="main__picture__img" />
   </div>
 
-  <div class="main__timeline">
-    <div class="container-fluid">
-      <div class="row">
-        <div ng-repeat="year in :: $ctrl.game.years" class="col main__timeline__year"  ng-class="{ 'main__timeline__year--active':  year <= $ctrl.game.step.year }">
-          <div class="main__timeline__year__label">
-            {{ :: year }}
+  <div class="main__footer">
+    <div class="main__timeline" ng-if="!$ctrl.game.step.displayHint()">
+      <div class="container-fluid">
+        <div class="row">
+          <div ng-repeat="year in :: $ctrl.game.years" class="col main__timeline__year"  ng-class="{ 'main__timeline__year--active':  year <= $ctrl.game.step.year }">
+            <div class="main__timeline__year__label">
+              {{::year}}
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="main__hint" ng-class="{'main__hint--open': $ctrl.game.lastHint.open}" ng-if="$ctrl.game.step.displayHint()">
+      <button class="main__hint__toggler btn btn-default btn-sm" ng-click="$ctrl.game.lastHint.open = !$ctrl.game.lastHint.open">
+        {{ $ctrl.game.lastHint.title }}
+      </button>
+      <div class="main__hint__body slide" ng-if="$ctrl.game.lastHint.open">
+        <div class="p-2 pb-3" ng-bind-html="$ctrl.game.lastHint.body | unsafe"></div>
       </div>
     </div>
   </div>

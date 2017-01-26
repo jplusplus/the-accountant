@@ -15,7 +15,6 @@ $copperfield: #dc8459;
 $french-gray: #bfbec2;
 $friar-gray: #7d7d7a;
 
-
 $brand-primary: #d8b041;
 $brand-secondary: #F9CF98;
 $brand-warning: $copperfield;
@@ -36,6 +35,8 @@ $enable-rounded: false;
 $enable-gradients: true;
 $enable-transitions: true;
 $enable-flex: true;
+
+$line-height-base: 1.2;
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
