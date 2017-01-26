@@ -22,11 +22,17 @@ function SlicableService(Slice, I18n) {
         this[m] = this[m].bind(this);
       });
     }
+    isStartingSlice() {
+      return this.slice === -1;
+    }
+    isFirstSlice() {
+      return this.slice === 0;
+    }
     isLastSlice() {
       return this.slice === this.slices.length - 1;
     }
     nextSlice() {
-      this.slice = this.slice + 1;
+      this.slice++;
     }
     finalSlice() {
       this.slice = this.slices.length - 1;
@@ -41,13 +47,15 @@ function SlicableService(Slice, I18n) {
     get readingTime() {
       if (this.lastSlice !== null) {
         // We read approximativly 270 word per minute
-        return this.lastSlice.t.text.split(' ').length * 60 / 270 * 1000;
+        const duration = this.lastSlice.text.split(' ').length * 60 / 270 * 1000;
+        // Reading time can't be under 700 milliseconds
+        return Math.max(duration, 700);
       }
       // Default duration
-      return 1200;
+      return 0;
     }
     set slice(val) {
-      this[_slice] = Math.max(0, Math.min(this.slices.length - 1, val));
+      this[_slice] = Math.max(-1, Math.min(this.slices.length - 1, val));
     }
     get slice() {
       return this[_slice];

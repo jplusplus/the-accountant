@@ -36,6 +36,8 @@ function StepService(Choice, Slice, Slicable, $rootScope, $log) {
     }
     select(choice = _.last(this.choices)) {
       this.game.select(choice);
+      // Start from the begining of the choice slice
+      choice.slice = -1;
       // Add info to the log
       $log.info('Step %s: choice %s', this.index, choice.index);
     }

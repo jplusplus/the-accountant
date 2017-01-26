@@ -39,6 +39,8 @@
       color:white;
       font-family: $headings-font-family;
       font-weight: bold;
+      animation: fadeIn 1500ms;
+      animation-fill-mode: forwards;
 
       &__banner {
         z-index: -1;

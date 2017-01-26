@@ -13,15 +13,27 @@ export const main = {
         // Simply create a new instance of game
         $state.go('main', {}, {reload: true});
       };
+      this.prepareNewYear = () => {
+        return $timeout(() => {
+          // Udate last displayed year
+          this.year = this.game.step.year;
+          // Then wait for the next slice again
+          this.waitNextSlice();
+        // Skip timeout for the first year
+        }, !this.game.isFirstYear() * 1000);
+      };
       // Create a timeout to go to the next slice
       this.waitNextSlice = () => {
-        this.year = this.game.step.year;
         // Cancel any existing timeout
         $timeout.cancel(this.nextSliceTimeout);
+        // The year chanched
+        if (this.year !== this.game.step.year) {
+          // Wait for it...
+          this.nextSliceTimeout = this.prepareNewYear();
         // Party might be over
-        if (this.game.step !== null && $state.is('main')) {
+        } else if (this.game.allowsNextSlice() && $state.is('main')) {
           // Define duration according to the readingTime
-          const duration = Math.max(this.game.readingTime, 700);
+          const duration = this.game.targetSlice.isStartingSlice() ? 3000 : this.game.readingTime;
           // Set another one
           this.nextSliceTimeout = $timeout(this.game.nextSlice, duration);
         }
@@ -47,15 +59,16 @@ export const main = {
         const years = _.range(this.game.step.year - 1, this.game.step.year + 1);
         // Remove years out of bounds and return the array
         return years.filter(y => {
-          return y >= _.first(this.game.years) && y <= _.last(this.game.years);
+          return y >= _.first(this.game.years) && y <= this.year;
         });
       };
       // Go automaticaly to the next slice
       $scope.$on('game:slice:next', this.waitNextSlice);
+      $scope.$on('game:selection', this.waitNextSlice);
       // Restart the timer when re-entering this state
       $transitions.onSuccess({to: 'main'}, this.waitNextSlice);
       // Create a gave
-      this.waitNextSlice();
+      this.prepareNewYear();
       // Watch keyboard
       hotkeys.add({combo: 'space', callback: this.continue});
     };

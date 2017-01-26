@@ -33,6 +33,9 @@ function gameService($log, $rootScope, Step, Var, Ending) {
     isOver() {
       return _.some(this.history, _.method('hasConsequences')) || !this.hasStepsAhead();
     }
+    isFirstYear() {
+      return this.year === _.first(this.years);
+    }
     hasFeedback() {
       return this.history.length ? _.last(this.history).hasFeedback() : false;
     }
@@ -41,6 +44,9 @@ function gameService($log, $rootScope, Step, Var, Ending) {
     }
     hasStepsBehind() {
       return this.stepsBehind.length > 0;
+    }
+    allowsNextSlice() {
+      return this.step !== null && !this.targetSlice.isLastSlice();
     }
     update(changes) {
       _.forEach(changes, (value, key) => {
@@ -116,7 +122,10 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       return this.step;
     }
     get slice() {
-      return this.step.slice + (this.step.selection ? this.step.selection.slice : 0);
+      if (this.step.selection) {
+        return this.step.slice + this.step.selection.slice;
+      }
+      return this.step.slice;
     }
     get feedback() {
       return this.hasFeedback() ? _.last(this.history).feedback : null;
@@ -178,6 +187,9 @@ function gameService($log, $rootScope, Step, Var, Ending) {
     }
     get step() {
       return this.isOver() ? null : _.last(this.journey);
+    }
+    get year() {
+      return this.step && this.step.year;
     }
     get years() {
       return _(this.steps).map('year').compact().uniq().sort().value();

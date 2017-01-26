@@ -35,6 +35,9 @@ function ChoiceService(Slice, Slicable) {
       // Undo the parent step
       _.without(this.step.game.stepsAhead, this.step).forEach(_.method('undo'));
     }
+    nextSlice() {
+      return super.nextSlice();
+    }
     // Risks related to that choices
     get risks() {
       // Variables changed by this choice (the risk must be included)
