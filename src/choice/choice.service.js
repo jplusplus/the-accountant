@@ -54,14 +54,14 @@ function ChoiceService(Slice, Slicable) {
     get index() {
       return this.step.choices.indexOf(this);
     }
-    get text() {
-      return this[_meta]['text@en'] || null;
-    }
     get feedback() {
       return this.slices;
     }
     get step() {
       return this[_step];
+    }
+    get meta() {
+      return this[_meta];
     }
   }
   return Choice;
