@@ -36,7 +36,7 @@
   </div>
 
   <div class="main__footer">
-    <div class="main__timeline" ng-if="!$ctrl.game.step.displayHint() || !('main' | isState)">
+    <div class="main__timeline" ng-if="!$ctrl.game.step.displayHint()">
       <div class="container-fluid">
         <div class="row">
           <div ng-repeat="year in :: $ctrl.game.years" class="col main__timeline__year"  ng-class="{ 'main__timeline__year--active':  year <= $ctrl.game.step.year }">
@@ -48,7 +48,7 @@
       </div>
     </div>
 
-    <div class="main__hint" ng-class="{'main__hint--open': $ctrl.game.lastHint.open}" ng-if="$ctrl.game.step.displayHint() && ('main' | isState)">
+    <div class="main__hint" ng-class="{'main__hint--open': $ctrl.game.lastHint.open}" ng-if="$ctrl.game.step.displayHint()">
       <button class="main__hint__toggler btn btn-default btn-sm" ng-click="$ctrl.game.lastHint.open = !$ctrl.game.lastHint.open">
         {{ $ctrl.game.lastHint.title }}
       </button>
