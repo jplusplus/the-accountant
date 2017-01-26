@@ -216,7 +216,7 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       // Get all past steps that reach the last slice (before selection)
       const withSelection = _.chain(this.journey).filter(_.method('isLastSlice'));
       // Extract the hint
-      return withSelection.map('hint').compact().value();
+      return withSelection.map('hint').compact().uniqBy(h => h.title).value();
     }
     get lastHint() {
       if (this.step && this.step.hasHint()) {
