@@ -288,16 +288,19 @@
       left:0;
       right: 0;
       bottom:100%;
-      height:0;
+      height: 8rem;
       pointer-events: none;
       opacity: 0;
       @include transition(400ms);
       @include gradient-y(rgba(black, 0), rgba(black, 0.4));
     }
 
-    &--open:after {
+    &:hover:after {
       opacity: 1;
-      height: 8rem;
+    }
+
+    &:hover &__body {
+      max-height:100vh;
     }
 
     &__toggler {
@@ -308,7 +311,7 @@
       border-radius: 0.5rem;
       font-size: 1.1rem;
       padding:0.5rem 1rem;
-      font-weight: bolder;
+      font-weight: lighter;
       font-family: $headings-font-family;
       position: relative;
       z-index:1;
@@ -327,9 +330,12 @@
     }
 
     &__body {
+      @include transition(max-height 400ms);
       max-width: 450px;
+      max-height:0vh;
       margin: auto;
       text-align: left;
+      overflow: hidden;
     }
   }
 

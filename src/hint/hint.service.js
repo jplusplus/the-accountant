@@ -19,6 +19,12 @@ function HintService(I18n) {
     toggle() {
       this[_open] = !this[_open];
     }
+    close() {
+      this[_open] = false;
+    }
+    open() {
+      this[_open] = true;
+    }
     get step() {
       return this[_step];
     }

@@ -6,7 +6,7 @@ export const main = {
     game: '<'
   },
   /** @ngInject */
-  controller($state, $scope, $timeout, hotkeys, $transitions, $log) {
+  controller($state, $scope, $timeout, hotkeys, $transitions) {
     this.$onInit = () => {
       // Method to start a new party
       this.playAgain = this.start = () => {
@@ -49,7 +49,8 @@ export const main = {
           // Select the default value
           this.game.step.select();
         } else {
-          $log.log('final');
+          // Update last displayed year
+          this.year = this.game.step.year;
           // Go to the final slice
           this.game.finalSlice();
         }

@@ -56,10 +56,10 @@
     </div>
 
     <div class="main__hint" ng-class="{'main__hint--open': $ctrl.game.lastHint.isOpen() }" ng-if="$ctrl.game.step.displayHint()">
-      <button class="main__hint__toggler btn btn-default btn-sm" ng-click="$ctrl.game.lastHint.toggle()">
+      <span class="main__hint__toggler btn btn-default btn-sm">
         {{ $ctrl.game.lastHint.title }}
-      </button>
-      <div class="main__hint__body slide" ng-if="$ctrl.game.lastHint.isOpen()">
+      </span>
+      <div class="main__hint__body">
         <div class="p-2 pb-3" ng-bind-html="$ctrl.game.lastHint.body | unsafe"></div>
       </div>
     </div>
