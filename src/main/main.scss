@@ -5,6 +5,94 @@
   right:0;
   bottom:0;
   box-shadow: 0 0 50vh 0 black inset;
+  animation: fadeIn 2500ms;
+  animation-fill-mode: forwards;
+
+  &__intro {
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: 2000;
+    background: darken($brand-inverse, 10);
+    @include transition(1500ms);
+
+    &.ng-leave.ng-leave-active,
+    &.ng-enter {
+      opacity: 0;
+    }
+
+    &.ng-leave, &.ng-enter-active {
+      opacity: 1;
+    }
+
+    &__content {
+      position: absolute;
+      top:40%;
+      left:50%;
+      transform: translate(-50%, -50%);
+      width:100%;
+      max-width: 600px;
+      padding:$spacer * 2;
+      color: white;
+      @include transition(1500ms);
+
+      &:before {
+        content:"";
+        position: absolute;
+        left: -15px;
+        top:0;
+        bottom:0;
+        width: 5px;
+        background: white;
+        border-radius: 2.5px;
+      }
+
+      &__heading {
+        font-weight:bolder;
+        padding:$spacer;
+        position: relative;
+        white-space: normal;
+
+        &:before {
+          content:url('./images/temptation.svg');
+          position: absolute;
+          right:100%;
+          top:50%;
+          height:100px;
+          width:90px;
+          padding:5px 0;
+          transform: translateY(-50%);
+          background: darken($brand-inverse, 10);
+        }
+      }
+
+      &__meta {
+        font-weight: bolder;
+        font-size:1rem;
+      }
+
+      &__meta, &__description {
+        padding:0 $spacer;
+      }
+
+      &__start {
+        background:transparent;
+        color: white;
+        border:4px solid white;
+        cursor: pointer;
+      }
+
+      &__delayed {
+        overflow: hidden;
+        max-height: 0;
+        animation: opening 1200ms;
+        animation-fill-mode: forwards;
+        animation-delay: 2000ms;
+      }
+    }
+  }
 
   &__steps {
     background: white;
@@ -304,7 +392,6 @@
     }
 
     &__toggler {
-      cursor: pointer;
       display: inline-block;
       margin:$spacer / 2 0;
       background: $french-gray;

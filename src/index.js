@@ -5,6 +5,7 @@ import 'angular-ui-router';
 import 'angular-translate';
 import 'angularjs-scroll-glue';
 import 'angular-hotkeys';
+import 'ng-fittext';
 // Internal modules
 import {main} from './main/main.js';
 import {mainDebug} from './main/debug/debug.js';
@@ -35,7 +36,8 @@ angular
     'ngAnimate',
     'ui.router',
     'luegg.directives',
-    'cfp.hotkeys'
+    'cfp.hotkeys',
+    'ngFitText'
   ])
   .config(routesConfig)
   .run(modernizrConfig)

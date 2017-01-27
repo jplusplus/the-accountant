@@ -2,6 +2,29 @@
   <main-toolbar game="$ctrl.game" ng-dblclick="debug = !debug"></main-toolbar>
   <main-debug game="$ctrl.game" ng-if="debug"></main-debug>
 
+  <div class="main__intro" ng-if="!$ctrl.started">
+    <div class="main__intro__content">
+      <h1 class="main__intro__content__heading" data-fittext="1.2">
+        Temptation City
+      </h1>
+      <div class="main__intro__content__delayed">
+        <p class="main__intro__content__meta lead">
+          — by <a href="http://jplusplus.org" target="_blank">Journalism++</a>
+        </p>
+        <p class="main__intro__content__description lead">
+          You're in charge now. Don't screw up! As new general manager of Temptation City
+          you have to play smart in order to make everyone happy.
+          If you can grap some money in the same time, that's would nice. But don't be caught!
+          <br />
+        </p>
+        <button class="btn btn-lg btn-primary main__intro__content__start mt-2 ml-2" ng-click="$ctrl.start()">
+          Start
+        </button>
+      </div>
+    </div>
+
+  </div>
+
   <div class="main__steps" ui-view scroll-glue>
     <div ng-repeat="year in $ctrl.visibleYears()">
       <div class="main__steps__year" ng-if="year <= $ctrl.game.step.year">
@@ -55,7 +78,7 @@
       </div>
     </div>
 
-    <div class="main__hint" ng-class="{'main__hint--open': $ctrl.game.lastHint.isOpen() }" ng-if="$ctrl.game.step.displayHint()">
+    <div class="main__hint" ng-if="$ctrl.game.step.displayHint()">
       <span class="main__hint__toggler btn btn-default btn-sm">
         {{ $ctrl.game.lastHint.title }}
       </span>

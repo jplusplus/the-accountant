@@ -64,15 +64,18 @@ export const main = {
           return y >= _.first(this.game.years) && y <= this.year;
         });
       };
+      this.start = () => {
+        this.started = true;
+        // Create a gave
+        this.prepareNewYear();
+        // Watch keyboard
+        hotkeys.add({combo: 'space', callback: this.continue});
+      };
       // Go automaticaly to the next slice
       $scope.$on('game:slice:next', this.waitNextSlice);
       $scope.$on('game:selection', this.waitNextSlice);
       // Restart the timer when re-entering this state
       $transitions.onSuccess({to: 'main'}, this.waitNextSlice);
-      // Create a gave
-      this.prepareNewYear();
-      // Watch keyboard
-      hotkeys.add({combo: 'space', callback: this.continue});
     };
   }
 };

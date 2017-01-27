@@ -20,7 +20,7 @@ $brand-secondary: #F9CF98;
 $brand-warning: $copperfield;
 $brand-inverse: #484846;
 
-$body-bg: #e3e5e7;
+$body-bg: darken($brand-inverse, 20);
 $body-color: #484846;
 
 $btn-primary-color: white;
@@ -48,6 +48,7 @@ $panel-width:  map-get($grid-breakpoints, md);
 @import "main/main.scss";
 @import "main/toolbar/toolbar.scss";
 @import "main/debug/debug.scss";
+@import "main/hints/hints.scss";
 @import "main/vars/vars.scss";
 @import "stack/stack.scss";
 
@@ -62,6 +63,17 @@ $panel-width:  map-get($grid-breakpoints, md);
     opacity: 0;
   }
   100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opening {
+  0% {
+    max-height: 0;
+    opacity: 0;
+  }
+  100% {
+    max-height: 440px;
     opacity: 1;
   }
 }
