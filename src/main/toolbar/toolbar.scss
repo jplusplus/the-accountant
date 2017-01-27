@@ -52,6 +52,16 @@
     &.active {
       position: relative;
 
+      .cssclippathcircle &:before {
+        content:"";
+        position: absolute;
+        right:0;
+        top:-15px;
+        bottom:-15px;
+        width: 15px;
+        background: white;
+      }
+
       a {
         color: $brand-inverse;
         margin-left:$spacer / 2;
@@ -60,25 +70,25 @@
         border-radius: 0.5rem 0 0 0.5rem;
         position: relative;
 
-        .cssclippathsvg &:before, .cssclippathsvg &:after {
+        .cssclippathcircle &:before, .cssclippathcircle &:after {
           content:"";
           position: absolute;
           right:0;
           width:15px;
           height:15px;
-          background:inherit;
+          background:$brand-inverse;
         }
 
         &:before {
-          bottom:calc(100% - 1px);
-          clip-path: url('./images/corners.svg#corner-top-clip');
-          -webkit-clip-path: circle(0% at 50% 50%);
+          bottom:100%;
+          clip-path: circle(100% at 0% 0%);
+          -webkit-clip-path: circle(100% at 0% 0%);
         }
 
         &:after {
-          top:calc(100% - 1px);
-          clip-path: url('./images/corners.svg#corner-bottom-clip');
-          -webkit-clip-path: circle(0% at 50% 50%);;
+          top:100%;
+          clip-path: circle(100% at 0% 100%);
+          -webkit-clip-path: circle(100% at 0% 100%);
         }
       }
     }
