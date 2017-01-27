@@ -199,7 +199,6 @@
   &__timeline {
     padding:$spacer * 2 $spacer;
     height:4rem;
-
     &.ng-enter,
     &.ng-leave.ng-leave-active {
       transform: translateX(-100%);
@@ -214,8 +213,13 @@
       padding:0;
       @include transition(600ms);
 
+      .no-cssfilters & {
+        opacity:0.3;
+      }
+
       &--active {
         filter:grayscale(0);
+        opacity:1;
       }
 
       &:nth-child(even) {
@@ -263,7 +267,7 @@
       bottom:100%;
       left:50%;
       transform: translate(-50%, 25%);
-      border:transparent $spacer * 1.5 solid;
+      border:transparent $spacer * 2 solid;
       border-bottom-color: white;
       z-index:1;
       pointer-events: none;
@@ -316,6 +320,7 @@
     &__body {
       max-width: 450px;
       margin: auto;
+      text-align: left;
     }
   }
 

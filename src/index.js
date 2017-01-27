@@ -15,6 +15,7 @@ import {stack} from './stack/stack.js';
 import unsafe from './unsafe/unsafe.filter.js';
 import slide from './slide/slide.animation.js';
 import Game from './game/game.service.js';
+import Hint from './hint/hint.service.js';
 import I18n from './i18n/i18n.service.js';
 import Step from './step/step.service.js';
 import Stack from './stack/stack.service.js';
@@ -41,6 +42,7 @@ angular
   .filter('unsafe', unsafe)
   .animation('.slide', slide)
   .service('Game', Game)
+  .service('Hint', Hint)
   .service('I18n', I18n)
   .service('Step', Step)
   .service('Stack', Stack)

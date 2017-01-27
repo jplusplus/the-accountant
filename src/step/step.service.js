@@ -2,7 +2,7 @@ export default StepService;
 import _ from 'lodash';
 
 /** @ngInject */
-function StepService(Choice, Slice, Stack, I18n, $rootScope, $log) {
+function StepService(Choice, Slice, Stack, I18n, Hint, $rootScope, $log) {
   // Symbols declarion for private attributes and methods
   const _meta = Symbol('meta');
   const _game = Symbol('game');
@@ -16,7 +16,7 @@ function StepService(Choice, Slice, Stack, I18n, $rootScope, $log) {
       // Set private properties
       this[_game] = game;
       this[_meta] = angular.copy(meta);
-      this[_hint] = this.hasHint() ? new I18n(this[_meta].explainer) : null;
+      this[_hint] = this.hasHint() ? new Hint(this[_meta].explainer, this) : null;
       // Create choices
       this[_choices] = this[_meta].choices.map(meta => new Choice(meta, this));
       // Ensure those method arround bound to the current instance
