@@ -60,7 +60,7 @@
         border-radius: 0.5rem 0 0 0.5rem;
         position: relative;
 
-        &:before, &:after {
+        .cssclippathsvg &:before, .cssclippathsvg &:after {
           content:"";
           position: absolute;
           right:0;
@@ -71,12 +71,14 @@
 
         &:before {
           bottom:calc(100% - 1px);
-          clip-path: url('./#corner-top-clip');
+          clip-path: url('./images/corners.svg#corner-top-clip');
+          -webkit-clip-path: circle(0% at 50% 50%);
         }
 
         &:after {
           top:calc(100% - 1px);
-          clip-path: url('./#corner-bottom-clip');
+          clip-path: url('./images/corners.svg#corner-bottom-clip');
+          -webkit-clip-path: circle(0% at 50% 50%);;
         }
       }
     }

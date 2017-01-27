@@ -24,6 +24,7 @@ import Var from './var/var.service.js';
 import Character from './character/character.service.js';
 import Ending from './ending/ending.service.js';
 import routesConfig from './routes';
+import modernizrConfig from './modernizr.js';
 // Import SCSS with webpack
 import './index.scss';
 
@@ -36,6 +37,7 @@ angular
     'cfp.hotkeys'
   ])
   .config(routesConfig)
+  .run(modernizrConfig)
   .filter('unsafe', unsafe)
   .animation('.slide', slide)
   .service('Game', Game)

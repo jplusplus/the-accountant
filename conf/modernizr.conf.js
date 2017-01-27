@@ -1,10 +1,13 @@
 module.exports = {
   "minify": true,
   "options": [
-    "setClasses"
+    "setClasses",
+    "addTest",
+    "domPrefixes",
+    "prefixes"
   ],
   "feature-detects": [
-    "test/svg/clippaths",
-    "test/css/flexbox"
+    "test/css/flexbox",
+    "test/css/filters"
   ]
 };
