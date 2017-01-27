@@ -39,12 +39,21 @@ module.exports = {
         ]
       },
       {
+        test: /modernizr\.conf\.js$/,
+        loader: "modernizr-loader"
+      },
+      {
         test: /.html$/,
         loaders: [
           'html-loader'
         ]
       }
     ]
+  },
+  resolve: {
+    alias: {
+      modernizr$: path.resolve(__dirname, "./modernizr.conf.js")
+    }
   },
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),

@@ -24,6 +24,10 @@ module.exports = {
         enforce: 'pre'
       },
       {
+        test: /modernizr\.conf\.js$/,
+        loader: "modernizr-loader"
+      },
+      {
         test: /\.(css|scss)$/,
         loaders: [
           'style-loader',
@@ -50,6 +54,11 @@ module.exports = {
         ]
       }
     ]
+  },
+  resolve: {
+    alias: {
+      modernizr$: path.resolve(__dirname, "./modernizr.conf.js")
+    }
   },
   plugins: [
     new DashboardPlugin({ port: 3030 }),

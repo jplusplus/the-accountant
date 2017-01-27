@@ -24,7 +24,6 @@ import Var from './var/var.service.js';
 import Character from './character/character.service.js';
 import Ending from './ending/ending.service.js';
 import routesConfig from './routes';
-
 // Import SCSS with webpack
 import './index.scss';
 

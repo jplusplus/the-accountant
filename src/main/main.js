@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import Modernizr from 'modernizr';
 
 export const main = {
   template: require('./main.html'),
@@ -6,7 +7,9 @@ export const main = {
     game: '<'
   },
   /** @ngInject */
-  controller($state, $scope, $timeout, hotkeys, $transitions) {
+  controller($state, $scope, $timeout, hotkeys, $transitions, $log) {
+    $log.log(Modernizr.svgclippaths);
+
     this.$onInit = () => {
       // Method to start a new party
       this.playAgain = this.start = () => {
