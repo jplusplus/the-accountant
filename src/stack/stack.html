@@ -1,6 +1,6 @@
-<div class="stack">
+<div class="stack" ng-click="$ctrl.game.nextSlice()">
   <div ng-repeat="cluster in $ctrl.stack.clusters | filter:$ctrl.stack.clusterFilter">
-    <p class="stack__slice" ng-repeat="slice in cluster.slices | filter:$ctrl.stack.sliceFilter" ng-click="$ctrl.game.nextSlice()">
+    <p class="stack__slice" ng-repeat="slice in cluster.slices | filter:$ctrl.stack.sliceFilter">
       <img ng-src="{{::slice.character.avatar}}"  class="stack__slice__avatar" ng-if="$last" />
       <span class="stack__slice__character" ng-if="$first">
         {{::slice.character.name}} - <span class="stack__slice__character__title">{{::slice.character.title}}</span>
