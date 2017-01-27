@@ -10,12 +10,19 @@
       </div>
       <div class="main__steps__item card card-block" ng-repeat="step in $ctrl.game.journey|filter:{year}">
         <stack stack="step" game="$ctrl.game"></stack>
-        <fieldset ng-disabled="step.selection" class="main__steps__item__choices" ng-if="step.isLastSlice()">
+        <fieldset class="main__steps__item__choices" ng-if="step.isLastSlice()">
           <div class="list-unstyled row mb-0">
-            <div class="col-lg mt-1 main__steps__item__choices__btn" ng-class="{ 'col-lg-6': step.choices.length > 3 }" ng-repeat="choice in :: step.choices">
+            <div class="col-lg mt-1 main__steps__item__choices__btn" ng-class="{ 'col-lg-6': step.choices.length > 3 }" ng-repeat="choice in :: step.choices"  ng-if="!step.selection">
               <button class="btn btn-block btn-sm btn-primary" ng-click="step.select(choice)" ng-class="{ active: step.selection == choice }">
                 {{::choice.text}}
               </button>
+            </div>
+            <div ng-if="step.selection" class="col-lg">
+              <div class="mt-1 main__steps__item__choices__btn pull-right">
+                <span class="btn btn-block btn-sm btn-primary active">
+                  {{::step.selection.text}}
+                </span>
+              </div>
             </div>
           </div>
         </fieldset>

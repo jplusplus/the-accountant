@@ -1,5 +1,4 @@
 import _ from 'lodash';
-import Modernizr from 'modernizr';
 
 export const main = {
   template: require('./main.html'),
@@ -8,8 +7,6 @@ export const main = {
   },
   /** @ngInject */
   controller($state, $scope, $timeout, hotkeys, $transitions, $log) {
-    $log.log(Modernizr.svgclippaths);
-
     this.$onInit = () => {
       // Method to start a new party
       this.playAgain = this.start = () => {
@@ -48,11 +45,12 @@ export const main = {
           return;
         }
         // This is the last slice and therre is only one choose
-        if (this.game.step.isLastSlice() && this.game.step.choices.length === 1) {
+        if (this.game.step.isLastSlice() && this.game.step.choices.length === 1 && !this.game.step.selection) {
           // Select the default value
           this.game.step.select();
         } else {
-          // Go to the next slice
+          $log.log('final');
+          // Go to the final slice
           this.game.finalSlice();
         }
         // Cancel any existing timeout and restart it
