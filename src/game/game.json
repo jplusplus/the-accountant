@@ -131,7 +131,13 @@
       ],
       "choices": [
         {
-          "text@en": "Go"
+          "text@en": "Go",
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "Thank you mayor, I'll do my best."
+            }
+          ]
         }
       ]
     },
@@ -164,6 +170,10 @@
           },
           "feedback": [
             {
+              "character": "you",
+              "text@en": "I choose the offer of Public Works plc."
+            },
+            {
               "character": "construction-boss",
               "text@en": "You're new here, aren't you?"
             },
@@ -186,7 +196,13 @@
           "var_changes": {
             "reserves": -20,
             "gift_company2": 1
-          }
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "I choose the offer of City Construction Limited."
+            }
+          ]
         },
         {
           "text@en": "Public Building plc made an offer at 21 million",
@@ -195,6 +211,10 @@
             "risk_contractors": 1
           },
           "feedback": [
+            {
+              "character": "you",
+              "text@en": "I choose the offer of Public Building plc."
+            },
             {
               "character": "construction-boss",
               "text@en": "You're new here, aren't you?"
@@ -252,6 +272,9 @@
           },
           "feedback": [
             {
+              "character": "you",
+              "text@en": "Sure, I've always wanted to drive a BMW."
+            },{
               "character": "construction-boss",
               "text@en": "Here you go!"
             },
@@ -275,6 +298,10 @@
             "risk_contractors": 1
           },
           "feedback": [
+          {
+              "character": "you",
+              "text@en": "No, thank you."
+            },
             {
               "character": "construction-boss",
               "text@en": "Be careful, kid."
@@ -315,6 +342,10 @@
             "risk_police": 2
           },
           "feedback": [
+          {
+              "character": "you",
+              "text@en": "I'll take care of it."
+            },
             {
               "character": "lawyer",
               "text@en": "Be mindful of cash."
@@ -331,6 +362,10 @@
             "expenditures": 4
           },
           "feedback": [
+          {
+              "character": "you",
+              "text@en": "We'll increase spending on social housing."
+            },
             {
               "character": "mayor",
               "text@en": "And how exactly are we supposed to pay for this program?"
@@ -347,13 +382,17 @@
             "risk_political": 1
           },
           "feedback": [
+          {
+              "character": "you",
+              "text@en": "I'm sorry but there's nothing I can do."
+            },
             {
               "character": "mayor",
               "text@en": "Kid, these people are still coming to me."
             },
             {
               "character": "mayor",
-              "text@en": "Did you do anything at all?"
+              "text@en": "You'll need to change your attitude."
             }
           ]
         }
