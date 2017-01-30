@@ -382,7 +382,7 @@
             "risk_political": 1
           },
           "feedback": [
-          {
+            {
               "character": "you",
               "text@en": "I'm sorry but there's nothing I can do."
             },
@@ -431,6 +431,10 @@
           },
           "feedback": [
             {
+              "character": "you",
+              "text@en": "It's all yours now. But the price is 10 million, not negotiable."
+            },
+            {
               "character": "mayor",
               "text@en": "That's how you treat my friends?"
             },
@@ -446,6 +450,10 @@
             "reserves": 4
           },
           "feedback": [
+            {
+              "character": "you",
+              "text@en": "Yes okay, go for 4 million."
+            },
             {
               "character": "football-boss",
               "text@en": "Deal!"
@@ -487,6 +495,10 @@
           },
           "feedback": [
             {
+              "character": "you",
+              "text@en": "I choose the offer of Public Works plc."
+            },
+            {
               "character": "construction-boss",
               "text@en": "Good choice, buddy."
             },
@@ -504,6 +516,10 @@
           },
           "feedback": [
             {
+              "character": "you",
+              "text@en": "I choose the offer of City Construction Limited."
+            },
+            {
               "character": "construction-boss",
               "text@en": "Playing with fire, are we?"
             },
@@ -520,6 +536,10 @@
             "risk_contractors": 1
           },
           "feedback": [
+            {
+              "character": "you",
+              "text@en": "I choose the offer of Public Building plc."
+            },
             {
               "character": "construction-boss",
               "text@en": "Playing with fire, are we?"
@@ -553,7 +573,13 @@
           "text@en": "Yes",
           "var_changes": {
             "own_company": 1
-          }
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "Yes, a public work company."
+            }
+          ]
         },
         {
           "text@en": "No",
@@ -561,6 +587,10 @@
             "own_company": 0
           },
           "feedback": [
+            {
+              "character": "you",
+              "text@en": "No, it's not a good idea actually."
+            },
             {
               "character": "lawyer",
               "text@en": "Well, you have the right to change your mind."
@@ -597,6 +627,10 @@
           },
           "feedback": [
             {
+              "character": "you",
+              "text@en": "Me."
+            },
+            {
               "character": "lawyer",
               "text@en": "It's easier, but it'll make it very easy to link you back to the company."
             }
@@ -608,6 +642,10 @@
             "risk_police": 1
           },
           "feedback": [
+            {
+              "character": "you",
+              "text@en": "My spouse."
+            },
             {
               "character": "lawyer",
               "text@en": "Smart move, but it'll be easy to link you back to the company."
@@ -621,6 +659,10 @@
             "shell_company": 1
           },
           "feedback": [
+            {
+              "character": "you",
+              "text@en": "An anonymous company, maybe based in the British Virgin Islands, or in Panama?"
+            },
             {
               "character": "lawyer",
               "text@en": "Good choice."
@@ -667,6 +709,10 @@
           },
           "feedback": [
             {
+              "character": "you",
+              "text@en": "I choose my company."
+            },
+            {
               "character": "construction-boss",
               "text@en": "Like a boss!"
             },
@@ -684,6 +730,10 @@
           },
           "feedback": [
             {
+              "character": "you",
+              "text@en": "I choose Public Works plc."
+            },
+            {
               "character": "construction-boss",
               "text@en": "What the hell?"
             },
@@ -700,6 +750,10 @@
             "risk_contractors": 1
           },
           "feedback": [
+            {
+              "character": "you",
+              "text@en": "I choose City Construction Limited."
+            },
             {
               "character": "construction-boss",
               "text@en": "What the hell?"
@@ -745,6 +799,10 @@
           },
           "feedback": [
             {
+              "character": "you",
+              "text@en": "I choose Public Building plc."
+            },
+            {
               "character": "construction-boss",
               "text@en": "Good choice, buddy."
             },
@@ -762,6 +820,10 @@
           },
           "feedback": [
             {
+              "character": "you",
+              "text@en": "I choose Public Works plc."
+            },
+            {
               "character": "construction-boss",
               "text@en": "Playing with fire, are we?"
             },
@@ -778,6 +840,10 @@
             "risk_contractors": 1
           },
           "feedback": [
+            {
+              "character": "you",
+              "text@en": "I choose City Construction Limited."
+            },
             {
               "character": "construction-boss",
               "text@en": "Playing with fire, are we?"
@@ -815,6 +881,10 @@
           },
           "feedback": [
             {
+              "character": "you",
+              "text@en": "It's very useful for this new website, Amazon."
+            },
+            {
               "character": "lawyer",
               "text@en": "No, you did't, did you?"
             },
@@ -831,8 +901,12 @@
           },
           "feedback": [
             {
+              "character": "you",
+              "text@en": "I don't see the need for it."
+            },
+            {
               "character": "mayor",
-              "text@en": "And you be careful with this plastic thingy."
+              "text@en": "You're right, better be careful with this plastic thingy."
             },
             {
               "character": "mayor",
@@ -866,6 +940,10 @@
           },
           "feedback": [
             {
+              "character": "you",
+              "text@en": "I can't do this, it's unethical."
+            },
+            {
               "character": "mayor",
               "text@en": "What????"
             },
@@ -885,6 +963,10 @@
             "reserves": -0.5
           },
           "feedback": [
+            {
+              "character": "you",
+              "text@en": "Sure, I am on it."
+            },
             {
               "character": "mayor",
               "text@en": "I knew I could count on you."
@@ -927,12 +1009,16 @@
       },
       "choices": [
         {
-          "text@en": "Sure, a healthy football club for a healthy city!",
+          "text@en": "Buy back the plot of land.",
           "var_changes": {
             "reserves": -12,
             "resources": 0.2
           },
           "feedback": [
+            {
+              "character": "you",
+              "text@en": "Sure, a healthy football club for a healthy city!"
+            },
             {
               "character": "football-boss",
               "text@en": "Yeah!"
@@ -949,6 +1035,10 @@
             "risk_political": 1
           },
           "feedback": [
+            {
+              "character": "you",
+              "text@en": "No sorry, I don't think it would be in the general interest."
+            },
             {
               "character": "mayor",
               "text@en": "Did you really turn my friend down?"
@@ -998,6 +1088,10 @@
           },
           "feedback": [
             {
+              "character": "you",
+              "text@en": "I will make it happen."
+            },
+            {
               "character": "construction-boss",
               "text@en": "Well done!"
             },
@@ -1013,6 +1107,10 @@
             "risk_contractors": 1
           },
           "feedback": [
+            {
+              "character": "you",
+              "text@en": "No, it seems too risky too me."
+            },
             {
               "character": "construction-boss",
               "text@en": "Careful, buddy..."
@@ -1057,6 +1155,10 @@
           },
           "feedback": [
             {
+              "character": "you",
+              "text@en": "You're right."
+            },
+            {
               "character": "mayor",
               "text@en": "What happened?"
             },
@@ -1077,8 +1179,12 @@
           },
           "feedback": [
             {
+              "character": "you",
+              "text@en": "You're right."
+            },
+            {
               "character": "construction-boss",
-              "text@en": "All right then."
+              "text@en": "No, we can't afford this."
             },
             {
               "character": "construction-boss",
@@ -1116,6 +1222,10 @@
           },
           "feedback": [
             {
+              "character": "you",
+              "text@en": "I have engaged the city to buy the stadium for 10 million."
+            },
+            {
               "character": "mayor",
               "text@en": "Ten MILLION?"
             },
@@ -1130,11 +1240,15 @@
           ]
         },
         {
-          "text@en": "Let's do a public-private partnership (no cost now, but you have to pay the contractor 1 million per year for the next 20 years)",
+          "text@en": "Set-up a public-private partnership (no cost now, but you have to pay the contractor 1 million per year for the next 20 years)",
           "var_changes": {
             "expenditures": 1
           },
           "feedback": [
+            {
+              "character": "you",
+              "text@en": "Let's do a public-private partnership then, so that we don't have to pay it upfront."
+            },
             {
               "character": "mayor",
               "text@en": "I love this PPP thing!"
@@ -1175,6 +1289,10 @@
           },
           "feedback": [
             {
+              "character": "you",
+              "text@en": "Yes, good idea."
+            },
+            {
               "character": "lawyer",
               "text@en": "Brilliant!"
             },
@@ -1190,6 +1308,10 @@
             "trash_company": 0
           },
           "feedback": [
+            {
+              "character": "you",
+              "text@en": "No, it's not a good idea."
+            },
             {
               "character": "lawyer",
               "text@en": "All right."
@@ -1239,6 +1361,10 @@
           },
           "feedback": [
             {
+              "character": "you",
+              "text@en": "I choose my company"
+            },
+            {
               "character": "lawyer",
               "text@en": "I knew it was a good idea!"
             }
@@ -1250,6 +1376,10 @@
             "resources": -0.9
           },
           "feedback": [
+            {
+              "character": "you",
+              "text@en": "I choose Voelia Environment"
+            },
             {
               "character": "mayor",
               "text@en": "Well done!"
@@ -1298,6 +1428,10 @@
           },
           "feedback": [
             {
+              "character": "you",
+              "text@en": "I choose SATI Waste Management"
+            },
+            {
               "character": "mayor",
               "text@en": "Well done!"
             },
@@ -1313,6 +1447,10 @@
             "resources": -0.9
           },
           "feedback": [
+            {
+              "character": "you",
+              "text@en": "I choose Voelia Environment"
+            },
             {
               "character": "mayor",
               "text@en": "Well done!"
@@ -1354,6 +1492,10 @@
           },
           "feedback": [
             {
+              "character": "you",
+              "text@en": "That's unacceptable, I will take them to court to get the money."
+            },
+            {
               "character": "mayor",
               "text@en": "What if we lose?"
             },
@@ -1369,6 +1511,10 @@
             "risk_political": 0
           },
           "feedback": [
+            {
+              "character": "you",
+              "text@en": "I'm sorry but there's nothing I can do."
+            },
             {
               "character": "mayor",
               "text@en": "OK..."
@@ -1429,6 +1575,10 @@
           },
           "feedback": [
             {
+              "character": "you",
+              "text@en": "That's totally illegal! I am sorry but I have to report it to the police."
+            },
+            {
               "character": "mayor",
               "text@en": "This police investigation on your friend is not good for my reelection."
             },
@@ -1444,6 +1594,10 @@
             "personal_account": 100
           },
           "feedback": [
+            {
+              "character": "you",
+              "text@en": "Very smart! Let's have the students pay for our dinner then."
+            },
             {
               "character": "university-boss",
               "text@en": "Here's to an old friendship! 🍻"
@@ -1489,8 +1643,12 @@
           },
           "feedback": [
             {
+              "character": "you",
+              "text@en": "It sounds legal, and we need this to respect the investment plan we promised to the voters."
+            },
+            {
               "character": "mayor",
-              "text@en": "Good idea!"
+              "text@en": "Great!"
             },
             {
               "character": "mayor",
@@ -1504,6 +1662,10 @@
             "reserves": 0
           },
           "feedback": [
+            {
+              "character": "you",
+              "text@en": "We can't do that! It will not really increase our cash flow, it's all virtual."
+            },
             {
               "character": "mayor",
               "text@en": "And how am I supposed to balance my budget now?"
@@ -1548,6 +1710,10 @@
           },
           "feedback": [
             {
+              "character": "you",
+              "text@en": "I want to hire him as an assistant."
+            },
+            {
               "character": "mayor",
               "text@en": "What the hell?"
             },
@@ -1568,6 +1734,10 @@
           },
           "feedback": [
             {
+              "character": "you",
+              "text@en": "I will as my old friend from City Construction Limited to hire him."
+            },
+            {
               "character": "construction-boss",
               "text@en": "Sure, buddy."
             },
@@ -1583,6 +1753,10 @@
             "personal_account": -1000
           },
           "feedback": [
+            {
+              "character": "you",
+              "text@en": "We will tighten our belts, I prefer not to mix private and professonal life."
+            },
             {
               "character": "lawyer",
               "text@en": "You should take better care of your family."
@@ -1628,6 +1802,10 @@
           },
           "feedback": [
             {
+              "character": "you",
+              "text@en": "Thanks for your offer! I am sure my experience in a public administration will be a great value."
+            },
+            {
               "character": "construction-boss",
               "text@en": "I knew you were the one for the job!"
             },
@@ -1647,6 +1825,10 @@
             "risk_political": 0
           },
           "feedback": [
+            {
+              "character": "you",
+              "text@en": "But...No! We already have a great swimming pool."
+            },
             {
               "character": "construction-boss",
               "text@en": "I thought we were friends. 😢"
@@ -1689,7 +1871,13 @@
           "var_changes": {
             "reserves": -10,
             "risk_revolving_door": 10
-          }
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "I choose City Construction Limited."
+            }
+          ]
         },
         {
           "text@en": "Choose not to award the tender.",
@@ -1697,6 +1885,10 @@
             "risk_contractors": 10
           },
           "feedback": [
+            {
+              "character": "you",
+              "text@en": "No really, we don't need a new swimming pool."
+            },
             {
               "character": "construction-boss",
               "text@en": "What the hell? 😤"
