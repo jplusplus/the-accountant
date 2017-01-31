@@ -1,13 +1,29 @@
 .stack {
 
-  &__stack {
+  &__cluster {
     margin-bottom:$spacer;
   }
 
   &__slice {
-    margin-bottom:2px;
-    padding-left:calc(36px + #{$spacer});
-    position: relative;
+
+    &--event {
+      font-size:0.9rem;
+      text-align: center;
+    }
+
+    &--chat {
+      margin-bottom:2px;
+      position: relative;
+      padding-left:calc(36px + #{$spacer});
+    }
+
+    &--chat &__wrapper {
+      font-size:1.1em;
+      padding:$spacer / 4 $spacer / 2;
+      background: darken($card-bg, 5);
+      display: inline-block;
+      border-radius: 0.5rem;
+    }
 
     &--you {
       text-align: right;
@@ -19,14 +35,6 @@
 
     &--you &__avatar {
       display: none;
-    }
-
-    &__wrapper {
-      font-size:1.1em;
-      padding:$spacer / 4 $spacer / 2;
-      background: darken($card-bg, 5);
-      display: inline-block;
-      border-radius: 0.5rem;
     }
 
     &__avatar {

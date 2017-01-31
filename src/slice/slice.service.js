@@ -11,10 +11,22 @@ function SliceService(Character, I18n) {
       super(meta);
       // Create private properties
       this[_parent] = parent;
-      this[_character] = new Character(this.meta.character);
+      // The slice may not have any character
+      if (this.meta.hasOwnProperty('character') && this.meta.character !== null) {
+        this[_character] = new Character(this.meta.character);
+      }
     }
     isYou() {
       return this.character.key === 'you';
+    }
+    canClusterizeWith(other) {
+      return this.type === other.type && this.character.key === other.character.key;
+    }
+    get type() {
+      if (!this.character) {
+        return 'event';
+      }
+      return 'chat';
     }
     get character() {
       return this[_character];

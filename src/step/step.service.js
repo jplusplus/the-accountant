@@ -49,13 +49,16 @@ function StepService(Choice, Slice, Stack, I18n, Hint, $rootScope, $log) {
       // Add info to the log
       $log.info('Step %s: choice %s', this.index, choice.index);
     }
-    nextSlice() {
-      super.nextSlice();
+    continue() {
+      super.continue();
       // Broadcast the event about this slice
       $rootScope.$broadcast('game:step:slice:next', this);
     }
     undo() {
       this.slice = -1;
+    }
+    isTyping() {
+      return !this.selection && super.isTyping();
     }
     get assert() {
       // Minimum value condition

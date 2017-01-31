@@ -17,6 +17,9 @@ function CharacterService(I18n) {
       // Retreive meta within the game
       this[_meta] = angular.copy(game.characters[key]);
     }
+    toString() {
+      return this.key;
+    }
     get key() {
       return this[_key];
     }

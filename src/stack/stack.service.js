@@ -18,7 +18,7 @@ function StackService(Slice, I18n) {
       // Start before 0 (ie no slice)
       this[_slice] = -1;
       // Ensure those method arround bound to the current instance
-      ['nextSlice', 'isLastSlice', 'clusterFilter', 'sliceFilter'].forEach(m => {
+      ['continue', 'isLastSlice', 'clusterFilter', 'sliceFilter'].forEach(m => {
         this[m] = this[m].bind(this);
       });
     }
@@ -31,24 +31,32 @@ function StackService(Slice, I18n) {
     isLastSlice() {
       return this.slice === this.slices.length - 1;
     }
-    nextSlice() {
+    continue() {
       this.slice++;
     }
     finalSlice() {
       this.slice = this.slices.length - 1;
     }
     clusterFilter(cluster, index) {
-      return cluster.slices.length * index <= this.slice;
+      // Clusters before this one
+      const previous = this.clusters.slice(0, index);
+      // Count seen slices within those clusters
+      const seen = _.chain(previous).map('slices.length').sum().value();
+      // Display this cluster
+      return seen <= this.slice;
     }
     sliceFilter(slice) {
       return slice.index <= this.slice;
     }
+    isTyping() {
+      return !this.isLastSlice();
+    }
     // Express reading time of the current slice in milliseconds
     get readingTime() {
-      // There is more slice to come
-      if (this.lastSlice !== null) {
+      // There is more chat slices to come
+      if (this.lastSlice !== null && this.lastSlice.type === 'chat') {
         // We start a new stack
-        if (false || this.isStartingSlice()) {
+        if (this.isStartingSlice()) {
           // No reading time for the user's slices
           return this.lastSlice.isYou() ? 0 : 3000;
         }
@@ -85,7 +93,7 @@ function StackService(Slice, I18n) {
         // Get last cluster
         const last = _.last(this[_clusters]);
         // Is there any cluster and is it the same character?
-        if (last && last.character.key === slice.character.key) {
+        if (last && slice.canClusterizeWith(last)) {
           // Add this slice
           last.slices.push(slice);
         // No cluster or a different character
@@ -93,6 +101,7 @@ function StackService(Slice, I18n) {
           // Create a cluster using the current slice
           this[_clusters].push({
             character: slice.character,
+            type: slice.type,
             slices: [slice]
           });
         }

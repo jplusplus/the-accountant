@@ -6,7 +6,7 @@ export const main = {
     game: '<'
   },
   /** @ngInject */
-  controller($state, $scope, $timeout, hotkeys, $transitions, $log) {
+  controller($state, $scope, $timeout, hotkeys, $transitions) {
     this.$onInit = () => {
       // Method to start a new party
       this.playAgain = this.start = () => {
@@ -25,18 +25,17 @@ export const main = {
       // Create a timeout to go to the next slice
       this.waitNextSlice = () => {
         // Cancel any existing timeout
-        $timeout.cancel(this.nextSliceTimeout);
+        $timeout.cancel(this.continueTimeout);
         // The year chanched
         if (this.year !== this.game.step.year) {
           // Wait for it...
-          this.nextSliceTimeout = this.prepareNewYear();
+          this.continueTimeout = this.prepareNewYear();
         // Party might be over
         } else if (this.game.allowsNextSlice() && $state.is('main')) {
           // Define duration according to the readingTime
           const duration = this.game.readingTime;
-          $log.log(duration);
           // Set another one
-          this.nextSliceTimeout = $timeout(this.game.nextSlice, duration);
+          this.continueTimeout = $timeout(this.game.continue, duration);
         }
       };
       // Continue to the next slice OR the next step if possible
@@ -59,7 +58,7 @@ export const main = {
         this.waitNextSlice();
       };
       this.visibleYears = () => {
-        const years = _.range(this.game.step.year - 1, this.game.step.year + 1);
+        const years = _.range(this.game.step.year - 2, this.game.step.year + 1);
         // Remove years out of bounds and return the array
         return years.filter(y => {
           return y >= _.first(this.game.years) && y <= this.year;

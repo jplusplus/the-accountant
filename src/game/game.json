@@ -130,6 +130,9 @@
           "text@en": "Some say this city has corruption issues. Don't listen to them."
         },
         {
+          "text@en": "You put a sombrero on your head."
+        },
+        {
           "character": "mayor",
           "text@en": "But be careful."
         }

@@ -35,8 +35,8 @@ function ChoiceService(Slice, Stack) {
       // Undo the parent step
       _.without(this.step.game.stepsAhead, this.step).forEach(_.method('undo'));
     }
-    nextSlice() {
-      return super.nextSlice();
+    continue() {
+      return super.continue();
     }
     // Risks related to that choices
     get risks() {

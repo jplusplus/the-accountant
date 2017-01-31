@@ -19,7 +19,7 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       // Prepare vars according to choice's history
       this.apply();
       // Ensure those method arround bound to the current instance
-      ['nextSlice'].forEach(m => {
+      ['continue'].forEach(m => {
         this[m] = this[m].bind(this);
       });
       // Notice the user
@@ -46,7 +46,7 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       return this.stepsBehind.length > 0;
     }
     allowsNextSlice() {
-      return this.step !== null && !this.targetSlice.isLastSlice();
+      return this.step !== null && !this.lastStack.isLastSlice();
     }
     hasHints() {
       return this.hints.length > 0;
@@ -97,13 +97,13 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       // Apply existing choices
       this.history.forEach(choice => this.update(choice.changes));
     }
-    nextSlice() {
-      this.targetSlice.nextSlice();
+    continue() {
+      this.lastStack.continue();
       // Emit an event
-      $rootScope.$broadcast("game:slice:next", this.targetSlice);
+      $rootScope.$broadcast("game:slice:next", this.lastStack);
     }
     finalSlice() {
-      return this.targetSlice.finalSlice();
+      return this.lastStack.finalSlice();
     }
     findPicture(lastYear = this.step.year) {
       // Find the closest years
@@ -114,9 +114,9 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       return this.pictures[year];
     }
     get readingTime() {
-      return this.targetSlice.readingTime;
+      return this.lastStack.readingTime;
     }
-    get targetSlice() {
+    get lastStack() {
       // Next slice within the step's selection
       if (this.step.selection && this.step.isLastSlice()) {
         return this.step.selection;
