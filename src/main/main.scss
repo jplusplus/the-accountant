@@ -99,7 +99,7 @@
   &__steps {
     background: white;
     position: fixed;
-    bottom:4rem;
+    bottom:4.5rem;
     top:0;
     left:$toolbar-width-md;
     width:calc(100% - #{$toolbar-width-md});
@@ -218,6 +218,17 @@
         }
       }
     }
+
+    &__over {
+      background: darken($brand-inverse, 10);
+      color: white;
+      padding:$spacer;
+      margin:0.5rem;
+
+      .btn.btn-link {
+        color:inherit;
+      }
+    }
   }
 
   .main__picture {
@@ -298,6 +309,8 @@
   &__timeline {
     padding:$spacer * 2 $spacer;
     height:4rem;
+    border-top: 1px dashed rgba($brand-inverse, 0.5);
+
     &.ng-enter,
     &.ng-leave.ng-leave-active {
       transform: translateX(-100%);
@@ -353,6 +366,7 @@
     text-align: center;
     background:white;
     min-height: 4rem;
+    border-top: 1px dashed rgba($brand-inverse, 0.5);
     @include transition(400ms);
 
     &.ng-enter,
@@ -384,14 +398,18 @@
     &__toggler {
       display: inline-block;
       margin:$spacer / 2 0;
-      background: $french-gray;
       border-radius: 0.5rem;
       font-size: 1.1rem;
       padding:0.5rem 1rem;
-      font-weight: lighter;
+      font-weight: bolder;
       font-family: $headings-font-family;
       position: relative;
       z-index:1;
+
+      &:before, &:after {
+        content:"—";
+        padding:0 $spacer;
+      }
     }
 
     &__body {

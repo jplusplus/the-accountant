@@ -45,7 +45,7 @@ function ChoiceService(Slice, Stack) {
       // Filter risks list to the one included in the changes
       return _.filter(this.step.game.risks, risk => {
         // Some risk may not be worth it, yet
-        return changes.indexOf(risk.name) && risk.isWorthIt();
+        return changes.indexOf(risk.name) > -1 && risk.isWorthIt();
       });
     }
     get consequences() {
