@@ -1,5 +1,6 @@
 export default gameService;
 import _ from 'lodash';
+import game from './game.json';
 
 /** @ngInject */
 function gameService($log, $rootScope, Step, Var, Ending) {
@@ -7,11 +8,12 @@ function gameService($log, $rootScope, Step, Var, Ending) {
   const _meta = Symbol('meta');
   const _vars = Symbol('vars');
   const _history = Symbol('history');
+  const _journeyCacheKey = Symbol('journeyCacheKey');
 
   class Game {
     constructor() {
       // Load meta data
-      this[_meta] = angular.copy(require('./game.json'));
+      this[_meta] = angular.copy(game);
       // Build step using meta data
       this[_meta].steps = this[_meta].steps.map(meta => new Step(meta, this));
       // Build step using meta data
@@ -99,9 +101,13 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       });
       // Apply existing choices
       this.history.forEach(choice => this.update(choice.changes));
+      // Invalidate the journey cache key
+      this.invalidateJourney();
     }
     continue() {
       this.lastStack.continue();
+      // Invalidate the journey cache key
+      this.invalidateJourney();
       // Emit an event
       $rootScope.$broadcast("game:slice:next", this.lastStack);
     }
@@ -115,6 +121,9 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       });
       // Return the picture for this year
       return this.pictures[year];
+    }
+    invalidateJourney() {
+      this[_journeyCacheKey] = _.uniqueId('journey-');
     }
     get delay() {
       return this.lastStack.next.readingTime;
@@ -151,13 +160,22 @@ function gameService($log, $rootScope, Step, Var, Ending) {
     }
     // List of step seen or currently seen by the player
     get journey() {
-      // Do not add any step if the party is over
-      if (this.isOver()) {
-        // Get only steps from the past
-        return this.stepsBehind;
+      // Should we create a memo for this method?
+      if (!this.journeyMemo) {
+        this.journeyMemo = _.memoize(id => {
+          // Display a message in the console
+          $log.log('Journey invalided by the token "%s"', id);
+          // Do not add any step if the party is over
+          if (this.isOver()) {
+            // Get only steps from the past
+            return this.stepsBehind;
+          }
+          // Get steps from the past and the first ahead
+          return this.stepsBehind.concat(this.stepsAhead.slice(0, 1));
+        });
       }
-      // Get steps from the past and the first ahead
-      return this.stepsBehind.concat(this.stepsAhead.slice(0, 1));
+      // Use a cache token to refresh the journey after each event
+      return this.journeyMemo(this[_journeyCacheKey]);
     }
     get vars() {
       return this[_vars];

@@ -1,4 +1,5 @@
 export default CharacterService;
+import game from '../game/game.json';
 
 /** @ngInject */
 function CharacterService(I18n) {
@@ -9,13 +10,12 @@ function CharacterService(I18n) {
   class Character extends I18n {
     constructor(key) {
       // Load meta data
-      const game = require('../game/game.json');
       // Call the parent constructor with the right meta
       super(game.characters[key]);
       // Save the character key
       this[_key] = key;
       // Retreive meta within the game
-      this[_meta] = angular.copy(game.characters[key]);
+      this[_meta] = game.characters[key];
     }
     toString() {
       return this.key;

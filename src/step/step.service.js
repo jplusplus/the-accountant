@@ -15,7 +15,7 @@ function StepService(Choice, Slice, Stack, I18n, Hint, $rootScope, $log) {
       super(meta.texts);
       // Set private properties
       this[_game] = game;
-      this[_meta] = angular.copy(meta);
+      this[_meta] = meta;
       this[_hint] = this.hasHint() ? new Hint(this[_meta].explainer, this) : null;
       // Create choices
       this[_choices] = this[_meta].choices.map(meta => new Choice(meta, this));

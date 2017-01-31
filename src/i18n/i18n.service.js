@@ -8,7 +8,7 @@ function I18nService($translate) {
 
   class I18n {
     constructor(meta) {
-      this[_meta] = angular.copy(meta);
+      this[_meta] = meta;
       // Build field list
       this[_fields] = _.chain(this.meta)
         .keys()

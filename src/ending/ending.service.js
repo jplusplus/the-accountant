@@ -10,7 +10,7 @@ function EndingService(I18n) {
     constructor(meta, game) {
       super(meta);
       this[_game] = game;
-      this[_meta] = angular.copy(meta);
+      this[_meta] = meta;
     }
     hasCondition() {
       return this[_meta].hasOwnProperty('condition');

@@ -14,7 +14,7 @@ function ChoiceService(Slice, Stack) {
       super(meta.feedback || []);
       // Set private properties
       this[_step] = step;
-      this[_meta] = angular.copy(meta);
+      this[_meta] = meta;
     }
     takeRisks() {
       // Create a list of risk vars that make the player loose

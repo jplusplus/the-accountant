@@ -10,7 +10,7 @@ function VarService(I18n) {
   class Var extends I18n {
     constructor(meta, game) {
       super(meta);
-      this[_meta] = angular.copy(meta);
+      this[_meta] = meta;
       this[_game] = game;
     }
     update(value) {
