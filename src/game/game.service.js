@@ -31,7 +31,10 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       return step.isCurrent();
     }
     isOver() {
-      return _.some(this.history, _.method('hasConsequences')) || !this.hasStepsAhead();
+      // Get choices of steps that are done
+      const done = _.filter(this.history, _.method('step.isDone'));
+      // Filter to thoses that have consequences
+      return _.some(done, _.method('hasConsequences')) || !this.hasStepsAhead();
     }
     isFirstYear() {
       return this.year === _.first(this.years);
@@ -46,7 +49,7 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       return this.stepsBehind.length > 0;
     }
     allowsNextSlice() {
-      return this.step !== null && !this.lastStack.isLastSlice();
+      return !this.isOver() && !this.lastStack.isLastSlice();
     }
     hasHints() {
       return this.hints.length > 0;
@@ -192,7 +195,7 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       return _.filter(this.steps.slice(from), {assert: true});
     }
     get step() {
-      return this.isOver() ? null : _.last(this.journey);
+      return _.last(this.journey);
     }
     get year() {
       return this.step && this.step.year;

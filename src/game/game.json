@@ -140,9 +140,6 @@
       "choices": [
         {
           "text@en": "Go",
-          "var_changes": {
-            "risk_political": 100
-          },
           "feedback": [
             {
               "character": "you",
