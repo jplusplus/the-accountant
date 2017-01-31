@@ -56,5 +56,12 @@
         color: lighten($text-muted, 20);
       }
     }
+
+    &__wrapper {
+      .emoji {
+        height:1em;
+        width:1em;
+      }
+    }
   }
 }

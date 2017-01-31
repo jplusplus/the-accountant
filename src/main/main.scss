@@ -68,7 +68,7 @@
           transform: translateY(-50%);
           background: darken($brand-inverse, 10);
           @include media-breakpoint-down(sm) {
-           display: none;
+            display: none;
           }
         }
       }

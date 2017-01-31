@@ -13,6 +13,7 @@ import {mainToolbar} from './main/toolbar/toolbar.js';
 import {mainHints} from './main/hints/hints.js';
 import {mainVars} from './main/vars/vars.js';
 import {stack} from './stack/stack.js';
+import emoji from './emoji/emoji.filter.js';
 import unsafe from './unsafe/unsafe.filter.js';
 import slide from './slide/slide.animation.js';
 import Game from './game/game.service.js';
@@ -41,6 +42,7 @@ angular
   ])
   .config(routesConfig)
   .run(modernizrConfig)
+  .filter('emoji', emoji)
   .filter('unsafe', unsafe)
   .animation('.slide', slide)
   .service('Game', Game)
