@@ -113,6 +113,9 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       // Return the picture for this year
       return this.pictures[year];
     }
+    get delay() {
+      return this.lastStack.next.readingTime;
+    }
     get readingTime() {
       return this.lastStack.readingTime;
     }

@@ -32,10 +32,8 @@ export const main = {
           this.continueTimeout = this.prepareNewYear();
         // Party might be over
         } else if (this.game.allowsNextSlice() && $state.is('main')) {
-          // Define duration according to the readingTime
-          const duration = this.game.readingTime;
-          // Set another one
-          this.continueTimeout = $timeout(this.game.continue, duration);
+          // Define duration according to the readingTime of the next slice
+          this.continueTimeout = $timeout(this.game.continue, this.game.delay);
         }
       };
       // Continue to the next slice OR the next step if possible

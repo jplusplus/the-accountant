@@ -49,24 +49,11 @@ function StackService(Slice, I18n) {
       return slice.index <= this.slice;
     }
     isTyping() {
-      return !this.isLastSlice();
+      return this.next && !this.next.isYou();
     }
     // Express reading time of the current slice in milliseconds
     get readingTime() {
-      // There is more chat slices to come
-      if (this.lastSlice !== null && this.lastSlice.type === 'chat') {
-        // We start a new stack
-        if (this.isStartingSlice()) {
-          // No reading time for the user's slices
-          return this.lastSlice.isYou() ? 0 : 3000;
-        }
-        // We read approximativly 270 word per minute
-        const duration = this.lastSlice.text.split(' ').length * 60 / 270 * 1000;
-        // Reading time can't be under 700 milliseconds
-        return Math.max(duration, 700);
-      }
-      // Default duration
-      return 0;
+      return this.current ? this.current.readingTime : 0;
     }
     set slice(val) {
       this[_slice] = Math.max(-1, Math.min(this.slices.length - 1, val));
@@ -74,7 +61,13 @@ function StackService(Slice, I18n) {
     get slice() {
       return this[_slice];
     }
-    get lastSlice() {
+    get next() {
+      return this.slices[this.slice + 1] || null;
+    }
+    get previous() {
+      return this.slices[this.slice - 1] || null;
+    }
+    get current() {
       return this.slices[this.slice] || null;
     }
     get slices() {
