@@ -358,18 +358,6 @@
       transform: translateX(100%);
     }
 
-    &:before {
-      content:"";
-      position: absolute;
-      bottom:100%;
-      left:50%;
-      transform: translate(-50%, 25%);
-      border:transparent $spacer * 2 solid;
-      border-bottom-color: white;
-      z-index:1;
-      pointer-events: none;
-    }
-
     &:after {
       content:"";
       position: absolute;
@@ -402,18 +390,6 @@
       font-family: $headings-font-family;
       position: relative;
       z-index:1;
-
-      &:before {
-        content:"";
-        position: absolute;
-        bottom:100%;
-        left:50%;
-        transform: translate(-50%, 0);
-        border:transparent $spacer solid;
-        border-bottom-color: $french-gray;
-        z-index:100000;
-        pointer-events: none;
-      }
     }
 
     &__body {

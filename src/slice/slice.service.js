@@ -13,6 +13,9 @@ function SliceService(Character, I18n) {
       this[_parent] = parent;
       this[_character] = new Character(this.meta.character);
     }
+    isYou() {
+      return this.character.key === 'you';
+    }
     get character() {
       return this[_character];
     }

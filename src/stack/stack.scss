@@ -1,8 +1,25 @@
 .stack {
+
+  &__stack {
+    margin-bottom:$spacer;
+  }
+
   &__slice {
     margin-bottom:2px;
     padding-left:calc(36px + #{$spacer});
     position: relative;
+
+    &--you {
+      text-align: right;
+    }
+
+    &--you &__wrapper {
+      background: mix($link-color, $card-bg);
+    }
+
+    &--you &__avatar {
+      display: none;
+    }
 
     &__wrapper {
       font-size:1.1em;
@@ -28,7 +45,7 @@
       color: $text-muted;
 
       &__title {
-        color: $brand-warning;
+        color: lighten($text-muted, 20);
       }
     }
   }

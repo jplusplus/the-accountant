@@ -6,7 +6,7 @@ export const main = {
     game: '<'
   },
   /** @ngInject */
-  controller($state, $scope, $timeout, hotkeys, $transitions) {
+  controller($state, $scope, $timeout, hotkeys, $transitions, $log) {
     this.$onInit = () => {
       // Method to start a new party
       this.playAgain = this.start = () => {
@@ -33,7 +33,8 @@ export const main = {
         // Party might be over
         } else if (this.game.allowsNextSlice() && $state.is('main')) {
           // Define duration according to the readingTime
-          const duration = this.game.targetSlice.isStartingSlice() ? 3000 : this.game.readingTime;
+          const duration = this.game.readingTime;
+          $log.log(duration);
           // Set another one
           this.nextSliceTimeout = $timeout(this.game.nextSlice, duration);
         }

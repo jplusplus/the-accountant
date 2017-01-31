@@ -45,7 +45,13 @@ function StackService(Slice, I18n) {
     }
     // Express reading time of the current slice in milliseconds
     get readingTime() {
+      // There is more slice to come
       if (this.lastSlice !== null) {
+        // We start a new stack
+        if (false || this.isStartingSlice()) {
+          // No reading time for the user's slices
+          return this.lastSlice.isYou() ? 0 : 3000;
+        }
         // We read approximativly 270 word per minute
         const duration = this.lastSlice.text.split(' ').length * 60 / 270 * 1000;
         // Reading time can't be under 700 milliseconds
