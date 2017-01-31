@@ -1,1991 +1,1996 @@
 {
-   "vars":{
-      "resources":{
-         "value":10,
-         "private":false,
-         "category":"city",
-         "label@en":"Resources"
+  "vars": {
+    "resources": {
+      "value": 10,
+      "private": false,
+      "category": "city",
+      "label@en": "Resources"
+    },
+    "expenditures": {
+      "value": 9,
+      "private": false,
+      "category": "city",
+      "label@en": "Expenditures"
+    },
+    "reserves": {
+      "value": 50,
+      "private": false,
+      "category": "city",
+      "label@en": "Reserves"
+    },
+    "personal_account": {
+      "value": 1000,
+      "private": false,
+      "category": "player",
+      "label@en": "Personal account"
+    },
+    "risk_police": {
+      "value": 0,
+      "private": false,
+      "icon": "balance-scale",
+      "category": "risk",
+      "label@en": "Legal risk"
+    },
+    "risk_contractors": {
+      "value": 0,
+      "private": false,
+      "icon": "industry",
+      "category": "risk",
+      "label@en": "Industry mistrust"
+    },
+    "risk_political": {
+      "value": 0,
+      "private": false,
+      "icon": "handshake-o",
+      "category": "risk",
+      "label@en": "Political rejection"
+    },
+    "risk_revolving_door": {
+      "value": 0,
+      "private": true,
+      "category": "risk"
+    },
+    "gift_company2": {
+      "value": 0,
+      "private": true,
+      "category": "choice"
+    },
+    "own_company": {
+      "value": 0,
+      "private": true,
+      "category": "choice"
+    },
+    "shell_company": {
+      "value": 0,
+      "private": true,
+      "category": "choice"
+    },
+    "trash_company": {
+      "value": 0,
+      "private": true,
+      "category": "choice"
+    },
+    "revolving_door": {
+      "value": 0,
+      "private": true,
+      "category": "choice"
+    }
+  },
+  "characters": {
+    "mayor": {
+      "name@en": "Birgit Meyer",
+      "title@en": "The Mayor",
+      "avatar": "./images/avatars/mayor.jpg"
+    },
+    "lawyer": {
+      "name@en": "Jamila Ballard",
+      "title@en": "Your lawyer",
+      "avatar": "./images/avatars/lawyer.jpg"
+    },
+    "construction-boss": {
+      "name@en": "Robert Gerber",
+      "title@en": "Boss of City Construction Limited",
+      "avatar": "./images/avatars/construction-boss.jpg"
+    },
+    "university-boss": {
+      "name@en": "Adrian Wynn",
+      "title@en": "Director of the University",
+      "avatar": "./images/avatars/university-boss.jpg"
+    },
+    "football-boss": {
+      "name@en": "Martin Gomez",
+      "title@en": "President of the City Football Club",
+      "avatar": "./images/avatars/football-boss.jpg"
+    },
+    "you": {
+      "name@en": "You",
+      "title@en": "General manager",
+      "avatar": null
+    }
+  },
+  "years": {
+    "1993": "images/years/night.jpeg",
+    "1996": "images/years/street.jpeg",
+    "1998": "images/years/night.jpeg"
+  },
+  "steps": [
+    {
+      "year": 1993,
+      "texts": [
+        {
+          "character": "mayor",
+          "text@en": "Hi there, welcome to City Hall!"
+        },
+        {
+          "character": "mayor",
+          "text@en": "I hear you're the new general manager here."
+        },
+        {
+          "character": "mayor",
+          "text@en": "Some say this city has corruption issues. Don't listen to them."
+        },
+        {
+          "character": "mayor",
+          "text@en": "But be careful."
+        }
+      ],
+      "choices": [
+        {
+          "text@en": "Go",
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "Thank you mayor, I'll do my best."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 1994,
+      "texts": [
+        {
+          "character": "mayor",
+          "text@en": "We passed a tender to build a new road segment."
+        },
+        {
+          "character": "mayor",
+          "text@en": "Our transport department estimates the cost of the works at 10 million."
+        },
+        {
+          "character": "mayor",
+          "text@en": "We received three offers. Pick the best one."
+        }
+      ],
+      "explainer": {
+        "title@en": "How to spot a cartel?",
+        "body@en": "Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous."
       },
-      "expenditures":{
-         "value":9,
-         "private":false,
-         "category":"city",
-         "label@en":"Expenditures"
+      "choices": [
+        {
+          "text@en": "Public Works plc. made an offer at 9 million",
+          "var_changes": {
+            "reserves": -9,
+            "risk_contractors": 1
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "I choose the offer of Public Works plc."
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "You're new here, aren't you?"
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "I'm the boss of City Construction Limited."
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "Be more careful next time."
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "You don't want to make an enemy out of me."
+            }
+          ]
+        },
+        {
+          "text@en": "City Construction Limited made an offer at 20 million",
+          "var_changes": {
+            "reserves": -20,
+            "gift_company2": 1
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "I choose the offer of City Construction Limited."
+            }
+          ]
+        },
+        {
+          "text@en": "Public Building plc made an offer at 21 million",
+          "var_changes": {
+            "reserves": -21,
+            "risk_contractors": 1
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "I choose the offer of Public Building plc."
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "You're new here, aren't you?"
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "I'm the boss of City Construction Limited."
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "Be more careful next time."
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "You don't want to make an enemy out of me."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 1994,
+      "condition": {
+        "var": "gift_company2",
+        "min": 1
       },
-      "reserves":{
-         "value":50,
-         "private":false,
-         "category":"city",
-         "label@en":"Reserves"
+      "texts": [
+        {
+          "character": "construction-boss",
+          "text@en": "Hey!"
+        },
+        {
+          "character": "construction-boss",
+          "text@en": "I'm the boss of City Construction Limited."
+        },
+        {
+          "character": "construction-boss",
+          "text@en": "That's some sound decision-making here."
+        },
+        {
+          "character": "construction-boss",
+          "text@en": "By the way, do you want this new BMW? I bought it last month but don't really need it."
+        }
+      ],
+      "explainer": {
+        "title@en": "How to react to gifts?",
+        "body@en": "Public officials are usually prohibited from accepting gifts above a certain value (10€ to 500€). However, you can accept the gift if it is intended for you as a private person, or for your spouse. By refusing a gift, you risk angering the person who made it."
       },
-      "personal_account":{
-         "value":1000,
-         "private":false,
-         "category":"player",
-         "label@en":"Personal account"
+      "choices": [
+        {
+          "text@en": "Sure",
+          "var_changes": {
+            "personal_account": 15000,
+            "risk_police": 1
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "Sure, I've always wanted to drive a BMW."
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "Here you go!"
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "I think we'll get along well."
+            },
+            {
+              "character": "lawyer",
+              "text@en": "Be careful with this expensive car."
+            },
+            {
+              "character": "lawyer",
+              "text@en": "People might ask where it comes from."
+            }
+          ]
+        },
+        {
+          "text@en": "No, thank you",
+          "var_changes": {
+            "risk_contractors": 1
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "No, thank you."
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "Be careful, kid."
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "You don't want to make an enemy out of me."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 1995,
+      "texts": [
+        {
+          "character": "mayor",
+          "text@en": "So many people come to me because they want an apartment in social housing."
+        },
+        {
+          "character": "mayor",
+          "text@en": "I can't take it anymore!"
+        },
+        {
+          "character": "mayor",
+          "text@en": "Can you find a solution for them?"
+        }
+      ],
+      "explainer": {
+        "title@en": "How can you organize bribes?",
+        "body@en": "Bribery is not as common in Europe as in other parts of the world, but it is rampant is some sectors. In public housing, some officials ask for envoleppes of money to be given directly. For car inspection, some service centers will be pleased if you leave a gift or bills of cash on the passenger seat.<br><br>Read more under <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> at Cooking Budgets."
       },
-      "risk_police":{
-         "value":0,
-         "private":false,
-         "icon":"balance-scale",
-         "category":"risk",
-         "label@en":"Legal risk"
+      "choices": [
+        {
+          "text@en": "Offer to speed their requests in exchange for $5000 in an enveloppe",
+          "var_changes": {
+            "personal_account": 5000,
+            "risk_police": 2
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "I'll take care of it."
+            },
+            {
+              "character": "lawyer",
+              "text@en": "Be mindful of cash."
+            },
+            {
+              "character": "lawyer",
+              "text@en": "If someone sees you taking the money, I won't be able to do much for you."
+            }
+          ]
+        },
+        {
+          "text@en": "Increase funding to the social housing program",
+          "var_changes": {
+            "expenditures": 4
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "We'll increase spending on social housing."
+            },
+            {
+              "character": "mayor",
+              "text@en": "And how exactly are we supposed to pay for this program?"
+            },
+            {
+              "character": "mayor",
+              "text@en": "If you continue like this, we won't have any money left to pay for my receptions."
+            }
+          ]
+        },
+        {
+          "text@en": "Ignore them",
+          "var_changes": {
+            "risk_political": 1
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "I'm sorry but there's nothing I can do."
+            },
+            {
+              "character": "mayor",
+              "text@en": "Kid, these people are still coming to me."
+            },
+            {
+              "character": "mayor",
+              "text@en": "You'll need to change your attitude."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 1996,
+      "texts": [
+        {
+          "character": "football-boss",
+          "text@en": "Hey there."
+        },
+        {
+          "character": "football-boss",
+          "text@en": "I'm an old friend of the mayor."
+        },
+        {
+          "character": "football-boss",
+          "text@en": "I need to expand the training facilities of my... I mean our, the city's football team."
+        },
+        {
+          "character": "football-boss",
+          "text@en": "There's this empty plot of land the city owns. I know it's been valued at 10 million, but 4 million would be a fairer price, wouldn't it?"
+        }
+      ],
+      "explainer": {
+        "title@en": "Spotting corruption in land sales",
+        "body@en": "Cities often own large plots of land. They can either sell them at market prices or at lower prices, to make a gift to the buyer. It is usually hard to spot such transactions, because there isn't much of a market for big sales of land in a city."
       },
-      "risk_contractors":{
-         "value":0,
-         "private":false,
-         "icon":"industry",
-         "category":"risk",
-         "label@en":"Industry mistrust"
+      "choices": [
+        {
+          "text@en": "Sell for 10 million",
+          "var_changes": {
+            "risk_political": 1,
+            "reserves": 10
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "It's all yours now. But the price is 10 million, not negotiable."
+            },
+            {
+              "character": "mayor",
+              "text@en": "That's how you treat my friends?"
+            },
+            {
+              "character": "mayor",
+              "text@en": "In the future, be more considerate."
+            }
+          ]
+        },
+        {
+          "text@en": "Sell for 4 million",
+          "var_changes": {
+            "reserves": 4
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "Yes okay, go for 4 million."
+            },
+            {
+              "character": "football-boss",
+              "text@en": "Deal!"
+            },
+            {
+              "character": "football-boss",
+              "text@en": "I'll make sure to send you tickets for the next game."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 1997,
+      "texts": [
+        {
+          "character": "mayor",
+          "text@en": "We passed a tender to build a new roundabout."
+        },
+        {
+          "character": "mayor",
+          "text@en": "Our transport department estimates the cost of the works at 6 million."
+        },
+        {
+          "character": "mayor",
+          "text@en": "We received three offers. Pick the best one."
+        }
+      ],
+      "explainer": {
+        "title@en": "How to spot a cartel?",
+        "body@en": "Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous."
       },
-      "risk_political":{
-         "value":0,
-         "private":false,
-         "icon":"handshake-o",
-         "category":"risk",
-         "label@en":"Political rejection"
+      "choices": [
+        {
+          "text@en": "Public Works plc. made an offer for 10 million",
+          "var_changes": {
+            "reserves": -10,
+            "personal_account": 1000
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "I choose the offer of Public Works plc."
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "Good choice, buddy."
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "Your share will be deposited in your office, as usual."
+            }
+          ]
+        },
+        {
+          "text@en": "City Construction Limited made an offer for 10.2 million",
+          "var_changes": {
+            "reserves": -10.2,
+            "risk_contractors": 1
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "I choose the offer of City Construction Limited."
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "Playing with fire, are we?"
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "You won't last long if you continue like this."
+            }
+          ]
+        },
+        {
+          "text@en": "Public Building plc made an offer for 11 million",
+          "var_changes": {
+            "reserves": -11,
+            "risk_contractors": 1
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "I choose the offer of Public Building plc."
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "Playing with fire, are we?"
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "You won't last long if you continue like this."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 1998,
+      "texts": [
+        {
+          "character": "lawyer",
+          "text@en": "Hey, I just got your voicemail."
+        },
+        {
+          "character": "lawyer",
+          "text@en": "So, you want to create your own company?"
+        }
+      ],
+      "explainer": {
+        "title@en": "Conflicts of interest",
+        "body@en": "People in politics or in the administration can own companies that receive public contracts. In some countries, it is forbidden for companies owned by public servants or politiciants to receive money from public contracts."
       },
-      "risk_revolving_door":{
-         "value":0,
-         "private":true,
-         "category":"risk"
+      "choices": [
+        {
+          "text@en": "Yes",
+          "var_changes": {
+            "own_company": 1
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "Yes, a public work company."
+            }
+          ]
+        },
+        {
+          "text@en": "No",
+          "var_changes": {
+            "own_company": 0
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "No, it's not a good idea actually."
+            },
+            {
+              "character": "lawyer",
+              "text@en": "Well, you have the right to change your mind."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 1998,
+      "condition": {
+        "var": "own_company",
+        "min": 1
       },
-      "gift_company2":{
-         "value":0,
-         "private":true,
-         "category":"choice"
+      "texts": [
+        {
+          "character": "lawyer",
+          "text@en": "I'll get started with the paperwork."
+        },
+        {
+          "character": "lawyer",
+          "text@en": "Who should be the nominal owner of the company?"
+        }
+      ],
+      "explainer": {
+        "title@en": "Conflicts of interest",
+        "body@en": "People in politics or in the administration can own companies that receive public contracts. In some countries, it is forbidden for companies owned by public servants or politiciants to receive money from public contracts."
       },
-      "own_company":{
-         "value":0,
-         "private":true,
-         "category":"choice"
+      "choices": [
+        {
+          "text@en": "You personnally",
+          "var_changes": {
+            "risk_police": 2
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "Me."
+            },
+            {
+              "character": "lawyer",
+              "text@en": "It's easier, but it'll make it very easy to link you back to the company."
+            }
+          ]
+        },
+        {
+          "text@en": "Your spouse or partner",
+          "var_changes": {
+            "risk_police": 1
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "My spouse."
+            },
+            {
+              "character": "lawyer",
+              "text@en": "Smart move, but it'll be easy to link you back to the company."
+            }
+          ]
+        },
+        {
+          "text@en": "A shell company in a tax heaven",
+          "var_changes": {
+            "risk_police": 0,
+            "shell_company": 1
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "An anonymous company, maybe based in the British Virgin Islands, or in Panama?"
+            },
+            {
+              "character": "lawyer",
+              "text@en": "Good choice."
+            },
+            {
+              "character": "lawyer",
+              "text@en": "It'll take a bit longer, but you'll be safe."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 1999,
+      "condition": {
+        "var": "own_company",
+        "min": 1
       },
-      "shell_company":{
-         "value":0,
-         "private":true,
-         "category":"choice"
+      "texts": [
+        {
+          "character": "mayor",
+          "text@en": "We passed a tender to build a new school."
+        },
+        {
+          "character": "mayor",
+          "text@en": "Our construction department estimates the cost of the works at 3 million."
+        },
+        {
+          "character": "mayor",
+          "text@en": "We received three offers. Pick the best one."
+        }
+      ],
+      "explainer": {
+        "title@en": "How to run a cartel?",
+        "body@en": "Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous."
       },
-      "trash_company":{
-         "value":0,
-         "private":true,
-         "category":"choice"
+      "choices": [
+        {
+          "text@en": "Your company made an offer for 5 million",
+          "var_changes": {
+            "reserves": -5,
+            "risk_police": 1,
+            "personal_account": 100000
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "I choose my company."
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "Like a boss!"
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "Don't forget to pay us our share."
+            }
+          ]
+        },
+        {
+          "text@en": "Public Works plc. made an offer for 5.5 million",
+          "var_changes": {
+            "reserves": -5.5,
+            "risk_contractors": 1
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "I choose Public Works plc."
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "What the hell?"
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "You run a cartel and you can't even pick the right offer?"
+            }
+          ]
+        },
+        {
+          "text@en": "City Construction Limited made an offer for 6 million",
+          "var_changes": {
+            "reserves": -6,
+            "risk_contractors": 1
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "I choose City Construction Limited."
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "What the hell?"
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "You run a cartel and you can't even pick the right offer?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 1999,
+      "condition": {
+        "var": "own_company",
+        "max": 0
       },
-      "revolving_door":{
-         "value":0,
-         "private":true,
-         "category":"choice"
-      }
-   },
-   "characters":{
-      "mayor":{
-         "name@en":"Birgit Meyer",
-         "title@en":"The Mayor",
-         "avatar":"./images/avatars/mayor.jpg"
+      "texts": [
+        {
+          "character": "mayor",
+          "text@en": "We passed a tender to build a new school."
+        },
+        {
+          "character": "mayor",
+          "text@en": "Our construction department estimates the cost of the works at 3 million."
+        },
+        {
+          "character": "mayor",
+          "text@en": "We received three offers. Pick the best one."
+        }
+      ],
+      "explainer": {
+        "title@en": "How to spot a cartel?",
+        "body@en": "Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous."
       },
-      "lawyer":{
-         "name@en":"Jamila Ballard",
-         "title@en":"Your lawyer",
-         "avatar":"./images/avatars/lawyer.jpg"
+      "choices": [
+        {
+          "text@en": "Public Building plc made an offer for 5 million",
+          "var_changes": {
+            "reserves": -5,
+            "personal_account": 1000
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "I choose Public Building plc."
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "Good choice, buddy."
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "Your share will be deposited in your office, as usual."
+            }
+          ]
+        },
+        {
+          "text@en": "Public Works plc. made an offer for 5.5 million",
+          "var_changes": {
+            "reserves": -5.5,
+            "risk_contractors": 1
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "I choose Public Works plc."
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "Playing with fire, are we?"
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "You won't last long if you continue like this."
+            }
+          ]
+        },
+        {
+          "text@en": "City Construction Limited made an offer for 6 million",
+          "var_changes": {
+            "reserves": -6,
+            "risk_contractors": 1
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "I choose City Construction Limited."
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "Playing with fire, are we?"
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "You won't last long if you continue like this."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2000,
+      "texts": [
+        {
+          "character": "mayor",
+          "text@en": "As part of the Smart Administration 2000 plan, I want you to have a credit card."
+        },
+        {
+          "character": "mayor",
+          "text@en": "It'll make your work faster and benefit citizens!"
+        }
+      ],
+      "explainer": {
+        "title@en": "Using the official credit card",
+        "body@en": "It can be tempting to use the credit card of the city or the government to buy stuff for you. Because it's very easy to trace, it can be dangerous!<br><br>Read more under <a href='http://www.cookingbudgets.com/the-credit-card/' target='_blank'>The Credit Card</a> at Cooking Budgets."
       },
-      "construction-boss":{
-         "name@en":"Robert Gerber",
-         "title@en":"Boss of City Construction Limited",
-         "avatar":"./images/avatars/construction-boss.jpg"
+      "choices": [
+        {
+          "text@en": "Use the credit card to buy DVDs on Amazon.com",
+          "var_changes": {
+            "risk_police": 4,
+            "personal_account": 1000
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "It's very useful for this new website, Amazon."
+            },
+            {
+              "character": "lawyer",
+              "text@en": "No, you did't, did you?"
+            },
+            {
+              "character": "lawyer",
+              "text@en": "As soon as the comptroller reads the credit card statements, you'll be fired!"
+            }
+          ]
+        },
+        {
+          "text@en": "Do nothing",
+          "var_changes": {
+            "risk_police": 0
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "I don't see the need for it."
+            },
+            {
+              "character": "mayor",
+              "text@en": "You're right, better be careful with this plastic thingy."
+            },
+            {
+              "character": "mayor",
+              "text@en": "I don't want any scandal here."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2001,
+      "texts": [
+        {
+          "character": "mayor",
+          "text@en": "There's an election coming up."
+        },
+        {
+          "character": "mayor",
+          "text@en": "I want you to run some ads that praise my work in the local paper, using city funds."
+        }
+      ],
+      "explainer": {
+        "title@en": "Political communication using public funds",
+        "body@en": "Politicians can control public companies, either directly or through patronage networks. They might require them to buy advertising in newspapers that advertise their performance as a politician and not the company itself. It's very hard for prosecutors to prove that the advertising was not done in the interest of the company.<br><br>Read more under <a href='http://www.cookingbudgets.com/ads/' target='_blank'>Ads, ads, ads</a> at Cooking Budgets."
       },
-      "university-boss":{
-         "name@en":"Adrian Wynn",
-         "title@en":"Director of the University",
-         "avatar":"./images/avatars/university-boss.jpg"
+      "choices": [
+        {
+          "text@en": "No way, it's unethical",
+          "var_changes": {
+            "risk_political": 2
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "I can't do this, it's unethical."
+            },
+            {
+              "character": "mayor",
+              "text@en": "What????"
+            },
+            {
+              "character": "mayor",
+              "text@en": "..."
+            },
+            {
+              "character": "mayor",
+              "text@en": "When I'm reelected, you're out."
+            }
+          ]
+        },
+        {
+          "text@en": "Sure, you'll run ads praising her actions",
+          "var_changes": {
+            "reserves": -0.5
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "Sure, I am on it."
+            },
+            {
+              "character": "mayor",
+              "text@en": "I knew I could count on you."
+            },
+            {
+              "character": "mayor",
+              "text@en": "Just tell the accounting department to pass it as marketing expenditures for the city."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2002,
+      "texts": [
+        {
+          "character": "football-boss",
+          "text@en": "We're in trouble."
+        },
+        {
+          "character": "football-boss",
+          "text@en": "We need 12 million."
+        },
+        {
+          "character": "football-boss",
+          "text@en": "Cash."
+        },
+        {
+          "character": "football-boss",
+          "text@en": "I was thinking... The city could buy me back the plot of land you sold me, back in 1996. Then you I rent it from the city for a fair price."
+        },
+        {
+          "character": "football-boss",
+          "text@en": "That'd make everybody happy, wouldn't it? Voters would hate it if their team had to leave."
+        }
+      ],
+      "explainer": {
+        "title@en": "Leasing public space to private companies",
+        "body@en": "The easiest way to support a private company for a politician is to buy their building with public funds and rent it back to the company at a low price. The operation is hard to trace and fully legal.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-emphyteutic-scam/' target='_blank'>The Emphyteutic Scam</a> at Cooking Budgets."
       },
-      "football-boss":{
-         "name@en":"Martin Gomez",
-         "title@en":"President of the City Football Club",
-         "avatar":"./images/avatars/football-boss.jpg"
-      }
-   },
-   "years":{
-      "1993":"images/years/night.jpeg",
-      "1996":"images/years/street.jpeg",
-      "1998":"images/years/night.jpeg"
-   },
-   "steps":[
-      {
-         "year":1993,
-         "texts":[
+      "choices": [
+        {
+          "text@en": "Buy back the plot of land.",
+          "var_changes": {
+            "reserves": -12,
+            "resources": 0.2
+          },
+          "feedback": [
             {
-               "character":"mayor",
-               "text@en":"Hi there, welcome to City Hall!"
+              "character": "you",
+              "text@en": "Sure, a healthy football club for a healthy city!"
             },
             {
-               "character":"mayor",
-               "text@en":"I hear you're the new general manager here."
+              "character": "football-boss",
+              "text@en": "Yeah!"
             },
             {
-               "character":"mayor",
-               "text@en":"Some say this city has corruption issues. Don't listen to them."
-            },
-            {
-               "character":"mayor",
-               "text@en":"But be careful."
+              "character": "football-boss",
+              "text@en": "With people like you, we'll win the Cup!"
             }
-         ],
-         "choices":[
+          ]
+        },
+        {
+          "text@en": "No way, football clubs are private companies, they don't need a bail out.",
+          "var_changes": {
+            "risk_political": 1
+          },
+          "feedback": [
             {
-               "text@en":"Go",
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"Thank you mayor, I'll do my best."
-                  }
-               ]
+              "character": "you",
+              "text@en": "No sorry, I don't think it would be in the general interest."
+            },
+            {
+              "character": "mayor",
+              "text@en": "Did you really turn my friend down?"
+            },
+            {
+              "character": "mayor",
+              "text@en": "Who do you think people will blame if the football team goes bankrupt?"
             }
-         ]
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2003,
+      "texts": [
+        {
+          "character": "construction-boss",
+          "text@en": "Hey buddy!"
+        },
+        {
+          "character": "construction-boss",
+          "text@en": "I have a great idea."
+        },
+        {
+          "character": "construction-boss",
+          "text@en": "You'll pass a public tender to renovate a street that doesn't exist."
+        },
+        {
+          "character": "construction-boss",
+          "text@en": "Give me the contract..."
+        },
+        {
+          "character": "construction-boss",
+          "text@en": "And we'll share the money."
+        }
+      ],
+      "explainer": {
+        "title@en": "Fake public contracts",
+        "body@en": "It can happen that contracts are passed to renovate a place or a road that does not exist. It can be risky, because it is easy to prove the contract is bogus.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-invisible-public-work/' target='_blank'>The Invisible Public Work</a> at Cooking Budgets."
       },
-      {
-         "year":1994,
-         "texts":[
+      "choices": [
+        {
+          "text@en": "Accept",
+          "var_changes": {
+            "personal_account": 50000,
+            "risk_police": 1
+          },
+          "feedback": [
             {
-               "character":"mayor",
-               "text@en":"We passed a tender to build a new road segment."
+              "character": "you",
+              "text@en": "I will make it happen."
             },
             {
-               "character":"mayor",
-               "text@en":"Our transport department estimates the cost of the works at 10 million."
+              "character": "construction-boss",
+              "text@en": "Well done!"
             },
             {
-               "character":"mayor",
-               "text@en":"We received three offers. Pick the best one."
+              "character": "construction-boss",
+              "text@en": "Here's to our collaboration! 🍻"
             }
-         ],
-         "explainer":{
-            "title@en":"How to spot a cartel?",
-            "body@en":"Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous."
-         },
-         "choices":[
+          ]
+        },
+        {
+          "text@en": "Decline",
+          "var_changes": {
+            "risk_contractors": 1
+          },
+          "feedback": [
             {
-               "text@en":"Public Works plc. made an offer at 9 million",
-               "var_changes":{
-                  "reserves":-9,
-                  "risk_contractors":1
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"I choose the offer of Public Works plc."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"You're new here, aren't you?"
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"I'm the boss of City Construction Limited."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"Be more careful next time."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"You don't want to make an enemy out of me."
-                  }
-               ]
+              "character": "you",
+              "text@en": "No, it seems too risky too me."
             },
             {
-               "text@en":"City Construction Limited made an offer at 20 million",
-               "var_changes":{
-                  "reserves":-20,
-                  "gift_company2":1
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"I choose the offer of City Construction Limited."
-                  }
-               ]
+              "character": "construction-boss",
+              "text@en": "Careful, buddy..."
             },
             {
-               "text@en":"Public Building plc made an offer at 21 million",
-               "var_changes":{
-                  "reserves":-21,
-                  "risk_contractors":1
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"I choose the offer of Public Building plc."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"You're new here, aren't you?"
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"I'm the boss of City Construction Limited."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"Be more careful next time."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"You don't want to make an enemy out of me."
-                  }
-               ]
+              "character": "construction-boss",
+              "text@en": "You don't want to see me angry."
             }
-         ]
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2004,
+      "texts": [
+        {
+          "character": "construction-boss",
+          "text@en": "Hey buddy!"
+        },
+        {
+          "character": "construction-boss",
+          "text@en": "Someone as important as you should have a nicer office."
+        },
+        {
+          "character": "construction-boss",
+          "text@en": "You deserve a mahogany desk and designer chairs, at least!"
+        },
+        {
+          "character": "construction-boss",
+          "text@en": "Give me a contract and I'll buy you the furniture you really deserve."
+        }
+      ],
+      "explainer": {
+        "title@en": "Perks in office",
+        "body@en": "It"
       },
-      {
-         "year":1994,
-         "condition":{
-            "var":"gift_company2",
-            "min":1
-         },
-         "texts":[
+      "choices": [
+        {
+          "text@en": "You're right.",
+          "var_changes": {
+            "risk_political": 1
+          },
+          "feedback": [
             {
-               "character":"construction-boss",
-               "text@en":"Hey!"
+              "character": "you",
+              "text@en": "You're right."
             },
             {
-               "character":"construction-boss",
-               "text@en":"I'm the boss of City Construction Limited."
+              "character": "mayor",
+              "text@en": "What happened?"
             },
             {
-               "character":"construction-boss",
-               "text@en":"That's some sound decision-making here."
+              "character": "mayor",
+              "text@en": "How come your office is nicer than mine?"
             },
             {
-               "character":"construction-boss",
-               "text@en":"By the way, do you want this new BMW? I bought it last month but don't really need it."
+              "character": "mayor",
+              "text@en": "Something's wrong with you."
             }
-         ],
-         "explainer":{
-            "title@en":"How to react to gifts?",
-            "body@en":"Public officials are usually prohibited from accepting gifts above a certain value (10€ to 500€). However, you can accept the gift if it is intended for you as a private person, or for your spouse. By refusing a gift, you risk angering the person who made it."
-         },
-         "choices":[
+          ]
+        },
+        {
+          "text@en": "No, we can't afford this.",
+          "var_changes": {
+            "risk_contractors": 1
+          },
+          "feedback": [
             {
-               "text@en":"Sure",
-               "var_changes":{
-                  "personal_account":15000,
-                  "risk_police":1
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"Sure, I've always wanted to drive a BMW."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"Here you go!"
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"I think we'll get along well."
-                  },
-                  {
-                     "character":"lawyer",
-                     "text@en":"Be careful with this expensive car."
-                  },
-                  {
-                     "character":"lawyer",
-                     "text@en":"People might ask where it comes from."
-                  }
-               ]
+              "character": "you",
+              "text@en": "You're right."
             },
             {
-               "text@en":"No, thank you",
-               "var_changes":{
-                  "risk_contractors":1
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"No, thank you."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"Be careful, kid."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"You don't want to make an enemy out of me."
-                  }
-               ]
+              "character": "construction-boss",
+              "text@en": "No, we can't afford this."
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "I thought we were friends."
             }
-         ]
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2005,
+      "texts": [
+        {
+          "character": "mayor",
+          "text@en": "We need a new football stadium."
+        },
+        {
+          "character": "mayor",
+          "text@en": "The people deserve this."
+        },
+        {
+          "character": "mayor",
+          "text@en": "How should we arrange the financing?"
+        }
+      ],
+      "explainer": {
+        "title@en": "Public-private partnerships",
+        "body@en": "Since the 1980's, it is popular for public administrations to do public-private partnerships. Such partnerships involve a private company doing some of the work, usually building a equipment or operating it, while the administration contributes to the costs. In exchange, the private company can keep the revenues of the equipment it built.<br><br>The goal was to allow public administrations to provide public services without spending much money. In practice, private companies take almost no risks with such contracts and public administrations end up paying as much as they would have without the partnership. But it is usually hidden in the accounts of the public administration."
       },
-      {
-         "year":1995,
-         "texts":[
+      "choices": [
+        {
+          "text@en": "The city should build the stadium (one-off cost: 10 million).",
+          "var_changes": {
+            "reserves": -10
+          },
+          "feedback": [
             {
-               "character":"mayor",
-               "text@en":"So many people come to me because they want an apartment in social housing."
+              "character": "you",
+              "text@en": "I have engaged the city to buy the stadium for 10 million."
             },
             {
-               "character":"mayor",
-               "text@en":"I can't take it anymore!"
+              "character": "mayor",
+              "text@en": "Ten MILLION?"
             },
             {
-               "character":"mayor",
-               "text@en":"Can you find a solution for them?"
+              "character": "mayor",
+              "text@en": "Where do you think you work? Buckingham Palace?"
+            },
+            {
+              "character": "mayor",
+              "text@en": "Go for PPP next time."
             }
-         ],
-         "explainer":{
-            "title@en":"How can you organize bribes?",
-            "body@en":"Bribery is not as common in Europe as in other parts of the world, but it is rampant is some sectors. In public housing, some officials ask for envoleppes of money to be given directly. For car inspection, some service centers will be pleased if you leave a gift or bills of cash on the passenger seat.<br><br>Read more under <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> at Cooking Budgets."
-         },
-         "choices":[
+          ]
+        },
+        {
+          "text@en": "Set-up a public-private partnership (no cost now, but you have to pay the contractor 1 million per year for the next 20 years)",
+          "var_changes": {
+            "expenditures": 1
+          },
+          "feedback": [
             {
-               "text@en":"Offer to speed their requests in exchange for $5000 in an enveloppe",
-               "var_changes":{
-                  "personal_account":5000,
-                  "risk_police":2
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"I'll take care of it."
-                  },
-                  {
-                     "character":"lawyer",
-                     "text@en":"Be mindful of cash."
-                  },
-                  {
-                     "character":"lawyer",
-                     "text@en":"If someone sees you taking the money, I won't be able to do much for you."
-                  }
-               ]
+              "character": "you",
+              "text@en": "Let's do a public-private partnership then, so that we don't have to pay it upfront."
             },
             {
-               "text@en":"Increase funding to the social housing program",
-               "var_changes":{
-                  "expenditures":4
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"We'll increase spending on social housing."
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"And how exactly are we supposed to pay for this program?"
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"If you continue like this, we won't have any money left to pay for my receptions."
-                  }
-               ]
+              "character": "mayor",
+              "text@en": "I love this PPP thing!"
             },
             {
-               "text@en":"Ignore them",
-               "var_changes":{
-                  "risk_political":1
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"I'm sorry but there's nothing I can do."
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"Kid, these people are still coming to me."
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"You'll need to change your attitude."
-                  }
-               ]
+              "character": "mayor",
+              "text@en": "I get stuff done, and it's the next mayors who pay!"
             }
-         ]
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "texts": [
+        {
+          "character": "mayor",
+          "text@en": "Next year, we'll outsource trash collection."
+        },
+        {
+          "character": "lawyer",
+          "text@en": "Have you heard the news?"
+        },
+        {
+          "character": "lawyer",
+          "text@en": "Do you want to set up a trash collection company?"
+        }
+      ],
+      "explainer": {
+        "title@en": "Deregulation and privatization",
+        "body@en": "Public administrations have transfered a lot of their competencies to private companies, either via public-private partnerships or via deregulation. It offers a lot of opportunities for conflicts of interests.<br><br>It is hard to know how much a service costs to the city because it can involve people from different departments (e.g some municipal employees can work for the trash collection one day and for another department the next). To do such estimates would require analytical accounting, which cities rarely do."
       },
-      {
-         "year":1996,
-         "texts":[
+      "choices": [
+        {
+          "text@en": "Yes.",
+          "var_changes": {
+            "trash_company": 1
+          },
+          "feedback": [
             {
-               "character":"football-boss",
-               "text@en":"Hey there."
+              "character": "you",
+              "text@en": "Yes, good idea."
             },
             {
-               "character":"football-boss",
-               "text@en":"I'm an old friend of the mayor."
+              "character": "lawyer",
+              "text@en": "Brilliant!"
             },
             {
-               "character":"football-boss",
-               "text@en":"I need to expand the training facilities of my... I mean our, the city's football team."
-            },
-            {
-               "character":"football-boss",
-               "text@en":"There's this empty plot of land the city owns. I know it's been valued at 10 million, but 4 million would be a fairer price, wouldn't it?"
+              "character": "lawyer",
+              "text@en": "I'll set it up right away."
             }
-         ],
-         "explainer":{
-            "title@en":"Spotting corruption in land sales",
-            "body@en":"Cities often own large plots of land. They can either sell them at market prices or at lower prices, to make a gift to the buyer. It is usually hard to spot such transactions, because there isn't much of a market for big sales of land in a city."
-         },
-         "choices":[
+          ]
+        },
+        {
+          "text@en": "No.",
+          "var_changes": {
+            "trash_company": 0
+          },
+          "feedback": [
             {
-               "text@en":"Sell for 10 million",
-               "var_changes":{
-                  "risk_political":1,
-                  "reserves":10
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"It's all yours now. But the price is 10 million, not negotiable."
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"That's how you treat my friends?"
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"In the future, be more considerate."
-                  }
-               ]
+              "character": "you",
+              "text@en": "No, it's not a good idea."
             },
             {
-               "text@en":"Sell for 4 million",
-               "var_changes":{
-                  "reserves":4
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"Yes okay, go for 4 million."
-                  },
-                  {
-                     "character":"football-boss",
-                     "text@en":"Deal!"
-                  },
-                  {
-                     "character":"football-boss",
-                     "text@en":"I'll make sure to send you tickets for the next game."
-                  }
-               ]
+              "character": "lawyer",
+              "text@en": "All right."
+            },
+            {
+              "character": "lawyer",
+              "text@en": "But you should know entrepreneurship is all the rage, nowadays."
             }
-         ]
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2007,
+      "condition": {
+        "var": "trash_company",
+        "min": 1
       },
-      {
-         "year":1997,
-         "texts":[
-            {
-               "character":"mayor",
-               "text@en":"We passed a tender to build a new roundabout."
-            },
-            {
-               "character":"mayor",
-               "text@en":"Our transport department estimates the cost of the works at 6 million."
-            },
-            {
-               "character":"mayor",
-               "text@en":"We received three offers. Pick the best one."
-            }
-         ],
-         "explainer":{
-            "title@en":"How to spot a cartel?",
-            "body@en":"Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous."
-         },
-         "choices":[
-            {
-               "text@en":"Public Works plc. made an offer for 10 million",
-               "var_changes":{
-                  "reserves":-10,
-                  "personal_account":1000
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"I choose the offer of Public Works plc."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"Good choice, buddy."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"Your share will be deposited in your office, as usual."
-                  }
-               ]
-            },
-            {
-               "text@en":"City Construction Limited made an offer for 10.2 million",
-               "var_changes":{
-                  "reserves":-10.2,
-                  "risk_contractors":1
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"I choose the offer of City Construction Limited."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"Playing with fire, are we?"
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"You won't last long if you continue like this."
-                  }
-               ]
-            },
-            {
-               "text@en":"Public Building plc made an offer for 11 million",
-               "var_changes":{
-                  "reserves":-11,
-                  "risk_contractors":1
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"I choose the offer of Public Building plc."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"Playing with fire, are we?"
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"You won't last long if you continue like this."
-                  }
-               ]
-            }
-         ]
+      "texts": [
+        {
+          "character": "mayor",
+          "text@en": "Trash collection must be outsourced."
+        },
+        {
+          "character": "mayor",
+          "text@en": "I asked accounting how much it cost us so far."
+        },
+        {
+          "character": "mayor",
+          "text@en": "They have no idea."
+        },
+        {
+          "character": "mayor",
+          "text@en": "We passed a public tender anyway. Pick the best offer."
+        }
+      ],
+      "explainer": {
+        "title@en": "Deregulation and privatization",
+        "body@en": "Public administrations have transfered a lot of their competencies to private companies, either via public-private partnerships or via deregulation. It offers a lot of opportunities for conflicts of interests.<br><br>It is hard to know how much a service costs to the city because it can involve people from different departments (e.g some municipal employees can work for the trash collection one day and for another department the next). To do such estimates would require analytical accounting, which cities rarely do."
       },
-      {
-         "year":1998,
-         "texts":[
+      "choices": [
+        {
+          "text@en": "Your company made an offer at 1 million per year",
+          "var_changes": {
+            "resources": -1,
+            "personal_account": 10000
+          },
+          "feedback": [
             {
-               "character":"lawyer",
-               "text@en":"Hey, I just got your voicemail."
+              "character": "you",
+              "text@en": "I choose my company"
             },
             {
-               "character":"lawyer",
-               "text@en":"So, you want to create your own company?"
+              "character": "lawyer",
+              "text@en": "I knew it was a good idea!"
             }
-         ],
-         "explainer":{
-            "title@en":"Conflicts of interest",
-            "body@en":"People in politics or in the administration can own companies that receive public contracts. In some countries, it is forbidden for companies owned by public servants or politiciants to receive money from public contracts."
-         },
-         "choices":[
+          ]
+        },
+        {
+          "text@en": "Voelia Environment made an offer at 900,000 per year",
+          "var_changes": {
+            "resources": -0.9
+          },
+          "feedback": [
             {
-               "text@en":"Yes",
-               "var_changes":{
-                  "own_company":1
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"Yes, a public work company."
-                  }
-               ]
+              "character": "you",
+              "text@en": "I choose Voelia Environment"
             },
             {
-               "text@en":"No",
-               "var_changes":{
-                  "own_company":0
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"No, it's not a good idea actually."
-                  },
-                  {
-                     "character":"lawyer",
-                     "text@en":"Well, you have the right to change your mind."
-                  }
-               ]
+              "character": "mayor",
+              "text@en": "Well done!"
+            },
+            {
+              "character": "mayor",
+              "text@en": "Private companies running public services, what could go wrong?"
             }
-         ]
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2007,
+      "condition": {
+        "var": "trash_company",
+        "max": 0
       },
-      {
-         "year":1998,
-         "condition":{
-            "var":"own_company",
-            "min":1
-         },
-         "texts":[
-            {
-               "character":"lawyer",
-               "text@en":"I'll get started with the paperwork."
-            },
-            {
-               "character":"lawyer",
-               "text@en":"Who should be the nominal owner of the company?"
-            }
-         ],
-         "explainer":{
-            "title@en":"Conflicts of interest",
-            "body@en":"People in politics or in the administration can own companies that receive public contracts. In some countries, it is forbidden for companies owned by public servants or politiciants to receive money from public contracts."
-         },
-         "choices":[
-            {
-               "text@en":"You personnally",
-               "var_changes":{
-                  "risk_police":2
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"Me."
-                  },
-                  {
-                     "character":"lawyer",
-                     "text@en":"It's easier, but it'll make it very easy to link you back to the company."
-                  }
-               ]
-            },
-            {
-               "text@en":"Your spouse or partner",
-               "var_changes":{
-                  "risk_police":1
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"My spouse."
-                  },
-                  {
-                     "character":"lawyer",
-                     "text@en":"Smart move, but it'll be easy to link you back to the company."
-                  }
-               ]
-            },
-            {
-               "text@en":"A shell company in a tax heaven",
-               "var_changes":{
-                  "risk_police":0,
-                  "shell_company":1
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"An anonymous company, maybe based in the British Virgin Islands, or in Panama?"
-                  },
-                  {
-                     "character":"lawyer",
-                     "text@en":"Good choice."
-                  },
-                  {
-                     "character":"lawyer",
-                     "text@en":"It'll take a bit longer, but you'll be safe."
-                  }
-               ]
-            }
-         ]
+      "texts": [
+        {
+          "character": "mayor",
+          "text@en": "Trash collection must be outsourced."
+        },
+        {
+          "character": "mayor",
+          "text@en": "I asked accounting how much it cost us so far."
+        },
+        {
+          "character": "mayor",
+          "text@en": "They have no idea."
+        },
+        {
+          "character": "mayor",
+          "text@en": "We passed a public tender anyway. Pick the best offer."
+        }
+      ],
+      "explainer": {
+        "title@en": "Deregulation and privatization",
+        "body@en": "Public administrations have transfered a lot of their competencies to private companies, either via public-private partnerships or via deregulation. It offers a lot of opportunities for conflicts of interests.<br><br>It is hard to know how much a service costs to the city because it can involve people from different departments (e.g some municipal employees can work for the trash collection one day and for another department the next). To do such estimates would require analytical accounting, which cities rarely do."
       },
-      {
-         "year":1999,
-         "condition":{
-            "var":"own_company",
-            "min":1
-         },
-         "texts":[
+      "choices": [
+        {
+          "text@en": "SATI Waste Management made an offer at 1.2 million per year",
+          "var_changes": {
+            "resources": -1.2
+          },
+          "feedback": [
             {
-               "character":"mayor",
-               "text@en":"We passed a tender to build a new school."
+              "character": "you",
+              "text@en": "I choose SATI Waste Management"
             },
             {
-               "character":"mayor",
-               "text@en":"Our construction department estimates the cost of the works at 3 million."
+              "character": "mayor",
+              "text@en": "Well done!"
             },
             {
-               "character":"mayor",
-               "text@en":"We received three offers. Pick the best one."
+              "character": "mayor",
+              "text@en": "Private companies running public services, what could go wrong?"
             }
-         ],
-         "explainer":{
-            "title@en":"How to run a cartel?",
-            "body@en":"Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous."
-         },
-         "choices":[
+          ]
+        },
+        {
+          "text@en": "Voelia Environment made an offer at 900,000 per year",
+          "var_changes": {
+            "resources": -0.9
+          },
+          "feedback": [
             {
-               "text@en":"Your company made an offer for 5 million",
-               "var_changes":{
-                  "reserves":-5,
-                  "risk_police":1,
-                  "personal_account":100000
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"I choose my company."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"Like a boss!"
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"Don't forget to pay us our share."
-                  }
-               ]
+              "character": "you",
+              "text@en": "I choose Voelia Environment"
             },
             {
-               "text@en":"Public Works plc. made an offer for 5.5 million",
-               "var_changes":{
-                  "reserves":-5.5,
-                  "risk_contractors":1
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"I choose Public Works plc."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"What the hell?"
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"You run a cartel and you can't even pick the right offer?"
-                  }
-               ]
+              "character": "mayor",
+              "text@en": "Well done!"
             },
             {
-               "text@en":"City Construction Limited made an offer for 6 million",
-               "var_changes":{
-                  "reserves":-6,
-                  "risk_contractors":1
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"I choose City Construction Limited."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"What the hell?"
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"You run a cartel and you can't even pick the right offer?"
-                  }
-               ]
+              "character": "mayor",
+              "text@en": "Private companies running public services, what could go wrong?"
             }
-         ]
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2008,
+      "texts": [
+        {
+          "character": "mayor",
+          "text@en": "The contractor for the new stadium is behind schedule."
+        },
+        {
+          "character": "mayor",
+          "text@en": "They do not want to pay the late penalty fee of 2 million."
+        },
+        {
+          "character": "mayor",
+          "text@en": "Sort this out."
+        }
+      ],
+      "explainer": {
+        "title@en": "The fine print in public contracts",
+        "body@en": "Building contracts usually involve a series of clauses, such as penalties for delays. However, the client (in this case, the city) must activate the clause, or, if the contractor refuses to pay, take it to court. Legal teams are used to such situations, but for a small administration, or in case of politically sensitive issues, it is easy to ignore some clauses in the contract."
       },
-      {
-         "year":1999,
-         "condition":{
-            "var":"own_company",
-            "max":0
-         },
-         "texts":[
+      "choices": [
+        {
+          "text@en": "Take the contractor to court to get the money.",
+          "var_changes": {
+            "reserves": 2,
+            "risk_political": 1
+          },
+          "feedback": [
             {
-               "character":"mayor",
-               "text@en":"We passed a tender to build a new school."
+              "character": "you",
+              "text@en": "That's unacceptable, I will take them to court to get the money."
             },
             {
-               "character":"mayor",
-               "text@en":"Our construction department estimates the cost of the works at 3 million."
+              "character": "mayor",
+              "text@en": "What if we lose?"
             },
             {
-               "character":"mayor",
-               "text@en":"We received three offers. Pick the best one."
+              "character": "mayor",
+              "text@en": "This is all bad publicity for me."
             }
-         ],
-         "explainer":{
-            "title@en":"How to spot a cartel?",
-            "body@en":"Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous."
-         },
-         "choices":[
+          ]
+        },
+        {
+          "text@en": "Ignore the delay.",
+          "var_changes": {
+            "risk_political": 0
+          },
+          "feedback": [
             {
-               "text@en":"Public Building plc made an offer for 5 million",
-               "var_changes":{
-                  "reserves":-5,
-                  "personal_account":1000
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"I choose Public Building plc."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"Good choice, buddy."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"Your share will be deposited in your office, as usual."
-                  }
-               ]
+              "character": "you",
+              "text@en": "I'm sorry but there's nothing I can do."
             },
             {
-               "text@en":"Public Works plc. made an offer for 5.5 million",
-               "var_changes":{
-                  "reserves":-5.5,
-                  "risk_contractors":1
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"I choose Public Works plc."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"Playing with fire, are we?"
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"You won't last long if you continue like this."
-                  }
-               ]
+              "character": "mayor",
+              "text@en": "OK..."
             },
             {
-               "text@en":"City Construction Limited made an offer for 6 million",
-               "var_changes":{
-                  "reserves":-6,
-                  "risk_contractors":1
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"I choose City Construction Limited."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"Playing with fire, are we?"
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"You won't last long if you continue like this."
-                  }
-               ]
+              "character": "mayor",
+              "text@en": "We'll say they're behind schedule because of the European Union."
             }
-         ]
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "texts": [
+        {
+          "character": "university-boss",
+          "text@en": "It's good to see you!"
+        },
+        {
+          "character": "university-boss",
+          "text@en": "Meeting over lunch was a great idea."
+        },
+        {
+          "character": "university-boss",
+          "text@en": "It's been a while since we last talked!"
+        },
+        {
+          "character": "university-boss",
+          "text@en": "I'm the director of the City University now."
+        },
+        {
+          "character": "university-boss",
+          "text@en": "The pay is terrible, but I have a trick."
+        },
+        {
+          "character": "university-boss",
+          "text@en": "I tell foreign students who don't speak English to pay me a special fee."
+        },
+        {
+          "character": "university-boss",
+          "text@en": "And I let them in!"
+        },
+        {
+          "character": "university-boss",
+          "text@en": "Smart, isn't it?"
+        }
+      ],
+      "explainer": {
+        "title@en": "Selling university degrees",
+        "body@en": "The sale of university degree is not uncommon in Europe. As with any story of corruption, people have an incentive to keep silent, because it would make the whole university look bad if it became news."
       },
-      {
-         "year":2000,
-         "texts":[
+      "choices": [
+        {
+          "text@en": "Call the police.",
+          "var_changes": {
+            "risk_political": 1
+          },
+          "feedback": [
             {
-               "character":"mayor",
-               "text@en":"As part of the Smart Administration 2000 plan, I want you to have a credit card."
+              "character": "you",
+              "text@en": "That's totally illegal! I am sorry but I have to report it to the police."
             },
             {
-               "character":"mayor",
-               "text@en":"It'll make your work faster and benefit citizens!"
-            }
-         ],
-         "explainer":{
-            "title@en":"Using the official credit card",
-            "body@en":"It can be tempting to use the credit card of the city or the government to buy stuff for you. Because it's very easy to trace, it can be dangerous!<br><br>Read more under <a href='http://www.cookingbudgets.com/the-credit-card/' target='_blank'>The Credit Card</a> at Cooking Budgets."
-         },
-         "choices":[
-            {
-               "text@en":"Use the credit card to buy DVDs on Amazon.com",
-               "var_changes":{
-                  "risk_police":4,
-                  "personal_account":1000
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"It's very useful for this new website, Amazon."
-                  },
-                  {
-                     "character":"lawyer",
-                     "text@en":"No, you did't, did you?"
-                  },
-                  {
-                     "character":"lawyer",
-                     "text@en":"As soon as the comptroller reads the credit card statements, you'll be fired!"
-                  }
-               ]
+              "character": "mayor",
+              "text@en": "This police investigation on your friend is not good for my reelection."
             },
             {
-               "text@en":"Do nothing",
-               "var_changes":{
-                  "risk_police":0
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"I don't see the need for it."
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"You're right, better be careful with this plastic thingy."
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"I don't want any scandal here."
-                  }
-               ]
+              "character": "mayor",
+              "text@en": "I might have to put some space between you and me."
             }
-         ]
+          ]
+        },
+        {
+          "text@en": "Let him pick up the bill.",
+          "var_changes": {
+            "personal_account": 100
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "Very smart! Let's have the students pay for our dinner then."
+            },
+            {
+              "character": "university-boss",
+              "text@en": "Here's to an old friendship! 🍻"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "texts": [
+        {
+          "character": "mayor",
+          "text@en": "The accounting department came to me."
+        },
+        {
+          "character": "mayor",
+          "text@en": "They say they have a great idea to improve the city's financial health."
+        },
+        {
+          "character": "mayor",
+          "text@en": "They say they want to bundle all future revenue from social housing and account for it once."
+        },
+        {
+          "character": "mayor",
+          "text@en": "They say it'll increase income now big time - on paper - and reduce it in the future."
+        },
+        {
+          "character": "mayor",
+          "text@en": "Should we do it?"
+        }
+      ],
+      "explainer": {
+        "title@en": "Accounting tricks",
+        "body@en": "Contrary to popular belief, accounting is very flexible. It has to be flexible, because it needs to honestly represent the financial situation of an institutions and specific situations can be very different from one another.<br><br>One trick consists in considering that all future revenues from a specific revenue stream are actually just one big sum of money that can be accounted for as a lump sum, even if it is paid later. There are times when it is legitimate to do so (e.g you sign a huge contract for something delivered right away but for which the client pays in installments) and cases when it is not (e.g accounting for rents as if they were just one sale)."
       },
-      {
-         "year":2001,
-         "texts":[
+      "choices": [
+        {
+          "text@en": "Accept! The appearance of wealth is better than nothing.",
+          "var_changes": {
+            "reserves": 20,
+            "resources": -3
+          },
+          "feedback": [
             {
-               "character":"mayor",
-               "text@en":"There's an election coming up."
+              "character": "you",
+              "text@en": "It sounds legal, and we need this to respect the investment plan we promised to the voters."
             },
             {
-               "character":"mayor",
-               "text@en":"I want you to run some ads that praise my work in the local paper, using city funds."
-            }
-         ],
-         "explainer":{
-            "title@en":"Political communication using public funds",
-            "body@en":"Politicians can control public companies, either directly or through patronage networks. They might require them to buy advertising in newspapers that advertise their performance as a politician and not the company itself. It's very hard for prosecutors to prove that the advertising was not done in the interest of the company.<br><br>Read more under <a href='http://www.cookingbudgets.com/ads/' target='_blank'>Ads, ads, ads</a> at Cooking Budgets."
-         },
-         "choices":[
-            {
-               "text@en":"No way, it's unethical",
-               "var_changes":{
-                  "risk_political":2
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"I can't do this, it's unethical."
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"What????"
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"..."
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"When I'm reelected, you're out."
-                  }
-               ]
+              "character": "mayor",
+              "text@en": "Great!"
             },
             {
-               "text@en":"Sure, you'll run ads praising her actions",
-               "var_changes":{
-                  "reserves":-0.5
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"Sure, I am on it."
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"I knew I could count on you."
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"Just tell the accounting department to pass it as marketing expenditures for the city."
-                  }
-               ]
+              "character": "mayor",
+              "text@en": "After all, the future belongs to the next mayor, not me!"
             }
-         ]
+          ]
+        },
+        {
+          "text@en": "Refuse! Accounting should not be fiddled with.",
+          "var_changes": {
+            "reserves": 0
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "We can't do that! It will not really increase our cash flow, it's all virtual."
+            },
+            {
+              "character": "mayor",
+              "text@en": "And how am I supposed to balance my budget now?"
+            },
+            {
+              "character": "mayor",
+              "text@en": "I should never have let you in..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "texts": [
+        {
+          "character": "lawyer",
+          "text@en": "I just got your e-mail."
+        },
+        {
+          "character": "lawyer",
+          "text@en": "I'm sorry your spouse got fired."
+        },
+        {
+          "character": "lawyer",
+          "text@en": "It sucks."
+        },
+        {
+          "character": "lawyer",
+          "text@en": "Here are your options."
+        }
+      ],
+      "explainer": {
+        "title@en": "Hiring relatives",
+        "body@en": "In some countries, it is forbidden to hire a relative as an assistant. While it might not be a legal risk (after all, your spouse might be the most qualified person for a job), it is a political one. It is safer to ask one of the companies you're in friendly terms with to do the hire (you can then award a public contract to the company in question to finance the new position)."
       },
-      {
-         "year":2002,
-         "texts":[
+      "choices": [
+        {
+          "text@en": "Hire him as an assistant.",
+          "var_changes": {
+            "risk_political": 1
+          },
+          "feedback": [
             {
-               "character":"football-boss",
-               "text@en":"We're in trouble."
+              "character": "you",
+              "text@en": "I want to hire him as an assistant."
             },
             {
-               "character":"football-boss",
-               "text@en":"We need 12 million."
+              "character": "mayor",
+              "text@en": "What the hell?"
             },
             {
-               "character":"football-boss",
-               "text@en":"Cash."
+              "character": "mayor",
+              "text@en": "If this gets leaked on Twitter or anywhere else, you're out!"
             },
             {
-               "character":"football-boss",
-               "text@en":"I was thinking... The city could buy me back the plot of land you sold me, back in 1996. Then you I rent it from the city for a fair price."
-            },
-            {
-               "character":"football-boss",
-               "text@en":"That'd make everybody happy, wouldn't it? Voters would hate it if their team had to leave."
+              "character": "mayor",
+              "text@en": "Both of you!"
             }
-         ],
-         "explainer":{
-            "title@en":"Leasing public space to private companies",
-            "body@en":"The easiest way to support a private company for a politician is to buy their building with public funds and rent it back to the company at a low price. The operation is hard to trace and fully legal.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-emphyteutic-scam/' target='_blank'>The Emphyteutic Scam</a> at Cooking Budgets."
-         },
-         "choices":[
+          ]
+        },
+        {
+          "text@en": "Ask City Construction Limited to hire him.",
+          "var_changes": {
+            "risk_political": 0
+          },
+          "feedback": [
             {
-               "text@en":"Buy back the plot of land.",
-               "var_changes":{
-                  "reserves":-12,
-                  "resources":0.2
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"Sure, a healthy football club for a healthy city!"
-                  },
-                  {
-                     "character":"football-boss",
-                     "text@en":"Yeah!"
-                  },
-                  {
-                     "character":"football-boss",
-                     "text@en":"With people like you, we'll win the Cup!"
-                  }
-               ]
+              "character": "you",
+              "text@en": "I will as my old friend from City Construction Limited to hire him."
             },
             {
-               "text@en":"No way, football clubs are private companies, they don't need a bail out.",
-               "var_changes":{
-                  "risk_political":1
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"No sorry, I don't think it would be in the general interest."
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"Did you really turn my friend down?"
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"Who do you think people will blame if the football team goes bankrupt?"
-                  }
-               ]
+              "character": "construction-boss",
+              "text@en": "Sure, buddy."
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "You know you can always count on me."
             }
-         ]
+          ]
+        },
+        {
+          "text@en": "Do nothing. You shouldn't mix private and professonal life.",
+          "var_changes": {
+            "personal_account": -1000
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "We will tighten our belts, I prefer not to mix private and professonal life."
+            },
+            {
+              "character": "lawyer",
+              "text@en": "You should take better care of your family."
+            },
+            {
+              "character": "lawyer",
+              "text@en": "By the way, you know I'm also a divorce laywer, right?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "texts": [
+        {
+          "character": "construction-boss",
+          "text@en": "Hey there!"
+        },
+        {
+          "character": "construction-boss",
+          "text@en": "I'm setting up a new subsidiary."
+        },
+        {
+          "character": "construction-boss",
+          "text@en": "I think you'll be the perfect person to run it."
+        },
+        {
+          "character": "construction-boss",
+          "text@en": "Why don't you come to my chalet of Zug, Switzerland, to discuss this?"
+        }
+      ],
+      "explainer": {
+        "title@en": "The Revolving Door",
+        "body@en": "After a career in the administration, public officials are often invited to work in the private sectors. Their contacts and their in-depth knowledge of how an administration works are very valuable for a private company. Sometimes, the promise of having a plump job is enough to convince a public official to take a decision in favor of a private company.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-revolving-door/' target='_blank'>The Revolving Door</a> at Cooking Budgets."
       },
-      {
-         "year":2003,
-         "texts":[
+      "choices": [
+        {
+          "text@en": "Accept the invitation.",
+          "var_changes": {
+            "personal_account": 100,
+            "revolving_door": 1
+          },
+          "feedback": [
             {
-               "character":"construction-boss",
-               "text@en":"Hey buddy!"
+              "character": "you",
+              "text@en": "Thanks for your offer! I am sure my experience in a public administration will be a great value."
             },
             {
-               "character":"construction-boss",
-               "text@en":"I have a great idea."
+              "character": "construction-boss",
+              "text@en": "I knew you were the one for the job!"
             },
             {
-               "character":"construction-boss",
-               "text@en":"You'll pass a public tender to renovate a street that doesn't exist."
+              "character": "construction-boss",
+              "text@en": "Before you get started, I have a favor to ask you."
             },
             {
-               "character":"construction-boss",
-               "text@en":"Give me the contract..."
-            },
-            {
-               "character":"construction-boss",
-               "text@en":"And we'll share the money."
+              "character": "construction-boss",
+              "text@en": "Can you pass a public tender for a swimming pool at the city?"
             }
-         ],
-         "explainer":{
-            "title@en":"Fake public contracts",
-            "body@en":"It can happen that contracts are passed to renovate a place or a road that does not exist. It can be risky, because it is easy to prove the contract is bogus.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-invisible-public-work/' target='_blank'>The Invisible Public Work</a> at Cooking Budgets."
-         },
-         "choices":[
+          ]
+        },
+        {
+          "text@en": "Decline.",
+          "var_changes": {
+            "risk_political": 0
+          },
+          "feedback": [
             {
-               "text@en":"Accept",
-               "var_changes":{
-                  "personal_account":50000,
-                  "risk_police":1
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"I will make it happen."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"Well done!"
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"Here's to our collaboration! 🍻"
-                  }
-               ]
+              "character": "you",
+              "text@en": "But...No! We already have a great swimming pool."
             },
             {
-               "text@en":"Decline",
-               "var_changes":{
-                  "risk_contractors":1
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"No, it seems too risky too me."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"Careful, buddy..."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"You don't want to see me angry."
-                  }
-               ]
+              "character": "construction-boss",
+              "text@en": "I thought we were friends. 😢"
             }
-         ]
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "condition": {
+        "var": "revolving_door",
+        "min": 1
       },
-      {
-         "year":2004,
-         "texts":[
-            {
-               "character":"construction-boss",
-               "text@en":"Hey buddy!"
-            },
-            {
-               "character":"construction-boss",
-               "text@en":"Someone as important as you should have a nicer office."
-            },
-            {
-               "character":"construction-boss",
-               "text@en":"You deserve a mahogany desk and designer chairs, at least!"
-            },
-            {
-               "character":"construction-boss",
-               "text@en":"Give me a contract and I'll buy you the furniture you really deserve."
-            }
-         ],
-         "explainer":{
-            "title@en":"Perks in office",
-            "body@en":"It"
-         },
-         "choices":[
-            {
-               "text@en":"You're right.",
-               "var_changes":{
-                  "risk_political":1
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"You're right."
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"What happened?"
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"How come your office is nicer than mine?"
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"Something's wrong with you."
-                  }
-               ]
-            },
-            {
-               "text@en":"No, we can't afford this.",
-               "var_changes":{
-                  "risk_contractors":1
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"You're right."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"No, we can't afford this."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"I thought we were friends."
-                  }
-               ]
-            }
-         ]
+      "texts": [
+        {
+          "character": "mayor",
+          "text@en": "We passed the public tender you wanted, for this swimming pool of yours."
+        },
+        {
+          "character": "mayor",
+          "text@en": "I'm still not convinced we need it, but what can I do."
+        },
+        {
+          "character": "mayor",
+          "text@en": "We received just one answer."
+        },
+        {
+          "character": "mayor",
+          "text@en": "I'll let you review it."
+        }
+      ],
+      "explainer": {
+        "title@en": "The Revolving Door",
+        "body@en": "After a career in the administration, public officials are often invited to work in the private sectors. Their contacts and their in-depth knowledge of how an administration works are very valuable for a private company. Sometimes, the promise of having a plump job is enough to convince a public official to take a decision in favor of a private company.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-revolving-door/' target='_blank'>The Revolving Door</a> at Cooking Budgets."
       },
-      {
-         "year":2005,
-         "texts":[
+      "choices": [
+        {
+          "text@en": "City Construction Limited made an offer at 10 million.",
+          "var_changes": {
+            "reserves": -10,
+            "risk_revolving_door": 10
+          },
+          "feedback": [
             {
-               "character":"mayor",
-               "text@en":"We need a new football stadium."
-            },
-            {
-               "character":"mayor",
-               "text@en":"The people deserve this."
-            },
-            {
-               "character":"mayor",
-               "text@en":"How should we arrange the financing?"
+              "character": "you",
+              "text@en": "I choose City Construction Limited."
             }
-         ],
-         "explainer":{
-            "title@en":"Public-private partnerships",
-            "body@en":"Since the 1980's, it is popular for public administrations to do public-private partnerships. Such partnerships involve a private company doing some of the work, usually building a equipment or operating it, while the administration contributes to the costs. In exchange, the private company can keep the revenues of the equipment it built.<br><br>The goal was to allow public administrations to provide public services without spending much money. In practice, private companies take almost no risks with such contracts and public administrations end up paying as much as they would have without the partnership. But it is usually hidden in the accounts of the public administration."
-         },
-         "choices":[
+          ]
+        },
+        {
+          "text@en": "Choose not to award the tender.",
+          "var_changes": {
+            "risk_contractors": 10
+          },
+          "feedback": [
             {
-               "text@en":"The city should build the stadium (one-off cost: 10 million).",
-               "var_changes":{
-                  "reserves":-10
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"I have engaged the city to buy the stadium for 10 million."
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"Ten MILLION?"
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"Where do you think you work? Buckingham Palace?"
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"Go for PPP next time."
-                  }
-               ]
+              "character": "you",
+              "text@en": "No really, we don't need a new swimming pool."
             },
             {
-               "text@en":"Set-up a public-private partnership (no cost now, but you have to pay the contractor 1 million per year for the next 20 years)",
-               "var_changes":{
-                  "expenditures":1
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"Let's do a public-private partnership then, so that we don't have to pay it upfront."
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"I love this PPP thing!"
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"I get stuff done, and it's the next mayors who pay!"
-                  }
-               ]
+              "character": "construction-boss",
+              "text@en": "What the hell? 😤"
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "This is it!"
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "You had it coming!"
             }
-         ]
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "condition": {
+        "var": "revolving_door",
+        "max": 0
       },
-      {
-         "year":2006,
-         "texts":[
-            {
-               "character":"mayor",
-               "text@en":"Next year, we'll outsource trash collection."
-            },
-            {
-               "character":"lawyer",
-               "text@en":"Have you heard the news?"
-            },
-            {
-               "character":"lawyer",
-               "text@en":"Do you want to set up a trash collection company?"
-            }
-         ],
-         "explainer":{
-            "title@en":"Deregulation and privatization",
-            "body@en":"Public administrations have transfered a lot of their competencies to private companies, either via public-private partnerships or via deregulation. It offers a lot of opportunities for conflicts of interests.<br><br>It is hard to know how much a service costs to the city because it can involve people from different departments (e.g some municipal employees can work for the trash collection one day and for another department the next). To do such estimates would require analytical accounting, which cities rarely do."
-         },
-         "choices":[
-            {
-               "text@en":"Yes.",
-               "var_changes":{
-                  "trash_company":1
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"Yes, good idea."
-                  },
-                  {
-                     "character":"lawyer",
-                     "text@en":"Brilliant!"
-                  },
-                  {
-                     "character":"lawyer",
-                     "text@en":"I'll set it up right away."
-                  }
-               ]
-            },
-            {
-               "text@en":"No.",
-               "var_changes":{
-                  "trash_company":0
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"No, it's not a good idea."
-                  },
-                  {
-                     "character":"lawyer",
-                     "text@en":"All right."
-                  },
-                  {
-                     "character":"lawyer",
-                     "text@en":"But you should know entrepreneurship is all the rage, nowadays."
-                  }
-               ]
-            }
-         ]
+      "texts": [
+        {
+          "character": "mayor",
+          "text@en": "We passed a tender to build a new park."
+        },
+        {
+          "character": "mayor",
+          "text@en": "Our gardens department estimates the cost of the works at 500,000."
+        },
+        {
+          "character": "mayor",
+          "text@en": "We received three offers. Pick the best one."
+        }
+      ],
+      "explainer": {
+        "title@en": "How to spot a cartel?",
+        "body@en": "Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous."
       },
-      {
-         "year":2007,
-         "condition":{
-            "var":"trash_company",
-            "min":1
-         },
-         "texts":[
-            {
-               "character":"mayor",
-               "text@en":"Trash collection must be outsourced."
-            },
-            {
-               "character":"mayor",
-               "text@en":"I asked accounting how much it cost us so far."
-            },
-            {
-               "character":"mayor",
-               "text@en":"They have no idea."
-            },
-            {
-               "character":"mayor",
-               "text@en":"We passed a public tender anyway. Pick the best offer."
-            }
-         ],
-         "explainer":{
-            "title@en":"Deregulation and privatization",
-            "body@en":"Public administrations have transfered a lot of their competencies to private companies, either via public-private partnerships or via deregulation. It offers a lot of opportunities for conflicts of interests.<br><br>It is hard to know how much a service costs to the city because it can involve people from different departments (e.g some municipal employees can work for the trash collection one day and for another department the next). To do such estimates would require analytical accounting, which cities rarely do."
-         },
-         "choices":[
-            {
-               "text@en":"Your company made an offer at 1 million per year",
-               "var_changes":{
-                  "resources":-1,
-                  "personal_account":10000
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"I choose my company"
-                  },
-                  {
-                     "character":"lawyer",
-                     "text@en":"I knew it was a good idea!"
-                  }
-               ]
-            },
-            {
-               "text@en":"Voelia Environment made an offer at 900,000 per year",
-               "var_changes":{
-                  "resources":-0.9
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"I choose Voelia Environment"
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"Well done!"
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"Private companies running public services, what could go wrong?"
-                  }
-               ]
-            }
-         ]
+      "choices": [
+        {
+          "text@en": "Your company made an offer at 1 million.",
+          "var_changes": {
+            "reserves": -1,
+            "personal_account": 100000
+          }
+        },
+        {
+          "text@en": "City Construction Limited made an offer at 1.2 million.",
+          "var_changes": {
+            "reserves": -1.2,
+            "risk_contractors": 1
+          }
+        },
+        {
+          "text@en": "Public Building plc made an offer at 1.3 million.",
+          "var_changes": {
+            "reserves": -1.3,
+            "risk_contractors": 1
+          }
+        }
+      ]
+    }
+  ],
+  "endings": [
+    {
+      "condition": {
+        "var": "risk_political",
+        "min": 2
       },
-      {
-         "year":2007,
-         "condition":{
-            "var":"trash_company",
-            "max":0
-         },
-         "texts":[
-            {
-               "character":"mayor",
-               "text@en":"Trash collection must be outsourced."
-            },
-            {
-               "character":"mayor",
-               "text@en":"I asked accounting how much it cost us so far."
-            },
-            {
-               "character":"mayor",
-               "text@en":"They have no idea."
-            },
-            {
-               "character":"mayor",
-               "text@en":"We passed a public tender anyway. Pick the best offer."
-            }
-         ],
-         "explainer":{
-            "title@en":"Deregulation and privatization",
-            "body@en":"Public administrations have transfered a lot of their competencies to private companies, either via public-private partnerships or via deregulation. It offers a lot of opportunities for conflicts of interests.<br><br>It is hard to know how much a service costs to the city because it can involve people from different departments (e.g some municipal employees can work for the trash collection one day and for another department the next). To do such estimates would require analytical accounting, which cities rarely do."
-         },
-         "choices":[
-            {
-               "text@en":"SATI Waste Management made an offer at 1.2 million per year",
-               "var_changes":{
-                  "resources":-1.2
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"I choose SATI Waste Management"
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"Well done!"
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"Private companies running public services, what could go wrong?"
-                  }
-               ]
-            },
-            {
-               "text@en":"Voelia Environment made an offer at 900,000 per year",
-               "var_changes":{
-                  "resources":-0.9
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"I choose Voelia Environment"
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"Well done!"
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"Private companies running public services, what could go wrong?"
-                  }
-               ]
-            }
-         ]
+      "text@en": "<h2>You're fired!</h2><p>Your choices have made you unpopular. The mayor requests a career change for you. You're now in charge of welcoming guests at the city museum. How culturally enriching!</p>"
+    },
+    {
+      "condition": {
+        "var": "risk_police",
+        "min": 2
       },
-      {
-         "year":2008,
-         "texts":[
-            {
-               "character":"mayor",
-               "text@en":"The contractor for the new stadium is behind schedule."
-            },
-            {
-               "character":"mayor",
-               "text@en":"They do not want to pay the late penalty fee of 2 million."
-            },
-            {
-               "character":"mayor",
-               "text@en":"Sort this out."
-            }
-         ],
-         "explainer":{
-            "title@en":"The fine print in public contracts",
-            "body@en":"Building contracts usually involve a series of clauses, such as penalties for delays. However, the client (in this case, the city) must activate the clause, or, if the contractor refuses to pay, take it to court. Legal teams are used to such situations, but for a small administration, or in case of politically sensitive issues, it is easy to ignore some clauses in the contract."
-         },
-         "choices":[
-            {
-               "text@en":"Take the contractor to court to get the money.",
-               "var_changes":{
-                  "reserves":2,
-                  "risk_political":1
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"That's unacceptable, I will take them to court to get the money."
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"What if we lose?"
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"This is all bad publicity for me."
-                  }
-               ]
-            },
-            {
-               "text@en":"Ignore the delay.",
-               "var_changes":{
-                  "risk_political":0
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"I'm sorry but there's nothing I can do."
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"OK..."
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"We'll say they're behind schedule because of the European Union."
-                  }
-               ]
-            }
-         ]
+      "text@en": "<h2>Busted!</h2><p>The anticorruption police charged you with misapropriation of public funds. Relax, you probably won't go to prison, but the mayor demands that you resign.</p>"
+    },
+    {
+      "condition": {
+        "var": "risk_contractors",
+        "min": 2
       },
-      {
-         "year":2009,
-         "texts":[
-            {
-               "character":"university-boss",
-               "text@en":"It's good to see you!"
-            },
-            {
-               "character":"university-boss",
-               "text@en":"Meeting over lunch was a great idea."
-            },
-            {
-               "character":"university-boss",
-               "text@en":"It's been a while since we last talked!"
-            },
-            {
-               "character":"university-boss",
-               "text@en":"I'm the director of the City University now."
-            },
-            {
-               "character":"university-boss",
-               "text@en":"The pay is terrible, but I have a trick."
-            },
-            {
-               "character":"university-boss",
-               "text@en":"I tell foreign students who don't speak English to pay me a special fee."
-            },
-            {
-               "character":"university-boss",
-               "text@en":"And I let them in!"
-            },
-            {
-               "character":"university-boss",
-               "text@en":"Smart, isn't it?"
-            }
-         ],
-         "explainer":{
-            "title@en":"Selling university degrees",
-            "body@en":"The sale of university degree is not uncommon in Europe. As with any story of corruption, people have an incentive to keep silent, because it would make the whole university look bad if it became news."
-         },
-         "choices":[
-            {
-               "text@en":"Call the police.",
-               "var_changes":{
-                  "risk_political":1
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"That's totally illegal! I am sorry but I have to report it to the police."
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"This police investigation on your friend is not good for my reelection."
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"I might have to put some space between you and me."
-                  }
-               ]
-            },
-            {
-               "text@en":"Let him pick up the bill.",
-               "var_changes":{
-                  "personal_account":100
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"Very smart! Let's have the students pay for our dinner then."
-                  },
-                  {
-                     "character":"university-boss",
-                     "text@en":"Here's to an old friendship! 🍻"
-                  }
-               ]
-            }
-         ]
+      "text@en": "<h2>Career change!</h2><p>Public work contractors told the mayor's office that they could not work with you. You are being reassigned to the Parks and Gardens department. How great that you can work outside now!</p>"
+    },
+    {
+      "condition": {
+        "var": "risk_revolving_door",
+        "min": 1
       },
-      {
-         "year":2010,
-         "texts":[
-            {
-               "character":"mayor",
-               "text@en":"The accounting department came to me."
-            },
-            {
-               "character":"mayor",
-               "text@en":"They say they have a great idea to improve the city's financial health."
-            },
-            {
-               "character":"mayor",
-               "text@en":"They say they want to bundle all future revenue from social housing and account for it once."
-            },
-            {
-               "character":"mayor",
-               "text@en":"They say it'll increase income now big time - on paper - and reduce it in the future."
-            },
-            {
-               "character":"mayor",
-               "text@en":"Should we do it?"
-            }
-         ],
-         "explainer":{
-            "title@en":"Accounting tricks",
-            "body@en":"Contrary to popular belief, accounting is very flexible. It has to be flexible, because it needs to honestly represent the financial situation of an institutions and specific situations can be very different from one another.<br><br>One trick consists in considering that all future revenues from a specific revenue stream are actually just one big sum of money that can be accounted for as a lump sum, even if it is paid later. There are times when it is legitimate to do so (e.g you sign a huge contract for something delivered right away but for which the client pays in installments) and cases when it is not (e.g accounting for rents as if they were just one sale)."
-         },
-         "choices":[
-            {
-               "text@en":"Accept! The appearance of wealth is better than nothing.",
-               "var_changes":{
-                  "reserves":20,
-                  "resources":-3
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"It sounds legal, and we need this to respect the investment plan we promised to the voters."
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"Great!"
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"After all, the future belongs to the next mayor, not me!"
-                  }
-               ]
-            },
-            {
-               "text@en":"Refuse! Accounting should not be fiddled with.",
-               "var_changes":{
-                  "reserves":0
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"We can't do that! It will not really increase our cash flow, it's all virtual."
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"And how am I supposed to balance my budget now?"
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"I should never have let you in..."
-                  }
-               ]
-            }
-         ]
-      },
-      {
-         "year":2011,
-         "texts":[
-            {
-               "character":"lawyer",
-               "text@en":"I just got your e-mail."
-            },
-            {
-               "character":"lawyer",
-               "text@en":"I'm sorry your spouse got fired."
-            },
-            {
-               "character":"lawyer",
-               "text@en":"It sucks."
-            },
-            {
-               "character":"lawyer",
-               "text@en":"Here are your options."
-            }
-         ],
-         "explainer":{
-            "title@en":"Hiring relatives",
-            "body@en":"In some countries, it is forbidden to hire a relative as an assistant. While it might not be a legal risk (after all, your spouse might be the most qualified person for a job), it is a political one. It is safer to ask one of the companies you're in friendly terms with to do the hire (you can then award a public contract to the company in question to finance the new position)."
-         },
-         "choices":[
-            {
-               "text@en":"Hire him as an assistant.",
-               "var_changes":{
-                  "risk_political":1
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"I want to hire him as an assistant."
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"What the hell?"
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"If this gets leaked on Twitter or anywhere else, you're out!"
-                  },
-                  {
-                     "character":"mayor",
-                     "text@en":"Both of you!"
-                  }
-               ]
-            },
-            {
-               "text@en":"Ask City Construction Limited to hire him.",
-               "var_changes":{
-                  "risk_political":0
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"I will as my old friend from City Construction Limited to hire him."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"Sure, buddy."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"You know you can always count on me."
-                  }
-               ]
-            },
-            {
-               "text@en":"Do nothing. You shouldn't mix private and professonal life.",
-               "var_changes":{
-                  "personal_account":-1000
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"We will tighten our belts, I prefer not to mix private and professonal life."
-                  },
-                  {
-                     "character":"lawyer",
-                     "text@en":"You should take better care of your family."
-                  },
-                  {
-                     "character":"lawyer",
-                     "text@en":"By the way, you know I'm also a divorce laywer, right?"
-                  }
-               ]
-            }
-         ]
-      },
-      {
-         "year":2012,
-         "texts":[
-            {
-               "character":"construction-boss",
-               "text@en":"Hey there!"
-            },
-            {
-               "character":"construction-boss",
-               "text@en":"I'm setting up a new subsidiary."
-            },
-            {
-               "character":"construction-boss",
-               "text@en":"I think you'll be the perfect person to run it."
-            },
-            {
-               "character":"construction-boss",
-               "text@en":"Why don't you come to my chalet of Zug, Switzerland, to discuss this?"
-            }
-         ],
-         "explainer":{
-            "title@en":"The Revolving Door",
-            "body@en":"After a career in the administration, public officials are often invited to work in the private sectors. Their contacts and their in-depth knowledge of how an administration works are very valuable for a private company. Sometimes, the promise of having a plump job is enough to convince a public official to take a decision in favor of a private company.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-revolving-door/' target='_blank'>The Revolving Door</a> at Cooking Budgets."
-         },
-         "choices":[
-            {
-               "text@en":"Accept the invitation.",
-               "var_changes":{
-                  "personal_account":100,
-                  "revolving_door":1
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"Thanks for your offer! I am sure my experience in a public administration will be a great value."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"I knew you were the one for the job!"
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"Before you get started, I have a favor to ask you."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"Can you pass a public tender for a swimming pool at the city?"
-                  }
-               ]
-            },
-            {
-               "text@en":"Decline.",
-               "var_changes":{
-                  "risk_political":0
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"But...No! We already have a great swimming pool."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"I thought we were friends. 😢"
-                  }
-               ]
-            }
-         ]
-      },
-      {
-         "year":2013,
-         "condition":{
-            "var":"revolving_door",
-            "min":1
-         },
-         "texts":[
-            {
-               "character":"mayor",
-               "text@en":"We passed the public tender you wanted, for this swimming pool of yours."
-            },
-            {
-               "character":"mayor",
-               "text@en":"I'm still not convinced we need it, but what can I do."
-            },
-            {
-               "character":"mayor",
-               "text@en":"We received just one answer."
-            },
-            {
-               "character":"mayor",
-               "text@en":"I'll let you review it."
-            }
-         ],
-         "explainer":{
-            "title@en":"The Revolving Door",
-            "body@en":"After a career in the administration, public officials are often invited to work in the private sectors. Their contacts and their in-depth knowledge of how an administration works are very valuable for a private company. Sometimes, the promise of having a plump job is enough to convince a public official to take a decision in favor of a private company.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-revolving-door/' target='_blank'>The Revolving Door</a> at Cooking Budgets."
-         },
-         "choices":[
-            {
-               "text@en":"City Construction Limited made an offer at 10 million.",
-               "var_changes":{
-                  "reserves":-10,
-                  "risk_revolving_door":10
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"I choose City Construction Limited."
-                  }
-               ]
-            },
-            {
-               "text@en":"Choose not to award the tender.",
-               "var_changes":{
-                  "risk_contractors":10
-               },
-               "feedback":[
-                  {
-                     "character":"you",
-                     "text@en":"No really, we don't need a new swimming pool."
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"What the hell? 😤"
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"This is it!"
-                  },
-                  {
-                     "character":"construction-boss",
-                     "text@en":"You had it coming!"
-                  }
-               ]
-            }
-         ]
-      },
-      {
-         "year":2013,
-         "condition":{
-            "var":"revolving_door",
-            "max":0
-         },
-         "texts":[
-            {
-               "character":"mayor",
-               "text@en":"We passed a tender to build a new park."
-            },
-            {
-               "character":"mayor",
-               "text@en":"Our gardens department estimates the cost of the works at 500,000."
-            },
-            {
-               "character":"mayor",
-               "text@en":"We received three offers. Pick the best one."
-            }
-         ],
-         "explainer":{
-            "title@en":"How to spot a cartel?",
-            "body@en":"Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous."
-         },
-         "choices":[
-            {
-               "text@en":"Your company made an offer at 1 million.",
-               "var_changes":{
-                  "reserves":-1,
-                  "personal_account":100000
-               }
-            },
-            {
-               "text@en":"City Construction Limited made an offer at 1.2 million.",
-               "var_changes":{
-                  "reserves":-1.2,
-                  "risk_contractors":1
-               }
-            },
-            {
-               "text@en":"Public Building plc made an offer at 1.3 million.",
-               "var_changes":{
-                  "reserves":-1.3,
-                  "risk_contractors":1
-               }
-            }
-         ]
-      }
-   ],
-   "endings":[
-      {
-         "condition":{
-            "var":"risk_political",
-            "min":2
-         },
-         "text@en":"<h2>You're fired!</h2><p>Your choices have made you unpopular. The mayor requests a career change for you. You're now in charge of welcoming guests at the city museum. How culturally enriching!</p>"
-      },
-      {
-         "condition":{
-            "var":"risk_police",
-            "min":2
-         },
-         "text@en":"<h2>Busted!</h2><p>The anticorruption police charged you with misapropriation of public funds. Relax, you probably won't go to prison, but the mayor demands that you resign.</p>"
-      },
-      {
-         "condition":{
-            "var":"risk_contractors",
-            "min":2
-         },
-         "text@en":"<h2>Career change!</h2><p>Public work contractors told the mayor's office that they could not work with you. You are being reassigned to the Parks and Gardens department. How great that you can work outside now!</p>"
-      },
-      {
-         "condition":{
-            "var":"risk_revolving_door",
-            "min":1
-         },
-         "text@en":"<h2>New career</h2><p>City Construction Limited makes you an offer you can't refuse, if only to ensure the financial well-being of your spouse and children. Bye-bye, public sector! Hello, business!</p>"
-      },
-      {
-         "text@en":"<h2>Celebrating 20 years</h2><p>How time flies! 20 years already! In just another 20, you can be in retirement.</p>"
-      }
-   ]
+      "text@en": "<h2>New career</h2><p>City Construction Limited makes you an offer you can't refuse, if only to ensure the financial well-being of your spouse and children. Bye-bye, public sector! Hello, business!</p>"
+    },
+    {
+      "text@en": "<h2>Celebrating 20 years</h2><p>How time flies! 20 years already! In just another 20, you can be in retirement.</p>"
+    }
+  ]
 }
