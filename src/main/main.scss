@@ -67,6 +67,9 @@
           padding:5px 0;
           transform: translateY(-50%);
           background: darken($brand-inverse, 10);
+          @include media-breakpoint-down(sm) {
+           display: none;
+          }
         }
       }
 
@@ -115,6 +118,7 @@
       border:0;
       left:$toolbar-width-xs;
       width:calc(100% - #{$toolbar-width-xs});
+      bottom:4rem;
     }
 
     &__year {
@@ -408,7 +412,11 @@
 
       &:before, &:after {
         content:"—";
-        padding:0 $spacer;
+        padding:0 $spacer * 0.5;
+      }
+
+      @include media-breakpoint-down(sm) {
+        font-size:1rem;
       }
     }
 
