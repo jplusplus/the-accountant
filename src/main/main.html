@@ -48,7 +48,7 @@
         <!-- Display feedback after choices-->
         <stack stack="step.selection" game="$ctrl.game" ng-if="step.selection && step.selection.hasFeedback()"></stack>
         <!-- Cancel button when the step is over-->
-        <fieldset ng-if="step.isDone()" ng-disabled="!step.isPrevious()">
+        <fieldset ng-if="step.isDone()">
           <button class="btn btn-block btn-link btn-sm main__steps__item__undo my-2" ng-click="$ctrl.game.undo()">
             Undo the last action
           </button>
