@@ -40,12 +40,14 @@ function ChoiceService(Slice, Stack) {
     }
     // Risks related to that choices
     get risks() {
-      // Variables changed by this choice (the risk must be included)
-      const changes = _.keys(this.changes);
-      // Filter risks list to the one included in the changes
-      return _.filter(this.step.game.risks, risk => {
-        // Some risk may not be worth it, yet
-        return changes.indexOf(risk.name) > -1 && risk.isWorthIt();
+      return this.memoize('risk', () => {
+        // Variables changed by this choice (the risk must be included)
+        const changes = _.keys(this.changes);
+        // Filter risks list to the one included in the changes
+        return _.filter(this.step.game.risks, risk => {
+          // Some risk may not be worth it, yet
+          return changes.indexOf(risk.name) > -1 && risk.isWorthIt();
+        });
       });
     }
     get consequences() {

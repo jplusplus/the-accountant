@@ -5,6 +5,7 @@ import game from './game.json';
 /** @ngInject */
 function gameService($log, $rootScope, Step, Var, Ending) {
   // Symbols declarion for private attributes and methods
+  const _memo = Symbol('memo');
   const _meta = Symbol('meta');
   const _vars = Symbol('vars');
   const _history = Symbol('history');
@@ -12,6 +13,8 @@ function gameService($log, $rootScope, Step, Var, Ending) {
 
   class Game {
     constructor() {
+      // Hash to hold memoized results
+      this[_memo] = {};
       // Load meta data
       this[_meta] = angular.copy(game);
       // Build step using meta data
@@ -28,6 +31,14 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       $log.info(`Starting game with ${this.steps.length} steps`);
       // And broadcast a starting event
       $rootScope.$broadcast('game:start', this);
+    }
+    memoize(name, fn, ...args) {
+      if (this[_memo].hasOwnProperty(name)) {
+        return this[_memo][name](...args);
+      }
+      this[_memo][name] = _.memoize(fn);
+      // Recurcive call
+      return this.memoize(name, fn, ...args);
     }
     isCurrent(step) {
       return step.isCurrent();
@@ -115,12 +126,14 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       return this.lastStack.finalSlice();
     }
     findPicture(lastYear = this.step.year) {
-      // Find the closest years
-      const year = _.chain(this.pictures).keys().sort().findLast(y => {
-        return y <= lastYear;
-      });
-      // Return the picture for this year
-      return this.pictures[year];
+      return this.memoize('findPicture', lastYear => {
+        // Find the closest years
+        const year = _.chain(this.pictures).keys().sort().findLast(y => {
+          return y <= lastYear;
+        });
+        // Return the picture for this year
+        return this.pictures[year];
+      }, lastYear);
     }
     invalidateJourney() {
       this[_journeyCacheKey] = _.uniqueId('journey-');
@@ -160,22 +173,16 @@ function gameService($log, $rootScope, Step, Var, Ending) {
     }
     // List of step seen or currently seen by the player
     get journey() {
-      // Should we create a memo for this method?
-      if (!this.journeyMemo) {
-        this.journeyMemo = _.memoize(id => {
-          // Display a message in the console
-          $log.log('Journey invalided by the token "%s"', id);
-          // Do not add any step if the party is over
-          if (this.isOver()) {
-            // Get only steps from the past
-            return this.stepsBehind;
-          }
-          // Get steps from the past and the first ahead
-          return this.stepsBehind.concat(this.stepsAhead.slice(0, 1));
-        });
-      }
+      return this.memoize('journey', () => {
+        // Do not add any step if the party is over
+        if (this.isOver()) {
+          // Get only steps from the past
+          return this.stepsBehind;
+        }
+        // Get steps from the past and the first ahead
+        return this.stepsBehind.concat(this.stepsAhead.slice(0, 1));
       // Use a cache token to refresh the journey after each event
-      return this.journeyMemo(this[_journeyCacheKey]);
+      }, this[_journeyCacheKey]);
     }
     get vars() {
       return this[_vars];
@@ -228,13 +235,19 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       return this.findPicture();
     }
     get risks() {
-      return _.filter(this.vars, {category: 'risk'});
+      return this.memoize('risks', () => {
+        return _.filter(this.vars, {category: 'risk'});
+      });
     }
     get publicRisks() {
-      return _.filter(this.vars, {category: 'risk', public: true});
+      return this.memoize('publicRisks', () => {
+        return _.filter(this.vars, {category: 'risk', public: true});
+      });
     }
     get publicVars() {
-      return _.filter(this.vars, {public: true});
+      return this.memoize('publicVars', () => {
+        return _.filter(this.vars, {public: true});
+      });
     }
     get hints() {
       // Get all past steps that reach the last slice (before selection)
