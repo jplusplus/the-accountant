@@ -164,12 +164,13 @@
       }
 
       &__choices {
-        margin-top: $spacer;
 
         &__btn .btn {
           font-size:1em;
+          padding:0.5em;
           font-family: inherit;
           line-height: inherit;
+          margin: auto;
         }
 
         html.supports &__btn:first-child:last-child .btn {

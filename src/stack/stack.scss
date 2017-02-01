@@ -7,8 +7,9 @@
   &__slice {
 
     &--event {
-      font-size:0.9rem;
+      font-size:0.9em;
       text-align: center;
+      margin-top:$spacer;
     }
 
     &--chat {
@@ -18,8 +19,7 @@
     }
 
     &--chat &__wrapper {
-      font-size:1.1em;
-      padding:0.5em;
+      padding:0.5em 0.7em;
       background: darken($card-bg, 5);
       display: inline-block;
       border-radius: 0.5rem;
