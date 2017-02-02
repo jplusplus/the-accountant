@@ -4,7 +4,9 @@ module.exports = {
     "setClasses",
     "addTest",
     "domPrefixes",
-    "prefixes"
+    "prefixes",
+    "testStyles",
+    "testProp"
   ],
   "feature-detects": [
     "test/css/flexbox",

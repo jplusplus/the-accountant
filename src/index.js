@@ -31,8 +31,11 @@ import modernizrConfig from './modernizr.js';
 // Import SCSS with webpack
 import './index.scss';
 
+// For specs
+export const app = 'app';
+
 angular
-  .module('app', [
+  .module(app, [
     'pascalprecht.translate',
     'ngAnimate',
     'ui.router',
