@@ -5,6 +5,12 @@
       "private": false,
       "category": "github",
       "label@en": "Repositories on github"
+    },
+    "risk_unpopularity": {
+      "value": 0,
+      "private": false,
+      "category": "risk",
+      "label@en": "Unpopularity"
     }
   },
   "characters": {
@@ -91,8 +97,35 @@
     },
     {
       "year": 2012,
-      "texts": [],
-      "choices": []
+      "texts": [
+        {
+          "character": "coo",
+          "text@en": "Do you think we should delete our github account?"
+        }
+      ],
+      "choices": [
+        {
+          "name@en": "No",
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "This is stupid!"
+            }
+          ]
+        },
+        {
+          "name@en": "Yes",
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "Great idea! So everyone will hate me!"
+            }
+          ],
+          "var_changes": {
+            "risk_unpopularity": 20
+          }
+        }
+      ]
     },
     {
       "year": 2012,
@@ -104,5 +137,13 @@
       }
     }
   ],
-  "endings": []
+  "endings": [
+    {
+      "condition": {
+        "var": "risk_unpopularity",
+        "min": 5
+      },
+      "text@en": "<h2>You're fired</h2><p>Nobody likes you!</p>"
+    }
+  ]
 }
