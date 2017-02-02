@@ -32,7 +32,7 @@ function StackService(Slice, I18n) {
       return this.slice === this.slices.length - 1;
     }
     continue() {
-      this.slice++;
+      this.slice = this.slice + 1;
     }
     finalSlice() {
       this.slice = this.slices.length - 1;

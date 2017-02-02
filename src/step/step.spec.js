@@ -41,6 +41,51 @@ describe('component: step', () => {
     expect(step.next).not.toBe(null);
   });
 
+  it('should move correctly between slices', () => {
+    // It should be on the starting slice
+    expect(game.step.isStartingSlice()).toBe(true);
+    // Go to the first slice
+    game.step.continue();
+    // It should be on the first slice
+    expect(game.step.isFirstSlice()).toBe(true);
+    // Go to the second slice
+    game.step.continue();
+    // It should be on the first or the last slice
+    expect(game.step.isFirstSlice()).toBe(false);
+    expect(game.step.isLastSlice()).toBe(false);
+    // Jump to the end
+    game.step.finalSlice();
+    // It should be the last
+    expect(game.step.isLastSlice()).toBe(true);
+  });
+
+  it('should create 3 clusters', () => {
+    expect(game.step.clusters.length).toBe(3);
+  });
+
+  it('should keep only the first cluster', () => {
+    // Go to the first slice
+    game.step.continue();
+    // It should be on the first slice
+    expect(game.step.isFirstSlice()).toBe(true);
+    expect(game.step.clusterFilter(game.step.clusters[0], 0)).toBe(true);
+    // Test every cluster
+    game.step.clusters.slice(1).forEach((cluster, index) => {
+      expect(game.step.clusterFilter(cluster, index + 1)).toBe(false);
+    });
+  });
+
+  it('should create a cluster for each character in the right order', () => {
+    // Go to the first slice
+    game.step.continue();
+    // First cluster is made by the COO
+    expect(game.step.clusters[0].character.key).toBe('coo');
+    // Second cluster is for an event (without character)
+    expect(game.step.clusters[1].character).toBeUndefined();
+    // Last cluster is made by the COO
+    expect(game.step.clusters[2].character.key).toBe('coo');
+  });
+
   it('should be set on the correct year', () => {
     expect(game.steps[0].year).toBe(2011);
     expect(game.steps[1].year).toBe(2011);

@@ -20,7 +20,7 @@ function StepService(Choice, Slice, Stack, I18n, Hint, $rootScope, $log) {
       // Create choices
       this[_choices] = _.chain(this[_meta].choices).castArray().compact().map(meta => new Choice(meta, this)).value();
       // Ensure those method arround bound to the current instance
-      ['select', 'isCurrent', 'hasCondition', 'undo', 'displayHint'].forEach(m => {
+      ['select', 'isCurrent', 'hasCondition', 'undo', 'displayHint', 'continue'].forEach(m => {
         this[m] = this[m].bind(this);
       });
     }
