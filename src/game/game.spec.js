@@ -6,7 +6,7 @@ import '../index';
 // Import a fixture game config
 import fixture from './game.fixture.json';
 
-describe('component: main', () => {
+describe('component: game', () => {
   let game;
 
   beforeEach(() => {

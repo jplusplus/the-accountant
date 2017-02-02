@@ -63,20 +63,45 @@
       ],
       "choices": [
         {
-          "name@en": "Do not open Temptation City"
+          "name@en": "Do not open Temptation City",
+          "feedback": [
+            {
+              "character": "coo",
+              "text@en": "How disapointing."
+            }
+          ]
         },
         {
           "name@en": "Open Temptation City",
           "var_changes": {
             "repositories": 1
-          }
+          },
+          "feedback": [
+            {
+              "character": "coo",
+              "text@en": "That's lovely!"
+            }
+          ]
         }
-      ]
+      ],
+      "explainer": {
+        "title@en": "Why should I open my repo?",
+        "body@en": "Lorem yolo sit amet"
+      }
     },
     {
       "year": 2012,
       "texts": [],
       "choices": []
+    },
+    {
+      "year": 2012,
+      "texts": [],
+      "choices": [],
+      "condition": {
+        "var": "repositories",
+        "min": 11
+      }
     }
   ],
   "endings": []

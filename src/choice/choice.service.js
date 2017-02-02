@@ -38,6 +38,10 @@ function ChoiceService(Slice, Stack) {
     continue() {
       return super.continue();
     }
+    terminate() {
+      this.finalSlice();
+      this.step.terminate();
+    }
     // Risks related to that choices
     get risks() {
       return this.memoize('risk', () => {

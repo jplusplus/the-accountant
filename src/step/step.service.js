@@ -40,11 +40,15 @@ function StepService(Choice, Slice, Stack, I18n, Hint, $rootScope, $log) {
       return this.game.step === this;
     }
     isDone() {
-      return this.isLastSlice() && this.selection && this.selection.isLastSlice();
+      return Boolean(this.isLastSlice() && this.selection && this.selection.isLastSlice());
     }
     finalSlice() {
       super.finalSlice();
       this.game.invalidateJourney();
+    }
+    terminate() {
+      this.selection.finalSlice();
+      this.finalSlice();
     }
     select(choice = _.first(this.choices)) {
       // Jump to the final slice of this stack
@@ -67,7 +71,7 @@ function StepService(Choice, Slice, Stack, I18n, Hint, $rootScope, $log) {
       this.slice = -1;
     }
     isTyping() {
-      return !this.selection && super.isTyping();
+      return Boolean(!this.selection && super.isTyping());
     }
     get assert() {
       // Minimum value condition
