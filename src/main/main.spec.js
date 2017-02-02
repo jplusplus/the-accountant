@@ -41,6 +41,7 @@ describe('component: main', () => {
     expect(ctrl.continueTimeout).not.toBeDefined();
     // Wrap the start function with a spy and call it
     spyOn(ctrl, 'start').and.callThrough();
+    // Start the party
     ctrl.start();
     // Did we call it correctly?
     expect(ctrl.start).toHaveBeenCalled();
@@ -54,6 +55,7 @@ describe('component: main', () => {
     // Instanciate the main component
     const ctrl = $componentController('main', {}, {game: new Game()});
     spyOn(ctrl, 'prepareNewYear').and.callThrough();
+    // Start the party
     ctrl.start();
     expect(ctrl.prepareNewYear).toHaveBeenCalled();
     // Simulate passing time
@@ -62,5 +64,18 @@ describe('component: main', () => {
     $rootScope.$digest();
     // Check that the year have been prepared correctly
     expect(ctrl.year).toEqual(ctrl.game.years[0]);
+  });
+
+  it('should go to the final slice of the current stack', () => {
+    // Instanciate the main component
+    const ctrl = $componentController('main', {}, {game: new Game()});
+    // Start the party
+    ctrl.start();
+    // Shouldn't be the final slice yet
+    expect(ctrl.game.lastStack.isLastSlice()).toEqual(false);
+    // Go to the final slice
+    ctrl.continue();
+    // Aserts it's true
+    expect(ctrl.game.lastStack.isLastSlice()).toEqual(true);
   });
 });
