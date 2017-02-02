@@ -142,6 +142,9 @@ function gameService($log, $rootScope, Step, Var, Ending) {
     invalidateJourney() {
       this[_journeyCacheKey] = _.uniqueId('journey-');
     }
+    get journeyCacheKey() {
+      return this[_journeyCacheKey];
+    }
     get delay() {
       return this.lastStack.next.readingTime;
     }
@@ -186,7 +189,7 @@ function gameService($log, $rootScope, Step, Var, Ending) {
         // Get steps from the past and the first ahead
         return this.stepsBehind.concat(this.stepsAhead.slice(0, 1));
       // Use a cache token to refresh the journey after each event
-      }, this[_journeyCacheKey]);
+      }, this.journeyCacheKey);
     }
     get vars() {
       return this[_vars];

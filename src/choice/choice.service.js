@@ -52,7 +52,8 @@ function ChoiceService(Slice, Stack) {
           // Some risk may not be worth it, yet
           return changes.indexOf(risk.name) > -1 && risk.isWorthIt();
         });
-      });
+      // Refresh after each journey invalidation
+      }, this.step.game.journeyCacheKey);
     }
     get consequences() {
       return this[_consequences] || [];

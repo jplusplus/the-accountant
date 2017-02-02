@@ -58,6 +58,8 @@ describe('component: step', () => {
     game.step.select().terminate();
     // It should be done
     expect(game.steps[0].isDone()).toBe(true);
+    // It should also be the previous
+    expect(game.steps[0].isPrevious()).toBe(true);
     // But not the current step
     expect(game.step.isDone()).toBe(false);
   });

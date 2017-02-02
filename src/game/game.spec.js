@@ -40,6 +40,8 @@ describe('component: game', () => {
     expect(game.stepIndex).toEqual(2);
     // The var must not have changed
     expect(game.var('repositories').value).toEqual(10);
+    // Party is not over!
+    expect(game.isOver()).toBe(false);
   });
 
   it('should change the number of repositories', () => {
