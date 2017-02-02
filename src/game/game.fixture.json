@@ -57,6 +57,10 @@
               "text@en": "Thank buddy, I'll do my best."
             }
           ]
+        },
+        {
+          "text@en": "No thanks",
+          "feedback": []
         }
       ]
     },

@@ -44,6 +44,16 @@ describe('component: game', () => {
     expect(game.isOver()).toBe(false);
   });
 
+  it('should have a feedback after the first choice', () => {
+    game.step.select();
+    expect(game.hasFeedback()).toBe(true);
+  });
+
+  it('should have a no feedback after the first choice', () => {
+    game.step.select(game.step.choices[1]);
+    expect(game.hasFeedback()).toBe(false);
+  });
+
   it('should change the number of repositories', () => {
     // Start with 10 in the var repositories
     expect(game.var('repositories').value).toEqual(10);
@@ -53,5 +63,14 @@ describe('component: game', () => {
     game.step.select(game.step.choices[1]).finalSlice();
     // The var must not have changed
     expect(game.var('repositories').value).toEqual(11);
+  });
+
+  it('should has hint', () => {
+    // There is no hint
+    expect(game.lastHint).toBeUndefined();
+    // Select the default choice and continue
+    game.step.select().finalSlice();
+    // There is hint now
+    expect(game.lastHint).toBeDefined();
   });
 });

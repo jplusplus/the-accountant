@@ -28,7 +28,7 @@ function ChoiceService(Slice, Stack) {
       return this.consequences.length;
     }
     hasFeedback() {
-      return this[_meta].hasOwnProperty('feedback');
+      return this[_meta].hasOwnProperty('feedback') && Boolean(_.castArray(this.feedback).length);
     }
     undo() {
       this.slice = -1;
