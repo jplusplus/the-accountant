@@ -10,11 +10,11 @@ function StackService(Slice, I18n) {
   const _clusters = Symbol('clusters');
 
   class Stack extends I18n {
-    constructor(meta) {
+    constructor(meta = []) {
       super(meta);
       this[_meta] = angular.copy(meta);
       // Create slices
-      this[_slices] = _.castArray(this[_meta]).map(slice => new Slice(slice, this));
+      this[_slices] = _.compact(this[_meta]).map(slice => new Slice(slice, this));
       // Start before 0 (ie no slice)
       this[_slice] = -1;
       // Ensure those method arround bound to the current instance

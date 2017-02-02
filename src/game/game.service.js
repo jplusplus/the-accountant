@@ -18,9 +18,9 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       // Load meta data
       this[_meta] = angular.copy(meta || game);
       // Build step using meta data
-      this[_meta].steps = this[_meta].steps.map(meta => new Step(meta, this));
+      this[_meta].steps = _.castArray(this[_meta].steps).map(meta => new Step(meta, this));
       // Build step using meta data
-      this[_meta].endings = this[_meta].endings.map(meta => new Ending(meta, this));
+      this[_meta].endings = _.castArray(this[_meta].endings).map(meta => new Ending(meta, this));
       // Prepare vars according to choice's history
       this.apply();
       // Ensure those method arround bound to the current instance
@@ -123,7 +123,11 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       $rootScope.$broadcast("game:slice:next", this.lastStack);
     }
     finalSlice() {
-      return this.lastStack.finalSlice();
+      this.lastStack.finalSlice();
+      // Invalidate the journey cache key
+      this.invalidateJourney();
+      // Emit an event
+      $rootScope.$broadcast("game:slice:next", this.lastStack);
     }
     findPicture(lastYear = this.step.year) {
       return this.memoize('findPicture', lastYear => {

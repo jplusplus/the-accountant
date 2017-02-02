@@ -18,7 +18,7 @@ function StepService(Choice, Slice, Stack, I18n, Hint, $rootScope, $log) {
       this[_meta] = meta;
       this[_hint] = this.hasHint() ? new Hint(this[_meta].explainer, this) : null;
       // Create choices
-      this[_choices] = this[_meta].choices.map(meta => new Choice(meta, this));
+      this[_choices] = _.chain(this[_meta].choices).castArray().compact().map(meta => new Choice(meta, this)).value();
       // Ensure those method arround bound to the current instance
       ['select', 'isCurrent', 'hasCondition', 'undo', 'displayHint'].forEach(m => {
         this[m] = this[m].bind(this);
@@ -42,12 +42,21 @@ function StepService(Choice, Slice, Stack, I18n, Hint, $rootScope, $log) {
     isDone() {
       return this.isLastSlice() && this.selection && this.selection.isLastSlice();
     }
-    select(choice = _.last(this.choices)) {
+    finalSlice() {
+      super.finalSlice();
+      this.game.invalidateJourney();
+    }
+    select(choice = _.first(this.choices)) {
+      // Jump to the final slice of this stack
+      this.finalSlice();
+      // Propagate the choice to the game
       this.game.select(choice);
       // Start from the begining of the choice slice
       choice.slice = -1;
       // Add info to the log
       $log.info('Step %s: choice %s', this.index, choice.index);
+      // Return the choice for better chhain
+      return this.selection;
     }
     continue() {
       super.continue();
