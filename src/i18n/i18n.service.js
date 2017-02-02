@@ -43,7 +43,7 @@ function I18nService($translate) {
           res[field] = this.translate(field);
           return res;
         }, {});
-      });
+      }, $translate.use());
     }
     get fields() {
       return this[_fields];
