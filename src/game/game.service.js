@@ -12,11 +12,11 @@ function gameService($log, $rootScope, Step, Var, Ending) {
   const _journeyCacheKey = Symbol('journeyCacheKey');
 
   class Game {
-    constructor() {
+    constructor(meta) {
       // Hash to hold memoized results
       this[_memo] = {};
       // Load meta data
-      this[_meta] = angular.copy(game);
+      this[_meta] = angular.copy(meta || game);
       // Build step using meta data
       this[_meta].steps = this[_meta].steps.map(meta => new Step(meta, this));
       // Build step using meta data
