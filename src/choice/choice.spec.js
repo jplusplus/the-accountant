@@ -25,7 +25,11 @@ describe('component: choice', () => {
     // Not yet...
     expect(game.isOver()).toBe(false);
     // Say 'delete the account!' at step 2
-    game.step.select(game.step.choices[1]).terminate();
+    game.step.select(game.step.choices[1]);
+    // There is consequences!
+    expect(game.step.selection.consequences.length).not.toEqual(0);
+    // Terminate the step
+    game.step.terminate();
     // The risk is too high, there is no chance we are not fired
     expect(game.isOver()).toBe(true);
   });
@@ -38,8 +42,29 @@ describe('component: choice', () => {
     // Not yet...
     expect(game.isOver()).toBe(false);
     // Say 'keep the account!' at step 2
+    game.step.select();
+    // There is no consequences
+    expect(game.step.selection.consequences.length).toEqual(0);
+    // Terminate the step
+    game.step.terminate();
+    // The condition to be fired is hopefully not fulfilled
+    expect(game.isOver()).toBe(false);
+  });
+
+  it('should win because you are very open', () => {
+    // Say 'go' at step 0
+    game.step.select().terminate();
+    // Say 'open!' at step 1
+    game.step.select(game.step.choices[1]).terminate();
+    // Not yet...
+    expect(game.isOver()).toBe(false);
+    // Say 'keep the account!' at step 2
     game.step.select().terminate();
     // The condition to be fired is hopefully not fulfilled
     expect(game.isOver()).toBe(false);
+    // Say 'open everything!' at step 3
+    game.step.select(game.step.choices[1]).terminate();
+    // The condition to end the game is fulfilled
+    expect(game.isOver()).toBe(true);
   });
 });

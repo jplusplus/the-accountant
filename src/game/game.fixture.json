@@ -3,7 +3,7 @@
     "repositories": {
       "value": 10,
       "private": false,
-      "category": "github",
+      "category": "risk",
       "label@en": "Repositories on github"
     },
     "risk_unpopularity": {
@@ -129,8 +129,35 @@
     },
     {
       "year": 2012,
-      "texts": [],
-      "choices": [],
+      "texts": [
+        {
+          "character": "coo",
+          "text@en": "Do you think we should open every projects?"
+        }
+      ],
+      "choices": [
+        {
+          "name@en": "No",
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "This is stupid! Free softwares are for punks."
+            }
+          ]
+        },
+        {
+          "name@en": "Yes",
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "Great idea! So everyone will lone me!"
+            }
+          ],
+          "var_changes": {
+            "risk_unpopularity": -100
+          }
+        }
+      ],
       "condition": {
         "var": "repositories",
         "min": 11
@@ -144,6 +171,13 @@
         "min": 5
       },
       "text@en": "<h2>You're fired</h2><p>Nobody likes you!</p>"
+    },
+    {
+      "condition": {
+        "var": "risk_unpopularity",
+        "max": -50
+      },
+      "text@en": "<h2>You're so famous</h2><p>Even Richard Stallman want to mary you!</p>"
     }
   ]
 }
