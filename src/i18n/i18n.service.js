@@ -23,7 +23,7 @@ function I18nService($translate) {
     translate(field) {
       // Return a specific field translated
       if (field) {
-        return this.meta[`${field}@${this.use}`] || null;
+        return this.meta[`${field}@${this.use}`] || this.meta[`${field}@en`];
       }
       // Return all fields translated
       return this.t;
