@@ -88,14 +88,6 @@
         border:4px solid white;
         cursor: pointer;
       }
-
-      &__delayed {
-        overflow: hidden;
-        max-height: 0;
-        animation: opening 1200ms;
-        animation-fill-mode: forwards;
-        animation-delay: 2000ms;
-      }
     }
   }
 
