@@ -70,6 +70,9 @@ function ChoiceService(Slice, Stack) {
     get step() {
       return this[_step];
     }
+    get game() {
+      return this.step.game;
+    }
     get meta() {
       return this[_meta];
     }

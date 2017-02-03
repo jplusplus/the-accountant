@@ -6,19 +6,14 @@ function StepService(Choice, Slice, Stack, I18n, Hint, $rootScope, $log) {
   // Symbols declarion for private attributes and methods
   const _meta = Symbol('meta');
   const _game = Symbol('game');
-  const _choices = Symbol('choices');
-  const _hint = Symbol('hint');
 
   class Step extends Stack {
     constructor(meta, game) {
       // Create slices using the parent constructor
-      super(meta.texts);
+      super(meta.texts, game);
       // Set private properties
       this[_game] = game;
       this[_meta] = meta;
-      this[_hint] = this.hasHint() ? new Hint(this[_meta].explainer, this) : null;
-      // Create choices
-      this[_choices] = _.chain(this[_meta].choices).castArray().compact().map(meta => new Choice(meta, this)).value();
       // Ensure those method arround bound to the current instance
       ['select', 'isCurrent', 'hasCondition', 'undo', 'displayHint', 'continue'].forEach(m => {
         this[m] = this[m].bind(this);
@@ -85,7 +80,12 @@ function StepService(Choice, Slice, Stack, I18n, Hint, $rootScope, $log) {
       return true;
     }
     get choices() {
-      return this[_choices];
+      return this.memoize('choices', () => {
+        // Create choices
+        return _.chain(this[_meta].choices).castArray().compact().map(meta => {
+          return new Choice(meta, this);
+        }).value();
+      });
     }
     get selection() {
       return _.find(this.game.history, {step: this});
@@ -103,7 +103,9 @@ function StepService(Choice, Slice, Stack, I18n, Hint, $rootScope, $log) {
       return this[_meta].condition || {};
     }
     get hint() {
-      return this[_hint];
+      return this.memoize('hint', () => {
+        return this.hasHint() ? new Hint(this[_meta].explainer, this) : null;
+      });
     }
   }
   return Step;

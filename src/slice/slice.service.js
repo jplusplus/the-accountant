@@ -1,26 +1,22 @@
+import _ from 'lodash';
 export default SliceService;
 
 /** @ngInject */
-function SliceService(Character, I18n) {
+function SliceService(I18n) {
   // Symbols declarion for private attributes and methods
-  const _parent = Symbol('parent');
-  const _character = Symbol('character');
+  const _stack = Symbol('stack');
 
   class Slice extends I18n {
-    constructor(meta, parent) {
+    constructor(meta, stack) {
       super(meta);
       // Create private properties
-      this[_parent] = parent;
-      // The slice may not have any character
-      if (this.meta.hasOwnProperty('character') && this.meta.character !== null) {
-        this[_character] = new Character(this.meta.character);
-      }
+      this[_stack] = stack;
     }
     isYou() {
       return this.character && this.character.key === 'you';
     }
     canClusterizeWith(other) {
-      return this.type === other.type && this.character.key === other.character.key;
+      return this.type === other.type && this.character === other.character;
     }
     get readingTime() {
       // We start a new stack
@@ -40,13 +36,19 @@ function SliceService(Character, I18n) {
       return 'chat';
     }
     get character() {
-      return this[_character];
+      return this.memoize('character', () => {
+        // The slice may not have any character
+        return _.find(this.game.characters, {key: this.meta.character});
+      });
     }
-    get parent() {
-      return this[_parent];
+    get stack() {
+      return this[_stack];
+    }
+    get game() {
+      return this.stack.game;
     }
     get index() {
-      return this.parent.slices.indexOf(this);
+      return this.stack.slices.indexOf(this);
     }
   }
   return Slice;

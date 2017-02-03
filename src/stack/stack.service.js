@@ -6,17 +6,17 @@ function StackService(Slice, I18n) {
   // Symbols declarion for private attributes and methods
   const _meta = Symbol('meta');
   const _slice = Symbol('slice');
-  const _slices = Symbol('slices');
+  const _parent = Symbol('parent');
   const _clusters = Symbol('clusters');
 
   class Stack extends I18n {
-    constructor(meta = []) {
+    constructor(meta = [], parent = null) {
       super(meta);
       this[_meta] = angular.copy(meta);
-      // Create slices
-      this[_slices] = _.compact(this[_meta]).map(slice => new Slice(slice, this));
       // Start before 0 (ie no slice)
       this[_slice] = -1;
+      // Save the parent
+      this[_parent] = parent;
       // Ensure those method arround bound to the current instance
       ['continue', 'isLastSlice', 'clusterFilter', 'sliceFilter'].forEach(m => {
         this[m] = this[m].bind(this);
@@ -51,6 +51,15 @@ function StackService(Slice, I18n) {
     isTyping() {
       return this.next && !this.next.isYou();
     }
+    findGame(obj = this) {
+      if (obj.meta && obj.meta.characters) {
+        return obj;
+      } else if (obj.game) {
+        return obj.game;
+      } else if (obj.parent) {
+        return this.findGame(obj.parent);
+      }
+    }
     // Express reading time of the current slice in milliseconds
     get readingTime() {
       return this.current ? this.current.readingTime : 0;
@@ -71,7 +80,16 @@ function StackService(Slice, I18n) {
       return this.slices[this.slice] || null;
     }
     get slices() {
-      return this[_slices];
+      return this.memoize('slices', () => {
+        // Create slices
+        return _.compact(this[_meta]).map(slice => new Slice(slice, this));
+      });
+    }
+    get parent() {
+      return this[_parent];
+    }
+    get game() {
+      return this.findGame();
     }
     // We regroup slices by "cluster" meaning they are regroupped by
     // successive slices of the same character.

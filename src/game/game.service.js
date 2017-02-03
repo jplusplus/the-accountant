@@ -3,7 +3,7 @@ import _ from 'lodash';
 import game from './game.json';
 
 /** @ngInject */
-function gameService($log, $rootScope, Step, Var, Ending) {
+function gameService($log, $rootScope, Step, Var, Ending, Character) {
   // Symbols declarion for private attributes and methods
   const _memo = Symbol('memo');
   const _meta = Symbol('meta');
@@ -142,6 +142,14 @@ function gameService($log, $rootScope, Step, Var, Ending) {
     invalidateJourney() {
       this[_journeyCacheKey] = _.uniqueId('journey-');
     }
+    get meta() {
+      return this[_meta];
+    }
+    get characters() {
+      return this.memoize('characters', () => {
+        return _.map(this.meta.characters, (meta, key) => new Character(meta, key));
+      });
+    }
     get journeyCacheKey() {
       return this[_journeyCacheKey];
     }
@@ -198,7 +206,7 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       return this.step.index;
     }
     get steps() {
-      return this[_meta].steps;
+      return this.meta.steps;
     }
     get end() {
       // Did we had consequences?
@@ -210,7 +218,7 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       return _.last(this.endings);
     }
     get endings() {
-      return this[_meta].endings;
+      return this.meta.endings;
     }
     get endingsWithVar() {
       return _.filter(this.endings, _.method('hasCondition'));
@@ -236,7 +244,7 @@ function gameService($log, $rootScope, Step, Var, Ending) {
       return _(this.steps).map('year').compact().uniq().sort().value();
     }
     get pictures() {
-      return this[_meta].years;
+      return this.meta.years;
     }
     get picture() {
       return this.findPicture();
