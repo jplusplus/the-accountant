@@ -17,7 +17,10 @@
           <p>If you can grap some money in the same time, that's would nice. But don't be caught!</p>
         </div>
         <button class="btn btn-lg btn-primary main__intro__content__start mt-2 ml-2" ng-click="$ctrl.start()">
-          Start
+          Start a new party
+        </button>
+        <button class="btn btn-lg btn-primary main__intro__content__start mt-2 ml-2" ng-click="$ctrl.restore()" ng-if="$ctrl.history.length">
+          Continue
         </button>
       </div>
     </div>

@@ -3,10 +3,11 @@ import _ from 'lodash';
 export const main = {
   template: require('./main.html'),
   bindings: {
-    game: '<'
+    game: '<',
+    history: '<'
   },
   /** @ngInject */
-  controller($state, $scope, $timeout, hotkeys, $transitions) {
+  controller($state, $scope, $timeout, hotkeys, $transitions, $localForage) {
     // Method to start a new party
     this.playAgain = this.start = () => {
       // Simply create a new instance of game
@@ -61,6 +62,7 @@ export const main = {
         return y >= _.first(this.game.years) && y <= this.year;
       });
     };
+    // The party start!
     this.start = () => {
       this.started = true;
       // Create a gave
@@ -68,9 +70,19 @@ export const main = {
       // Watch keyboard
       hotkeys.add({combo: 'space', callback: this.continue});
     };
+    // Continue to the last position
+    this.restore = () => {
+      this.game.restore(this.history);
+      // And start the party
+      this.start();
+    };
     // Go automaticaly to the next slice
     $scope.$on('game:slice:next', this.waitNextSlice);
     $scope.$on('game:selection', this.waitNextSlice);
+    // After each selection, we save the history
+    $scope.$on('game:selection', () => {
+      $localForage.setItem('history', this.game.historySerialized);
+    });
     // Restart the timer when re-entering this state
     $transitions.onSuccess({to: 'main'}, this.waitNextSlice);
   }

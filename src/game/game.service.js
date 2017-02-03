@@ -278,17 +278,17 @@ function gameService($log, $rootScope, Step, Var, Ending, Character) {
     get risks() {
       return this.memoize('risks', () => {
         return _.filter(this.vars, {category: 'risk'});
-      });
+      }, this.journeyCacheKey);
     }
     get publicRisks() {
       return this.memoize('publicRisks', () => {
         return _.filter(this.vars, {category: 'risk', public: true});
-      });
+      }, this.journeyCacheKey);
     }
     get publicVars() {
       return this.memoize('publicVars', () => {
         return _.filter(this.vars, {public: true});
-      });
+      }, this.journeyCacheKey);
     }
     get hints() {
       // Get all past steps that reach the last slice (before selection)

@@ -11,7 +11,9 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
       component: 'main',
       resolve: {
         /** @ngInject */
-        game: Game => new Game()
+        game: Game => new Game(),
+        /** @ngInject */
+        history: $localForage => $localForage.getItem('history')
       }
     })
     .state('main.vars', {

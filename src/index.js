@@ -6,6 +6,8 @@ import 'angular-translate';
 import 'angularjs-scroll-glue';
 import 'angular-hotkeys';
 import 'ng-fittext';
+import 'localforage';
+import 'angular-localforage';
 // Internal modules
 import {main} from './main/main.js';
 import {mainDebug} from './main/debug/debug.js';
@@ -40,7 +42,8 @@ angular
     'ui.router',
     'luegg.directives',
     'cfp.hotkeys',
-    'ngFitText'
+    'ngFitText',
+    'LocalForageModule'
   ])
   .config(routesConfig)
   .run(modernizrConfig)
