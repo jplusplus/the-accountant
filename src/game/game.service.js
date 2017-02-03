@@ -91,9 +91,12 @@ function gameService($log, $rootScope, Step, Var, Ending, Character) {
       if (choice.takeRisks()) {
         // We loose!
         $log.info('Losing causes: %s', choice.consequences.join(', '));
+        // Send event to the root scope
+        $rootScope.$broadcast('game:over', choice);
+      } else {
+        // Send event to the root scope
+        $rootScope.$broadcast('game:selection', choice);
       }
-      // Send event to the root scope
-      $rootScope.$broadcast('game:selection', choice);
     }
     undo() {
       // Remove the last choice
@@ -105,7 +108,7 @@ function gameService($log, $rootScope, Step, Var, Ending, Character) {
       // Send event to the root scope
       $rootScope.$broadcast('game:undo', choice);
     }
-    restore(historySerialized) {
+    load(historySerialized) {
       // Empty history
       this.history.splice(0, 0);
       // Iterate over the serialized history to make the right selection

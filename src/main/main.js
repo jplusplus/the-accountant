@@ -71,18 +71,24 @@ export const main = {
       hotkeys.add({combo: 'space', callback: this.continue});
     };
     // Continue to the last position
-    this.restore = () => {
-      this.game.restore(this.history);
+    this.load = () => {
+      this.game.load(this.history);
       // And start the party
       this.start();
+    };
+    // Save user history
+    this.save = () => {
+      $localForage.setItem('history', this.game.historySerialized);
     };
     // Go automaticaly to the next slice
     $scope.$on('game:slice:next', this.waitNextSlice);
     $scope.$on('game:selection', this.waitNextSlice);
+    $scope.$on('game:over', this.waitNextSlice);
     // After each selection, we save the history
-    $scope.$on('game:selection', () => {
-      $localForage.setItem('history', this.game.historySerialized);
-    });
+    $scope.$on('game:selection', this.save);
+    $scope.$on('game:undo', this.save);
+    // Losing will clear history
+    $scope.$on('game:over', () => $localForage.removeItem('history'));
     // Restart the timer when re-entering this state
     $transitions.onSuccess({to: 'main'}, this.waitNextSlice);
   }

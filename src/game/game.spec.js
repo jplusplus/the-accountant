@@ -123,9 +123,9 @@ describe('component: game', () => {
     expect(game.historySerialized[2]).toEqual([2, 1]);
   });
 
-  it('should restore history', () => {
+  it('should load history', () => {
     // Each line is a pair of step index and choice index
-    game.restore([
+    game.load([
       [0, 0],
       [1, 1],
       [2, 1]
