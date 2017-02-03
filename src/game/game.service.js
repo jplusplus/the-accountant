@@ -105,6 +105,21 @@ function gameService($log, $rootScope, Step, Var, Ending, Character) {
       // Send event to the root scope
       $rootScope.$broadcast('game:undo', choice);
     }
+    restore(historySerialized) {
+      // Empty history
+      this.history.splice(0, 0);
+      // Iterate over the serialized history to make the right selection
+      historySerialized.forEach(pair => {
+        // Find the choice
+        const choice = this.steps[pair[0]].choices[pair[1]];
+        // Add it to the history
+        this.history.push(choice);
+        // Terminate the step
+        choice.step.terminate();
+      });
+      // Then apply history
+      this.apply();
+    }
     apply() {
       // Create new vars
       this[_vars] = _.map(this[_meta].vars, (value, name) => {
@@ -178,6 +193,9 @@ function gameService($log, $rootScope, Step, Var, Ending, Character) {
     }
     get consequences() {
       return _(this.history).map('consequences').flatten().uniq().value();
+    }
+    set history(val) {
+      this[_history] = val;
     }
     // List of choices made by the player
     get history() {

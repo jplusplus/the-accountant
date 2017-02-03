@@ -115,9 +115,26 @@ describe('component: game', () => {
   });
 
   it('should serialize history according to selection', () => {
-    game.step.select().terminate();
+    game.step.select(0).terminate();
     expect(game.historySerialized[0]).toEqual([0, 0]);
     game.step.select(1).terminate();
     expect(game.historySerialized[1]).toEqual([1, 1]);
+    game.step.select(1).terminate();
+    expect(game.historySerialized[2]).toEqual([2, 1]);
+  });
+
+  it('should restore history', () => {
+    // Each line is a pair of step index and choice index
+    game.restore([
+      [0, 0],
+      [1, 1],
+      [2, 1]
+    ]);
+    // Should be at the fourth step
+    expect(game.step.index).toEqual(3);
+    expect(game.isOver()).toBe(false);
+    // And variable should have changed accordingly
+    expect(game.var('repositories').value).toEqual(11);
+    expect(game.var('risk_unpopularity').value).toEqual(20);
   });
 });
