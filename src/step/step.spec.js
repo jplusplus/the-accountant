@@ -92,6 +92,14 @@ describe('component: step', () => {
     expect(game.steps[2].year).toBe(2012);
   });
 
+  it('should have a correct game', () => {
+    expect(game.step.game).toEqual(game);
+  });
+
+  it('should find the correct game', () => {
+    expect(game.step.findGame()).toEqual(game);
+  });
+
   it('should be done only after selection', () => {
     // No selection yet
     expect(game.step.isDone()).toBe(false);
