@@ -66,5 +66,7 @@ describe('component: choice', () => {
     game.step.select(game.step.choices[1]).terminate();
     // The condition to end the game is fulfilled
     expect(game.isOver()).toBe(true);
+    // The game should have an end
+    expect(game.end).toBeDefined();
   });
 });

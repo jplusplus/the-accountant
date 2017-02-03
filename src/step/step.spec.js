@@ -96,6 +96,10 @@ describe('component: step', () => {
     expect(game.step.game).toEqual(game);
   });
 
+  it('should have a current game as parent', () => {
+    expect(game.step.parent).toEqual(game);
+  });
+
   it('should find the correct game', () => {
     expect(game.step.findGame()).toEqual(game);
   });
@@ -162,13 +166,20 @@ describe('component: step', () => {
     game.step.finalSlice();
     // No hint yet
     expect(game.step.displayHint()).toBe(false);
+    // No hint in total
+    expect(game.hints.length).toBe(0);
     // Jump to the second step
     game.step.select().terminate();
     // No hint yet
     expect(game.step.displayHint()).toBe(false);
+    // Still no hint in total
+    expect(game.hints.length).toBe(0);
     // Jump to the choice
     game.step.finalSlice();
     // There should have a hint!
     expect(game.step.displayHint()).toBe(true);
+    // 1 past hint in total
+    expect(game.hints.length).toBe(1);
+    expect(game.hasHints()).toBe(true);
   });
 });

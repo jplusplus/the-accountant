@@ -26,6 +26,18 @@ describe('component: game', () => {
     expect(game.var('repositories').value).toEqual(10);
   });
 
+  it('should have 3 vars', () => {
+    expect(game.vars.length).toEqual(3);
+  });
+
+  it('should have 2 public vars', () => {
+    expect(game.publicVars.length).toEqual(2);
+  });
+
+  it('should have 2 public rish', () => {
+    expect(game.publicRisks.length).toEqual(2);
+  });
+
   it('should select the first choice without incidence', () => {
     // Start with 10 in the var repositories
     expect(game.var('repositories').value).toEqual(10);
@@ -72,5 +84,25 @@ describe('component: game', () => {
     game.step.select().finalSlice();
     // There is hint now
     expect(game.lastHint).toBeDefined();
+  });
+
+  it('should continue to the next slice', () => {
+    // Start a -1 meaning no actual slice
+    expect(game.slice).toEqual(-1);
+    game.continue();
+    expect(game.slice).toEqual(0);
+    game.continue();
+    expect(game.slice).toEqual(1);
+    game.continue();
+    expect(game.slice).toEqual(2);
+  });
+
+  it('should reach the final slice', () => {
+    // Start a -1 meaning no actual slice
+    expect(game.slice).toEqual(-1);
+    game.finalSlice();
+    expect(game.slice).toEqual(3);
+    game.continue();
+    expect(game.slice).toEqual(3);
   });
 });

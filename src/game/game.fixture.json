@@ -11,6 +11,12 @@
       "private": false,
       "category": "risk",
       "label@en": "Unpopularity"
+    },
+    "incomes": {
+      "value": 0,
+      "private": true,
+      "category": "performance",
+      "label@en": "Incomes"
     }
   },
   "characters": {
