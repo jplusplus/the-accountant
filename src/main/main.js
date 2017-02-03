@@ -78,18 +78,20 @@ export const main = {
     };
     // Save user history
     this.save = () => {
-      $localForage.setItem('history', this.game.historySerialized);
+      return $localForage.setItem('history', this.game.historySerialized);
     };
-    // Go automaticaly to the next slice
-    $scope.$on('game:slice:next', this.waitNextSlice);
-    $scope.$on('game:selection', this.waitNextSlice);
-    $scope.$on('game:over', this.waitNextSlice);
-    // After each selection, we save the history
-    $scope.$on('game:selection', this.save);
-    $scope.$on('game:undo', this.save);
-    // Losing will clear history
-    $scope.$on('game:over', () => $localForage.removeItem('history'));
-    // Restart the timer when re-entering this state
-    $transitions.onSuccess({to: 'main'}, this.waitNextSlice);
+    this.$onInit = () => {
+      // Go automaticaly to the next slice
+      $scope.$on('game:slice:next', this.waitNextSlice);
+      $scope.$on('game:selection', this.waitNextSlice);
+      $scope.$on('game:over', this.waitNextSlice);
+      // After each selection, we save the history
+      $scope.$on('game:selection', this.save);
+      $scope.$on('game:undo', this.save);
+      // Losing will clear history
+      $scope.$on('game:over', () => $localForage.removeItem('history'));
+      // Restart the timer when re-entering this state
+      $transitions.onSuccess({to: 'main'}, this.waitNextSlice);
+    };
   }
 };
