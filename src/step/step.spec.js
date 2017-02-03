@@ -141,7 +141,7 @@ describe('component: step', () => {
     // Say 'go' at step 0
     game.step.select().terminate();
     // Say 'open!' at step 1
-    game.step.select(game.step.choices[1]).terminate();
+    game.step.select(1).terminate();
     // The condition is now fulfiled
     expect(game.steps[3].assert).toBe(true);
   });
@@ -156,7 +156,7 @@ describe('component: step', () => {
     // Undo the selection
     game.undo();
     // Say 'open!' at step 1
-    game.step.select(game.step.choices[1]).terminate();
+    game.step.select(1).terminate();
     // The condition is now fulfiled
     expect(game.steps[3].assert).toBe(true);
   });

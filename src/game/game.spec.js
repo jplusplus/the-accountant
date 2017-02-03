@@ -62,7 +62,7 @@ describe('component: game', () => {
   });
 
   it('should have a no feedback after the first choice', () => {
-    game.step.select(game.step.choices[1]);
+    game.step.select(1);
     expect(game.hasFeedback()).toBe(false);
   });
 
@@ -72,7 +72,7 @@ describe('component: game', () => {
     // Select the default choice at the first step
     game.step.select().finalSlice();
     // Select the second choice
-    game.step.select(game.step.choices[1]).finalSlice();
+    game.step.select(1).finalSlice();
     // The var must not have changed
     expect(game.var('repositories').value).toEqual(11);
   });
@@ -104,5 +104,20 @@ describe('component: game', () => {
     expect(game.slice).toEqual(3);
     game.continue();
     expect(game.slice).toEqual(3);
+  });
+
+  it('should re-serialize history after each selection', () => {
+    expect(game.historySerialized.length).toEqual(0);
+    game.step.select().terminate();
+    expect(game.historySerialized.length).toEqual(1);
+    game.step.select().terminate();
+    expect(game.historySerialized.length).toEqual(2);
+  });
+
+  it('should serialize history according to selection', () => {
+    game.step.select().terminate();
+    expect(game.historySerialized[0]).toEqual([0, 0]);
+    game.step.select(1).terminate();
+    expect(game.historySerialized[1]).toEqual([1, 1]);
   });
 });

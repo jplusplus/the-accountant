@@ -45,9 +45,11 @@ function StepService(Choice, Slice, Stack, I18n, Hint, $rootScope, $log) {
       this.selection.finalSlice();
       this.finalSlice();
     }
-    select(choice = _.first(this.choices)) {
+    select(choiceOrIndex = 0) {
       // Jump to the final slice of this stack
       this.finalSlice();
+      // Get the choice with an index (if needed)
+      const choice = isNaN(choiceOrIndex) ? choiceOrIndex : this.choices[choiceOrIndex];
       // Propagate the choice to the game
       this.game.select(choice);
       // Start from the begining of the choice slice

@@ -25,7 +25,7 @@ describe('component: choice', () => {
     // Not yet...
     expect(game.isOver()).toBe(false);
     // Say 'delete the account!' at step 2
-    game.step.select(game.step.choices[1]);
+    game.step.select(1);
     // There is consequences!
     expect(game.step.selection.consequences.length).not.toEqual(0);
     // Terminate the step
@@ -38,7 +38,7 @@ describe('component: choice', () => {
     // Say 'go' at step 0
     game.step.select().terminate();
     // Say 'open!' at step 1
-    game.step.select(game.step.choices[1]).terminate();
+    game.step.select(1).terminate();
     // Not yet...
     expect(game.isOver()).toBe(false);
     // Say 'keep the account!' at step 2
@@ -55,7 +55,7 @@ describe('component: choice', () => {
     // Say 'go' at step 0
     game.step.select().terminate();
     // Say 'open!' at step 1
-    game.step.select(game.step.choices[1]).terminate();
+    game.step.select(1).terminate();
     // Not yet...
     expect(game.isOver()).toBe(false);
     // Say 'keep the account!' at step 2
@@ -63,7 +63,7 @@ describe('component: choice', () => {
     // The condition to be fired is hopefully not fulfilled
     expect(game.isOver()).toBe(false);
     // Say 'open everything!' at step 3
-    game.step.select(game.step.choices[1]).terminate();
+    game.step.select(1).terminate();
     // The condition to end the game is fulfilled
     expect(game.isOver()).toBe(true);
     // The game should have an end

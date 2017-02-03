@@ -199,6 +199,14 @@ function gameService($log, $rootScope, Step, Var, Ending, Character) {
       // Use a cache token to refresh the journey after each event
       }, this.journeyCacheKey);
     }
+    get historySerialized() {
+      return this.memoize('historySerialized', () => {
+        return _.map(this.history, choice => {
+          return [choice.step.index, choice.index];
+        });
+      // Use the current journey cache key as memoize token
+      }, this.journeyCacheKey);
+    }
     get vars() {
       return this[_vars];
     }
