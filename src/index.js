@@ -24,9 +24,9 @@ import Step from './step/step.service.js';
 import Stack from './stack/stack.service.js';
 import Slice from './slice/slice.service.js';
 import Choice from './choice/choice.service.js';
-import Var from './var/var.service.js';
 import Character from './character/character.service.js';
 import Ending from './ending/ending.service.js';
+import Var from './var/var.service.js';
 import routesConfig from './routes';
 import modernizrConfig from './modernizr.js';
 

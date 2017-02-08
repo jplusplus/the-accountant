@@ -10,7 +10,7 @@ const WebpackNotifierPlugin = require('webpack-notifier');
 const autoprefixer = require('autoprefixer');
 
 // Create multiple instances
-const extractCSS = new ExtractTextPlugin('stylesheets/[name].css');
+const extractCSS = new ExtractTextPlugin('[name].css');
 
 module.exports = {
   module: {
