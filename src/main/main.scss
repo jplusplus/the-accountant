@@ -402,6 +402,7 @@
       font-family: $headings-font-family;
       position: relative;
       z-index:1;
+      background: $brand-warning;
 
       &:before, &:after {
         content:"—";

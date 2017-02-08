@@ -29,6 +29,7 @@ import Character from './character/character.service.js';
 import Ending from './ending/ending.service.js';
 import routesConfig from './routes';
 import modernizrConfig from './modernizr.js';
+
 // Import SCSS with webpack
 import './index.scss';
 

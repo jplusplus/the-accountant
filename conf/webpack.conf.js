@@ -2,11 +2,15 @@ const webpack = require('webpack');
 const conf = require('./gulp.conf');
 const path = require('path');
 
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FailPlugin = require('webpack-fail-plugin');
 const DashboardPlugin = require('webpack-dashboard/plugin');
 const WebpackNotifierPlugin = require('webpack-notifier');
 const autoprefixer = require('autoprefixer');
+
+// Create multiple instances
+const extractCSS = new ExtractTextPlugin('stylesheets/[name].css');
 
 module.exports = {
   module: {
@@ -28,16 +32,16 @@ module.exports = {
         loader: "modernizr-loader"
       },
       {
-        test: /\.(css|scss)$/,
-        loaders: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: { url: false }
-          },
-          'sass-loader',
-          'postcss-loader'
-        ]
+        test: /\.scss$/i,
+        loader: extractCSS.extract({
+          loader: [{
+            loader: "css-loader?url=false"
+          }, {
+            loader: "sass-loader"
+          }],
+          // use style-loader in development
+          fallback: "style-loader"
+        })
       },
       {
         test: /\.js$/,
@@ -64,11 +68,12 @@ module.exports = {
     new DashboardPlugin({ port: 3030 }),
     new WebpackNotifierPlugin({ title: 'Temptation city' }),
     new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.NoErrorsPlugin(),
+    new webpack.NoEmitOnErrorsPlugin(),
     FailPlugin,
     new HtmlWebpackPlugin({
       template: conf.path.src('index.html')
     }),
+    extractCSS,
     new webpack.LoaderOptionsPlugin({
       options: {
         postcss: () => [autoprefixer]
