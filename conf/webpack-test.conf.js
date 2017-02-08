@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const conf = require('./gulp.conf');
 const path = require('path');
 
 module.exports = {
@@ -22,7 +23,9 @@ module.exports = {
           'style-loader',
           {
             loader: 'css-loader',
-            options: { url: false }
+            options: {
+              url: false
+            }
           },
           'sass-loader',
           'postcss-loader'
@@ -38,7 +41,7 @@ module.exports = {
       },
       {
         test: /modernizr\.conf\.js$/,
-        loader: "modernizr-loader"
+        use: "modernizr-loader"
       },
       {
         test: /.html$/,
@@ -55,9 +58,12 @@ module.exports = {
   },
   plugins: [
     new webpack.LoaderOptionsPlugin({
-      options: {},
+      options: {
+        postcss: () => []
+      },
       debug: true
     })
   ],
+  entry: `./${conf.path.src('index')}`,
   devtool: 'source-map'
 };

@@ -24,16 +24,16 @@ module.exports = {
       {
         test: /.js$/,
         exclude: /node_modules/,
-        loader: 'eslint-loader',
+        use: 'eslint-loader',
         enforce: 'pre'
       },
       {
         test: /modernizr\.conf\.js$/,
-        loader: "modernizr-loader"
+        use: "modernizr-loader"
       },
       {
         test: /\.scss$/i,
-        loader: extractCSS.extract({
+        use: extractCSS.extract({
           loader: [{
             loader: "css-loader?url=false"
           }, {
