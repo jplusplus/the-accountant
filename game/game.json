@@ -1189,10 +1189,6 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "You're right."
-            },
-            {
-              "character": "construction-boss",
               "text@en": "No, we can't afford this."
             },
             {
@@ -1744,7 +1740,7 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "I will as my old friend from City Construction Limited to hire him."
+              "text@en": "I will ask my old friend from City Construction Limited to hire him."
             },
             {
               "character": "construction-boss",
