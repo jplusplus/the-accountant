@@ -150,11 +150,11 @@ function gameService($log, $rootScope, Step, Var, Ending, Character) {
     findPicture(lastYear = this.step.year) {
       return this.memoize('findPicture', lastYear => {
         // Find the closest years
-        const year = _.chain(this.pictures).keys().sort().findLast(y => {
-          return y <= lastYear;
+        const year = _.chain(this.meta.years).keys().sort().findLast(y => {
+          return y <= lastYear && this.meta.years[y].picture;
         });
         // Return the picture for this year
-        return this.pictures[year];
+        return this.meta.years[year].picture;
       }, lastYear);
     }
     invalidateJourney() {
@@ -273,7 +273,7 @@ function gameService($log, $rootScope, Step, Var, Ending, Character) {
       return _(this.steps).map('year').compact().uniq().sort().value();
     }
     get pictures() {
-      return this.meta.years;
+      return _.map(this.meta.years, 'picture');
     }
     get picture() {
       return this.findPicture();

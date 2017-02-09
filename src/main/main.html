@@ -67,7 +67,7 @@
     </div>
   </div>
 
-  <div class="main__picture" ng-repeat="picture in $ctrl.game.pictures" ng-show="picture === $ctrl.game.picture">
+  <div class="main__picture" ng-repeat="picture in $ctrl.game.pictures track by $index" ng-show="picture === $ctrl.game.picture">
     <img ng-src="{{ picture }}"  class="main__picture__img" />
   </div>
 
