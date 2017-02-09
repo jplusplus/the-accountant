@@ -3,7 +3,7 @@ import _ from 'lodash';
 import game from './game.json';
 
 /** @ngInject */
-function gameService($log, $rootScope, Step, Var, Ending, Character) {
+function gameService($log, $rootScope, Step, Var, Ending, Character, I18n) {
   // Symbols declarion for private attributes and methods
   const _memo = Symbol('memo');
   const _meta = Symbol('meta');
@@ -159,6 +159,11 @@ function gameService($log, $rootScope, Step, Var, Ending, Character) {
     }
     invalidateJourney() {
       this[_journeyCacheKey] = _.uniqueId('journey-');
+    }
+    yearInfo(year) {
+      return this.memoize('yearInfo', year => {
+        return new I18n(this.meta.years[year]);
+      }, year);
     }
     get meta() {
       return this[_meta];
