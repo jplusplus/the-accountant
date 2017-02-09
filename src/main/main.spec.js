@@ -31,7 +31,7 @@ describe('component: main', () => {
     // Apply a digest
     $scope.$digest();
     const h1 = element.find('h1');
-    expect(h1.html().trim()).toEqual('The Good, The Bad and The Accountant');
+    expect(h1.text().trim()).toEqual('The Good, The Bad and The Accountant');
   });
 
   it('should init a timeout after start', () => {

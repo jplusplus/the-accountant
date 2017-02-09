@@ -122,8 +122,7 @@ describe('component: step', () => {
   });
 
   it('should be typing after a user selection', () => {
-    // There is no feedback for the first step's choice
-    expect(game.step.select().isTyping()).toBe(false);
+    expect(game.step.select().isTyping()).toBe(true);
     // Go to the next step
     game.step.terminate();
     // Someone is typing because we start a new step
