@@ -20,7 +20,7 @@ export const main = {
         // Then wait for the next slice again
         this.waitNextSlice();
       // Skip timeout for the first year
-      }, !this.game.isFirstYear() * 1000);
+      }, !this.game.isFirstYear() * 2000);
     };
     // Create a timeout to go to the next slice
     this.waitNextSlice = () => {

@@ -20,12 +20,12 @@ function SliceService(I18n) {
     }
     get readingTime() {
       // We start a new stack
-      if (this.type === 'event' || this.isYou()) {
+      if (this.type === 'event') {
         // No reading time for the user's slices
         return 0;
       }
-      // We read approximativly 270 word per minute
-      const duration = this.text.split(' ').length * 60 / 270 * 1000;
+      // We read approximativly 200 words per minute
+      const duration = this.text.split(' ').length * 60 / 200 * 1000;
       // Reading time can't be under 700 milliseconds
       return Math.max(duration, 700);
     }

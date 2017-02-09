@@ -8,7 +8,7 @@
       <span class="stack__slice__wrapper" ng-bind-html="::slice.t.text | emoji | unsafe"></span>
     </p>
   </div>
-  <p class="stack__slice stack__slice--chat" ng-if="$ctrl.stack.isTyping()">
+  <p class="stack__slice stack__slice--chat" ng-class="{'stack__slice--you': $ctrl.stack.next.isYou()}" ng-if="$ctrl.stack.isTyping()">
     <span class="stack__slice__wrapper stack__slice__wrapper--typing">
       <img src="//logo-js.herokuapp.com/loading-three-dots/999" height="8px" />
     </span>

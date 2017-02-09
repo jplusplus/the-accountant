@@ -49,7 +49,7 @@ function StackService(Slice, I18n) {
       return slice.index <= this.slice;
     }
     isTyping() {
-      return this.next && !this.next.isYou();
+      return this.next;
     }
     findGame(obj = this) {
       if (obj.meta && obj.meta.characters) {

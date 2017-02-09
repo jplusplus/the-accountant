@@ -5,7 +5,7 @@
   <div class="main__intro" ng-if="!$ctrl.started">
     <div class="main__intro__content">
       <h1 class="main__intro__content__heading" data-fittext="1">
-        The Good, The Bad and The Accountant
+        The Good, The Bad<br />and The Accountant
       </h1>
       <div class="main__intro__content__delayed">
         <p class="main__intro__content__meta lead">
@@ -31,7 +31,7 @@
       <!-- Display year banner when it starts -->
       <div class="main__steps__year" ng-if="year <= $ctrl.game.step.year">
         <img class="main__steps__year__banner" ng-src="{{::$ctrl.game.findPicture(year)}}" />
-        {{::year}}: {{::$ctrl.game.yearInfo(year).title}}
+        {{::year}}:&nbsp;{{::$ctrl.game.yearInfo(year).title}}
       </div>
       <div class="main__steps__item card card-block" ng-repeat="step in $ctrl.game.journey|filter:{year}">
         <!-- Display chats-->
