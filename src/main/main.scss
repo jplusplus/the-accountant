@@ -141,6 +141,7 @@
 
     &__item {
       margin:0.5rem;
+      overflow: hidden;
 
       &:last-child {
         margin-bottom:0;
@@ -157,13 +158,22 @@
 
       &__choices {
 
-        &__btn .btn {
-          font-size:1em;
-          padding:0.5em;
-          font-family: inherit;
-          line-height: inherit;
-          margin: auto;
+        &__btn {
+          opacity: 0;
+          transform: translate(0, 3rem);
+          animation: slideUp 600ms;
+          animation-fill-mode: forwards;
+          @include animation-delay-loop();
+
+          .btn {
+            font-size:1em;
+            padding:0.5em;
+            font-family: inherit;
+            line-height: inherit;
+            margin: auto;
+          }
         }
+
 
         html.supports &__btn:first-child:last-child .btn {
           border-radius:0.5rem;
