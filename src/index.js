@@ -8,6 +8,8 @@ import 'angular-hotkeys';
 import 'ng-fittext';
 import 'localforage';
 import 'angular-localforage';
+import 'chart.js';
+import 'angular-chart.js';
 // Internal modules
 import {main} from './main/main.js';
 import {mainDebug} from './main/debug/debug.js';
@@ -28,6 +30,7 @@ import Character from './character/character.service.js';
 import Ending from './ending/ending.service.js';
 import Var from './var/var.service.js';
 import routesConfig from './routes';
+import chartConfig from './chart';
 import modernizrConfig from './modernizr.js';
 
 // Import SCSS with webpack
@@ -44,9 +47,11 @@ angular
     'luegg.directives',
     'cfp.hotkeys',
     'ngFitText',
-    'LocalForageModule'
+    'LocalForageModule',
+    'chart.js'
   ])
   .config(routesConfig)
+  .config(chartConfig)
   .run(modernizrConfig)
   .filter('emoji', emoji)
   .filter('unsafe', unsafe)

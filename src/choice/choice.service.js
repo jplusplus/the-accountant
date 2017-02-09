@@ -42,6 +42,9 @@ function ChoiceService(Slice, Stack) {
       this.finalSlice();
       this.step.terminate();
     }
+    changeFor(name) {
+      return this.changes[name] || 0;
+    }
     // Risks related to that choices
     get risks() {
       return this.memoize('risk', () => {
@@ -59,7 +62,7 @@ function ChoiceService(Slice, Stack) {
       return this[_consequences] || [];
     }
     get changes() {
-      return this[_meta].var_changes;
+      return this[_meta].var_changes || {};
     }
     get index() {
       return this.step.choices.indexOf(this);
