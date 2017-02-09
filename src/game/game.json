@@ -129,9 +129,7 @@
           "character": "mayor",
           "text@en": "Some say this city has corruption issues. Don't listen to them 😒."
         },
-        {
-          "text@en": "You put a sombrero on your head."
-        },
+
         {
           "character": "mayor",
           "text@en": "But be careful."
@@ -171,7 +169,7 @@
       },
       "choices": [
         {
-          "text@en": "Public Works plc. made an offer at 9 million",
+          "text@en": "Concrete Construction made an offer at 9 million",
           "var_changes": {
             "reserves": -9,
             "risk_contractors": 1
@@ -179,7 +177,7 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose the offer of Public Works plc."
+              "text@en": "I choose the offer of Concrete Construction"
             },
             {
               "character": "construction-boss",
@@ -213,7 +211,7 @@
           ]
         },
         {
-          "text@en": "Public Building plc made an offer at 21 million",
+          "text@en": "Eco-Sense Construction made an offer at 21 million",
           "var_changes": {
             "reserves": -21,
             "risk_contractors": 1
@@ -221,7 +219,7 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose the offer of Public Building plc."
+              "text@en": "I choose the offer of Eco-Sense Construction."
             },
             {
               "character": "construction-boss",
@@ -341,7 +339,7 @@
       ],
       "explainer": {
         "title@en": "How can you organize bribes?",
-        "body@en": "Bribery is not as common in Europe as in other parts of the world, but it is rampant is some sectors. In public housing, some officials ask for envoleppes of money to be given directly. For car inspection, some service centers will be pleased if you leave a gift or bills of cash on the passenger seat.<br><br>Read more under <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> at Cooking Budgets."
+        "body@en": "Bribery is not as common in Europe as in other parts of the world, but it is rampant is some sectors. In public housing, some officials ask for enveloppes of money to be given directly. For car inspection, some service centers will be pleased if you leave a gift or bills of cash on the passenger seat.<br><br>Read more under <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> at Cooking Budgets."
       },
       "choices": [
         {
@@ -497,7 +495,7 @@
       },
       "choices": [
         {
-          "text@en": "Public Works plc. made an offer for 10 million",
+          "text@en": "Concrete Construction made an offer for 10 million",
           "var_changes": {
             "reserves": -10,
             "personal_account": 1000
@@ -505,7 +503,7 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose the offer of Public Works plc."
+              "text@en": "I choose the offer of Concrete Construction"
             },
             {
               "character": "construction-boss",
@@ -539,7 +537,7 @@
           ]
         },
         {
-          "text@en": "Public Building plc made an offer for 11 million",
+          "text@en": "Eco-Sense Construction made an offer for 11 million",
           "var_changes": {
             "reserves": -11,
             "risk_contractors": 1
@@ -547,7 +545,7 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose the offer of Public Building plc."
+              "text@en": "I choose the offer of Eco-Sense Construction."
             },
             {
               "character": "construction-boss",
@@ -732,7 +730,7 @@
           ]
         },
         {
-          "text@en": "Public Works plc. made an offer for 5.5 million",
+          "text@en": "Concrete Construction made an offer for 5.5 million",
           "var_changes": {
             "reserves": -5.5,
             "risk_contractors": 1
@@ -740,7 +738,7 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose Public Works plc."
+              "text@en": "I choose Concrete Construction"
             },
             {
               "character": "construction-boss",
@@ -801,7 +799,7 @@
       },
       "choices": [
         {
-          "text@en": "Public Building plc made an offer for 5 million",
+          "text@en": "Eco-Sense Construction made an offer for 5 million",
           "var_changes": {
             "reserves": -5,
             "personal_account": 1000
@@ -809,7 +807,7 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose Public Building plc."
+              "text@en": "I choose Eco-Sense Construction."
             },
             {
               "character": "construction-boss",
@@ -822,7 +820,7 @@
           ]
         },
         {
-          "text@en": "Public Works plc. made an offer for 5.5 million",
+          "text@en": "Concrete Construction made an offer for 5.5 million",
           "var_changes": {
             "reserves": -5.5,
             "risk_contractors": 1
@@ -830,7 +828,7 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose Public Works plc."
+              "text@en": "I choose Concrete Construction"
             },
             {
               "character": "construction-boss",
@@ -1152,10 +1150,6 @@
           "text@en": "Give me a contract and I'll buy you the furniture you really deserve."
         }
       ],
-      "explainer": {
-        "title@en": "Perks in office",
-        "body@en": "It"
-      },
       "choices": [
         {
           "text@en": "You're right.",
@@ -1950,7 +1944,7 @@
           }
         },
         {
-          "text@en": "Public Building plc made an offer at 1.3 million.",
+          "text@en": "Eco-Sense Construction made an offer at 1.3 million.",
           "var_changes": {
             "reserves": -1.3,
             "risk_contractors": 1
