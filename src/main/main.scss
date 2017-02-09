@@ -395,7 +395,7 @@
       pointer-events: none;
       opacity: 0;
       @include transition(400ms);
-      @include gradient-y(rgba(black, 0), rgba(black, 0.4));
+      @include gradient-y(rgba(white, 0), rgba(white, 0.9));
     }
 
     &:hover:after {

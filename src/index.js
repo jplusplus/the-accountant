@@ -8,8 +8,6 @@ import 'angular-hotkeys';
 import 'ng-fittext';
 import 'localforage';
 import 'angular-localforage';
-import 'chart.js';
-import 'angular-chart.js';
 // Internal modules
 import {main} from './main/main.js';
 import {mainDebug} from './main/debug/debug.js';
@@ -47,8 +45,7 @@ angular
     'luegg.directives',
     'cfp.hotkeys',
     'ngFitText',
-    'LocalForageModule',
-    'chart.js'
+    'LocalForageModule'
   ])
   .config(routesConfig)
   .config(chartConfig)
