@@ -89,7 +89,7 @@
     },
     "construction-boss": {
       "name@en": "Robert Gerber",
-      "title@en": "Boss of City Construction Limited",
+      "title@en": "Boss of Robert Construction Limited",
       "avatar": "./images/avatars/construction-boss.jpg"
     },
     "university-boss": {
@@ -109,9 +109,90 @@
     }
   },
   "years": {
-    "1993": "images/years/night.jpeg",
-    "1996": "images/years/street.jpeg",
-    "1998": "images/years/night.jpeg"
+    "1993": { 
+      "picture": "images/years/night.jpeg",
+      "title@en": "The Beginning"
+    },
+    "1994": { 
+      "picture": "images/years/night.jpeg",
+      "title@en": "First Steps"
+    },
+    "1995": { 
+      "picture": "images/years/night.jpeg",
+      "title@en": "Housing Stories"
+    },
+    "1996": { 
+      "picture": "images/years/night.jpeg",
+      "title@en": "Playing ball"
+    },
+    "1997": { 
+      "picture": "images/years/night.jpeg",
+      "title@en": "Cartel"
+    },
+    "1998": { 
+      "picture": "images/years/night.jpeg",
+      "title@en": "Growing up"
+    },
+    "1999": { 
+      "picture": "images/years/night.jpeg",
+      "title@en": "Be Your Own Boss"
+    },
+    "2000": { 
+      "picture": "images/years/night.jpeg",
+      "title@en": "The Card"
+    },
+    "2001": { 
+      "picture": "images/years/night.jpeg",
+      "title@en": "Adverts"
+    },
+    "2002": { 
+      "picture": "images/years/night.jpeg",
+      "title@en": "Game on"
+    },
+    "2003": { 
+      "picture": "images/years/night.jpeg",
+      "title@en": "Invisble"
+    },
+    "2004": { 
+      "picture": "images/years/night.jpeg",
+      "title@en": "Interior design"
+    },
+    "2005": { 
+      "picture": "images/years/night.jpeg",
+      "title@en": "Getting Bigger"
+    },
+    "2006": { 
+      "picture": "images/years/night.jpeg",
+      "title@en": "Tentacles"
+    },
+    "2007": { 
+      "picture": "images/years/night.jpeg",
+      "title@en": "Trash"
+    },
+    "2008": { 
+      "picture": "images/years/night.jpeg",
+      "title@en": "Delays"
+    },
+    "2009": { 
+      "picture": "images/years/night.jpeg",
+      "title@en": "Back to school"
+    },
+    "2010": { 
+      "picture": "images/years/night.jpeg",
+      "title@en": "High finance"
+    },
+    "2011": { 
+      "picture": "images/years/night.jpeg",
+      "title@en": "Family first"
+    },
+    "2012": { 
+      "picture": "images/years/night.jpeg",
+      "title@en": "Going private"
+    },
+    "2013": { 
+      "picture": "images/years/night.jpeg",
+      "title@en": "The last tender"
+    }
   },
   "steps": [
     {
@@ -129,9 +210,7 @@
           "character": "mayor",
           "text@en": "Some say this city has corruption issues. Don't listen to them 😒."
         },
-        {
-          "text@en": "You put a sombrero on your head."
-        },
+
         {
           "character": "mayor",
           "text@en": "But be careful."
@@ -144,6 +223,14 @@
             {
               "character": "you",
               "text@en": "Thank you mayor, I'll do my best."
+            },
+            {
+              "character": "mayor",
+              "text@en": "You'll do great."
+            },
+            {
+              "character": "mayor",
+              "text@en": "Don't forget to check the Indicators on the left from time to time."
             }
           ]
         }
@@ -171,7 +258,7 @@
       },
       "choices": [
         {
-          "text@en": "Public Works plc. made an offer at 9 million",
+          "text@en": "Concrete Construction made an offer at 9 million",
           "var_changes": {
             "reserves": -9,
             "risk_contractors": 1
@@ -179,7 +266,7 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose the offer of Public Works plc."
+              "text@en": "I choose the offer of Concrete Construction"
             },
             {
               "character": "construction-boss",
@@ -187,7 +274,7 @@
             },
             {
               "character": "construction-boss",
-              "text@en": "I'm the boss of City Construction Limited."
+              "text@en": "I'm the boss of Robert Construction Limited."
             },
             {
               "character": "construction-boss",
@@ -200,7 +287,7 @@
           ]
         },
         {
-          "text@en": "City Construction Limited made an offer at 20 million",
+          "text@en": "Robert Construction Limited made an offer at 20 million",
           "var_changes": {
             "reserves": -20,
             "gift_company2": 1
@@ -208,12 +295,12 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose the offer of City Construction Limited."
+              "text@en": "I choose the offer of Robert Construction Limited."
             }
           ]
         },
         {
-          "text@en": "Public Building plc made an offer at 21 million",
+          "text@en": "Eco-Sense Construction made an offer at 21 million",
           "var_changes": {
             "reserves": -21,
             "risk_contractors": 1
@@ -221,7 +308,7 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose the offer of Public Building plc."
+              "text@en": "I choose the offer of Eco-Sense Construction."
             },
             {
               "character": "construction-boss",
@@ -229,7 +316,7 @@
             },
             {
               "character": "construction-boss",
-              "text@en": "I'm the boss of City Construction Limited."
+              "text@en": "I'm the boss of Robert Construction Limited."
             },
             {
               "character": "construction-boss",
@@ -256,7 +343,7 @@
         },
         {
           "character": "construction-boss",
-          "text@en": "I'm the boss of City Construction Limited."
+          "text@en": "I'm the boss of Robert Construction Limited."
         },
         {
           "character": "construction-boss",
@@ -341,7 +428,7 @@
       ],
       "explainer": {
         "title@en": "How can you organize bribes?",
-        "body@en": "Bribery is not as common in Europe as in other parts of the world, but it is rampant is some sectors. In public housing, some officials ask for envoleppes of money to be given directly. For car inspection, some service centers will be pleased if you leave a gift or bills of cash on the passenger seat.<br><br>Read more under <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> at Cooking Budgets."
+        "body@en": "Bribery is not as common in Europe as in other parts of the world, but it is rampant is some sectors. In public housing, some officials ask for enveloppes of money to be given directly. For car inspection, some service centers will be pleased if you leave a gift or bills of cash on the passenger seat.<br><br>Read more under <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> at Cooking Budgets."
       },
       "choices": [
         {
@@ -497,7 +584,7 @@
       },
       "choices": [
         {
-          "text@en": "Public Works plc. made an offer for 10 million",
+          "text@en": "Concrete Construction made an offer for 10 million",
           "var_changes": {
             "reserves": -10,
             "personal_account": 1000
@@ -505,7 +592,7 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose the offer of Public Works plc."
+              "text@en": "I choose the offer of Concrete Construction"
             },
             {
               "character": "construction-boss",
@@ -518,7 +605,7 @@
           ]
         },
         {
-          "text@en": "City Construction Limited made an offer for 10.2 million",
+          "text@en": "Robert Construction Limited made an offer for 10.2 million",
           "var_changes": {
             "reserves": -10.2,
             "risk_contractors": 1
@@ -526,7 +613,7 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose the offer of City Construction Limited."
+              "text@en": "I choose the offer of Robert Construction Limited."
             },
             {
               "character": "construction-boss",
@@ -539,7 +626,7 @@
           ]
         },
         {
-          "text@en": "Public Building plc made an offer for 11 million",
+          "text@en": "Eco-Sense Construction made an offer for 11 million",
           "var_changes": {
             "reserves": -11,
             "risk_contractors": 1
@@ -547,7 +634,7 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose the offer of Public Building plc."
+              "text@en": "I choose the offer of Eco-Sense Construction."
             },
             {
               "character": "construction-boss",
@@ -670,11 +757,15 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "An anonymous company, maybe based in the British Virgin Islands, or in Panama?"
+              "text@en": "A shell company."
             },
             {
               "character": "lawyer",
               "text@en": "Good choice."
+            },
+            {
+              "character": "lawyer",
+              "text@en": "I'll set it up in the Seychelles."
             },
             {
               "character": "lawyer",
@@ -732,7 +823,7 @@
           ]
         },
         {
-          "text@en": "Public Works plc. made an offer for 5.5 million",
+          "text@en": "Concrete Construction made an offer for 5.5 million",
           "var_changes": {
             "reserves": -5.5,
             "risk_contractors": 1
@@ -740,7 +831,7 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose Public Works plc."
+              "text@en": "I choose Concrete Construction"
             },
             {
               "character": "construction-boss",
@@ -753,7 +844,7 @@
           ]
         },
         {
-          "text@en": "City Construction Limited made an offer for 6 million",
+          "text@en": "Robert Construction Limited made an offer for 6 million",
           "var_changes": {
             "reserves": -6,
             "risk_contractors": 1
@@ -761,7 +852,7 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose City Construction Limited."
+              "text@en": "I choose Robert Construction Limited."
             },
             {
               "character": "construction-boss",
@@ -801,7 +892,7 @@
       },
       "choices": [
         {
-          "text@en": "Public Building plc made an offer for 5 million",
+          "text@en": "Robert Construction Limited made an offer for 5 million",
           "var_changes": {
             "reserves": -5,
             "personal_account": 1000
@@ -809,7 +900,7 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose Public Building plc."
+              "text@en": "I choose Robert Construction Limited."
             },
             {
               "character": "construction-boss",
@@ -822,7 +913,7 @@
           ]
         },
         {
-          "text@en": "Public Works plc. made an offer for 5.5 million",
+          "text@en": "Concrete Construction made an offer for 5.5 million",
           "var_changes": {
             "reserves": -5.5,
             "risk_contractors": 1
@@ -830,7 +921,7 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose Public Works plc."
+              "text@en": "I choose Concrete Construction"
             },
             {
               "character": "construction-boss",
@@ -843,7 +934,7 @@
           ]
         },
         {
-          "text@en": "City Construction Limited made an offer for 6 million",
+          "text@en": "Eco-Sense Construction made an offer for 6 million",
           "var_changes": {
             "reserves": -6,
             "risk_contractors": 1
@@ -851,7 +942,7 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose City Construction Limited."
+              "text@en": "I choose Eco-Sense Construction."
             },
             {
               "character": "construction-boss",
@@ -891,7 +982,11 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "It's very useful for this new website, Amazon."
+              "text@en": "Oh, a credit card!"
+            },
+            {
+              "character": "you",
+              "text@en": "Let's buy some new DVDs on Amazon.com"
             },
             {
               "character": "lawyer",
@@ -967,7 +1062,7 @@
           ]
         },
         {
-          "text@en": "Sure, you'll run ads praising her actions",
+          "text@en": "Sure, you'll run ads praising your actions",
           "var_changes": {
             "reserves": -0.5
           },
@@ -1046,11 +1141,19 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "No sorry, I don't think it would be in the general interest."
+              "text@en": "No, sorry."
+            },
+            {
+              "character": "you",
+              "text@en": "It wouldn't be in the general interest."
             },
             {
               "character": "mayor",
-              "text@en": "Did you really turn my friend down?"
+              "text@en": "What did you do?"
+            },
+            {
+              "character": "mayor",
+              "text@en": "You turned my friend down?"
             },
             {
               "character": "mayor",
@@ -1152,10 +1255,6 @@
           "text@en": "Give me a contract and I'll buy you the furniture you really deserve."
         }
       ],
-      "explainer": {
-        "title@en": "Perks in office",
-        "body@en": "It"
-      },
       "choices": [
         {
           "text@en": "You're right.",
@@ -1228,7 +1327,7 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "I have engaged the city to buy the stadium for 10 million."
+              "text@en": "Let's build this stadium."
             },
             {
               "character": "mayor",
@@ -1236,7 +1335,7 @@
             },
             {
               "character": "mayor",
-              "text@en": "Where do you think you work? Buckingham Palace?"
+              "text@en": "Where do you think you work at? Buckingham Palace?"
             },
             {
               "character": "mayor",
@@ -1252,7 +1351,11 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "Let's do a public-private partnership then, so that we don't have to pay it upfront."
+              "text@en": "Let's do a public-private partnership."
+            },
+            {
+              "character": "you",
+              "text@en": "This way, we don't have to pay anything now."
             },
             {
               "character": "mayor",
@@ -1498,7 +1601,7 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "That's unacceptable, I will take them to court to get the money."
+              "text@en": "Let's go to court."
             },
             {
               "character": "mayor",
@@ -1518,7 +1621,7 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "I'm sorry but there's nothing I can do."
+              "text@en": "We'll ignore the delay."
             },
             {
               "character": "mayor",
@@ -1624,7 +1727,7 @@
         },
         {
           "character": "mayor",
-          "text@en": "They say they want to bundle all future revenue from social housing and account for it once."
+          "text@en": "They want to bundle all future revenue from social housing and account for it once."
         },
         {
           "character": "mayor",
@@ -1649,7 +1752,11 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "It sounds legal, and we need this to respect the investment plan we promised to the voters."
+              "text@en": "It sounds legit."
+            },
+            {
+              "character": "you",
+              "text@en": "And we need this to keep investing if you want to win the next election."
             },
             {
               "character": "mayor",
@@ -1669,7 +1776,11 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "We can't do that! It will not really increase our cash flow, it's all virtual."
+              "text@en": "We can't do that!"
+            },
+            {
+              "character": "you",
+              "text@en": "It will not really increase our cash flow, it's all virtual."
             },
             {
               "character": "mayor",
@@ -1733,14 +1844,14 @@
           ]
         },
         {
-          "text@en": "Ask City Construction Limited to hire him.",
+          "text@en": "Ask Robert Construction Limited to hire him.",
           "var_changes": {
             "risk_political": 0
           },
           "feedback": [
             {
               "character": "you",
-              "text@en": "I will ask my old friend from City Construction Limited to hire him."
+              "text@en": "I will ask my old friend from Robert Construction Limited to hire him."
             },
             {
               "character": "construction-boss",
@@ -1760,7 +1871,11 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "We will tighten our belts, I prefer not to mix private and professonal life."
+              "text@en": "We will tighten our belts."
+            },
+            {
+              "character": "you",
+              "text@en": "I prefer not to mix private and professonal life."
             },
             {
               "character": "lawyer",
@@ -1796,7 +1911,7 @@
       ],
       "explainer": {
         "title@en": "The Revolving Door",
-        "body@en": "After a career in the administration, public officials are often invited to work in the private sectors. Their contacts and their in-depth knowledge of how an administration works are very valuable for a private company. Sometimes, the promise of having a plump job is enough to convince a public official to take a decision in favor of a private company.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-revolving-door/' target='_blank'>The Revolving Door</a> at Cooking Budgets."
+        "body@en": "After a career in the administration, public officials can be invited to work in the private sectors. Their contacts and their in-depth knowledge of how an administration works are very valuable for a private company. Sometimes, the promise of having a plump job is enough to convince a public official to take a decision in favor of a private company.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-revolving-door/' target='_blank'>The Revolving Door</a> at Cooking Budgets."
       },
       "choices": [
         {
@@ -1808,7 +1923,11 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "Thanks for your offer! I am sure my experience in a public administration will be a great value."
+              "text@en": "Thanks for your offer!"
+            },
+            {
+              "character": "you",
+              "text@en": "My experience in a public administration will be of great value."
             },
             {
               "character": "construction-boss",
@@ -1832,7 +1951,7 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "But...No! We already have a great swimming pool."
+              "text@en": "No, we don't need a swimming pool."
             },
             {
               "character": "construction-boss",
@@ -1872,7 +1991,7 @@
       },
       "choices": [
         {
-          "text@en": "City Construction Limited made an offer at 10 million.",
+          "text@en": "Robert Construction Limited made an offer at 10 million.",
           "var_changes": {
             "reserves": -10,
             "risk_revolving_door": 10
@@ -1880,7 +1999,7 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose City Construction Limited."
+              "text@en": "I choose Robert Construction Limited."
             }
           ]
         },
@@ -1892,7 +2011,7 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "No really, we don't need a new swimming pool."
+              "text@en": "No, we don't need a swimming pool."
             },
             {
               "character": "construction-boss",
@@ -1943,14 +2062,14 @@
           }
         },
         {
-          "text@en": "City Construction Limited made an offer at 1.2 million.",
+          "text@en": "Robert Construction Limited made an offer at 1.2 million.",
           "var_changes": {
             "reserves": -1.2,
             "risk_contractors": 1
           }
         },
         {
-          "text@en": "Public Building plc made an offer at 1.3 million.",
+          "text@en": "Eco-Sense Construction made an offer at 1.3 million.",
           "var_changes": {
             "reserves": -1.3,
             "risk_contractors": 1
@@ -1965,28 +2084,28 @@
         "var": "risk_political",
         "min": 2
       },
-      "text@en": "<h2>You're fired!</h2><p>Your choices have made you unpopular. The mayor requests a career change for you. You're now in charge of welcoming guests at the city museum. How culturally enriching!</p>"
+      "text@en": "<h2>You're fired: You lost!</h2><p>Your choices have made you unpopular. The mayor requests a career change for you. You're now in charge of welcoming guests at the city museum. How culturally enriching!</p>"
     },
     {
       "condition": {
         "var": "risk_police",
         "min": 2
       },
-      "text@en": "<h2>Busted!</h2><p>The anticorruption police charged you with misapropriation of public funds. Relax, you probably won't go to prison, but the mayor demands that you resign.</p>"
+      "text@en": "<h2>Busted: You lost!</h2><p>The anticorruption police charged you with misapropriation of public funds. Relax, you probably won't go to prison, but the mayor demands that you resign.</p>"
     },
     {
       "condition": {
         "var": "risk_contractors",
         "min": 2
       },
-      "text@en": "<h2>Career change!</h2><p>Public work contractors told the mayor's office that they could not work with you. You are being reassigned to the Parks and Gardens department. How great that you can work outside now!</p>"
+      "text@en": "<h2>Career change: You lost!</h2><p>Public work contractors told the mayor's office that they could not work with you. You are being reassigned to the Parks and Gardens department. How great that you can work outside now!</p>"
     },
     {
       "condition": {
         "var": "risk_revolving_door",
         "min": 1
       },
-      "text@en": "<h2>New career</h2><p>City Construction Limited makes you an offer you can't refuse, if only to ensure the financial well-being of your spouse and children. Bye-bye, public sector! Hello, business!</p>"
+      "text@en": "<h2>New career: You won!</h2><p>Robert Construction Limited makes you an offer you can't refuse, if only to ensure the financial well-being of your spouse and children. Bye-bye, public sector! Hello, business!</p>"
     },
     {
       "text@en": "<h2>Celebrating 20 years</h2><p>How time flies! 20 years already! In just another 20, you can be in retirement.</p>"
