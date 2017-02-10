@@ -1100,7 +1100,11 @@
         },
         {
           "character": "football-boss",
-          "text@en": "I was thinking... The city could buy me back the plot of land you sold me, back in 1996. Then you I rent it from the city for a fair price."
+          "text@en": "I was thinking... The city could buy me back the plot of land you sold me, back in 1996."
+        },
+        {
+          "character": "football-boss",
+          "text@en": "Then I rent it from the city at a fair price."
         },
         {
           "character": "football-boss",
