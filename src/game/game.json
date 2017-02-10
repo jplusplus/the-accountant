@@ -584,7 +584,7 @@
       },
       "choices": [
         {
-          "text@en": "Concrete Construction made an offer for 10 million",
+          "text@en": "Robert Construction Limited made an offer for 10 million",
           "var_changes": {
             "reserves": -10,
             "personal_account": 1000
@@ -592,7 +592,7 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose the offer of Concrete Construction"
+              "text@en": "I choose the offer of Robert Construction Limited"
             },
             {
               "character": "construction-boss",
@@ -605,7 +605,7 @@
           ]
         },
         {
-          "text@en": "Robert Construction Limited made an offer for 10.2 million",
+          "text@en": "Concrete Construction made an offer for 10.2 million",
           "var_changes": {
             "reserves": -10.2,
             "risk_contractors": 1
@@ -613,7 +613,7 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose the offer of Robert Construction Limited."
+              "text@en": "I choose the offer of Concrete Construction."
             },
             {
               "character": "construction-boss",
