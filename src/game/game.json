@@ -114,87 +114,87 @@
     }
   },
   "years": {
-    "1993": { 
+    "1993": {
       "picture": "images/years/brussels.jpeg",
       "title@en": "The Beginning"
     },
-    "1994": { 
+    "1994": {
       "picture": "images/years/palacio.jpeg",
       "title@en": "First Steps"
     },
-    "1995": { 
+    "1995": {
       "picture": "images/years/building.jpeg",
       "title@en": "Housing Stories"
     },
-    "1996": { 
+    "1996": {
       "picture": "images/years/stadium.jpeg",
       "title@en": "Playing ball"
     },
-    "1997": { 
+    "1997": {
       "picture": "images/years/tm.jpeg",
       "title@en": "Cartel"
     },
-    "1998": { 
+    "1998": {
       "picture": "images/years/roundabout.jpeg",
       "title@en": "Growing up"
     },
-    "1999": { 
+    "1999": {
       "picture": "images/years/cpn.jpeg",
       "title@en": "Be Your Own Boss"
     },
-    "2000": { 
+    "2000": {
       "picture": "images/years/skate.jpeg",
       "title@en": "The Card"
     },
-    "2001": { 
+    "2001": {
       "picture": "images/years/cpn-2.jpeg",
       "title@en": "Adverts"
     },
-    "2002": { 
+    "2002": {
       "picture": "images/years/atomium.jpeg",
       "title@en": "Game on"
     },
-    "2003": { 
+    "2003": {
       "picture": "images/years/gare.jpeg",
       "title@en": "Invisible"
     },
-    "2004": { 
+    "2004": {
       "picture": "images/years/metro.jpeg",
       "title@en": "Interior design"
     },
-    "2005": { 
+    "2005": {
       "picture": "images/years/tour-2.jpeg",
       "title@en": "Getting Bigger"
     },
-    "2006": { 
+    "2006": {
       "picture": "images/years/metro-2.jpeg",
       "title@en": "Tentacles"
     },
-    "2007": { 
+    "2007": {
       "picture": "images/years/paris.jpeg",
       "title@en": "Trash"
     },
-    "2008": { 
+    "2008": {
       "picture": "images/years/bat.jpeg",
       "title@en": "Delays"
     },
-    "2009": { 
+    "2009": {
       "picture": "images/years/airport.jpeg",
       "title@en": "Back to school"
     },
-    "2010": { 
+    "2010": {
       "picture": "images/years/route.jpeg",
       "title@en": "High finance"
     },
-    "2011": { 
+    "2011": {
       "picture": "images/years/building.jpeg",
       "title@en": "Family first"
     },
-    "2012": { 
+    "2012": {
       "picture": "images/years/pool.jpeg",
       "title@en": "Going private"
     },
-    "2013": { 
+    "2013": {
       "picture": "images/years/italy.jpeg",
       "title@en": "The last tender"
     }
@@ -215,7 +215,6 @@
           "character": "mayor",
           "text@en": "Some say this city has corruption issues. Don't listen to them 😒."
         },
-
         {
           "character": "mayor",
           "text@en": "But be careful."
@@ -235,7 +234,27 @@
             },
             {
               "character": "mayor",
-              "text@en": "Don't forget to check the Indicators on the left from time to time."
+              "text@en": "Lia is your assistant."
+            },
+            {
+              "character": "mayor",
+              "text@en": "She'll show you around."
+            },
+            {
+              "character": "helper",
+              "text@en": "Hello."
+            },
+            {
+              "character": "helper",
+              "text@en": "I'll help you get up to speed."
+            },
+            {
+              "character": "helper",
+              "text@en": "Best advice: The mayor has powerful friends. Don't make them angry."
+            },
+            {
+              "character": "helper",
+              "text@en": "Especially Mr. Gerber."
             }
           ]
         }
@@ -263,35 +282,6 @@
       },
       "choices": [
         {
-          "text@en": "Concrete Construction made an offer at 9 million",
-          "var_changes": {
-            "reserves": -9,
-            "risk_contractors": 1
-          },
-          "feedback": [
-            {
-              "character": "you",
-              "text@en": "I choose the offer of Concrete Construction"
-            },
-            {
-              "character": "construction-boss",
-              "text@en": "You're new here, aren't you?"
-            },
-            {
-              "character": "construction-boss",
-              "text@en": "I'm the boss of Robert Construction Limited."
-            },
-            {
-              "character": "construction-boss",
-              "text@en": "Be more careful next time."
-            },
-            {
-              "character": "construction-boss",
-              "text@en": "You don't want to make an enemy out of me."
-            }
-          ]
-        },
-        {
           "text@en": "Robert Construction Limited made an offer at 20 million",
           "var_changes": {
             "reserves": -20,
@@ -314,6 +304,35 @@
             {
               "character": "you",
               "text@en": "I choose the offer of Eco-Sense Construction."
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "You're new here, aren't you?"
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "I'm the boss of Robert Construction Limited."
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "Be more careful next time."
+            },
+            {
+              "character": "construction-boss",
+              "text@en": "You don't want to make an enemy out of me."
+            }
+          ]
+        },
+        {
+          "text@en": "Concrete Construction made an offer at 22 million",
+          "var_changes": {
+            "reserves": -22,
+            "risk_contractors": 1
+          },
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "I choose the offer of Concrete Construction"
             },
             {
               "character": "construction-boss",
