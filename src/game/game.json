@@ -102,6 +102,11 @@
       "title@en": "President of the City Football Club",
       "avatar": "./images/avatars/football-boss.jpg"
     },
+    "helper": {
+      "name@en": "Lia Brune",
+      "title@en": "Assistant",
+      "avatar": "./images/avatars/helper.jpg"
+    },
     "you": {
       "name@en": "You",
       "title@en": "General manager",
@@ -151,7 +156,7 @@
     },
     "2003": { 
       "picture": "images/years/gare.jpeg",
-      "title@en": "Invisble"
+      "title@en": "Invisible"
     },
     "2004": { 
       "picture": "images/years/metro.jpeg",
