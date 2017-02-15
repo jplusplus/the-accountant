@@ -158,6 +158,8 @@
 
       &__choices {
 
+        padding-bottom: $spacer;
+
         &__btn {
           opacity: 0;
           transform: translate(0, 3rem);
