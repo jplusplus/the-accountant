@@ -183,9 +183,12 @@ function gameService($log, $rootScope, Step, Var, Ending, Character, I18n) {
       return this.lastStack.readingTime;
     }
     get lastStack() {
-      // Next slice within the step's selection
-      if (this.step.selection && this.step.isLastSlice()) {
-        return this.step.selection;
+      if (this.step.isLastSlice()) {
+        if (this.step.selection) {
+          return this.step.selection;
+        } else if (this.step.hasHelper()) {
+          return this.step.helper;
+        }
       }
       // Next slice within the step by default
       return this.step;

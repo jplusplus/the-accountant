@@ -25,6 +25,9 @@ function StepService(Choice, Slice, Stack, I18n, Hint, $rootScope, $log) {
     hasHint() {
       return this[_meta].hasOwnProperty('explainer');
     }
+    hasHelper() {
+      return this[_meta].hasOwnProperty('helper');
+    }
     displayHint() {
       return this.hasHint() && !this.selection && this.isLastSlice();
     }
@@ -35,7 +38,14 @@ function StepService(Choice, Slice, Stack, I18n, Hint, $rootScope, $log) {
       return this.game.step === this;
     }
     isDone() {
-      return Boolean(this.isLastSlice() && this.selection && this.selection.isLastSlice());
+      return (
+        // Reach the last slice for this stack
+        this.isLastSlice() &&
+        // Has a selection (which is a stack)
+        Boolean(this.selection) &&
+        // Reach the last slice for the selection's feedback
+        this.selection.isLastSlice()
+      );
     }
     finalSlice() {
       super.finalSlice();
@@ -107,6 +117,11 @@ function StepService(Choice, Slice, Stack, I18n, Hint, $rootScope, $log) {
     get hint() {
       return this.memoize('hint', () => {
         return this.hasHint() ? new Hint(this[_meta].explainer, this) : null;
+      });
+    }
+    get helper() {
+      return this.memoize('helper', () => {
+        return this.hasHelper() ? new Stack(this[_meta].helper, this) : null;
       });
     }
   }

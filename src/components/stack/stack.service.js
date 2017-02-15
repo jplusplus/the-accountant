@@ -54,7 +54,7 @@ function StackService(Slice, I18n) {
     findGame(obj = this) {
       if (obj.meta && obj.meta.characters) {
         return obj;
-      } else if (obj.game) {
+      } else if (!(obj instanceof Stack) && obj.game) {
         return obj.game;
       } else if (obj.parent) {
         return this.findGame(obj.parent);
