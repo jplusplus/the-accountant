@@ -2,7 +2,7 @@ export default StepService;
 import _ from 'lodash';
 
 /** @ngInject */
-function StepService(Choice, Slice, Stack, I18n, Hint, $rootScope, $log) {
+function StepService(Choice, Slice, Stack, I18n, Explainer, $rootScope, $log) {
   // Symbols declarion for private attributes and methods
   const _meta = Symbol('meta');
   const _game = Symbol('game');
@@ -15,21 +15,21 @@ function StepService(Choice, Slice, Stack, I18n, Hint, $rootScope, $log) {
       this[_game] = game;
       this[_meta] = meta;
       // Ensure those method arround bound to the current instance
-      ['select', 'isCurrent', 'hasCondition', 'undo', 'displayHint', 'continue'].forEach(m => {
+      ['select', 'isCurrent', 'hasCondition', 'undo', 'displayExplainer', 'continue'].forEach(m => {
         this[m] = this[m].bind(this);
       });
     }
     hasCondition() {
       return this[_meta].hasOwnProperty('condition');
     }
-    hasHint() {
+    hasExplainer() {
       return this[_meta].hasOwnProperty('explainer');
     }
     hasHelper() {
       return this[_meta].hasOwnProperty('helper');
     }
-    displayHint() {
-      return this.hasHint() && !this.selection && this.isLastSlice();
+    displayExplainer() {
+      return this.hasExplainer() && !this.selection && this.isLastSlice();
     }
     isPrevious() {
       return this === this.game.journey.slice(-2)[0];
@@ -116,7 +116,7 @@ function StepService(Choice, Slice, Stack, I18n, Hint, $rootScope, $log) {
     }
     get explainer() {
       return this.memoize('explainer', () => {
-        return this.hasHint() ? new Hint(this[_meta].explainer, this) : null;
+        return this.hasExplainer() ? new Explainer(this[_meta].explainer, this) : null;
       });
     }
     get helper() {

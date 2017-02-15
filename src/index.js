@@ -18,8 +18,8 @@ import {mainVars} from './containers/main/vars/vars.js';
 import {stack} from './components/stack/stack.js';
 import emoji from './components/emoji/emoji.filter.js';
 import unsafe from './components/unsafe/unsafe.filter.js';
+import Explainer from './components/explainer/explainer.service.js';
 import Game from './components/game/game.service.js';
-import Hint from './components/hint/hint.service.js';
 import I18n from './components/i18n/i18n.service.js';
 import Step from './components/step/step.service.js';
 import Stack from './components/stack/stack.service.js';
@@ -55,7 +55,7 @@ angular
   .filter('emoji', emoji)
   .filter('unsafe', unsafe)
   .service('Game', Game)
-  .service('Hint', Hint)
+  .service('Explainer', Explainer)
   .service('I18n', I18n)
   .service('Step', Step)
   .service('Stack', Stack)

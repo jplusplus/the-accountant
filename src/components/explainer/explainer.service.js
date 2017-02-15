@@ -1,12 +1,12 @@
-export default HintService;
+export default ExplainerService;
 
 /** @ngInject */
-function HintService(I18n) {
+function ExplainerService(I18n) {
   // Symbols declarion for private attributes and methods
   const _open = Symbol('open');
   const _step = Symbol('step');
 
-  class Hint extends I18n {
+  class Explainer extends I18n {
     constructor(meta, step) {
       super(meta);
       // Create private properties
@@ -17,5 +17,5 @@ function HintService(I18n) {
       return this[_step];
     }
   }
-  return Hint;
+  return Explainer;
 }
