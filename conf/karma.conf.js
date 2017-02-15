@@ -18,10 +18,16 @@ module.exports = function (config) {
     files: [
       'node_modules/es6-shim/es6-shim.js',
       conf.path.src('index.spec.js'),
-      conf.path.src('**/*.html')
+      conf.path.src('**/*.html'),
+      {
+        pattern: conf.path.src('images/**/*.+(jpg|png|jpeg|svg)'),
+        watched: false,
+        included: false,
+        served: true
+      }
     ],
     proxies:  {
-      '/images/': '/base/images/'
+      '/images/': 'http://0.0.0.0:9876/images/'
     },
     preprocessors: {
       [conf.path.src('index.spec.js')]: [
