@@ -73,8 +73,8 @@
     <img ng-src="{{ picture }}"  class="main__picture__img" />
   </div>
 
-  <div class="main__footer" ng-class="{ 'main__footer--hint': $ctrl.game.step.displayHint() }">
-    <div class="main__timeline" ng-if="!$ctrl.game.step.displayHint()">
+  <div class="main__footer" >
+    <div class="main__timeline">
       <div class="container-fluid">
         <div class="row">
           <div ng-repeat="year in :: $ctrl.game.years" class="col main__timeline__year"  ng-class="{ 'main__timeline__year--active':  year <= $ctrl.game.step.year }">
@@ -83,15 +83,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="main__hint" ng-if="$ctrl.game.step.displayHint()">
-      <span class="main__hint__toggler btn btn-default btn-sm">
-        {{ $ctrl.game.lastHint.title }}
-      </span>
-      <div class="main__hint__body">
-        <div class="p-2 pb-3" ng-bind-html="$ctrl.game.lastHint.body | unsafe"></div>
       </div>
     </div>
   </div>

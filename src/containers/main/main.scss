@@ -295,14 +295,9 @@
       border:0;
       width:calc(100% - #{$toolbar-width-xs});
     }
-
-    &--hint {
-      background:$brand-warning;
-    }
-
   }
 
-  &__timeline, &__hint {
+  &__timeline {
     pointer-events: auto;
     position: absolute;
     bottom:0;
@@ -372,74 +367,6 @@
         &:nth-child(4n+1) &__label {
           display: block;
         }
-      }
-    }
-  }
-
-  &__hint {
-    text-align: center;
-    min-height: 4rem;
-    color:white;
-    @include transition(400ms);
-
-    &.ng-enter,
-    &.ng-leave.ng-leave-active {
-      transform: translateX(100%);
-    }
-
-    &:after {
-      content:"";
-      position: absolute;
-      left:0;
-      right: 0;
-      bottom:100%;
-      height: 8rem;
-      pointer-events: none;
-      opacity: 0;
-      @include transition(400ms);
-      @include gradient-y(rgba(white, 0), rgba(white, 0.9));
-    }
-
-    &:hover:after {
-      opacity: 1;
-    }
-
-    &:hover &__body {
-      max-height:100vh;
-    }
-
-    &__toggler {
-      display: inline-block;
-      margin:$spacer / 2 0 0;
-      border-radius: 0.5rem 0.5rem 0 0;
-      font-size: 1.1rem;
-      padding:0.5rem 1rem;
-      font-weight: bolder;
-      font-family: $headings-font-family;
-      position: relative;
-      z-index:1;
-
-      &:before, &:after {
-        content:"—";
-        padding:0 $spacer * 0.5;
-      }
-
-      @include media-breakpoint-down(sm) {
-        font-size:1rem;
-      }
-    }
-
-    &__body {
-      @include transition(max-height 400ms);
-      max-width: 450px;
-      max-height:0vh;
-      margin: 0 auto $spacer;
-      text-align: left;
-      overflow: hidden;
-      border-radius: 0.5rem;
-
-      a[href] {
-        color: mix(white, $brand-warning);
       }
     }
   }

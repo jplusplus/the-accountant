@@ -77,13 +77,13 @@ describe('component: game', () => {
     expect(game.var('repositories').value).toEqual(11);
   });
 
-  it('should has hint', () => {
-    // There is no hint
-    expect(game.lastHint).toBeUndefined();
+  it('should has explainer', () => {
+    // There is no explainer
+    expect(game.lastExplainer).toBeUndefined();
     // Select the default choice and continue
     game.step.select().finalSlice();
-    // There is hint now
-    expect(game.lastHint).toBeDefined();
+    // There is explainer now
+    expect(game.lastExplainer).toBeDefined();
   });
 
   it('should continue to the next slice', () => {

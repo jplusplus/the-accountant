@@ -64,8 +64,8 @@ function gameService($log, $rootScope, Step, Var, Ending, Character, I18n) {
     allowsNextSlice() {
       return !this.isOver() && !this.lastStack.isLastSlice();
     }
-    hasHints() {
-      return this.hints.length > 0;
+    hasExplainers() {
+      return this.explainers.length > 0;
     }
     update(changes) {
       _.forEach(changes, (value, key) => {
@@ -301,13 +301,13 @@ function gameService($log, $rootScope, Step, Var, Ending, Character, I18n) {
         return _.filter(this.vars, {public: true});
       }, this.journeyCacheKey);
     }
-    get hints() {
+    get explainers() {
       // Get all past steps that reach the last slice (before selection)
       const withSelection = _.chain(this.journey).filter(_.method('isLastSlice'));
-      // Extract the hint
-      return withSelection.map('hint').compact().uniqBy(h => h.title).value();
+      // Extract the explainer
+      return withSelection.map('explainer').compact().uniqBy(h => h.title).value();
     }
-    get lastHint() {
+    get lastExplainer() {
       if (this.step && this.step.hasHint()) {
         return this.step.hint;
       }

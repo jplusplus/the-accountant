@@ -22,8 +22,8 @@ describe('component: step', () => {
     const step = game.steps[1];
     // It must have to choices
     expect(step.choices.length).toEqual(2);
-    // It must have a hint
-    expect(step.hasHint()).toBe(true);
+    // It must have a explainer
+    expect(step.hasExplainer()).toBe(true);
     // It must not have a condition
     expect(step.hasCondition()).toBe(false);
   });
@@ -160,25 +160,25 @@ describe('component: step', () => {
     expect(game.steps[3].assert).toBe(true);
   });
 
-  it('should not display hint until the user has to select something', () => {
+  it('should not display explainer until the user has to select something', () => {
     // Jump to the choice
     game.step.finalSlice();
-    // No hint yet
-    expect(game.step.displayHint()).toBe(false);
-    // No hint in total
-    expect(game.hints.length).toBe(0);
+    // No explainer yet
+    expect(game.step.hasExplainer()).toBe(false);
+    // No explainer in total
+    expect(game.explainers.length).toBe(0);
     // Jump to the second step
     game.step.select().terminate();
-    // No hint yet
-    expect(game.step.displayHint()).toBe(false);
-    // Still no hint in total
-    expect(game.hints.length).toBe(0);
+    // No explainer yet
+    expect(game.step.hasExplainer()).toBe(false);
+    // Still no explainer in total
+    expect(game.explainers.length).toBe(0);
     // Jump to the choice
     game.step.finalSlice();
-    // There should have a hint!
-    expect(game.step.displayHint()).toBe(true);
-    // 1 past hint in total
-    expect(game.hints.length).toBe(1);
-    expect(game.hasHints()).toBe(true);
+    // There should have a explainer!
+    expect(game.step.hasExplainer()).toBe(true);
+    // 1 past explainer in total
+    expect(game.explainers.length).toBe(1);
+    expect(game.hasExplainers()).toBe(true);
   });
 });

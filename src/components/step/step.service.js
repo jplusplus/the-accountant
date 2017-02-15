@@ -114,8 +114,8 @@ function StepService(Choice, Slice, Stack, I18n, Hint, $rootScope, $log) {
     get condition() {
       return this[_meta].condition || {};
     }
-    get hint() {
-      return this.memoize('hint', () => {
+    get explainer() {
+      return this.memoize('explainer', () => {
         return this.hasHint() ? new Hint(this[_meta].explainer, this) : null;
       });
     }
