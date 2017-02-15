@@ -308,8 +308,8 @@ function gameService($log, $rootScope, Step, Var, Ending, Character, I18n) {
       return withSelection.map('explainer').compact().uniqBy(h => h.title).value();
     }
     get lastExplainer() {
-      if (this.step && this.step.hasHint()) {
-        return this.step.hint;
+      if (this.step && this.step.hasExplainer()) {
+        return this.step.explainer;
       }
     }
   }
