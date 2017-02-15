@@ -31,6 +31,7 @@ function ExplainerService(I18n) {
         const match = Explainer.asNew(REGEX_ENTITIES).exec(entity);
         // Transform entities to object
         return {
+          needle: match[0],
           text: match[2],
           ref: match[3]
         };

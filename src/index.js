@@ -18,6 +18,7 @@ import {mainVars} from './containers/main/vars/vars.js';
 import {stack} from './components/stack/stack.js';
 import emoji from './components/emoji/emoji.filter.js';
 import unsafe from './components/unsafe/unsafe.filter.js';
+import explainerFilter from './components/explainer/explainer.filter.js';
 import Explainer from './components/explainer/explainer.service.js';
 import Game from './components/game/game.service.js';
 import I18n from './components/i18n/i18n.service.js';
@@ -54,8 +55,9 @@ angular
   .run(modernizrConfig)
   .filter('emoji', emoji)
   .filter('unsafe', unsafe)
-  .service('Game', Game)
+  .filter('explainer', explainerFilter)
   .service('Explainer', Explainer)
+  .service('Game', Game)
   .service('I18n', I18n)
   .service('Step', Step)
   .service('Stack', Stack)

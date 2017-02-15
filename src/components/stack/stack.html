@@ -5,7 +5,7 @@
       <span class="stack__slice__character" ng-if="$first && slice.character">
         {{::slice.character.name}}<span class="stack__slice__character__title"> - {{::slice.character.title}}</span>
       </span>
-      <span class="stack__slice__wrapper" ng-bind-html="::slice.t.text | emoji | unsafe"></span>
+      <span class="stack__slice__wrapper" ng-bind-html="::slice.t.text | explainer:'main.hints' | emoji | unsafe"></span>
     </p>
   </div>
   <p class="stack__slice stack__slice--chat" ng-class="{'stack__slice--you': $ctrl.stack.next.isYou()}" ng-if="$ctrl.stack.isTyping()">

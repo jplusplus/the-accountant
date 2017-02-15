@@ -20,6 +20,10 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
       component: 'mainVars'
     })
     .state('main.hints', {
-      component: 'mainHints'
+      component: 'mainHints',
+      url: 'hints/:ref',
+      params: {
+        ref: null
+      }
     });
 }
