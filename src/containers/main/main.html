@@ -46,6 +46,8 @@
             </div>
           </div>
         </fieldset>
+        <!-- Display helpers -->
+        <stack stack="step.helper" game="$ctrl.game" ng-if="step.isLastSlice()"></stack>
         <!-- Display feedback after choices-->
         <stack stack="step.selection" game="$ctrl.game" ng-if="step.selection && step.selection.hasFeedback()"></stack>
         <!-- Cancel button when the step is over-->

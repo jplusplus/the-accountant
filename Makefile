@@ -6,3 +6,6 @@ deploy:
 
 install:
 		yarn || npm install
+
+test:
+		npm run test:auto

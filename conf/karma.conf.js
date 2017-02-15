@@ -20,6 +20,9 @@ module.exports = function (config) {
       conf.path.src('index.spec.js'),
       conf.path.src('**/*.html')
     ],
+    proxies:  {
+      '/images/': '/base/images/'
+    },
     preprocessors: {
       [conf.path.src('index.spec.js')]: [
         'webpack'
