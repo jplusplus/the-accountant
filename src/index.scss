@@ -46,12 +46,12 @@ $toolbar-width-xs: 5rem;
 $panel-width:  map-get($grid-breakpoints, md);
 
 @import "mixins.scss";
-@import "main/main.scss";
-@import "main/toolbar/toolbar.scss";
-@import "main/debug/debug.scss";
-@import "main/hints/hints.scss";
-@import "main/vars/vars.scss";
-@import "stack/stack.scss";
+@import "containers/main/main.scss";
+@import "containers/main/toolbar/toolbar.scss";
+@import "containers/main/debug/debug.scss";
+@import "containers/main/hints/hints.scss";
+@import "containers/main/vars/vars.scss";
+@import "components/stack/stack.scss";
 
 @keyframes blink {
   50% {
