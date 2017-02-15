@@ -10,7 +10,7 @@ function explainerFilter(Explainer, $state) {
       // Build the link that should replace the needle
       const link = `<a href="${href}">${expl.text}</a>`;
       // Replace the needle by the link
-      text = text.replace(expl.needle, link);
+      text = text.split(expl.needle).join(link);
     });
     // Return the text after modification
     return text;
