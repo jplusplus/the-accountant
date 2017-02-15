@@ -1,8 +1,8 @@
 # The Good, The Bad and The Accountant
 
-[![Code Climate](https://codeclimate.com/github/jplusplus/temptation-city/badges/gpa.svg)](https://codeclimate.com/github/jplusplus/temptation-city)
-[![Build Status](https://travis-ci.org/jplusplus/temptation-city.svg?branch=master)](https://travis-ci.org/jplusplus/temptation-city)
-[![Coverage Status](https://coveralls.io/repos/github/jplusplus/temptation-city/badge.svg?branch=master)](https://coveralls.io/github/jplusplus/temptation-city?branch=master)
+[![Code Climate](https://codeclimate.com/github/jplusplus/the-accountant/badges/gpa.svg)](https://codeclimate.com/github/jplusplus/the-accountant)
+[![Build Status](https://travis-ci.org/jplusplus/the-accountant.svg?branch=master)](https://travis-ci.org/jplusplus/the-accountant)
+[![Coverage Status](https://coveralls.io/repos/github/jplusplus/the-accountant/badge.svg?branch=master)](https://coveralls.io/github/jplusplus/the-accountant?branch=master)
 
 ## Getting Started
 
