@@ -37,7 +37,7 @@ describe('filter: explainer', () => {
   }));
 
   it('should find 2 entities in the given text', angular.mock.inject(Explainer => {
-    const text = 'I prepared [a memo|cartel] in the [new book|book].';
+    const text = 'I prepared [a memo|cartel] in the [a book|book].';
     expect(Explainer.parse(text).length).toEqual(2);
   }));
 });

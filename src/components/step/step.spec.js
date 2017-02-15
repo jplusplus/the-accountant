@@ -159,26 +159,4 @@ describe('component: step', () => {
     // The condition is now fulfiled
     expect(game.steps[3].assert).toBe(true);
   });
-
-  it('should not display explainer until the user has to select something', () => {
-    // Jump to the choice
-    game.step.finalSlice();
-    // No explainer yet
-    expect(game.step.hasExplainer()).toBe(false);
-    // No explainer in total
-    expect(game.explainers.length).toBe(0);
-    // Jump to the second step
-    game.step.select().terminate();
-    // No explainer yet
-    expect(game.step.hasExplainer()).toBe(false);
-    // Still no explainer in total
-    expect(game.explainers.length).toBe(0);
-    // Jump to the choice
-    game.step.finalSlice();
-    // There should have a explainer!
-    expect(game.step.hasExplainer()).toBe(true);
-    // 1 past explainer in total
-    expect(game.explainers.length).toBe(1);
-    expect(game.hasExplainers()).toBe(true);
-  });
 });

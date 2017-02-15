@@ -23,7 +23,7 @@ function StepService(Choice, Slice, Stack, I18n, Explainer, $rootScope, $log) {
       return this[_meta].hasOwnProperty('condition');
     }
     hasExplainer() {
-      return this[_meta].hasOwnProperty('explainer');
+      return this.hasHelper();
     }
     hasHelper() {
       return this[_meta].hasOwnProperty('helper');
@@ -116,7 +116,15 @@ function StepService(Choice, Slice, Stack, I18n, Explainer, $rootScope, $log) {
     }
     get explainer() {
       return this.memoize('explainer', () => {
-        return this.hasExplainer() ? new Explainer(this[_meta].explainer, this) : null;
+        if (this.hasExplainer()) {
+          // Iterate over helper's slices
+          return _.chain(this.helper.slices).map(slice => {
+            return Explainer.parse(slice.text);
+          // Get the first value (if any)
+          }).flatten().first().value();
+        }
+        // There is none
+        return null;
       });
     }
     get helper() {

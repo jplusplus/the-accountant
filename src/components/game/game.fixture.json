@@ -77,6 +77,12 @@
           "text@en": "Temptation City is released"
         }
       ],
+      "helper": [
+        {
+          "character": "coo",
+          "text@en": "You should read this [memo|memo]"
+        }
+      ],
       "choices": [
         {
           "name@en": "Do not open Temptation City",
@@ -99,11 +105,7 @@
             }
           ]
         }
-      ],
-      "explainer": {
-        "title@en": "Why should I open my repo?",
-        "body@en": "Lorem yolo sit amet"
-      }
+      ]
     },
     {
       "year": 2012,
