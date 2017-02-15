@@ -8,12 +8,13 @@ import 'angular-hotkeys';
 import 'ng-fittext';
 import 'localforage';
 import 'angular-localforage';
-// Internal modules
+// Containers
 import {main} from './containers/main/main.js';
 import {mainDebug} from './containers/main/debug/debug.js';
 import {mainToolbar} from './containers/main/toolbar/toolbar.js';
 import {mainHints} from './containers/main/hints/hints.js';
 import {mainVars} from './containers/main/vars/vars.js';
+// Components
 import {stack} from './components/stack/stack.js';
 import emoji from './components/emoji/emoji.filter.js';
 import unsafe from './components/unsafe/unsafe.filter.js';
@@ -27,6 +28,7 @@ import Choice from './components/choice/choice.service.js';
 import Character from './components/character/character.service.js';
 import Ending from './components/ending/ending.service.js';
 import Var from './components/var/var.service.js';
+// Configurations
 import routesConfig from './routes';
 import chartConfig from './chart';
 import modernizrConfig from './modernizr.js';
