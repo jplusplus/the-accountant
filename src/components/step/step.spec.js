@@ -159,4 +159,26 @@ describe('component: step', () => {
     // The condition is now fulfiled
     expect(game.steps[3].assert).toBe(true);
   });
+
+  it('should not display helper until the user has to select something', () => {
+    // Jump to the choice
+    game.step.finalSlice();
+    // No hint yet
+    expect(game.step.displayHelper()).toBe(false);
+    // No hint in total
+    expect(game.explainers.length).toBe(0);
+    // Jump to the second step
+    game.step.select().terminate();
+    // No hint yet
+    expect(game.step.displayHelper()).toBe(false);
+    // Still no hint in total
+    expect(game.explainers.length).toBe(0);
+    // Jump to the choice
+    game.step.finalSlice();
+    // There should have a hint!
+    expect(game.step.displayHelper()).toBe(true);
+    // 1 past hint in total
+    expect(game.explainers.length).toBe(1);
+    expect(game.hasExplainers()).toBe(true);
+  });
 });

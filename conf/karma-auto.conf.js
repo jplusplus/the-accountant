@@ -27,7 +27,7 @@ module.exports = function (config) {
       }
     ],
     proxies: {
-      '/images/': 'http://0.0.0.0:9876/images/'
+      '/images/': 'http://0.0.0.0:9876/base/images/'
     },
     preprocessors: {
       [conf.path.src('index.spec.js')]: [
