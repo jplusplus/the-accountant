@@ -113,7 +113,10 @@
       border:0;
       left:$toolbar-width-xs;
       width:calc(100% - #{$toolbar-width-xs});
-      bottom:4rem;
+
+      &--has-footer {
+        bottom:4rem;
+      }
     }
 
     &__year {
