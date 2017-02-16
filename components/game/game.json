@@ -22,7 +22,7 @@
       "value": 1000,
       "private": false,
       "category": "player",
-      "label@en": "Personal account"
+      "label@en": "Your bank account"
     },
     "risk_police": {
       "value": 0,
