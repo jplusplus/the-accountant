@@ -7,9 +7,15 @@
     </p>
   </div>
   <ul class="list-group mt-4" ng-if="$ctrl.game.hasExplainers()">
-    <li class="list-group-item" ng-repeat="explainer in $ctrl.game.explainers">
-      <h5 class="mb-2">{{::explainer.title}}</h5>
-      <p class="mb-1" ng-bind-html="::explainer.body | unsafe"></p>
+    <li ng-repeat="explainer in $ctrl.game.explainers"
+        ng-class="{'main__hints__item--active': $ctrl.isActive(explainer)}"
+        class="list-group-item main__hints__item">
+      <h5 class="main__hints__item__title">
+        <a ui-sref="main.hints({ref: explainer.ref})">
+          {{::explainer.title}}
+        </a>
+      </h5>
+      <p class="mb-1 main__hints__item__body" ng-bind-html="::explainer.body | unsafe"></p>
     </li>
   </ul>
 </div>

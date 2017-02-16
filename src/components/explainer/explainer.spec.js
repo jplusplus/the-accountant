@@ -30,7 +30,7 @@ describe('filter: explainer', () => {
     explainer = new Explainer({
       'title@en': 'Hello there!',
       'body@en': 'This is a very good explainer about how I manage to get a cookie.'
-    });
+    }, 'memo');
   }));
 
   it('should fill text with explainer links', angular.mock.inject($filter => {

@@ -30,9 +30,25 @@
     }
   },
   "years": {
-    "2011": "",
-    "2012": "",
-    "2013": ""
+    "2011": {
+      "title@en": "lorem"
+    },
+    "2012": {
+      "title@en": "dolor"
+    },
+    "2013": {
+      "title@en": "sit"
+    }
+  },
+  "explainers": {
+    "memo": {
+      "title@en": "This is a memo",
+      "body@en": "And a very good one"
+    },
+    "book": {
+      "title@en": "This is a book",
+      "body@en": "And a very good one"
+    }
   },
   "steps": [
     {

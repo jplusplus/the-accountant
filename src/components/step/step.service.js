@@ -117,11 +117,13 @@ function StepService(Choice, Slice, Stack, I18n, Explainer, $rootScope, $log) {
     get explainer() {
       return this.memoize('explainer', () => {
         if (this.hasExplainer()) {
-          // Iterate over helper's slices
-          return _.chain(this.helper.slices).map(slice => {
+          // Iterate over helper's slices to find entity
+          const entity = _.chain(this.helper.slices).map(slice => {
             return Explainer.parse(slice.text);
           // Get the first value (if any)
           }).flatten().first().value();
+          // Create an explainer with this entity
+          return new Explainer(this.game.meta.explainers[entity.ref], entity.ref, this);
         }
         // There is none
         return null;

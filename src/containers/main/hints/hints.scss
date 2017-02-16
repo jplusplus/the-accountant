@@ -1,3 +1,44 @@
-.main__hints__content {
-  background: $card-bg;
+.main__hints {
+
+  &__content {
+    background: $card-bg;
+  }
+
+  &__item {
+
+    padding-top:0;
+    padding-bottom:0;
+
+    &--active {
+      border-left:6px solid $brand-primary;
+    }
+
+    &:not(&--active) {
+      opacity: 0.7;
+    }
+
+    &__title {
+      font-weight: bolder;
+      padding:0;
+      margin:0;
+      width:100%;
+
+      a {
+        padding:$spacer 0;
+        display: block;
+      }
+
+      .main__hints__item--active & a {
+        color:inherit;
+      }
+    }
+
+    &:not(&--active) &__body {
+      display: none;
+    }
+
+    &__body {
+      padding-bottom:$spacer;
+    }
+  }
 }

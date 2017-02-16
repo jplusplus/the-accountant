@@ -162,8 +162,8 @@
 
         &__btn {
           opacity: 0;
-          transform: translate(0, 3rem);
-          animation: slideUp 600ms;
+          transform: translate(3rem, 0);
+          animation: slideLeft 600ms;
           animation-fill-mode: forwards;
           @include animation-delay-loop();
 

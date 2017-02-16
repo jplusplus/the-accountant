@@ -79,9 +79,9 @@ $panel-width:  map-get($grid-breakpoints, md);
   }
 }
 
-@keyframes slideUp {
+@keyframes slideLeft {
   0% {
-    transform: translate(0, 3rem);
+    transform: translate(3rem, 0);
     opacity: 0;
   }
   100% {
