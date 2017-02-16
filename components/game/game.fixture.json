@@ -1,0 +1,211 @@
+{
+  "vars": {
+    "repositories": {
+      "value": 10,
+      "private": false,
+      "category": "risk",
+      "label@en": "Repositories on github"
+    },
+    "risk_unpopularity": {
+      "value": 0,
+      "private": false,
+      "category": "risk",
+      "label@en": "Unpopularity"
+    },
+    "incomes": {
+      "value": 0,
+      "private": true,
+      "category": "performance",
+      "label@en": "Incomes"
+    }
+  },
+  "characters": {
+    "coo": {
+      "name@en": "Anne-Lise Bouyer",
+      "title@en": "COO"
+    },
+    "you": {
+      "name@en": "You",
+      "title@en": "Amazing dev"
+    }
+  },
+  "years": {
+    "2011": {
+      "title@en": "lorem"
+    },
+    "2012": {
+      "title@en": "dolor"
+    },
+    "2013": {
+      "title@en": "sit"
+    }
+  },
+  "explainers": {
+    "memo": {
+      "title@en": "This is a memo",
+      "body@en": "And a very good one"
+    },
+    "book": {
+      "title@en": "This is a book",
+      "body@en": "And a very good one"
+    }
+  },
+  "steps": [
+    {
+      "year": 2011,
+      "texts": [
+        {
+          "character": "coo",
+          "text@en": "Hi there, welcome to J++"
+        },
+        {
+          "character": "coo",
+          "text@en": "This is a great company that open sourced thousand of projects."
+        },
+        {
+          "text@en": "You put a sombrero on your head."
+        },
+        {
+          "character": "coo",
+          "text@en": "Have fun."
+        }
+      ],
+      "choices": [
+        {
+          "text@en": "Thanks",
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "Thank buddy, I'll do my best."
+            }
+          ]
+        },
+        {
+          "text@en": "No thanks",
+          "feedback": []
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "texts": [
+        {
+          "text@en": "Temptation City is released"
+        }
+      ],
+      "helper": [
+        {
+          "character": "coo",
+          "text@en": "You should read this [memo|memo]"
+        }
+      ],
+      "choices": [
+        {
+          "name@en": "Do not open Temptation City",
+          "feedback": [
+            {
+              "character": "coo",
+              "text@en": "How disapointing."
+            }
+          ]
+        },
+        {
+          "name@en": "Open Temptation City",
+          "var_changes": {
+            "repositories": 1
+          },
+          "feedback": [
+            {
+              "character": "coo",
+              "text@en": "That's lovely!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "texts": [
+        {
+          "character": "coo",
+          "text@en": "Do you think we should delete our github account?"
+        }
+      ],
+      "choices": [
+        {
+          "name@en": "No",
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "This is stupid!"
+            }
+          ]
+        },
+        {
+          "name@en": "Yes",
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "Great idea! So everyone will hate me!"
+            }
+          ],
+          "var_changes": {
+            "risk_unpopularity": 20
+          }
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "texts": [
+        {
+          "character": "coo",
+          "text@en": "Do you think we should open every projects?"
+        }
+      ],
+      "choices": [
+        {
+          "name@en": "No",
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "This is stupid! Free softwares are for punks."
+            }
+          ]
+        },
+        {
+          "name@en": "Yes",
+          "feedback": [
+            {
+              "character": "you",
+              "text@en": "Great idea! So everyone will lone me!"
+            }
+          ],
+          "var_changes": {
+            "risk_unpopularity": -100
+          }
+        }
+      ],
+      "condition": {
+        "var": "repositories",
+        "min": 11
+      }
+    }
+  ],
+  "endings": [
+    {
+      "condition": {
+        "var": "risk_unpopularity",
+        "min": 5
+      },
+      "text@en": "<h2>You're fired</h2><p>Nobody likes you!</p>"
+    },
+    {
+      "condition": {
+        "var": "risk_unpopularity",
+        "max": -50
+      },
+      "text@en": "<h2>You're so famous</h2><p>Even Richard Stallman want to mary you!</p>"
+    }
+  ]
+}
