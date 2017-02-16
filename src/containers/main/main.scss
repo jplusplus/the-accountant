@@ -326,28 +326,31 @@
 
       &__year {
         height:.5rem;
-        background: $brand-secondary;
         position: relative;
         filter:grayscale(100%);
         white-space: nowrap;
         padding:0;
+        background:white;
+        border:1px solid #ddd;
         @include transition(600ms);
 
-        .no-cssfilters & {
-          opacity:0.3;
+        &:not(:last-child) {
+          border-right:0;
         }
 
         &--active {
-          filter:grayscale(0%);
-          opacity:1;
+          border-color:transparent;
+          background: #aaa;
+          opacity: 1;
         }
 
-        &:nth-child(even) {
-          background: lighten($brand-secondary, 10);
+        &--active:nth-child(even) {
+          background: #bbb;
         }
 
         &__label {
           font-size: .7rem;
+          padding-bottom:$spacer / 4;
           position: absolute;
           bottom:100%;
           left:50%;
