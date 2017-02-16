@@ -23,7 +23,7 @@ export const mainVars = {
           },
           // Format the value on x
           yFormatFn: value => {
-            return ['€', $filter("number")(value)].join('');
+            return `€${$filter('number')(value)}`;
           },
           // An array of data for this var
           data: _.chain(this.game.history).reduce((hash, choice) => {
