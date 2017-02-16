@@ -93,17 +93,20 @@
 
   &__steps {
     background: white;
-    position: fixed;
-    bottom:4.5rem;
-    top:0;
-    left:$toolbar-width-md;
-    width:calc(100% - #{$toolbar-width-md});
-    max-width: $panel-width;
     overflow: auto;
     border:0.5rem solid $brand-inverse;
-    border-left:0;
-    border-bottom:0;
+    border-left-width:0;
     z-index:500;
+    width:calc(100% - #{$toolbar-width-md});
+    max-width: $panel-width;
+    position: fixed;
+    left:$toolbar-width-md;
+    top:0;
+    bottom:0;
+
+    &--has-footer {
+      bottom:4.5rem;
+    }
 
     @include media-breakpoint-down(sm) {
       font-size:0.9rem;

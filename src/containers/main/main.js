@@ -59,6 +59,9 @@ export const main = {
       // Cancel any existing timeout and restart it
       this.waitNextSlice();
     };
+    this.displayFooter = () => {
+      return $state.is('main');
+    };
     this.visibleYears = () => {
       const years = _.range(this.game.step.year - 2, this.game.step.year + 1);
       // Remove years out of bounds and return the array

@@ -26,7 +26,7 @@
 
   </div>
 
-  <div class="main__steps" ui-view scroll-glue>
+  <div class="main__steps" ui-view scroll-glue ng-class="{ 'main__steps--has-footer': $ctrl.displayFooter() }">
     <div ng-repeat="year in $ctrl.visibleYears()">
       <!-- Display year banner when it starts -->
       <div class="main__steps__year" ng-if="year <= $ctrl.game.step.year">
@@ -47,7 +47,7 @@
           </div>
         </fieldset>
         <!-- Display helpers -->
-        <stack stack="step.helper" game="$ctrl.game" ng-if="step.isLastSlice() && step.hasHelper() && !step.selection"></stack>
+        <stack stack="step.helper" game="$ctrl.game" ng-if="step.displayHelper()"></stack>
         <!-- Display feedback after choices-->
         <stack stack="step.selection" game="$ctrl.game" ng-if="step.selection && step.selection.hasFeedback()"></stack>
       </div>
@@ -67,7 +67,7 @@
     <img ng-src="{{ picture }}"  class="main__picture__img" />
   </div>
 
-  <div class="main__footer">
+  <div class="main__footer" ng-if="$ctrl.displayFooter()">
     <!-- Cancel button when the step is over-->
     <button class="main__footer__undo btn btn-link btn-sm px-3" ng-click="$ctrl.game.undo()" ng-disabled="!$ctrl.game.canUndo()">
       <i class="fa fa-undo fa-fw"></i> Undo last action

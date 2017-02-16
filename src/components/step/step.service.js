@@ -15,7 +15,7 @@ function StepService(Choice, Slice, Stack, I18n, Explainer, $rootScope, $log) {
       this[_game] = game;
       this[_meta] = meta;
       // Ensure those method arround bound to the current instance
-      ['select', 'isCurrent', 'hasCondition', 'undo', 'displayExplainer', 'continue'].forEach(m => {
+      ['select', 'isCurrent', 'hasCondition', 'undo', 'displayHelper', 'continue'].forEach(m => {
         this[m] = this[m].bind(this);
       });
     }
@@ -28,8 +28,8 @@ function StepService(Choice, Slice, Stack, I18n, Explainer, $rootScope, $log) {
     hasHelper() {
       return this[_meta].hasOwnProperty('helper');
     }
-    displayExplainer() {
-      return this.hasExplainer() && !this.selection && this.isLastSlice();
+    displayHelper() {
+      return this.isLastSlice() && this.hasHelper() && !this.selection;
     }
     isPrevious() {
       return this === this.game.journey.slice(-2)[0];
