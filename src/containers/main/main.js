@@ -38,10 +38,18 @@ export const main = {
     };
     // Continue to the next slice OR the next step if possible
     this.continue = () => {
+      // The game didn't start yet
+      if (!this.started) {
+        // Either load or start a new game according to histor
+        if (this.history.length) {
+          this.load();
+        } else {
+          this.start();
+        }
       // This is the last slice and therre is only one choose
-      if (this.game.step.isLastSlice() && this.game.step.choices.length === 1 && !this.game.step.selection) {
+      } else if (this.game.step.isLastSlice() && this.game.step.choices.length === 1 && !this.game.step.selection) {
         // Select the default value
-        this.game.step.select();
+        return this.game.step.select();
       } else {
         // Update last displayed year
         this.year = this.game.step.year;
@@ -63,8 +71,6 @@ export const main = {
       this.started = true;
       // Create a gave
       this.continueTimeout = this.prepareNewYear();
-      // Watch keyboard
-      hotkeys.add({combo: 'space', callback: this.continue});
     };
     // Continue to the last position
     this.load = () => {
@@ -88,6 +94,8 @@ export const main = {
       $scope.$on('game:over', () => $localForage.removeItem('history'));
       // Restart the timer when re-entering this state
       $transitions.onSuccess({to: 'main'}, this.waitNextSlice);
+      // Watch keyboard
+      hotkeys.add({combo: 'space', callback: this.continue});
     };
   }
 };
