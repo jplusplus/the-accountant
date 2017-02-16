@@ -254,8 +254,14 @@
     z-index:-1;
     @include transition(1600ms);
 
+    &.ng-leave.ng-leave-active,
+    &.ng-enter,
     &.ng-hide {
       opacity: 0;
+    }
+
+    &.ng-leave, &.ng-enter-active {
+      opacity: 1;
     }
 
     &:after {

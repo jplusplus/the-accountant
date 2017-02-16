@@ -1,5 +1,6 @@
 <div class="main" ng-class="{'main--has-feedback': $ctrl.showFeedback}">
   <main-toolbar game="$ctrl.game"></main-toolbar>
+
   <div class="main__intro" ng-if="!$ctrl.started">
     <div class="main__intro__content">
       <h1 class="main__intro__content__heading" data-fittext="1">
@@ -21,7 +22,6 @@
         </button>
       </div>
     </div>
-
   </div>
 
   <div class="main__steps" ui-view scroll-glue ng-class="{ 'main__steps--has-footer': $ctrl.displayFooter() }">
@@ -61,7 +61,7 @@
     </div>
   </div>
 
-  <div class="main__picture" ng-repeat="picture in $ctrl.game.pictures track by $index" ng-show="picture === $ctrl.game.picture">
+  <div class="main__picture" ng-repeat="picture in $ctrl.game.pictures track by $index" ng-if="picture === $ctrl.game.picture">
     <img ng-src="{{ picture }}"  class="main__picture__img" />
   </div>
 
