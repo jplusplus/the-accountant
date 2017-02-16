@@ -39,6 +39,7 @@ $enable-flex: true;
 $line-height-base: 1.2;
 
 @import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "node_modules/c3/c3";
 
 $toolbar-width-md: 15rem;
 $toolbar-width-xs: 5rem;

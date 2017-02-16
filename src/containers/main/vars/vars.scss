@@ -1,7 +1,43 @@
 .main__vars {
 
   &__chart {
-    margin:$spacer;
+
+    .main__vars__item__label {
+      padding:0 $grid-gutter-width-base / 2;
+    }
+
+    .c3 {
+      margin:$spacer 0;
+
+      &, .c3-legend-item {
+        font-family: $font-family-sans-serif;
+        font-size:1em;
+      }
+
+      .c3-lines {
+        stroke:rgba($brand-inverse, 0.1) !important;
+      }
+
+      .c3-axis {
+        text {
+          fill: $body-color;
+          color: $body-color;
+        }
+
+        line, path {
+          stroke: rgba($brand-inverse, 0.1);
+        }
+
+        &-y .domain, &-y .tick line {
+          stroke: transparent;
+          fill: transparent;
+        }
+      }
+
+      .c3-ygrid, .c3-axis-x .domain, .c3-axis-x .tick line {
+        stroke:rgba($brand-inverse, 0.1);
+      }
+    }
   }
 
   &__item {

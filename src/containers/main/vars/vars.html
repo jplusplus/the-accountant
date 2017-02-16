@@ -1,11 +1,35 @@
-<div class="main__vars container-fluid" ng-if="$ctrl.game.history.length > 0">
-  <div class="main__vars__chart"></div>
-  <div class="row main__vars__item" ng-repeat="var in $ctrl.game.publicVars|filter:{category: 'city'}">
-    <div class="main__vars__item__label col">
-      {{ var.label }}
+<div class="main__vars">
+  <div class="main__vars__chart main__vars__item" ng-repeat="(name, chart) in $ctrl.charts" ng-if="chart.data.length >= 2">
+    <div class="main__vars__item__label">
+      {{ ::$ctrl.game.var(name).label }}
     </div>
-    <div class="main__vars__item__value col">
-      €{{ var.value | number }} millions
+    <c3chart bindto-id="chart-{{::name}}" padding-right="15">
+      <chart-column column-id="{{::name}}" column-values="{{::chart.data.join(',')}}" column-type="line" />
+      <chart-column column-id="x" column-values="{{::chart.labels.join(',')}}" />
+      <chart-axes values-x="x" y="{{::name}}" />
+      <chart-grid show-x="false" show-y="true" />
+      <chart-colors color-pattern="#dc8459,#d8b041" />
+      <chart-legend show-legend="false" />
+      <chart-points show-point="false" />
+      <chart-tooltip name-format-function="chart.nameFormatFn" />
+      <chart-axis>
+        <chart-axis-x>
+          <chart-axis-x-tick tick-outer="false" />
+        </chart-axis-x>
+        <chart-axis-y>
+          <chart-axis-y-tick tick-outer="false" tick-format-function="chart.yFormatFn" />
+        </chart-axis-y>
+      </chart-axis>
+    </c3chart>
+  </div>
+  <div class="container-fluid">
+    <div class="row main__vars__item" ng-repeat="var in $ctrl.game.publicVars|filter:{category: 'city'}">
+      <div class="main__vars__item__label col">
+        {{ var.label }}
+      </div>
+      <div class="main__vars__item__value col">
+        €{{ var.value | number }} millions
+      </div>
     </div>
   </div>
 </div>

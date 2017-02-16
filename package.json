@@ -98,5 +98,8 @@
       "xo-space/esnext"
     ]
   },
-  "dependencies": {}
+  "dependencies": {
+    "c3": "^0.4.11",
+    "c3-angular": "^1.3.1"
+  }
 }

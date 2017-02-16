@@ -8,6 +8,7 @@ import 'angular-hotkeys';
 import 'ng-fittext';
 import 'localforage';
 import 'angular-localforage';
+import 'c3-angular';
 // Containers
 import {main} from './containers/main/main.js';
 import {mainToolbar} from './containers/main/toolbar/toolbar.js';
@@ -32,10 +33,8 @@ import Var from './components/var/var.service.js';
 import routesConfig from './routes';
 import chartConfig from './chart';
 import modernizrConfig from './modernizr.js';
-
 // Import SCSS with webpack
 import './index.scss';
-
 // For specs
 export const app = 'app';
 
@@ -47,10 +46,11 @@ angular
     'luegg.directives',
     'cfp.hotkeys',
     'ngFitText',
-    'LocalForageModule'
+    'LocalForageModule',
+    'gridshore.c3js.chart'
   ])
   .config(routesConfig)
-  .config(chartConfig)
+  .run(chartConfig)
   .run(modernizrConfig)
   .filter('emoji', emoji)
   .filter('unsafe', unsafe)
