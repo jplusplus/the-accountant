@@ -119,7 +119,7 @@
       "title@en": "The Beginning"
     },
     "1994": {
-      "picture": "images/years/palacio.jpeg",
+      "picture": "images/years/riga.jpeg",
       "title@en": "First Steps"
     },
     "1995": {
@@ -143,7 +143,7 @@
       "title@en": "Be Your Own Boss"
     },
     "2000": {
-      "picture": "images/years/skate.jpeg",
+      "picture": "images/years/berlin.jpeg",
       "title@en": "The Card"
     },
     "2001": {
@@ -167,7 +167,7 @@
       "title@en": "Getting Bigger"
     },
     "2006": {
-      "picture": "images/years/metro-2.jpeg",
+      "picture": "images/years/stairs.jpeg",
       "title@en": "Tentacles"
     },
     "2007": {
@@ -1096,7 +1096,7 @@
         {
           "text@en": "No way, it's unethical",
           "var_changes": {
-            "risk_political": 2
+            "risk_political": 3
           },
           "feedback": [
             {
@@ -1118,7 +1118,7 @@
           ]
         },
         {
-          "text@en": "Sure, you'll run ads praising your actions",
+          "text@en": "Sure, I'll run ads praising your actions",
           "var_changes": {
             "reserves": -0.5
           },
@@ -2300,7 +2300,7 @@
     },
     "accounting_tricks": {
       "title@en": "Accounting tricks",
-      "body@en": "Contrary to popular belief, accounting is very flexible. It has to be flexible, because it needs to honestly represent the financial situation of an institutions and specific situations can be very different from one another.<br><br>One trick consists in considering that all future revenues from a specific revenue stream are actually just one big sum of money that can be accounted for as a lump sum, even if it is paid later. There are times when it is legitimate to do so (e.g you sign a huge contract for something delivered right away but for which the client pays in installments) and cases when it is not (e.g accounting for rents as if they were just one sale)."
+      "body@en": "Contrary to popular belief, accounting is very flexible. It has to be flexible, because it needs to honestly represent the financial situation of an institutions and specific situations can be very different from one another.<br><br>One trick consists in considering that all future revenues from a specific revenue stream are actually just one big sum of money that can be accounted for as a lump sum, even if it is paid later."
     },
     "relatives": {
       "title@en": "Hiring relatives",
