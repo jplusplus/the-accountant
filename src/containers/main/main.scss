@@ -121,7 +121,7 @@
       padding:$spacer;
       padding-top: $spacer * 3;
       font-size: 2.5rem;
-      background:rgba(black, 0.2);
+      background:black;
       color:white;
       font-family: $headings-font-family;
       font-weight: bold;
@@ -136,6 +136,7 @@
         min-width: 100%;
         min-height: 100%;
         transform: translate(-50%, -50%);
+        opacity: 0.7;
       }
     }
 
@@ -168,7 +169,7 @@
           @include animation-delay-loop();
 
           .btn {
-            font-size:1em;
+            font-size:0.9em;
             padding:0.5em;
             font-family: inherit;
             line-height: inherit;
@@ -278,7 +279,6 @@
   &__footer {
     position: absolute;
     bottom:0;
-    top:0;
     left: $toolbar-width-md;
     width:calc(100% - #{$toolbar-width-md});
     max-width: $panel-width;
@@ -286,8 +286,13 @@
     border:0.5rem $brand-inverse solid;
     border-left:0;
     border-top:0;
-    pointer-events: none;
     background: white;
+
+    justify-content: space-around;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+
     @include transition(background 0.6s);
 
     @include media-breakpoint-down(sm) {
@@ -295,77 +300,72 @@
       border:0;
       width:calc(100% - #{$toolbar-width-xs});
     }
-  }
 
-  &__timeline {
-    pointer-events: auto;
-    position: absolute;
-    bottom:0;
-    left: 0;
-    width:100%;
-    background: inherit;
-    z-index:600;
-
-    &.ng-enter, &.ng-leave {
-      @include transition(0.6s);
+    &__undo {
+      cursor: pointer;
     }
 
-    &.ng-leave,
-    &.ng-enter.ng-enter-active {
-      transform: translateX(0);
-    }
-  }
-
-  &__timeline {
-    padding:$spacer * 2 $spacer;
-    height:4rem;
-
-    &.ng-enter,
-    &.ng-leave.ng-leave-active {
-      transform: translateX(-100%);
-    }
-
-    &__year {
-      height:.5rem;
-      background: $brand-secondary;
+    &__timeline {
+      padding:$spacer * 2 $spacer;
+      pointer-events: auto;
+      background: inherit;
+      height:4rem;
+      flex: 1;
       position: relative;
-      filter:grayscale(100%);
-      white-space: nowrap;
-      padding:0;
-      @include transition(600ms);
 
-      .no-cssfilters & {
-        opacity:0.3;
-      }
-
-      &--active {
-        filter:grayscale(0%);
-        opacity:1;
-      }
-
-      &:nth-child(even) {
-        background: lighten($brand-secondary, 10);
-      }
-
-      &__label {
-        font-size: .7rem;
+      &:before {
+        content:"";
+        width:1px;
+        height:80%;
         position: absolute;
-        bottom:100%;
-        left:50%;
-        transform: translateX(-50%);
-        font-family: $headings-font-family;
+        right:100%;
+        top:10%;
+        bottom:0;
+        background: #eee;
       }
 
-      &:nth-child(even) &__label {
-        display: none;
-      }
+      &__year {
+        height:.5rem;
+        background: $brand-secondary;
+        position: relative;
+        filter:grayscale(100%);
+        white-space: nowrap;
+        padding:0;
+        @include transition(600ms);
 
-      @include media-breakpoint-down(sm) {
+        .no-cssfilters & {
+          opacity:0.3;
+        }
+
+        &--active {
+          filter:grayscale(0%);
+          opacity:1;
+        }
+
+        &:nth-child(even) {
+          background: lighten($brand-secondary, 10);
+        }
+
         &__label {
+          font-size: .7rem;
+          position: absolute;
+          bottom:100%;
+          left:50%;
+          transform: translateX(-50%);
+          font-family: $headings-font-family;
+        }
+
+        &:nth-child(even) &__label {
           display: none;
         }
-        &:nth-child(4n+1) &__label {
-          display: block;
+
+        @include media-breakpoint-down(sm) {
+          &__label {
+            display: none;
+          }
+          &:nth-child(4n+1) &__label {
+            display: block;
+          }
         }
       }
     }

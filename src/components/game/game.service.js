@@ -67,6 +67,9 @@ function gameService($log, $rootScope, Step, Var, Ending, Character, I18n) {
     hasExplainers() {
       return this.explainers.length > 0;
     }
+    canUndo() {
+      return this.history.length > 0;
+    }
     update(changes) {
       _.forEach(changes, (value, key) => {
         // Set the value accordingly

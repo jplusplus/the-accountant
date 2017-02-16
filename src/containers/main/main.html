@@ -50,12 +50,6 @@
         <stack stack="step.helper" game="$ctrl.game" ng-if="step.isLastSlice() && step.hasHelper() && !step.selection"></stack>
         <!-- Display feedback after choices-->
         <stack stack="step.selection" game="$ctrl.game" ng-if="step.selection && step.selection.hasFeedback()"></stack>
-        <!-- Cancel button when the step is over-->
-        <fieldset ng-if="step.isDone()">
-          <button class="btn btn-block btn-link btn-sm main__steps__item__undo my-2" ng-click="$ctrl.game.undo()">
-            Undo the last action
-          </button>
-        </fieldset>
       </div>
     </div>
     <!-- Game is over ! -->
@@ -73,12 +67,16 @@
     <img ng-src="{{ picture }}"  class="main__picture__img" />
   </div>
 
-  <div class="main__footer" >
-    <div class="main__timeline">
+  <div class="main__footer">
+    <!-- Cancel button when the step is over-->
+    <button class="main__footer__undo btn btn-link btn-sm px-3" ng-click="$ctrl.game.undo()" ng-disabled="!$ctrl.game.canUndo()">
+      <i class="fa fa-undo fa-fw"></i> Undo last action
+    </button>
+    <div class="main__footer__timeline">
       <div class="container-fluid">
         <div class="row">
-          <div ng-repeat="year in :: $ctrl.game.years" class="col main__timeline__year"  ng-class="{ 'main__timeline__year--active':  year <= $ctrl.game.step.year }">
-            <div class="main__timeline__year__label">
+          <div ng-repeat="year in :: $ctrl.game.years" class="col main__footer__timeline__year"  ng-class="{ 'main__footer__timeline__year--active':  year <= $ctrl.game.step.year }">
+            <div class="main__footer__timeline__year__label">
               {{::year}}
             </div>
           </div>

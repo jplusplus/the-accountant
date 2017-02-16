@@ -13,10 +13,6 @@
       border-left:6px solid $brand-primary;
     }
 
-    &:not(&--active) {
-      opacity: 0.7;
-    }
-
     &__title {
       font-weight: bolder;
       padding:0;
