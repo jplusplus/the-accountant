@@ -1268,7 +1268,7 @@
           "text@en": "Accept",
           "var_changes": {
             "personal_account": 50000,
-            "risk_police": 1
+            "risk_police": 2
           },
           "feedback": [
             {
@@ -1460,7 +1460,7 @@
         },
         {
           "character": "lawyer",
-          "text@en": "Do you want to set up a trash collection company?"
+          "text@en": "Do you want to buy shares in Voelia Environment, which might get the contract next year?"
         }
       ],
       "helper": [
@@ -1471,9 +1471,10 @@
       ],
       "choices": [
         {
-          "text@en": "Yes.",
+          "text@en": "Yes. Invest 50,000 euros.",
           "var_changes": {
-            "trash_company": 1
+            "trash_company": 1,
+            "personal_account": -50000
           },
           "feedback": [
             {
@@ -1486,7 +1487,7 @@
             },
             {
               "character": "lawyer",
-              "text@en": "I'll set it up right away."
+              "text@en": "I'll take care of it."
             }
           ]
         },
@@ -1544,31 +1545,31 @@
       ],
       "choices": [
         {
-          "text@en": "Your company made an offer at 1 million per year",
+          "text@en": "Voelia Environment made an offer at 1.2 million per year",
           "var_changes": {
-            "resources": -1,
-            "personal_account": 10000
+            "resources": -1.2,
+            "personal_account": 150000
           },
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose my company"
+              "text@en": "I choose Voelia Environment."
             },
             {
               "character": "lawyer",
-              "text@en": "I knew it was a good idea!"
+              "text@en": "I knew it was a good idea! Your shares have now tripled in value."
             }
           ]
         },
         {
-          "text@en": "Voelia Environment made an offer at 900,000 per year",
+          "text@en": "SATI Waste Management made an offer at 0.9 million per year",
           "var_changes": {
             "resources": -0.9
           },
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose Voelia Environment"
+              "text@en": "I choose SATI Waste Management"
             },
             {
               "character": "mayor",
@@ -1577,6 +1578,10 @@
             {
               "character": "mayor",
               "text@en": "Private companies running public services, what could go wrong?"
+            },
+            {
+              "character": "lawyer",
+              "text@en": "It's not a very smart move...Now it will be difficult to sell your shares."
             }
           ]
         }
@@ -1614,14 +1619,14 @@
       ],
       "choices": [
         {
-          "text@en": "SATI Waste Management made an offer at 1.2 million per year",
+          "text@en": "Voelia Environment made an offer at 1.2 million per year",
           "var_changes": {
             "resources": -1.2
           },
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose SATI Waste Management"
+              "text@en": "I choose Voelia Environment."
             },
             {
               "character": "mayor",
@@ -1634,14 +1639,14 @@
           ]
         },
         {
-          "text@en": "Voelia Environment made an offer at 900,000 per year",
+          "text@en": "SATI Waste Management made an offer at 900,000 per year",
           "var_changes": {
             "resources": -0.9
           },
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose Voelia Environment"
+              "text@en": "I choose SATI Waste Management."
             },
             {
               "character": "mayor",
