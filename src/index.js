@@ -10,7 +10,6 @@ import 'localforage';
 import 'angular-localforage';
 // Containers
 import {main} from './containers/main/main.js';
-import {mainDebug} from './containers/main/debug/debug.js';
 import {mainToolbar} from './containers/main/toolbar/toolbar.js';
 import {mainHints} from './containers/main/hints/hints.js';
 import {mainVars} from './containers/main/vars/vars.js';
@@ -67,7 +66,6 @@ angular
   .service('Character', Character)
   .service('Ending', Ending)
   .component('main', main)
-  .component('mainDebug', mainDebug)
   .component('mainToolbar', mainToolbar)
   .component('mainHints', mainHints)
   .component('mainVars', mainVars)

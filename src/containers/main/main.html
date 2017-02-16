@@ -1,7 +1,5 @@
 <div class="main" ng-class="{'main--has-feedback': $ctrl.showFeedback}">
-  <main-toolbar game="$ctrl.game" ng-dblclick="debug = !debug"></main-toolbar>
-  <main-debug game="$ctrl.game" ng-if="debug"></main-debug>
-
+  <main-toolbar game="$ctrl.game"></main-toolbar>
   <div class="main__intro" ng-if="!$ctrl.started">
     <div class="main__intro__content">
       <h1 class="main__intro__content__heading" data-fittext="1">
