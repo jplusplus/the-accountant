@@ -54,6 +54,10 @@
     <div class="main__steps__over" ng-if="$ctrl.game.isOver() && !$ctrl.showFeedback">
       <div ng-bind-html="$ctrl.game.end.text | unsafe" class="lead"></div>
       <div class="text-right">
+        <button class="btn btn-link" ng-click="$ctrl.game.undo()">
+          <i class="fa fa-undo fa-fw"></i>
+          Undo last action
+        </button>
         <button class="btn btn-secondary" ng-click="$ctrl.playAgain()">
           Play again
         </button>
