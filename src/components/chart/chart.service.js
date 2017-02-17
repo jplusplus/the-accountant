@@ -38,7 +38,7 @@ function ChartService($filter, I18n) {
     }
     // Format the value on x
     yFormatFn(value) {
-      return `€${$filter('number')(value)}`;
+      return $filter('number')(value);
     }
     get i18n() {
       return this.memoize('i18n', () => {

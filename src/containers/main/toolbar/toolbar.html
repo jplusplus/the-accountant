@@ -3,7 +3,7 @@
     <i class="fa fa-money"></i>
     <span class="hidden-sm-down ml-1">Your bank account</span>
     <div class="main__toolbar__var__digit">
-      €{{ $ctrl.game.var('personal_account').value | number }}
+      {{ $ctrl.game.var('personal_account').value | number }}
     </div>
   </div>
   <div class="main__toolbar__var" ng-repeat="risk in $ctrl.game.publicRisks">
