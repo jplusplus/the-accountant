@@ -1,4 +1,4 @@
-<div class="main__hints container-fluid">
+<div class="main__hints container-fluid pb-4">
   <div ng-if="!$ctrl.game.hasExplainers()" class="m-4 p-4 text-center main__hints__content">
     <i class="fa fa-ambulance fa-4x text-muted"></i>
     <h2>No hints yet</h2>
@@ -9,6 +9,7 @@
   <ul class="list-group mt-4" ng-if="$ctrl.game.hasExplainers()">
     <li ng-repeat="explainer in $ctrl.game.explainers"
         ng-class="{'main__hints__item--active': $ctrl.isActive(explainer)}"
+        id="hint-{{::explainer.ref}}"
         class="list-group-item main__hints__item">
       <h5 class="main__hints__item__title">
         <a ui-sref="main.hints({ref: explainer.ref})">

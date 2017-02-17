@@ -5,6 +5,7 @@ import 'angular-ui-router';
 import 'angular-translate';
 import 'angularjs-scroll-glue';
 import 'angular-hotkeys';
+import 'angular-scroll';
 import 'ng-fittext';
 import 'localforage';
 import 'angular-localforage';
@@ -48,7 +49,8 @@ angular
     'cfp.hotkeys',
     'ngFitText',
     'LocalForageModule',
-    'gridshore.c3js.chart'
+    'gridshore.c3js.chart',
+    'duScroll'
   ])
   .config(routesConfig)
   .run(chartConfig)
