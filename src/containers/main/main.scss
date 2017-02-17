@@ -134,6 +134,11 @@
       animation: fadeIn 1500ms;
       animation-fill-mode: forwards;
 
+      @include media-breakpoint-down(sm) {
+        font-size:1.2rem;
+        padding-top: $spacer;
+      }
+
       &__banner {
         z-index: -1;
         position: absolute;
