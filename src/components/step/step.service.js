@@ -122,8 +122,11 @@ function StepService(Choice, Slice, Stack, I18n, Explainer, $rootScope, $log) {
             return Explainer.parse(slice.text);
           // Get the first value (if any)
           }).flatten().first().value();
-          // Create an explainer with this entity
-          return new Explainer(this.game.meta.explainers[entity.ref], entity.ref, this);
+          // Has entity?
+          if (entity) {
+            // Create an explainer with this entity
+            return new Explainer(this.game.meta.explainers[entity.ref], entity.ref, this);
+          }
         }
         // There is none
         return null;
