@@ -61,6 +61,9 @@ function I18nService($translate) {
     get name() {
       return this.translate('name');
     }
+    get description() {
+      return this.translate('description');
+    }
     get content() {
       return this.translate('content');
     }

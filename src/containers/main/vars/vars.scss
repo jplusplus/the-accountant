@@ -1,9 +1,21 @@
 .main__vars {
 
   &__chart {
+    padding-bottom:$spacer / 2;
+    padding-top:$spacer;
+    border-bottom:  rgba($brand-inverse, 0.1) solid 1px;
 
-    .main__vars__item__label {
+    &__title {
       padding:0 $grid-gutter-width-base / 2;
+      text-transform: uppercase;
+      color: $text-muted;
+      font-weight: bolder;
+    }
+
+    &__description {
+      font-size: 0.9em;
+      color: $text-muted;
+      padding:$spacer / 2 $grid-gutter-width-base / 2 0;
     }
 
     .c3 {
@@ -45,18 +57,6 @@
       .c3-ygrid, .c3-axis-x .domain, .c3-axis-x .tick line {
         stroke:rgba($brand-inverse, 0.1);
       }
-    }
-  }
-
-  &__item {
-    padding-bottom:$spacer / 2;
-    padding-top:$spacer / 2;
-    border-bottom:  rgba($brand-inverse, 0.1) solid 1px;
-
-    &__label {
-      text-transform: uppercase;
-      color: $text-muted;
-      font-weight: bolder;
     }
   }
 }

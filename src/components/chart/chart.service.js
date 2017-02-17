@@ -2,7 +2,7 @@ export default ChartService;
 import _ from 'lodash';
 
 /** @ngInject */
-function ChartService($filter) {
+function ChartService($filter, I18n) {
   // Symbols declarion for private attributes and methods
   const _game = Symbol('game');
   const _memo = Symbol('memo');
@@ -15,7 +15,9 @@ function ChartService($filter) {
     }
     // Format tooltips name
     nameFormatFn(name) {
-      return this.game.var(name).label;
+      return this.memoize('nameFormatFn', name => {
+        return this.game.var(name).label;
+      }, name);
     }
     memoize(name, fn, ...args) {
       // Create memo attribute
@@ -28,23 +30,46 @@ function ChartService($filter) {
       // Recurcive call
       return this.memoize(name, fn, ...args);
     }
+    hasLegend() {
+      return this.vars.length > 1;
+    }
+    get paddingRight() {
+      return this.hasLegend() ? null : 15;
+    }
     // Format the value on x
     yFormatFn(value) {
       return `€${$filter('number')(value)}`;
+    }
+    get i18n() {
+      return this.memoize('i18n', () => {
+        if (this.game.meta.charts && this.game.meta.charts[this.id]) {
+          return new I18n(this.game.meta.charts[this.id]);
+        }
+      });
+    }
+    get title() {
+      return this.i18n ? this.i18n.title : _.map(this.vars, 'label').join(', ');
+    }
+    get description() {
+      return this.i18n ? this.i18n.description : null;
     }
     get id() {
       return this[_id];
     }
     get vars() {
+      return this.memoize('vars', () => {
       // Get id for this var
-      return _.filter(this.game.vars, {chartId: this.id});
+        return _.filter(this.game.vars, {chartId: this.id});
+      });
     }
     get game() {
       return this[_game];
     }
     // From the first year seen the by the user to the last one
     get labels() {
-      return _.range(_.first(this.game.years), this.game.year + 1);
+      return this.memoize('labels', () => {
+        return _.range(_.first(this.game.years), this.game.year + 1);
+      });
     }
     // Collect value by year for the given var
     get valueByYear() {

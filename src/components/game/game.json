@@ -4,21 +4,21 @@
       "value": 10,
       "private": false,
       "category": "city",
-      "chart": "city-finicial-health",
+      "chart": "city-financial-health",
       "label@en": "Resources"
     },
     "expenditures": {
       "value": 9,
       "private": false,
       "category": "city",
-      "chart": "city-finicial-health",
+      "chart": "city-financial-health",
       "label@en": "Expenditures"
     },
     "reserves": {
       "value": 50,
       "private": false,
       "category": "city",
-      "chart": "city-finicial-health",
+      "chart": "city-financial-health",
       "label@en": "Reserves"
     },
     "personal_account": {
@@ -78,6 +78,12 @@
       "value": 0,
       "private": true,
       "category": "choice"
+    }
+  },
+  "charts": {
+    "city-financial-health": {
+      "title@en": "Financial health of the city",
+      "description@en": "Lorem ipsum dolor sit rastafari ✌️"
     }
   },
   "characters": {
