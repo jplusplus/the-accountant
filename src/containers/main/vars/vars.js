@@ -15,8 +15,10 @@ export const mainVars = {
       ['personal_account'].forEach(name => {
         // Create a chart conf for this var
         this.charts[name] = {
+          // Copy the game ref
+          game: this.game,
           // From the first year seen the by the user to the last one
-          labels: _.range(_.first(this.game.years), this.game.year),
+          labels: _.range(_.first(this.game.years), this.game.year + 1),
           // Format tooltips name
           nameFormatFn: name => {
             return this.game.var(name).label;
@@ -25,16 +27,25 @@ export const mainVars = {
           yFormatFn: value => {
             return `€${$filter('number')(value)}`;
           },
-          // An array of data for this var
-          data: _.chain(this.game.history).reduce((hash, choice) => {
-            const y = choice.step.year;
-            // initialize value for this var
-            hash[y] = hash[y] || this.game.var(name).value;
-            // Add the value of a given year
-            hash[y] += choice.changeFor(name);
-            // Return the value by year within a hash
+          // Collect value by year
+          get valueByYear() {
+            const hash = _.reduce(this.game.history, (hash, choice) => {
+              const y = choice.step.year;
+              // initialize value for this var
+              hash[y] = hash[y] || this.game.meta.vars[name].value;
+              // Add the value of a given year
+              hash[y] += choice.changeFor(name);
+              // Return the value by year within a hash
+              return hash;
+            }, {});
+            // Add a value for the current year
+            hash[this.game.year] = this.game.var(name).value;
             return hash;
-          }, {}).values().value()
+          },
+          // An array of data for this var
+          get data() {
+            return _.values(this.valueByYear);
+          }
         };
       });
     };
