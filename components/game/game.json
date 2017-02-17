@@ -1481,7 +1481,7 @@
       ],
       "choices": [
         {
-          "text@en": "Yes. Invest 50,000 euros.",
+          "text@en": "Yes. Invest 50,000.",
           "var_changes": {
             "trash_company": 1,
             "personal_account": -50000
