@@ -44,6 +44,12 @@
           color: $body-color;
         }
 
+        &.c3-axis-x .tick:nth-child(odd) text {
+          @include media-breakpoint-down(sm) {
+            opacity: 0;
+          }
+        }
+
         line, path {
           stroke: rgba($brand-inverse, 0.1);
         }
