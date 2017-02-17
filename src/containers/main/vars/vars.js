@@ -32,7 +32,7 @@ export const mainVars = {
             const hash = _.reduce(this.game.history, (hash, choice) => {
               const y = choice.step.year;
               // initialize value for this var
-              hash[y] = hash[y] || this.game.meta.vars[name].value;
+              hash[y] = hash[y] || hash[y - 1] || this.game.meta.vars[name].value;
               // Add the value of a given year
               hash[y] += choice.changeFor(name);
               // Return the value by year within a hash
