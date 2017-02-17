@@ -32,7 +32,7 @@ describe('component: main.vars', () => {
     expect(personalAccount.valueByYear[1993]).toEqual(personalAccount.data[0]);
   });
 
-  it('should create a year equal to the current value', () => {
+  it('should cumulate values correctly', () => {
     // Get `personal_account` chart description
     const personalAccount = ctrl.charts.personal_account;
     expect(personalAccount.valueByYear[1993]).toEqual(1000);
