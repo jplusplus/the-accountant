@@ -32,6 +32,14 @@ describe('component: main.vars', () => {
     expect(personalAccount.valueByYear[1993]).toEqual(personalAccount.data[0]);
   });
 
+  it('should create a year equal to the current value', () => {
+    // Get `personal_account` chart description
+    const personalAccount = ctrl.charts.personal_account;
+    expect(personalAccount.valueByYear[1993]).toEqual(1000);
+    expect(personalAccount.valueByYear[1994]).toEqual(16000);
+    expect(personalAccount.valueByYear[1995]).toEqual(21000);
+  });
+
   it('should create a value for each year', () => {
     // Get `personal_account` chart description
     const personalAccount = ctrl.charts.personal_account;
