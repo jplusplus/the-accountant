@@ -29,6 +29,9 @@ function VarService(I18n) {
     isWorthIt() {
       return _.some(this.game.endingsFor(this.name), _.property('assert'));
     }
+    isCharted() {
+      return Boolean(this[_meta].chart);
+    }
     get value() {
       return this[_meta].value;
     }
@@ -49,6 +52,9 @@ function VarService(I18n) {
     }
     get public() {
       return !this.private;
+    }
+    get chartId() {
+      return this[_meta].chart === true ? this.name : this[_meta].chart;
     }
     get cases() {
       return _.range(1, 11);

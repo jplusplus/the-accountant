@@ -25,31 +25,33 @@ describe('component: main.vars', () => {
   }));
 
   it('should calculate the cumulated value of `personal_account` though years', () => {
-    // Get `personal_account` chart description
-    const personalAccount = ctrl.charts.personal_account;
+    // Get `personal_account`chart description
+    const chart = ctrl.charts.personal_account;
+    const valueByYear = chart.valueByYear.personal_account;
     // First year should be equal to the initial value
-    expect(personalAccount.valueByYear[1993]).toEqual(game.meta.vars.personal_account.value);
-    expect(personalAccount.valueByYear[1993]).toEqual(personalAccount.data[0]);
+    expect(valueByYear[1993]).toEqual(game.meta.vars.personal_account.value);
   });
 
   it('should cumulate values correctly', () => {
     // Get `personal_account` chart description
-    const personalAccount = ctrl.charts.personal_account;
-    expect(personalAccount.valueByYear[1993]).toEqual(1000);
-    expect(personalAccount.valueByYear[1994]).toEqual(16000);
-    expect(personalAccount.valueByYear[1995]).toEqual(21000);
+    const chart = ctrl.charts.personal_account;
+    const valueByYear = chart.valueByYear.personal_account;
+    expect(valueByYear[1993]).toEqual(1000);
+    expect(valueByYear[1994]).toEqual(16000);
+    expect(valueByYear[1995]).toEqual(21000);
   });
 
   it('should create a value for each year', () => {
     // Get `personal_account` chart description
-    const personalAccount = ctrl.charts.personal_account;
+    const chart = ctrl.charts.personal_account;
     // First year should be equal to the initial value
-    expect(personalAccount.data.length).toEqual(8);
+    expect(chart.data.personal_account.length).toEqual(8);
   });
 
   it('should create a year equal to the current value', () => {
     // Get `personal_account` chart description
-    const personalAccount = ctrl.charts.personal_account;
-    expect(personalAccount.valueByYear[2000]).toEqual(game.var('personal_account').value);
+    const chart = ctrl.charts.personal_account;
+    const valueByYear = chart.valueByYear.personal_account;
+    expect(valueByYear[2000]).toEqual(game.var('personal_account').value);
   });
 });

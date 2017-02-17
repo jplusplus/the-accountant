@@ -14,6 +14,14 @@
         font-size:1em;
       }
 
+      .c3-tooltip th {
+        background-color: $brand-inverse;
+      }
+
+      .c3-tooltip td {
+        border-left:1px solid rgba($brand-inverse, 0.1);
+      }
+
       .c3-lines {
         stroke:rgba($brand-inverse, 0.1) !important;
       }

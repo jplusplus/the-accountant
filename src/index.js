@@ -25,6 +25,7 @@ import I18n from './components/i18n/i18n.service.js';
 import Step from './components/step/step.service.js';
 import Stack from './components/stack/stack.service.js';
 import Slice from './components/slice/slice.service.js';
+import Chart from './components/chart/chart.service.js';
 import Choice from './components/choice/choice.service.js';
 import Character from './components/character/character.service.js';
 import Ending from './components/ending/ending.service.js';
@@ -61,6 +62,7 @@ angular
   .service('Step', Step)
   .service('Stack', Stack)
   .service('Slice', Slice)
+  .service('Chart', Chart)
   .service('Choice', Choice)
   .service('Var', Var)
   .service('Character', Character)

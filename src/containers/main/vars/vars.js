@@ -6,47 +6,25 @@ export const mainVars = {
     game: '<'
   },
   /** @ngInject */
-  controller($filter) {
+  controller(Chart) {
     // List of chart to render
     this.charts = {};
+    // List of charted var
+    this.chartedVars = () => {
+      return _.filter(this.game.vars, _.method('isCharted'));
+    };
+    // List of chart ids
+    this.chartsIds = () => {
+      return _.chain(this.chartedVars()).map('chartId').uniq().value();
+    };
     // After the components have been initialized
     this.$onInit = () => {
+      // For reference inside the charts
+      const game = this.game;
       // Iterate over var's names
-      ['personal_account'].forEach(name => {
+      this.chartsIds().forEach(id => {
         // Create a chart conf for this var
-        this.charts[name] = {
-          // Copy the game ref
-          game: this.game,
-          // From the first year seen the by the user to the last one
-          labels: _.range(_.first(this.game.years), this.game.year + 1),
-          // Format tooltips name
-          nameFormatFn: name => {
-            return this.game.var(name).label;
-          },
-          // Format the value on x
-          yFormatFn: value => {
-            return `€${$filter('number')(value)}`;
-          },
-          // Collect value by year
-          get valueByYear() {
-            const hash = _.reduce(this.game.history, (hash, choice) => {
-              const y = choice.step.year;
-              // initialize value for this var
-              hash[y] = hash[y] || hash[y - 1] || this.game.meta.vars[name].value;
-              // Add the value of a given year
-              hash[y] += choice.changeFor(name);
-              // Return the value by year within a hash
-              return hash;
-            }, {});
-            // Add a value for the current year
-            hash[this.game.year] = this.game.var(name).value;
-            return hash;
-          },
-          // An array of data for this var
-          get data() {
-            return _.values(this.valueByYear);
-          }
-        };
+        this.charts[id] = new Chart(id, game);
       });
     };
   }

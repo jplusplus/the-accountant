@@ -4,24 +4,28 @@
       "value": 10,
       "private": false,
       "category": "city",
+      "chart": "city-finicial-health",
       "label@en": "Resources"
     },
     "expenditures": {
       "value": 9,
       "private": false,
       "category": "city",
+      "chart": "city-finicial-health",
       "label@en": "Expenditures"
     },
     "reserves": {
       "value": 50,
       "private": false,
       "category": "city",
+      "chart": "city-finicial-health",
       "label@en": "Reserves"
     },
     "personal_account": {
       "value": 1000,
       "private": false,
       "category": "player",
+      "chart": true,
       "label@en": "Your bank account"
     },
     "risk_police": {
