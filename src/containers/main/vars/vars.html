@@ -1,30 +1,3 @@
 <div class="main__vars">
-  <div class="main__vars__chart" ng-repeat="(name, chart) in ::$ctrl.charts">
-    <div class="main__vars__chart__title">
-      {{ ::chart.title }}
-    </div>
-    <div class="main__vars__chart__description" ng-bind-html="::chart.description | emoji | unsafe" ng-if="chart.description"></div>
-    <c3chart bindto-id="chart-{{::name}}" padding-right="{{::chart.paddingRight}}">
-      <chart-column ng-repeat="(key, data) in ::chart.data"
-        column-id="{{::key}}"
-        column-values="{{::data.join(',')}}"
-        column-name="{{::chart.nameFormatFn(key)}}"
-        column-type="line" />
-      <chart-column column-id="x" column-values="{{::chart.labels.join(',')}}" />
-      <chart-axes values-x="x" />
-      <chart-grid show-x="false" show-y="true" />
-      <chart-colors color-pattern="#F8C28E,#F8694B,#a14330,#4c2017" />
-      <chart-legend show-legend="{{::chart.hasLegend()}}" legend-position="right" />
-      <chart-points show-point="false" />
-      <chart-tooltip name-format-function="chart.nameFormatFn" />
-      <chart-axis>
-        <chart-axis-x>
-          <chart-axis-x-tick tick-outer="false" />
-        </chart-axis-x>
-        <chart-axis-y>
-          <chart-axis-y-tick tick-outer="false" tick-format-function="chart.yFormatFn" />
-        </chart-axis-y>
-      </chart-axis>
-    </c3chart>
-  </div>
+  <chart chart-id="id" game="$ctrl.game" ng-repeat="id in ::$ctrl.chartsIds()" class="main__vars__chart"></chart>
 </div>

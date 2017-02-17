@@ -17,9 +17,12 @@ import {mainHints} from './containers/main/hints/hints.js';
 import {mainVars} from './containers/main/vars/vars.js';
 // Components
 import {stack} from './components/stack/stack.js';
+import {chart} from './components/chart/chart.js';
+// Filters
 import emoji from './components/emoji/emoji.filter.js';
 import unsafe from './components/unsafe/unsafe.filter.js';
 import explainerFilter from './components/explainer/explainer.filter.js';
+// Services
 import Explainer from './components/explainer/explainer.service.js';
 import Game from './components/game/game.service.js';
 import I18n from './components/i18n/i18n.service.js';
@@ -73,4 +76,5 @@ angular
   .component('mainToolbar', mainToolbar)
   .component('mainHints', mainHints)
   .component('mainVars', mainVars)
-  .component('stack', stack);
+  .component('stack', stack)
+  .component('chart', chart);

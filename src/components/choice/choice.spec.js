@@ -1,6 +1,5 @@
 import angular from 'angular';
 import 'angular-mocks';
-import 'angular-hotkeys';
 // Import the whole app
 import '../../index';
 // Import a fixture game config

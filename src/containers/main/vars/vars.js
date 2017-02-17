@@ -6,7 +6,7 @@ export const mainVars = {
     game: '<'
   },
   /** @ngInject */
-  controller(Chart) {
+  controller() {
     // List of chart to render
     this.charts = {};
     // List of charted var
@@ -16,16 +16,6 @@ export const mainVars = {
     // List of chart ids
     this.chartsIds = () => {
       return _.chain(this.chartedVars()).map('chartId').uniq().value();
-    };
-    // After the components have been initialized
-    this.$onInit = () => {
-      // For reference inside the charts
-      const game = this.game;
-      // Iterate over var's names
-      this.chartsIds().forEach(id => {
-        // Create a chart conf for this var
-        this.charts[id] = new Chart(id, game);
-      });
     };
   }
 };

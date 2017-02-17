@@ -20,38 +20,9 @@ describe('component: main.vars', () => {
     game.load(HISTORY);
     // Instanciate the main component
     ctrl = $componentController('mainVars', {}, {game});
-    // Init the component just like ui-router does
-    ctrl.$onInit();
   }));
 
-  it('should calculate the cumulated value of `personal_account` though years', () => {
-    // Get `personal_account`chart description
-    const chart = ctrl.charts.personal_account;
-    const valueByYear = chart.valueByYear.personal_account;
-    // First year should be equal to the initial value
-    expect(valueByYear[1993]).toEqual(game.meta.vars.personal_account.value);
-  });
-
-  it('should cumulate values correctly', () => {
-    // Get `personal_account` chart description
-    const chart = ctrl.charts.personal_account;
-    const valueByYear = chart.valueByYear.personal_account;
-    expect(valueByYear[1993]).toEqual(1000);
-    expect(valueByYear[1994]).toEqual(16000);
-    expect(valueByYear[1995]).toEqual(21000);
-  });
-
-  it('should create a value for each year', () => {
-    // Get `personal_account` chart description
-    const chart = ctrl.charts.personal_account;
-    // First year should be equal to the initial value
-    expect(chart.data.personal_account.length).toEqual(8);
-  });
-
-  it('should create a year equal to the current value', () => {
-    // Get `personal_account` chart description
-    const chart = ctrl.charts.personal_account;
-    const valueByYear = chart.valueByYear.personal_account;
-    expect(valueByYear[2000]).toEqual(game.var('personal_account').value);
+  it('should create 2 charts', () => {
+    expect(ctrl.chartsIds().length).toEqual(2);
   });
 });

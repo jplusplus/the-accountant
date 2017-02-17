@@ -1,0 +1,66 @@
+.chart {
+  padding-bottom:$spacer / 2;
+  padding-top:$spacer;
+  border-bottom:  rgba($brand-inverse, 0.1) solid 1px;
+
+  &__title {
+    padding:0 $grid-gutter-width-base / 2;
+    text-transform: uppercase;
+    color: $text-muted;
+    font-weight: bolder;
+  }
+
+  &__description {
+    font-size: 0.9em;
+    color: $text-muted;
+    padding:$spacer / 2 $grid-gutter-width-base / 2 0;
+  }
+
+  .c3 {
+    margin:$spacer 0;
+
+    &, .c3-legend-item {
+      font-family: $font-family-sans-serif;
+      font-size:1em;
+      color: $body-color;
+    }
+
+    .c3-tooltip th {
+      background-color: $brand-inverse;
+    }
+
+    .c3-tooltip td {
+      border-left:1px solid rgba($brand-inverse, 0.1);
+    }
+
+    .c3-lines {
+      stroke:rgba($brand-inverse, 0.1) !important;
+    }
+
+    .c3-axis {
+      text {
+        fill: $body-color;
+        color: $body-color;
+      }
+
+      &.c3-axis-x .tick:nth-child(odd) text {
+        @include media-breakpoint-down(sm) {
+          opacity: 0;
+        }
+      }
+
+      line, path {
+        stroke: rgba($brand-inverse, 0.1);
+      }
+
+      &-y .domain, &-y .tick line {
+        stroke: transparent;
+        fill: transparent;
+      }
+    }
+
+    .c3-ygrid, .c3-axis-x .domain, .c3-axis-x .tick line {
+      stroke:rgba($brand-inverse, 0.1);
+    }
+  }
+}
