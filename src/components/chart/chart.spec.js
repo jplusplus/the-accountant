@@ -34,9 +34,9 @@ describe('component: chart', () => {
   it('should cumulate values correctly', () => {
     // Get `personal_account` chart description
     const valueByYear = ctrl.chart.valueByYear.personal_account;
-    expect(valueByYear[1993]).toEqual(1000);
-    expect(valueByYear[1994]).toEqual(16000);
-    expect(valueByYear[1995]).toEqual(21000);
+    expect(valueByYear[1993]).toEqual(0);
+    expect(valueByYear[1994]).toEqual(15000);
+    expect(valueByYear[1995]).toEqual(20000);
   });
 
   it('should create a value for each year', () => {
