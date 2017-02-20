@@ -22,11 +22,11 @@
       "label@en": "Reserves"
     },
     "personal_account": {
-      "value": 1000,
+      "value": 0,
       "private": false,
       "category": "player",
       "chart": true,
-      "label@en": "Your bank account"
+      "label@en": "Your cash"
     },
     "risk_police": {
       "value": 0,
@@ -298,9 +298,9 @@
       ],
       "choices": [
         {
-          "text@en": "Robert Construction Limited made an offer at 20 million",
+          "text@en": "Robert Construction Limited made an offer at 12 million",
           "var_changes": {
-            "reserves": -20,
+            "reserves": -12,
             "gift_company2": 1
           },
           "feedback": [
@@ -311,9 +311,9 @@
           ]
         },
         {
-          "text@en": "Eco-Sense Construction made an offer at 21 million",
+          "text@en": "Eco-Sense Construction made an offer at 12.1 million",
           "var_changes": {
-            "reserves": -21,
+            "reserves": -12.1,
             "risk_contractors": 1
           },
           "feedback": [
@@ -340,9 +340,9 @@
           ]
         },
         {
-          "text@en": "Concrete Construction made an offer at 22 million",
+          "text@en": "Concrete Construction made an offer at 12.2 million",
           "var_changes": {
-            "reserves": -22,
+            "reserves": -12.2,
             "risk_contractors": 1
           },
           "feedback": [
@@ -640,15 +640,15 @@
       ],
       "choices": [
         {
-          "text@en": "Robert Construction Limited made an offer for 10 million",
+          "text@en": "Concrete Construction made an offer for 7 million",
           "var_changes": {
-            "reserves": -10,
+            "reserves": -7,
             "personal_account": 1000
           },
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose the offer of Robert Construction Limited"
+              "text@en": "I choose the offer of Concrete Construction"
             },
             {
               "character": "construction-boss",
@@ -661,15 +661,15 @@
           ]
         },
         {
-          "text@en": "Concrete Construction made an offer for 10.2 million",
+          "text@en": "Robert Construction Limited made an offer for 7.1 million",
           "var_changes": {
-            "reserves": -10.2,
+            "reserves": -7.1,
             "risk_contractors": 1
           },
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose the offer of Concrete Construction."
+              "text@en": "I choose the offer of Robert Construction Limited."
             },
             {
               "character": "construction-boss",
@@ -682,9 +682,9 @@
           ]
         },
         {
-          "text@en": "Eco-Sense Construction made an offer for 11 million",
+          "text@en": "Eco-Sense Construction made an offer for 7.2 million",
           "var_changes": {
-            "reserves": -11,
+            "reserves": -7.2,
             "risk_contractors": 1
           },
           "feedback": [
@@ -861,9 +861,9 @@
       ],
       "choices": [
         {
-          "text@en": "Your company made an offer for 5 million",
+          "text@en": "Your company made an offer for 3.5 million",
           "var_changes": {
-            "reserves": -5,
+            "reserves": -3.5,
             "risk_police": 1,
             "personal_account": 100000
           },
@@ -883,9 +883,9 @@
           ]
         },
         {
-          "text@en": "Concrete Construction made an offer for 5.5 million",
+          "text@en": "Concrete Construction made an offer for 3.6 million",
           "var_changes": {
-            "reserves": -5.5,
+            "reserves": -3.6,
             "risk_contractors": 1
           },
           "feedback": [
@@ -904,9 +904,9 @@
           ]
         },
         {
-          "text@en": "Robert Construction Limited made an offer for 6 million",
+          "text@en": "Robert Construction Limited made an offer for 3.7 million",
           "var_changes": {
-            "reserves": -6,
+            "reserves": -3.7,
             "risk_contractors": 1
           },
           "feedback": [
@@ -954,9 +954,9 @@
       ],
       "choices": [
         {
-          "text@en": "Robert Construction Limited made an offer for 5 million",
+          "text@en": "Robert Construction Limited made an offer for 3.5 million",
           "var_changes": {
-            "reserves": -5,
+            "reserves": -3.5,
             "personal_account": 1000
           },
           "feedback": [
@@ -975,9 +975,9 @@
           ]
         },
         {
-          "text@en": "Concrete Construction made an offer for 5.5 million",
+          "text@en": "Concrete Construction made an offer for 3.6 million",
           "var_changes": {
-            "reserves": -5.5,
+            "reserves": -3.6,
             "risk_contractors": 1
           },
           "feedback": [
@@ -996,9 +996,9 @@
           ]
         },
         {
-          "text@en": "Eco-Sense Construction made an offer for 6 million",
+          "text@en": "Eco-Sense Construction made an offer for 3.7 million",
           "var_changes": {
-            "reserves": -6,
+            "reserves": -3.7,
             "risk_contractors": 1
           },
           "feedback": [
@@ -1470,13 +1470,11 @@
         },
         {
           "character": "lawyer",
-          "text@en": "Do you want to buy shares in Voelia Environment, which might get the contract next year?"
-        }
-      ],
-      "helper": [
+          "text@en": "Do you want to buy shares in Voelia Environment, a trash collection company?"
+        },
         {
-          "character": "helper",
-          "text@en": "Here's a [memo on privatizations|privatization], just in case."
+          "character": "lawyer",
+          "text@en": "They might get the contract next year."
         }
       ],
       "choices": [
@@ -1489,7 +1487,7 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "Yes, good idea."
+              "text@en": "Yes, good idea, I'll put in 50,000."
             },
             {
               "character": "lawyer",
@@ -1517,7 +1515,7 @@
             },
             {
               "character": "lawyer",
-              "text@en": "But you should know entrepreneurship is all the rage, nowadays."
+              "text@en": "But you should invest your money more wisely."
             }
           ]
         }
@@ -1550,7 +1548,7 @@
       "helper": [
         {
           "character": "helper",
-          "text@en": "My [memo on privatizations|privatization] is still fresh."
+          "text@en": "I wrote a [memo on privatizations|privatization] for you."
         }
       ],
       "choices": [
@@ -1567,7 +1565,7 @@
             },
             {
               "character": "lawyer",
-              "text@en": "I knew it was a good idea! Your shares have now tripled in value."
+              "text@en": "I knew it was a good idea! Your shares have tripled in value."
             }
           ]
         },
@@ -1591,7 +1589,7 @@
             },
             {
               "character": "lawyer",
-              "text@en": "It's not a very smart move...Now it will be difficult to sell your shares."
+              "text@en": "It's not a very smart move... Now it will be difficult to sell your shares in Voelia."
             }
           ]
         }
@@ -1624,7 +1622,7 @@
       "helper": [
         {
           "character": "helper",
-          "text@en": "My [memo on privatizations|privatization] is still fresh."
+          "text@en": "I wrote a [memo on privatizations|privatization] for you."
         }
       ],
       "choices": [
@@ -2204,23 +2202,23 @@
       ],
       "choices": [
         {
-          "text@en": "Your company made an offer at 1 million.",
+          "text@en": "Your company made an offer at 575,000.",
           "var_changes": {
-            "reserves": -1,
+            "reserves": -0.575,
             "personal_account": 100000
           }
         },
         {
-          "text@en": "Robert Construction Limited made an offer at 1.2 million.",
+          "text@en": "Robert Construction Limited made an offer at 600,000.",
           "var_changes": {
-            "reserves": -1.2,
+            "reserves": -0.6,
             "risk_contractors": 1
           }
         },
         {
-          "text@en": "Eco-Sense Construction made an offer at 1.3 million.",
+          "text@en": "Eco-Sense Construction made an offer at 620,000.",
           "var_changes": {
-            "reserves": -1.3,
+            "reserves": -0.62,
             "risk_contractors": 1
           }
         }
@@ -2233,14 +2231,14 @@
         "var": "risk_political",
         "min": 2
       },
-      "text@en": "<h2>You're fired: You lost!</h2><p>Your choices have made you unpopular. The mayor requests a career change for you. You're now in charge of welcoming guests at the city museum. How culturally enriching!</p>"
+      "text@en": "<h2>You're fired: You lost!</h2><p>You managed to have good relations with the contractors and to avoid the police, but your choices have made you unpopular. The mayor requests a career change for you. You're now in charge of welcoming guests at the city museum. How culturally enriching!</p>"
     },
     {
       "condition": {
         "var": "risk_police",
         "min": 2
       },
-      "text@en": "<h2>Busted: You lost!</h2><p>The anticorruption police charged you with misapropriation of public funds. Relax, you probably won't go to prison, but the mayor demands that you resign.</p>"
+      "text@en": "<h2>Busted: You lost!</h2><p>You managed to have good relations with the contractors while remaining popular. The mayor likes you, but the anticorruption police charged you with misapropriation of public funds. Relax, you probably won't go to prison, but the mayor demands that you resign.</p>"
     },
     {
       "condition": {
