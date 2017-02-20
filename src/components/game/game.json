@@ -2233,14 +2233,14 @@
         "var": "risk_political",
         "min": 2
       },
-      "text@en": "<h2>You're fired: You lost!</h2><p>Your choices have made you unpopular. The mayor requests a career change for you. You're now in charge of welcoming guests at the city museum. How culturally enriching!</p>"
+      "text@en": "<h2>You're fired: You lost!</h2><p>You managed to have good relations with the contractors and to avoid the police, but your choices have made you unpopular. The mayor requests a career change for you. You're now in charge of welcoming guests at the city museum. How culturally enriching!</p>"
     },
     {
       "condition": {
         "var": "risk_police",
         "min": 2
       },
-      "text@en": "<h2>Busted: You lost!</h2><p>The anticorruption police charged you with misapropriation of public funds. Relax, you probably won't go to prison, but the mayor demands that you resign.</p>"
+      "text@en": "<h2>Busted: You lost!</h2><p>You managed to have good relations with the contractors while remaining popular. The mayor likes you, but the anticorruption police charged you with misapropriation of public funds. Relax, you probably won't go to prison, but the mayor demands that you resign.</p>"
     },
     {
       "condition": {
