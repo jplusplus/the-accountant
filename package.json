@@ -99,6 +99,7 @@
     ]
   },
   "dependencies": {
+    "angular-marked": "^1.2.2",
     "angular-scroll": "^1.0.0",
     "babel-plugin-transform-class-properties": "^6.23.0",
     "c3": "^0.4.11",

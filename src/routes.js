@@ -25,5 +25,25 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
       params: {
         ref: null
       }
+    })
+    .state('main.page', {
+      component: 'mainPage',
+      url: 'page/:slug',
+      params: {
+        language: {
+          value: null
+        }
+      },
+      resolve: {
+        /** @ngInject */
+        markdown: ($stateParams, $http, $translate) => {
+          // Find the current language
+          const language = $stateParams.language || $translate.proposedLanguage() || $translate.use() || 'en';
+          // Build the markdown path
+          const path = `markdowns/${$stateParams.slug}/${language}.md`;
+          // Return a promise
+          return $http.get(path).then(res => res.data);
+        }
+      }
     });
 }

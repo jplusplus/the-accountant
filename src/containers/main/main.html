@@ -1,7 +1,7 @@
 <div class="main" ng-class="{'main--has-feedback': $ctrl.showFeedback}">
   <main-toolbar game="$ctrl.game"></main-toolbar>
 
-  <div class="main__intro" ng-if="!$ctrl.started">
+  <div class="main__intro" ng-if="!$ctrl.started && ('main' | isState)">
     <div class="main__intro__content">
       <h1 class="main__intro__content__heading" data-fittext="1">
         The Good, The Bad<br /> and The Accountant

@@ -10,11 +10,14 @@ import 'ng-fittext';
 import 'localforage';
 import 'angular-localforage';
 import 'c3-angular';
+import 'marked';
+import 'angular-marked';
 // Containers
 import {main} from './containers/main/main.js';
 import {mainToolbar} from './containers/main/toolbar/toolbar.js';
 import {mainHints} from './containers/main/hints/hints.js';
 import {mainVars} from './containers/main/vars/vars.js';
+import {mainPage} from './containers/main/page/page.js';
 // Components
 import {stack} from './components/stack/stack.js';
 import {chart} from './components/chart/chart.js';
@@ -45,6 +48,7 @@ export const app = 'app';
 
 angular
   .module(app, [
+    'hc.marked',
     'pascalprecht.translate',
     'ngAnimate',
     'ui.router',
@@ -76,5 +80,6 @@ angular
   .component('mainToolbar', mainToolbar)
   .component('mainHints', mainHints)
   .component('mainVars', mainVars)
+  .component('mainPage', mainPage)
   .component('stack', stack)
   .component('chart', chart);

@@ -50,6 +50,7 @@ $panel-width:  map-get($grid-breakpoints, md);
 @import "containers/main/main.scss";
 @import "containers/main/toolbar/toolbar.scss";
 @import "containers/main/hints/hints.scss";
+@import "containers/main/page/page.scss";
 @import "containers/main/vars/vars.scss";
 @import "components/stack/stack.scss";
 @import "components/chart/chart.scss";

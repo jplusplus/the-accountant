@@ -1,0 +1,10 @@
+.main__page {
+  &__content {
+    padding:$spacer;
+
+    h1 {
+      border-bottom:1px solid #eee;
+      padding-bottom: $spacer / 2;
+    }
+  }
+}
