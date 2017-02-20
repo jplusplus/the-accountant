@@ -2,6 +2,7 @@ import angular from 'angular';
 import 'angular-mocks';
 import 'angular-translate';
 import I18nService from '../i18n/i18n.service';
+import memoizeMixinService from '../memoize/memoize.service';
 import CharacterService from './character.service';
 
 describe('filter: character', () => {
@@ -21,6 +22,7 @@ describe('filter: character', () => {
 
   beforeEach(() => {
     angular.module('character', ['pascalprecht.translate'])
+      .service('memoizeMixin', memoizeMixinService)
       .service('I18n', I18nService)
       .service('Character', CharacterService);
     angular.mock.module('character');

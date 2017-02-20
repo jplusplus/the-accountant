@@ -29,6 +29,7 @@ import explainerFilter from './components/explainer/explainer.filter.js';
 import Explainer from './components/explainer/explainer.service.js';
 import Game from './components/game/game.service.js';
 import I18n from './components/i18n/i18n.service.js';
+import memoizeMixin from './components/memoize/memoize.service.js';
 import Step from './components/step/step.service.js';
 import Stack from './components/stack/stack.service.js';
 import Slice from './components/slice/slice.service.js';
@@ -68,6 +69,7 @@ angular
   .service('Explainer', Explainer)
   .service('Game', Game)
   .service('I18n', I18n)
+  .service('memoizeMixin', memoizeMixin)
   .service('Step', Step)
   .service('Stack', Stack)
   .service('Slice', Slice)

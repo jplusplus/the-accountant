@@ -2,6 +2,7 @@ import angular from 'angular';
 import 'angular-mocks';
 import 'angular-translate';
 import I18nService from './i18n.service';
+import memoizeMixinService from '../memoize/memoize.service';
 
 describe('filter: i18n', () => {
   const fixture = {
@@ -18,7 +19,9 @@ describe('filter: i18n', () => {
   let i18n;
 
   beforeEach(() => {
-    angular.module('i18n', ['pascalprecht.translate']).service('I18n', I18nService);
+    angular.module('i18n', ['pascalprecht.translate'])
+      .service('memoizeMixin', memoizeMixinService)
+      .service('I18n', I18nService);
     angular.mock.module('i18n');
   });
 

@@ -3,9 +3,8 @@ import _ from 'lodash';
 import game from './game.json';
 
 /** @ngInject */
-function gameService($log, $rootScope, Step, Var, Ending, Character, I18n) {
+function gameService($log, $rootScope, Step, Var, Ending, Character, I18n, memoizeMixin) {
   // Symbols declarion for private attributes and methods
-  const _memo = Symbol('memo');
   const _meta = Symbol('meta');
   const _vars = Symbol('vars');
   const _history = Symbol('history');
@@ -13,8 +12,6 @@ function gameService($log, $rootScope, Step, Var, Ending, Character, I18n) {
 
   class Game {
     constructor(meta) {
-      // Hash to hold memoized results
-      this[_memo] = {};
       // Load meta data
       this[_meta] = angular.copy(meta || game);
       // Build step using meta data
@@ -27,14 +24,6 @@ function gameService($log, $rootScope, Step, Var, Ending, Character, I18n) {
       $log.info(`Starting game with ${this.steps.length} steps`);
       // And broadcast a starting event
       $rootScope.$broadcast('game:start', this);
-    }
-    memoize(name, fn, ...args) {
-      if (this[_memo].hasOwnProperty(name)) {
-        return this[_memo][name](...args);
-      }
-      this[_memo][name] = _.memoize(fn);
-      // Recurcive call
-      return this.memoize(name, fn, ...args);
     }
     isCurrent(step) {
       return step.isCurrent();
@@ -312,5 +301,5 @@ function gameService($log, $rootScope, Step, Var, Ending, Character, I18n) {
       }
     }
   }
-  return Game;
+  return memoizeMixin(Game);
 }

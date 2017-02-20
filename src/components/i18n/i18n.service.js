@@ -2,15 +2,12 @@ export default I18nService;
 import _ from 'lodash';
 
 /** @ngInject */
-function I18nService($translate) {
-  const _memo = Symbol('memo');
+function I18nService($translate, memoizeMixin) {
   const _meta = Symbol('meta');
   const _fields = Symbol('fields');
 
   class I18n {
     constructor(meta) {
-      // Hash to hold memoized results
-      this[_memo] = {};
       // Metadata of this instance
       this[_meta] = meta;
       // Build field list
@@ -27,14 +24,6 @@ function I18nService($translate) {
       }
       // Return all fields translated
       return this.t;
-    }
-    memoize(name, fn, ...args) {
-      if (this[_memo].hasOwnProperty(name)) {
-        return this[_memo][name](...args);
-      }
-      this[_memo][name] = _.memoize(fn);
-      // Recurcive call
-      return this.memoize(name, fn, ...args);
     }
     // Translate all fields
     get t() {
@@ -78,5 +67,5 @@ function I18nService($translate) {
     }
   }
 
-  return I18n;
+  return memoizeMixin(I18n);
 }

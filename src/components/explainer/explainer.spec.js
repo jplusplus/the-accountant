@@ -3,6 +3,7 @@ import 'angular-mocks';
 import 'angular-translate';
 import 'angular-ui-router';
 import I18nService from '../i18n/i18n.service';
+import memoizeMixinService from '../memoize/memoize.service';
 import ExplainerService from './explainer.service';
 import explainerFilter from './explainer.filter';
 
@@ -12,6 +13,7 @@ describe('filter: explainer', () => {
   beforeEach(() => {
     angular.module('explainer', ['pascalprecht.translate', 'ui.router'])
       .service('I18n', I18nService)
+      .service('memoizeMixin', memoizeMixinService)
       .service('Explainer', ExplainerService)
       .filter('explainer', explainerFilter)
       .config($stateProvider => {
