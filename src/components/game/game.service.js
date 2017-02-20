@@ -23,10 +23,6 @@ function gameService($log, $rootScope, Step, Var, Ending, Character, I18n) {
       this[_meta].endings = _.castArray(this[_meta].endings).map(meta => new Ending(meta, this));
       // Prepare vars according to choice's history
       this.apply();
-      // Ensure those method arround bound to the current instance
-      ['continue'].forEach(m => {
-        this[m] = this[m].bind(this);
-      });
       // Notice the user
       $log.info(`Starting game with ${this.steps.length} steps`);
       // And broadcast a starting event
@@ -136,7 +132,7 @@ function gameService($log, $rootScope, Step, Var, Ending, Character, I18n) {
       // Invalidate the journey cache key
       this.invalidateJourney();
     }
-    continue() {
+    continue = () => {
       this.lastStack.continue();
       // Invalidate the journey cache key
       this.invalidateJourney();

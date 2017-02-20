@@ -18,26 +18,26 @@ function StackService(Slice, I18n) {
       // Save the parent
       this[_parent] = parent;
       // Ensure those method arround bound to the current instance
-      ['continue', 'isLastSlice', 'clusterFilter', 'sliceFilter'].forEach(m => {
+      ['sliceFilter'].forEach(m => {
         this[m] = this[m].bind(this);
       });
     }
-    isStartingSlice() {
+    isStartingSlice = () => {
       return this.slice === -1;
     }
-    isFirstSlice() {
+    isFirstSlice = () => {
       return this.slice === 0;
     }
-    isLastSlice() {
+    isLastSlice = () => {
       return this.slice === this.slices.length - 1;
     }
-    continue() {
+    continue = () => {
       this.slice = this.slice + 1;
     }
     finalSlice() {
       this.slice = this.slices.length - 1;
     }
-    clusterFilter(cluster, index) {
+    clusterFilter = (cluster, index) => {
       // Clusters before this one
       const previous = this.clusters.slice(0, index);
       // Count seen slices within those clusters
