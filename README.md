@@ -3,6 +3,7 @@
 [![Code Climate](https://codeclimate.com/github/jplusplus/the-accountant/badges/gpa.svg)](https://codeclimate.com/github/jplusplus/the-accountant)
 [![Build Status](https://travis-ci.org/jplusplus/the-accountant.svg?branch=master)](https://travis-ci.org/jplusplus/the-accountant)
 [![Coverage Status](https://coveralls.io/repos/github/jplusplus/the-accountant/badge.svg?branch=master)](https://coveralls.io/github/jplusplus/the-accountant?branch=master)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b65cf5498d7d4f5b99214c1f6e2b297b)](https://www.codacy.com/app/pirhoo/the-accountant)
 
 ## Getting Started
 
