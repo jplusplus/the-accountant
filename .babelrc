@@ -5,8 +5,7 @@
   "env": {
     "test": {
       "plugins": [
-        "istanbul",
-        "transform-class-properties"
+        "istanbul"
       ]
     }
   }

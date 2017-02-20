@@ -13,12 +13,12 @@ function ChartService($filter, I18n, memoizeMixin) {
       this[_game] = game;
     }
     // Format tooltips name
-    nameFormatFn = name => {
+    nameFormatFn(name) {
       return this.memoize('nameFormatFn', name => {
         return (this.game.var(name) || {}).label || name;
       }, name);
     }
-    hasLegend = () => {
+    hasLegend() {
       return this.vars.length > 1;
     }
     // Format the value on x
