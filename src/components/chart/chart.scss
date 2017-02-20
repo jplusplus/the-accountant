@@ -43,9 +43,16 @@
         color: $body-color;
       }
 
-      &.c3-axis-x .tick:nth-child(odd) text {
+      &-x .tick text {
         @include media-breakpoint-down(sm) {
           opacity: 0;
+        }
+      }
+
+      &-x .tick:nth-child(4n+0) text {
+        @include media-breakpoint-down(sm) {
+          opacity: 1 !important;
+          display: block !important;
         }
       }
 

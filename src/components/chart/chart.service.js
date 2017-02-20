@@ -14,12 +14,12 @@ function ChartService($filter, I18n) {
       this[_game] = game;
     }
     // Format tooltips name
-    nameFormatFn(name) {
+    nameFormatFn = name => {
       return this.memoize('nameFormatFn', name => {
-        return this.game.var(name).label;
+        return (this.game.var(name) || {}).label || name;
       }, name);
     }
-    memoize(name, fn, ...args) {
+    memoize = (name, fn, ...args) => {
       // Create memo attribute
       this[_memo] = this[_memo] || {};
       // A memoize function already has been created
@@ -30,15 +30,15 @@ function ChartService($filter, I18n) {
       // Recurcive call
       return this.memoize(name, fn, ...args);
     }
-    hasLegend() {
+    hasLegend = () => {
       return this.vars.length > 1;
-    }
-    get paddingRight() {
-      return this.hasLegend() ? null : 15;
     }
     // Format the value on x
     yFormatFn(value) {
       return $filter('number')(value);
+    }
+    get paddingRight() {
+      return this.hasLegend() ? null : 15;
     }
     get i18n() {
       return this.memoize('i18n', () => {
