@@ -22,11 +22,11 @@
       "label@en": "Reserves"
     },
     "personal_account": {
-      "value": 1000,
+      "value": 0,
       "private": false,
       "category": "player",
       "chart": true,
-      "label@en": "Your bank account"
+      "label@en": "Your cash"
     },
     "risk_police": {
       "value": 0,
