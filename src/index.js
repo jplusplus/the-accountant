@@ -46,9 +46,9 @@ import Var from './components/var/var.service.js';
 // Configurations
 import {routesConfig, gaRun} from './routes';
 import chartRun from './chart';
-import modernizrRun from './modernizr.js';
-import translateConfig from './translate.js';
 import markedConfig from './marked.js';
+import modernizrRun from './modernizr.js';
+import {translateConfig, translateRun} from './translate.js';
 // Import SCSS with webpack
 import './index.scss';
 // For specs
@@ -75,6 +75,7 @@ angular
   .run(gaRun)
   .run(chartRun)
   .run(modernizrRun)
+  .run(translateRun)
   .filter('emoji', emoji)
   .filter('unsafe', unsafe)
   .filter('explainer', explainerFilter)

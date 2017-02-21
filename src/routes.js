@@ -3,13 +3,16 @@ import Uri from 'jsuri';
 
 /** @ngInject */
 module.exports.routesConfig = function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
-  $locationProvider.html5Mode(false);
+  $locationProvider.html5Mode(false).hashPrefix('');
   $urlRouterProvider.otherwise('/');
 
   $stateProvider
     .state('main', {
-      url: '/',
+      url: '/?lang',
       component: 'main',
+      params: {
+        lang: null
+      },
       resolve: {
         /** @ngInject */
         game: Game => new Game(),
