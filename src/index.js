@@ -12,6 +12,7 @@ import 'angular-localforage';
 import 'c3-angular';
 import 'marked';
 import 'angular-marked';
+import 'angular-socialshare';
 // Containers
 import {main} from './containers/main/main.js';
 import {mainToolbar} from './containers/main/toolbar/toolbar.js';
@@ -58,7 +59,8 @@ angular
     'ngFitText',
     'LocalForageModule',
     'gridshore.c3js.chart',
-    'duScroll'
+    'duScroll',
+    '720kb.socialshare'
   ])
   .config(routesConfig)
   .run(chartConfig)
