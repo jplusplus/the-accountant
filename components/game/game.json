@@ -1886,7 +1886,7 @@
         {
           "text@en": "Refuse! Accounting should not be fiddled with.",
           "var_changes": {
-            "reserves": 0
+            "risk_political": 1
           },
           "feedback": [
             {
