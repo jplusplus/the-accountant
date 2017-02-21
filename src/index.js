@@ -48,6 +48,7 @@ import routesConfig from './routes';
 import chartConfig from './chart';
 import modernizrConfig from './modernizr.js';
 import translateConfig from './translate.js';
+import markedConfig from './marked.js';
 // Import SCSS with webpack
 import './index.scss';
 // For specs
@@ -70,6 +71,7 @@ angular
   ])
   .config(routesConfig)
   .config(translateConfig)
+  .config(markedConfig)
   .run(chartConfig)
   .run(modernizrConfig)
   .filter('emoji', emoji)
