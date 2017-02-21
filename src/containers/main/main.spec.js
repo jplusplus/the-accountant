@@ -20,7 +20,6 @@ describe('component: main', () => {
     angular.mock.module('app');
   });
 
-
   beforeEach(angular.mock.inject((_$rootScope_, _$compile_, _$componentController_, _$timeout_, _Game_) => {
     $componentController = _$componentController_;
     $rootScope = _$rootScope_;
