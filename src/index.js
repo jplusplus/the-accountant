@@ -1,18 +1,22 @@
 // External modules
 import angular from 'angular';
 import 'angular-animate';
-import 'angular-ui-router';
-import 'angular-translate';
-import 'angularjs-scroll-glue';
+import 'angular-cookies';
 import 'angular-hotkeys';
+import 'angular-localforage';
+import 'angular-marked';
 import 'angular-scroll';
+import 'angular-socialshare';
+import 'angular-translate';
+import 'angular-translate-loader-static-files';
+import 'angular-translate-storage-cookie';
+import 'angular-translate-storage-local';
+import 'angular-ui-router';
+import 'angularjs-scroll-glue';
 import 'ng-fittext';
 import 'localforage';
-import 'angular-localforage';
 import 'c3-angular';
 import 'marked';
-import 'angular-marked';
-import 'angular-socialshare';
 // Containers
 import {main} from './containers/main/main.js';
 import {mainToolbar} from './containers/main/toolbar/toolbar.js';
@@ -43,6 +47,7 @@ import Var from './components/var/var.service.js';
 import routesConfig from './routes';
 import chartConfig from './chart';
 import modernizrConfig from './modernizr.js';
+import translateConfig from './translate.js';
 // Import SCSS with webpack
 import './index.scss';
 // For specs
@@ -50,9 +55,10 @@ export const app = 'app';
 
 angular
   .module(app, [
+    'ngAnimate',
+    'ngCookies',
     'hc.marked',
     'pascalprecht.translate',
-    'ngAnimate',
     'ui.router',
     'luegg.directives',
     'cfp.hotkeys',
@@ -63,6 +69,7 @@ angular
     '720kb.socialshare'
   ])
   .config(routesConfig)
+  .config(translateConfig)
   .run(chartConfig)
   .run(modernizrConfig)
   .filter('emoji', emoji)

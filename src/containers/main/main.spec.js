@@ -12,8 +12,14 @@ describe('component: main', () => {
   let Game;
 
   beforeEach(() => {
+    angular.module('app').config($translateProvider => {
+      $translateProvider.translations('en', {});
+      $translateProvider.translations('fr', {});
+      $translateProvider.preferredLanguage('en');
+    });
     angular.mock.module('app');
   });
+
 
   beforeEach(angular.mock.inject((_$rootScope_, _$compile_, _$componentController_, _$timeout_, _Game_) => {
     $componentController = _$componentController_;
@@ -31,7 +37,7 @@ describe('component: main', () => {
     // Apply a digest
     $scope.$digest();
     const h1 = element.find('h1').eq(0);
-    expect(h1.text().trim()).toEqual('The Good, The Bad and The Accountant');
+    expect(h1.text().trim()).toEqual('main.toolbar.heading');
   });
 
   it('should init a timeout after start', () => {

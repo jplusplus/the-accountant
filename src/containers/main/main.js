@@ -7,7 +7,8 @@ export const main = {
     history: '<'
   },
   /** @ngInject */
-  controller($state, $scope, $timeout, hotkeys, $transitions, $localForage) {
+  controller($state, $scope, $timeout, hotkeys, $transitions, $localForage, $translate) {
+    $translate.use('en');
     // Method to start a new party
     this.playAgain = this.start = () => {
       // Simply create a new instance of game

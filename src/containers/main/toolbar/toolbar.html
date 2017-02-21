@@ -1,10 +1,8 @@
 <div class="main__toolbar text-md-left">
-  <h1 class="main__toolbar__heading" data-fittext="1">
-    The Good, The Bad<br /> and The Accountant
-  </h1>
+  <h1 class="main__toolbar__heading" data-fittext="1" translate>main.toolbar.heading</h1>
   <div class="main__toolbar__var">
     <i class="fa fa-money"></i>
-    <span class="hidden-sm-down ml-1">Your cash</span>
+    <span class="hidden-sm-down ml-1">{{ $ctrl.game.var('personal_account').label }}</span>
     <div class="main__toolbar__var__digit">
       {{ $ctrl.game.var('personal_account').value | number }}
     </div>
@@ -24,40 +22,43 @@
   <div class="main__toolbar__link mt-4" ui-sref-active-eq="active">
     <a ui-sref="main">
       <i class="fa fa-comments-o fa-fw"></i>
-      <span class="hidden-sm-down ml-1">Chats</span>
+      <span class="hidden-sm-down ml-1" translate>main.toolbar.links.chats</span>
     </a>
   </div>
   <div class="main__toolbar__link" ui-sref-active-eq="active">
     <a ui-sref="main.hints">
       <i class="fa fa-ambulance fa-fw"></i>
-      <span class="hidden-sm-down ml-1">Hints</span>
+      <span class="hidden-sm-down ml-1" translate>main.toolbar.links.hints</span>
     </a>
   </div>
   <div class="main__toolbar__link" ui-sref-active-eq="active">
     <a ui-sref="main.vars">
       <i class="fa fa-line-chart fa-fw"></i>
-      <span class="hidden-sm-down ml-1">Indicators</span>
+      <span class="hidden-sm-down ml-1" translate>main.toolbar.links.indicators</span>
     </a>
   </div>
   <div class="main__toolbar__link" ui-sref-active="active">
     <a ui-sref="main.page({slug: 'about'})">
       <i class="fa fa-info fa-fw"></i>
-      <span class="hidden-sm-down ml-1">About</span>
+      <span class="hidden-sm-down ml-1" translate>main.toolbar.links.about</span>
     </a>
   </div>
 
   <div class="main__toolbar__share">
     <div class="main__toolbar__share__label">
-      <span data-fittext="1">Share</span>
+      <span data-fittext="1" translate>main.toolbar.share.label</span>
     </div>
-    <a class="main__toolbar__share__button" href="#" socialshare socialshare-provider="twitter" socialshare-url="https://jplusplus.github.io/the-accountant/">
+    <a class="main__toolbar__share__button" href="#" socialshare socialshare-provider="twitter" socialshare-url="{{'app.url' | translate}}"  translate-attr="{title: 'main.toolbar.share.twitter'}">
       <i class="fa fa-twitter fa-fw"></i>
+      <span class="sr-only" translate>main.toolbar.share.twitter</span>
     </a>
-    <a class="main__toolbar__share__button" href="#" socialshare socialshare-provider="facebook" socialshare-url="https://jplusplus.github.io/the-accountant/">
+    <a class="main__toolbar__share__button" href="#" socialshare socialshare-provider="facebook" socialshare-url="{{'app.url' | translate}}"  translate-attr="{title: 'main.toolbar.share.facebook'}">
       <i class="fa fa-facebook fa-fw"></i>
+      <span class="sr-only" translate>main.toolbar.share.facebook</span>
     </a>
-    <a class="main__toolbar__share__button" href="#" socialshare socialshare-provider="reddit" socialshare-url="https://jplusplus.github.io/the-accountant/">
+    <a class="main__toolbar__share__button" href="#" socialshare socialshare-provider="reddit" socialshare-url="{{'app.url' | translate}}"  translate-attr="{title: 'main.toolbar.share.reddit'}">
       <i class="fa fa-reddit fa-fw"></i>
+      <span class="sr-only" translate>main.toolbar.share.reddit</span>
     </a>
   </div>
 </div>

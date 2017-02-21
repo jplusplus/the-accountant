@@ -1,10 +1,8 @@
 <div class="main__hints container-fluid pb-4">
   <div ng-if="!$ctrl.game.hasExplainers()" class="m-4 p-4 text-center main__hints__content">
     <i class="fa fa-ambulance fa-4x text-muted"></i>
-    <h2>No hints yet</h2>
-    <p class="lead">
-      Hints are collected during the game.
-    </p>
+    <h2 translate>main.hints.none</h2>
+    <p class="lead" translate>main.hints.description</p>
   </div>
   <ul class="list-group mt-4" ng-if="$ctrl.game.hasExplainers()">
     <li ng-repeat="explainer in $ctrl.game.explainers"
