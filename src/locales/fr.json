@@ -1,41 +1,41 @@
 {
   "app": {
-    "title": "The Good, The Bad and The Accountant",
+    "title": "Le Bon, La Brute et Le Comptable",
     "url": "https://jplusplus.github.io/the-accountant/"
   },
   "main": {
     "intro": {
-      "heading": "The Good, The Bad<br /> and The Accountant",
-      "meta": "— by <a href='http://jplusplus.org' target='_blank'>Journalism++</a>",
-      "description": "<p>You're the general manager of a large city. Balance ethics and corruption to keep your position and get things done. Whatever happens, don't get caught!</p><p>Every example in the game is based on real cases.</p>",
-      "new-game": "Start a new game",
-      "continue": "Continue"
+      "heading": "Le Bon, La Brute<br />et Le Comptable",
+      "meta": "— par <a href='http://jplusplus.org' target='_blank'>Journalism++</a>",
+      "description": "<p>Vous êtes le directeur de cabinet du maire d'une grande ville. Equilibrez éthique et corruption pour conserver votre job. Quoi qu'il arrive, ne vous faites pas attraper!</p><p>Chaque exemple du jeu est tiré de faits réels.</p>",
+      "new-game": "Nouvelle partie",
+      "continue": "Continuer"
     },
     "steps": {
-      "undo": "Undo <span class='hidden-xs-down'>last action</span>",
+      "undo": "Annuler <span class='hidden-xs-down'>la dernière action</span>",
       "over": {
-        "undo": "Undo last action",
-        "again": "Play again"
+        "undo": "Annuler la dernière action",
+        "again": "Recommencer"
       }
     },
     "toolbar": {
-      "heading": "The Good, The Bad<br /> and The Accountant",
+      "heading": "Le Bon, La Brute<br />et Le Comptable",
       "links": {
-        "chats": "Chats",
-        "hints": "Hints",
-        "indicators": "Indicators",
-        "about": "About"
+        "chats": "Conversations",
+        "hints": "Aide",
+        "indicators": "Indicateurs",
+        "about": "A propos"
       },
       "share": {
-        "label": "Share",
-        "twitter": "Share on Twitter",
-        "facebook": "Share on Facebook",
-        "reddit": "Share on Reddit"
+        "label": "Partager",
+        "twitter": "Partager sur Twitter",
+        "facebook": "Partager sur Facebook",
+        "reddit": "Partager sur Reddit"
       }
     },
     "hints": {
-      "none": "No hints yet",
-      "description": "Hints are collected during the game."
+      "none": "Aucune aide disponible pour l'instant",
+      "description": "Les textes d'aides sont collectés durant le jeu."
     }
   }
 }
