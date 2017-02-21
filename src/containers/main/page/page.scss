@@ -1,10 +1,11 @@
 .main__page {
   &__content {
-    padding:$spacer;
+    padding:$spacer * 2;
 
     h1 {
       border-bottom:1px solid #eee;
       padding-bottom: $spacer / 2;
+      margin-bottom: $spacer * 2;
     }
   }
 }
