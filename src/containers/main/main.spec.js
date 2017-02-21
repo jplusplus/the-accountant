@@ -30,7 +30,7 @@ describe('component: main', () => {
     const element = $compile('<main game="game"></main>')($scope);
     // Apply a digest
     $scope.$digest();
-    const h1 = element.find('h1');
+    const h1 = element.find('.main__intro__content__heading');
     expect(h1.text().trim()).toEqual('The Good, The Bad and The Accountant');
   });
 
