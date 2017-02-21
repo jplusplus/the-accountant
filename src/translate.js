@@ -1,5 +1,7 @@
 /** @ngInject */
-module.exports.translateConfig = function translateConfig($translateProvider) {
+module.exports.translateConfig = function translateConfig($translateProvider, tmhDynamicLocaleProvider) {
+  // Load current locale
+  tmhDynamicLocaleProvider.localeLocationPattern('//code.angularjs.org/1.2.20/i18n/angular-locale_{{locale}}.js');
   // Configure Angular Translate
   $translateProvider
     .useStaticFilesLoader({
@@ -21,7 +23,7 @@ module.exports.translateConfig = function translateConfig($translateProvider) {
 };
 
 /** @ngInject */
-module.exports.translateRun = function translateRun($transitions, $location, $translate) {
+module.exports.translateRun = function translateRun($transitions, $location, $translate, tmhDynamicLocale) {
   // Redirect to login if route requires auth and you're not logged in
   $transitions.onSuccess({}, () => {
     // Get lang from location search
@@ -30,6 +32,7 @@ module.exports.translateRun = function translateRun($transitions, $location, $tr
     if ($translate.getAvailableLanguageKeys().indexOf(lang) > -1) {
       // Update current language
       $translate.use(lang);
+      tmhDynamicLocale.set(lang.slice(0, 2));
     }
   });
 };

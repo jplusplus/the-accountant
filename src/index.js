@@ -2,6 +2,7 @@
 import angular from 'angular';
 import 'angular-animate';
 import 'angular-cookies';
+import 'angular-dynamic-locale';
 import 'angular-hotkeys';
 import 'angular-localforage';
 import 'angular-marked';
@@ -67,6 +68,7 @@ angular
     'LocalForageModule',
     'gridshore.c3js.chart',
     'duScroll',
+    'tmh.dynamicLocale',
     '720kb.socialshare'
   ])
   .config(routesConfig)
