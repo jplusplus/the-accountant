@@ -83,7 +83,7 @@
   "charts": {
     "city-financial-health": {
       "title@en": "Financial health of the city",
-      "description@en": "Lorem ipsum dolor sit rastafari ✌️"
+      "description@en": "City financials tell you how much money the city collects each year (resources) and spends (expenditure), while reserves tell you how much money the city has in the bank."
     }
   },
   "characters": {

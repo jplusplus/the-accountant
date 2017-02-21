@@ -9,7 +9,6 @@ Several studies from [Sweden](http://www.nordicacademicpress.com/bok/a-clean-hou
 # How does it work
 
 Users have to make decisions based on questions. Several variables help them make choices. City financials tell them how much money the city collects each year **resources** and spends **expenditure**, while **reserves** tell the user how much money the city has in the bank.
-
  
 **Risk political** increases with unpopular decisions, **Risk contractors** increases when the user makes a choices that contractors won’t like and **Risk police** increases when the user does something illegal.
 
