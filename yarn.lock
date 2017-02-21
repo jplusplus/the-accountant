@@ -3824,6 +3824,10 @@ jstransform@~3.0.0:
     esprima-fb "~3001.1.0-dev-harmony-fb"
     source-map "0.1.31"
 
+jsuri@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/jsuri/-/jsuri-1.3.1.tgz#cd93fc6a87b255142cb7b0f479f00517ab9395ed"
+
 karma-angular-filesort@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/karma-angular-filesort/-/karma-angular-filesort-1.0.2.tgz#216d141ab48cd5929d7a22ea815774ca9effb53f"

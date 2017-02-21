@@ -1,7 +1,7 @@
-export default chartConfig;
+export default chartRun;
 
 /** @ngInject */
-function chartConfig($window) {
+function chartRun($window) {
   // We need a few global variable
   $window.c3 = require('c3');
 }

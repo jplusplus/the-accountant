@@ -1,8 +1,8 @@
-export default modernizrConfig;
+export default modernizrRun;
 import Modernizr from 'modernizr';
 
 /** @ngInject */
-function modernizrConfig($window) {
+function modernizrRun($window) {
   // Here are all the values we will test. If you want to use just one or two, comment out the lines of test you don't need.
   const tests = [
     // False positive in IE, supports SVG clip-path, but not on HTML element

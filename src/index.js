@@ -44,9 +44,9 @@ import Character from './components/character/character.service.js';
 import Ending from './components/ending/ending.service.js';
 import Var from './components/var/var.service.js';
 // Configurations
-import routesConfig from './routes';
-import chartConfig from './chart';
-import modernizrConfig from './modernizr.js';
+import {routesConfig, gaRun} from './routes';
+import chartRun from './chart';
+import modernizrRun from './modernizr.js';
 import translateConfig from './translate.js';
 import markedConfig from './marked.js';
 // Import SCSS with webpack
@@ -72,8 +72,9 @@ angular
   .config(routesConfig)
   .config(translateConfig)
   .config(markedConfig)
-  .run(chartConfig)
-  .run(modernizrConfig)
+  .run(gaRun)
+  .run(chartRun)
+  .run(modernizrRun)
   .filter('emoji', emoji)
   .filter('unsafe', unsafe)
   .filter('explainer', explainerFilter)
