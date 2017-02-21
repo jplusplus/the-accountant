@@ -1,0 +1,41 @@
+{
+  "app": {
+    "title": "The Good, The Bad and The Accountant",
+    "url": "https://jplusplus.github.io/the-accountant/"
+  },
+  "main": {
+    "intro": {
+      "heading": "The Good, The Bad<br /> and The Accountant",
+      "meta": "— by <a href='http://jplusplus.org' target='_blank'>Journalism++</a>",
+      "description": "<p>You're the general manager of a large city. Balance ethics and corruption to keep your position and get things done. Whatever happens, don't get caught!</p><p>Every example in the game is based on real cases.</p>",
+      "new-game": "Start a new game",
+      "continue": "Continue"
+    },
+    "steps": {
+      "undo": "Undo <span class='hidden-xs-down'>last action</span>",
+      "over": {
+        "undo": "Undo last action",
+        "again": "Play again"
+      }
+    },
+    "toolbar": {
+      "heading": "The Good, The Bad<br /> and The Accountant",
+      "links": {
+        "chats": "Chats",
+        "hints": "Hints",
+        "indicators": "Indicators",
+        "about": "About"
+      },
+      "share": {
+        "label": "Share",
+        "twitter": "Share on Twitter",
+        "facebook": "Share on Facebook",
+        "reddit": "Share on Reddit"
+      }
+    },
+    "hints": {
+      "none": "No hints yet",
+      "description": "Hints are collected during the game."
+    }
+  }
+}
