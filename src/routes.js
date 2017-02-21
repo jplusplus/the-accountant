@@ -2,7 +2,7 @@ import _ from 'lodash';
 import Uri from 'jsuri';
 
 /** @ngInject */
-export const routesConfig = ($stateProvider, $urlRouterProvider, $locationProvider) => {
+module.exports.routesConfig = function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
   $locationProvider.html5Mode(false);
   $urlRouterProvider.otherwise('/');
 
@@ -50,7 +50,7 @@ export const routesConfig = ($stateProvider, $urlRouterProvider, $locationProvid
 };
 
 /** @ngInject */
-export const gaRun = ($transitions, $window, $location) => {
+module.exports.gaRun = function gaRun($transitions, $window, $location) {
   // Redirect to login if route requires auth and you're not logged in
   $transitions.onSuccess({}, transition => {
     const identifier = transition.targetState().identifier();
