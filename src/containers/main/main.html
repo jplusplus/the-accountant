@@ -24,7 +24,7 @@
     </div>
   </div>
 
-  <div class="main__steps" id="main-panel" ui-view scroll-glue ng-class="{ 'main__steps--has-footer': $ctrl.displayFooter() }">
+  <div class="main__steps" id="main-panel" ui-view scroll-glue="'main' | isState" ng-class="{ 'main__steps--has-footer': $ctrl.displayFooter() }">
     <div ng-repeat="year in $ctrl.visibleYears()">
       <!-- Display year banner when it starts -->
       <div class="main__steps__year" ng-if="year <= $ctrl.game.step.year">
