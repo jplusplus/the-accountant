@@ -39,10 +39,10 @@
       content:"";
       position: absolute;
       right:0;
-      width:0;
+      width:1px;
       height:1.5rem;
-      background-size:100% 100%;
-      @include transition(0.4s);
+      background-size:cover;
+      @include transition(width 0.4s);
     }
 
     &:before {
