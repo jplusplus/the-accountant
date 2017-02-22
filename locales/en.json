@@ -4,6 +4,7 @@
     "url": "https://jplusplus.github.io/the-accountant/"
   },
   "main": {
+    "back": "Back to the game",
     "intro": {
       "heading": "The Good, The Bad<br /> and The Accountant",
       "meta": "— by <a href='http://jplusplus.org' target='_blank'>Journalism++</a>",

@@ -4,6 +4,7 @@
     "url": "https://jplusplus.github.io/the-accountant/"
   },
   "main": {
+    "back": "Revenir au jeu",
     "intro": {
       "heading": "Le Bon, La Brute<br />et Le Comptable",
       "meta": "— par <a href='http://jplusplus.org' target='_blank'>Journalism++</a>",
