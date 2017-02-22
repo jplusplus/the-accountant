@@ -91,6 +91,46 @@
     }
   }
 
+  &__back {
+    position: sticky;
+    top:0;
+    left:0;
+    right:0;
+    margin-bottom:$spacer;
+    background: $brand-primary;
+
+    a {
+      padding:$spacer;
+      color:white;
+      display: block;
+      position: relative;
+      padding-left:calc(#{$line-height-base * 1em} + #{$spacer * 3});
+
+      &:before {
+        content:"";
+        background:mix($brand-primary, white);
+        position: absolute;
+        left:0;
+        top:0;
+        bottom:0;
+        width:calc(#{$line-height-base * 1rem} + #{$spacer * 2});
+      }
+
+      &:after {
+        font-size: 3rem;
+        content:"\f104";
+        position: absolute;
+        top:50%;
+        left:0;
+        width: calc(#{$line-height-base * 1rem} + #{$spacer * 2});
+        text-align: center;
+        transform: translate(0, -50%);
+        color: $brand-primary;
+        font-family:FontAwesome;
+      }
+    }
+  }
+
   &__steps {
     background: white;
     overflow: auto;
