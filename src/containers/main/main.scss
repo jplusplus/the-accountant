@@ -185,11 +185,12 @@
             font-family: inherit;
             line-height: inherit;
             margin: auto;
+            cursor: pointer;
+            white-space: normal;
           }
         }
 
-
-        html.supports &__btn:first-child:last-child .btn {
+        &__btn:first-child:last-child .btn {
           border-radius:0.5rem;
         }
 
@@ -199,43 +200,6 @@
 
         &__btn:last-child .btn {
           border-radius:0 0 0.5rem 0.5rem;
-        }
-
-        .no-flexbox & .col-lg {
-          float:none;
-          clear: left;
-          width: 100%;
-          max-width: 100%;
-        }
-
-        @include media-breakpoint-up(lg) {
-
-          html.flexbox &__btn:first-child .btn {
-            border-radius:0.5rem 0 0 0.5rem;
-          }
-
-          html.flexbox &__btn:last-child .btn {
-            border-radius:0 0.5rem 0.5rem 0;
-          }
-
-          html.flexbox &__btn:not(:first-child) {
-            padding-left:2px;
-          }
-
-          html.flexbox &__btn:not(:last-child) {
-            padding-right:2px;
-          }
-        }
-      }
-
-      .btn {
-        cursor: pointer;
-        white-space: normal;
-        height:100%;
-
-        &:not(.active):disabled {
-          opacity: .3;
-          filter:grayscale(100);
         }
       }
     }

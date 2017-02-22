@@ -1,4 +1,5 @@
 const conf = require('./gulp.conf');
+const isOSX = process.env.TRAVIS_OS_NAME === 'osx';
 
 module.exports = function (config) {
   const configuration = {
@@ -9,7 +10,7 @@ module.exports = function (config) {
     junitReporter: {
       outputDir: 'test-reports'
     },
-    browsers: ['PhantomJS'].concat(process.env.TRAVIS_OS_NAME == 'osx' ? ['Safari'] : []),
+    browsers: ['PhantomJS'].concat(isOSX ? ['Safari'] : []),
     frameworks: [
       'jasmine'
     ],
@@ -54,6 +55,7 @@ module.exports = function (config) {
       require('karma-coverage'),
       require('karma-coveralls'),
       require('karma-phantomjs-launcher'),
+      require('karma-safari-launcher'),
       require('karma-phantomjs-shim'),
       require('karma-ng-html2js-preprocessor'),
       require('karma-webpack')

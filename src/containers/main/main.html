@@ -25,8 +25,8 @@
         <stack stack="step" game="$ctrl.game"></stack>
         <!-- Display choices-->
         <fieldset class="main__steps__item__choices" ng-if="step.isLastSlice() && !step.selection">
-          <div class="list-unstyled row mb-0">
-            <div class="col-lg mt-1 main__steps__item__choices__btn" ng-class="{ 'col-lg-6': step.choices.length > 3 }" ng-repeat="choice in :: step.choices">
+          <div class="list-unstyled mb-0">
+            <div class="mt-1 main__steps__item__choices__btn" ng-class="{ 'col-lg-6': step.choices.length > 3 }" ng-repeat="choice in :: step.choices">
               <button class="btn btn-block btn-sm btn-primary" ng-click="step.select(choice)" ng-class="{ active: step.selection == choice }">
                 {{::choice.text}}
               </button>
