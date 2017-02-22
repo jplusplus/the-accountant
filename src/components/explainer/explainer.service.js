@@ -6,7 +6,7 @@ function ExplainerService(I18n) {
   const _open = Symbol('open');
   const _step = Symbol('step');
   const _ref = Symbol('ref');
-  const REGEX_ENTITIES = new RegExp(/\[((.*?)\|(\w*))\]/, 'g');
+  const REGEX_ENTITIES = new RegExp(/\[((.*?)\|(\w*))\]/g);
 
   class Explainer extends I18n {
     constructor(meta, ref, step) {
