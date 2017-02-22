@@ -8,7 +8,7 @@
   color: white;
   width: $toolbar-width-md;
   z-index:1000;
-  overflow: visible;
+  overflow: hidden;
   text-align: center;
 
   @include media-breakpoint-down(sm) {
@@ -34,15 +34,70 @@
       font-size:1.5rem;
     }
 
+    &:before,
+    &:after {
+      content:"";
+      position: absolute;
+      right:0;
+      width:0;
+      height:1.5rem;
+      background-size:100% 100%;
+      @include transition(0.4s);
+    }
+
+    &:before {
+      background-image:url('images/corner-top.svg');
+      bottom:100%;
+    }
+
+    &:after {
+      background-image:url('images/corner-bottom.svg');
+      top:100%;
+    }
+
+    &.active {
+      &:before, &:after {
+        width:1.5rem;
+      }
+
+      a {
+        color: $brand-inverse;
+        &:before {
+          transform: translateX(0%);
+        }
+      }
+    }
+
+
     a {
       padding:$spacer / 2;
       display: block;
       color:inherit;
       width:100%;
+      margin-left:$spacer / 2;
+      width: calc(100% - #{$spacer /2});
+      position: relative;
+      @include transition(0.4s);
+
+      &:before {
+        content:"";
+        position: absolute;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        z-index:-1;
+        background:white;
+        border-radius:0.5rem 0 0 0.5rem;
+        transform: translateX(100%);
+        @include transition(0.4s);
+      }
 
       &:hover, &:active, &:focus {
         text-decoration: none;
+        outline: 0;
       }
+
 
       i {
         position: relative;
@@ -55,50 +110,6 @@
           transform: translate(-50%, -50%);
           border-radius: 0.5em;
           font-family: $font-family-sans-serif;
-        }
-      }
-    }
-
-    &.active {
-      position: relative;
-
-      .cssclippathcircle &:before {
-        content:"";
-        position: absolute;
-        right:0;
-        top:-15px;
-        bottom:-15px;
-        width: 15px;
-        background: white;
-      }
-
-      a {
-        color: $brand-inverse;
-        margin-left:$spacer / 2;
-        width: calc(100% - #{$spacer /2});
-        background:white;
-        border-radius: 0.5rem 0 0 0.5rem;
-        position: relative;
-
-        .cssclippathcircle &:before, .cssclippathcircle &:after {
-          content:"";
-          position: absolute;
-          right:0;
-          width:15px;
-          height:15px;
-          background:$brand-inverse;
-        }
-
-        &:before {
-          bottom:100%;
-          clip-path: circle(100% at 0% 0%);
-          -webkit-clip-path: circle(100% at 0% 0%);
-        }
-
-        &:after {
-          top:100%;
-          clip-path: circle(100% at 0% 100%);
-          -webkit-clip-path: circle(100% at 0% 100%);
         }
       }
     }
