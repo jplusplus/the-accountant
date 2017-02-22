@@ -9,9 +9,7 @@ module.exports = function (config) {
     junitReporter: {
       outputDir: 'test-reports'
     },
-    browsers: [
-      'PhantomJS'
-    ],
+    browsers: ['PhantomJS'].concat(process.env.TRAVIS_OS_NAME == 'osx' ? ['Safari'] : []),
     frameworks: [
       'jasmine'
     ],
