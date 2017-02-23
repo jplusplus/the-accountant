@@ -10,10 +10,10 @@ function SliceService(I18n) {
     constructor(meta, stack) {
       super(meta);
       // Create private properties
-      this[_stack] = stack;
+      this[_stack] = stack || {slices: [this]};
     }
     isYou() {
-      return this.character && this.character.key === 'you';
+      return this.meta.character === 'you';
     }
     canClusterizeWith(other) {
       return this.type === other.type && this.character === other.character;
@@ -25,12 +25,12 @@ function SliceService(I18n) {
         return 0;
       }
       // We read approximativly 200 words per minute
-      const duration = this.text.split(' ').length * 60 / 200 * 1000;
+      const duration = (this.text || '').split(' ').length * 60 / 200 * 1000;
       // Reading time can't be under 700 milliseconds
       return Math.max(duration, 700);
     }
     get type() {
-      if (!this.character) {
+      if (!this.meta.character) {
         return 'event';
       }
       return 'chat';
@@ -38,7 +38,10 @@ function SliceService(I18n) {
     get character() {
       return this.memoize('character', () => {
         // The slice may not have any character
-        return _.find(this.game.characters, {key: this.meta.character});
+        if (this.game && this.meta.character) {
+          return _.find(this.game.characters, {key: this.meta.character});
+        }
+        return undefined;
       });
     }
     get stack() {
