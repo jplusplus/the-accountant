@@ -91,4 +91,15 @@ describe('component: main.hints', () => {
     $timeout.flush();
     expect(ctrl.scrollToRef).toHaveBeenCalled();
   }));
+
+  it('should not scroll to an active', angular.mock.inject(($document, $timeout) => {
+    // Inject stateParams value for this cartel
+    const $stateParams = {ref: null};
+    // Add a game instance must be binded to the component
+    const ctrl = $controller(mainHints.controller, {$stateParams, $document, $timeout});
+    spyOn(ctrl, 'scrollToRef').and.callThrough();
+    ctrl.$onInit();
+    $timeout.flush();
+    expect(ctrl.scrollToRef).not.toHaveBeenCalled();
+  }));
 });
