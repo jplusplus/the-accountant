@@ -5,7 +5,7 @@ node_js:
   - '6.9.5'
 os:
   - linux
-  - osx
+  # - osx
 matrix:
   allow_failures:
     - os: osx
