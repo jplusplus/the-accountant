@@ -33,6 +33,8 @@ module.exports.translateRun = function translateRun($transitions, $location, $tr
       // Update current language
       $translate.use(lang);
       tmhDynamicLocale.set(lang.slice(0, 2));
+    } else {
+      tmhDynamicLocale.get($translate.use());
     }
   });
 };

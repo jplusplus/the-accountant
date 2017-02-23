@@ -6,7 +6,7 @@ import 'marked';
 
 import markedConfig from './marked';
 
-describe('service: marked', () => {
+describe('config: marked', () => {
   beforeEach(() => {
     angular.module('marked', ['hc.marked']).config(markedConfig);
     angular.mock.module('marked');
@@ -17,7 +17,6 @@ describe('service: marked', () => {
     marked = _.flow(marked, _.trim);
     expect(marked(html)).toBe('<p><a href="http://pirhoo.com" title="" target="_blank">pirhoo</a></p>');
   }));
-
 
   it('should add a target blank to every links even with a title', angular.mock.inject(marked => {
     const html = '[pirhoo](http://pirhoo.com "Pirhoo")';
