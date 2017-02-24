@@ -34,7 +34,7 @@ module.exports.translateRun = function translateRun($transitions, $location, $tr
       $translate.use(lang);
       tmhDynamicLocale.set(lang.slice(0, 2));
     } else {
-      tmhDynamicLocale.get($translate.use());
+      tmhDynamicLocale.set($translate.use().slice(0, 2));
     }
   });
 };
