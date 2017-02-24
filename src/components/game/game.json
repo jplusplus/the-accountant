@@ -99,7 +99,7 @@
       "name@en": "Birgit Meyer",
       "name@fr": "Claudine Daviau",
       "title@en": "The Mayor",
-      "title@fr": "Le maire",
+      "title@fr": "La maire",
       "avatar": "./images/avatars/mayor.jpg"
     },
     "lawyer": {
@@ -141,7 +141,7 @@
       "name@en": "You",
       "name@fr": "Vous",
       "title@en": "General manager",
-      "title@fr": "Chef de cabinet",
+      "title@fr": "Dir' cab",
       "avatar": null
     }
   },
@@ -300,7 +300,7 @@
             {
               "character": "mayor",
               "text@en": "She'll show you around.",
-              "text@fr": "Elle va vous expliquer comment ça marche."
+              "text@fr": "Elle connait bien la maison."
             },
             {
               "character": "helper",
@@ -310,7 +310,7 @@
             {
               "character": "helper",
               "text@en": "I'll help you get up to speed.",
-              "text@fr": "Je vais vous aider dans votre travail."
+              "text@fr": "Je suis là pour vous aider."
             },
             {
               "character": "helper",
@@ -369,7 +369,7 @@
             {
               "character": "you",
               "text@en": "I choose the offer of Robert Construction Limited.",
-              "text@fr": "Je choisis l'offre de Guillory Construction SARL"
+              "text@fr": "Je choisis l'offre de Guillory Construction SARL."
             }
           ]
         },
@@ -410,7 +410,7 @@
         },
         {
           "text@en": "Concrete Construction made an offer at 12.2 million",
-          "text@fr": "Grosbéton SARL a fait une offre à 12,2 millions.",
+          "text@fr": "Grosbéton SARL a fait une offre à 12,2 millions",
           "var_changes": {
             "reserves": -12.2,
             "risk_contractors": 1
@@ -418,7 +418,7 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose the offer of Concrete Construction",
+              "text@en": "I choose the offer of Concrete Construction.",
               "text@fr": "Je choisis l'offre de Grosbéton SARL."
             },
             {
@@ -460,7 +460,7 @@
         {
           "character": "construction-boss",
           "text@en": "I'm the boss of Robert Construction Limited.",
-          "text@fr": "Je suis le chef de Guillory Construction SARL"
+          "text@fr": "Je suis le chef de Guillory Construction SARL."
         },
         {
           "character": "construction-boss",
@@ -483,7 +483,7 @@
       "choices": [
         {
           "text@en": "Sure",
-          "text@fr": "Avec plaisir",
+          "text@fr": "Avec plaisir.",
           "var_changes": {
             "personal_account": 15000,
             "risk_police": 1
@@ -553,7 +553,7 @@
         {
           "character": "mayor",
           "text@en": "I can't take it anymore!",
-          "text@fr": "J'en peux plus!"
+          "text@fr": "Je n'en peux plus!"
         },
         {
           "character": "mayor",
@@ -565,7 +565,7 @@
         {
           "character": "helper",
           "text@en": "Bribes are prohibited.",
-          "text@fr": "Les pots-de-vins sont interdits"
+          "text@fr": "Les pots-de-vins sont interdits."
         },
         {
           "character": "helper",
@@ -576,7 +576,7 @@
       "choices": [
         {
           "text@en": "Offer to speed their requests in exchange for 5,000 in an enveloppe",
-          "text@fr": "Proposez de faire sauter la file d'attente en échange de 5 000 en liquide",
+          "text@fr": "Proposer d'accélerer les demandes en échange de 5 000 en liquide",
           "var_changes": {
             "personal_account": 5000,
             "risk_police": 2
@@ -625,7 +625,7 @@
         },
         {
           "text@en": "Ignore them",
-          "text@fr": "Ne rien faire",
+          "text@fr": "Ne rien faire.",
           "var_changes": {
             "risk_political": 1
           },
@@ -697,7 +697,7 @@
             {
               "character": "you",
               "text@en": "It's all yours now. But the price is 10 million, not negotiable.",
-              "text@fr": "Le terrain est à vous pour 10 millions - non négociables."
+              "text@fr": "Le terrain est à vous pour 10 millions - non négociable."
             },
             {
               "character": "mayor",
@@ -743,7 +743,7 @@
         {
           "character": "mayor",
           "text@en": "We passed a tender to build a new roundabout.",
-          "text@fr": "On a passé un appel d'offres pour un nouveau rond-point."
+          "text@fr": "Nous avons passé un appel d'offres pour un nouveau rond-point."
         },
         {
           "character": "mayor",
@@ -753,7 +753,7 @@
         {
           "character": "mayor",
           "text@en": "We received three offers. Pick the best one.",
-          "text@fr": "On a reçu trois offres. Choisissez la meilleure."
+          "text@fr": "Nous avons reçu trois offres. Choisissez la meilleure."
         }
       ],
       "helper": [
@@ -931,13 +931,13 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "Me.",
-              "text@fr": "Moi."
+              "text@en": "Me",
+              "text@fr": "Moi"
             },
             {
               "character": "lawyer",
               "text@en": "It's easier, but it'll make it very easy to link you back to the company.",
-              "text@fr": "C'est le plus simple, mais ça sera très facile de vous lier à la société."
+              "text@fr": "C'est le plus simple, mais ça sera très facile de vous relier à la société."
             }
           ]
         },
@@ -950,13 +950,13 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "My spouse.",
+              "text@en": "My spouse",
               "text@fr": "Mon époux"
             },
             {
               "character": "lawyer",
               "text@en": "Smart move, but it'll be easy to link you back to the company.",
-              "text@fr": "Bonne idée, mais ça sera assez simple de vous lier à la société."
+              "text@fr": "Bonne idée, mais ça sera assez simple de vous relier à la société."
             }
           ]
         },
@@ -986,7 +986,7 @@
             {
               "character": "lawyer",
               "text@en": "It'll take a bit longer, but you'll be safe.",
-              "text@fr": "Ca sera un peu plus long, mais vous serez tranquille."
+              "text@fr": "Ça sera un peu plus long, mais vous serez tranquille."
             }
           ]
         }
@@ -1002,7 +1002,7 @@
         {
           "character": "mayor",
           "text@en": "We passed a tender to build a new school.",
-          "text@fr": "On a passé un appel d'offre pour construire une nouvelle école."
+          "text@fr": "Nous avons passé un appel d'offre pour construire une nouvelle école."
         },
         {
           "character": "mayor",
@@ -1012,7 +1012,7 @@
         {
           "character": "mayor",
           "text@en": "We received three offers. Pick the best one.",
-          "text@fr": "On a reçu 3 offres. Choisissez la meilleure."
+          "text@fr": "Nous avons reçu 3 offres. Choisissez la meilleure."
         }
       ],
       "helper": [
@@ -1035,12 +1035,12 @@
             {
               "character": "you",
               "text@en": "I choose my company.",
-              "text@fr": "Je choisis ma société"
+              "text@fr": "Je choisis ma société."
             },
             {
               "character": "construction-boss",
               "text@en": "Like a boss!",
-              "text@fr": "Comme un chef!"
+              "text@fr": "Tu te débrouilles comme un chef!"
             },
             {
               "character": "construction-boss",
@@ -1298,7 +1298,7 @@
         {
           "character": "mayor",
           "text@en": "I want you to run some ads that praise my work in the local paper, using city funds.",
-          "text@fr": "J'aimerais que vous me fassiez de la publicité dans le journal local, en utilisant des fonds de la mairie."
+          "text@fr": "J'aimerais que vous me fassiez de la publicité dans le journal local en utilisant les fonds de la mairie."
         }
       ],
       "helper": [
@@ -1340,7 +1340,7 @@
         },
         {
           "text@en": "Sure, I'll run ads praising your actions",
-          "text@fr": "D'accord, je vais vous acheter des espaces publicitaires",
+          "text@fr": "D'accord, je vais vous acheter des espaces publicitaires.",
           "var_changes": {
             "reserves": -0.5
           },
@@ -1358,7 +1358,7 @@
             {
               "character": "mayor",
               "text@en": "Just tell the accounting department to pass it as marketing expenditures for the city.",
-              "text@fr": "Dites juste à la compta de faire passer ça comme des dépenses de communication pour la ville."
+              "text@fr": "Dites juste à la compta de faire passer ça en dépenses de communication."
             }
           ]
         }
@@ -1395,14 +1395,14 @@
         {
           "character": "football-boss",
           "text@en": "That'd make everybody happy, wouldn't it? Voters would hate it if their team had to leave.",
-          "text@fr": "Tout le monde serait content. Les votants seraient très déçus si leur club faisait faillite."
+          "text@fr": "Tout le monde serait content. Les électeurs seraient très déçus si leur club faisait faillite."
         }
       ],
       "helper": [
         {
           "character": "helper",
           "text@en": "We're getting technical here.",
-          "text@fr": "Ca devient technique."
+          "text@fr": "Ça devient technique."
         },
         {
           "character": "helper",
@@ -1413,7 +1413,7 @@
       "choices": [
         {
           "text@en": "Buy back the plot of land.",
-          "text@fr": "Racheter le terrain",
+          "text@fr": "Racheter le terrain.",
           "var_changes": {
             "reserves": -12,
             "resources": 0.2
@@ -1451,7 +1451,7 @@
             {
               "character": "you",
               "text@en": "It wouldn't be in the general interest.",
-              "text@fr": "Cela ne serait pas dans l'intérêt général."
+              "text@fr": "Cela ne servirait pas l'intérêt général."
             },
             {
               "character": "mayor",
@@ -1581,7 +1581,7 @@
         {
           "character": "construction-boss",
           "text@en": "You deserve a mahogany desk and designer chairs, at least!",
-          "text@fr": "Tu as droit à un bureau en acajou et des chaises en cuir, au moins!"
+          "text@fr": "Un bureau en acajou et des chaises en cuir, au moins!"
         },
         {
           "character": "construction-boss",
@@ -1605,17 +1605,17 @@
             {
               "character": "mayor",
               "text@en": "What happened?",
-              "text@fr": "Qu'est-ce qu'il s'est passé?"
+              "text@fr": "Que s'est-il passé?"
             },
             {
               "character": "mayor",
               "text@en": "How come your office is nicer than mine?",
-              "text@fr": "Pourquoi ton bureau est-il mieux que le mien?"
+              "text@fr": "Pourquoi votre bureau est-il mieux que le mien?"
             },
             {
               "character": "mayor",
               "text@en": "Something's wrong with you.",
-              "text@fr": "Quelque chose ne va pas chez toi."
+              "text@fr": "Quelque chose ne va pas chez vous."
             }
           ]
         },
@@ -1759,7 +1759,7 @@
       "choices": [
         {
           "text@en": "Yes. Invest 50,000.",
-          "text@fr": "Oui, investis 50 000",
+          "text@fr": "Oui, investis 50 000.",
           "var_changes": {
             "trash_company": 1,
             "personal_account": -50000
@@ -1778,7 +1778,7 @@
             {
               "character": "lawyer",
               "text@en": "I'll take care of it.",
-              "text@fr": "C'est comme si c'était fait."
+              "text@fr": "Je passe les ordres d'achat."
             }
           ]
         },
@@ -1868,7 +1868,8 @@
           "text@en": "SATI Waste Management made an offer at 0.9 million per year",
           "text@fr": "SATI Waste Management a fait une offre à 0,9 millions par an",
           "var_changes": {
-            "resources": -0.9
+            "resources": -0.9,
+            "personal_account": 45000
           },
           "feedback": [
             {
@@ -1986,7 +1987,7 @@
         {
           "character": "mayor",
           "text@en": "The contractor for the new stadium is behind schedule.",
-          "text@fr": "La société qui construit le stade est en retard."
+          "text@fr": "La société qui construit le stade est en retard de 6 mois."
         },
         {
           "character": "mayor",
@@ -2003,7 +2004,7 @@
         {
           "character": "helper",
           "text@en": "Reading the fine print on contracts is a bore.",
-          "text@fr": "Le détails des contrats est long à lire."
+          "text@fr": "Les détails des contrats sont longs à lire."
         },
         {
           "character": "helper",
@@ -2033,7 +2034,7 @@
             {
               "character": "mayor",
               "text@en": "This is all bad publicity for me.",
-              "text@fr": "Tout ça est une très mauvaise publicité pour moi."
+              "text@fr": "Ça va me faire une mauvaise publicité."
             }
           ]
         },
@@ -2047,7 +2048,7 @@
             {
               "character": "you",
               "text@en": "We'll ignore the delay.",
-              "text@fr": "Nous ferions mieux d'ignorer le retard."
+              "text@fr": "Nous ferions mieux d'ignorer tout ça."
             },
             {
               "character": "mayor",
@@ -2057,7 +2058,7 @@
             {
               "character": "mayor",
               "text@en": "We'll say they're behind schedule because of the European Union.",
-              "text@fr": "On va dire que c'est à cause de l'Union Européenne que le chantier prend du retard."
+              "text@fr": "On va dire que le retard est la faute de l'Union Européenne."
             }
           ]
         }
@@ -2079,7 +2080,7 @@
         {
           "character": "university-boss",
           "text@en": "It's been a while since we last talked!",
-          "text@fr": "Ca fait longtemps qu'on s'est pas vus!"
+          "text@fr": "Ça fait longtemps qu'on s'est pas vus!"
         },
         {
           "character": "university-boss",
@@ -2089,17 +2090,17 @@
         {
           "character": "university-boss",
           "text@en": "The pay is terrible, but I have a trick.",
-          "text@fr": "Le salaire est misérable, mais j'ai un truc."
+          "text@fr": "La paye est misérable, mais j'ai un truc."
         },
         {
           "character": "university-boss",
           "text@en": "I tell foreign students who don't speak English to pay me a special fee.",
-          "text@fr": "Je demande aux étudiants étrangers qui ne parlent pas français de payer un bakchich."
+          "text@fr": "Je contacte les étudiants étrangers qui ne parlent pas français..."
         },
         {
           "character": "university-boss",
           "text@en": "And I let them in!",
-          "text@fr": "Et je les laisse rentrer!"
+          "text@fr": "Et je les inscris en échange d'un bakchich!"
         },
         {
           "character": "university-boss",
@@ -2122,7 +2123,7 @@
       "choices": [
         {
           "text@en": "Call the police.",
-          "text@fr": "Appeller la police",
+          "text@fr": "Appellez la police.",
           "var_changes": {
             "risk_political": 1
           },
@@ -2135,7 +2136,7 @@
             {
               "character": "mayor",
               "text@en": "This police investigation on your friend is not good for my reelection.",
-              "text@fr": "Cette enquête de police sur ton ami, c'est mauvais pour ma réélection."
+              "text@fr": "La mise en examen de ton ami, c'est mauvais pour ma réélection."
             },
             {
               "character": "mayor",
@@ -2146,7 +2147,7 @@
         },
         {
           "text@en": "Let him pick up the bill.",
-          "text@fr": "Laisser le vous inviter.",
+          "text@fr": "Faites-vous inviter.",
           "var_changes": {
             "personal_account": 100
           },
@@ -2181,12 +2182,12 @@
         {
           "character": "mayor",
           "text@en": "They want to bundle all future revenue from social housing and account for it once.",
-          "text@fr": "Il veut grouper tous les revenus futurs des HLM et le comptabiliser d'un coup."
+          "text@fr": "Il veut grouper tous les revenus futurs des HLM et les comptabiliser d'un coup."
         },
         {
           "character": "mayor",
           "text@en": "They say it'll increase income now big time - on paper - and reduce it in the future.",
-          "text@fr": "Il dit que ça augmentera grandement nos ressources aujourd'hui - sur le papier - et diminuera nos revenus dans le futur."
+          "text@fr": "Il dit que ça augmentera grandement nos ressources aujourd'hui - sur le papier - et diminuera nos revenus plus tard."
         },
         {
           "character": "mayor",
@@ -2218,7 +2219,7 @@
             {
               "character": "you",
               "text@en": "It sounds legit.",
-              "text@fr": "Ca parait bien."
+              "text@fr": "Ça parait bien."
             },
             {
               "character": "you",
@@ -2233,7 +2234,7 @@
             {
               "character": "mayor",
               "text@en": "After all, the future belongs to the next mayor, not me!",
-              "text@fr": "Après tout, le futur, c'est quelque chose pour les maires suivants, pas pour moi!"
+              "text@fr": "Après tout, le futur appartient aux maires suivants!"
             }
           ]
         },
@@ -2284,7 +2285,7 @@
         {
           "character": "lawyer",
           "text@en": "It sucks.",
-          "text@fr": "C'est nul."
+          "text@fr": "Il mérite mieux."
         },
         {
           "character": "lawyer",
@@ -2322,7 +2323,7 @@
       "choices": [
         {
           "text@en": "Hire him as an assistant.",
-          "text@fr": "Embauchez-le comme assistant.",
+          "text@fr": "L'embaucher comme assistant.",
           "var_changes": {
             "risk_political": 1
           },
@@ -2330,7 +2331,7 @@
             {
               "character": "you",
               "text@en": "I want to hire him as an assistant.",
-              "text@fr": "Je vais l'embaucher en tant qu'assistant"
+              "text@fr": "Je vais l'embaucher en tant qu'assistant."
             },
             {
               "character": "mayor",
@@ -2340,18 +2341,18 @@
             {
               "character": "mayor",
               "text@en": "If this gets leaked on Twitter or anywhere else, you're out!",
-              "text@fr": "Si ça fuite sur Twitter où que sais-je, tu prends la porte!"
+              "text@fr": "Si ça fuite sur Twitter où que sais-je, vous prennez la porte!"
             },
             {
               "character": "mayor",
               "text@en": "Both of you!",
-              "text@fr": "Toi et ton mari!"
+              "text@fr": "Vous et votre mari!"
             }
           ]
         },
         {
           "text@en": "Ask Robert Construction Limited to hire him.",
-          "text@fr": "Demandez à Cyril Guillory de l'embaucher.",
+          "text@fr": "Demander à Cyril Guillory de l'embaucher.",
           "var_changes": {
             "risk_political": 0
           },
@@ -2375,7 +2376,7 @@
         },
         {
           "text@en": "Do nothing. You shouldn't mix private and professonal life.",
-          "text@fr": "N'en faites rien. On ne doit pas mélanger vie privée et professionelle.",
+          "text@fr": "Ne rien faire. On ne doit pas mélanger vie privée et professionelle.",
           "var_changes": {
             "personal_account": -1000
           },
@@ -2388,7 +2389,7 @@
             {
               "character": "you",
               "text@en": "I prefer not to mix private and professonal life.",
-              "text@fr": "Je ne veux pas mélanger vie privée et professionelle."
+              "text@fr": "Je ne veux pas mélanger vie privée et vie professionelle."
             },
             {
               "character": "lawyer",
@@ -2398,7 +2399,7 @@
             {
               "character": "lawyer",
               "text@en": "By the way, you know I'm also a divorce laywer, right?",
-              "text@fr": "Au fait, je suis aussi avocate pour divorces!"
+              "text@fr": "Au fait, je m'occupe aussi de divorces!"
             }
           ]
         }
@@ -2420,7 +2421,7 @@
         {
           "character": "construction-boss",
           "text@en": "I think you'll be the perfect person to run it.",
-          "text@fr": "Et je pense que tu serais parfaite pour en prendre la direction."
+          "text@fr": "Je pense que tu serais parfaite pour en prendre la direction."
         },
         {
           "character": "construction-boss",
@@ -2472,7 +2473,7 @@
             {
               "character": "construction-boss",
               "text@en": "Can you pass a public tender for a swimming pool at the city?",
-              "text@fr": "Il faudrait que tu fasses un appel d'offre pour une nouvelle piscine."
+              "text@fr": "Il faudrait que tu passes un appel d'offre pour une nouvelle piscine."
             }
           ]
         },
@@ -2506,7 +2507,7 @@
         {
           "character": "mayor",
           "text@en": "We passed the public tender you wanted, for this swimming pool of yours.",
-          "text@fr": "On a passé cet appel d'offre pour votre piscine."
+          "text@fr": "Nous avons passé cet appel d'offre pour votre piscine."
         },
         {
           "character": "mayor",
@@ -2516,7 +2517,7 @@
         {
           "character": "mayor",
           "text@en": "We received just one answer.",
-          "text@fr": "Nous avons reçu qu'une seule offre."
+          "text@fr": "Nous n'avons reçu qu'une seule offre."
         },
         {
           "character": "mayor",
@@ -2542,7 +2543,7 @@
           "text@fr": "Guillory Construction SARL a fait une offre à 10 million.",
           "var_changes": {
             "reserves": -10,
-            "risk_revolving_door": 10
+            "risk_revolving_door": 20
           },
           "feedback": [
             {
@@ -2556,7 +2557,7 @@
           "text@en": "Choose not to award the tender.",
           "text@fr": "Ne pas attribuer l'appel d'offre.",
           "var_changes": {
-            "risk_contractors": 10
+            "risk_contractors": 20
           },
           "feedback": [
             {
@@ -2572,12 +2573,12 @@
             {
               "character": "construction-boss",
               "text@en": "This is it!",
-              "text@fr": "Ca y est!"
+              "text@fr": "Ça y est!"
             },
             {
               "character": "construction-boss",
               "text@en": "You had it coming!",
-              "text@fr": "Ca te pendait au nez!"
+              "text@fr": "Ça te pendait au nez!"
             }
           ]
         }
@@ -2648,7 +2649,7 @@
         "min": 2
       },
       "text@en": "<h2>You're fired: You lost!</h2><p>You managed to have good relations with the contractors and to avoid the police, but your choices have made you unpopular. The mayor requests a career change for you. You're now in charge of welcoming guests at the city museum. How culturally enriching!</p>",
-      "text@fr": "<h2>Perdu: Vous êtes virée!</h2><p>Vous avez entretenu de bonnes relations avec les industriels et avec la police, mais vos choix vous ont rendu impopulaire. Le maire exige que vous soyez mutée. Vous travaillez maintenant à l'accueil du musée municipal. C'est très enrichissant!</p>"
+      "text@fr": "<h2>Perdu: Vous êtes virée!</h2><p>Vous avez entretenu de bonnes relations avec les industriels et avec la police, mais vos choix vous ont rendu impopulaire. La maire exige que vous soyez mutée. Vous travaillez maintenant à l'accueil du musée municipal. C'est très enrichissant!</p>"
     },
     {
       "condition": {
@@ -2656,7 +2657,7 @@
         "min": 2
       },
       "text@en": "<h2>Busted: You lost!</h2><p>You managed to have good relations with the contractors while remaining popular. The mayor likes you, but the anticorruption police charged you with misapropriation of public funds. Relax, you probably won't go to prison, but the mayor demands that you resign.</p>",
-      "text@fr": "<h2>Perdu: Vous êtes mise en examen!</h2><p>Vous avez entretenu de bonnes relations avec le maire et avec les industriels, mais un enquêteur du parquet financier vous inculpe dans une affaire de détournement de fonds publics. Pas de panique, vous n'irez sans doute pas en prison. Mais le maire exige votre démission.</p>"
+      "text@fr": "<h2>Perdu: Vous êtes mise en examen!</h2><p>Vous avez entretenu de bonnes relations avec le maire et avec les industriels, mais un enquêteur du parquet financier vous inculpe dans une affaire de détournement de fonds publics. Pas de panique, vous n'irez sans doute pas en prison. Mais la maire exige votre démission.</p>"
     },
     {
       "condition": {
@@ -2664,7 +2665,7 @@
         "min": 2
       },
       "text@en": "<h2>Career change: You lost!</h2><p>Public work contractors told the mayor's office that they could not work with you. You are being reassigned to the Parks and Gardens department. How great that you can work outside now!</p>",
-      "text@fr": "<h2>Perdu: Vous changez de poste!</h2><p>Vous avez entretenu de bonnes relations avec le maire et avec la police, mais Guillory réclame votre départ. Il dit qu'il ne peut pas travailler avec vous. Le maire vous mute aux département des parcs et jardins. Quelle joie de travailler au grand air!</p>"
+      "text@fr": "<h2>Perdu: Vous changez de poste!</h2><p>Vous avez entretenu de bonnes relations avec le maire et avec la police, mais Guillory réclame votre départ. Il dit qu'il ne peut pas travailler avec vous. La maire vous mute aux Parcs et Jardins. Quelle joie de travailler au grand air!</p>"
     },
     {
       "condition": {
@@ -2672,7 +2673,7 @@
         "min": 1
       },
       "text@en": "<h2>New career: You won!</h2><p>Robert Construction Limited makes you an offer you can't refuse, if only to ensure the financial well-being of your spouse and children. Bye-bye, public sector! Hello, business!</p>",
-      "text@fr": "<h2>Gagné: Nouvelle carrière!</h2><p>Cyril Guillory vous fait une proposition qui ne se refuse pas, ne serait-ce que dans l'intérêt de votre mari et de vos enfants. Au revoir, secteur public! Bonjour, secteur privé!</p>"
+      "text@fr": "<h2>Gagné: Nouvelle carrière!</h2><p>Cyril Guillory vous fait une proposition qui ne se refuse pas. Au revoir, secteur public! Bonjour, secteur privé!</p>"
     },
     {
       "text@en": "<h2>Celebrating 20 years</h2><p>How time flies! 20 years already! In just another 20, you can be in retirement.</p>",
@@ -2684,25 +2685,25 @@
       "title@en": "How to spot a cartel?",
       "title@fr": "Comment détecter un cartel?",
       "body@en": "Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous.",
-      "body@fr": "Un cartel apparait quand les candidats à un appel d'offre s'entendent entre eux. Vous pouvez les détecter si les prix des offres se suivent et sont proches les unes des autres.<br><br>Les industriels peuvent s'entendre sur celui qui proposera le prix le plus bas et gagnera l'appel d'offre. Le gagnant paye ensuite les autres membres du cartel.<br><br>Parfois, un des membres du cartels fait cavalier seul et fait une offre plus basse. Ca devient dangereux pour lui."
+      "body@fr": "Un cartel apparait quand les candidats à un appel d'offre s'entendent entre eux. Vous pouvez les détecter si les prix des offres se suivent et sont proches les uns des autres.<br><br>Les industriels peuvent s'entendre sur celui qui proposera le prix le plus bas et gagnera l'appel d'offre. Le gagnant paye ensuite les autres membres du cartel. Le cartel fait une rotation entre les entreprises, afin que chaque membre du cartel gagne un peu.<br><br>Parfois, un des membres du cartels fait cavalier seul et fait une offre plus basse. Ça devient dangereux pour lui."
     },
     "gifts": {
       "title@en": "How to react to gifts?",
       "title@fr": "Comment réagir aux cadeaux?",
-      "body@en": "Public officials are usually prohibited from accepting gifts above a certain value (10€ to 500€). However, you can accept the gift if it is intended for you as a private person, or for your spouse. By refusing a gift, you risk angering the person who made it.",
-      "body@fr": "Les fonctionnaires n'ont généralement pas le droit d'accepter des cadeaux au delà d'un certain seuil (entre 10€ et 500€ selon les administrations). Cela dit, vous pouvez accepter le cadeau s'il vous est adressé à vous personnelement, et non pas à vous en tant que fonctionnaire. Ou bien s'il est fait à votre partenaire. En refusant un cadeau, vous prenez le risque d'offenser celui qui vous l'offre."
+      "body@en": "Public officials are usually prohibited from accepting gifts above a certain value (€50 at the European Commission, for instance). However, you can accept the gift if it is intended for you as a private person, or for your spouse. By refusing a gift, you risk angering the person who made it.",
+      "body@fr": "Les fonctionnaires n'ont généralement pas le droit d'accepter des cadeaux au delà d'un certain seuil (50€ à la Commission Européenne, par exemple). Cela dit, vous pouvez accepter le cadeau s'il vous est adressé à vous personnelement, et non pas à vous en tant que fonctionnaire. Ou bien s'il est fait à votre partenaire. En refusant un cadeau, vous prenez le risque d'offenser celui qui vous l'offre."
     },
     "bribes": {
       "title@en": "How can you organize bribes?",
       "title@fr": "Comment organiser des pots-de-vin?",
       "body@en": "Bribery is not as common in Europe as in other parts of the world, but it is rampant is some sectors. In public housing, some officials ask for enveloppes of money to be given directly. For car inspection, some service centers will be pleased if you leave a gift or bills of cash on the passenger seat.<br><br>Read more under <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> at Cooking Budgets.",
-      "body@fr":"Les bakchichs ne sont pas aussi fréquents en Europe que dans d'autres régions du monde, à l'exception de certains secteurs. Pour obtenir un logement social, certains fonctionnaires n'hésitent pas à demander des enveloppes d'argent de la main à la main. Pour passer le contrôle technique automobile, certains centres de contrôle ferment les yeux en échange d'un cadeau sur le siège passager.<br><br>Lisez <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> [en anglais] sur Cooking Budgets pour en savoir plus."
+      "body@fr":"Les bakchichs ne sont pas aussi fréquents en Europe que dans d'autres régions du monde, à l'exception de certains secteurs. Pour déterminer qui obtient un logement social, certains fonctionnaires n'hésitent pas à demander des enveloppes d'argent de la main à la main. Pour passer le contrôle technique automobile, certains centres de contrôle ferment les yeux en échange d'un cadeau sur le siège passager.<br><br>Lisez <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> [en anglais] sur Cooking Budgets pour en savoir plus."
     },
     "land_sales": {
       "title@en": "Spotting corruption in land sales",
       "title@fr": "La corruption dans les ventes immobilières",
       "body@en": "Cities often own large plots of land. They can either sell them at market prices or at lower prices, to make a gift to the buyer. It is usually hard to spot such transactions, because there isn't much of a market for big sales of land in a city.",
-      "body@fr": "Les villes possèdent souvent des terrains et des immeubles. Ces biens peuvent être vendus au prix du marché ou à des prix plus bas, pour faire un cadeau à l'acheteur. Il est fort difficile d'identifier ces transactions car, le plus souvent, il n'existe pas vraiment de marché pour ce type de transactions."
+      "body@fr": "Les villes possèdent souvent des terrains et des immeubles. Ces biens peuvent être vendus au prix du marché ou à des prix plus bas, pour faire un cadeau à l'acheteur. Il est fort difficile d'identifier ces transactions frauduleuses car, le plus souvent, il n'existe pas vraiment de marché pour un immeuble entier ou un grand terrain en centre ville."
     },
     "conflicts_of_interest": {
       "title@en": "Conflicts of interest",
@@ -2720,7 +2721,7 @@
       "title@en": "Political communication using public funds",
       "title@fr": "La communication politique sur fonds publics",
       "body@en": "Politicians can control public companies, either directly or through patronage networks. They might require them to buy advertising in newspapers that advertise their performance as a politician and not the company itself. It's very hard for prosecutors to prove that the advertising was not done in the interest of the company.<br><br>Read more under <a href='http://www.cookingbudgets.com/ads/' target='_blank'>Ads, ads, ads</a> at Cooking Budgets.",
-      "body@fr": "Les élus peuvent contrôler des sociétés publiques, soit directement, soit via des liens de clientelisme. Ils peuvent demander à ces sociétés d'acheter des espaces publicitaires dans des journaux pour faire les louanges de leurs performances. C'est très difficile pour un procureur de prouver que la publicité était faite dans l'intérêt de l'élu et non pas dans l'intérêt de la société elle-même.<br><br>Lisez <a href='http://www.cookingbudgets.com/ads/' target='_blank'>Ads, ads, ads</a> [en anglais] sur Cooking Budgets pour en savoir plus."
+      "body@fr": "Les élus peuvent contrôler des sociétés publiques, soit directement, soit via des liens de clientélisme. Ils peuvent demander à ces sociétés d'acheter des espaces publicitaires dans des journaux pour faire faire leur propre promotion. C'est très difficile pour un procureur de prouver que la publicité était faite dans l'intérêt de l'élu et non pas dans l'intérêt de la société elle-même.<br><br>Lisez <a href='http://www.cookingbudgets.com/ads/' target='_blank'>Ads, ads, ads</a> [en anglais] sur Cooking Budgets pour en savoir plus."
     },
     "emphyteutic": {
       "title@en": "Leasing public space to private companies",
@@ -2738,25 +2739,25 @@
       "title@en": "Public-private partnerships",
       "title@fr": "Les partenariats public-privé",
       "body@en": "Since the 1980's, it is popular for public administrations to do public-private partnerships. Such partnerships involve a private company doing some of the work, usually building a equipment or operating it, while the administration contributes to the costs. In exchange, the private company can keep the revenues of the equipment it built.<br><br>The goal was to allow public administrations to provide public services without spending much money. In practice, private companies take almost no risks with such contracts and public administrations end up paying as much as they would have without the partnership. But it is usually hidden in the accounts of the public administration.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-public-private-partnership/' target='_blank'>The Public-Private Partnership</a> at Cooking Budgets.",
-      "body@fr": "Depuis les années 1980, les partenariats public-privé sont à la mode. Un tel partenariat implique qu'une société privée réalise un investissement, en général la construction d'un équipement public (route, stade). En échange, la société privée peut garder tout ou partie des revenus d'exploitation de l'équipement.<br><br>L'objectif était que les administrations puissent investir dans de nouveaux équipements sans rien payer. En réalité, les administrations s'engagent souvent à payer un loyer à la société privée, dont le montant total dépasse la valeur de l'investissement! Comme ces loyers sont étalés dans le temps, on ne voit pas que le partenariat public-privé a en fait coûté plus cher à la collectivité qu'un investissement traditionnel.<br><br>Lisez <a href='http://www.cookingbudgets.com/the-public-private-partnership/' target='_blank'>The Public-Private Partnership</a> [en anglais] sur Cooking Budgets pour en savoir plus."
+      "body@fr": "Depuis les années 1980, les partenariats public-privé sont à la mode. Un tel partenariat implique qu'une société privée réalise un investissement, en général la construction d'un équipement public (route, stade, pont). En échange, la société privée peut garder tout ou partie des revenus d'exploitation de l'équipement.<br><br>L'objectif était que les administrations puissent investir dans de nouveaux équipements sans rien payer. En réalité, les administrations s'engagent souvent à payer un loyer à la société privée, dont le montant total dépasse la valeur de l'investissement! Comme ces loyers sont étalés dans le temps, on ne voit pas que le partenariat public-privé a en fait coûté plus cher à la collectivité qu'un investissement traditionnel.<br><br>Lisez <a href='http://www.cookingbudgets.com/the-public-private-partnership/' target='_blank'>The Public-Private Partnership</a> [en anglais] sur Cooking Budgets pour en savoir plus."
     },
     "privatization": {
       "title@en": "Deregulation and privatization",
       "title@fr": "Libéralisation et privatisation",
       "body@en": "Public administrations have transfered a lot of their competencies to private companies, either via public-private partnerships or via deregulation. It offers a lot of opportunities for conflicts of interests.<br><br>It is hard to know how much a service costs to the city because it can involve people from different departments (e.g some municipal employees can work for the trash collection one day and for another department the next). To do such estimates would require analytical accounting, which cities rarely do.",
-      "body@fr": "Les administrations publiques ont transféré de nombreuses compétences à des sociétés privées, que ce soit via des partenariats public-privé ou via l'externalisation de services. Chaque interaction avec une société privée offre de nouvelles possibilités de conflits d'intérêts.<br><br>Il est difficile pour une ville de savoir combien un service coûte car la fourniture d'un service public implique souvent plusieurs départements (par exemple, un employé municipal peut travailler à la collecte des ordures un jour et aux jardins un autre jour). Faire de telles estimations nécessite une comptabilité analytique, ce que les villes font rarement."
+      "body@fr": "Les administrations publiques ont transféré de nombreuses compétences à des sociétés privées, que ce soit via des partenariats public-privé ou via l'externalisation de services. Chaque interaction avec une société privée offre de nouvelles possibilités de conflits d'intérêts.<br><br>Il est difficile pour une ville de savoir combien un service coûte et de comparer ce coût avec le prix payé à une société privée, car la fourniture d'un service public implique souvent plusieurs départements (par exemple, un employé municipal peut travailler à la collecte des ordures un jour et aux jardins un autre jour). Faire de telles estimations nécessite une comptabilité analytique, ce que les villes font rarement."
     },
     "fine_print": {
       "title@en": "The fine print in public contracts",
       "title@fr": "Le détail des contrats publics",
       "body@en": "Building contracts usually involve a series of clauses, such as penalties for delays. However, the client (in this case, the city) must activate the clause, or, if the contractor refuses to pay, take it to court. Legal teams are used to such situations, but for a small administration, or in case of politically sensitive issues, it is easy to ignore some clauses in the contract.",
-      "body@fr": "Les contrats de construction publique ont en général de nombreuses clauses, comme des pénalités de retard. Pour qu'elles prennent effet, le client (en l'occurence, la ville), doit activer la clause, ou, si l'industriel refuse de payer, l'assigner en justice. Ces situations sont normales pour des équipes de juristes aguérris, mais, pour des petites villes, ou sur des sujets politiquement sensibles, il est plus facile d'ignorer ces clauses."
+      "body@fr": "Les contrats de construction publique ont en général de nombreuses clauses, comme des pénalités de retard. Pour qu'elles prennent effet, le client (en l'occurence, la ville), doit activer la clause, ou, si l'industriel refuse de payer, l'assigner en justice. Ces situations sont normales pour des équipes de juristes aguérris, mais, pour des petites villes, ou sur des sujets politiquement sensibles, il est plus facile de les ignorer."
     },
     "degrees": {
       "title@en": "Selling university degrees",
       "title@fr": "La vente de diplômes",
-      "body@en": "The sale of university degree is not uncommon in Europe. As with any story of corruption, people have an incentive to keep silent, because it would make the whole university look bad if it became news.<br><br>Read more under <a href='http://www.cookingbudgets.com/grilled-degrees/' target='_blank'>The grilled degrees</a> at Cooking Budgets.",
-      "body@fr": "La vente de diplômes et la vente du droit d'entrée à l'université ne sont pas rares en Europe. Comme toujours dans les histoires de corruption, les personnes impliquées ont intérêt à garder le silence car c'est la réputation de toute l'université qui serait impactée si un scandale devait voir le jour. Lisez <a href='http://www.cookingbudgets.com/grilled-degrees/' target='_blank'>The grilled degrees</a> [en anglais] sur Cooking Budgets pour en savoir plus."
+      "body@en": "The sale of university degree is not uncommon in Europe. As with any story of corruption, people have an incentive to keep silent, because it would make the whole university look bad if it became news.<br><br>Read more under <a href='http://www.cookingbudgets.com/grilled-degrees/' target='_blank'>The Grilled Degrees</a> at Cooking Budgets.",
+      "body@fr": "La vente de diplômes et la vente du droit d'entrée à l'université ne sont pas rares en Europe. Comme toujours dans les histoires de corruption, les personnes impliquées ont intérêt à garder le silence car c'est la réputation de toute l'université qui serait impactée si un scandale devait voir le jour. Lisez <a href='http://www.cookingbudgets.com/grilled-degrees/' target='_blank'>The Grilled Degrees</a> [en anglais] sur Cooking Budgets pour en savoir plus."
     },
     "accounting_tricks": {
       "title@en": "Accounting tricks",
@@ -2774,7 +2775,7 @@
       "title@en": "The Revolving Door",
       "title@fr": "Le pantouflage",
       "body@en": "After a career in the administration, public officials can be invited to work in the private sectors. Their contacts and their in-depth knowledge of how an administration works are very valuable for a private company. Sometimes, the promise of having a plump job is enough to convince a public official to take a decision in favor of a private company.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-revolving-door/' target='_blank'>The Revolving Door</a> at Cooking Budgets.",
-      "body@fr": "Après une carrière dans l'administration publique, certains fonctionnaires sont invités à travailler dans le secteur privé. Leurs contacts et leur connaissance du fonctionnement de l'administration sont très utiles à une société privée. Parfois, la promesse de recevoir un poste bien doté suffit à convaincre un élu ou un fonctionnaire de prendre une décision favorable à la société privée.<br><br>Lisez <a href='http://www.cookingbudgets.com/the-revolving-door/' target='_blank'>The Revolving Door</a> [en anglais] sur Cooking Budgets pour en savoir plus."
+      "body@fr": "Après une carrière dans l'administration publique, certains fonctionnaires sont invités à travailler dans le secteur privé. Leurs contacts et leur connaissance du fonctionnement de l'administration sont très utiles à une société privée. Parfois, la promesse de recevoir un poste bien doté suffit à convaincre un élu ou un fonctionnaire de prendre une décision favorable à cette société privée.<br><br>Lisez <a href='http://www.cookingbudgets.com/the-revolving-door/' target='_blank'>The Revolving Door</a> [en anglais] sur Cooking Budgets pour en savoir plus."
     }
   }
 }
