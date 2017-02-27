@@ -10,7 +10,8 @@ const hub = new HubRegistry([conf.path.tasks('*.js')]);
 // Tell gulp to use the tasks just loaded
 gulp.registry(hub);
 
-gulp.task('build', gulp.series(gulp.parallel('other', 'webpack:dist')));
+gulp.task('i18n', gulp.series('i18n:meta', 'i18n:index'));
+gulp.task('build', gulp.series(gulp.parallel('other', 'webpack:dist'), 'i18n'));
 gulp.task('test', gulp.series('karma:single-run'));
 gulp.task('test:auto', gulp.series('karma:auto-run'));
 gulp.task('deploy', gulp.series('build', 'deploy'));

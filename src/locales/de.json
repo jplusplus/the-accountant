@@ -1,7 +1,15 @@
 {
   "app": {
     "title": "Die Guten, die Bösen und die Buchhalter",
-    "url": "https://jplusplus.github.io/the-accountant/"
+    "url": "https://jplusplus.github.io/the-accountant/de.html",
+    "description": "Can you run a city without falling prey to the sirens of corruption? Test yourself by playing The Good, The Bad and The Accountant!",
+    "image": "https://jplusplus.github.io/the-accountant/images/share.png",
+    "share": {
+      "tweet": {
+        "via": "jplusplus_",
+        "text": "Yolo"
+      }
+    }
   },
   "main": {
     "back": "Zurück zum Spiel",

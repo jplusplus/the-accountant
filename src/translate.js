@@ -8,13 +8,14 @@ module.exports.translateConfig = function translateConfig($translateProvider, tm
       prefix: 'locales/',
       suffix: '.json'
     })
-    .registerAvailableLanguageKeys(['en', 'fr'], {
+    .registerAvailableLanguageKeys(['en', 'fr', 'de'], {
       'en_US': 'en',
       'en_UK': 'en',
       'en-US': 'en',
       'en-UK': 'en',
       'fr_FR': 'fr',
-      'fr_BE': 'fr'
+      'fr_BE': 'fr',
+      'de_DE': 'de'
     })
     .determinePreferredLanguage()
     .fallbackLanguage('en')
@@ -26,8 +27,12 @@ module.exports.translateConfig = function translateConfig($translateProvider, tm
 module.exports.translateRun = function translateRun($transitions, $location, $translate, tmhDynamicLocale) {
   // Redirect to login if route requires auth and you're not logged in
   $transitions.onSuccess({}, () => {
-    // Get lang from location search
-    const lang = $location.search().lang;
+    // Get the lang from the file name
+    const fileLang = ($location.absUrl().match(/\/(\w{2})\.html/) || [])[1];
+    // Or get lang from location search
+    const lang = fileLang || $location.search().lang;
+    console.log(fileLang, lang);
+    console.log($location.absUrl(), $location.absUrl().match(/(\w[2])\.html/));
     // Does the search param exists?
     if ($translate.getAvailableLanguageKeys().indexOf(lang) > -1) {
       // Update current language
