@@ -91,7 +91,8 @@
     "city-financial-health": {
       "title@en": "Financial health of the city",
       "title@fr": "Santé financière de la ville",
-      "description@en": "Ces indicateurs montrent combien la ville collecte en impôts tous les ans (revenus), combien elle dépense (dépenses), et les réserves indiquent combien la ville possède en banque."
+      "description@en": "City financials tell you how much money the city collects each year (resources) and spends (expenditure), while reserves tell you how much money the city has in the bank.",
+      "description@fr": "Ces indicateurs montrent combien la ville collecte en impôts tous les ans (revenus), combien elle dépense (dépenses), et les réserves indiquent combien la ville possède en banque."
     }
   },
   "characters": {
