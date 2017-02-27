@@ -1,0 +1,42 @@
+{
+  "app": {
+    "title": "Der Gute, der Böse und der Buchhalter",
+    "url": "https://jplusplus.github.io/the-accountant/"
+  },
+  "main": {
+    "back": "Zurück zum Spiel",
+    "intro": {
+      "title": "Der Gute, der Böse und <br /> und der Buchhalter",
+      "meta": "— by <a href='http://jplusplus.org' target='_blank'>Journalism++</a>",
+      "description": "<p>Sie sind der Geschäftsführer einer grossen Stadt. Versuchen Sie, Ethik und Korruption in Einklang zu bringen, um Ihren Job zu behalten und die Stadt am Laufen zu halten. Was immer auch passiert - lassen Sie sich nicht erwischen! </p><p>Jedes Beispiel basiert auf wahren Fällen. </p>",
+      "new-game": "Neues Spiel starten",
+      "continue": "Weiter"
+    },
+    "steps": {
+      "undo": "Undo <span class='hidden-xs-down'>last action</span>",
+      "over": {
+        "undo": "vorherige Aktion rückgängig machen",
+        "gain": "Noch einmal spielen"
+      }
+    },
+    "toolbar": {
+      "heading ": "Der Gute, der Böse<br /> und der Buchhalter",
+      "links": {
+        "chats": "Chats",
+        "hints": "Hinweise",
+        "indicators": "Indikator",
+        "about": "Über"
+      },
+      "share": {
+        "label": "Teilen",
+        "twitter": "Auf Twitter teilen",
+        "facebook": "Auf Facebook teilen ",
+        "reddit": "Auf Reddit teilen"
+      }
+    },
+    "hints": {
+      "none": "Noch keine Hinweise",
+      "description": "Hinweise werden während des Spiels gesammelt."
+    }
+  }
+}
