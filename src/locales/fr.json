@@ -5,7 +5,7 @@
     "share": {
       "tweet": {
         "via": "jplusplus_",
-        "text": "Yolo"
+        "text": "Combien de temps tiendrez-vous face à la corruption? Tentez votre chance!"
       }
     }
   },
@@ -14,7 +14,7 @@
     "intro": {
       "heading": "Le Bon, La Brute<br />et Le Comptable",
       "meta": "— par <a href='http://jplusplus.org' target='_blank'>Journalism++</a>",
-      "description": "<p>Vous êtes la directrice de cabinet du maire d'une grande ville. Equilibrez éthique, politique et corruption pour conserver votre job.<p>Chaque exemple du jeu est tiré de faits réels.</p>",
+      "description": "<p>Vous êtes la directrice de cabinet du maire d'une grande ville. Equilibrez éthique, politique et corruption pour conserver votre job.<p>Tous les exemples du jeu sont tirés de faits réels.</p>",
       "new-game": "Nouvelle partie",
       "continue": "Continuer"
     },
@@ -22,7 +22,8 @@
       "undo": "Annuler <span class='hidden-xs-down'>la dernière action</span>",
       "over": {
         "undo": "Annuler la dernière action",
-        "again": "Recommencer"
+        "again": "Recommencer",
+        "share": "Vous avez amassé <a ui-sref='main.vars'>{{amount}} en {{years}} ans</a>. Partagez votre score!"
       }
     },
     "toolbar": {
