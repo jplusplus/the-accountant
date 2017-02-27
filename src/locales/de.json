@@ -3,7 +3,7 @@
     "title": "Die Guten, die Bösen und die Buchhalter",
     "url": "https://jplusplus.github.io/the-accountant/de.html",
     "description": "Can you run a city without falling prey to the sirens of corruption? Test yourself by playing The Good, The Bad and The Accountant!",
-    "image": "https://jplusplus.github.io/the-accountant/images/share.png",
+    "image": "https://jplusplus.github.io/the-accountant/images/share-de.png",
     "share": {
       "tweet": {
         "via": "jplusplus_",
@@ -14,7 +14,7 @@
   "main": {
     "back": "Zurück zum Spiel",
     "intro": {
-      "title": "Die Guten, die Bösen<br /> und die Buchhalter",
+      "heading": "Die Guten, die Bösen<br /> und die Buchhalter",
       "meta": "— by <a href='http://jplusplus.org' target='_blank'>Journalism++</a>",
       "description": "<p>Sie sind der Geschäftsführer einer grossen Stadt. Versuchen Sie, Ethik und Korruption in Einklang zu bringen, um Ihren Job zu behalten und die Stadt am Laufen zu halten. Was immer auch passiert - lassen Sie sich nicht erwischen! </p><p>Jedes Beispiel basiert auf wahren Fällen. </p>",
       "new-game": "Neues Spiel starten",
