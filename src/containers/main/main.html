@@ -1,4 +1,4 @@
-<div class="main" ng-class="{'main--has-feedback': $ctrl.showFeedback}">
+<div class="main">
   <main-toolbar game="$ctrl.game"></main-toolbar>
 
   <div class="main__intro" ng-if="!$ctrl.started">
@@ -40,7 +40,7 @@
       </div>
     </div>
     <!-- Game is over ! -->
-    <div class="main__steps__over" ng-if="$ctrl.game.isOver() && !$ctrl.showFeedback">
+    <div class="main__steps__over" ng-if="$ctrl.game.isOver()">
       <div ng-bind-html="$ctrl.game.end.text | unsafe" class="lead"></div>
       <div class="text-right">
         <button class="btn btn-link" ng-click="$ctrl.game.undo()">
