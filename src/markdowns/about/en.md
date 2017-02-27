@@ -22,6 +22,11 @@ After each choice, there is a (risk / 10) probability of triggering a _game over
 
 This tool is part of <strong><a target="_blank" href="http://openbudgets.eu/">OpenBudgets.eu</a>: Fighting Corruption with Fiscal Transparency</strong>, a consortium that includes <a target="_blank" href="https://okfn.org/">Open Knowledge</a>, <a target="_blank" href="https://okfn.de/">Open Knowledge Germany</a>, <a target="_blank" href="http://okfn.gr/">Open Knowledge Greece</a>, <a target="_blank" href="https://www.iais.fraunhofer.de/en.html">Fraunhofer IAIS</a>, <a target="_blank" href="https://www.uni-bonn.de/">University of Bonn</a>, <a target="_blank" href="http://www.civio.es/en/">CIVIO</a>, <a target="_blank" href="http://transparency.eu//">Transparency Int. EU</a>, <a target="_blank" href="https://en.wikipedia.org/wiki/Journalism%2B%2B">Journalism++</a> and <a target="_blank" href="https://www.vse.cz/english/">University of Economics - Prague</a>. 
 
+# Want to help ?
+
+We would be extremely happy if you could help translate the game or contribute to [Cooking Budgets](http://cookingbudgets.com/) by adding examples of local corruption.
+
+Contact us at chef@cookingbudgets.com 
 
 <table>
 
