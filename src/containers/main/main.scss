@@ -145,6 +145,12 @@
     top:0;
     bottom:0;
 
+    .main--is-over &__year,
+    .main--is-over &__item {
+      filter:grayscale(100);
+      opacity:0.4;
+    }
+
     &--has-footer {
       bottom:4.5rem;
     }
@@ -249,10 +255,27 @@
       background: darken($brand-inverse, 10);
       color: white;
       padding:$spacer;
-      margin:0.5rem;
+      position: relative;
+      margin-top:$spacer * 2;
+      z-index:100;
 
       .btn.btn-link {
         color:inherit;
+      }
+
+      &__share {
+        padding:$spacer;
+        padding-top: $spacer;
+        margin:0 -$spacer;
+        margin-top: $spacer;
+        border-top:dashed 1px $brand-inverse;
+      }
+
+      &__undo, &__undo:hover {
+        position: absolute;
+        bottom:100%;
+        left:$spacer;
+        background: darken($brand-inverse, 10);
       }
     }
   }

@@ -1,4 +1,4 @@
-<div class="main">
+<div class="main" ng-class="{'main--is-over': $ctrl.game.isOver()}">
   <main-toolbar game="$ctrl.game"></main-toolbar>
 
   <div class="main__intro" ng-if="!$ctrl.started">
@@ -41,13 +41,29 @@
     </div>
     <!-- Game is over ! -->
     <div class="main__steps__over" ng-if="$ctrl.game.isOver()">
+      <button class="btn btn-link btn-sm main__steps__over__undo" ng-click="$ctrl.game.undo()">
+        <i class="fa fa-undo fa-fw"></i>
+        <span translate>main.steps.over.undo</span>
+      </button>
       <div ng-bind-html="$ctrl.game.end.text | unsafe" class="lead"></div>
-      <div class="text-right">
-        <button class="btn btn-link" ng-click="$ctrl.game.undo()">
-          <i class="fa fa-undo fa-fw"></i>
-          <span translate>main.steps.over.undo</span>
+      <div class="main__steps__over__share">
+        <p translate="main.steps.over.share" translate-compile translate-values="{
+          amount: ($ctrl.game.var('personal_account').value | number),
+          years: $ctrl.yearsCount()
+        }"></p>
+      </div>
+      <div class="float-left">
+        <button class="btn btn-primary btn-sm" socialshare socialshare-provider="twitter" socialshare-url="{{'app.url' | translate}}" socialshare-via="{{ 'app.share.tweet.via' | translate }}" socialshare-text="{{ 'app.share.tweet.text' | translate }}" translate-attr="{title: 'main.toolbar.share.twitter'}">
+          <i class="fa fa-twitter fa-fw"></i>
+          <span class="hidden-sm-down" translate>main.toolbar.share.twitter</span>
         </button>
-        <button class="btn btn-secondary" ng-click="$ctrl.playAgain()" translate>main.steps.over.again</button>
+        <button class="btn btn-primary btn-sm" socialshare socialshare-provider="facebook" socialshare-url="{{'app.url' | translate}}" translate-attr="{title: 'main.toolbar.share.facebook'}">
+          <i class="fa fa-facebook fa-fw"></i>
+          <span class="hidden-sm-down" translate>main.toolbar.share.facebook</span>
+        </button>
+      </div>
+      <div class="text-right">
+        <button class="btn btn-secondary  btn-sm" ng-click="$ctrl.playAgain()" translate>main.steps.over.again</button>
       </div>
     </div>
   </div>

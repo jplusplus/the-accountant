@@ -1,7 +1,13 @@
 {
   "app": {
     "title": "Le Bon, La Brute et Le Comptable",
-    "url": "https://jplusplus.github.io/the-accountant/"
+    "url": "https://jplusplus.github.io/the-accountant/",
+    "share": {
+      "tweet": {
+        "via": "jplusplus_",
+        "text": "Yolo"
+      }
+    }
   },
   "main": {
     "back": "Revenir au jeu",

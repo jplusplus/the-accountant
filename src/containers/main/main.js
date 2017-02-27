@@ -70,6 +70,9 @@ export const main = {
         return y >= _.first(this.game.years) && y <= this.year;
       });
     };
+    this.yearsCount = () => {
+      return this.game.year - _.first(this.game.years);
+    };
     // The party start!
     this.start = () => {
       this.started = true;
