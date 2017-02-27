@@ -11,10 +11,11 @@
   &__intro {
     position: fixed;
     top:0;
-    bottom:0;
+    height: 100%;
     left:0;
     right:0;
     z-index: 2000;
+    overflow: auto;
     background: darken($brand-inverse, 10);
     @include transition(1500ms);
 
@@ -99,6 +100,10 @@
     right:0;
     margin-bottom:$spacer;
     background: $brand-primary;
+
+    @include media-breakpoint-down(sm) {
+      position: relative;
+    }
 
     a {
       padding:$spacer;
