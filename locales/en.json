@@ -2,10 +2,12 @@
   "app": {
     "title": "The Good, The Bad and The Accountant",
     "url": "https://jplusplus.github.io/the-accountant/",
+    "description": "Can you run a city without falling prey to the sirens of corruption? Test yourself by playing The Good, The Bad and The Accountant!",
+    "image": "https://jplusplus.github.io/the-accountant/images/share.png",
     "share": {
       "tweet": {
         "via": "jplusplus_",
-        "text": "Yolo"
+        "text": "How long can you survive in a corrupt city hall? Take your chance!"
       }
     }
   },
@@ -23,7 +25,7 @@
       "over": {
         "undo": "Undo last action",
         "again": "Play again",
-        "share": "You embezzled <a ui-sref='main.vars'>{{amount}} money in {{years}} years</a>. Challenge your friends to make more!"
+        "share": "You embezzled <a ui-sref='main.vars'>{{amount}} in {{years}} years</a>. Challenge your friends to make more!"
       }
     },
     "toolbar": {
