@@ -31,8 +31,6 @@ module.exports.translateRun = function translateRun($transitions, $location, $tr
     const fileLang = ($location.absUrl().match(/\/(\w{2})\.html/) || [])[1];
     // Or get lang from location search
     const lang = fileLang || $location.search().lang;
-    console.log(fileLang, lang);
-    console.log($location.absUrl(), $location.absUrl().match(/(\w[2])\.html/));
     // Does the search param exists?
     if ($translate.getAvailableLanguageKeys().indexOf(lang) > -1) {
       // Update current language
