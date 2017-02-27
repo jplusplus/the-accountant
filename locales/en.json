@@ -1,7 +1,13 @@
 {
   "app": {
     "title": "The Good, The Bad and The Accountant",
-    "url": "https://jplusplus.github.io/the-accountant/"
+    "url": "https://jplusplus.github.io/the-accountant/",
+    "share": {
+      "tweet": {
+        "via": "jplusplus_",
+        "text": "Yolo"
+      }
+    }
   },
   "main": {
     "back": "Back to the game",
@@ -16,7 +22,8 @@
       "undo": "Undo <span class='hidden-xs-down'>last action</span>",
       "over": {
         "undo": "Undo last action",
-        "again": "Play again"
+        "again": "Play again",
+        "share": "You embezzled <a ui-sref='main.vars'>{{amount}} money in {{years}} years</a>. Challenge your friends to make more!"
       }
     },
     "toolbar": {
