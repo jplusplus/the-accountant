@@ -14,6 +14,9 @@ const extractCSS = new ExtractTextPlugin('[name].css');
 
 module.exports = {
   module: {
+    noParse: [
+      /localforage\.js$/,
+    ],
     loaders: [
       {
         test: /.json$/,

@@ -4,6 +4,9 @@ const path = require('path');
 
 module.exports = {
   module: {
+    noParse: [
+      /localforage\.js$/,
+    ],
     loaders: [
       {
         test: /.json$/,

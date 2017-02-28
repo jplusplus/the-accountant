@@ -9,6 +9,9 @@ const pkg = require('../package.json');
 const autoprefixer = require('autoprefixer');
 module.exports = {
   module: {
+    noParse: [
+      /localforage\.js$/,
+    ],
     loaders: [
       {
         test: /.json$/,
