@@ -1935,6 +1935,7 @@
       "choices": [
         {
           "text@en": "Voelia Environment made an offer at 1.2 million per year",
+          "text@fr": "Voelia Environment a fait une offre à 1,2 millions par an",
           "var_changes": {
             "resources": -1.2
           },
