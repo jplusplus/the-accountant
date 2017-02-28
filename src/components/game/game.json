@@ -812,6 +812,21 @@
               "character": "construction-boss",
               "text@en": "You won't last long if you continue like this.",
               "text@fr": "Tu ne resteras pas longtemps en poste si tu continues."
+            },
+            {
+              "character": "helper",
+              "text@en": "Cartels rotate the company that wins the tender.",
+              "text@fr": "Dans un cartel, la société qui remporte l'appel d'offre change régulièrement."
+            },
+            {
+              "character": "helper",
+              "text@en": "The winner then pays off other members of the cartel.",
+              "text@fr": "Elle paye ensuite les autres membres du cartel."
+            },
+            {
+              "character": "helper",
+              "text@en": "By not choosing the company that should have won, you're embarassing Gerber.",
+              "text@fr": "En ne choisissant pas la société qui aurait dû gagner, vous embarrassez Guillory."
             }
           ]
         },
