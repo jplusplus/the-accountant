@@ -17,7 +17,7 @@ module.exports.routesConfig = function routesConfig($stateProvider, $urlRouterPr
         /** @ngInject */
         game: Game => new Game(),
         /** @ngInject */
-        history: $localForage => $localForage.getItem('history')
+        history: $localForage => $localForage.getItem('history').catch(angular.noop)
       }
     })
     .state('main.vars', {

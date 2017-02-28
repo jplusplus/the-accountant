@@ -87,7 +87,8 @@ export const main = {
     };
     // Save user history
     this.save = () => {
-      return $localForage.setItem('history', this.game.historySerialized);
+      // @see https://github.com/localForage/localForage/issues/626#issuecomment-262448068
+      return $localForage.setItem('history', this.game.historySerialized).catch(angular.noop);
     };
     this.$onInit = () => {
       // Go automaticaly to the next slice
@@ -98,7 +99,7 @@ export const main = {
       $scope.$on('game:selection', this.save);
       $scope.$on('game:undo', this.save);
       // Losing will clear history
-      $scope.$on('game:over', () => $localForage.removeItem('history'));
+      $scope.$on('game:over', () => $localForage.removeItem('history').catch(angular.noop));
       // Restart the timer when re-entering this state
       $transitions.onSuccess({to: 'main'}, this.waitNextSlice);
       // Watch keyboard
