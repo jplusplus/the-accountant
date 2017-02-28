@@ -24,3 +24,18 @@ To deploy on Github Pages run `make deploy`.
 ## Test
 
 To run unit tests use `make test`.
+
+
+## Embed
+
+**In english:**
+
+```
+<iframe  width="100%" height="700" src="//jplusplus.github.io/the-accountant/" frameborder="0" allowfullscreen></iframe>
+```
+
+**In french:**
+
+```
+<iframe  width="100%" height="700" src="//jplusplus.github.io/the-accountant/fr.html" frameborder="0" allowfullscreen></iframe>
+```
