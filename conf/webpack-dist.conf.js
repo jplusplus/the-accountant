@@ -7,7 +7,6 @@ const FailPlugin = require('webpack-fail-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const pkg = require('../package.json');
 const autoprefixer = require('autoprefixer');
-
 module.exports = {
   module: {
     loaders: [
@@ -77,8 +76,5 @@ module.exports = {
     path: path.join(process.cwd(), conf.paths.dist),
     filename: '[name]-[hash].js'
   },
-  entry: {
-    app: `./${conf.path.src('index')}`,
-    //vendor: Object.keys(pkg.devDependencies)
-  }
+  entry: ['babel-polyfill', `./${conf.path.src('index')}`]
 };

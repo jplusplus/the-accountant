@@ -1,4 +1,5 @@
 // External modules
+import 'babel-polyfill';
 import angular from 'angular';
 import 'angular-animate';
 import 'angular-cookies';
