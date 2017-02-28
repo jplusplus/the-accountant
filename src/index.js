@@ -16,7 +16,7 @@ import 'angular-translate-storage-local';
 import 'angular-ui-router';
 import 'angularjs-scroll-glue';
 import 'ng-fittext';
-import 'localforage';
+import localforage from 'localforage';
 import 'c3-angular';
 import 'marked';
 // Containers
@@ -55,6 +55,9 @@ import {translateConfig, translateRun} from './translate.js';
 import './index.scss';
 // For specs
 export const app = 'app';
+// Fix an issue with localforage when the app is executed from an iframe
+// @see https://github.com/localForage/localForage/issues/631#issuecomment-267265554
+localforage.ready().catch(angular.noop);
 
 angular
   .module(app, [

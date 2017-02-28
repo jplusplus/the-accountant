@@ -122,9 +122,9 @@ angular-hotkeys@^1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/angular-hotkeys/-/angular-hotkeys-1.7.0.tgz#052e6b6f44dfcd824427798b7f10e1917e8700a1"
 
-angular-localforage@^1.3.3:
-  version "1.3.3"
-  resolved "https://registry.yarnpkg.com/angular-localforage/-/angular-localforage-1.3.3.tgz#cadf1e8a1b055ab3539d245022606b510554065e"
+angular-localforage@^1.3.5:
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/angular-localforage/-/angular-localforage-1.3.5.tgz#62107ce9e0f9a1aa5284edb8e96ebb05ddc3b1c9"
   dependencies:
     localforage "~1.4"
 
@@ -4101,6 +4101,12 @@ loader-utils@^0.2.11, loader-utils@^0.2.15, loader-utils@^0.2.16, loader-utils@^
     emojis-list "^2.0.0"
     json5 "^0.5.0"
     object-assign "^4.0.1"
+
+localforage@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/localforage/-/localforage-1.5.0.tgz#6b994e19b56611fa85df3992df397ac4ab66e815"
+  dependencies:
+    lie "3.0.2"
 
 localforage@~1.4:
   version "1.4.3"
