@@ -260,7 +260,7 @@
         {
           "character": "mayor",
           "text@en": "Hi there, welcome to City Hall!",
-          "text@fr": "Bonjour et bienvenue à l'hôtel de ville!"
+          "text@fr": "Bonjour et bienvenue à l'hôtel de ville !"
         },
         {
           "character": "mayor",
@@ -390,7 +390,7 @@
             {
               "character": "construction-boss",
               "text@en": "You're new here, aren't you?",
-              "text@fr": "Tu es nouvelle par ici, non?"
+              "text@fr": "Tu es nouvelle par ici, non ?"
             },
             {
               "character": "construction-boss",
@@ -425,7 +425,7 @@
             {
               "character": "construction-boss",
               "text@en": "You're new here, aren't you?",
-              "text@fr": "Tu es nouvelle par ici, non?"
+              "text@fr": "Tu es nouvelle par ici, non ?"
             },
             {
               "character": "construction-boss",
@@ -456,7 +456,7 @@
         {
           "character": "construction-boss",
           "text@en": "Hey!",
-          "text@fr": "Salut!"
+          "text@fr": "Salut !"
         },
         {
           "character": "construction-boss",
@@ -471,7 +471,7 @@
         {
           "character": "construction-boss",
           "text@en": "By the way, do you want this new BMW? I bought it last month but don't really need it.",
-          "text@fr": "D'ailleurs, tu veux cette BMW? Je l'ai acheté le mois passé mais je ne m'en sers pas."
+          "text@fr": "D'ailleurs, tu veux cette BMW ? Je l'ai acheté le mois passé mais je ne m'en sers pas."
         }
       ],
       "helper": [
@@ -498,7 +498,7 @@
             {
               "character": "construction-boss",
               "text@en": "Here you go!",
-              "text@fr": "Voilà les clés!"
+              "text@fr": "Voilà les clés !"
             },
             {
               "character": "construction-boss",
@@ -554,12 +554,12 @@
         {
           "character": "mayor",
           "text@en": "I can't take it anymore!",
-          "text@fr": "Je n'en peux plus!"
+          "text@fr": "Je n'en peux plus !"
         },
         {
           "character": "mayor",
           "text@en": "Can you find a solution for them?",
-          "text@fr": "Vous pouvez me trouver une solution?"
+          "text@fr": "Vous pouvez me trouver une solution ?"
         }
       ],
       "helper": [
@@ -615,7 +615,7 @@
             {
               "character": "mayor",
               "text@en": "And how exactly are we supposed to pay for this program?",
-              "text@fr": "Et comment allons-nous le financer?"
+              "text@fr": "Et comment allons-nous le financer ?"
             },
             {
               "character": "mayor",
@@ -671,7 +671,7 @@
         {
           "character": "football-boss",
           "text@en": "There's this empty plot of land the city owns. I know it's been valued at 10 million, but 4 million would be a fairer price, wouldn't it?",
-          "text@fr": "La ville possède un terrain. Je sais qu'il vaut 10 millions, mais ça serait honnête de me le vendre pour 4 millions, non?"
+          "text@fr": "La ville possède un terrain. Je sais qu'il vaut 10 millions, mais ça serait honnête de me le vendre pour 4 millions, non ?"
         }
       ],
       "helper": [
@@ -727,7 +727,7 @@
             {
               "character": "football-boss",
               "text@en": "Deal!",
-              "text@fr": "Deal!"
+              "text@fr": "Deal !"
             },
             {
               "character": "football-boss",
@@ -806,7 +806,7 @@
             {
               "character": "construction-boss",
               "text@en": "Playing with fire, are we?",
-              "text@fr": "Alors, on joue avec le feu?"
+              "text@fr": "Alors, on joue avec le feu ?"
             },
             {
               "character": "construction-boss",
@@ -846,7 +846,7 @@
             {
               "character": "construction-boss",
               "text@en": "Playing with fire, are we?",
-              "text@fr": "Alors, on joue avec le feu?"
+              "text@fr": "Alors, on joue avec le feu ?"
             },
             {
               "character": "construction-boss",
@@ -868,7 +868,7 @@
         {
           "character": "lawyer",
           "text@en": "So, you want to create your own company?",
-          "text@fr": "Vous voulez créer votre propre société, c'est ça?"
+          "text@fr": "Vous voulez créer votre propre société, c'est ça ?"
         }
       ],
       "helper": [
@@ -934,7 +934,7 @@
         {
           "character": "lawyer",
           "text@en": "Who should be the nominal owner of the company?",
-          "text@fr": "Qui doit être le propriétaire de la société?"
+          "text@fr": "Qui doit être le propriétaire de la société ?"
         }
       ],
       "choices": [
@@ -1035,7 +1035,7 @@
         {
           "character": "helper",
           "text@en": "Six years on the job and already running a cartel! Here's my [memo on the topic|cartel] if you need it.",
-          "text@fr": "Vous voilà à la tête d'un cartel! Mon [mémo sur les cartels est toujours là|cartel] si besoin."
+          "text@fr": "Vous voilà à la tête d'un cartel ! Mon [mémo sur les cartels est toujours là|cartel] si besoin."
         }
       ],
       "choices": [
@@ -1056,7 +1056,7 @@
             {
               "character": "construction-boss",
               "text@en": "Like a boss!",
-              "text@fr": "Tu te débrouilles comme un chef!"
+              "text@fr": "Tu te débrouilles comme un chef !"
             },
             {
               "character": "construction-boss",
@@ -1081,12 +1081,12 @@
             {
               "character": "construction-boss",
               "text@en": "What the hell?",
-              "text@fr": "Quoi?"
+              "text@fr": "Quoi ?"
             },
             {
               "character": "construction-boss",
               "text@en": "You run a cartel and you can't even pick the right offer?",
-              "text@fr": "Tu fais un cartel et tu ne choisis pas la bonne offre?"
+              "text@fr": "Tu fais un cartel et tu ne choisis pas la bonne offre ?"
             }
           ]
         },
@@ -1106,12 +1106,12 @@
             {
               "character": "construction-boss",
               "text@en": "What the hell?",
-              "text@fr": "Quoi?"
+              "text@fr": "Quoi ?"
             },
             {
               "character": "construction-boss",
               "text@en": "You run a cartel and you can't even pick the right offer?",
-              "text@fr": "Tu fais un cartel et tu ne choisis pas la bonne offre?"
+              "text@fr": "Tu fais un cartel et tu ne choisis pas la bonne offre ?"
             }
           ]
         }
@@ -1164,7 +1164,7 @@
             {
               "character": "construction-boss",
               "text@en": "Good choice, buddy.",
-              "text@fr": "Bon choix!"
+              "text@fr": "Bon choix !"
             },
             {
               "character": "construction-boss",
@@ -1189,7 +1189,7 @@
             {
               "character": "construction-boss",
               "text@en": "Playing with fire, are we?",
-              "text@fr": "Tu joues avec le feu!"
+              "text@fr": "Tu joues avec le feu !"
             },
             {
               "character": "construction-boss",
@@ -1214,7 +1214,7 @@
             {
               "character": "construction-boss",
               "text@en": "Playing with fire, are we?",
-              "text@fr": "Tu joues avec le feu!"
+              "text@fr": "Tu joues avec le feu !"
             },
             {
               "character": "construction-boss",
@@ -1236,7 +1236,7 @@
         {
           "character": "mayor",
           "text@en": "It'll make your work faster and benefit citizens!",
-          "text@fr": "Cela va améliorer votre productivité et profiter aux citoyens!"
+          "text@fr": "Cela va améliorer votre productivité et profiter aux citoyens !"
         }
       ],
       "helper": [
@@ -1258,7 +1258,7 @@
             {
               "character": "you",
               "text@en": "Oh, a credit card!",
-              "text@fr": "Oh, une carte de crédit!"
+              "text@fr": "Oh, une carte de crédit !"
             },
             {
               "character": "you",
@@ -1268,12 +1268,12 @@
             {
               "character": "lawyer",
               "text@en": "No, you did't, did you?",
-              "text@fr": "Non, vous n'avez pas fait ça?"
+              "text@fr": "Non, vous n'avez pas fait ça ?"
             },
             {
               "character": "lawyer",
               "text@en": "As soon as the comptroller reads the credit card statements, you'll be fired!",
-              "text@fr": "Quand le comptable lira le relevé de carte bleue, vous serez mise à la porte!"
+              "text@fr": "Quand le comptable lira le relevé de carte bleue, vous serez mise à la porte !"
             }
           ]
         },
@@ -1340,7 +1340,7 @@
             {
               "character": "mayor",
               "text@en": "What????",
-              "text@fr": "Qu'entends-je???"
+              "text@fr": "Qu'entends-je ???"
             },
             {
               "character": "mayor",
@@ -1438,17 +1438,17 @@
             {
               "character": "you",
               "text@en": "Sure, a healthy football club for a healthy city!",
-              "text@fr": "Bien sûr! Un club en forme pour une ville dynamique!"
+              "text@fr": "Bien sûr! Un club en forme pour une ville dynamique !"
             },
             {
               "character": "football-boss",
               "text@en": "Yeah!",
-              "text@fr": "Yeah!"
+              "text@fr": "Yeah !"
             },
             {
               "character": "football-boss",
               "text@en": "With people like you, we'll win the Cup!",
-              "text@fr": "Avec des gens comme vous, on va gagner la Coupe!"
+              "text@fr": "Avec des gens comme vous, on va gagner la Coupe !"
             }
           ]
         },
@@ -1472,17 +1472,17 @@
             {
               "character": "mayor",
               "text@en": "What did you do?",
-              "text@fr": "Qu'est ce que vous avez fait?"
+              "text@fr": "Qu'est ce que vous avez fait ?"
             },
             {
               "character": "mayor",
               "text@en": "You turned my friend down?",
-              "text@fr": "Vous avez laissé tomber mon ami?"
+              "text@fr": "Vous avez laissé tomber mon ami ?"
             },
             {
               "character": "mayor",
               "text@en": "Who do you think people will blame if the football team goes bankrupt?",
-              "text@fr": "Qui croyez vous que les habitants tiendront pour responsable, en cas de faillite du club?"
+              "text@fr": "Qui croyez vous que les habitants tiendront pour responsable, en cas de faillite du club ?"
             }
           ]
         }
@@ -1494,7 +1494,7 @@
         {
           "character": "construction-boss",
           "text@en": "Hey buddy!",
-          "text@fr": "Salut, toi!"
+          "text@fr": "Salut, toi !"
         },
         {
           "character": "construction-boss",
@@ -1514,7 +1514,7 @@
         {
           "character": "construction-boss",
           "text@en": "And we'll share the money.",
-          "text@fr": "Et on partage le fric!"
+          "text@fr": "Et on partage le fric !"
         }
       ],
       "helper": [
@@ -1546,12 +1546,12 @@
             {
               "character": "construction-boss",
               "text@en": "Well done!",
-              "text@fr": "Bien joué!"
+              "text@fr": "Bien joué !"
             },
             {
               "character": "construction-boss",
               "text@en": "Here's to our collaboration! 🍻",
-              "text@fr": "A notre collaboration! 🍻"
+              "text@fr": "A notre collaboration ! 🍻"
             }
           ]
         },
@@ -1587,7 +1587,7 @@
         {
           "character": "construction-boss",
           "text@en": "Hey buddy!",
-          "text@fr": "Salut!"
+          "text@fr": "Salut !"
         },
         {
           "character": "construction-boss",
@@ -1597,7 +1597,7 @@
         {
           "character": "construction-boss",
           "text@en": "You deserve a mahogany desk and designer chairs, at least!",
-          "text@fr": "Un bureau en acajou et des chaises en cuir, au moins!"
+          "text@fr": "Un bureau en acajou et des chaises en cuir, au moins !"
         },
         {
           "character": "construction-boss",
@@ -1621,12 +1621,12 @@
             {
               "character": "mayor",
               "text@en": "What happened?",
-              "text@fr": "Que s'est-il passé?"
+              "text@fr": "Que s'est-il passé ?"
             },
             {
               "character": "mayor",
               "text@en": "How come your office is nicer than mine?",
-              "text@fr": "Pourquoi votre bureau est-il mieux que le mien?"
+              "text@fr": "Pourquoi votre bureau est-il mieux que le mien ?"
             },
             {
               "character": "mayor",
@@ -1667,12 +1667,12 @@
         {
           "character": "mayor",
           "text@en": "The people deserve this.",
-          "text@fr": "Le peuple le mérite!"
+          "text@fr": "Le peuple le mérite !"
         },
         {
           "character": "mayor",
           "text@en": "How should we arrange the financing?",
-          "text@fr": "Comment allons-nous le financer?"
+          "text@fr": "Comment allons-nous le financer ?"
         }
       ],
       "helper": [
@@ -1703,12 +1703,12 @@
             {
               "character": "mayor",
               "text@en": "Ten MILLION?",
-              "text@fr": "Dix MILLIONS?"
+              "text@fr": "Dix MILLIONS ?"
             },
             {
               "character": "mayor",
               "text@en": "Where do you think you work at? Buckingham Palace?",
-              "text@fr": "Mais où vous croyez vous?"
+              "text@fr": "Mais où vous croyez vous ?"
             },
             {
               "character": "mayor",
@@ -1737,12 +1737,12 @@
             {
               "character": "mayor",
               "text@en": "I love this PPP thing!",
-              "text@fr": "J'adore ces PPP!"
+              "text@fr": "J'adore ces PPP !"
             },
             {
               "character": "mayor",
               "text@en": "I get stuff done, and it's the next mayors who pay!",
-              "text@fr": "On peut construire ce qu'on veut, et c'est le maire suivant qui paye!"
+              "text@fr": "On peut construire ce qu'on veut, et c'est le maire suivant qui paye !"
             }
           ]
         }
@@ -1759,12 +1759,12 @@
         {
           "character": "lawyer",
           "text@en": "Have you heard the news?",
-          "text@fr": "Vous avez entendu les nouvelles?"
+          "text@fr": "Vous avez entendu les nouvelles ?"
         },
         {
           "character": "lawyer",
           "text@en": "Do you want to buy shares in Voelia Environment, a trash collection company?",
-          "text@fr": "Voulez-vous acheter des actions de Voelia Environment, une société de collecte d'ordures?"
+          "text@fr": "Voulez-vous acheter des actions de Voelia Environment, une société de collecte d'ordures ?"
         },
         {
           "character": "lawyer",
@@ -1789,7 +1789,7 @@
             {
               "character": "lawyer",
               "text@en": "Brilliant!",
-              "text@fr": "Super!"
+              "text@fr": "Super !"
             },
             {
               "character": "lawyer",
@@ -1896,7 +1896,7 @@
             {
               "character": "mayor",
               "text@en": "Well done!",
-              "text@fr": "Excellent!"
+              "text@fr": "Excellent !"
             },
             {
               "character": "mayor",
@@ -1963,12 +1963,12 @@
             {
               "character": "mayor",
               "text@en": "Well done!",
-              "text@fr": "Excellent!"
+              "text@fr": "Excellent !"
             },
             {
               "character": "mayor",
               "text@en": "Private companies running public services, what could go wrong?",
-              "text@fr": "Des sociétés privées pour gérer des services publics, quelle bonne idée!"
+              "text@fr": "Des sociétés privées pour gérer des services publics, quelle bonne idée !"
             }
           ]
         },
@@ -1987,12 +1987,12 @@
             {
               "character": "mayor",
               "text@en": "Well done!",
-              "text@fr": "Excellent!"
+              "text@fr": "Excellent !"
             },
             {
               "character": "mayor",
               "text@en": "Private companies running public services, what could go wrong?",
-              "text@fr": "Des sociétés privées pour gérer des services publics, quelle bonne idée!"
+              "text@fr": "Des sociétés privées pour gérer des services publics, quelle bonne idée !"
             }
           ]
         }
@@ -2046,7 +2046,7 @@
             {
               "character": "mayor",
               "text@en": "What if we lose?",
-              "text@fr": "Et si on perd?"
+              "text@fr": "Et si on perd ?"
             },
             {
               "character": "mayor",
@@ -2087,7 +2087,7 @@
         {
           "character": "university-boss",
           "text@en": "It's good to see you!",
-          "text@fr": "Ah, ça fait plaisir de te voir!"
+          "text@fr": "Ah, ça fait plaisir de te voir !"
         },
         {
           "character": "university-boss",
@@ -2097,7 +2097,7 @@
         {
           "character": "university-boss",
           "text@en": "It's been a while since we last talked!",
-          "text@fr": "Ça fait longtemps qu'on s'est pas vus!"
+          "text@fr": "Ça fait longtemps qu'on s'est pas vus !"
         },
         {
           "character": "university-boss",
@@ -2117,12 +2117,12 @@
         {
           "character": "university-boss",
           "text@en": "And I let them in!",
-          "text@fr": "Et je les inscris en échange d'un bakchich!"
+          "text@fr": "Et je les inscris en échange d'un bakchich !"
         },
         {
           "character": "university-boss",
           "text@en": "Smart, isn't it?",
-          "text@fr": "Malin, non?"
+          "text@fr": "Malin, non ?"
         }
       ],
       "helper": [
@@ -2148,7 +2148,7 @@
             {
               "character": "you",
               "text@en": "That's totally illegal! I am sorry but I have to report it to the police.",
-              "text@fr": "C'est complètement illégal! Je suis désolé, mais je dois le signaler à la police."
+              "text@fr": "C'est complètement illégal ! Je suis désolé, mais je dois le signaler à la police."
             },
             {
               "character": "mayor",
@@ -2172,12 +2172,12 @@
             {
               "character": "you",
               "text@en": "Very smart! Let's have the students pay for our dinner then.",
-              "text@fr": "Ingénieux! Ce sont ces étudiants qui nous invitent à déjeuner, alors!"
+              "text@fr": "Ingénieux ! Ce sont ces étudiants qui nous invitent à déjeuner, alors !"
             },
             {
               "character": "university-boss",
               "text@en": "Here's to an old friendship! 🍻",
-              "text@fr": "A notre longue amitié! 🍻"
+              "text@fr": "A notre longue amitié ! 🍻"
             }
           ]
         }
@@ -2209,7 +2209,7 @@
         {
           "character": "mayor",
           "text@en": "Should we do it?",
-          "text@fr": "Doit-on le faire?"
+          "text@fr": "Doit-on le faire ?"
         }
       ],
       "helper": [
@@ -2246,12 +2246,12 @@
             {
               "character": "mayor",
               "text@en": "Great!",
-              "text@fr": "Super!"
+              "text@fr": "Super !"
             },
             {
               "character": "mayor",
               "text@en": "After all, the future belongs to the next mayor, not me!",
-              "text@fr": "Après tout, le futur appartient aux maires suivants!"
+              "text@fr": "Après tout, le futur appartient aux maires suivants !"
             }
           ]
         },
@@ -2275,7 +2275,7 @@
             {
               "character": "mayor",
               "text@en": "And how am I supposed to balance my budget now?",
-              "text@fr": "Et comment vais-je équilibrer le budget?"
+              "text@fr": "Et comment vais-je équilibrer le budget ?"
             },
             {
               "character": "mayor",
@@ -2319,7 +2319,7 @@
         {
           "character": "helper",
           "text@en": "Everybody does it but no one talks about it!",
-          "text@fr": "Tout le monde le fait mais personne n'en parle!"
+          "text@fr": "Tout le monde le fait mais personne n'en parle !"
         },
         {
           "character": "helper",
@@ -2353,17 +2353,17 @@
             {
               "character": "mayor",
               "text@en": "What the hell?",
-              "text@fr": "Qu'est-ce que j'apprends?"
+              "text@fr": "Qu'est-ce que j'apprends ?"
             },
             {
               "character": "mayor",
               "text@en": "If this gets leaked on Twitter or anywhere else, you're out!",
-              "text@fr": "Si ça fuite sur Twitter où que sais-je, vous prennez la porte!"
+              "text@fr": "Si ça fuite sur Twitter où que sais-je, vous prennez la porte !"
             },
             {
               "character": "mayor",
               "text@en": "Both of you!",
-              "text@fr": "Vous et votre mari!"
+              "text@fr": "Vous et votre mari !"
             }
           ]
         },
@@ -2382,7 +2382,7 @@
             {
               "character": "construction-boss",
               "text@en": "Sure, buddy.",
-              "text@fr": "Aucun problème, mon amie!"
+              "text@fr": "Aucun problème, mon amie !"
             },
             {
               "character": "construction-boss",
@@ -2416,7 +2416,7 @@
             {
               "character": "lawyer",
               "text@en": "By the way, you know I'm also a divorce laywer, right?",
-              "text@fr": "Au fait, je m'occupe aussi de divorces!"
+              "text@fr": "Au fait, je m'occupe aussi de divorces !"
             }
           ]
         }
@@ -2428,7 +2428,7 @@
         {
           "character": "construction-boss",
           "text@en": "Hey there!",
-          "text@fr": "Salut!"
+          "text@fr": "Salut !"
         },
         {
           "character": "construction-boss",
@@ -2443,14 +2443,14 @@
         {
           "character": "construction-boss",
           "text@en": "Why don't you come to my chalet of Zug, Switzerland, to discuss this?",
-          "text@fr": "Pourquoi ne viens-tu pas passer le week-end dans mon châlet de Zug, en Suisse, pour en discuter?"
+          "text@fr": "Pourquoi ne viens-tu pas passer le week-end dans mon châlet de Zug, en Suisse, pour en discuter ?"
         }
       ],
       "helper": [
         {
           "character": "helper",
           "text@en": "Already thinking of leaving us?",
-          "text@fr": "Vous pensez partir?"
+          "text@fr": "Vous pensez partir ?"
         },
         {
           "character": "helper",
@@ -2470,7 +2470,7 @@
             {
               "character": "you",
               "text@en": "Thanks for your offer!",
-              "text@fr": "Merci de votre offre!"
+              "text@fr": "Merci de votre offre !"
             },
             {
               "character": "you",
@@ -2480,7 +2480,7 @@
             {
               "character": "construction-boss",
               "text@en": "I knew you were the one for the job!",
-              "text@fr": "Je savais que tu serais parfaite!"
+              "text@fr": "Je savais que tu serais parfaite !"
             },
             {
               "character": "construction-boss",
@@ -2546,7 +2546,7 @@
         {
           "character": "helper",
           "text@en": "Think about me when you work for Gerber!",
-          "text@fr": "Ne m'oubliez pas quand vous travaillerez pour Guillory!"
+          "text@fr": "Ne m'oubliez pas quand vous travaillerez pour Guillory !"
         },
         {
           "character": "helper",
@@ -2566,7 +2566,7 @@
             {
               "character": "you",
               "text@en": "I choose Robert Construction Limited.",
-              "text@fr": "Je choisis Guillory Construction SARL"
+              "text@fr": "Je choisis Guillory Construction SARL."
             }
           ]
         },
@@ -2590,12 +2590,12 @@
             {
               "character": "construction-boss",
               "text@en": "This is it!",
-              "text@fr": "Ça y est!"
+              "text@fr": "C'est est trop !"
             },
             {
               "character": "construction-boss",
               "text@en": "You had it coming!",
-              "text@fr": "Ça te pendait au nez!"
+              "text@fr": "Ça te pendait au nez !"
             }
           ]
         }
@@ -2666,7 +2666,7 @@
         "min": 2
       },
       "text@en": "<h2>You're fired: You lost!</h2><p>You managed to have good relations with the contractors and to avoid the police, but your choices have made you unpopular. The mayor requests a career change for you. You're now in charge of welcoming guests at the city museum. How culturally enriching!</p>",
-      "text@fr": "<h2>Perdu: Vous êtes virée!</h2><p>Vous avez entretenu de bonnes relations avec les industriels et avec la police, mais vos choix vous ont rendu impopulaire. La maire exige que vous soyez mutée. Vous travaillez maintenant à l'accueil du musée municipal. C'est très enrichissant!</p>"
+      "text@fr": "<h2>Perdu: Vous êtes virée !</h2><p>Vous avez entretenu de bonnes relations avec les industriels et avec la police, mais vos choix vous ont rendu impopulaire. La maire exige que vous soyez mutée. Vous travaillez maintenant à l'accueil du musée municipal. C'est très enrichissant !</p>"
     },
     {
       "condition": {
@@ -2674,7 +2674,7 @@
         "min": 2
       },
       "text@en": "<h2>Busted: You lost!</h2><p>You managed to have good relations with the contractors while remaining popular. The mayor likes you, but the anticorruption police charged you with misapropriation of public funds. Relax, you probably won't go to prison, but the mayor demands that you resign.</p>",
-      "text@fr": "<h2>Perdu: Vous êtes mise en examen!</h2><p>Vous avez entretenu de bonnes relations avec le maire et avec les industriels, mais un enquêteur du parquet financier vous inculpe dans une affaire de détournement de fonds publics. Pas de panique, vous n'irez sans doute pas en prison. Mais la maire exige votre démission.</p>"
+      "text@fr": "<h2>Perdu: Vous êtes mise en examen !</h2><p>Vous avez entretenu de bonnes relations avec le maire et avec les industriels, mais un enquêteur du parquet financier vous inculpe dans une affaire de détournement de fonds publics. Pas de panique, vous n'irez sans doute pas en prison. Mais la maire exige votre démission.</p>"
     },
     {
       "condition": {
@@ -2682,7 +2682,7 @@
         "min": 2
       },
       "text@en": "<h2>Career change: You lost!</h2><p>Public work contractors told the mayor's office that they could not work with you. You are being reassigned to the Parks and Gardens department. How great that you can work outside now!</p>",
-      "text@fr": "<h2>Perdu: Vous changez de poste!</h2><p>Vous avez entretenu de bonnes relations avec le maire et avec la police, mais Guillory réclame votre départ. Il dit qu'il ne peut pas travailler avec vous. La maire vous mute aux Parcs et Jardins. Quelle joie de travailler au grand air!</p>"
+      "text@fr": "<h2>Perdu: Vous changez de poste !</h2><p>Vous avez entretenu de bonnes relations avec le maire et avec la police, mais Guillory réclame votre départ. Il dit qu'il ne peut pas travailler avec vous. La maire vous mute aux Parcs et Jardins. Quelle joie de travailler au grand air !</p>"
     },
     {
       "condition": {
@@ -2690,29 +2690,29 @@
         "min": 1
       },
       "text@en": "<h2>New career: You won!</h2><p>Robert Construction Limited makes you an offer you can't refuse, if only to ensure the financial well-being of your spouse and children. Bye-bye, public sector! Hello, business!</p>",
-      "text@fr": "<h2>Gagné: Nouvelle carrière!</h2><p>Cyril Guillory vous fait une proposition qui ne se refuse pas. Au revoir, secteur public! Bonjour, secteur privé!</p>"
+      "text@fr": "<h2>Gagné: Nouvelle carrière !</h2><p>Cyril Guillory vous fait une proposition qui ne se refuse pas. Au revoir, secteur public! Bonjour, secteur privé !</p>"
     },
     {
       "text@en": "<h2>Celebrating 20 years</h2><p>How time flies! 20 years already! In just another 20, you can be in retirement.</p>",
-      "text@fr": "<h2>Déjà 20 ans de carrière</h2><p>Comme le temps passe! Déjà 20 ans à ce poste. Encore 20 ans et vous pourrez prendre votre retraite.</p>"
+      "text@fr": "<h2>Déjà 20 ans de carrière</h2><p>Comme le temps passe ! Déjà 20 ans à ce poste. Encore 20 ans et vous pourrez prendre votre retraite.</p>"
     }
   ],
   "explainers": {
     "cartel": {
       "title@en": "How to spot a cartel?",
-      "title@fr": "Comment détecter un cartel?",
+      "title@fr": "Comment détecter un cartel ?",
       "body@en": "Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous.",
       "body@fr": "Un cartel apparait quand les candidats à un appel d'offre s'entendent entre eux. Vous pouvez les détecter si les prix des offres se suivent et sont proches les uns des autres.<br><br>Les industriels peuvent s'entendre sur celui qui proposera le prix le plus bas et gagnera l'appel d'offre. Le gagnant paye ensuite les autres membres du cartel. Le cartel fait une rotation entre les entreprises, afin que chaque membre du cartel gagne un peu.<br><br>Parfois, un des membres du cartels fait cavalier seul et fait une offre plus basse. Ça devient dangereux pour lui."
     },
     "gifts": {
       "title@en": "How to react to gifts?",
-      "title@fr": "Comment réagir aux cadeaux?",
+      "title@fr": "Comment réagir aux cadeaux ?",
       "body@en": "Public officials are usually prohibited from accepting gifts above a certain value (€50 at the European Commission, for instance). However, you can accept the gift if it is intended for you as a private person, or for your spouse. By refusing a gift, you risk angering the person who made it.",
       "body@fr": "Les fonctionnaires n'ont généralement pas le droit d'accepter des cadeaux au delà d'un certain seuil (50€ à la Commission Européenne, par exemple). Cela dit, vous pouvez accepter le cadeau s'il vous est adressé à vous personnellement, et non pas à vous en tant que fonctionnaire. Ou bien s'il est fait à votre partenaire. En refusant un cadeau, vous prenez le risque d'offenser celui qui vous l'offre."
     },
     "bribes": {
       "title@en": "How can you organize bribes?",
-      "title@fr": "Comment organiser des pots-de-vin?",
+      "title@fr": "Comment organiser des pots-de-vin ?",
       "body@en": "Bribery is not as common in Europe as in other parts of the world, but it is rampant is some sectors. In public housing, some officials ask for enveloppes of money to be given directly. For car inspection, some service centers will be pleased if you leave a gift or bills of cash on the passenger seat.<br><br>Read more under <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> at Cooking Budgets.",
       "body@fr":"Les bakchichs ne sont pas aussi fréquents en Europe que dans d'autres régions du monde, à l'exception de certains secteurs. Pour déterminer qui obtient un logement social, certains fonctionnaires n'hésitent pas à demander des enveloppes d'argent de la main à la main. Pour passer le contrôle technique automobile, certains centres de contrôle ferment les yeux en échange d'un cadeau sur le siège passager.<br><br>Lisez <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> [en anglais] sur Cooking Budgets pour en savoir plus."
     },
@@ -2756,7 +2756,7 @@
       "title@en": "Public-private partnerships",
       "title@fr": "Les partenariats public-privé",
       "body@en": "Since the 1980's, it is popular for public administrations to do public-private partnerships. Such partnerships involve a private company doing some of the work, usually building a equipment or operating it, while the administration contributes to the costs. In exchange, the private company can keep the revenues of the equipment it built.<br><br>The goal was to allow public administrations to provide public services without spending much money. In practice, private companies take almost no risks with such contracts and public administrations end up paying as much as they would have without the partnership. But it is usually hidden in the accounts of the public administration.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-public-private-partnership/' target='_blank'>The Public-Private Partnership</a> at Cooking Budgets.",
-      "body@fr": "Depuis les années 1980, les partenariats public-privé sont à la mode. Un tel partenariat implique qu'une société privée réalise un investissement, en général la construction d'un équipement public (route, stade, pont). En échange, la société privée peut garder tout ou partie des revenus d'exploitation de l'équipement.<br><br>L'objectif était que les administrations puissent investir dans de nouveaux équipements sans rien payer. En réalité, les administrations s'engagent souvent à payer un loyer à la société privée, dont le montant total dépasse la valeur de l'investissement! Comme ces loyers sont étalés dans le temps, on ne voit pas que le partenariat public-privé a en fait coûté plus cher à la collectivité qu'un investissement traditionnel.<br><br>Lisez <a href='http://www.cookingbudgets.com/the-public-private-partnership/' target='_blank'>The Public-Private Partnership</a> [en anglais] sur Cooking Budgets pour en savoir plus."
+      "body@fr": "Depuis les années 1980, les partenariats public-privé sont à la mode. Un tel partenariat implique qu'une société privée réalise un investissement, en général la construction d'un équipement public (route, stade, pont). En échange, la société privée peut garder tout ou partie des revenus d'exploitation de l'équipement.<br><br>L'objectif était que les administrations puissent investir dans de nouveaux équipements sans rien payer. En réalité, les administrations s'engagent souvent à payer un loyer à la société privée, dont le montant total dépasse la valeur de l'investissement ! Comme ces loyers sont étalés dans le temps, on ne voit pas que le partenariat public-privé a en fait coûté plus cher à la collectivité qu'un investissement traditionnel.<br><br>Lisez <a href='http://www.cookingbudgets.com/the-public-private-partnership/' target='_blank'>The Public-Private Partnership</a> [en anglais] sur Cooking Budgets pour en savoir plus."
     },
     "privatization": {
       "title@en": "Deregulation and privatization",
