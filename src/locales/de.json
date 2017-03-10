@@ -16,7 +16,7 @@
     "intro": {
       "heading": "Die Guten, die Bösen<br /> und die Buchhalter",
       "meta": "— von <a href='http://jplusplus.org' target='_blank'>Journalism++</a>",
-      "description": "<p>Sie sind der Geschäftsführer einer grossen Stadt. Versuchen Sie, Ethik und Korruption in Einklang zu bringen, um Ihren Job zu behalten und die Stadt am Laufen zu halten. Was immer auch passiert - lassen Sie sich nicht erwischen! </p><p>Jedes Beispiel basiert auf wahren Fällen. </p>",
+      "description": "<p>Sie sind der Geschäftsführer einer grossen Stadt. Versuchen Sie, Ethik und Korruption in Einklang zu bringen. Was immer auch passiert - lassen Sie sich nicht erwischen! </p><p>Jedes Beispiel basiert auf wahren Fällen. </p>",
       "new-game": "Neues Spiel starten",
       "continue": "Weiter"
     },
@@ -24,16 +24,17 @@
       "undo": "Undo <span class='hidden-xs-down'>last action</span>",
       "over": {
         "undo": "vorherige Aktion rückgängig machen",
-        "gain": "Noch einmal spielen"
+        "again": "Noch einmal spielen",
+        "share": "Sie haben <a ui-sref='main.vars'>{{amount}} in {{years}} Jahren</a> unterschlagen. Teile dein Ergebnis!"
       }
     },
     "toolbar": {
-      "heading ": "Die Guten, die Bösen<br /> und die Buchhalter",
+      "heading": "Die Guten, die Bösen<br /> und die Buchhalter",
       "links": {
         "chats": "Chats",
         "hints": "Hinweise",
         "indicators": "Indikator",
-        "about": "Über"
+        "about": "Über das Tool"
       },
       "share": {
         "label": "Teilen",
