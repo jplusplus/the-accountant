@@ -335,7 +335,7 @@
             {
               "character": "you",
               "text@en": "Thank you mayor, I'll do my best.",
-              "text@de": "Vielen Dank, Frau Bürgermeister. Ich werde mein bestes geben.",
+              "text@de": "Vielen Dank, Frau Bürgermeisterin. Ich werde mein bestes geben.",
               "text@fr": "Merci. Je ferai de mon mieux."
             },
             {
@@ -371,7 +371,7 @@
             {
               "character": "helper",
               "text@en": "Best advice: The mayor has powerful friends. Don't make them angry.",
-              "text@de": "Ein Ratschlag: Die Bürgermeisterin hat einflußreiche Freunde. Verärgern Sie die nicht.",
+              "text@de": "Ein Ratschlag: Die Bürgermeisterin hat einflußreiche Freunde. Verärgern Sie sie nicht.",
               "text@fr": "Premier conseil: La maire a de puissants amis, ne vous les mettez pas à dos."
             },
             {
@@ -402,7 +402,7 @@
         {
           "character": "mayor",
           "text@en": "We received three offers. Pick the best one.",
-          "text@de": "Wir haben drei Submissionen erhalten. Wählen Sie die beste aus.",
+          "text@de": "Wir haben drei Einreichungen erhalten. Wählen Sie das beste Angebot aus.",
           "text@fr": "On a reçu trois offres. Choisissez la meilleure."
         }
       ],
@@ -433,7 +433,7 @@
             {
               "character": "you",
               "text@en": "I choose the offer of Robert Construction Limited.",
-              "text@de": "Ich habe mich für das Angebot von Meinhardt entschieden.",
+              "text@de": "Ich habe mich für das Angebot von Herrn Meinhardt entschieden.",
               "text@fr": "Je choisis l'offre de Guillory Construction SARL."
             }
           ]
@@ -565,7 +565,7 @@
       "choices": [
         {
           "text@en": "Sure",
-          "text@de": "Mit Vergnüge",
+          "text@de": "Mit Vergnügen",
           "text@fr": "Avec plaisir.",
           "var_changes": {
             "personal_account": 15000,
@@ -581,7 +581,7 @@
             {
               "character": "construction-boss",
               "text@en": "Here you go!",
-              "text@de": "Bitteschön, hier sind die Schlüßel!",
+              "text@de": "Bitteschön, hier sind die Schlüssel!",
               "text@fr": "Voilà les clés !"
             },
             {
@@ -606,7 +606,7 @@
         },
         {
           "text@en": "No, thank you",
-          "text@de": "Nein danke",
+          "text@de": "Nein, danke",
           "text@fr": "Non, merci.",
           "var_changes": {
             "risk_contractors": 1
@@ -640,7 +640,7 @@
         {
           "character": "mayor",
           "text@en": "So many people come to me because they want an apartment in social housing.",
-          "text@de": "Zu mir kommen so viele Leute, weil Sie eine Wohnung im sozialen Wohnungsbauprogramm haben möchten.",
+          "text@de": "Zu mir kommen so viele Leute, weil sie eine Wohnung aus dem sozialen Wohnungsbauprogramm haben möchten.",
           "text@fr": "Beaucoup trop de gens viennent me voir pour une place en HLM."
         },
         {
@@ -878,7 +878,7 @@
         {
           "character": "mayor",
           "text@en": "We received three offers. Pick the best one.",
-          "text@de": "Wir haben drei Submissionen erhalten. Wählen Sie die beste aus.",
+          "text@de": "Wir haben drei Einreichungen erhalten. Wählen Sie das beste Angebot aus.",
           "text@fr": "Nous avons reçu trois offres. Choisissez la meilleure."
         }
       ],
@@ -932,7 +932,7 @@
             {
               "character": "you",
               "text@en": "I choose the offer of Robert Construction Limited.",
-              "text@de": "Ich habe mich für das Angebot von Meinhardt entschieden.",
+              "text@de": "Ich habe mich für das Angebot von Herrn Meinhardt entschieden.",
               "text@fr": "Je choisis l'offre de Guillory Construction SARL."
             },
             {
@@ -1193,7 +1193,7 @@
         {
           "character": "mayor",
           "text@en": "We received three offers. Pick the best one.",
-          "text@de": "Wir haben drei Submissionen erhalten. Wählen Sie die beste aus.",
+          "text@de": "Wir haben drei Einreichungen erhalten. Wählen Sie das beste Angebot aus.",
           "text@fr": "Nous avons reçu 3 offres. Choisissez la meilleure."
         }
       ],
@@ -1277,7 +1277,7 @@
             {
               "character": "you",
               "text@en": "I choose Robert Construction Limited.",
-              "text@de": "Ich habe mich für das Angebot von Meinhardt entschieden.",
+              "text@de": "Ich habe mich für das Angebot von Herrn Meinhardt entschieden.",
               "text@fr": "Je choisis Guillory Construction SARL."
             },
             {
@@ -1318,7 +1318,7 @@
         {
           "character": "mayor",
           "text@en": "We received three offers. Pick the best one.",
-          "text@de": "Wir haben drei Submissionen erhalten. Wählen Sie die beste aus.",
+          "text@de": "Wir haben drei Einreichungen erhalten. Wählen Sie das beste Angebot aus.",
           "text@fr": "On a reçu 3 offres. Choisissez la meilleure."
         }
       ],
@@ -1343,7 +1343,7 @@
             {
               "character": "you",
               "text@en": "I choose Robert Construction Limited.",
-              "text@de": "Ich habe mich für das Angebot von Meinhardt entschieden.",
+              "text@de": "Ich habe mich für das Angebot von Herrn Meinhardt entschieden.",
               "text@fr": "Je choisis Guillory Construction SARL."
             },
             {
@@ -2967,7 +2967,7 @@
             {
               "character": "you",
               "text@en": "I choose Robert Construction Limited.",
-              "text@de": "Ich habe mich für das Angebot von Meinhardt entschieden.",
+              "text@de": "Ich habe mich für das Angebot von Herrn Meinhardt entschieden.",
               "text@fr": "Je choisis Guillory Construction SARL."
             }
           ]
@@ -3030,7 +3030,7 @@
         {
           "character": "mayor",
           "text@en": "We received three offers. Pick the best one.",
-          "text@de": "Wir haben drei Submissionen erhalten. Wählen Sie die beste aus.",
+          "text@de": "Wir haben drei Einreichungen erhalten. Wählen Sie das beste Angebot aus.",
           "text@fr": "Nous avons reçu 3 offres. Choissisez la meilleure."
         }
       ],
@@ -3119,26 +3119,26 @@
   "explainers": {
     "cartel": {
       "title@en": "How to spot a cartel?",
-      "title@de": "Was sind die Hinweise für ein Kartell?",
+      "title@de": "Was sind die Anzeichen für ein Kartell?",
       "title@fr": "Comment détecter un cartel ?",
       "body@en": "Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous.",
-      "body@de": "Kartelle entstehen, wenn Auftragnehmer ihre Angebot koordinieren. Wenn sich die Preise der Angebote stark ähneln, kann dies ein Hinweis auf eventuelle Absprachen der Unternehmen untereinander sein.<br><br> Die Auftragnehmer handeln untereinander aus, wer das günstigste Angebot abgeben wird. Derjenige Auftragnehmer, der den Zuschlag erhält, zahlt dann einen Teil des Gewinns an die anderen Mitglieder des Kartells aus.<br><br>Es kommt jedoch vor, dass ein Auftragsnehmer das Kartell verlässt und dem Auftraggeber ein günstigeres Angebot unterbreitet. Das kann gefährlich sein.",
+      "body@de": "Kartelle entstehen, wenn Auftragnehmer ihre Angebot koordinieren. Wenn sich die Preise der Angebote stark ähneln, kann dies ein Hinweis auf eventuelle Absprachen der Unternehmen untereinander sein.<br><br> Die Auftragnehmer handeln untereinander aus, wer das günstigste Angebot abgeben wird. Der Auftragnehmer, der den Zuschlag erhält, zahlt dann einen Teil des Gewinns an die anderen Mitglieder des Kartells aus.<br><br>Es kommt jedoch vor, dass ein Auftragsnehmer das Kartell verlässt und dem Auftraggeber ein günstigeres Angebot unterbreitet. Das kann gefährlich sein.",
       "body@fr": "Un cartel apparait quand les candidats à un appel d'offre s'entendent entre eux. Vous pouvez les détecter si les prix des offres se suivent et sont proches les uns des autres.<br><br>Les industriels peuvent s'entendre sur celui qui proposera le prix le plus bas et gagnera l'appel d'offre. Le gagnant paye ensuite les autres membres du cartel. Le cartel fait une rotation entre les entreprises, afin que chaque membre du cartel gagne un peu.<br><br>Parfois, un des membres du cartels fait cavalier seul et fait une offre plus basse. Ça devient dangereux pour lui."
     },
     "gifts": {
       "title@en": "How to react to gifts?",
-      "title@de": "Die Verhaltung zu Geschenken",
+      "title@de": "Das Verhalten bei Geschenken",
       "title@fr": "Comment réagir aux cadeaux ?",
       "body@en": "Public officials are usually prohibited from accepting gifts above a certain value (€50 at the European Commission, for instance). However, you can accept the gift if it is intended for you as a private person, or for your spouse. By refusing a gift, you risk angering the person who made it.",
-      "body@de": "Beamten ist es normalerweise verboten, Geschenken über einem bestimmten Wert zu akzeptieren (bei der Europäischen Kommission liegt es bei 50€, zum Beispiel). Die Geschenke kann man trotzdem akzeptieren, wenn sie für Sie als Privatperson, oder für Ihren Lebenspartner gedacht sind. Wenn Sie ein Geschenk ablehnen, kann es der Geschenkgeber ärgern.",
+      "body@de": "Beamten ist es normalerweise verboten, Geschenken über einem bestimmten Wert zu akzeptieren (bei der Europäischen Kommission liegt der Wert bei 50€, zum Beispiel). Die Geschenke kann man trotzdem akzeptieren, wenn sie für Sie als Privatperson, oder für Ihren Lebenspartner gedacht sind. Wenn Sie einen Geschenk ablehnen, kann es den Geschenkgeber ärgern.",
       "body@fr": "Les fonctionnaires n'ont généralement pas le droit d'accepter des cadeaux au delà d'un certain seuil (50€ à la Commission Européenne, par exemple). Cela dit, vous pouvez accepter le cadeau s'il vous est adressé à vous personnellement, et non pas à vous en tant que fonctionnaire. Ou bien s'il est fait à votre partenaire. En refusant un cadeau, vous prenez le risque d'offenser celui qui vous l'offre."
     },
     "bribes": {
       "title@en": "How can you organize bribes?",
-      "title@de": "Bestechungsgeld organisieren",
+      "title@de": "Bestechungsgeld",
       "title@fr": "Comment organiser des pots-de-vin ?",
       "body@en": "Bribery is not as common in Europe as in other parts of the world, but it is rampant is some sectors. In public housing, some officials ask for enveloppes of money to be given directly. For car inspection, some service centers will be pleased if you leave a gift or bills of cash on the passenger seat.<br><br>Read more under <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> at Cooking Budgets.",
-      "body@de": "In Europa ist Bestechung nicht so weit verbreitet wie in anderen Regionen. In einigen Sektoren aber wie etwa dem sozialen Wohungsbau oder bei Fahrzeuguntersuchungen, sind Bestechungen durchaus üblich.<br><br>Mehr zum Thema finden Sie unter <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> von Cooking Budgets.",
+      "body@de": "In Europa ist Bestechung nicht so weit verbreitet wie in anderen Regionen. In einigen Sektoren wie etwa dem sozialen Wohungsbau oder bei Fahrzeuguntersuchungen, sind Bestechungen aber durchaus üblich.<br><br>Mehr zum Thema finden Sie unter <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> von Cooking Budgets.",
       "body@fr":"Les bakchichs ne sont pas aussi fréquents en Europe que dans d'autres régions du monde, à l'exception de certains secteurs. Pour déterminer qui obtient un logement social, certains fonctionnaires n'hésitent pas à demander des enveloppes d'argent de la main à la main. Pour passer le contrôle technique automobile, certains centres de contrôle ferment les yeux en échange d'un cadeau sur le siège passager.<br><br>Lisez <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> [en anglais] sur Cooking Budgets pour en savoir plus."
     },
     "land_sales": {
