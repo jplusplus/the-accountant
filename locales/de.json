@@ -21,7 +21,7 @@
       "continue": "Weiter"
     },
     "steps": {
-      "undo": "Undo <span class='hidden-xs-down'>last action</span>",
+      "undo": "<span class='hidden-xs-down'>vorherige Aktion</span> rückgängig machen",
       "over": {
         "undo": "vorherige Aktion rückgängig machen",
         "again": "Noch einmal spielen",
