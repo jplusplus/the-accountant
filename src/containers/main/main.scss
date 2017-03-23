@@ -37,7 +37,7 @@
       transform: translate(-50%, -50%);
       width:100%;
       max-width: 600px;
-      padding:$spacer * 2;
+      padding:$spacer * 2 $spacer * 2 0;
       color: white;
       @include transition(1500ms);
 
@@ -88,6 +88,17 @@
         color: white;
         border:4px solid white;
         cursor: pointer;
+      }
+
+      &__languages {
+        opacity:0.5;
+        padding-left:$spacer;
+        margin-top: $spacer * 3;
+        margin-bottom:0;
+
+        .list-inline-item:not(:last-child):after {
+          content:" | ";
+        }
       }
     }
   }
