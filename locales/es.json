@@ -1,0 +1,51 @@
+{
+  "app": {
+    "title": "The Good, The Bad and The Accountant",
+    "url": "https://jplusplus.github.io/the-accountant/",
+    "description": "Can you run a city without falling prey to the sirens of corruption? Test yourself by playing The Good, The Bad and The Accountant!",
+    "image": "https://jplusplus.github.io/the-accountant/images/share-en.png",
+    "share": {
+      "tweet": {
+        "via": "jplusplus_",
+        "text": "How long can you survive in a corrupt city hall? Take your chance!"
+      }
+    }
+  },
+  "main": {
+    "back": "Back to the game",
+    "intro": {
+      "heading": "The Good, The Bad<br /> and The Accountant",
+      "meta": "— by <a href='http://jplusplus.org' target='_blank'>Journalism++</a>",
+      "description": "<p>You're the general manager of a large city. Balance ethics and corruption to keep your position and get things done. Whatever happens, don't get caught!</p><p>Every example in the game is based on real cases.</p>",
+      "new-game": "Start a new game",
+      "continue": "Continue"
+    },
+    "steps": {
+      "undo": "Undo <span class='hidden-xs-down'>last action</span>",
+      "over": {
+        "undo": "Undo last action",
+        "again": "Play again",
+        "share": "You embezzled <a ui-sref='main.vars'>{{amount}} in {{years}} years</a>. Challenge your friends to make more!"
+      }
+    },
+    "toolbar": {
+      "heading": "The Good, The Bad<br /> and The Accountant",
+      "links": {
+        "chats": "Chats",
+        "hints": "Hints",
+        "indicators": "Indicators",
+        "about": "About"
+      },
+      "share": {
+        "label": "Share",
+        "twitter": "Share on Twitter",
+        "facebook": "Share on Facebook",
+        "reddit": "Share on Reddit"
+      }
+    },
+    "hints": {
+      "none": "No hints yet",
+      "description": "Hints are collected during the game."
+    }
+  }
+}
