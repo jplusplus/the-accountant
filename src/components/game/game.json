@@ -6,6 +6,7 @@
       "category": "city",
       "chart": "city-financial-health",
       "label@en": "Resources",
+      "label@es": "Recursos",
       "label@de": "Einnahmen",
       "label@fr": "Revenus"
     },
@@ -15,6 +16,7 @@
       "category": "city",
       "chart": "city-financial-health",
       "label@en": "Expenditures",
+      "label@es": "Gastos",
       "label@de": "Ausgaben",
       "label@fr": "Dépenses"
     },
@@ -24,6 +26,7 @@
       "category": "city",
       "chart": "city-financial-health",
       "label@en": "Reserves",
+      "label@es": "Reservas",
       "label@de": "Rücklagen",
       "label@fr": "Réserves"
     },
@@ -33,6 +36,7 @@
       "category": "player",
       "chart": true,
       "label@en": "Your cash",
+      "label@es": "Tu efectivo",
       "label@de": "Ihr Bargeld",
       "label@fr": "Vos gains"
     },
@@ -42,6 +46,7 @@
       "icon": "balance-scale",
       "category": "risk",
       "label@en": "Legal risk",
+      "label@es": "Riesgo legal",
       "label@de": "Juristisches Risiko",
       "label@fr": "Risque légal"
     },
@@ -51,6 +56,7 @@
       "icon": "industry",
       "category": "risk",
       "label@en": "Industry mistrust",
+      "label@es": "Desconfianza del sector",
       "label@de": "Misstrauen der Industrie",
       "label@fr": "Méfiance des industriels"
     },
@@ -60,6 +66,7 @@
       "icon": "handshake-o",
       "category": "risk",
       "label@en": "Political rejection",
+      "label@es": "Rechazo político",
       "label@de": "Politischer Widerstand",
       "label@fr": "Risque politique"
     },
@@ -97,9 +104,11 @@
   "charts": {
     "city-financial-health": {
       "title@en": "Financial health of the city",
+      "title@es": "Salud financiera del ayuntamiento",
       "title@de": "Finanzielle Lage der Stadt",
       "title@fr": "Santé financière de la ville",
       "description@en": "City financials tell you how much money the city collects each year (resources) and spends (expenditure), while reserves tell you how much money the city has in the bank.",
+      "description@es": "Los financieros te dicen cuánto dinero recauda el ayuntamiento cada año (recursos) y cuánto gasta (gastos), y las reservas te dicen cuánto dinero tiene el ayuntamiento en el banco.",
       "description@de": "Diese Indikatoren zeigen wieviele Steuern die Stadt jährlich einnimmt (Einnahmen), wieviel sie ausgibt (Ausgaben) und wieviel sie auf der Bank hat (Rücklagen).",
       "description@fr": "Ces indicateurs montrent combien la ville collecte en impôts tous les ans (revenus), combien elle dépense (dépenses), et les réserves indiquent combien la ville possède en banque."
     }
@@ -107,63 +116,77 @@
   "characters": {
     "mayor": {
       "name@en": "Birgit Meyer",
+      "name@es": "",
       "name@de": "Marie Meyer",
       "name@fr": "Claudine Daviau",
       "title@en": "The Mayor",
+      "title@es": "El alcalde",
       "title@de": "Die Bürgermeisterin",
       "title@fr": "La maire",
       "avatar": "./images/avatars/mayor.jpg"
     },
     "lawyer": {
       "name@en": "Jamila Ballard",
+      "name@es": "",
       "name@de": "Ekin Krantz",
       "name@fr": "Nadya Mathieu",
       "title@en": "Your lawyer",
+      "title@es": "Tu abogado",
       "title@de": "Ihre Anwältin",
       "title@fr": "Votre avocate",
       "avatar": "./images/avatars/lawyer.jpg"
     },
     "construction-boss": {
       "name@en": "Robert Gerber",
+      "name@es": "",
       "name@de": "Ferdi Meinhardt",
       "name@fr": "Cyril Guillory",
       "title@en": "Boss of Robert Construction Limited",
+      "title@es": "Jefe de Construcciones Robert, S.L.",
       "title@de": "Chef von Meinhardt Hoch- u. Tiefbau GmbH",
       "title@fr": "Chef de Guillory Construction SARL",
       "avatar": "./images/avatars/construction-boss.jpg"
     },
     "university-boss": {
       "name@en": "Adrian Wynn",
+      "name@es": "",
       "name@de": "Halit Beutel",
       "name@fr": "Rasul Géroux",
       "title@en": "Director of the University",
+      "title@es": "Rector de la Universidad",
       "title@de": "Direktor der Universität",
       "title@fr": "Directeur de l'université",
       "avatar": "./images/avatars/university-boss.jpg"
     },
     "football-boss": {
       "name@en": "Martin Gomez",
+      "name@es": "",
       "name@de": "Wendel Slusser",
       "name@fr": "Gustave Tremble",
       "title@en": "President of the City Football Club",
+      "title@es": "Presidente del Club de Fútbol Local",
       "title@de": "Präsident des städtischen Fußballvereins",
       "title@fr": "Président du club de football de la ville",
       "avatar": "./images/avatars/football-boss.jpg"
     },
     "helper": {
       "name@en": "Lia Brune",
+      "name@es": "",
       "name@de": "Ferdinanda Salzwedel",
       "name@fr": "Andrée Lambert",
       "title@en": "Assistant",
+      "title@es": "Asistente",
       "title@de": "Assistentin",
       "title@fr": "Assistante",
       "avatar": "./images/avatars/helper.jpg"
     },
     "you": {
       "name@en": "You",
+      "name@es": "",
       "name@de": "Sie",
       "name@fr": "Vous",
       "title@en": "General manager",
+      "title@es": "Director General",
       "title@de": "Geschäftsführerin",
       "title@fr": "Dir' cab",
       "avatar": null
@@ -173,126 +196,147 @@
     "1993": {
       "picture": "images/years/brussels.jpeg",
       "title@en": "The Beginning",
+      "title@es": "El Comienzo",
       "title@de": "Der Beginn",
       "title@fr": "Rideau"
     },
     "1994": {
       "picture": "images/years/riga.jpeg",
       "title@en": "First Steps",
+      "title@es": "Primeros pasos",
       "title@de": "Erste Schritte",
       "title@fr": "Premiers pas"
     },
     "1995": {
       "picture": "images/years/building.jpeg",
       "title@en": "Housing Stories",
+      "title@es": "Historias del Ladrillo",
       "title@de": "Wohnbaugeschichten",
       "title@fr": "Histoires d'HLM"
     },
     "1996": {
       "picture": "images/years/stadium.jpeg",
       "title@en": "Playing ball",
+      "title@es": "Jugar a la pelota",
       "title@de": "Ball spielen",
       "title@fr": "Jeux de ballon"
     },
     "1997": {
       "picture": "images/years/tm.jpeg",
       "title@en": "Cartel",
+      "title@es": "Cartel",
       "title@de": "Kartell",
       "title@fr": "Cartel"
     },
     "1998": {
       "picture": "images/years/roundabout.jpeg",
       "title@en": "Growing up",
+      "title@es": "Crecer",
       "title@de": "Wachsen",
       "title@fr": "Devenir grand"
     },
     "1999": {
       "picture": "images/years/cpn.jpeg",
       "title@en": "Be Your Own Boss",
+      "title@es": "Sé tu propio jefe",
       "title@de": "Selbstständig werden",
       "title@fr": "Indépendance"
     },
     "2000": {
       "picture": "images/years/berlin.jpeg",
       "title@en": "The Card",
+      "title@es": "La Tarjeta",
       "title@de": "Die Karte",
       "title@fr": "La carte"
     },
     "2001": {
       "picture": "images/years/cpn-2.jpeg",
       "title@en": "Adverts",
+      "title@es": "Anuncios",
       "title@de": "Reklame",
       "title@fr": "Pubs"
     },
     "2002": {
       "picture": "images/years/atomium.jpeg",
       "title@en": "Game on",
+      "title@es": "Jugar",
       "title@de": "Spielstart",
       "title@fr": "Coup d'envoi"
     },
     "2003": {
       "picture": "images/years/gare.jpeg",
       "title@en": "Invisible",
+      "title@es": "Invisible",
       "title@de": "Unsichtbar",
       "title@fr": "Invisible"
     },
     "2004": {
       "picture": "images/years/metro.jpeg",
       "title@en": "Interior design",
+      "title@es": "Diseño de Interiores",
       "title@de": "Inneneinrichtung",
       "title@fr": "Décoration d'intérieur"
     },
     "2005": {
       "picture": "images/years/tour-2.jpeg",
       "title@en": "Getting Bigger",
+      "title@es": "Expandirse",
       "title@de": "Expansion",
       "title@fr": "Expansion"
     },
     "2006": {
       "picture": "images/years/stairs.jpeg",
       "title@en": "Tentacles",
+      "title@es": "Tentáculos",
       "title@de": "Tentakel",
       "title@fr": "Tentacules"
     },
     "2007": {
       "picture": "images/years/paris.jpeg",
       "title@en": "Trash",
+      "title@es": "Papelera",
       "title@de": "Müll",
       "title@fr": "Ordures"
     },
     "2008": {
       "picture": "images/years/bat.jpeg",
       "title@en": "Delays",
+      "title@es": "Retrasos",
       "title@de": "Verzögerungen",
       "title@fr": "Retardé"
     },
     "2009": {
       "picture": "images/years/airport.jpeg",
       "title@en": "Back to school",
+      "title@es": "Vuelta al cole",
       "title@de": "Zurück zur Schule",
       "title@fr": "Retour à la fac"
     },
     "2010": {
       "picture": "images/years/route.jpeg",
       "title@en": "High finance",
+      "title@es": "Altas finanzas",
       "title@de": "Hochfinanz",
       "title@fr": "Haute finance"
     },
     "2011": {
       "picture": "images/years/building.jpeg",
       "title@en": "Family first",
+      "title@es": "La familia primero",
       "title@de": "Familie hat Vorrang",
       "title@fr": "La famille d'abord"
     },
     "2012": {
       "picture": "images/years/pool.jpeg",
       "title@en": "Going private",
+      "title@es": "Al sector privado",
       "title@de": "Drehtür",
       "title@fr": "Pantoufles"
     },
     "2013": {
       "picture": "images/years/italy.jpeg",
       "title@en": "The last tender",
+      "title@es": "La última licitación",
       "title@de": "Letzter Aufruf",
       "title@fr": "Dernier appel"
     }
@@ -304,24 +348,28 @@
         {
           "character": "mayor",
           "text@en": "Hi there, welcome to City Hall!",
+          "text@es": "Muy buenas: Bienvenidos al Ayuntamiento!",
           "text@de": "Hallo und herzlich willkommen im Rathaus!",
           "text@fr": "Bonjour et bienvenue à l'hôtel de ville !"
         },
         {
           "character": "mayor",
           "text@en": "I hear you're the new general manager here.",
+          "text@es": "He oído que aquí el nuevo director general eres tú.",
           "text@de": "Sie sind die neue Geschäftsführerin hier, nicht wahr?",
           "text@fr": "Vous êtes ma nouvelle directrice de cabinet"
         },
         {
           "character": "mayor",
           "text@en": "Some say this city has corruption issues. Don't listen to them 😒.",
+          "text@es": "Algunos dicen que esta ciudad tiene problemas de corrupción. Tú, ni caso 😒.",
           "text@de": "Es gibt Stimmen, die behaupten, die Stadt habe mit Korruption zu kämpfen. Hören Sie einfach nicht hin 😒.",
           "text@fr": "Certains disent que cette ville est corrompue. Ne les écoutez pas 😒."
         },
         {
           "character": "mayor",
           "text@en": "But be careful.",
+          "text@es": "Ten ciudado.",
           "text@de": "Aber seien Sie auf der Hut!",
           "text@fr": "Mais soyez prudente."
         }
@@ -329,54 +377,63 @@
       "choices": [
         {
           "text@en": "Go",
+          "text@es": "Adelante.",
           "text@de": "Los geht’s",
           "text@fr": "Commencer",
           "feedback": [
             {
               "character": "you",
               "text@en": "Thank you mayor, I'll do my best.",
+              "text@es": "Gracias Alcalde, lo haré lo mejor que pueda.",
               "text@de": "Vielen Dank, Frau Bürgermeisterin. Ich werde mein Bestes geben.",
               "text@fr": "Merci. Je ferai de mon mieux."
             },
             {
               "character": "mayor",
               "text@en": "You'll do great.",
+              "text@es": "Lo harás genial.",
               "text@de": "Sie werden sich großartig schlagen.",
               "text@fr": "Vous serez parfaite."
             },
             {
               "character": "mayor",
               "text@en": "Lia is your assistant.",
+              "text@es": "Lía es tu asistente.",
               "text@de": "Frau Salzwedel ist Ihre Assistentin.",
               "text@fr": "Madame Lambert est votre assistante."
             },
             {
               "character": "mayor",
               "text@en": "She'll show you around.",
+              "text@es": "Ella te hará de guía.",
               "text@de": "Sie wird Ihnen alles zeigen.",
               "text@fr": "Elle connait bien la maison."
             },
             {
               "character": "helper",
               "text@en": "Hello.",
+              "text@es": "Hola.",
               "text@de": "Hallo!",
               "text@fr": "Enchantée."
             },
             {
               "character": "helper",
               "text@en": "I'll help you get up to speed.",
+              "text@es": "Te ayudaré a ponerte al día.",
               "text@de": "Ich werde Ihnen helfen sich zurecht zu finden.",
               "text@fr": "Je suis là pour vous aider."
             },
             {
               "character": "helper",
               "text@en": "Best advice: The mayor has powerful friends. Don't make them angry.",
+              "text@es": "El mejor consejo: El alcalde tiene amigos con mucho poder. No les hagas enfadar.",
               "text@de": "Ich gebe Ihnen einen Rat: Die Bürgermeisterin hat einflussreiche Freunde. Verärgern Sie sie nicht.",
               "text@fr": "Premier conseil: La maire a de puissants amis, ne vous les mettez pas à dos."
             },
             {
               "character": "helper",
               "text@en": "Especially Mr. Gerber.",
+              "text@es": "Especialmente al Sr. Gerber.",
               "text@de": "Vor allem nicht Herrn Meinhardt.",
               "text@fr": "Surtout monsieur Guillory."
             }
@@ -390,18 +447,21 @@
         {
           "character": "mayor",
           "text@en": "We passed a tender to build a new road segment.",
+          "text@es": "Lanzamos una licitación para construir un nuevo tramo de carretera.",
           "text@de": "Wir haben eine Ausschreibung für den Neubau einer Straße veröffentlicht.",
           "text@fr": "Nous avons passé un appel d'offre pour une nouvelle route."
         },
         {
           "character": "mayor",
           "text@en": "Our transport department estimates the cost of the works at 10 million.",
+          "text@es": "Nuestra concejalía de transporte estima los costes de las obras en 10 millones.",
           "text@de": "Das Amt für Verkehr hat die Kosten auf ca. 10 Millionen geschätzt.",
           "text@fr": "Le bureau d'études estime les travaux à 10 millions."
         },
         {
           "character": "mayor",
           "text@en": "We received three offers. Pick the best one.",
+          "text@es": "Hemos recibido tres ofertas. Elija la mejor.",
           "text@de": "Wir haben drei Einreichungen erhalten. Wählen Sie das beste Angebot aus.",
           "text@fr": "On a reçu trois offres. Choisissez la meilleure."
         }
@@ -410,12 +470,14 @@
         {
           "character": "helper",
           "text@en": "This looks a lot like a cartel.",
+          "text@es": "Esto tiene mucha pinta de cartel.",
           "text@de": "Das erweckt den Anschein eines Kartells.",
           "text@fr": "Cela ressemble à un cartel."
         },
         {
           "character": "helper",
           "text@en": "I prepared a memo for you on the topic. [Click here to read it|cartel].",
+          "text@es": "Te he preparado un memo sobre el tema. [Haz click aquí para leer|cartel].",
           "text@de": "Ich habe Ihnen ein Dossier zu diesem Thema erstellt. [Klicken Sie hier, um es zu lesen|cartel].",
           "text@fr": "J'ai préparé un mémo sur le sujet. [Cliquez ici pour le lire|cartel]."
         }
@@ -423,6 +485,7 @@
       "choices": [
         {
           "text@en": "Robert Construction Limited made an offer at 12 million",
+          "text@es": "Construcciones Robert S.L. ha hecho una oferta de 12 millones",
           "text@de": "Das Angebot der Meinhardt Hoch- u. Tiefbau GmbH liegt bei 12 Millionen.",
           "text@fr": "Guillory Construction SARL a fait une offre à 12 millions",
           "var_changes": {
@@ -433,6 +496,7 @@
             {
               "character": "you",
               "text@en": "I choose the offer of Robert Construction Limited.",
+              "text@es": "Elijo la oferta de Construcciones Robert S.L.",
               "text@de": "Ich habe mich für das Angebot der Meinhardt Hoch- u. Tiefbau GmbH entschieden.",
               "text@fr": "Je choisis l'offre de Guillory Construction SARL."
             }
@@ -440,6 +504,7 @@
         },
         {
           "text@en": "Eco-Sense Construction made an offer at 12.1 million",
+          "text@es": "Construcciones Eco-Prudencia ha hecho una oferta de 12,1 millones",
           "text@de": "Das Angebot der Eco-Sense Construction liegt bei 12,1 Millionen.",
           "text@fr": "Eco-Sense Construction a fait une offre à 12,1 millions",
           "var_changes": {
@@ -450,30 +515,35 @@
             {
               "character": "you",
               "text@en": "I choose the offer of Eco-Sense Construction.",
+              "text@es": "Elijo la oferta de Construcciones Eco-Prudencia.",
               "text@de": "Ich habe mich für das Angebot der Firma Eco-Sense Construction entschieden.",
               "text@fr": "Je choisis l'offre de Eco-Sense Construction."
             },
             {
               "character": "construction-boss",
               "text@en": "You're new here, aren't you?",
+              "text@es": "Tu eres nuevo aquí, ¿no?",
               "text@de": "Du bist neu hier, nicht wahr?",
               "text@fr": "Tu es nouvelle par ici, non ?"
             },
             {
               "character": "construction-boss",
               "text@en": "I'm the boss of Robert Construction Limited.",
+              "text@es": "Yo soy el jefe de Construcciones Construcciones Robert S.L.",
               "text@de": "Ich bin der Chef der Meinhardt Hoch- u. Tiefbau GmbH.",
               "text@fr": "Je suis le chef de Guillory Construction SARL."
             },
             {
               "character": "construction-boss",
               "text@en": "Be more careful next time.",
+              "text@es": "Ten más cuidado la próxima vez.",
               "text@de": "Das nächste Mal solltest du umsichtiger vorgehen.",
               "text@fr": "Sois plus prudente la prochaine fois."
             },
             {
               "character": "construction-boss",
               "text@en": "You don't want to make an enemy out of me.",
+              "text@es": "No te viene bien tenerme como enemigo.",
               "text@de": "Mich willst du nicht zum Feind haben.",
               "text@fr": "Tu ne veux pas m'avoir comme ennemi."
             }
@@ -481,6 +551,7 @@
         },
         {
           "text@en": "Concrete Construction made an offer at 12.2 million",
+          "text@es": "Construcciones Cemento ha hecho una oferta de 12,2 millones",
           "text@de": "Das Angebot der Betonbau GmbH liegt bei 12,2 Millionen.",
           "text@fr": "Grosbéton SARL a fait une offre à 12,2 millions",
           "var_changes": {
@@ -491,30 +562,35 @@
             {
               "character": "you",
               "text@en": "I choose the offer of Concrete Construction.",
+              "text@es": "Escojo la oferta de Construcciones Cemento.",
               "text@de": "Ich habe mich für das Angebot der Betonbau GmbH entschieden.",
               "text@fr": "Je choisis l'offre de Grosbéton SARL."
             },
             {
               "character": "construction-boss",
               "text@en": "You're new here, aren't you?",
+              "text@es": "Tu eres nuevo aquí, ¿no?",
               "text@de": "Du bist neu hier, nicht wahr?",
               "text@fr": "Tu es nouvelle par ici, non ?"
             },
             {
               "character": "construction-boss",
               "text@en": "I'm the boss of Robert Construction Limited.",
+              "text@es": "Yo soy el jefe de Construcciones Robert, S.L.",
               "text@de": "Ich bin der Chef von Meinhardt Hoch- u. Tiefbau GmbH.",
               "text@fr": "Je suis le chef de Guillory Construction SARL."
             },
             {
               "character": "construction-boss",
               "text@en": "Be more careful next time.",
+              "text@es": "Ten más cuidado la próxima vez.",
               "text@de": "Das nächste Mal solltest du umsichtiger vorgehen.",
               "text@fr": "Sois plus prudente la prochaine fois."
             },
             {
               "character": "construction-boss",
               "text@en": "You don't want to make an enemy out of me.",
+              "text@es": "No te viene bien tenerme como enemigo.",
               "text@de": "Mich willst du nicht zum Feind haben.",
               "text@fr": "Tu ne veux pas m'avoir comme ennemi."
             }
@@ -532,24 +608,28 @@
         {
           "character": "construction-boss",
           "text@en": "Hey!",
+          "text@es": "¡Hola!",
           "text@de": "Guten Morgen!",
           "text@fr": "Salut !"
         },
         {
           "character": "construction-boss",
           "text@en": "I'm the boss of Robert Construction Limited.",
+          "text@es": "Yo soy el jefe de Construcciones Robert, S.L.",
           "text@de": "Ich bin der Chef der Meinhardt Hoch- u. Tiefbau GmbH.",
           "text@fr": "Je suis le chef de Guillory Construction SARL."
         },
         {
           "character": "construction-boss",
           "text@en": "That's some sound decision-making here.",
+          "text@es": "Eso sí que es una toma de decisiones acertada.",
           "text@de": "Du hast eine gute Wahl getroffen.",
           "text@fr": "Tu prends de bonnes décisions, c'est bien."
         },
         {
           "character": "construction-boss",
           "text@en": "By the way, do you want this new BMW? I bought it last month but don't really need it.",
+          "text@es": "Por cierto, ¿quieres este BMW nuevo? Me lo compré el mes pasado pero en realidad no lo necesito.",
           "text@de": "Ach ja: hast du Interesse an einem nagelneuen BMW? Ich habe ihn mir erst vergangenen Monat gekauft, brauche ihn aber eigentlich nicht.",
           "text@fr": "D'ailleurs, tu veux cette BMW ? Je l'ai acheté le mois passé mais je ne m'en sers pas."
         }
@@ -558,6 +638,7 @@
         {
           "character": "helper",
           "text@en": "When offered a gift, [follow these guidelines|gifts].",
+          "text@es": "Ante un regalo, [seguir estas directrices|regalos].",
           "text@de": "Wenn Ihnen ein Geschenk angeboten wird, [folgen Sie diesen Regeln|gifts].",
           "text@fr": "Quand on vous offre des cadeaux, [suivez ce guide|gifts]."
         }
@@ -565,6 +646,7 @@
       "choices": [
         {
           "text@en": "Sure",
+          "text@es": "Pues sí.",
           "text@de": "Sehr gerne.",
           "text@fr": "Avec plaisir.",
           "var_changes": {
@@ -575,30 +657,35 @@
             {
               "character": "you",
               "text@en": "Sure, I've always wanted to drive a BMW.",
+              "text@es": "Pues sí. Siempre he querido tener un BMW.",
               "text@de": "Den nehme ich gern. Ich wollte schon immer einen BMW fahren.",
               "text@fr": "Avec plaisir, j'ai toujours rêvé de rouler en BMW."
             },
             {
               "character": "construction-boss",
               "text@en": "Here you go!",
+              "text@es": "¡Aquí lo tienes!",
               "text@de": "Bitte schön! Hier sind die Schlüssel.",
               "text@fr": "Voilà les clés !"
             },
             {
               "character": "construction-boss",
               "text@en": "I think we'll get along well.",
+              "text@es": "Creo que nos vamos a llevar bien.",
               "text@de": "Ich glaube wir beide werden gut miteinander auskommen.",
               "text@fr": "Je sens qu'on va bien s'entendre, toi et moi."
             },
             {
               "character": "lawyer",
               "text@en": "Be careful with this expensive car.",
+              "text@es": "Ten ciudado. Es un coche caro.",
               "text@de": "Passen Sie auf mit diesem Wagen!",
               "text@fr": "Faites attention avec cette voiture."
             },
             {
               "character": "lawyer",
               "text@en": "People might ask where it comes from.",
+              "text@es": "La gente podría preguntar de dónde ha salido.",
               "text@de": "Die Leute werden sich fragen wie Sie sich so ein teures Auto leisten können.",
               "text@fr": "Des gens pourraient se demander d'où elle vient."
             }
@@ -606,6 +693,7 @@
         },
         {
           "text@en": "No, thank you",
+          "text@es": "No, gracias.",
           "text@de": "Nein, danke",
           "text@fr": "Non, merci.",
           "var_changes": {
@@ -615,18 +703,21 @@
             {
               "character": "you",
               "text@en": "No, thank you.",
+              "text@es": "No, gracias.",
               "text@de": "Nein danke.",
               "text@fr": "Non, merci."
             },
             {
               "character": "construction-boss",
               "text@en": "Be careful, kid.",
+              "text@es": "Ten ciudado, chico.",
               "text@de": "Ich wäre vorsichtig.",
               "text@fr": "Fais gaffe."
             },
             {
               "character": "construction-boss",
               "text@en": "You don't want to make an enemy out of me.",
+              "text@es": "No te viene bien tenerme como enemigo.",
               "text@de": "Mich willst du nicht zum Feind haben.",
               "text@fr": "Tu ne veux pas m'avoir comme ennemi."
             }
@@ -640,18 +731,21 @@
         {
           "character": "mayor",
           "text@en": "So many people come to me because they want an apartment in social housing.",
+          "text@es": "Mucha gente acude a mí porque quieren un piso de protección oficial.",
           "text@de": "Zu mir kommen einfach zu viele Leute, die eine Wohnung aus dem sozialen Wohnbauprogramm haben wollen.",
           "text@fr": "Beaucoup trop de gens viennent me voir pour une place en HLM."
         },
         {
           "character": "mayor",
           "text@en": "I can't take it anymore!",
+          "text@es": "¡Ya no aguanto más!",
           "text@de": "Ich halt’s nicht mehr aus!",
           "text@fr": "Je n'en peux plus !"
         },
         {
           "character": "mayor",
           "text@en": "Can you find a solution for them?",
+          "text@es": "¿Encontrarás una solución para ellos?",
           "text@de": "Können Sie eine Lösung für sie finden?",
           "text@fr": "Vous pouvez me trouver une solution ?"
         }
@@ -660,12 +754,14 @@
         {
           "character": "helper",
           "text@en": "Bribes are prohibited.",
+          "text@es": "Los sobornos son ilegales.",
           "text@de": "Bestechung ist verboten.",
           "text@fr": "Les pots-de-vins sont interdits."
         },
         {
           "character": "helper",
           "text@en": "I wrote you a memo nevertheless. [Click here to read it|bribes].",
+          "text@es": "Pero te he escrito un memo. [Haz click aquí para leer|bribes].",
           "text@de": "Ich haben Ihnen trotzdem mal ein Dossier zusammengestellt. [Klicken Sie hier, um es zu lesen|bribes].",
           "text@fr": "Mais je vous ai quand même préparé [un mémo sur le sujet|bribes]."
         }
@@ -673,6 +769,7 @@
       "choices": [
         {
           "text@en": "Offer to speed their requests in exchange for 5,000 in an enveloppe",
+          "text@es": "Ofréceles acelerar sus solicitudes a cambio de 5.000 en un sobre",
           "text@de": "Bieten Sie Ihnen an für 5.000 in Bar die Anfrage schneller zu bearbeiten.",
           "text@fr": "Proposer d'accélerer les demandes en échange de 5 000 en liquide",
           "var_changes": {
@@ -683,18 +780,21 @@
             {
               "character": "you",
               "text@en": "I'll take care of it.",
+              "text@es": "Ya me ocupo yo.",
               "text@de": "Ich werde mich darum kümmern.",
               "text@fr": "Je m'en charge."
             },
             {
               "character": "lawyer",
               "text@en": "Be mindful of cash.",
+              "text@es": "Cuidad con el efectivo.",
               "text@de": "Seien Sie vorsichtig, wenn Ihnen Bargeld angeboten wird!",
               "text@fr": "Faites attention à l'argent liquide."
             },
             {
               "character": "lawyer",
               "text@en": "If someone sees you taking the money, I won't be able to do much for you.",
+              "text@es": "Si alguien te ve cogiendo el dinero, no podré hacer mucho por ti.",
               "text@de": "Sollte Sie jemand dabei beobachten wie Sie Geld annehmen, werde ich nicht viel für Sie tun können.",
               "text@fr": "Si quelqu'un vous voit en train de le prendre, je ne pourrai rien faire pour vous."
             }
@@ -702,6 +802,7 @@
         },
         {
           "text@en": "Increase funding to the social housing program",
+          "text@es": "Aumenta la financiación al programa de vivienda pública.",
           "text@de": "Stocken Sie das soziale Wohnungsbauprogramm finanziell auf.",
           "text@fr": "Augmenter le financement du programme de construction de nouveaux HLM.",
           "var_changes": {
@@ -711,18 +812,21 @@
             {
               "character": "you",
               "text@en": "We'll increase spending on social housing.",
+              "text@es": "Aumentaremos los gastos de vivienda pública.",
               "text@de": "Wir werden die Finanzierung für das soziale Wohnungsbauprogramm erhöhen.",
               "text@fr": "Nous allons augmenter les investissements sur le parc HLM."
             },
             {
               "character": "mayor",
               "text@en": "And how exactly are we supposed to pay for this program?",
+              "text@es": "Y, ¿cómo se supone que vamos a pagar este programa exactamente?",
               "text@de": "Und wie bitteschön sollen wir für dieses Programm bezahlen?",
               "text@fr": "Et comment allons-nous le financer ?"
             },
             {
               "character": "mayor",
               "text@en": "If you continue like this, we won't have any money left to pay for my receptions.",
+              "text@es": "Si continúas así, no vamos a tener suficiente dinero para pagar mis recepciones.",
               "text@de": "Wenn Sie so weitermachen, werden wir bald kein Geld mehr für meine Empfänge übrig haben.",
               "text@fr": "Si vous continuez sur cette voie, il ne restera bientôt plus rien pour payer mes réceptions."
             }
@@ -730,6 +834,7 @@
         },
         {
           "text@en": "Ignore them",
+          "text@es": "Ignóralos.",
           "text@de": "Beachten Sie sie einfach nicht",
           "text@fr": "Ne rien faire.",
           "var_changes": {
@@ -739,18 +844,21 @@
             {
               "character": "you",
               "text@en": "I'm sorry but there's nothing I can do.",
+              "text@es": "Lo siento, pero no puedo hacer nada.",
               "text@de": "Es tut mir leid, aber ich kann nichts machen.",
               "text@fr": "Je m'en excuse, mais je ne peux rien faire."
             },
             {
               "character": "mayor",
               "text@en": "Kid, these people are still coming to me.",
+              "text@es": "Chaval, esta gente sigue acudiendo a mí.",
               "text@de": "Diese Leute kommen immer noch zu mir. Es ist nicht auszuhalten!",
               "text@fr": "Ces gens viennent toujours me voir."
             },
             {
               "character": "mayor",
               "text@en": "You'll need to change your attitude.",
+              "text@es": "Vas a tener que cambiar de actitud.",
               "text@de": "Sie sollten dringend etwas an Ihrer Einstellung ändern.",
               "text@fr": "Il va falloir que vous changiez d'attitude."
             }
@@ -764,24 +872,28 @@
         {
           "character": "football-boss",
           "text@en": "Hey there.",
+          "text@es": "Muy buenas.",
           "text@de": "Guten Tag!",
           "text@fr": "Bonjour."
         },
         {
           "character": "football-boss",
           "text@en": "I'm an old friend of the mayor.",
+          "text@es": "Soy un viejo amigo del alcalde.",
           "text@de": "Ich bin ein alter Freund der Bürgermeisterin.",
           "text@fr": "Je suis un vieil ami du maire."
         },
         {
           "character": "football-boss",
           "text@en": "I need to expand the training facilities of my... I mean our, the city's football team.",
+          "text@es": "Necesito ampliar las instalaciones de entrenamiento de mi... quiero decir, del equipo municipal.",
           "text@de": "Ich muss das Trainingscenter meines... ich meine: des städtischen Fußballclubs vergrößern.",
           "text@fr": "J'ai besoin d'agrandir le centre d'entraînement de mon... je veux dire, de notre club."
         },
         {
           "character": "football-boss",
           "text@en": "There's this empty plot of land the city owns. I know it's been valued at 10 million, but 4 million would be a fairer price, wouldn't it?",
+          "text@es": "El ayuntamiento tiene un terreno sin edificar. Sé que se ha valorado en 10 millones, pero 4 millones sería un precio más junto, ¿no?",
           "text@de": "Die Stadt besitzt ein unbebautes Grundstück. Ich weiß, dass es für 10 Millionen gehandelt wird. Mir wäre es 4 Millionen wert.",
           "text@fr": "La ville possède un terrain. Je sais qu'il vaut 10 millions, mais ça serait honnête de me le vendre pour 4 millions, non ?"
         }
@@ -790,12 +902,14 @@
         {
           "character": "helper",
           "text@en": "Land sales can be murky.",
+          "text@es": "Las ventas inmobiliarias pueden ser oscuras.",
           "text@de": "Der Verkauf eines öffentlichen Grundstücks kann schwierig sein.",
           "text@fr": "Les ventes immobilières sont souvent troubles."
         },
         {
           "character": "helper",
           "text@en": "I prepared a memo for you on the topic. [Click here to read it|land_sales].",
+          "text@es": "Te he preparado un memo sobre el tema. [Haz click aquí para leer|land_sales].",
           "text@de": "Ich habe für Sie ein Dossier zusammengestellt. [Klicken Sie hier, um es zu lesen|land_sales].",
           "text@fr": "Je vous ai préparé un mémo. [Cliquez pour le lire.|land_sales]"
         }
@@ -803,6 +917,7 @@
       "choices": [
         {
           "text@en": "Sell for 10 million",
+          "text@es": "Vender por 10 millones",
           "text@de": "Für 10 Millionen verkaufen.",
           "text@fr": "Vendre pour 10 millions",
           "var_changes": {
@@ -813,18 +928,21 @@
             {
               "character": "you",
               "text@en": "It's all yours now. But the price is 10 million, not negotiable.",
+              "text@es": "Ya es todo tuyo. Pero el precio es 10 millones, no negociable.",
               "text@de": "Sie können es haben, aber der Preis bleibt bei 10 Millionen. Keine Diskussion.",
               "text@fr": "Le terrain est à vous pour 10 millions - non négociable."
             },
             {
               "character": "mayor",
               "text@en": "That's how you treat my friends?",
+              "text@es": "¿Es así como tratas a mis amigos?",
               "text@de": "So behandeln Sie meine Freunde?",
               "text@fr": "C'est comme ça que vous traitez mes amis?"
             },
             {
               "character": "mayor",
               "text@en": "In the future, be more considerate.",
+              "text@es": "En el futuro, sé más considerado.",
               "text@de": "Seien Sie in Zukunft etwas respektvoller!",
               "text@fr": "Dans le futur, soyez plus respectueuse."
             }
@@ -832,6 +950,7 @@
         },
         {
           "text@en": "Sell for 4 million",
+          "text@es": "Vender por 4 millones.",
           "text@de": "Für 4 Millionen verkaufen.",
           "text@fr": "Vendre pour 4 millions",
           "var_changes": {
@@ -841,18 +960,21 @@
             {
               "character": "you",
               "text@en": "Yes okay, go for 4 million.",
+              "text@es": "Vale, acepta los 4 millones.",
               "text@de": "4 Millionen sind in Ordnung.",
               "text@fr": "C'est bon pour 4 millions."
             },
             {
               "character": "football-boss",
               "text@en": "Deal!",
+              "text@es": "¡Trato hecho!",
               "text@de": "Abgemacht!",
               "text@fr": "Deal !"
             },
             {
               "character": "football-boss",
               "text@en": "I'll make sure to send you tickets for the next game.",
+              "text@es": "Me aseguraré de enviarte entradas para el próximo partido.",
               "text@de": "Ich lasse Ihnen VIP Tickets für’s nächste Spiel zukommen.",
               "text@fr": "Je vous enverrai des tickets pour le prochain match."
             }
@@ -866,18 +988,21 @@
         {
           "character": "mayor",
           "text@en": "We passed a tender to build a new roundabout.",
+          "text@es": "Hemos convocado una licitación para construir una rotonda nueva.",
           "text@de": "Wir haben eine Ausschreibung für den Bau eines neuen Kreisverkehrs am Laufen.",
           "text@fr": "Nous avons passé un appel d'offres pour un nouveau rond-point."
         },
         {
           "character": "mayor",
           "text@en": "Our transport department estimates the cost of the works at 6 million.",
+          "text@es": "Nuestro concejalía de transporte estima que los costes de las serán de 6 millones.",
           "text@de": "Unser Amt für Verkehr und Straßenbau hat die Kosten auf 6 Millionen beziffert.",
           "text@fr": "Notre bureau d'études estime les coûts à 6 millions."
         },
         {
           "character": "mayor",
           "text@en": "We received three offers. Pick the best one.",
+          "text@es": "Hemos recibido tres ofertas. Elija la mejor.",
           "text@de": "Wir haben drei Angebote erhalten. Wählen Sie das beste aus.",
           "text@fr": "Nous avons reçu trois offres. Choisissez la meilleure."
         }
@@ -886,6 +1011,7 @@
         {
           "character": "helper",
           "text@en": "Here's my [memo on cartels|cartel], just in case.",
+          "text@es": "Aquí está mi [memo sobre carteles|cartel], por si acaso.",
           "text@de": "Mein [Dossier zum Thema Kartelle|cartel] ist noch immer verfügbar.",
           "text@fr": "Mon [mémo sur les cartels|cartel] est toujours disponible."
         }
@@ -893,6 +1019,7 @@
       "choices": [
         {
           "text@en": "Concrete Construction made an offer for 7 million",
+          "text@es": "Construcciones Cemento han hecho una oferta de 7 millones.",
           "text@de": "Das Angebot der Betonbau GmbH liegt bei 7 Millionen.",
           "text@fr": "Grosbéton SARL a fait une offre à 7 millions",
           "var_changes": {
@@ -903,18 +1030,21 @@
             {
               "character": "you",
               "text@en": "I choose the offer of Concrete Construction",
+              "text@es": "Escojo la oferta de Construcciones Cemento.",
               "text@de": "Ich habe mich für das Angebot der Betonbau GmbH entschieden.",
               "text@fr": "Je choisis l'offre de Grosbéton SARL."
             },
             {
               "character": "construction-boss",
               "text@en": "Good choice, buddy.",
+              "text@es": "Buena elección, amigo.",
               "text@de": "Eine sehr gute Wahl, Herzchen!",
               "text@fr": "Très bon choix."
             },
             {
               "character": "construction-boss",
               "text@en": "Your share will be deposited in your office, as usual.",
+              "text@es": "Tu parte te la ingresarán en tu sucursal, como de costumbre.",
               "text@de": "Du wirst den Umschlag wie immer auf deinem Schreibtisch finden.",
               "text@fr": "Vous trouverez une enveloppe sur votre bureau, comme d'habitude."
             }
@@ -922,6 +1052,7 @@
         },
         {
           "text@en": "Robert Construction Limited made an offer for 7.1 million",
+          "text@es": "Construcciones Robert S.L. ha hecho una oferta de 7,1 millones",
           "text@de": "Das Angebot der Meinhardt Hoch- u. Tiefbau GmbH liegt bei 7,1 Millionen.",
           "text@fr": "Guillory Construction SARL a fait une offre à 7,1 millions",
           "var_changes": {
@@ -932,36 +1063,42 @@
             {
               "character": "you",
               "text@en": "I choose the offer of Robert Construction Limited.",
+              "text@es": "Escojo la oferta de Construcciones Robert, S.L.",
               "text@de": "Ich habe mich für das Angebot der Meinhardt Hoch- u. Tiefbau GmbH entschieden.",
               "text@fr": "Je choisis l'offre de Guillory Construction SARL."
             },
             {
               "character": "construction-boss",
               "text@en": "Playing with fire, are we?",
+              "text@es": "Estamos jugando con fuego, ¿no?",
               "text@de": "Du spielst mit dem Feuer, meine Liebe!",
               "text@fr": "Alors, on joue avec le feu ?"
             },
             {
               "character": "construction-boss",
               "text@en": "You won't last long if you continue like this.",
+              "text@es": "No vas a durar mucho si sigues así.",
               "text@de": "Du wirst den Job nicht lang behalten, wenn du so weitermachst.",
               "text@fr": "Tu ne resteras pas longtemps en poste si tu continues."
             },
             {
               "character": "helper",
               "text@en": "Cartels rotate the company that wins the tender.",
+              "text@es": "Los cárteles rotan la empresa que gana las licitaciones.",
               "text@de": "In einem Kartell wird vorher bestimmt, welche Firma die Ausschreibung gewinnt. Dabei wechseln sich die Firmen ab.",
               "text@fr": "Dans un cartel, la société qui remporte l'appel d'offre change régulièrement."
             },
             {
               "character": "helper",
               "text@en": "The winner then pays off other members of the cartel.",
+              "text@es": "El ganador paga entonces a los demás miembros del cartel.",
               "text@de": "Diejenige Firma, welche gewonnen hat, bezahlt daraufhin anteilig die anderen Mitglieder des Kartells.",
               "text@fr": "Elle paye ensuite les autres membres du cartel."
             },
             {
               "character": "helper",
               "text@en": "By not choosing the company that should have won, you're embarassing Gerber.",
+              "text@es": "Al no escoger la empresa que debería haber ganado, estás avergonzando a Gerber.",
               "text@de": "Sie haben sich nicht für die Firma entschieden, die hätte gewinnen sollen. Damit haben Sie die Meinhardt GmbH in Schwierigkeiten gebracht.",
               "text@fr": "En ne choisissant pas la société qui aurait dû gagner, vous embarrassez Guillory."
             }
@@ -969,6 +1106,7 @@
         },
         {
           "text@en": "Eco-Sense Construction made an offer for 7.2 million",
+          "text@es": "Construcciones Eco-Prudencia ha hecho una oferta de 7,2 millones",
           "text@de": "Das Angebot der Eco-Sence Construction liegt bei 7,2 Millionen.",
           "text@fr": "Eco-Sense Construction a fait une offre à 7,2 millions",
           "var_changes": {
@@ -979,18 +1117,21 @@
             {
               "character": "you",
               "text@en": "I choose the offer of Eco-Sense Construction.",
+              "text@es": "Escojo la oferta de Construcciones Eco-Prudencia.",
               "text@de": "Ich habe mich für das Angebot der Eco-Sence Construction entschieden.",
               "text@fr": "Je choisis l'offre de Eco-Sense."
             },
             {
               "character": "construction-boss",
               "text@en": "Playing with fire, are we?",
+              "text@es": "Estamos jugando con fuego, ¿no?",
               "text@de": "Du spielst mit dem Feuer, meine Liebe!",
               "text@fr": "Alors, on joue avec le feu ?"
             },
             {
               "character": "construction-boss",
               "text@en": "You won't last long if you continue like this.",
+              "text@es": "No vas a durar mucho si sigues así.",
               "text@de": "Wenn du so weitermachst, wirst du nicht lange dabei bleiben",
               "text@fr": "Tu ne resteras pas longtemps en poste si tu continues."
             }
@@ -1004,12 +1145,14 @@
         {
           "character": "lawyer",
           "text@en": "Hey, I just got your voicemail.",
+          "text@es": "Ey, acabo de recibir tu mensaje de voz.",
           "text@de": "Hallo! Ich habe Ihre Nachricht erhalten.",
           "text@fr": "Je viens d'avoir votre message."
         },
         {
           "character": "lawyer",
           "text@en": "So, you want to create your own company?",
+          "text@es": "Así que, ¿quieres crear tu propia empresa?",
           "text@de": "Sie wollen Ihre eigene Firma gründen?",
           "text@fr": "Vous voulez créer votre propre société, c'est ça ?"
         }
@@ -1018,12 +1161,14 @@
         {
           "character": "helper",
           "text@en": "Getting into conflicts of interests, are we?",
+          "text@es": "¿No nos estamos metiendo en conflictos de intereses?",
           "text@de": "Damit begeben Sie sich in einen Interessenkonflikt.",
           "text@fr": "Vous vous engagez dans un conflit d'intérêts."
         },
         {
           "character": "helper",
           "text@en": "You might want to [read this|conflicts_of_interest] before you decide anything.",
+          "text@es": "Quizá deberías [eso leer|conflicts_of_interest] antes de decidir nada.",
           "text@de": "Sie sollten [dieses Dossier lesen|conflicts_of_interest],bevor Sie eine Entscheidung treffen.",
           "text@fr": "Vous devriez [lire ceci|conflicts_of_interest] avant de décider de quoi que ce soit."
         }
@@ -1031,6 +1176,7 @@
       "choices": [
         {
           "text@en": "Yes",
+          "text@es": "Sí",
           "text@de": "Ja",
           "text@fr": "Oui",
           "var_changes": {
@@ -1040,6 +1186,7 @@
             {
               "character": "you",
               "text@en": "Yes, a public works company.",
+              "text@es": "Sí, una empresa de obras públicas.",
               "text@de": "Ja, eine Firma für Tiefbau.",
               "text@fr": "Oui, une société de travaux publics."
             }
@@ -1047,6 +1194,7 @@
         },
         {
           "text@en": "No",
+          "text@es": "No",
           "text@de": "Nein",
           "text@fr": "Non",
           "var_changes": {
@@ -1056,12 +1204,14 @@
             {
               "character": "you",
               "text@en": "No, it's not a good idea actually.",
+              "text@es": "No, de hecho no es buena idea.",
               "text@de": "Nein, das wäre keine gute Idee.",
               "text@fr": "Non, ce n'est pas une bonne idée."
             },
             {
               "character": "lawyer",
               "text@en": "Well, you have the right to change your mind.",
+              "text@es": "Bueno, tienes derecho a cambiar de opinión.",
               "text@de": "In Ordnung. Sie haben das Recht Ihre Ansicht zu ändern.",
               "text@fr": "OK, vous avez le droit de changer d'avis."
             }
@@ -1079,12 +1229,14 @@
         {
           "character": "lawyer",
           "text@en": "I'll get started with the paperwork.",
+          "text@es": "Empezaré con los trámites.",
           "text@de": "Ich werde mich um die Unterlagen kümmern.",
           "text@fr": "Je vais m'occuper de la paperasse."
         },
         {
           "character": "lawyer",
           "text@en": "Who should be the nominal owner of the company?",
+          "text@es": "¿Quién debería figurar como propietario de la empresa?",
           "text@de": "Wer soll der Firmeneigentümer sein?",
           "text@fr": "Qui doit être le propriétaire de la société ?"
         }
@@ -1092,6 +1244,7 @@
       "choices": [
         {
           "text@en": "You personnally",
+          "text@es": "Tú personalmente",
           "text@de": "Sie persönlich",
           "text@fr": "Vous personnement",
           "var_changes": {
@@ -1101,12 +1254,14 @@
             {
               "character": "you",
               "text@en": "Me.",
+              "text@es": "Yo.",
               "text@de": "Ich.",
               "text@fr": "Moi."
             },
             {
               "character": "lawyer",
               "text@en": "It's easier, but it'll make it very easy to link you back to the company.",
+              "text@es": "Es más fácil, pero se te relacionaría fácilmente con la empresa.",
               "text@de": "Das ist die einfachste Lösung. Es wird allerdings sehr leicht sein eine Beziehung zwischen Ihnen und der Firma herzustellen.",
               "text@fr": "C'est le plus simple, mais ça sera très facile de vous relier à la société."
             }
@@ -1114,6 +1269,7 @@
         },
         {
           "text@en": "Your spouse or partner",
+          "text@es": "Tu esposa o tu compañera.",
           "text@de": "Ihr Partner",
           "text@fr": "Votre époux ou partenaire",
           "var_changes": {
@@ -1123,12 +1279,14 @@
             {
               "character": "you",
               "text@en": "My spouse.",
+              "text@es": "Mi esposa.",
               "text@de": "Mein Ehemann.",
               "text@fr": "Mon époux."
             },
             {
               "character": "lawyer",
               "text@en": "Smart move, but it'll be easy to link you back to the company.",
+              "text@es": "Buena idea, pero se te relacionaría fácilmente con la empresa.",
               "text@de": "Gute Idee, aber es wird ein Leichtes sein eine Verbindung über Ihren Namen herzustellen.",
               "text@fr": "Bonne idée, mais ça sera assez simple de vous relier à la société."
             }
@@ -1136,6 +1294,7 @@
         },
         {
           "text@en": "A shell company in a tax heaven",
+          "text@es": "Una empresa fantasma en un paraíso físcal.",
           "text@de": "Eine Strohfirma in einer Steueroase",
           "text@fr": "Une société-écran",
           "var_changes": {
@@ -1145,24 +1304,28 @@
             {
               "character": "you",
               "text@en": "A shell company.",
+              "text@es": "Una empresa fantasma.",
               "text@de": "Eine Strohfirma.",
               "text@fr": "Une société-écran."
             },
             {
               "character": "lawyer",
               "text@en": "Good choice.",
+              "text@es": "Buena elección.",
               "text@de": "Gute Idee.",
               "text@fr": "Bonne idée."
             },
             {
               "character": "lawyer",
               "text@en": "I'll set it up in the Seychelles.",
+              "text@es": "La crearé en las Seychelles.",
               "text@de": "Ich werde sie auf den Seychellen gründen.",
               "text@fr": "Je vais la créer aux Seychelles."
             },
             {
               "character": "lawyer",
               "text@en": "It'll take a bit longer, but you'll be safe.",
+              "text@es": "Llevará un poco más de tiempo, pero es más seguro para ti.",
               "text@de": "Das dauert ein wenig länger, ist aber wesentlich sicherer.",
               "text@fr": "Ça sera un peu plus long, mais vous serez tranquille."
             }
@@ -1180,18 +1343,21 @@
         {
           "character": "mayor",
           "text@en": "We passed a tender to build a new school.",
+          "text@es": "Hemos lanzado una licitación para construir un colegio.",
           "text@de": "Wir haben eine Ausschreibung für den Bau einer neuen Schule am Laufen.",
           "text@fr": "Nous avons passé un appel d'offre pour construire une nouvelle école."
         },
         {
           "character": "mayor",
           "text@en": "Our construction department estimates the cost of the works at 3 million.",
+          "text@es": "Nuestra concejalía de obras públicas estima que los costes de las obras serán de 3 millones.",
           "text@de": "Das Amt für Bauwesen hat die Kosten auf 3 Millionen geschätzt.",
           "text@fr": "Notre bureau d'études évalue les travaux à 3 millions."
         },
         {
           "character": "mayor",
           "text@en": "We received three offers. Pick the best one.",
+          "text@es": "Hemos recibido tres ofertas. Elija la mejor.",
           "text@de": "Wir haben drei Angebote erhalten. Wählen Sie das beste aus.",
           "text@fr": "Nous avons reçu 3 offres. Choisissez la meilleure."
         }
@@ -1200,6 +1366,7 @@
         {
           "character": "helper",
           "text@en": "Six years on the job and already running a cartel! Here's my [memo on the topic|cartel] if you need it.",
+          "text@es": "¡Seis años en el trabajo y ya estás dirigiendo un cartel! Te paso mi [memo sobre el tema |cartel] por si lo necesitaras.",
           "text@de": "Sie befinden sich nun an der Spitze eines Kartells! Mein [Memo über das Kartell ist noch immer da|cartel].",
           "text@fr": "Vous voilà à la tête d'un cartel ! Mon [mémo sur les cartels est toujours là|cartel] si besoin."
         }
@@ -1207,6 +1374,7 @@
       "choices": [
         {
           "text@en": "Your company made an offer for 3.5 million",
+          "text@es": "Tu empresa hizo una oferta de 3,5 millones",
           "text@de": "Das Angebot Ihrer Firma liegt bei 3,5 Millionen.",
           "text@fr": "Votre société a fait une offre à 3,5 millions",
           "var_changes": {
@@ -1218,18 +1386,21 @@
             {
               "character": "you",
               "text@en": "I choose my company.",
+              "text@es": "Escojo a mi empresa.",
               "text@de": "Ich habe mich für das Angebot meiner Firma entschieden.",
               "text@fr": "Je choisis ma société."
             },
             {
               "character": "construction-boss",
               "text@en": "Like a boss!",
+              "text@es": "¡Como el jefe que eres!",
               "text@de": "Du sorgst dich wie ein Chef.",
               "text@fr": "Tu te débrouilles comme un chef !"
             },
             {
               "character": "construction-boss",
               "text@en": "Don't forget to pay us our share.",
+              "text@es": "No se te olvide darnos nuestra parte.",
               "text@de": "Vergiss nicht uns unseren Teil auszuzahlen!",
               "text@fr": "N'oublie pas de nous payer notre part."
             }
@@ -1237,6 +1408,7 @@
         },
         {
           "text@en": "Concrete Construction made an offer for 3.6 million",
+          "text@es": "Construcciones Cemento han hecho una oferta de 3,6 millones",
           "text@de": "Das Angebot der Betonbau GmbH liegt bei 3,6 Millionen.",
           "text@fr": "Grosbéton SARL a fait une offre à 3,6 millions",
           "var_changes": {
@@ -1246,19 +1418,22 @@
           "feedback": [
             {
               "character": "you",
-              "text@en": "I choose Concrete Construction",
+              "text@en": "I choose Concrete Construction.",
+              "text@es": "Escojo a Construcciones Cemento.",
               "text@de": "Ich habe mich für das Angebot der Betonbau GmbH entschieden.",
-              "text@fr": "Je choisis Grosbéton SARL"
+              "text@fr": "Je choisis Grosbéton SARL."
             },
             {
               "character": "construction-boss",
               "text@en": "What the hell?",
+              "text@es": "¡¿Qué narices?!",
               "text@de": "Wie bitte?",
               "text@fr": "Quoi ?"
             },
             {
               "character": "construction-boss",
               "text@en": "You run a cartel and you can't even pick the right offer?",
+              "text@es": "¿Controlas un cartel y no eres capaz ni de escoger la oferta que debes?",
               "text@de": "Du baust ein Kartell auf, aber bist nicht in der Lage das richtige Angebot auszuwählen?",
               "text@fr": "Tu fais un cartel et tu ne choisis pas la bonne offre ?"
             }
@@ -1266,7 +1441,8 @@
         },
         {
           "text@en": "Robert Construction Limited made an offer for 3.7 million",
-          "text@de": "Das Angebot der Meinhardt Hoch- u. Tiefbau GmbH liegt bei 3,7 Millionen.",
+          "text@es": "Construcciones Robert ha hecho una oferta de 3,7 millones",
+          "text@de": "Das Angebot der Meinhardt Hoch- u. Tiefbau GmbH liegt bei 3,7 Millionen",
           "text@fr": "Guillory Construction SARL a fait une offre à 3,7 millions",
           "var_changes": {
             "reserves": -3.7,
@@ -1276,18 +1452,21 @@
             {
               "character": "you",
               "text@en": "I choose Robert Construction Limited.",
+              "text@es": "Escojo a Construcciones Robert, S.L.",
               "text@de": "Ich habe mich für das Angebot der Meinhardt Hoch- u. Tiefbau GmbH entschieden.",
               "text@fr": "Je choisis Guillory Construction SARL."
             },
             {
               "character": "construction-boss",
               "text@en": "What the hell?",
+              "text@es": "¡¿Qué coño?!",
               "text@de": "Wie bitte?",
               "text@fr": "Quoi ?"
             },
             {
               "character": "construction-boss",
               "text@en": "You run a cartel and you can't even pick the right offer?",
+              "text@es": "¿Controlas un cartel y no eres capaz ni de escoger la oferta que debes?",
               "text@de": "Du baust ein Kartell auf, aber bist nicht in der Lage das richtige Angebot auszuwählen?",
               "text@fr": "Tu fais un cartel et tu ne choisis pas la bonne offre ?"
             }
@@ -1305,18 +1484,21 @@
         {
           "character": "mayor",
           "text@en": "We passed a tender to build a new school.",
+          "text@es": "Hemos conseguido una licitación para construir un colegio.",
           "text@de": "Wir haben eine Ausschreibung für den Neubau einer Schule veröffentlicht.",
           "text@fr": "On a passé un appel d'offre pour construire une nouvelle école."
         },
         {
           "character": "mayor",
           "text@en": "Our construction department estimates the cost of the works at 3 million.",
+          "text@es": "La concejalía de obras públicas estima que el coste de las obras será de 3 de millones.",
           "text@de": "Das Amt für Bauwesen hat die Kosten auf 3 Millionen geschätzt.",
           "text@fr": "Notre bureau d'études évalue les travaux à 3 millions."
         },
         {
           "character": "mayor",
           "text@en": "We received three offers. Pick the best one.",
+          "text@es": "Hemos recibido tres ofertas. Elija la mejor.",
           "text@de": "Wir haben drei Angebote erhalten. Wählen Sie das beste aus.",
           "text@fr": "On a reçu 3 offres. Choisissez la meilleure."
         }
@@ -1325,6 +1507,7 @@
         {
           "character": "helper",
           "text@en": "Here's my [memo on cartels|cartel], just in case.",
+          "text@es": "Te paso mi [memo sobre cárteles|cartel] por si lo necesitaras.",
           "text@de": "Mein [Dossier zum Thema Kartelle|cartel] ist noch immer verfügbar.",
           "text@fr": "Mon [mémo sur les cartels|cartel] est toujours disponible."
         }
@@ -1332,6 +1515,7 @@
       "choices": [
         {
           "text@en": "Robert Construction Limited made an offer for 3.5 million",
+          "text@es": "Construcciones Robert ha hecho una oferta de 3,5 millones",
           "text@de": "Das Angebot der Meinhardt Hoch- u. Tiefbau GmbH liegt bei 3,5 Millionen.",
           "text@fr": "Guillory Construction SARL a fait une offre à 3,5 millions",
           "var_changes": {
@@ -1342,18 +1526,21 @@
             {
               "character": "you",
               "text@en": "I choose Robert Construction Limited.",
+              "text@es": "Escojo a Construcciones Robert, S.L.",
               "text@de": "Ich habe mich für das Angebot der Meinhardt Hoch- u. Tiefbau GmbH entschieden.",
               "text@fr": "Je choisis Guillory Construction SARL."
             },
             {
               "character": "construction-boss",
               "text@en": "Good choice, buddy.",
+              "text@es": "Buena elección, amigo.",
               "text@de": "Gute Wahl!",
               "text@fr": "Bon choix !"
             },
             {
               "character": "construction-boss",
               "text@en": "Your share will be deposited in your office, as usual.",
+              "text@es": "Tu parte te la ingresarán en tu sucursal, como de costumbre.",
               "text@de": "Deinen Teil findest du, wie immer, auf deinem Schreibtisch.",
               "text@fr": "Tu trouveras ta part sur ton bureau, comme d'habitude."
             }
@@ -1361,6 +1548,7 @@
         },
         {
           "text@en": "Concrete Construction made an offer for 3.6 million",
+          "text@es": "Construcciones Cemento ha hecho una oferta de 3,6 millones",
           "text@de": "Das Angebot der Betonbau GmbH liegt bei 3,6 Millionen.",
           "text@fr": "Grosbéton SARL a fait une offre à 3,6 millions",
           "var_changes": {
@@ -1371,18 +1559,21 @@
             {
               "character": "you",
               "text@en": "I choose Concrete Construction.",
+              "text@es": "Escojo a Construcciones Cemento.",
               "text@de": "Ich habe mich für das Angebot der Betonbau GmbH entschieden.",
               "text@fr": "Je choisis Grosbéton SARL."
             },
             {
               "character": "construction-boss",
               "text@en": "Playing with fire, are we?",
+              "text@es": "Estamos jugando con fuego, ¿no?",
               "text@de": "Du spielst mit dem Feuer!",
               "text@fr": "Tu joues avec le feu !"
             },
             {
               "character": "construction-boss",
               "text@en": "You won't last long if you continue like this.",
+              "text@es": "No vas a durar mucho si sigues así.",
               "text@de": "Du wirst den Job nicht lang behalten, wenn du so weitermachst.",
               "text@fr": "Tu ne tiendras pas longtemps si tu continues comme ça."
             }
@@ -1390,7 +1581,8 @@
         },
         {
           "text@en": "Eco-Sense Construction made an offer for 3.7 million",
-          "text@de": "Das Angebot der Eco-Sense Construction liegt bei 3,7 Millionen.",
+          "text@es": "Construcciones Eco-Prudencia ha hecho una oferta de 3,7 millones",
+          "text@de": "Das Angebot der Eco-Sense Construction liegt bei 3,7 Millionen",
           "text@fr": "Eco-Sense Construction a fait une offre à 3,7 millions",
           "var_changes": {
             "reserves": -3.7,
@@ -1400,18 +1592,21 @@
             {
               "character": "you",
               "text@en": "I choose Eco-Sense Construction.",
+              "text@es": "Escojo a Construcciones Eco-Prudencia.",
               "text@de": "Ich habe mich für das Angebot der Eco-Sense Construction entschieden.",
               "text@fr": "Je choisis Eco-Sense."
             },
             {
               "character": "construction-boss",
               "text@en": "Playing with fire, are we?",
+              "text@es": "Estamos jugando con fuego, ¿no?",
               "text@de": "Du spielst mit dem Feuer!",
               "text@fr": "Tu joues avec le feu !"
             },
             {
               "character": "construction-boss",
               "text@en": "You won't last long if you continue like this.",
+              "text@es": "No vas a durar mucho si sigues así.",
               "text@de": "Du wirst den Job nicht lang behalten, wenn du so weitermachst.",
               "text@fr": "Tu ne tiendras pas longtemps si tu continue comme ça."
             }
@@ -1425,12 +1620,14 @@
         {
           "character": "mayor",
           "text@en": "As part of the Smart Administration 2000 plan, I want you to have a credit card.",
+          "text@es": "Como parte del Plan de Administración Inteligente 2000, quiero que tengas una tarjeta de crédito.",
           "text@de": "Im Rahmen meines „Smart Administration 2000“ Plans habe ich befugt, dass Sie eine Kreditkarte erhalten.",
           "text@fr": "Dans le cadre de mon programme Smart Administration 2000, vous avez droit à une carte de crédit."
         },
         {
           "character": "mayor",
           "text@en": "It'll make your work faster and benefit citizens!",
+          "text@es": "Hára que tu trabajo sea más rápido y beneficiará a los ciudadanos.",
           "text@de": "Es wird Ihre Produktivität steigern und die Bürger werden davon profitieren.",
           "text@fr": "Cela va améliorer votre productivité et profiter aux citoyens !"
         }
@@ -1439,6 +1636,7 @@
         {
           "character": "helper",
           "text@en": "I prepared a [memo on credit cards|credit_card] for you.",
+          "text@es": "Te he preparado un [memo sobre tarjetas de crédito|credit_card].",
           "text@de": "Ich habe für Sie [ein Dossier zu diesem Thema|credit_card] zusammengestellt.",
           "text@fr": "Je vous ai préparé [un mémo sur les cartes de crédit.|credit_card]"
         }
@@ -1446,6 +1644,7 @@
       "choices": [
         {
           "text@en": "Use the credit card to buy DVDs on Amazon.com",
+          "text@es": "Utilizar la tarjeta de crédito para comprar DVD en Amazon.es",
           "text@de": "Mit der Kreditkarte DVDs auf amazon.de kaufen.",
           "text@fr": "Utiliser la carte de crédit pour acheter des DVD sur Amazon.fr",
           "var_changes": {
@@ -1456,24 +1655,28 @@
             {
               "character": "you",
               "text@en": "Oh, a credit card!",
+              "text@es": "Ah, ¡una tarjeta de crédito!",
               "text@de": "Oh, eine Kreditkarte!",
               "text@fr": "Oh, une carte de crédit !"
             },
             {
               "character": "you",
               "text@en": "Let's buy some new DVDs on Amazon.com",
+              "text@es": "Compremos algunos DVD nuevos en Amazon.es",
               "text@de": "Ich werde mir ein paar DVDs auf amazon.de kaufen.",
               "text@fr": "Je vais m'acheter des DVD sur Amazon.fr"
             },
             {
               "character": "lawyer",
               "text@en": "No, you didn't, did you?",
+              "text@es": "No lo hiciste, ¿no?",
               "text@de": "Das haben Sie nicht ersthaft getan! Oder?",
               "text@fr": "Non, vous n'avez pas fait ça ?"
             },
             {
               "character": "lawyer",
               "text@en": "As soon as the comptroller reads the credit card statements, you'll be fired!",
+              "text@es": "Tan pronto como el interventor lea los estractos de la tarjeta de crédito, ¡te despedirán!",
               "text@de": "Wenn der Rechnungsprüfer das entdeckt sind Sie gefeuert!",
               "text@fr": "Quand le comptable lira le relevé de carte bleue, vous serez mise à la porte !"
             }
@@ -1481,6 +1684,7 @@
         },
         {
           "text@en": "Do nothing",
+          "text@es": "No hagas nada",
           "text@de": "Nichts unternehmen.",
           "text@fr": "Ne rien faire",
           "var_changes": {
@@ -1490,18 +1694,21 @@
             {
               "character": "you",
               "text@en": "I don't see the need for it.",
+              "text@es": "No veo la necesidad.",
               "text@de": "Daran habe ich kein Interesse.",
               "text@fr": "Je ne vois pas l'intérêt."
             },
             {
               "character": "mayor",
               "text@en": "You're right, better be careful with this plastic thingy.",
+              "text@es": "Tienes razón, lo mejor es tener cuidado con esa tarjetita mágica.",
               "text@de": "Sie haben Recht. Man sollte vorsichtig sein mit diesen kleinen Plastikkarten.",
               "text@fr": "Vous avez raison, faites attention avec ce bout de plastique."
             },
             {
               "character": "mayor",
               "text@en": "I don't want any scandal here.",
+              "text@es": "No quiero ningún escándalo por aquí.",
               "text@de": "Ich will keinen Skandal in meinem Haus.",
               "text@fr": "Je ne veux pas de scandale chez moi."
             }
@@ -1515,12 +1722,14 @@
         {
           "character": "mayor",
           "text@en": "There's an election coming up.",
+          "text@es": "Se acercan elecciones.",
           "text@de": "Bald geht der Wahlkampf wieder los.",
           "text@fr": "Les élections municipales arrivent."
         },
         {
           "character": "mayor",
           "text@en": "I want you to run some ads that praise my work in the local paper, using city funds.",
+          "text@es": "Quiero que saques algunos anuncios que alaben mi trabajo en el períodico local, con fondos públicos.",
           "text@de": "Ich möchte, dass mit Mitteln der Gemeinde in den Zeitungen für mich geworben wird.",
           "text@fr": "J'aimerais que vous me fassiez de la publicité dans le journal local en utilisant les fonds de la mairie."
         }
@@ -1529,6 +1738,7 @@
         {
           "character": "helper",
           "text@en": "I prepared a [memo on political advertising|ads], in case you need help.",
+          "text@es": "He hecho un [memo sobre publicidad con fines políticos|ads], en caso de que necesitaras mi ayuda.",
           "text@de": "Ich habe für Sie [ein Dossier zur politischen Werbung|ads] zusammengestellt.",
           "text@fr": "Je vous ai préparé [un mémo sur la publicité politique|ads], au cas où."
         }
@@ -1536,6 +1746,7 @@
       "choices": [
         {
           "text@en": "No way, it's unethical",
+          "text@es": "Ni hablar, no es ético.",
           "text@de": "Auf keinen Fall. Das wäre unethisch.",
           "text@fr": "Pas question, ce n'est pas éthique.",
           "var_changes": {
@@ -1545,24 +1756,28 @@
             {
               "character": "you",
               "text@en": "I can't do this, it's unethical.",
+              "text@es": "Eso no lo puedo hacer, no es ético.",
               "text@de": "Das kann ich nicht machen, es ist unethisch.",
               "text@fr": "Je ne peux pas le faire. Ce n'est pas éthique."
             },
             {
               "character": "mayor",
               "text@en": "What????",
+              "text@es": "¿¿Qué??",
               "text@de": "Wie bitte????",
               "text@fr": "Qu'entends-je ???"
             },
             {
               "character": "mayor",
               "text@en": "...",
+              "text@es": "...",
               "text@de": "...",
               "text@fr": "..."
             },
             {
               "character": "mayor",
               "text@en": "When I'm reelected, you're out.",
+              "text@es": "Cuando me reelijan, te quedarás fuera.",
               "text@de": "Sobald ich wiedergewählt bin, fliegen Sie raus!",
               "text@fr": "Quand je serai réélue, vous serez dehors."
             }
@@ -1570,6 +1785,7 @@
         },
         {
           "text@en": "Sure, I'll run ads praising your actions",
+          "text@es": "Hecho, sacaré anuncios publicitando tus políticas.",
           "text@de": "Alles klar, ich werde für Sie eine Werbekampagne organisieren.",
           "text@fr": "D'accord, je vais vous acheter des espaces publicitaires.",
           "var_changes": {
@@ -1579,18 +1795,21 @@
             {
               "character": "you",
               "text@en": "Sure, I am on it.",
+              "text@es": "Hecho, estoy ya en ello.",
               "text@de": "Alles klar, wird erledigt.",
               "text@fr": "D'accord, je m'en charge."
             },
             {
               "character": "mayor",
               "text@en": "I knew I could count on you.",
+              "text@es": "Sabía que podía contar contigo.",
               "text@de": "Ich wusste auf Sie ist Verlass!",
               "text@fr": "Je savais que je pouvais compter sur vous."
             },
             {
               "character": "mayor",
               "text@en": "Just tell the accounting department to pass it as marketing expenditures for the city.",
+              "text@es": "Dile al departamento de contabilidad que lo compute como gasto de marketing para la ciudad.",
               "text@de": "Sagen Sie der Buchhaltung, sie soll es als Marketingaufwand verbuchen.",
               "text@fr": "Dites juste à la compta de faire passer ça en dépenses de communication."
             }
@@ -1604,36 +1823,42 @@
         {
           "character": "football-boss",
           "text@en": "We're in trouble.",
+          "text@es": "Tenemos problemas.",
           "text@de": "Wir haben ein Problem.",
           "text@fr": "On est mal."
         },
         {
           "character": "football-boss",
           "text@en": "We need 12 million.",
+          "text@es": "Necesitamos 12 millones.",
           "text@de": "Wir brauchen 12 Millionen",
           "text@fr": "On a besoin de 12 millions."
         },
         {
           "character": "football-boss",
           "text@en": "Cash.",
+          "text@es": "Efectivo.",
           "text@de": "In Bar.",
           "text@fr": "En cash."
         },
         {
           "character": "football-boss",
           "text@en": "I was thinking... The city could buy me back the plot of land you sold me, back in 1996.",
+          "text@es": "Estaba pensando... El ayuntamiento podría volver a comprarme el terreno que tú me vendiste en 1996.",
           "text@de": "Ich habe mir gedacht ... Die Stadt könnte das Grundstück zurückkaufen, welches sie mir 1996 verkauft hat.",
           "text@fr": "Je me disais... La ville pourrait me racheter le terrain que vous m'avez vendu en 1996."
         },
         {
           "character": "football-boss",
           "text@en": "Then I rent it from the city at a fair price.",
+          "text@es": "Y luego se lo alquilo a la ciudad a un precio ajustado.",
           "text@de": "Und dann vermietet sie es mir zu einem fairen Preis.",
           "text@fr": "Et je pourrais le louer à la ville à un prix honnête."
         },
         {
           "character": "football-boss",
           "text@en": "That'd make everybody happy, wouldn't it? Voters would hate it if their team had to leave.",
+          "text@es": "Eso contentaría a todos, ¿no? Lo votantes odiarían que su partido se tuviera que marchar.",
           "text@de": "Damit wären alle zufriedengestellt. Und die Wähler wären doch sicher sehr enttäuscht, wenn Ihr Verein Konkurs anmelden müsste.",
           "text@fr": "Tout le monde serait content. Les électeurs seraient très déçus si leur club faisait faillite."
         }
@@ -1642,12 +1867,14 @@
         {
           "character": "helper",
           "text@en": "We're getting technical here.",
+          "text@es": "Estamos entrando en temas técnicos.",
           "text@de": "Es wird ein bisschen fachspezifisch.",
           "text@fr": "Ça devient technique."
         },
         {
           "character": "helper",
           "text@en": "Here's a [memo on leasing public space to private companies|emphyteutic] you might like.",
+          "text@es": "Aquí tienes un [memo sobre alquiler de espacios públicos para empresas privadas|emphyteutic] que te va a gustar.",
           "text@de": "Hier finden Sie ein Dossier zum Thema [Vermietung von öffentlichen Grundstücken an Privatgesellschaften.|emphyteutic]",
           "text@fr": "Voici [un mémo sur la location d'espace publics à des sociétés privées.|emphyteutic]"
         }
@@ -1655,6 +1882,7 @@
       "choices": [
         {
           "text@en": "Buy back the plot of land.",
+          "text@es": "Vuelve a comprar el terreno.",
           "text@de": "Das Grundstück zurückkaufen.",
           "text@fr": "Racheter le terrain.",
           "var_changes": {
@@ -1665,18 +1893,21 @@
             {
               "character": "you",
               "text@en": "Sure, a healthy football club for a healthy city!",
+              "text@es": "Claro, ¡un club de fútbol sano para una ciudad sana!",
               "text@de": "Aber sicher! Ein gesunder Verein für eine gesunde Stadt!",
               "text@fr": "Bien sûr! Un club en forme pour une ville dynamique !"
             },
             {
               "character": "football-boss",
               "text@en": "Yeah!",
+              "text@es": "¡Sí!",
               "text@de": "Yeah!",
               "text@fr": "Yeah !"
             },
             {
               "character": "football-boss",
               "text@en": "With people like you, we'll win the Cup!",
+              "text@es": "Con gente como tú, ¡ganaremos la Copa!",
               "text@de": "Mit Leuten wie Ihnen werden wir den Pokal gewinnen!",
               "text@fr": "Avec des gens comme vous, on va gagner la Coupe !"
             }
@@ -1684,6 +1915,7 @@
         },
         {
           "text@en": "No way, football clubs are private companies, they don't need a bail out.",
+          "text@es": "Ni hablar. Los clubs de fútbol son empresas privadas, no necesitan ser rescatados.",
           "text@de": "Nein, Fußballvereine sind private Organisationen, sie brauchen keine Rettungsaktionen.",
           "text@fr": "Non, les clubs de foot sont des sociétés privées, on ne va pas les renflouer.",
           "var_changes": {
@@ -1693,30 +1925,35 @@
             {
               "character": "you",
               "text@en": "No, sorry.",
+              "text@es": "No, lo siento.",
               "text@de": "Nein, tut mir leid.",
               "text@fr": "Non, désolé."
             },
             {
               "character": "you",
               "text@en": "It wouldn't be in the general interest.",
+              "text@es": "No sería bueno para el contribuyente.",
               "text@de": "Das läge nicht im öffentlichen Interesse.",
               "text@fr": "Cela ne servirait pas l'intérêt général."
             },
             {
               "character": "mayor",
               "text@en": "What did you do?",
+              "text@es": "¿Qué has hecho?",
               "text@de": "Was haben Sie getan?",
               "text@fr": "Qu'est ce que vous avez fait ?"
             },
             {
               "character": "mayor",
               "text@en": "You turned my friend down?",
+              "text@es": "¿Has rechazado a mi amigo?",
               "text@de": "Sie haben meinen Freund im Stich gelassen!",
               "text@fr": "Vous avez laissé tomber mon ami ?"
             },
             {
               "character": "mayor",
               "text@en": "Who do you think people will blame if the football team goes bankrupt?",
+              "text@es": "¿A quién crees que van a culpar si el equipo de fútbol cae en bancarrota?",
               "text@de": "Wem, denken Sie, werden die Wähler die Schuld geben, wenn der Verein pleite geht?",
               "text@fr": "Qui croyez vous que les habitants tiendront pour responsable, en cas de faillite du club ?"
             }
@@ -1730,30 +1967,35 @@
         {
           "character": "construction-boss",
           "text@en": "Hey buddy!",
+          "text@es": "¡Ey, amigo!",
           "text@de": "Hey, du!",
           "text@fr": "Salut, toi !"
         },
         {
           "character": "construction-boss",
           "text@en": "I have a great idea.",
+          "text@es": "Tengo una idea genial.",
           "text@de": "Ich habe da eine großartige Idee.",
           "text@fr": "J'ai une super idée."
         },
         {
           "character": "construction-boss",
           "text@en": "You'll pass a public tender to renovate a street that doesn't exist.",
+          "text@es": "Vas a conseguir un concurso para renovar una calle que no existe. ",
           "text@de": "Du veröffentlichst eine Ausschreibung für die Renovierung einer nicht existierenden Straße.",
           "text@fr": "Tu passes un appel d'offre pour rénover une rue qui n'existe pas."
         },
         {
           "character": "construction-boss",
           "text@en": "Give me the contract...",
+          "text@es": "Dame un contrato...",
           "text@de": "Du erteilst mir den Zuschlag ...",
           "text@fr": "Tu me passes le contrat..."
         },
         {
           "character": "construction-boss",
           "text@en": "And we'll share the money.",
+          "text@es": "Y compartimos el dinero.",
           "text@de": "Und wir teilen das Geld!",
           "text@fr": "Et on partage le fric !"
         }
@@ -1762,12 +2004,14 @@
         {
           "character": "helper",
           "text@en": "You wouldn't be the first to indulge, you know.",
+          "text@es": "No serías el primero a quien compensar, ¿sabes?",
           "text@de": "Auf die Idee sind schon andere gekommen, wissen Sie?",
           "text@fr": "Cette idée n'est pas nouvelle, vous savez."
         },
         {
           "character": "helper",
           "text@en": "Here's [some documentation on the issue|fake], just in case.",
+          "text@es": "Aquí tienes [alguna documentación sobre el asunto|fake], por si acaso.",
           "text@de": "[Hie finden Sie ein paar Informationen|fake] zum Thema.",
           "text@fr": "Voilà un peu de [documentation sur le sujet|fake]."
         }
@@ -1775,6 +2019,7 @@
       "choices": [
         {
           "text@en": "Accept",
+          "text@es": "Aceptas",
           "text@de": "Zustimmen",
           "text@fr": "Accepter",
           "var_changes": {
@@ -1785,18 +2030,21 @@
             {
               "character": "you",
               "text@en": "I will make it happen.",
+              "text@es": "Me encargaré de ello.",
               "text@de": "Alles klar.",
               "text@fr": "Je m'en occupe"
             },
             {
               "character": "construction-boss",
               "text@en": "Well done!",
+              "text@es": "¡Bien hecho!",
               "text@de": "Gut gespielt!",
               "text@fr": "Bien joué !"
             },
             {
               "character": "construction-boss",
               "text@en": "Here's to our collaboration! 🍻",
+              "text@es": "¡Brindemos por nuestra colaboración! 🍻",
               "text@de": "Auf unsere Zusammenarbeit! 🍻",
               "text@fr": "A notre collaboration ! 🍻"
             }
@@ -1804,6 +2052,7 @@
         },
         {
           "text@en": "Decline",
+          "text@es": "No aceptas",
           "text@de": "Ablehnen",
           "text@fr": "Refuser",
           "var_changes": {
@@ -1813,18 +2062,21 @@
             {
               "character": "you",
               "text@en": "No, it seems too risky too me.",
+              "text@es": "No, a mí me parece demasiado arriesgado.",
               "text@de": "Nein, das ist mir zu riskant",
               "text@fr": "Non, ça me parait trop risqué."
             },
             {
               "character": "construction-boss",
               "text@en": "Careful, buddy...",
+              "text@es": "Cuidado, amigo...",
               "text@de": "Pass auf, meine Liebe!",
               "text@fr": "Fais gaffe à toi..."
             },
             {
               "character": "construction-boss",
               "text@en": "You don't want to see me angry.",
+              "text@es": "No querrás que me enfade.",
               "text@de": "Du willst mich nicht wütend erleben.",
               "text@fr": "Tu veux pas me voir en colère."
             }
@@ -1838,24 +2090,28 @@
         {
           "character": "construction-boss",
           "text@en": "Hey buddy!",
+          "text@es": "¡Ey, amigo!",
           "text@de": "Guten Tag!",
           "text@fr": "Salut !"
         },
         {
           "character": "construction-boss",
           "text@en": "Someone as important as you should have a nicer office.",
+          "text@es": "Alguien tan importante como tú debería tener un despacho mejor.",
           "text@de": "Jemand, der so wichtig ist wie du, sollte in einem schöneren Büro sitzen.",
           "text@fr": "Quelqu'un d'aussi important que toi devrait avoir un plus beau bureau."
         },
         {
           "character": "construction-boss",
           "text@en": "You deserve a mahogany desk and designer chairs, at least!",
+          "text@es": "Te mereces una mesa de caoba y sillas de diseño, ¡como mínimo!",
           "text@de": "Zumindest einen Mahagoni- Schreibtisch und einen Ledersessel solltest du dir gönnen.",
           "text@fr": "Un bureau en acajou et des chaises en cuir, au moins !"
         },
         {
           "character": "construction-boss",
           "text@en": "Give me a contract and I'll buy you the furniture you really deserve.",
+          "text@es": "Consígueme un contrato y yo te compraré los muebles que realmente te mereces.",
           "text@de": "Gib mir einen Vertrag und ich kaufe dir die Möbel, die du verdienst.",
           "text@fr": "Donne moi un contrat et je vais t'acheter les meubles que tu mérites."
         }
@@ -1863,6 +2119,7 @@
       "choices": [
         {
           "text@en": "You're right.",
+          "text@es": "Tienes razón.",
           "text@de": "Sie haben Recht.",
           "text@fr": "Vous avez raison.",
           "var_changes": {
@@ -1872,24 +2129,28 @@
             {
               "character": "you",
               "text@en": "You're right.",
+              "text@es": "Tienes razón.",
               "text@de": "Sie haben Recht.",
               "text@fr": "Vous avez raison."
             },
             {
               "character": "mayor",
               "text@en": "What happened?",
+              "text@es": "¿Qué ha pasado?",
               "text@de": "Was ist passiert?",
               "text@fr": "Que s'est-il passé ?"
             },
             {
               "character": "mayor",
               "text@en": "How come your office is nicer than mine?",
+              "text@es": "¿Cómo es que tu despacho es mejor que el mío?",
               "text@de": "Warum ist Ihr Büro schöner als meins?",
               "text@fr": "Pourquoi votre bureau est-il mieux que le mien ?"
             },
             {
               "character": "mayor",
               "text@en": "Something's wrong with you.",
+              "text@es": "A ti te pasa algo.",
               "text@de": "Wie können Sie sich das leisten?",
               "text@fr": "Quelque chose ne va pas chez vous."
             }
@@ -1897,6 +2158,7 @@
         },
         {
           "text@en": "No, we can't afford this.",
+          "text@es": "No, no podemos permitírnoslo.",
           "text@de": "Nein, das kann ich mir nicht leisten.",
           "text@fr": "Non, on ne peut pas se le permettre.",
           "var_changes": {
@@ -1906,12 +2168,14 @@
             {
               "character": "you",
               "text@en": "No, we can't afford this.",
+              "text@es": "No, no podemos permitírnoslo.",
               "text@de": "Nein, das kann ich mir nicht erlauben.",
               "text@fr": "Non, on ne peut pas se le permettre."
             },
             {
               "character": "construction-boss",
               "text@en": "I thought we were friends.",
+              "text@es": "Creí que éramos amigos.",
               "text@de": "Ich dachte wir wären Freunde.",
               "text@fr": "Je croyais qu'on était amis."
             }
@@ -1925,18 +2189,21 @@
         {
           "character": "mayor",
           "text@en": "We need a new football stadium.",
+          "text@es": "Necesitamos un estadio de fútbol nuevo.",
           "text@de": "Wir brauchen ein neues Fußballstadion.",
           "text@fr": "Il nous faut un nouveau stade de foot."
         },
         {
           "character": "mayor",
           "text@en": "The people deserve this.",
+          "text@es": "La gente se lo merece.",
           "text@de": "Die Bürgerinnen und Bürger haben es sich verdient!",
           "text@fr": "Le peuple le mérite !"
         },
         {
           "character": "mayor",
           "text@en": "How should we arrange the financing?",
+          "text@es": "¿Cómo deberíamos organizar la financiación?",
           "text@de": "Wie sollen wir das finanzieren?",
           "text@fr": "Comment allons-nous le financer ?"
         }
@@ -1945,12 +2212,14 @@
         {
           "character": "helper",
           "text@en": "PPPs are quite a trend.",
+          "text@es": "Las asociaciones público-privadas están de moda.",
           "text@de": "ÖPPs sind der letzte Schrei.",
           "text@fr": "Les PPPs sont à la mode."
         },
         {
           "character": "helper",
           "text@en": "[I prepared a memo for you on the topic|ppp].",
+          "text@es": "[Te he preparado un memo sobre este tema|ppp].",
           "text@de": "Ich habe [für Sie ein Dossier zusammengestellt|ppp].",
           "text@fr": "Voici [un mémo sur le sujet|ppp]."
         }
@@ -1958,6 +2227,7 @@
       "choices": [
         {
           "text@en": "The city should build the stadium (one-off cost: 10 million).",
+          "text@es": "El ayuntamiento debería construir el estadio (un coste específicio: 10 millones)",
           "text@de": "Die Stadt kommt für das Stadion auf (Kostenpunkt: 10 Millionen).",
           "text@fr": "La ville paye pour le stade (coût: 10 millions)",
           "var_changes": {
@@ -1967,24 +2237,28 @@
             {
               "character": "you",
               "text@en": "Let's build this stadium for 10 million.",
+              "text@es": "Construyamos un estadio de 10 millones.",
               "text@de": "Die Stadt wird das Stadion für 10 Millionen bauen.",
               "text@fr": "Construisons le stade pour 10 millions."
             },
             {
               "character": "mayor",
               "text@en": "Ten MILLION?",
+              "text@es": "¿Diez MILLONES?",
               "text@de": "Zehn MILLIONEN?",
               "text@fr": "Dix MILLIONS ?"
             },
             {
               "character": "mayor",
               "text@en": "Where do you think you work at? Buckingham Palace?",
+              "text@es": "¿Dónde crees que estás trabajando? ¿En el Palacio de Buckingham?",
               "text@de": "Denken Sie, dass die Staatskasse Ihr Spielplatz ist?",
               "text@fr": "Mais où vous croyez vous ?"
             },
             {
               "character": "mayor",
               "text@en": "Go for PPP next time.",
+              "text@es": "La próxima vez, apunta a la asocación público-privada.",
               "text@de": "Entscheiden Sie sich das nächste Mal für eine ÖPP.",
               "text@fr": "Choisissez un PPP la prochaine fois."
             }
@@ -1992,6 +2266,7 @@
         },
         {
           "text@en": "Set-up a public-private partnership (no cost now, but you have to pay the contractor 1 million per year for the next 20 years)",
+          "text@es": "Establece una asocación público-privada (sin coste de momento, pero tienes que pagar al contratista 1 millón por año para los próximos 20 años).",
           "text@de": "Eine Öffentlich-Private Partnerschaft aufbauen (es entstehen aktuell keine Kosten, jedoch muss die Stadt in den kommenden 20 Jahren jährlich 1 Million an den Betreiber zahlen).",
           "text@fr": "Mettre en place un partenariat public-privé (aucun coût maintenant, mais vous devrez payer l'opérateur 1 million par an pendant 20 ans)",
           "var_changes": {
@@ -2001,24 +2276,28 @@
             {
               "character": "you",
               "text@en": "Let's do a public-private partnership.",
+              "text@es": "Hagamos una asociación público-privada.",
               "text@de": "Wir werden eine Öffentlich- Private Partnerschaft eingehen.",
               "text@fr": "Faisons un partenariat public-privé."
             },
             {
               "character": "you",
               "text@en": "This way, we don't have to pay anything now.",
+              "text@es": "De este modo, no tenemos que pagar nada ahora.",
               "text@de": "So entstehen uns aktuell keine Kosten.",
               "text@fr": "Comme cela, nous n'avons rien à payer maintenant."
             },
             {
               "character": "mayor",
               "text@en": "I love this PPP thing!",
+              "text@es": "¡Me encanta esto de la asociación público-privada!",
               "text@de": "Ich liebe diese ÖPPs!",
               "text@fr": "J'adore ces PPP !"
             },
             {
               "character": "mayor",
               "text@en": "I get stuff done, and it's the next mayors who pay!",
+              "text@es": "Yo hago mis cosas, ¡y ya lo pagará el siguiente alcalde!",
               "text@de": "Man kann bauen was man will und der nächste Bürgermeister muss es bezahlen!",
               "text@fr": "On peut construire ce qu'on veut, et c'est le maire suivant qui paye !"
             }
@@ -2032,24 +2311,28 @@
         {
           "character": "mayor",
           "text@en": "Next year, we'll outsource trash collection.",
+          "text@es": "El año que viene, externalizaremos la recogida de basuras.",
           "text@de": "Nächste Jahr werden wir die Müllentsorgung auslagern.",
           "text@fr": "L'année prochaine, nous externaliserons la collecte d'ordures."
         },
         {
           "character": "lawyer",
           "text@en": "Have you heard the news?",
+          "text@es": "¿Has oído las noticias?",
           "text@de": "Haben Sie schon das Neueste gehört?",
           "text@fr": "Vous avez entendu les nouvelles ?"
         },
         {
           "character": "lawyer",
           "text@en": "Do you want to buy shares in Voelia Environment, a trash collection company?",
+          "text@es": "¿Quiere comprar acciones en Voelia Environment, una empresa de recogida de basuras?",
           "text@de": "Wollen Sie Anteile an Voelia Environment, einer Entsorgungsfirma, kaufen?",
           "text@fr": "Voulez-vous acheter des actions de Voelia Environment, une société de collecte d'ordures ?"
         },
         {
           "character": "lawyer",
           "text@en": "They might get the contract next year.",
+          "text@es": "Podrían conseguir el contrato el próximo año.",
           "text@de": "Vielleicht bekommt sie nächstes Jahr den Auftrag.",
           "text@fr": "Peut-être auront-ils le marché l'année prochaine."
         }
@@ -2057,6 +2340,7 @@
       "choices": [
         {
           "text@en": "Yes. Invest 50,000.",
+          "text@es": "Sí. Invierte 50.000.",
           "text@de": "Ja. Investieren Sie 50.000.",
           "text@fr": "Oui, investis 50 000.",
           "var_changes": {
@@ -2067,18 +2351,21 @@
             {
               "character": "you",
               "text@en": "Yes, good idea, I'll put in 50,000.",
+              "text@es": "Sí, buena idea. Meteré 50.000.",
               "text@de": "Ja, gute Idee. Investieren Sie bitte 50.000.",
               "text@fr": "Oui, bonne idée, je vais mettre 50 000."
             },
             {
               "character": "lawyer",
               "text@en": "Brilliant!",
+              "text@es": "¡Estupendo!",
               "text@de": "Wunderbar.",
               "text@fr": "Super !"
             },
             {
               "character": "lawyer",
               "text@en": "I'll take care of it.",
+              "text@es": "Me encargaré de ello.",
               "text@de": "Ich kümmere mich um den Kaufauftrag.",
               "text@fr": "Je passe les ordres d'achat."
             }
@@ -2086,6 +2373,7 @@
         },
         {
           "text@en": "No.",
+          "text@es": "No.",
           "text@de": "Nein.",
           "text@fr": "Non.",
           "var_changes": {
@@ -2095,18 +2383,21 @@
             {
               "character": "you",
               "text@en": "No, it's not a good idea.",
+              "text@es": "No, no es buena idea.",
               "text@de": "Nein, das ist keine gute Idee.",
               "text@fr": "Non, ce n'est pas une bonne idée."
             },
             {
               "character": "lawyer",
               "text@en": "All right.",
+              "text@es": "De acuerdo.",
               "text@de": "Wie Sie wollen.",
               "text@fr": "Comme vous voulez."
             },
             {
               "character": "lawyer",
               "text@en": "But you should invest your money more wisely.",
+              "text@es": "Pero deberías invertir tu dinero con más cabeza.",
               "text@de": "Aber sie sollten ihr Geld intelligenter einsetzen.",
               "text@fr": "Mais vous devriez investir votre argent plus intelligement."
             }
@@ -2124,24 +2415,28 @@
         {
           "character": "mayor",
           "text@en": "Trash collection must be outsourced.",
+          "text@es": "La recogida de basuras se debería externalizar.",
           "text@de": "Wir müssen die städtische Müllabfuhr outsourcen.",
           "text@fr": "Nous devons externaliser la collecte d'ordures."
         },
         {
           "character": "mayor",
           "text@en": "I asked accounting how much it cost us so far.",
+          "text@es": "Le he preguntado a contabilidad cuánto nos ha costado por ahora.",
           "text@de": "Ich habe die Buchhaltung gefragt wieviel uns diese aktuell kostet.",
           "text@fr": "J'ai demandé à la comptabilité combien cela nous coûte à présent."
         },
         {
           "character": "mayor",
           "text@en": "They have no idea.",
+          "text@es": "No tienen ni idea.",
           "text@de": "Sie haben nicht den Hauch einer Ahnung.",
           "text@fr": "Ils n'en ont aucune idée."
         },
         {
           "character": "mayor",
           "text@en": "We passed a public tender anyway. Pick the best offer.",
+          "text@es": "Lanzamos una licitación pública de todos modos. Escoje la mejor oferta.",
           "text@de": "Wir haben trotzdem eine Ausschreibung laufen. Wählen Sie bitte das beste Angebot aus.",
           "text@fr": "Nous avons passé un appel d'offre quand même. Choissisez la meilleure offre."
         }
@@ -2150,6 +2445,7 @@
         {
           "character": "helper",
           "text@en": "I wrote a [memo on privatizations|privatization] for you.",
+          "text@es": "Te he escrito un [memo sobre privatizaciones |privatization].",
           "text@de": "Ich habe [ein Dossier zum Thema Outsourcing|privatization] verfasst.",
           "text@fr": "Je vous ai écrit [un mémo sur la libéralisation des services publics|privatization]."
         }
@@ -2157,6 +2453,7 @@
       "choices": [
         {
           "text@en": "Voelia Environment made an offer at 1.2 million per year",
+          "text@es": "Voelia Medioambiente ha hecho una oferta de 1,2 millones por año.",
           "text@de": "Das Angebot von Voelia Environment liegt bei 1,2 Millionen pro Jahr.",
           "text@fr": "Voelia Environment a fait une offre à 1,2 millions par an",
           "var_changes": {
@@ -2167,12 +2464,14 @@
             {
               "character": "you",
               "text@en": "I choose Voelia Environment.",
+              "text@es": "Escojo a Voelia Medioambiente.",
               "text@de": "Ich habe mich für das Angebot der Voelia Environment entschieden.",
               "text@fr": "Je choisis Voelia Environment"
             },
             {
               "character": "lawyer",
               "text@en": "I knew it was a good idea! Your shares have tripled in value.",
+              "text@es": "¡Sabía que era buena idea! El valor de tus acciones se ha multiplicado. ",
               "text@de": "Ich wusste, dass das eine gute Idee war! Der Wert Ihrer Aktien hat sich verdreifacht!",
               "text@fr": "Je savais que c'était une bonne idée! La valeur de vos actions a été multipliée par trois."
             }
@@ -2180,6 +2479,7 @@
         },
         {
           "text@en": "SATI Waste Management made an offer at 0.9 million per year",
+          "text@es": "SATI Gestión de Residuos ha hecho una oferta de 0,9 millones por año.",
           "text@de": "Das Angebot der SATI Waste Management liegt bei 0,9 Millionen pro Jahr.",
           "text@fr": "SATI Waste Management a fait une offre à 0,9 millions par an",
           "var_changes": {
@@ -2190,24 +2490,28 @@
             {
               "character": "you",
               "text@en": "I choose SATI Waste Management.",
+              "text@es": "Escojo a SATI Gestión de Residuos.",
               "text@de": "Ich habe mich für das Angebot von SATI Waste Management entschieden.",
               "text@fr": "Je choisis SATI Waste Management."
             },
             {
               "character": "mayor",
               "text@en": "Well done!",
+              "text@es": "¡Bien hecho!",
               "text@de": "Sehr gut!",
               "text@fr": "Excellent !"
             },
             {
               "character": "mayor",
               "text@en": "Private companies running public services, what could go wrong?",
+              "text@es": "Empresas privadas gestionando servicios públicos. ¿Qué podría salir mal?",
               "text@de": "Private Firmen, die einen öffentlichen Dienst betreiben. Was könnte da schiefgehen?",
               "text@fr": "Des sociétés privées qui gèrent un service public, c'est le top!"
             },
             {
               "character": "lawyer",
               "text@en": "It's not a very smart move... Now it will be difficult to sell your shares in Voelia.",
+              "text@es": "No es un muy inteligente... Ahora será difícil vender tus acciones de Voelia.",
               "text@de": "Das war keine gute Entscheidung. Im Moment sind Ihre Anteile nicht sehr viel wert.",
               "text@fr": "C'est dommage... Maintenant, vos actions dans Voelia ne valent plus grand chose."
             }
@@ -2225,24 +2529,28 @@
         {
           "character": "mayor",
           "text@en": "Trash collection must be outsourced.",
+          "text@es": "La recogida de basuras se debería externalizar. ",
           "text@de": "Wir müssen die städtische Müllabfuhr outsourcen.",
           "text@fr": "Nous devons externaliser la collecte d'ordures."
         },
         {
           "character": "mayor",
           "text@en": "I asked accounting how much it cost us so far.",
+          "text@es": "Le he preguntado a contabilidad cuánto nos ha costado por ahora. ",
           "text@de": "Ich habe die Buchhaltung gefragt wieviel uns diese aktuell kostet.",
           "text@fr": "J'ai demandé à la comptabilité combien cela nous coûte à présent."
         },
         {
           "character": "mayor",
           "text@en": "They have no idea.",
+          "text@es": "No tienen ni idea.",
           "text@de": "Sie haben nicht den Hauch einer Ahnung.",
           "text@fr": "Ils n'en ont aucune idée."
         },
         {
           "character": "mayor",
           "text@en": "We passed a public tender anyway. Pick the best offer.",
+          "text@es": "Lanzamos una licitación pública de todos modos. Escoje la mejor oferta.",
           "text@de": "Wir haben trotzdem eine Ausschreibung laufen. Wählen Sie bitte das beste Angebot aus.",
           "text@fr": "Nous avons passé un appel d'offre quand même. Choissisez la meilleure offre."
         }
@@ -2251,6 +2559,7 @@
         {
           "character": "helper",
           "text@en": "I wrote a [memo on privatizations|privatization] for you.",
+          "text@es": "Te he escrito un [memo sobre privatizaciones|privatization].",
           "text@de": "Ich habe [ein Dossier zum Thema Outsourcing|privatization] verfasst.",
           "text@fr": "Je vous ai écrit [un mémo sur la libéralisation des services publics|privatization]."
         }
@@ -2258,6 +2567,7 @@
       "choices": [
         {
           "text@en": "Voelia Environment made an offer at 1.2 million per year",
+          "text@es": "Voelia Medioambiente ha hecho una oferta de 1,2 millones por año.",
           "text@de": "Das Angebot von Voelia Environment liegt bei 1,2 Millionen pro Jahr.",
           "text@fr": "Voelia Environment a fait une offre à 1,2 millions par an",
           "var_changes": {
@@ -2267,18 +2577,21 @@
             {
               "character": "you",
               "text@en": "I choose Voelia Environment.",
+              "text@es": "Escojo a Voelia Medioambiente.",
               "text@de": "Ich habe mich für das Angebot der Voelia Environment entschieden.",
               "text@fr": "Je choisis Voelia Environment."
             },
             {
               "character": "mayor",
               "text@en": "Well done!",
+              "text@es": "¡Bien hecho!",
               "text@de": "Ausgezeichnet!",
               "text@fr": "Excellent !"
             },
             {
               "character": "mayor",
               "text@en": "Private companies running public services, what could go wrong?",
+              "text@es": "Empresas privadas gestionando servicios públicos. ¿Qué podria salir mal?",
               "text@de": "Private Unternehmen, die öffentliche Dienste verwalten, das ist die Extraklasse!",
               "text@fr": "Des sociétés privées pour gérer des services publics, quelle bonne idée !"
             }
@@ -2286,6 +2599,7 @@
         },
         {
           "text@en": "SATI Waste Management made an offer at 900,000 per year",
+          "text@es": "SATI Gestión de Residuos ha hecho una oferta de 900.000 por año.",
           "text@de": "Das Angebot der SATI Waste Management liegt bei 0,9 Millionen pro Jahr.",
           "text@fr": "SATI Waste Management a fait une offre à 900 000 par an",
           "var_changes": {
@@ -2295,18 +2609,21 @@
             {
               "character": "you",
               "text@en": "I choose SATI Waste Management.",
+              "text@es": "Escojo a SATI Gestión de Residuos.",
               "text@de": "Ich habe mich für das Angebot der SATI Waste Management entschieden.",
               "text@fr": "Je choisis SATI Waste Management."
             },
             {
               "character": "mayor",
               "text@en": "Well done!",
+              "text@es": "¡Bien hecho!",
               "text@de": "Ausgezeichnet!",
               "text@fr": "Excellent !"
             },
             {
               "character": "mayor",
               "text@en": "Private companies running public services, what could go wrong?",
+              "text@es": "Empresas privadas gestionando servicios públicos. ¿Qué puede salir mal?",
               "text@de": "Wörtliche Übersetzung: Private Unternehmen, die öffentliche Dienste verwalten, das ist die Extraklasse!",
               "text@fr": "Des sociétés privées pour gérer des services publics, quelle bonne idée !"
             }
@@ -2320,18 +2637,21 @@
         {
           "character": "mayor",
           "text@en": "The contractor for the new stadium is behind schedule.",
+          "text@es": "El contratista del nuevo estadio va con retraso.",
           "text@de": "Der Auftragnehmer ist mit den Bauarbeiten am neuen Stadion im Verzug.",
           "text@fr": "La société qui construit le stade est en retard de 6 mois."
         },
         {
           "character": "mayor",
           "text@en": "They do not want to pay the late penalty fee of 2 million.",
+          "text@es": "No quieren pagar la penalización por retraso de 2 millones.",
           "text@de": "Er weigert sich den Verspätungszuschlag in Höhe von 2 Millionen zu bezahlen.",
           "text@fr": "Ils ne veulent pas payer la pénalité de retard de 2 millions."
         },
         {
           "character": "mayor",
           "text@en": "Sort this out.",
+          "text@es": "Arréglalo.",
           "text@de": "Finden Sie eine Lösung.",
           "text@fr": "Trouvez une solution."
         }
@@ -2340,12 +2660,14 @@
         {
           "character": "helper",
           "text@en": "Reading the fine print on contracts is a bore.",
+          "text@es": "Leer la letra pequeña de los contratos es un aburrimiento.",
           "text@de": "Es kann viel Zeit in Anspruch nehmen das Kleingedruckte in einem Vertrag zu lesen.",
           "text@fr": "Les détails des contrats sont longs à lire."
         },
         {
           "character": "helper",
           "text@en": "Here's a [memo on the issue|fine_print] to help you.",
+          "text@es": "Te paso un [memo sobre el asunto|fine_print] para ayudarte.",
           "text@de": "Um Zeit zu sparen habe ich Ihnen [ein Dossier zusammengestellt|fine_print].",
           "text@fr": "Je vous ai fait [un mémo pour vous faire gagner du temps|fine_print]."
         }
@@ -2353,6 +2675,7 @@
       "choices": [
         {
           "text@en": "Take the contractor to court to get the money.",
+          "text@es": "Llévate al contratista a los tribunales y así consigues el dinero.",
           "text@de": "Einen Prozess gegen den Auftragnehmer anstreben.",
           "text@fr": "Intenter un procès contre la société de construction.",
           "var_changes": {
@@ -2363,18 +2686,21 @@
             {
               "character": "you",
               "text@en": "Let's go to court.",
+              "text@es": "Vamos a los tribunales.",
               "text@de": "Wir gehen vor Gericht.",
               "text@fr": "Allons au tribunal."
             },
             {
               "character": "mayor",
               "text@en": "What if we lose?",
+              "text@es": "¿Y si perdemos?",
               "text@de": "Was passiert, falls wir den Fall verlieren?",
               "text@fr": "Et si on perd ?"
             },
             {
               "character": "mayor",
               "text@en": "This is all bad publicity for me.",
+              "text@es": "Esto es mala prensa para mí.",
               "text@de": "Das wäre keine gute Werbung für mich.",
               "text@fr": "Ça va me faire une mauvaise publicité."
             }
@@ -2382,24 +2708,28 @@
         },
         {
           "text@en": "Ignore the delay.",
+          "text@es": "Ignora el retraso.",
           "text@de": "Die Verzögerung ignorieren.",
           "text@fr": "Ignorer le retard.",
           "feedback": [
             {
               "character": "you",
               "text@en": "We'll ignore the delay.",
+              "text@es": "Ignoraremos el retraso.",
               "text@de": "Wir tun besser daran, die Angelegenheit zu ignorieren.",
               "text@fr": "Nous ferions mieux d'ignorer tout ça."
             },
             {
               "character": "mayor",
               "text@en": "OK...",
+              "text@es": "Vale...",
               "text@de": "Gut...",
               "text@fr": "OK..."
             },
             {
               "character": "mayor",
               "text@en": "We'll say they're behind schedule because of the European Union.",
+              "text@es": "Diremos que hay un retraso por un tema de la Unión Europea.",
               "text@de": "Wir werden sagen, dass die europäische Union die Schuld an der Verspätung trägt.",
               "text@fr": "On va dire que le retard est la faute de l'Union Européenne."
             }
@@ -2413,48 +2743,56 @@
         {
           "character": "university-boss",
           "text@en": "It's good to see you!",
+          "text@es": "¡Qué bien verte!",
           "text@de": "Ach, wie schön Dich wieder zu sehen!",
           "text@fr": "Ah, ça fait plaisir de te voir !"
         },
         {
           "character": "university-boss",
           "text@en": "Meeting over lunch was a great idea.",
+          "text@es": "Quedar para comer ha sido muy buena idea.",
           "text@de": "Das Treffen zum Frühstück war eine großartige Idee.",
           "text@fr": "Ce déjeuner était une grande idée."
         },
         {
           "character": "university-boss",
           "text@en": "It's been a while since we last talked!",
+          "text@es": "¡Hace ya tiempo desde la última vez que hablamos!",
           "text@de": "Wir haben uns so lange nicht gesehen!",
           "text@fr": "Ça fait longtemps qu'on s'est pas vus !"
         },
         {
           "character": "university-boss",
           "text@en": "I'm the director of the City University now.",
+          "text@es": "Ahora soy rector de la Universidad Municipal.",
           "text@de": "Ich bin jetzt Direktor der Universität.",
           "text@fr": "Je suis le directeur de l'université maintenant."
         },
         {
           "character": "university-boss",
           "text@en": "The pay is terrible, but I have a trick.",
+          "text@es": "El sueldo es lo peor, but tengo mis tretas.",
           "text@de": "Das Gehalt ist miserabel, aber ich weiß mir zu helfen.",
           "text@fr": "La paye est misérable, mais j'ai un truc."
         },
         {
           "character": "university-boss",
           "text@en": "I tell foreign students who don't speak English to pay me a special fee.",
+          "text@es": "A los alumnos extranjeros les digo que tienen que pagar una cuota especial.",
           "text@de": "Ich nehme Kontakt auf zu den ausländischen Studenten.",
           "text@fr": "Je contacte les étudiants étrangers qui ne parlent pas français..."
         },
         {
           "character": "university-boss",
           "text@en": "And I let them in!",
+          "text@es": "¡Y así si les dejo matricularse!",
           "text@de": "Die zahlen mir dann eine Sondergebühr in Bar und erhalten im Gegenzug einen Studienplatz.",
           "text@fr": "Et je les inscris en échange d'un bakchich !"
         },
         {
           "character": "university-boss",
           "text@en": "Smart, isn't it?",
+          "text@es": "Hábil... ¿no?",
           "text@de": "Gewieft, oder?",
           "text@fr": "Malin, non ?"
         }
@@ -2463,12 +2801,14 @@
         {
           "character": "helper",
           "text@en": "I always regretted not going to university.",
+          "text@es": "Yo siempre me he arrepentido de no ir a la universidad.",
           "text@de": "Ich habe es immer bereut nicht studiert zu haben.",
           "text@fr": "J'ai toujours regretté de ne pas avoir fait la fac."
         },
         {
           "character": "helper",
           "text@en": "Since I wrote [this memo for you|degrees], I'm not so sure.",
+          "text@es": "Desde que te escribí [este memo|degrees], no estoy tan seguro.",
           "text@de": "Aber seitdem ich [dieses Dossier zum Thema Bestechung an Universitäten|degrees] geschrieben habe, bin ich mir da nicht mehr so sicher.",
           "text@fr": "Mais depuis que [j'ai écrit ce mémo|degrees], je ne suis pas sûre."
         }
@@ -2476,6 +2816,7 @@
       "choices": [
         {
           "text@en": "Call the police.",
+          "text@es": "Llama a la policía.",
           "text@de": "Die Polizei rufen.",
           "text@fr": "Appellez la police.",
           "var_changes": {
@@ -2485,18 +2826,21 @@
             {
               "character": "you",
               "text@en": "That's totally illegal! I am sorry but I have to report it to the police.",
+              "text@es": "¡Eso es completamente ilegal! Lo siento pero tengo que informar a la policía.",
               "text@de": "Das ist hochgradig illegal! Tut mir leid, aber das muss ich der Polizei melden.",
               "text@fr": "C'est complètement illégal ! Je suis désolé, mais je dois le signaler à la police."
             },
             {
               "character": "mayor",
               "text@en": "This police investigation on your friend is not good for my reelection.",
+              "text@es": "Esta investigación de la policía sobre tu amigo no es buena para mi reelección.",
               "text@de": "Polizeiliche Ermittlungen gegen einen meiner Freunde, das ist schlecht für meine Wiederwahl.",
               "text@fr": "La mise en examen de ton ami, c'est mauvais pour ma réélection."
             },
             {
               "character": "mayor",
               "text@en": "I might have to put some space between you and me.",
+              "text@es": "Quizá tenga que distanciarme un poco de ti. ",
               "text@de": "Ich werde mich von dir distanzieren müssen.",
               "text@fr": "Je vais devoir mettre de l'espace entre toi et moi."
             }
@@ -2504,6 +2848,7 @@
         },
         {
           "text@en": "Let him pick up the bill.",
+          "text@es": "Que pague él la cuenta.",
           "text@de": "Ihn für den Lunch zahlen lassen.",
           "text@fr": "Faites-vous inviter.",
           "var_changes": {
@@ -2513,12 +2858,14 @@
             {
               "character": "you",
               "text@en": "Very smart! Let's have the students pay for our dinner then.",
+              "text@es": "¡Qué habil! Que paguen los alumnos nuestra cena.",
               "text@de": "Genial! Dann sind es die Studenten, die uns gerade zum Frühstück einladen.",
               "text@fr": "Ingénieux ! Ce sont ces étudiants qui nous invitent à déjeuner, alors !"
             },
             {
               "character": "university-boss",
               "text@en": "Here's to an old friendship! 🍻",
+              "text@es": "¡Brindemos por nuestra vieja amistad! 🍻",
               "text@de": "Auf unsere Freundschaft! 🍻",
               "text@fr": "A notre longue amitié ! 🍻"
             }
@@ -2532,30 +2879,35 @@
         {
           "character": "mayor",
           "text@en": "The accounting department came to me.",
+          "text@es": "El departamento de contabilidad vino a verme.",
           "text@de": "Der Buchhalter ist gekommen, um mir einen Besuch abzustatten.",
           "text@fr": "Le comptable est venu me voir."
         },
         {
           "character": "mayor",
           "text@en": "They say they have a great idea to improve the city's financial health.",
+          "text@es": "Dijeron que tenían una idea genial para mejorar la salud financiera de la ciudad.",
           "text@de": "Er sagt, er habe eine Idee, um unseren Haushalt zu sanieren.",
           "text@fr": "Il dit avoir une idée de génie pour assainir nos comptes."
         },
         {
           "character": "mayor",
           "text@en": "They want to bundle all future revenue from social housing and account for it once.",
+          "text@es": "Quieren aunar todos los ingresos futuros de la vivienda pública y computarlos en un solo ejercicio.",
           "text@de": "Er will alle künftigen Einnahmen über den sozialen Wohnungsbau bündeln und auf ein Mal verbuchen.",
           "text@fr": "Il veut grouper tous les revenus futurs des HLM et les comptabiliser d'un coup."
         },
         {
           "character": "mayor",
           "text@en": "They say it'll increase income now big time - on paper - and reduce it in the future.",
+          "text@es": "Dicen que aumentará de golpe los ingresos ahora - en papel - y los reducirá en el futuro.",
           "text@de": "Er sagt, das wird unsere Einnahmen in diesem Jahr - zumindest auf dem Papier - um ein Vielfaches erhöhen. Allerdings werden dann die späteren Einnahmen verringert.",
           "text@fr": "Il dit que ça augmentera grandement nos ressources aujourd'hui - sur le papier - et diminuera nos revenus plus tard."
         },
         {
           "character": "mayor",
           "text@en": "Should we do it?",
+          "text@es": "¿Lo hacemos?",
           "text@de": "Sollen wir das machen?",
           "text@fr": "Doit-on le faire ?"
         }
@@ -2564,12 +2916,14 @@
         {
           "character": "helper",
           "text@en": "Accounting tricks can get quite technical.",
+          "text@es": "Las tretas contables pueden ser muy complejas.",
           "text@de": "Diese Buchhaltungstricks sind ziemlich kompliziert.",
           "text@fr": "Ces astuces comptables sont assez techniques."
         },
         {
           "character": "helper",
           "text@en": "Read [this memo to know more|accounting_tricks].",
+          "text@es": "Lee [este memo para saber más |accounting_tricks].",
           "text@de": "Lesen Sie [um mehr über das Thema zu erfahren|accounting_tricks].",
           "text@fr": "Lisez [ce mémo pour en savoir plus|accounting_tricks]."
         }
@@ -2577,6 +2931,7 @@
       "choices": [
         {
           "text@en": "Accept! The appearance of wealth is better than nothing.",
+          "text@es": "¡Acepta! Aparentar riqueza es mejor que nada.",
           "text@de": "Ja! Der Reichtum naht!",
           "text@fr": "Acceptez! L'apparance de la richesse, c'est toujours ça.",
           "var_changes": {
@@ -2587,24 +2942,28 @@
             {
               "character": "you",
               "text@en": "It sounds legit.",
+              "text@es": "Parece legal.",
               "text@de": "Das hört sich gut an.",
               "text@fr": "Ça parait bien."
             },
             {
               "character": "you",
               "text@en": "And we need this to keep investing if you want to win the next election.",
+              "text@es": "Y necesitamos seguir invirtiendo si quieres ganar las siguientes elecciones.",
               "text@de": "Und wir müssen weiter investieren, wenn Sie die nächste Wahl gewinnen wollen.",
               "text@fr": "Et nous devons continuer à investir si vous voulez gagner les prochaines élections."
             },
             {
               "character": "mayor",
               "text@en": "Great!",
+              "text@es": "¡Estupendo!",
               "text@de": "Super!",
               "text@fr": "Super !"
             },
             {
               "character": "mayor",
               "text@en": "After all, the future belongs to the next mayor, not me!",
+              "text@es": "¡Después de todo, del futuro se ocupará el siguiente alcalde, no yo!",
               "text@de": "Dass die Einnahmen in Zukunft niedriger werden, ist das Problem des nächsten Bürgermeisters!",
               "text@fr": "Après tout, le futur appartient aux maires suivants !"
             }
@@ -2612,6 +2971,7 @@
         },
         {
           "text@en": "Refuse! Accounting should not be fiddled with.",
+          "text@es": "¡No aceptes! No deberíamos jugar con la contabilidad.",
           "text@de": "Lehnen Sie ab! Mit der Buchhaltung spielt man nicht herum.",
           "text@fr": "Refusez! La comptabilité ne doit pas être manipulée.",
           "var_changes": {
@@ -2621,24 +2981,28 @@
             {
               "character": "you",
               "text@en": "We can't do that!",
+              "text@es": "¡No podemos hacer eso!",
               "text@de": "Das können wir nicht machen.",
               "text@fr": "On ne peut pas faire ça."
             },
             {
               "character": "you",
               "text@en": "It will not really increase our cash flow, it's all virtual.",
+              "text@es": "No va aumentar nuestras cifras de caja, es todo virtual.",
               "text@de": "Das wird die Einnahmen nicht wirklich erhöhen, es ist eine virtuelle Spielerei.",
               "text@fr": "Cela ne va pas augmenter nos ressources, c'est purement virtuel."
             },
             {
               "character": "mayor",
               "text@en": "And how am I supposed to balance my budget now?",
+              "text@es": "¡Y cómo equilibro yo ahora mi presupuesto!",
               "text@de": "Und wie soll ich bitteschön den Haushalt ausgleichen?",
               "text@fr": "Et comment vais-je équilibrer le budget ?"
             },
             {
               "character": "mayor",
               "text@en": "I should never have let you in...",
+              "text@es": "No te lo que tenía que haber dicho...",
               "text@de": "Ich hätte Sie niemals einstellen dürfen ...",
               "text@fr": "Je n'aurais jamais du vous embaucher."
             }
@@ -2652,24 +3016,28 @@
         {
           "character": "lawyer",
           "text@en": "I just got your e-mail.",
+          "text@es": "Acabo de recibir tu email.",
           "text@de": "Ich habe gerade ihre E-Mail gelesen.",
           "text@fr": "Je viens de lire votre e-mail."
         },
         {
           "character": "lawyer",
           "text@en": "I'm sorry your spouse got fired.",
+          "text@es": "Siento que despidieran a tu mujer.",
           "text@de": "Es tut mir leid, dass Ihr Mann entlassen wurde.",
           "text@fr": "Je suis désolée que votre époux se soit fait licencier."
         },
         {
           "character": "lawyer",
           "text@en": "It sucks.",
+          "text@es": "Qué fastidio.",
           "text@de": "Er verdient etwas Besseres.",
           "text@fr": "Il mérite mieux."
         },
         {
           "character": "lawyer",
           "text@en": "Here are your options.",
+          "text@es": "Estas son tus opciones.",
           "text@de": "Sie haben folgende Optionen:",
           "text@fr": "Voilà vos options."
         }
@@ -2678,30 +3046,35 @@
         {
           "character": "helper",
           "text@en": "Hiring relatives is the opposite of sex in high school.",
+          "text@es": "Contratar a parientes es lo contrario al sexo en el instituto.",
           "text@de": "Familienangehörige einstellen? Da können Sie ja gleich den Papst heiraten!",
           "text@fr": "Embaucher des proches, c'est l'inverse du sexe au lycée."
         },
         {
           "character": "helper",
           "text@en": "Everybody does it but no one talks about it!",
+          "text@es": "Todo el mundo lo hace pero nadie habla de ello.",
           "text@de": "Nur in Bayern denken sie, dass das noch cool ist.",
           "text@fr": "Tout le monde le fait mais personne n'en parle !"
         },
         {
           "character": "helper",
           "text@en": "😂😂😂",
+          "text@es": "😂😂😂",
           "text@de": "😂😂😂",
           "text@fr": "😂😂😂"
         },
         {
           "character": "you",
           "text@en": "...",
+          "text@es": "...",
           "text@de": "...",
           "text@fr": "..."
         },
         {
           "character": "helper",
           "text@en": "Well, [here's the memo I prepared for you|relatives].",
+          "text@es": "Bueno, [te paso el memo que te preparé |relatives].",
           "text@de": "Hm... [Zur Vetternwirtschaft erfahren Sie mehr in meinem Dossier|relatives].",
           "text@fr": "Voilà [un mémo sur l'emploi des proches|relatives]."
         }
@@ -2709,6 +3082,7 @@
       "choices": [
         {
           "text@en": "Hire him as an assistant.",
+          "text@es": "Contrátalo como asistente.",
           "text@de": "Ihn als Assistent einstellen.",
           "text@fr": "L'embaucher comme assistant.",
           "var_changes": {
@@ -2718,24 +3092,28 @@
             {
               "character": "you",
               "text@en": "I want to hire him as an assistant.",
+              "text@es": "Lo quiero contratar como asistente.",
               "text@de": "Ich werde ihn als Assistent einstellen.",
               "text@fr": "Je vais l'embaucher en tant qu'assistant."
             },
             {
               "character": "mayor",
               "text@en": "What the hell?",
+              "text@es": "¡Qué narices!",
               "text@de": "Was soll das?",
               "text@fr": "Qu'est-ce que j'apprends ?"
             },
             {
               "character": "mayor",
               "text@en": "If this gets leaked on Twitter or anywhere else, you're out!",
+              "text@es": "Si se filtra en Twitter o lo que sea, !estás fuera!",
               "text@de": "Sollte das auf Twitter oder was weiß ich wo auftauchen, sind Sie gefeuert!",
               "text@fr": "Si ça fuite sur Twitter où que sais-je, vous prennez la porte !"
             },
             {
               "character": "mayor",
               "text@en": "Both of you!",
+              "text@es": "¡Los dos!",
               "text@de": "Sie und Ihr Mann!",
               "text@fr": "Vous et votre mari !"
             }
@@ -2743,24 +3121,28 @@
         },
         {
           "text@en": "Ask Robert Construction Limited to hire him.",
+          "text@es": "Pídele a Construcciones Robert que lo contrate.",
           "text@de": "Herrn Meinhardt bitten ihn einzustellen.",
           "text@fr": "Demander à Cyril Guillory de l'embaucher.",
           "feedback": [
             {
               "character": "you",
               "text@en": "I will ask my old friend from Robert Construction Limited to hire him.",
+              "text@es": "Le voy a pedir a mi viejo amigo de Construcciones Robert, S.L. que lo contraten.",
               "text@de": "Ich werde Herrn Meinhardt bitten, ihm einen Job zu verschaffen.",
               "text@fr": "Je vais demander à mon ami Cyril Guillory de lui trouver un job."
             },
             {
               "character": "construction-boss",
               "text@en": "Sure, buddy.",
+              "text@es": "Claro, amigo.",
               "text@de": "Sicher, meine Liebe!",
               "text@fr": "Aucun problème, mon amie !"
             },
             {
               "character": "construction-boss",
               "text@en": "You know you can always count on me.",
+              "text@es": "Sabes que siempre puedes contar conmigo.",
               "text@de": "Du weißt, dass du dich auf mich verlassen kannst.",
               "text@fr": "Tu sais que tu peux compter sur moi."
             }
@@ -2768,6 +3150,7 @@
         },
         {
           "text@en": "Do nothing. You shouldn't mix private and professonal life.",
+          "text@es": "No hagas nada. No deberías mezclar tu vida privada con la personal.",
           "text@de": "Nichts unternehmen. Man sollte Beruf und Privatleben nicht miteinander vermischen.",
           "text@fr": "Ne rien faire. On ne doit pas mélanger vie privée et professionelle.",
           "var_changes": {
@@ -2777,24 +3160,28 @@
             {
               "character": "you",
               "text@en": "We will tighten our belts.",
+              "text@es": "Nos apretaremos el cinturón.",
               "text@de": "Wir werden den Gürtel enger schnallen.",
               "text@fr": "On va se serrer la ceinture."
             },
             {
               "character": "you",
               "text@en": "I prefer not to mix private and professonal life.",
-              "text@de": "Tut mir Leid, aber ich will Beruf und Privatleben nicht vermischen.",
+              "text@es": "Prefiero no mezclar mi vida privada con la personal.",
+              "text@de": "Ich will Beruf und Privatleben nicht vermischen.",
               "text@fr": "Je ne veux pas mélanger vie privée et vie professionelle."
             },
             {
               "character": "lawyer",
               "text@en": "You should take better care of your family.",
+              "text@es": "Deberías cuidar mejor de tu familia.",
               "text@de": "Sie sollten sich besser um Ihre Familie kümmern.",
               "text@fr": "Vous devriez prendre meilleur soin de votre famille."
             },
             {
               "character": "lawyer",
               "text@en": "By the way, you know I'm also a divorce laywer, right?",
+              "text@es": "Por cierto, sabes que también soy abogado matrimonial, ¿no?",
               "text@de": "Übrigens - ich übernehme auch Scheidungsfälle!",
               "text@fr": "Au fait, je m'occupe aussi de divorces !"
             }
@@ -2808,24 +3195,28 @@
         {
           "character": "construction-boss",
           "text@en": "Hey there!",
+          "text@es": "¡Muy buenas!",
           "text@de": "Guten Tag!",
           "text@fr": "Salut !"
         },
         {
           "character": "construction-boss",
           "text@en": "I'm setting up a new subsidiary.",
+          "text@es": "Estoy creando una nueva filial.",
           "text@de": "Ich bin dabei eine Tochterfirma zu gründen.",
           "text@fr": "Je suis en train de monter une succursale."
         },
         {
           "character": "construction-boss",
           "text@en": "I think you'll be the perfect person to run it.",
+          "text@es": "Creo que tú serías la persona perfecta para llevarla.",
           "text@de": "Ich denke du wärst perfekt geeignet die Leitung zu übernehmen.",
           "text@fr": "Je pense que tu serais parfaite pour en prendre la direction."
         },
         {
           "character": "construction-boss",
           "text@en": "Why don't you come to my chalet of Zug, Switzerland, to discuss this?",
+          "text@es": "¿Por qué no te vienes a mi chalet en Zug, Suiza, para discutirlo?",
           "text@de": "Wieso verbringen wir nicht das Wochende in meinem Ferienhaus in der Schweiz, um das ganz in Ruhe zu besprechen?",
           "text@fr": "Pourquoi ne viens-tu pas passer le week-end dans mon châlet de Zug, en Suisse, pour en discuter ?"
         }
@@ -2834,12 +3225,14 @@
         {
           "character": "helper",
           "text@en": "Already thinking of leaving us?",
+          "text@es": "¿Ya estás pensando en dejarnos?",
           "text@de": "Sie wollen uns schon verlassen?",
           "text@fr": "Vous pensez partir ?"
         },
         {
           "character": "helper",
           "text@en": "Here's a [memo on moving to the private sector|door].",
+          "text@es": "Aquí tienes un [memo sobre cómo pasar al sector privado|door].",
           "text@de": "Ich habe [ein Dossier zum Thema Personalkarussell|door] zusammengestellt.",
           "text@fr": "Voici [un mémo sur le pantouflage|door]."
         }
@@ -2847,6 +3240,7 @@
       "choices": [
         {
           "text@en": "Accept the invitation.",
+          "text@es": "Aceptas la invitación.",
           "text@de": "Die Einladung annehmen.",
           "text@fr": "Accepter l'invitation",
           "var_changes": {
@@ -2857,30 +3251,35 @@
             {
               "character": "you",
               "text@en": "Thanks for your offer!",
+              "text@es": "¡Gracias por al oferta!",
               "text@de": "Danke für Ihre Einladung!",
               "text@fr": "Merci de votre offre !"
             },
             {
               "character": "you",
               "text@en": "My experience in a public administration will be of great value.",
+              "text@es": "Mi experiencia con la administración pública será bien valorada.",
               "text@de": "Meine Erfahrung in der Verwaltung wird sicher von Vorteil sein.",
               "text@fr": "Mon expérience dans l'administration vous sera d'une grande aide."
             },
             {
               "character": "construction-boss",
               "text@en": "I knew you were the one for the job!",
+              "text@es": "¡Yo sabía que eras el mejor para este trabajo!",
               "text@de": "Ich wusste, dass du die perfekte Kandidatin für den Job bist!",
               "text@fr": "Je savais que tu serais parfaite !"
             },
             {
               "character": "construction-boss",
               "text@en": "Before you get started, I have a favor to ask you.",
+              "text@es": "Antes de que empieces, tengo que pedirte un favor.",
               "text@de": "Aber bevor wir anfangen können, muss ich dich noch um einen kleinen Gefallen bitten.",
               "text@fr": "Mais avant ça, j'ai un service à te demander."
             },
             {
               "character": "construction-boss",
               "text@en": "Can you pass a public tender for a swimming pool at the city?",
+              "text@es": "¿Puedes conseguir un concurso público para una piscina municipal?",
               "text@de": "Besteht die Möglichkeit, dass du eine Ausschreibung für ein neues Schwimmbad veröffentlichst?",
               "text@fr": "Il faudrait que tu passes un appel d'offre pour une nouvelle piscine."
             }
@@ -2888,18 +3287,21 @@
         },
         {
           "text@en": "Decline.",
+          "text@es": "No aceptas.",
           "text@de": "Ablehnen.",
           "text@fr": "Refuser",
           "feedback": [
             {
               "character": "you",
               "text@en": "No, I'll stay where I am.",
+              "text@es": "No, me quedo donde estoy.",
               "text@de": "Nein, sorry, das kann ich nicht machen. Da bleibe ich lieber wo ich bin.",
               "text@fr": "Non, je préfère garder mon poste."
             },
             {
               "character": "construction-boss",
               "text@en": "I though we were friends. 😢",
+              "text@es": "Yo pensaba que éramos amigos. 😢",
               "text@fr": "Et moi qui croyais que nous étions amis. 😢",
               "text@de": "Und ich dachte wir wären Freunde 😢"
             }
@@ -2917,24 +3319,28 @@
         {
           "character": "mayor",
           "text@en": "We passed the public tender you wanted, for this swimming pool of yours.",
+          "text@es": "Hemos conseguido el concurso público que querías, el de tu piscina.",
           "text@de": "Wir haben diese Ausschreibung für Ihr Schwimmbad veröffentlicht.",
           "text@fr": "Nous avons passé cet appel d'offre pour votre piscine."
         },
         {
           "character": "mayor",
           "text@en": "I'm still not convinced we need it, but what can I do.",
+          "text@es": "Sigo sin creer que la necesitemos, pero qué le voy a hacer.",
           "text@de": "Ich verstehe noch immer nicht wozu wir ein neues Schwimmbad brauchen, aber was geht es mich an.",
           "text@fr": "Je ne sais toujours pas pourquoi on a besoin d'une nouvelle piscine, mais bon."
         },
         {
           "character": "mayor",
           "text@en": "We received just one answer.",
+          "text@es": "Acabamos de recibir una respuesta.",
           "text@de": "Wir haben jedenfalls nur ein Angebot erhalten.",
           "text@fr": "Nous n'avons reçu qu'une seule offre."
         },
         {
           "character": "mayor",
           "text@en": "I'll let you review it.",
+          "text@es": "Te dejo que la revises tú.",
           "text@de": "Sie können es gerne prüfen.",
           "text@fr": "Je vous laisse l'étudier."
         }
@@ -2943,12 +3349,14 @@
         {
           "character": "helper",
           "text@en": "Think about me when you work for Gerber!",
+          "text@es": "¡Piensa en mí cuando trabajes para Gerber!",
           "text@de": "Vergessen Sie mich nicht, wenn Sie für Meinhardt arbeiten.",
           "text@fr": "Ne m'oubliez pas quand vous travaillerez pour Guillory !"
         },
         {
           "character": "helper",
           "text@en": "You wouldn't want to see my archive leaked online.",
+          "text@es": "No te vendría bien que se filtraran mis archivos a la red.",
           "text@de": "Es wäre nicht gut, wenn etwas aus meinem Archiv an die Öffentlichkeit käme.",
           "text@fr": "Il ne faudrait pas que mes archives atterissent chez Mediapart."
         }
@@ -2956,6 +3364,7 @@
       "choices": [
         {
           "text@en": "Robert Construction Limited made an offer at 10 million.",
+          "text@es": "Construcciones Robert, S.L. ha hecho una oferta de 10 millones.",
           "text@de": "Das Angebot der Meinhardt Hoch- u. Tiefbau GmbH in Höhe von 10 Millionen annehmen.",
           "text@fr": "Guillory Construction SARL a fait une offre à 10 million.",
           "var_changes": {
@@ -2966,6 +3375,7 @@
             {
               "character": "you",
               "text@en": "I choose Robert Construction Limited.",
+              "text@es": "Escojo a Construcciones Robert, S.L.",
               "text@de": "Ich habe mich für das Angebot von Herrn Meinhardt entschieden.",
               "text@fr": "Je choisis Guillory Construction SARL."
             }
@@ -2973,6 +3383,7 @@
         },
         {
           "text@en": "Choose not to award the tender.",
+          "text@es": "Escojes dejar el concurso desierto.",
           "text@de": "Den Auftrag nicht vergeben.",
           "text@fr": "Ne pas attribuer l'appel d'offre.",
           "var_changes": {
@@ -2982,24 +3393,28 @@
             {
               "character": "you",
               "text@en": "No, we don't need a swimming pool.",
+              "text@es": "No, no necesitamos una piscina.",
               "text@de": "Wir brauchen nicht noch ein Schwimmbad.",
               "text@fr": "Nous n'avons pas besoin d'une piscine en plus."
             },
             {
               "character": "construction-boss",
               "text@en": "What the hell? 😤",
+              "text@es": "¡¿Qué narices?! 😤",
               "text@de": "Was??? 😤",
               "text@fr": "Quoi??? 😤"
             },
             {
               "character": "construction-boss",
               "text@en": "This is it!",
+              "text@es": "¡Es eso!",
               "text@de": "Jetzt reicht’s !!",
               "text@fr": "C'est est trop !"
             },
             {
               "character": "construction-boss",
               "text@en": "You had it coming!",
+              "text@es": "¡Se veía venir!",
               "text@de": "Du hast es verdient!",
               "text@fr": "Ça te pendait au nez !"
             }
@@ -3017,18 +3432,21 @@
         {
           "character": "mayor",
           "text@en": "We passed a tender to build a new park.",
+          "text@es": "Hemos conseguido un concurso para construir un parque.",
           "text@de": "Wir haben eine Ausschreibung für einen neuen Park veröffentlicht.",
           "text@fr": "Nous avons passé un appel d'offre pour un nouveau square."
         },
         {
           "character": "mayor",
           "text@en": "Our gardens department estimates the cost of the works at 500,000.",
+          "text@es": "Nuestro departamento de jardinería estima que el coste de las obras será de 500.000.",
           "text@de": "Das Amt für Parks und Grünflächen hat die Kosten auf ca. eine halbe Million geschätzt.",
           "text@fr": "Notre bureau d'études estime le coût des travaux à 500 000."
         },
         {
           "character": "mayor",
           "text@en": "We received three offers. Pick the best one.",
+          "text@es": "Hemos recibido tres ofertas. Escoje la mejor.",
           "text@de": "Wir haben drei Einreichungen erhalten. Wählen Sie das beste Angebot aus.",
           "text@fr": "Nous avons reçu 3 offres. Choissisez la meilleure."
         }
@@ -3037,6 +3455,7 @@
         {
           "character": "helper",
           "text@en": "My [memo on cartels|cartel] is still fresh.",
+          "text@es": "Mi [memo sobre cárteles |cartel] aún me sirve.",
           "text@de": "Mein [Dossier zum Kartell|cartel] ist noch immer aktuell.",
           "text@fr": "Mon [mémo sur les cartels|cartel] est toujours à jour."
         }
@@ -3044,6 +3463,7 @@
       "choices": [
         {
           "text@en": "Concrete Construction made an offer at 575,000.",
+          "text@es": "Construcciones Cemento ha hecho una oferta de 575.000.",
           "text@de": "Das Angebot der Betonbau GmbH liegt bei 575.000",
           "text@fr": "Grosbéton SARL a fait une offre à 575 000.",
           "var_changes": {
@@ -3053,6 +3473,7 @@
         },
         {
           "text@en": "Robert Construction Limited made an offer at 600,000.",
+          "text@es": "Construcciones Robert, S.L. ha hecho una oferta de 620.000.",
           "text@de": "Das Angebot der Meinhardt Hoch- u. Tiefbau GmbH liegt bei 600.000 .",
           "text@fr": "Guillory Construction SARL a fait une offre à 600 000.",
           "var_changes": {
@@ -3062,6 +3483,7 @@
         },
         {
           "text@en": "Eco-Sense Construction made an offer at 620,000.",
+          "text@es": "Construcciones Eco-Prudencia ha hecho una oferta de 620.000.",
           "text@de": "Das Angebot der Eco- Sence Construction liegt bei 620.000",
           "text@fr": "Eco-Sense Construction a fait une offre à 620 000.",
           "var_changes": {
@@ -3079,6 +3501,7 @@
         "min": 2
       },
       "text@en": "<h2>You're fired: You lost!</h2><p>You managed to have good relations with the contractors and to avoid the police, but your choices have made you unpopular. The mayor requests a career change for you. You're now in charge of welcoming guests at the city museum. How culturally enriching!</p>",
+      "text@es": "<h2>Estás despedido: ¡Has perdido!</h2><p>Has conseguido tener buenas relaciones con los contratistas y evitado a la policía, pero tus decisiones te han hecho muy impopular. El alcalde solicita un cambio en tu carrera. Ahora estás a cargo de recibir a invitados en el museo municipal. ¡Muy enriquecedor... culturalmente!</p>",
       "text@de": "<h2>Sie haben verloren!</h2><p>Sie haben zwar gute Beziehungen zur Industrie und zur Polizei aufgebaut, aber Ihre Entscheidungen haben Sie unbeliebt gemacht. Die Bürgermeisterin hat dafür gesorgt, dass Sie versetzt werden. Sie arbeiten jetzt an der Kasse des Städtischen Museums. Wie bereichernd!</p>",
       "text@fr": "<h2>Perdu: Vous êtes virée !</h2><p>Vous avez entretenu de bonnes relations avec les industriels et avec la police, mais vos choix vous ont rendu impopulaire. La maire exige que vous soyez mutée. Vous travaillez maintenant à l'accueil du musée municipal. C'est très enrichissant !</p>"
     },
@@ -3088,6 +3511,7 @@
         "min": 2
       },
       "text@en": "<h2>Busted: You lost!</h2><p>You managed to have good relations with the contractors while remaining popular. The mayor likes you, but the anticorruption police charged you with misapropriation of public funds. Relax, you probably won't go to prison, but the mayor demands that you resign.</p>",
+      "text@es": "<h2>Te ha pillado: ¡Has perdido!</h2><p>Conseguiste tener buenas relaciones con los contratistas y mantener tu popularidad. Le gustas al alcalde, pero la unidad anticorrupción te acusa de misapropriation de fondos públicos. Relájate, probablemente no irás a la cárcel, pero el alcalde te pide que dimitas.</p>",
       "text@de": "<h2>Sie haben verloren!</h2><p>Gegen Sie wurde ein Ermittlungsverfahren eingeleitet. Sie haben zwar gute Beziehungen zur Bürgermeisterin und zu den Industriellen aufgebaut, aber die Finanzbehörde ermittelt gegen Sie wegen Veruntreuung öffentlicher Gelder. Kein Grund zur Panik, Sie werden mit hoher Wahrscheinlichkeit nicht im Gefängnis landen. Aber die Bürgermeisterin verlangt Ihren Rücktritt.</p>",
       "text@fr": "<h2>Perdu: Vous êtes mise en examen !</h2><p>Vous avez entretenu de bonnes relations avec le maire et avec les industriels, mais un enquêteur du parquet financier vous inculpe dans une affaire de détournement de fonds publics. Pas de panique, vous n'irez sans doute pas en prison. Mais la maire exige votre démission.</p>"
     },
@@ -3097,6 +3521,7 @@
         "min": 2
       },
       "text@en": "<h2>Career change: You lost!</h2><p>Public work contractors told the mayor's office that they could not work with you. You are being reassigned to the Parks and Gardens department. How great that you can work outside now!</p>",
+      "text@es": "<h2>Cambio de carrera: ¡Has perdido!</h2><p>Los contratistas de trabajos públicos le dijeron a la alcaldía que no trabajarían contigo. Te han reubicado al Departamento de Parques y Jardines. ¡Es genial que por fin puedas trabajar en el exterior!</p>",
       "text@de": "<h2>Sie haben verloren!</h2><p> Sie haben zwar gute Beziehungen zur Bürgermeisterin und der Polizei aufgebaut, aber Ferdinand Meinhardt verlangt Ihren Rücktritt. Er sagt, mit Ihnen könne man einfach nicht zusammenarbeiten. Die Bürgermeisterin hat sie in das Grünflächenamt versetzt. Wie schön, an der frischen Luft arbeiten zu dürfen!</p>",
       "text@fr": "<h2>Perdu: Vous changez de poste !</h2><p>Vous avez entretenu de bonnes relations avec le maire et avec la police, mais Guillory réclame votre départ. Il dit qu'il ne peut pas travailler avec vous. La maire vous mute aux Parcs et Jardins. Quelle joie de travailler au grand air !</p>"
     },
@@ -3106,11 +3531,13 @@
         "min": 1
       },
       "text@en": "<h2>New career: You won!</h2><p>Robert Construction Limited makes you an offer you can't refuse, if only to ensure the financial well-being of your spouse and children. Bye-bye, public sector! Hello, business!</p>",
+      "text@es": "<h2>Nueva carrera: ¡Has ganado!</h2><p>Construcciones Robert, S.L. te hace una oferta que no puedes rechazar, aunque sólo sea para garantizar el bienestar financiero de tu esposa e hijos. ¡Adiós sector público!¡Hello business!</p>",
       "text@de": "<h2>Sie haben gewonnen!</h2><p> Sie machen Karriere! Ferdi Meinhardt macht Ihnen ein Angebot, das Sie nicht ausschlagen können. Tschüss, öffentlicher Sektor! Und: Hallo, Privatwirtschaft!</p>",
       "text@fr": "<h2>Gagné: Nouvelle carrière !</h2><p>Cyril Guillory vous fait une proposition qui ne se refuse pas. Au revoir, secteur public! Bonjour, secteur privé !</p>"
     },
     {
       "text@en": "<h2>Celebrating 20 years</h2><p>How time flies! 20 years already! In just another 20, you can be in retirement.</p>",
+      "text@es": "<h2>!20 años de servicio!</h2><p>¡Cómo pasa el tiempo!¡20 años ya! En 20 años más podrás retirarte.</p>",
       "text@de": "<h2>20-jähriges Dienstjubiläum! </h2><p>Wie schnell die Zeit vergeht! Sie sind nun schon seit 20 Jahren im Amt. Nur noch 20 weitere Jahre bis zur Rente! Herzlichen Glückwunsch.</p>",
       "text@fr": "<h2>Déjà 20 ans de carrière</h2><p>Comme le temps passe ! Déjà 20 ans à ce poste. Encore 20 ans et vous pourrez prendre votre retraite.</p>"
     }
@@ -3118,129 +3545,161 @@
   "explainers": {
     "cartel": {
       "title@en": "How to spot a cartel?",
+      "title@es": "¿Cómo detectar un cartel?",
       "title@de": "Was sind die Merkmale eines Kartells?",
       "title@fr": "Comment détecter un cartel ?",
       "body@en": "Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous.",
+      "body@es": "",
       "body@de": "Kartelle entstehen, wenn Auftragnehmer ihre Angebot koordinieren. Sollten sich die Preise der Angebote stark ähneln, kann dies ein Hinweis auf eventuelle Absprachen der Unternehmen sein.<br><br>Die Auftragnehmer handeln gemeinsam aus, wer das günstigste Angebot abgeben wird. Der Auftragnehmer, der den Zuschlag erhält, zahlt dann einen Teil des Gewinns an die übrigen Mitglieder des Kartells.<br><br> Es kann jedoch auch vorkommen, dass ein Auftragnehmer das Kartell verlässt und dem Auftraggeber ein günstigeres Angebot unterbreitet. Das kann dann gefährlich werden.",
       "body@fr": "Un cartel apparait quand les candidats à un appel d'offre s'entendent entre eux. Vous pouvez les détecter si les prix des offres se suivent et sont proches les uns des autres.<br><br>Les industriels peuvent s'entendre sur celui qui proposera le prix le plus bas et gagnera l'appel d'offre. Le gagnant paye ensuite les autres membres du cartel. Le cartel fait une rotation entre les entreprises, afin que chaque membre du cartel gagne un peu.<br><br>Parfois, un des membres du cartels fait cavalier seul et fait une offre plus basse. Ça devient dangereux pour lui."
     },
     "gifts": {
       "title@en": "How to react to gifts?",
+      "title@es": "¿Cómo reaccionar ante un regalo?",
       "title@de": "Zum Verhalten bei Geschenken",
       "title@fr": "Comment réagir aux cadeaux ?",
       "body@en": "Public officials are usually prohibited from accepting gifts above a certain value (€50 at the European Commission, for instance). However, you can accept the gift if it is intended for you as a private person, or for your spouse. By refusing a gift, you risk angering the person who made it.",
+      "body@es": "",
       "body@de": "Beamten ist es normalerweise verboten, Geschenken oberhalb eines bestimmten Grenzwertes anzunehmen (bei der europäischen Kommission etwa liegt dieser Wert bei 50€). Das heißt, es ist erlaubt ein Geschenk anzunehmen, das an Sie als Privatperson oder an Ihren Lebenspartner adressiert ist. Wenn Sie einen Geschenk ablehnen, kann es den Geschenkgeber ärgern.",
       "body@fr": "Les fonctionnaires n'ont généralement pas le droit d'accepter des cadeaux au delà d'un certain seuil (50€ à la Commission Européenne, par exemple). Cela dit, vous pouvez accepter le cadeau s'il vous est adressé à vous personnellement, et non pas à vous en tant que fonctionnaire. Ou bien s'il est fait à votre partenaire. En refusant un cadeau, vous prenez le risque d'offenser celui qui vous l'offre."
     },
     "bribes": {
       "title@en": "How can you organize bribes?",
+      "title@es": "¿Cómo se organiza un soborno?",
       "title@de": "Bestechungen",
       "title@fr": "Comment organiser des pots-de-vin ?",
       "body@en": "Bribery is not as common in Europe as in other parts of the world, but it is rampant is some sectors. In public housing, some officials ask for enveloppes of money to be given directly. For car inspection, some service centers will be pleased if you leave a gift or bills of cash on the passenger seat.<br><br>Read more under <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> at Cooking Budgets.",
+      "body@es": "",
       "body@de": "In Europa ist Bestechung nicht so weit verbreitet wie in anderen Regionen der Welt, mit Ausnahme bestimmter Bereiche. Im sozialen Wohungsbau oder bei Fahrzeuguntersuchungen sind Bestechungen durchaus üblich.<br><br>Mehr zum Thema erfahren Sie unter <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> von Cooking Budgets.",
       "body@fr":"Les bakchichs ne sont pas aussi fréquents en Europe que dans d'autres régions du monde, à l'exception de certains secteurs. Pour déterminer qui obtient un logement social, certains fonctionnaires n'hésitent pas à demander des enveloppes d'argent de la main à la main. Pour passer le contrôle technique automobile, certains centres de contrôle ferment les yeux en échange d'un cadeau sur le siège passager.<br><br>Lisez <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> [en anglais] sur Cooking Budgets pour en savoir plus."
     },
     "land_sales": {
       "title@en": "Spotting corruption in land sales",
+      "title@es": "Detectar corruptelas en operaciones inmobiliarias",
       "title@de": "Korruption bei Grundstücksverkäufen",
       "title@fr": "La corruption dans les ventes immobilières",
       "body@en": "Cities often own large plots of land. They can either sell them at market prices or at lower prices, to make a gift to the buyer. It is usually hard to spot such transactions, because there isn't much of a market for big sales of land in a city.",
+      "body@es": "",
       "body@de": "Städte sind häufig im Besitz großer Grundstrücke und Immobilier. Diese können zu Marktpreisen verkauft werden oder aber zu günstigeren Konditionen, etwa um für potentielle Käufer zusätzliche Anreize zu schaffen. Solche Gefallen sind äußerst schwierig aufzudecken, denn häufig gibt es gar keinen Markt für zumeist große Gebäude oder Grundstücke im Stadtzentrum. Es fällt daher entsprechend schwer den Marktpreis zu bestimmen.",
       "body@fr": "Les villes possèdent souvent des terrains et des immeubles. Ces biens peuvent être vendus au prix du marché ou à des prix plus bas, pour faire un cadeau à l'acheteur. Il est fort difficile d'identifier ces transactions frauduleuses car, le plus souvent, il n'existe pas vraiment de marché pour un immeuble entier ou un grand terrain en centre ville."
     },
     "conflicts_of_interest": {
       "title@en": "Conflicts of interest",
+      "title@es": "Conflictos de interés",
       "title@de": "Interessenkonflikt",
       "title@fr": "Conflits d'intérêts",
       "body@en": "People in politics or in the administration can own companies that receive public contracts. In some countries, it is forbidden for companies owned by public servants or politiciants to receive money from public contracts.",
+      "body@es": "",
       "body@de": "Beamte und Politiker können Firmen besitzen, die von öffentlichen Ausschreibungen profitieren. In bestimmten Ländern ist es zwar verboten, dass eine Firma, die einem Politiker gehört, öffentliche Aufträge annimmt. Das kann jedoch mit Hilfe einer Strohfirma recht einfach umgangen werden.",
       "body@fr": "Des élus ou des fonctionnaires peuvent posséder des entreprises qui bénéficient de contrats publics. Dans certains pays, ce mélange des genres est interdit, mais le bénéficiaire final d'une société peut toujours être masqué par un prête-nom ou par une société-écran."
     },
     "credit_card": {
       "title@en": "Using the official credit card",
+      "title@es": "Utilizar la tarjeta de crédito oficial",
       "title@de": "Kreditkarten im öffentlichen Sektor",
       "title@fr": "Utiliser la carte bleue officielle",
       "body@en": "It can be tempting to use the credit card of the city or the government to buy stuff for you. Because it's very easy to trace, it can be dangerous!<br><br>Read more under <a href='http://www.cookingbudgets.com/the-credit-card/' target='_blank'>The Credit Card</a> at Cooking Budgets.",
+      "body@es": "",
       "body@de": "Eine Kreditkarte, die direkt mit der Staatskasse verbunden ist, kann schon verführerisch sein. Da aber die damit getätigten Einkäufe sehr leicht nachverfolgt werden können, birgt sie auch ihre Gefahren!<br><br>Mehr zum Thema finden Sie unter <a href='http://www.cookingbudgets.com/the-credit-card/' target='_blank'>The Credit Card</a> von Cooking Budgets.",
       "body@fr":"On peut être tenté d'utiliser la carte bleue de sa mairie ou de son gouvernement pour faire ses courses. Mais comme les dépenses en carte sont très faciles à tracer, cela peut être dangereux!<br><br>Lisez <a href='http://www.cookingbudgets.com/the-credit-card/' target='_blank'>The Credit Card</a> [en anglais] sur Cooking Budgets pour en savoir plus."
     },
     "ads": {
       "title@en": "Political communication using public funds",
+      "title@es": "Comunicación política utilizando fondos públicos",
       "title@de": "Politische Werbung durch den Einsatz öffentlicher Gelder",
       "title@fr": "La communication politique sur fonds publics",
       "body@en": "Politicians can control public companies, either directly or through patronage networks. They might require them to buy advertising in newspapers that advertise their performance as a politician and not the company itself. It's very hard for prosecutors to prove that the advertising was not done in the interest of the company.<br><br>Read more under <a href='http://www.cookingbudgets.com/ads/' target='_blank'>Ads, ads, ads</a> at Cooking Budgets.",
+      "body@es": "",
       "body@de": "Politiker können ihren Einfluß auf öffentliche Organisationen und Firmen und Firmen sowohl direkt als auch durch sogenannten Klientelismus ausüben. So können Sie etwa von Firmen verlangen Werbung für Sie zu machen. Für den Staatsanwalt ist es dabei äußerst schwierig nachzuweisen, dass die Firma nicht aus Eigeninteresse handelt.<br><br>Mehr zum Thema finden Sie unter <a href='http://www.cookingbudgets.com/ads/' target='_blank'>Ads, ads, ads</a> von Cooking Budgets.",
       "body@fr": "Les élus peuvent contrôler des sociétés publiques, soit directement, soit via des liens de clientélisme. Ils peuvent demander à ces sociétés d'acheter des espaces publicitaires dans des journaux pour faire faire leur propre promotion. C'est très difficile pour un procureur de prouver que la publicité était faite dans l'intérêt de l'élu et non pas dans l'intérêt de la société elle-même.<br><br>Lisez <a href='http://www.cookingbudgets.com/ads/' target='_blank'>Ads, ads, ads</a> [en anglais] sur Cooking Budgets pour en savoir plus."
     },
     "emphyteutic": {
       "title@en": "Leasing public space to private companies",
+      "title@es": "Alquilar espacio público para empresas privadas",
       "title@de": "Die Vermietung öffentlicher Immobilien",
       "title@fr": "Louer des biens publics à des sociétés privées",
       "body@en": "The easiest way to support a private company for a politician is to buy their building with public funds and rent it back to the company at a low price. The operation is hard to trace and fully legal.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-emphyteutic-scam/' target='_blank'>The Emphyteutic Scam</a> at Cooking Budgets.",
+      "body@es": "",
       "body@de": "Der einfachste Weg für einen Politiker, eine private Firma zu unterstützen ist, eines ihrer Gebäude zu kaufen, und es anschließend an sie zu vermieten. Solche Operationen sind schwer nach zu verfolgen und völlig legal.<br><br>Mehr zum Thema finden Sie unter <a href='http://www.cookingbudgets.com/the-emphyteutic-scam/' target='_blank'>The Emphyteutic Scam</a> von Cooking Budgets.",
       "body@fr": "L'une des manières les plus simples pour un élu ou un fonctionnaire de subventionner une société privée est de lui acheter un bien immobilier puis de la lui louer à un très bas prix. L'opération est complexe à tracer et complètement légale.<br><br>Lisez <a href='http://www.cookingbudgets.com/the-emphyteutic-scam/' target='_blank'>The Emphyteutic Scam</a> [en anglais] sur Cooking Budgets pour en savoir plus."
     },
     "fake": {
       "title@en": "Fake public contracts",
+      "title@es": "Contratos públicos falsos",
       "title@de": "Scheinaufträge",
       "title@fr": "Les faux contrats publics",
       "body@en": "It can happen that contracts are passed to renovate a place or a road that does not exist. It can be risky, because it is easy to prove the contract is bogus.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-invisible-public-work/' target='_blank'>The Invisible Public Work</a> at Cooking Budgets.",
+      "body@es": "",
       "body@de": "Manchmal kommt es vor, dass Aufträge vergeben werden, um nicht-existierende Straßen zu renovieren oder eine Software zu aktualisieren, die gar nicht genutzt wird. Das ist jedoch ausnahmsweise recht leicht nachzuweisen und daher riskant.<br><br>Mehr zum Thema finden Sie unter <a href='http://www.cookingbudgets.com/the-invisible-public-work/' target='_blank'>The Invisible Public Work</a> von Cooking Budgets.",
       "body@fr": "Il arrive parfois que des administrations passent des appels d'offres pour rénover des routes qui n'existent pas ou pour mettre à jour des logiciels fantômes. C'est risqué, car il est facile de prouver que le contrat est un faux.<br><br>Lisez <a href='http://www.cookingbudgets.com/the-invisible-public-work/' target='_blank'>The Invisible Public Work</a> [en anglais] sur Cooking Budgets pour en savoir plus."
     },
     "ppp": {
       "title@en": "Public-private partnerships",
+      "title@es": "Asociación público-privada",
       "title@de": "Öffentlich-Private Partnerschaften",
       "title@fr": "Les partenariats public-privé",
       "body@en": "Since the 1980's, it is popular for public administrations to do public-private partnerships. Such partnerships involve a private company doing some of the work, usually building a equipment or operating it, while the administration contributes to the costs. In exchange, the private company can keep the revenues of the equipment it built.<br><br>The goal was to allow public administrations to provide public services without spending much money. In practice, private companies take almost no risks with such contracts and public administrations end up paying as much as they would have without the partnership. But it is usually hidden in the accounts of the public administration.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-public-private-partnership/' target='_blank'>The Public-Private Partnership</a> at Cooking Budgets.",
+      "body@es": "",
       "body@de": "Seit den 80er-Jahren sind die sogenannten Öffentlich-Private Partnerschaften (ÖPP) in Mode. Dahinter steckt die Idee, dass private Firmen die Kosten und das Risiko eines Projekts mit dem öffentlichen Sektor teilen. Dafür bekommen die Firmen einen Teil der Einnahmen des Projekts zurückerstattet.<br><br> Das Ziel dabei ist, dass der öffentliche Sektor ohne finanziellen Mehraufwand höhere Investitionen tätigen kann. Tatsächlich gehen private Firmen aber ohnehin fast kein Risiko ein, weil sie vom öffentlichen Sektor entsprechende Garantien verlangen. Im Endeffekt zahlt der öffentliche Sektor daher oft mehr als er ohne die ÖPP gezahlt hätte.<br><br>Mehr zum Thema finden Sie unter <a href='http://www.cookingbudgets.com/the-public-private-partnership/' target='_blank'>The Public-Private Partnership</a> von Cooking Budgets.",
       "body@fr": "Depuis les années 1980, les partenariats public-privé sont à la mode. Un tel partenariat implique qu'une société privée réalise un investissement, en général la construction d'un équipement public (route, stade, pont). En échange, la société privée peut garder tout ou partie des revenus d'exploitation de l'équipement.<br><br>L'objectif était que les administrations puissent investir dans de nouveaux équipements sans rien payer. En réalité, les administrations s'engagent souvent à payer un loyer à la société privée, dont le montant total dépasse la valeur de l'investissement ! Comme ces loyers sont étalés dans le temps, on ne voit pas que le partenariat public-privé a en fait coûté plus cher à la collectivité qu'un investissement traditionnel.<br><br>Lisez <a href='http://www.cookingbudgets.com/the-public-private-partnership/' target='_blank'>The Public-Private Partnership</a> [en anglais] sur Cooking Budgets pour en savoir plus."
     },
     "privatization": {
       "title@en": "Deregulation and privatization",
+      "title@es": "Desregulación y privatización",
       "title@de": "Liberalisierung und Privatisierung",
       "title@fr": "Libéralisation et privatisation",
       "body@en": "Public administrations have transfered a lot of their competencies to private companies, either via public-private partnerships or via deregulation. It offers a lot of opportunities for conflicts of interests.<br><br>It is hard to know how much a service costs to the city because it can involve people from different departments (e.g some municipal employees can work for the trash collection one day and for another department the next). To do such estimates would require analytical accounting, which cities rarely do.",
+      "body@es": "",
       "body@de": "Die Regierungen haben viele Kompetenzen an private Unternehmen übertragen, sei es durch öffentlich-private Partnerschaften oder durch das Outsourcing von Dienstleistungen. Doch jede Interaktion mit einem privaten Unternehmen birgt die Gefahr von Interessenkonflikten.<br><br>Es ist äußerst schwierig für die Städtische Verwaltung herauszufinden wie viel eine Dienstleistung kostet und ob die von den privaten Dienstleitern in Rechnung gestellten Kosten angemessen sind. Präzise Kalkulationen setzen eine analytische Buchführung voraus, die von den Städten nur selten durchgeführt wird.",
       "body@fr": "Les administrations publiques ont transféré de nombreuses compétences à des sociétés privées, que ce soit via des partenariats public-privé ou via l'externalisation de services. Chaque interaction avec une société privée offre de nouvelles possibilités de conflits d'intérêts.<br><br>Il est difficile pour une ville de savoir combien un service coûte et de comparer ce coût avec le prix payé à une société privée, car la fourniture d'un service public implique souvent plusieurs départements (par exemple, un employé municipal peut travailler à la collecte des ordures un jour et aux jardins un autre jour). Faire de telles estimations nécessite une comptabilité analytique, ce que les villes font rarement."
     },
     "fine_print": {
       "title@en": "The fine print in public contracts",
+      "title@es": "La letra pequeña de los contratos públicos",
       "title@de": "Das Kleingedruckte",
       "title@fr": "Le détail des contrats publics",
       "body@en": "Building contracts usually involve a series of clauses, such as penalties for delays. However, the client (in this case, the city) must activate the clause, or, if the contractor refuses to pay, take it to court. Legal teams are used to such situations, but for a small administration, or in case of politically sensitive issues, it is easy to ignore some clauses in the contract.",
+      "body@es": "",
       "body@de": "Bauverträge enthalten normalerweise eine Vielzahl von Klauseln, wie z.B. den Verspätungszuschlag. Der Auftraggeber (in diesem Fall, die Stadt) sollte diese Klausel berücksichtigen und wenn der Auftragnehmer nicht zahlt, einen entsprechenden Prozess anstreben. Rechtsabteilungen von privaten Firmen sind an das Prozedere gewöhnt, aber kleineren Städten fehlen häufig die Ressourcen für eine Schadensersatzklage. Auch im Fall politisch sensibler Themen ist eine Klage häufig zu riskant und das Anliegen wird lieber unter den Tisch gekehrt.",
       "body@fr": "Les contrats de construction publique ont en général de nombreuses clauses, comme des pénalités de retard. Pour qu'elles prennent effet, le client (en l'occurence, la ville), doit activer la clause, ou, si l'industriel refuse de payer, l'assigner en justice. Ces situations sont normales pour des équipes de juristes aguérris, mais, pour des petites villes, ou sur des sujets politiquement sensibles, il est plus facile de les ignorer."
     },
     "degrees": {
       "title@en": "Selling university degrees",
+      "title@es": "Vender títulos universitarios",
       "title@de": "Der Verkauf von Universitätsdiplomen",
       "title@fr": "La vente de diplômes",
       "body@en": "The sale of university degree is not uncommon in Europe. As with any story of corruption, people have an incentive to keep silent, because it would make the whole university look bad if it became news.<br><br>Read more under <a href='http://www.cookingbudgets.com/grilled-degrees/' target='_blank'>The Grilled Degrees</a> at Cooking Budgets.",
+      "body@es": "",
       "body@de": "Der Handel mit Hochschulzugangsberechtigungen ist in Europa nichts Ungewöhnliches. Wie seit jeher in der Geschichte der Korruption, haben die beteiligten Personen ein außerordentliches Interesse daran über die Sache Stillschweigen zu bewahren, um ihre eigene und die Reputation der Hochschule zu wahren. Es liegt ein Band des Schweigens über den ehren Mauern der Universitäten. Der Handel mit akademischen Titeln ist daher nur sehr schwer aufzudecken.<br><br>Mehr zum Thema finden Sie unter <a href='http://www.cookingbudgets.com/grilled-degrees/' target='_blank'>The Grilled Degrees</a> von Cooking Budgets.",
       "body@fr": "La vente de diplômes et la vente du droit d'entrée à l'université ne sont pas rares en Europe. Comme toujours dans les histoires de corruption, les personnes impliquées ont intérêt à garder le silence car c'est la réputation de toute l'université qui serait impactée si un scandale devait voir le jour. Lisez <a href='http://www.cookingbudgets.com/grilled-degrees/' target='_blank'>The Grilled Degrees</a> [en anglais] sur Cooking Budgets pour en savoir plus."
     },
     "accounting_tricks": {
       "title@en": "Accounting tricks",
+      "title@es": "Tretas contables",
       "title@de": "Buchhaltungstricks",
       "title@fr": "Astuces comptables",
       "body@en": "Contrary to popular belief, accounting is very flexible. It has to be flexible, because it needs to honestly represent the financial situation of an institutions and specific situations can be very different from one another.<br><br>One trick consists in considering that all future revenues from a specific revenue stream are actually just one big sum of money that can be accounted for as a lump sum, even if it is paid later.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-capitalized-rents/' target='_blank'>The Capitalized Rents</a> at Cooking Budgets.",
+      "body@es": "",
       "body@de": "Entgegen der landläufigen Meinung ist die Buchhaltung eine recht flexible Angelegenheit. Ja sie muss sogar flexibel sein, um sich an die jeweils spezifische Situation einer Organisation anpassen zu können. Doch kann diese Flexibilität ebenso gut missbraucht werden.<br><br>Ein Buchhalter kann beispielsweise alle zukünftigen Einnahmen aus einem Objekt als Einmalzahlung verbuchen. Das ist manchmal legitim, etwa wenn Aktien verkauft werden. Bei Mieteinnahmen aus Sozialwohnungen ist dieses Prozedere hingegen unzulässig.<br><br>Mehr zum Thema finden Sie unter <a href='http://www.cookingbudgets.com/the-capitalized-rents/' target='_blank'>The Capitalized Rents</a> von Cooking Budgets.",
       "body@fr": "Contrairement à une idée reçue, la comptabilité est très flexible. Elle doit être flexible car elle doit s'adapter à la situation de chaque institution. Cette flexibilité peut être utilisée à mauvais escient.<br><br>Une astuce comptable consiste à considérer que tous les revenus futurs d'un bien en location ne sont en fait qu'une seule somme d'argent qui peut être comptabilisée d'un coup, même si elle sera payée dans le futur.<br><br>Lisez <a href='http://www.cookingbudgets.com/the-capitalized-rents/' target='_blank'>The Capitalized Rents</a> [en anglais] sur Cooking Budgets pour en savoir plus."
     },
     "relatives": {
       "title@en": "Hiring relatives",
+      "title@es": "Contratar a parientes",
       "title@de": "Vetternwirtschaft",
       "title@fr": "Embaucher des proches",
       "body@en": "In some countries, it is forbidden to hire a relative as an assistant. While it might not be a legal risk (after all, your spouse might be the most qualified person for a job), it is a political one. It is safer to ask one of the companies you're in friendly terms with to do the hire (you can then award a public contract to the company in question to finance the new position).",
+      "body@es": "",
       "body@de": "In mänchen Ländern ist es der öffentlichen Verwaltung untersagt Familienangehörige einzustellen. Selbst wenn es kein juristisches Risiko birgt (ihr Partner kann der Beste für den Job sein), so besteht ein politisches Restrisiko. Um Ihre Verwandten zu versorgen tun Sie besser daran bei einer Ihnen wohlgesonnenen Firma anzufragen. Zum Dank können Sie der Firma einen Auftrag erteilen, so dass die für die neue Stelle benötigten Gelder rasch zur Verfügungen stehen.",
       "body@fr":"Dans certains pays, il est interdit d'embaucher des proches en tant qu'assistant. Quand bien même il n'y aurait pas de risque légal (après tout, votre partenaire peut être le plus qualifié pour le job), cela reste un risque politique. Pour caser vos proches, il vaut mieux demander à une société avec laquelle vous êtes en bons termes de l'embaucher (vous pouvez ensuite donner un contrat public à cette société pour financer le nouveau poste qu'elle a du créer)."
     },
     "door": {
       "title@en": "The Revolving Door",
+      "title@es": "Las puertas giratorias",
       "title@de": "Das Stellenkarussell",
       "title@fr": "Le pantouflage",
       "body@en": "After a career in the administration, public officials can be invited to work in the private sectors. Their contacts and their in-depth knowledge of how an administration works are very valuable for a private company. Sometimes, the promise of having a plump job is enough to convince a public official to take a decision in favor of a private company.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-revolving-door/' target='_blank'>The Revolving Door</a> at Cooking Budgets.",
+      "body@es": "",
       "body@de": "Im Anschluss an eine Karriere im öffentlichen Sektor werden hohen Beamten häufig Stellen in der Privatwirtschaft angeboten. Ihre Kontakte und ihr Fachwissen werden dort sehr geschätzt. Und manchmal genügt schon ein in Aussicht gestellter hoher Posten, um einen Beamten ausreichend zu beeinflussen noch während seiner Amtszeit Entscheidungen zu treffen, die dem Unternehmen zu Gute kommen.<br><br>Mehr zum Thema finden Sie unter <a href='http://www.cookingbudgets.com/the-revolving-door/' target='_blank'>The Revolving Door</a> von Cooking Budgets.",
       "body@fr": "Après une carrière dans l'administration publique, certains fonctionnaires sont invités à travailler dans le secteur privé. Leurs contacts et leur connaissance du fonctionnement de l'administration sont très utiles à une société privée. Parfois, la promesse de recevoir un poste bien doté suffit à convaincre un élu ou un fonctionnaire de prendre une décision favorable à cette société privée.<br><br>Lisez <a href='http://www.cookingbudgets.com/the-revolving-door/' target='_blank'>The Revolving Door</a> [en anglais] sur Cooking Budgets pour en savoir plus."
     }
