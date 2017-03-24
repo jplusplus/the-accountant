@@ -1139,7 +1139,6 @@
           "text@de": "Eine Strohfirma in einer Steueroase",
           "text@fr": "Une société-écran",
           "var_changes": {
-            "risk_police": 0,
             "shell_company": 1
           },
           "feedback": [
