@@ -1677,7 +1677,7 @@
             {
               "character": "football-boss",
               "text@en": "With people like you, we'll win the Cup!",
-              "text@de": "Mit Leuten wie Ihnen werden wir den Pokal gewinnen",
+              "text@de": "Mit Leuten wie Ihnen werden wir den Pokal gewinnen!",
               "text@fr": "Avec des gens comme vous, on va gagner la Coupe !"
             }
           ]
@@ -2032,7 +2032,7 @@
         {
           "character": "mayor",
           "text@en": "Next year, we'll outsource trash collection.",
-          "text@de": "Nächste Jahr werden wir die Müllentsorgung auslagern. (Leerzeichen zu viel!)",
+          "text@de": "Nächste Jahr werden wir die Müllentsorgung auslagern.",
           "text@fr": "L'année prochaine, nous externaliserons la collecte d'ordures."
         },
         {
@@ -2044,7 +2044,7 @@
         {
           "character": "lawyer",
           "text@en": "Do you want to buy shares in Voelia Environment, a trash collection company?",
-          "text@de": "Wollen Sie Anteile an Voelia Environment, einer Entsorgungsfirma, kaufen",
+          "text@de": "Wollen Sie Anteile an Voelia Environment, einer Entsorgungsfirma, kaufen?",
           "text@fr": "Voulez-vous acheter des actions de Voelia Environment, une société de collecte d'ordures ?"
         },
         {
@@ -2067,7 +2067,7 @@
             {
               "character": "you",
               "text@en": "Yes, good idea, I'll put in 50,000.",
-              "text@de": "Ja, gute Idee. Investieren Sie ibitte 50.000.",
+              "text@de": "Ja, gute Idee. Investieren Sie bitte 50.000.",
               "text@fr": "Oui, bonne idée, je vais mettre 50 000."
             },
             {
