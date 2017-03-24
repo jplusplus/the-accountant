@@ -7,7 +7,7 @@
     "share": {
       "tweet": {
         "via": "jplusplus_",
-        "text": "Wie lange können Sie es im Rathaus durchstehen? Probieren Sie mal!"
+        "text": "Wie lange können Sie gegen Korruption aushalten? Probieren Sie mal!"
       }
     }
   },
@@ -25,7 +25,7 @@
       "over": {
         "undo": "vorherige Aktion rückgängig machen",
         "again": "Noch einmal spielen",
-        "share": "Sie haben <a ui-sref='main.vars'>{{amount}} in {{years}} Jahren</a> unterschlagen. Teile dein Ergebnis!"
+        "share": "Sie haben <a ui-sref='main.vars'>{{amount}} in {{years}} Jahren</a> unterschlagen. Teilen Sie Ihr Ergebnis!"
       }
     },
     "toolbar": {
