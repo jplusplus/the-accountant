@@ -51,12 +51,22 @@ module.exports = {
         loaders: [
           'html-loader'
         ]
+      },
+      {
+        test: /\.(jpeg|jpg|png|gif|svg|eot|svg|ttf|woff|woff2)$/i,
+        use: [{
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]'
+          }
+        }]
       }
     ]
   },
   resolve: {
     alias: {
-      modernizr$: path.resolve(__dirname, "./modernizr.conf.js")
+      modernizr$: path.resolve(__dirname, "./modernizr.conf.js"),
+      images: path.join(process.cwd(), conf.path.src('images'))
     }
   },
   plugins: [
