@@ -6,7 +6,7 @@
       "category": "city",
       "chart": "city-financial-health",
       "label@en": "Resources",
-      "label@es": "Recursos",
+      "label@es": "Ingresos",
       "label@de": "Einnahmen",
       "label@fr": "Revenus"
     },
@@ -56,7 +56,7 @@
       "icon": "industry",
       "category": "risk",
       "label@en": "Industry mistrust",
-      "label@es": "Desconfianza del sector",
+      "label@es": "Desconfianza de los inversores",
       "label@de": "Misstrauen der Industrie",
       "label@fr": "Méfiance des industriels"
     },
@@ -108,7 +108,7 @@
       "title@de": "Finanzielle Lage der Stadt",
       "title@fr": "Santé financière de la ville",
       "description@en": "City financials tell you how much money the city collects each year (resources) and spends (expenditure), while reserves tell you how much money the city has in the bank.",
-      "description@es": "Los financieros te dicen cuánto dinero recauda el ayuntamiento cada año (recursos) y cuánto gasta (gastos), y las reservas te dicen cuánto dinero tiene el ayuntamiento en el banco.",
+      "description@es": "Las finanzas te dicen cuánto dinero recauda el ayuntamiento cada año (ingresos) y cuánto gasta (gastos); las reservas te indican cuánto dinero tiene el ayuntamiento en el banco.",
       "description@de": "Diese Indikatoren zeigen wieviele Steuern die Stadt jährlich einnimmt (Einnahmen), wieviel sie ausgibt (Ausgaben) und wieviel sie auf der Bank hat (Rücklagen).",
       "description@fr": "Ces indicateurs montrent combien la ville collecte en impôts tous les ans (revenus), combien elle dépense (dépenses), et les réserves indiquent combien la ville possède en banque."
     }
@@ -116,18 +116,18 @@
   "characters": {
     "mayor": {
       "name@en": "Birgit Meyer",
-      "name@es": "",
+      "name@es": "Amanda Bastón",
       "name@de": "Marie Meyer",
       "name@fr": "Claudine Daviau",
       "title@en": "The Mayor",
-      "title@es": "El alcalde",
+      "title@es": "La alcaldesa",
       "title@de": "Die Bürgermeisterin",
       "title@fr": "La maire",
       "avatar": "./images/avatars/mayor.jpg"
     },
     "lawyer": {
       "name@en": "Jamila Ballard",
-      "name@es": "",
+      "name@es": "Luisa Cuatroparedes",
       "name@de": "Ekin Krantz",
       "name@fr": "Nadya Mathieu",
       "title@en": "Your lawyer",
@@ -138,7 +138,7 @@
     },
     "construction-boss": {
       "name@en": "Robert Gerber",
-      "name@es": "",
+      "name@es": "Floriano Gómez",
       "name@de": "Ferdi Meinhardt",
       "name@fr": "Cyril Guillory",
       "title@en": "Boss of Robert Construction Limited",
@@ -149,7 +149,7 @@
     },
     "university-boss": {
       "name@en": "Adrian Wynn",
-      "name@es": "",
+      "name@es": "Pablo Claustro",
       "name@de": "Halit Beutel",
       "name@fr": "Rasul Géroux",
       "title@en": "Director of the University",
@@ -160,7 +160,7 @@
     },
     "football-boss": {
       "name@en": "Martin Gomez",
-      "name@es": "",
+      "name@es": "Augusto Naranjo",
       "name@de": "Wendel Slusser",
       "name@fr": "Gustave Tremble",
       "title@en": "President of the City Football Club",
@@ -171,7 +171,7 @@
     },
     "helper": {
       "name@en": "Lia Brune",
-      "name@es": "",
+      "name@es": "Inmaculada Nuñez",
       "name@de": "Ferdinanda Salzwedel",
       "name@fr": "Andrée Lambert",
       "title@en": "Assistant",
@@ -182,7 +182,7 @@
     },
     "you": {
       "name@en": "You",
-      "name@es": "",
+      "name@es": "Tú",
       "name@de": "Sie",
       "name@fr": "Vous",
       "title@en": "General manager",
@@ -348,7 +348,7 @@
         {
           "character": "mayor",
           "text@en": "Hi there, welcome to City Hall!",
-          "text@es": "Muy buenas: Bienvenidos al Ayuntamiento!",
+          "text@es": "Muy buenas: Bienvenido al Ayuntamiento!",
           "text@de": "Hallo und herzlich willkommen im Rathaus!",
           "text@fr": "Bonjour et bienvenue à l'hôtel de ville !"
         },
@@ -377,14 +377,14 @@
       "choices": [
         {
           "text@en": "Go",
-          "text@es": "Adelante.",
+          "text@es": "Adelante",
           "text@de": "Los geht’s",
           "text@fr": "Commencer",
           "feedback": [
             {
               "character": "you",
               "text@en": "Thank you mayor, I'll do my best.",
-              "text@es": "Gracias Alcalde, lo haré lo mejor que pueda.",
+              "text@es": "Gracias Alcaldesa, lo haré lo mejor que pueda.",
               "text@de": "Vielen Dank, Frau Bürgermeisterin. Ich werde mein Bestes geben.",
               "text@fr": "Merci. Je ferai de mon mieux."
             },
@@ -398,7 +398,7 @@
             {
               "character": "mayor",
               "text@en": "Lia is your assistant.",
-              "text@es": "Lía es tu asistente.",
+              "text@es": "Inmaculada es tu asistenta.",
               "text@de": "Frau Salzwedel ist Ihre Assistentin.",
               "text@fr": "Madame Lambert est votre assistante."
             },
@@ -412,7 +412,7 @@
             {
               "character": "helper",
               "text@en": "Hello.",
-              "text@es": "Hola.",
+              "text@es": "¡Hola!",
               "text@de": "Hallo!",
               "text@fr": "Enchantée."
             },
@@ -426,14 +426,14 @@
             {
               "character": "helper",
               "text@en": "Best advice: The mayor has powerful friends. Don't make them angry.",
-              "text@es": "El mejor consejo: El alcalde tiene amigos con mucho poder. No les hagas enfadar.",
+              "text@es": "El mejor consejo: la alcaldesa tiene amigos con mucho poder. No les hagas enfadar.",
               "text@de": "Ich gebe Ihnen einen Rat: Die Bürgermeisterin hat einflussreiche Freunde. Verärgern Sie sie nicht.",
               "text@fr": "Premier conseil: La maire a de puissants amis, ne vous les mettez pas à dos."
             },
             {
               "character": "helper",
               "text@en": "Especially Mr. Gerber.",
-              "text@es": "Especialmente al Sr. Gerber.",
+              "text@es": "Especialmente al Sr. Gómez.",
               "text@de": "Vor allem nicht Herrn Meinhardt.",
               "text@fr": "Surtout monsieur Guillory."
             }
