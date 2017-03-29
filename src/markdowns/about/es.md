@@ -18,7 +18,7 @@ Users have to make decisions based on questions. Several variables help them mak
 
 **Political rejection** increases with unpopular decisions, **industry mistrust** increases when the user makes choices that contractors don’t like and **legal risk** increases when the user does something illegal.
 
-After each choice, there is a (risk / 10) probability of triggering a _game over_ of the type related to the risk. E.g if **legal risk** is 9, user has 9 chance out of 10 to be arrested by the police at the next step.
+After each choice, there is a (risk / 20) probability of triggering a _game over_ of the type related to the risk. E.g if **legal risk** is 9, user has 9 chance out of 20 to be arrested by the police at the next step.
 
 This tool is part of <strong><a target="_blank" href="http://openbudgets.eu/">OpenBudgets.eu</a>: Fighting Corruption with Fiscal Transparency</strong>, a consortium that includes <a target="_blank" href="https://okfn.org/">Open Knowledge</a>, <a target="_blank" href="https://okfn.de/">Open Knowledge Germany</a>, <a target="_blank" href="http://okfn.gr/">Open Knowledge Greece</a>, <a target="_blank" href="https://www.iais.fraunhofer.de/en.html">Fraunhofer IAIS</a>, <a target="_blank" href="https://www.uni-bonn.de/">University of Bonn</a>, <a target="_blank" href="http://www.civio.es/en/">CIVIO</a>, <a target="_blank" href="http://transparency.eu//">Transparency Int. EU</a>, <a target="_blank" href="https://en.wikipedia.org/wiki/Journalism%2B%2B">Journalism++</a> and <a target="_blank" href="https://www.vse.cz/english/">University of Economics - Prague</a>.
 

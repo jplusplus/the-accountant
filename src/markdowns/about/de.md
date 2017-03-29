@@ -12,9 +12,9 @@ Auf Basis von gezielten Fragen müssen die Nutzer Entscheidungen treffen. Mehrer
 
 Die **Politische Zurückweisung** nimmt zu, wenn unbeliebte Entscheidungen getroffen werden;  das **Misstrauen der Industrie** steigt,  wenn die Nutzer mit ihren Entscheidungen  Vertragsnehmer verärgern. Und die **rechtliche Risiken** nehmen zu, wenn die Nutzer illegal handeln.
 
-Nach jeder Entscheidung gibt es eine Wahrscheinlichkeit von (Risiko / 10), dass ein „Game over“ ausgelöst wird, je nach Art des Risikos.
+Nach jeder Entscheidung gibt es eine Wahrscheinlichkeit von (Risiko / 20), dass ein „Game over“ ausgelöst wird, je nach Art des Risikos.
 
-Liegt beispielsweise das **rechtliche Risiko** bei 9, so kommt es in 9 von 10 Fällen im nächsten Schritt zu einer Festnahme des Nutzers.
+Liegt beispielsweise das **rechtliche Risiko** bei 9, so kommt es in 9 von 20 Fällen im nächsten Schritt zu einer Festnahme des Nutzers.
 
 Diese Anwendung ist Teil von <strong><a target="_blank" href="http://openbudgets.eu/">OpenBudgets.eu</a>: Korruption durch Fiskale Transparenz bekämpfen</strong>, einem Konsortium, bestehend aus neun verschiedenen Organisationen und Institutionen im Bereich  Transparenz  <a target="_blank" href="https://okfn.org/">Open Knowledge</a>, <a target="_blank" href="https://okfn.de/">Open Knowledge Germany</a>, <a target="_blank" href="http://okfn.gr/">Open Knowledge Greece</a>, <a target="_blank" href="https://www.iais.fraunhofer.de/en.html">Fraunhofer IAIS</a>, <a target="_blank" href="https://www.uni-bonn.de/">Universität Bonn </a>, <a target="_blank" href="http://www.civio.es/en/">CIVIO</a>, <a target="_blank" href="http://transparency.eu//">Transparency Int. EU</a>, <a target="_blank" href="http://www.jplusplus.org/en/paris-berlin/">Journalism++ Paris/Berlin</a> and <a target="_blank" href="https://www.vse.cz/english/">Universität für Wirtschaft Prag </a>.
 
