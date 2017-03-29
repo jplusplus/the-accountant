@@ -1636,7 +1636,7 @@
         {
           "character": "helper",
           "text@en": "I prepared a [memo on credit cards|credit_card] for you.",
-          "text@es": "Te he preparado un [memo sobre tarjetas de crédito|credit_card].",
+          "text@es": "Te he preparado una [memo sobre tarjetas de crédito|credit_card].",
           "text@de": "Ich habe für Sie [ein Dossier zu diesem Thema|credit_card] zusammengestellt.",
           "text@fr": "Je vous ai préparé [un mémo sur les cartes de crédit.|credit_card]"
         }
@@ -1701,7 +1701,7 @@
             {
               "character": "mayor",
               "text@en": "You're right, better be careful with this plastic thingy.",
-              "text@es": "Tienes razón, lo mejor es tener cuidado con esa tarjetita mágica.",
+              "text@es": "Tienes razón, lo mejor es tener cuidado con esta tarjetita mágica.",
               "text@de": "Sie haben Recht. Man sollte vorsichtig sein mit diesen kleinen Plastikkarten.",
               "text@fr": "Vous avez raison, faites attention avec ce bout de plastique."
             },
@@ -1738,7 +1738,7 @@
         {
           "character": "helper",
           "text@en": "I prepared a [memo on political advertising|ads], in case you need help.",
-          "text@es": "He hecho un [memo sobre publicidad con fines políticos|ads], en caso de que necesitaras mi ayuda.",
+          "text@es": "He hecho una [memo sobre publicidad con fines políticos|ads], en caso de que necesitaras mi ayuda.",
           "text@de": "Ich habe für Sie [ein Dossier zur politischen Werbung|ads] zusammengestellt.",
           "text@fr": "Je vous ai préparé [un mémo sur la publicité politique|ads], au cas où."
         }
@@ -1795,7 +1795,7 @@
             {
               "character": "you",
               "text@en": "Sure, I am on it.",
-              "text@es": "Hecho, estoy ya en ello.",
+              "text@es": "Hecho, ya estoy en ello.",
               "text@de": "Alles klar, wird erledigt.",
               "text@fr": "D'accord, je m'en charge."
             },
@@ -1837,7 +1837,7 @@
         {
           "character": "football-boss",
           "text@en": "Cash.",
-          "text@es": "Efectivo.",
+          "text@es": "En efectivo.",
           "text@de": "In Bar.",
           "text@fr": "En cash."
         },
@@ -1858,7 +1858,7 @@
         {
           "character": "football-boss",
           "text@en": "That'd make everybody happy, wouldn't it? Voters would hate it if their team had to leave.",
-          "text@es": "Eso contentaría a todos, ¿no? Lo votantes odiarían que su partido se tuviera que marchar.",
+          "text@es": "Eso contentaría a todos, ¿no? Lo votantes no aguantarían que su equipo se tuviera que marchar.",
           "text@de": "Damit wären alle zufriedengestellt. Und die Wähler wären doch sicher sehr enttäuscht, wenn Ihr Verein Konkurs anmelden müsste.",
           "text@fr": "Tout le monde serait content. Les électeurs seraient très déçus si leur club faisait faillite."
         }
@@ -1874,7 +1874,7 @@
         {
           "character": "helper",
           "text@en": "Here's a [memo on leasing public space to private companies|emphyteutic] you might like.",
-          "text@es": "Aquí tienes un [memo sobre alquiler de espacios públicos para empresas privadas|emphyteutic] que te va a gustar.",
+          "text@es": "Aquí tienes una [memo sobre alquiler de espacios públicos para empresas privadas|emphyteutic] que te va a gustar.",
           "text@de": "Hier finden Sie ein Dossier zum Thema [Vermietung von öffentlichen Grundstücken an Privatgesellschaften.|emphyteutic]",
           "text@fr": "Voici [un mémo sur la location d'espace publics à des sociétés privées.|emphyteutic]"
         }
@@ -1900,7 +1900,7 @@
             {
               "character": "football-boss",
               "text@en": "Yeah!",
-              "text@es": "¡Sí!",
+              "text@es": "¡Genial!",
               "text@de": "Yeah!",
               "text@fr": "Yeah !"
             },
@@ -1981,21 +1981,21 @@
         {
           "character": "construction-boss",
           "text@en": "You'll pass a public tender to renovate a street that doesn't exist.",
-          "text@es": "Vas a conseguir un concurso para renovar una calle que no existe. ",
+          "text@es": "Vas a sacar un concurso para renovar una calle que no existe. ",
           "text@de": "Du veröffentlichst eine Ausschreibung für die Renovierung einer nicht existierenden Straße.",
           "text@fr": "Tu passes un appel d'offre pour rénover une rue qui n'existe pas."
         },
         {
           "character": "construction-boss",
           "text@en": "Give me the contract...",
-          "text@es": "Dame un contrato...",
+          "text@es": "Me adjudicas el contrato...",
           "text@de": "Du erteilst mir den Zuschlag ...",
           "text@fr": "Tu me passes le contrat..."
         },
         {
           "character": "construction-boss",
           "text@en": "And we'll share the money.",
-          "text@es": "Y compartimos el dinero.",
+          "text@es": "...Y compartimos el dinero.",
           "text@de": "Und wir teilen das Geld!",
           "text@fr": "Et on partage le fric !"
         }
@@ -2011,7 +2011,7 @@
         {
           "character": "helper",
           "text@en": "Here's [some documentation on the issue|fake], just in case.",
-          "text@es": "Aquí tienes [alguna documentación sobre el asunto|fake], por si acaso.",
+          "text@es": "Aquí tienes [documentación sobre el asunto|fake], por si acaso.",
           "text@de": "[Hie finden Sie ein paar Informationen|fake] zum Thema.",
           "text@fr": "Voilà un peu de [documentation sur le sujet|fake]."
         }
@@ -2062,7 +2062,7 @@
             {
               "character": "you",
               "text@en": "No, it seems too risky too me.",
-              "text@es": "No, a mí me parece demasiado arriesgado.",
+              "text@es": "No, me parece demasiado arriesgado.",
               "text@de": "Nein, das ist mir zu riskant",
               "text@fr": "Non, ça me parait trop risqué."
             },
@@ -2111,7 +2111,7 @@
         {
           "character": "construction-boss",
           "text@en": "Give me a contract and I'll buy you the furniture you really deserve.",
-          "text@es": "Consígueme un contrato y yo te compraré los muebles que realmente te mereces.",
+          "text@es": "Consígueme un contrato y yo te compraré los muebles que te mereces.",
           "text@de": "Gib mir einen Vertrag und ich kaufe dir die Möbel, die du verdienst.",
           "text@fr": "Donne moi un contrat et je vais t'acheter les meubles que tu mérites."
         }
@@ -2143,14 +2143,14 @@
             {
               "character": "mayor",
               "text@en": "How come your office is nicer than mine?",
-              "text@es": "¿Cómo es que tu despacho es mejor que el mío?",
+              "text@es": "¿Por qué de repente tu despacho es mejor que el mío?",
               "text@de": "Warum ist Ihr Büro schöner als meins?",
               "text@fr": "Pourquoi votre bureau est-il mieux que le mien ?"
             },
             {
               "character": "mayor",
               "text@en": "Something's wrong with you.",
-              "text@es": "A ti te pasa algo.",
+              "text@es": "Algo está pasando.",
               "text@de": "Wie können Sie sich das leisten?",
               "text@fr": "Quelque chose ne va pas chez vous."
             }
@@ -2175,7 +2175,7 @@
             {
               "character": "construction-boss",
               "text@en": "I thought we were friends.",
-              "text@es": "Creí que éramos amigos.",
+              "text@es": "Creía que éramos amigos.",
               "text@de": "Ich dachte wir wären Freunde.",
               "text@fr": "Je croyais qu'on était amis."
             }
@@ -2203,7 +2203,7 @@
         {
           "character": "mayor",
           "text@en": "How should we arrange the financing?",
-          "text@es": "¿Cómo deberíamos organizar la financiación?",
+          "text@es": "¿Cómo podríamos ponernos de acuerdo para financiarlo?",
           "text@de": "Wie sollen wir das finanzieren?",
           "text@fr": "Comment allons-nous le financer ?"
         }
@@ -2212,7 +2212,7 @@
         {
           "character": "helper",
           "text@en": "PPPs are quite a trend.",
-          "text@es": "Las asociaciones público-privadas están de moda.",
+          "text@es": "Las empresas público-privadas están de moda.",
           "text@de": "ÖPPs sind der letzte Schrei.",
           "text@fr": "Les PPPs sont à la mode."
         },
@@ -2227,7 +2227,7 @@
       "choices": [
         {
           "text@en": "The city should build the stadium (one-off cost: 10 million).",
-          "text@es": "El ayuntamiento debería construir el estadio (un coste específicio: 10 millones)",
+          "text@es": "El ayuntamiento debería construir el estadio (coste específicio: 10 millones)",
           "text@de": "Die Stadt kommt für das Stadion auf (Kostenpunkt: 10 Millionen).",
           "text@fr": "La ville paye pour le stade (coût: 10 millions)",
           "var_changes": {
@@ -2258,7 +2258,7 @@
             {
               "character": "mayor",
               "text@en": "Go for PPP next time.",
-              "text@es": "La próxima vez, apunta a la asocación público-privada.",
+              "text@es": "La próxima vez, escoge la asocación público-privada.",
               "text@de": "Entscheiden Sie sich das nächste Mal für eine ÖPP.",
               "text@fr": "Choisissez un PPP la prochaine fois."
             }
@@ -2266,7 +2266,7 @@
         },
         {
           "text@en": "Set-up a public-private partnership (no cost now, but you have to pay the contractor 1 million per year for the next 20 years)",
-          "text@es": "Establece una asocación público-privada (sin coste de momento, pero tienes que pagar al contratista 1 millón por año para los próximos 20 años).",
+          "text@es": "Establece una asocación público-privada (sin coste de momento, pero tendrás que pagar al contratista 1 millón por año para los próximos 20 años).",
           "text@de": "Eine Öffentlich-Private Partnerschaft aufbauen (es entstehen aktuell keine Kosten, jedoch muss die Stadt in den kommenden 20 Jahren jährlich 1 Million an den Betreiber zahlen).",
           "text@fr": "Mettre en place un partenariat public-privé (aucun coût maintenant, mais vous devrez payer l'opérateur 1 million par an pendant 20 ans)",
           "var_changes": {
@@ -2325,7 +2325,7 @@
         {
           "character": "lawyer",
           "text@en": "Do you want to buy shares in Voelia Environment, a trash collection company?",
-          "text@es": "¿Quiere comprar acciones en Voelia Environment, una empresa de recogida de basuras?",
+          "text@es": "¿Quieres comprar acciones en Voelia Environment, una empresa de recogida de basuras?",
           "text@de": "Wollen Sie Anteile an Voelia Environment, einer Entsorgungsfirma, kaufen?",
           "text@fr": "Voulez-vous acheter des actions de Voelia Environment, une société de collecte d'ordures ?"
         },
@@ -2445,7 +2445,7 @@
         {
           "character": "helper",
           "text@en": "I wrote a [memo on privatizations|privatization] for you.",
-          "text@es": "Te he escrito un [memo sobre privatizaciones |privatization].",
+          "text@es": "Te he escrito una [memo sobre privatizaciones |privatization].",
           "text@de": "Ich habe [ein Dossier zum Thema Outsourcing|privatization] verfasst.",
           "text@fr": "Je vous ai écrit [un mémo sur la libéralisation des services publics|privatization]."
         }
@@ -2559,7 +2559,7 @@
         {
           "character": "helper",
           "text@en": "I wrote a [memo on privatizations|privatization] for you.",
-          "text@es": "Te he escrito un [memo sobre privatizaciones|privatization].",
+          "text@es": "Te he escrito una [memo sobre privatizaciones|privatization].",
           "text@de": "Ich habe [ein Dossier zum Thema Outsourcing|privatization] verfasst.",
           "text@fr": "Je vous ai écrit [un mémo sur la libéralisation des services publics|privatization]."
         }
@@ -2667,7 +2667,7 @@
         {
           "character": "helper",
           "text@en": "Here's a [memo on the issue|fine_print] to help you.",
-          "text@es": "Te paso un [memo sobre el asunto|fine_print] para ayudarte.",
+          "text@es": "Te paso una [memo sobre el asunto|fine_print] para ayudarte.",
           "text@de": "Um Zeit zu sparen habe ich Ihnen [ein Dossier zusammengestellt|fine_print].",
           "text@fr": "Je vous ai fait [un mémo pour vous faire gagner du temps|fine_print]."
         }
@@ -2675,7 +2675,7 @@
       "choices": [
         {
           "text@en": "Take the contractor to court to get the money.",
-          "text@es": "Llévate al contratista a los tribunales y así consigues el dinero.",
+          "text@es": "Lleva al contratista a los tribunales, así consiguirás el dinero.",
           "text@de": "Einen Prozess gegen den Auftragnehmer anstreben.",
           "text@fr": "Intenter un procès contre la société de construction.",
           "var_changes": {
@@ -2764,14 +2764,14 @@
         {
           "character": "university-boss",
           "text@en": "I'm the director of the City University now.",
-          "text@es": "Ahora soy rector de la Universidad Municipal.",
+          "text@es": "Ahora soy rector de la Universidad de la ciudad.",
           "text@de": "Ich bin jetzt Direktor der Universität.",
           "text@fr": "Je suis le directeur de l'université maintenant."
         },
         {
           "character": "university-boss",
           "text@en": "The pay is terrible, but I have a trick.",
-          "text@es": "El sueldo es lo peor, but tengo mis tretas.",
+          "text@es": "El sueldo es lo peor, pero tengo mis trucos.",
           "text@de": "Das Gehalt ist miserabel, aber ich weiß mir zu helfen.",
           "text@fr": "La paye est misérable, mais j'ai un truc."
         },
@@ -2785,7 +2785,7 @@
         {
           "character": "university-boss",
           "text@en": "And I let them in!",
-          "text@es": "¡Y así si les dejo matricularse!",
+          "text@es": "¡Y les dejo matricularse!",
           "text@de": "Die zahlen mir dann eine Sondergebühr in Bar und erhalten im Gegenzug einen Studienplatz.",
           "text@fr": "Et je les inscris en échange d'un bakchich !"
         },
@@ -2801,14 +2801,14 @@
         {
           "character": "helper",
           "text@en": "I always regretted not going to university.",
-          "text@es": "Yo siempre me he arrepentido de no ir a la universidad.",
+          "text@es": "Yo siempre me he arrepentido de no haber ido a la universidad.",
           "text@de": "Ich habe es immer bereut nicht studiert zu haben.",
           "text@fr": "J'ai toujours regretté de ne pas avoir fait la fac."
         },
         {
           "character": "helper",
           "text@en": "Since I wrote [this memo for you|degrees], I'm not so sure.",
-          "text@es": "Desde que te escribí [este memo|degrees], no estoy tan seguro.",
+          "text@es": "Desde que te escribí [esta memo|degrees], no estoy tan seguro.",
           "text@de": "Aber seitdem ich [dieses Dossier zum Thema Bestechung an Universitäten|degrees] geschrieben habe, bin ich mir da nicht mehr so sicher.",
           "text@fr": "Mais depuis que [j'ai écrit ce mémo|degrees], je ne suis pas sûre."
         }
@@ -2900,7 +2900,7 @@
         {
           "character": "mayor",
           "text@en": "They say it'll increase income now big time - on paper - and reduce it in the future.",
-          "text@es": "Dicen que aumentará de golpe los ingresos ahora - en papel - y los reducirá en el futuro.",
+          "text@es": "Dicen que aumentará de golpe los ingresos actuales- sobre el papel - y los reducirá en el futuro.",
           "text@de": "Er sagt, das wird unsere Einnahmen in diesem Jahr - zumindest auf dem Papier - um ein Vielfaches erhöhen. Allerdings werden dann die späteren Einnahmen verringert.",
           "text@fr": "Il dit que ça augmentera grandement nos ressources aujourd'hui - sur le papier - et diminuera nos revenus plus tard."
         },
@@ -2916,14 +2916,14 @@
         {
           "character": "helper",
           "text@en": "Accounting tricks can get quite technical.",
-          "text@es": "Las tretas contables pueden ser muy complejas.",
+          "text@es": "Los trucos contables pueden ser muy complejos.",
           "text@de": "Diese Buchhaltungstricks sind ziemlich kompliziert.",
           "text@fr": "Ces astuces comptables sont assez techniques."
         },
         {
           "character": "helper",
           "text@en": "Read [this memo to know more|accounting_tricks].",
-          "text@es": "Lee [este memo para saber más |accounting_tricks].",
+          "text@es": "Lee [esta memo para saber más |accounting_tricks].",
           "text@de": "Lesen Sie [um mehr über das Thema zu erfahren|accounting_tricks].",
           "text@fr": "Lisez [ce mémo pour en savoir plus|accounting_tricks]."
         }
@@ -2988,7 +2988,7 @@
             {
               "character": "you",
               "text@en": "It will not really increase our cash flow, it's all virtual.",
-              "text@es": "No va aumentar nuestras cifras de caja, es todo virtual.",
+              "text@es": "No va aumentar el dinero en caja, es todo virtual.",
               "text@de": "Das wird die Einnahmen nicht wirklich erhöhen, es ist eine virtuelle Spielerei.",
               "text@fr": "Cela ne va pas augmenter nos ressources, c'est purement virtuel."
             },
@@ -3030,7 +3030,7 @@
         {
           "character": "lawyer",
           "text@en": "It sucks.",
-          "text@es": "Qué fastidio.",
+          "text@es": "Qué pena.",
           "text@de": "Er verdient etwas Besseres.",
           "text@fr": "Il mérite mieux."
         },
@@ -3046,7 +3046,7 @@
         {
           "character": "helper",
           "text@en": "Hiring relatives is the opposite of sex in high school.",
-          "text@es": "Contratar a parientes es lo contrario al sexo en el instituto.",
+          "text@es": "Contratar a familiares es lo contrario al sexo en el instituto.",
           "text@de": "Familienangehörige einstellen? Da können Sie ja gleich den Papst heiraten!",
           "text@fr": "Embaucher des proches, c'est l'inverse du sexe au lycée."
         },
@@ -3074,7 +3074,7 @@
         {
           "character": "helper",
           "text@en": "Well, [here's the memo I prepared for you|relatives].",
-          "text@es": "Bueno, [te paso el memo que te preparé |relatives].",
+          "text@es": "Bueno, [te paso la memo que te preparé |relatives].",
           "text@de": "Hm... [Zur Vetternwirtschaft erfahren Sie mehr in meinem Dossier|relatives].",
           "text@fr": "Voilà [un mémo sur l'emploi des proches|relatives]."
         }
@@ -3121,14 +3121,14 @@
         },
         {
           "text@en": "Ask Robert Construction Limited to hire him.",
-          "text@es": "Pídele a Construcciones Robert que lo contrate.",
+          "text@es": "Pídele a Construcciones Floriano que lo contrate.",
           "text@de": "Herrn Meinhardt bitten ihn einzustellen.",
           "text@fr": "Demander à Cyril Guillory de l'embaucher.",
           "feedback": [
             {
               "character": "you",
               "text@en": "I will ask my old friend from Robert Construction Limited to hire him.",
-              "text@es": "Le voy a pedir a mi viejo amigo de Construcciones Robert, S.L. que lo contraten.",
+              "text@es": "Le voy a pedir a mi viejo amigo de Construcciones Floriano que lo contraten.",
               "text@de": "Ich werde Herrn Meinhardt bitten, ihm einen Job zu verschaffen.",
               "text@fr": "Je vais demander à mon ami Cyril Guillory de lui trouver un job."
             },
@@ -3232,7 +3232,7 @@
         {
           "character": "helper",
           "text@en": "Here's a [memo on moving to the private sector|door].",
-          "text@es": "Aquí tienes un [memo sobre cómo pasar al sector privado|door].",
+          "text@es": "Aquí tienes una [memo sobre cómo pasar al sector privado|door].",
           "text@de": "Ich habe [ein Dossier zum Thema Personalkarussell|door] zusammengestellt.",
           "text@fr": "Voici [un mémo sur le pantouflage|door]."
         }
@@ -3251,7 +3251,7 @@
             {
               "character": "you",
               "text@en": "Thanks for your offer!",
-              "text@es": "¡Gracias por al oferta!",
+              "text@es": "¡Gracias por la oferta!",
               "text@de": "Danke für Ihre Einladung!",
               "text@fr": "Merci de votre offre !"
             },
@@ -3265,7 +3265,7 @@
             {
               "character": "construction-boss",
               "text@en": "I knew you were the one for the job!",
-              "text@es": "¡Yo sabía que eras el mejor para este trabajo!",
+              "text@es": "¡Sabía que eras el mejor para este trabajo!",
               "text@de": "Ich wusste, dass du die perfekte Kandidatin für den Job bist!",
               "text@fr": "Je savais que tu serais parfaite !"
             },
@@ -3301,7 +3301,7 @@
             {
               "character": "construction-boss",
               "text@en": "I though we were friends. 😢",
-              "text@es": "Yo pensaba que éramos amigos. 😢",
+              "text@es": "Pensaba que éramos amigos. 😢",
               "text@fr": "Et moi qui croyais que nous étions amis. 😢",
               "text@de": "Und ich dachte wir wären Freunde 😢"
             }
@@ -3326,7 +3326,7 @@
         {
           "character": "mayor",
           "text@en": "I'm still not convinced we need it, but what can I do.",
-          "text@es": "Sigo sin creer que la necesitemos, pero qué le voy a hacer.",
+          "text@es": "Sigo sin estar convencido de que la necesitemos, pero qué le voy a hacer.",
           "text@de": "Ich verstehe noch immer nicht wozu wir ein neues Schwimmbad brauchen, aber was geht es mich an.",
           "text@fr": "Je ne sais toujours pas pourquoi on a besoin d'une nouvelle piscine, mais bon."
         },
@@ -3349,7 +3349,7 @@
         {
           "character": "helper",
           "text@en": "Think about me when you work for Gerber!",
-          "text@es": "¡Piensa en mí cuando trabajes para Gerber!",
+          "text@es": "¡Piensa en mí cuando trabajes para Floriano!",
           "text@de": "Vergessen Sie mich nicht, wenn Sie für Meinhardt arbeiten.",
           "text@fr": "Ne m'oubliez pas quand vous travaillerez pour Guillory !"
         },
@@ -3364,7 +3364,7 @@
       "choices": [
         {
           "text@en": "Robert Construction Limited made an offer at 10 million.",
-          "text@es": "Construcciones Robert, S.L. ha hecho una oferta de 10 millones.",
+          "text@es": "Construcciones Floriano, S.L. ha hecho una oferta de 10 millones.",
           "text@de": "Das Angebot der Meinhardt Hoch- u. Tiefbau GmbH in Höhe von 10 Millionen annehmen.",
           "text@fr": "Guillory Construction SARL a fait une offre à 10 million.",
           "var_changes": {
@@ -3375,7 +3375,7 @@
             {
               "character": "you",
               "text@en": "I choose Robert Construction Limited.",
-              "text@es": "Escojo a Construcciones Robert, S.L.",
+              "text@es": "Escojo a Construcciones Floriano, S.L.",
               "text@de": "Ich habe mich für das Angebot von Herrn Meinhardt entschieden.",
               "text@fr": "Je choisis Guillory Construction SARL."
             }
@@ -3407,14 +3407,14 @@
             {
               "character": "construction-boss",
               "text@en": "This is it!",
-              "text@es": "¡Es eso!",
+              "text@es": "¡Esto es demasiado!",
               "text@de": "Jetzt reicht’s !!",
               "text@fr": "C'est est trop !"
             },
             {
               "character": "construction-boss",
               "text@en": "You had it coming!",
-              "text@es": "¡Se veía venir!",
+              "text@es": "¡Te lo has buscado!",
               "text@de": "Du hast es verdient!",
               "text@fr": "Ça te pendait au nez !"
             }
@@ -3455,7 +3455,7 @@
         {
           "character": "helper",
           "text@en": "My [memo on cartels|cartel] is still fresh.",
-          "text@es": "Mi [memo sobre cárteles |cartel] aún me sirve.",
+          "text@es": "Mi [memo sobre cárteles |cartel] aún te sirve.",
           "text@de": "Mein [Dossier zum Kartell|cartel] ist noch immer aktuell.",
           "text@fr": "Mon [mémo sur les cartels|cartel] est toujours à jour."
         }
@@ -3473,7 +3473,7 @@
         },
         {
           "text@en": "Robert Construction Limited made an offer at 600,000.",
-          "text@es": "Construcciones Robert, S.L. ha hecho una oferta de 620.000.",
+          "text@es": "Construcciones Floriano, S.L. ha hecho una oferta de 620.000.",
           "text@de": "Das Angebot der Meinhardt Hoch- u. Tiefbau GmbH liegt bei 600.000 .",
           "text@fr": "Guillory Construction SARL a fait une offre à 600 000.",
           "var_changes": {
@@ -3511,7 +3511,7 @@
         "min": 2
       },
       "text@en": "<h2>Busted: You lost!</h2><p>You managed to have good relations with the contractors while remaining popular. The mayor likes you, but the anticorruption police charged you with misapropriation of public funds. Relax, you probably won't go to prison, but the mayor demands that you resign.</p>",
-      "text@es": "<h2>Te ha pillado: ¡Has perdido!</h2><p>Conseguiste tener buenas relaciones con los contratistas y mantener tu popularidad. Le gustas al alcalde, pero la unidad anticorrupción te acusa de misapropriation de fondos públicos. Relájate, probablemente no irás a la cárcel, pero el alcalde te pide que dimitas.</p>",
+      "text@es": "<h2>Te han pillado: ¡Has perdido!</h2><p>Conseguiste tener buenas relaciones con los contratistas y mantener tu popularidad. Le gustas al alcalde, pero la unidad anticorrupción te acusa de malversación de fondos públicos. Relájate, probablemente no irás a la cárcel, pero el alcalde te pide que dimitas.</p>",
       "text@de": "<h2>Sie haben verloren!</h2><p>Gegen Sie wurde ein Ermittlungsverfahren eingeleitet. Sie haben zwar gute Beziehungen zur Bürgermeisterin und zu den Industriellen aufgebaut, aber die Finanzbehörde ermittelt gegen Sie wegen Veruntreuung öffentlicher Gelder. Kein Grund zur Panik, Sie werden mit hoher Wahrscheinlichkeit nicht im Gefängnis landen. Aber die Bürgermeisterin verlangt Ihren Rücktritt.</p>",
       "text@fr": "<h2>Perdu: Vous êtes mise en examen !</h2><p>Vous avez entretenu de bonnes relations avec le maire et avec les industriels, mais un enquêteur du parquet financier vous inculpe dans une affaire de détournement de fonds publics. Pas de panique, vous n'irez sans doute pas en prison. Mais la maire exige votre démission.</p>"
     },
@@ -3521,7 +3521,7 @@
         "min": 2
       },
       "text@en": "<h2>Career change: You lost!</h2><p>Public work contractors told the mayor's office that they could not work with you. You are being reassigned to the Parks and Gardens department. How great that you can work outside now!</p>",
-      "text@es": "<h2>Cambio de carrera: ¡Has perdido!</h2><p>Los contratistas de trabajos públicos le dijeron a la alcaldía que no trabajarían contigo. Te han reubicado al Departamento de Parques y Jardines. ¡Es genial que por fin puedas trabajar en el exterior!</p>",
+      "text@es": "<h2>Cambio de carrera: ¡Has perdido!</h2><p>Los constructores le han dicho a la alcaldesa que no trabajarán contigo. Te han reubicado al Departamento de Parques y Jardines. ¡Es genial que por fin puedas trabajar en el exterior!</p>",
       "text@de": "<h2>Sie haben verloren!</h2><p> Sie haben zwar gute Beziehungen zur Bürgermeisterin und der Polizei aufgebaut, aber Ferdinand Meinhardt verlangt Ihren Rücktritt. Er sagt, mit Ihnen könne man einfach nicht zusammenarbeiten. Die Bürgermeisterin hat sie in das Grünflächenamt versetzt. Wie schön, an der frischen Luft arbeiten zu dürfen!</p>",
       "text@fr": "<h2>Perdu: Vous changez de poste !</h2><p>Vous avez entretenu de bonnes relations avec le maire et avec la police, mais Guillory réclame votre départ. Il dit qu'il ne peut pas travailler avec vous. La maire vous mute aux Parcs et Jardins. Quelle joie de travailler au grand air !</p>"
     },
@@ -3531,7 +3531,7 @@
         "min": 1
       },
       "text@en": "<h2>New career: You won!</h2><p>Robert Construction Limited makes you an offer you can't refuse, if only to ensure the financial well-being of your spouse and children. Bye-bye, public sector! Hello, business!</p>",
-      "text@es": "<h2>Nueva carrera: ¡Has ganado!</h2><p>Construcciones Robert, S.L. te hace una oferta que no puedes rechazar, aunque sólo sea para garantizar el bienestar financiero de tu esposa e hijos. ¡Adiós sector público!¡Hello business!</p>",
+      "text@es": "<h2>Nueva carrera: ¡Has ganado!</h2><p>Construcciones Floriano, S.L. te hace una oferta que no puedes rechazar, aunque sólo sea para garantizar el bienestar financiero de tu esposa e hijos. ¡Adiós sector público!¡Hola negocios!</p>",
       "text@de": "<h2>Sie haben gewonnen!</h2><p> Sie machen Karriere! Ferdi Meinhardt macht Ihnen ein Angebot, das Sie nicht ausschlagen können. Tschüss, öffentlicher Sektor! Und: Hallo, Privatwirtschaft!</p>",
       "text@fr": "<h2>Gagné: Nouvelle carrière !</h2><p>Cyril Guillory vous fait une proposition qui ne se refuse pas. Au revoir, secteur public! Bonjour, secteur privé !</p>"
     },
@@ -3549,7 +3549,7 @@
       "title@de": "Was sind die Merkmale eines Kartells?",
       "title@fr": "Comment détecter un cartel ?",
       "body@en": "Cartels appear when contractors coordinate their offers. You can spot it when the prices of the offers to a public tender are close to one another.<br><br>Contractors agree who will have the lowest price and win the bid. The winner then pays off other members of the cartel.<br><br>Sometimes, a contractor leaves the cartel and makes a lower offer. It can be dangerous.",
-      "body@es": "",
+      "body@es": "Los carteles se crean cuando los contratistas pactan sus ofertas. Puedes darte cuenta de ello porque las ofertas suelen estar muy cercanas entre sí.<br><br>Los contratistas se ponen de acuerdo sobre quién ofrecerá el precio más bajo y ganará la oferta. El ganador paga reparte el dinero entre los otros miembros del cartel.<br><br>A veces, un contratista deja el cartel y hace una oferta aun más baja.",
       "body@de": "Kartelle entstehen, wenn Auftragnehmer ihre Angebot koordinieren. Sollten sich die Preise der Angebote stark ähneln, kann dies ein Hinweis auf eventuelle Absprachen der Unternehmen sein.<br><br>Die Auftragnehmer handeln gemeinsam aus, wer das günstigste Angebot abgeben wird. Der Auftragnehmer, der den Zuschlag erhält, zahlt dann einen Teil des Gewinns an die übrigen Mitglieder des Kartells.<br><br> Es kann jedoch auch vorkommen, dass ein Auftragnehmer das Kartell verlässt und dem Auftraggeber ein günstigeres Angebot unterbreitet. Das kann dann gefährlich werden.",
       "body@fr": "Un cartel apparait quand les candidats à un appel d'offre s'entendent entre eux. Vous pouvez les détecter si les prix des offres se suivent et sont proches les uns des autres.<br><br>Les industriels peuvent s'entendre sur celui qui proposera le prix le plus bas et gagnera l'appel d'offre. Le gagnant paye ensuite les autres membres du cartel. Le cartel fait une rotation entre les entreprises, afin que chaque membre du cartel gagne un peu.<br><br>Parfois, un des membres du cartels fait cavalier seul et fait une offre plus basse. Ça devient dangereux pour lui."
     },
@@ -3559,7 +3559,7 @@
       "title@de": "Zum Verhalten bei Geschenken",
       "title@fr": "Comment réagir aux cadeaux ?",
       "body@en": "Public officials are usually prohibited from accepting gifts above a certain value (€50 at the European Commission, for instance). However, you can accept the gift if it is intended for you as a private person, or for your spouse. By refusing a gift, you risk angering the person who made it.",
-      "body@es": "",
+      "body@es": "Normalmente se prohíbe que los funcionarios públicos puedan aceptar regalos por encima de un determinado valor (en la Comisión Europea es de 50€, por ejemplo). Sin embargo, puedes aceptar un regalo si es para ti a nivel personal -o para tu cónyuge. Si rechazas un regalo, corres el riesgo de hacer enfadar a la persona que te lo ha hecho.",
       "body@de": "Beamten ist es normalerweise verboten, Geschenke oberhalb eines bestimmten Grenzwertes anzunehmen (bei der europäischen Kommission etwa liegt dieser Wert bei 50€). Das heißt, es ist erlaubt ein Geschenk anzunehmen, das an Sie als Privatperson oder an Ihren Lebenspartner adressiert ist. Wenn Sie einen Geschenk ablehnen, kann es den Geschenkgeber ärgern.",
       "body@fr": "Les fonctionnaires n'ont généralement pas le droit d'accepter des cadeaux au delà d'un certain seuil (50€ à la Commission Européenne, par exemple). Cela dit, vous pouvez accepter le cadeau s'il vous est adressé à vous personnellement, et non pas à vous en tant que fonctionnaire. Ou bien s'il est fait à votre partenaire. En refusant un cadeau, vous prenez le risque d'offenser celui qui vous l'offre."
     },
@@ -3569,7 +3569,7 @@
       "title@de": "Bestechungen",
       "title@fr": "Comment organiser des pots-de-vin ?",
       "body@en": "Bribery is not as common in Europe as in other parts of the world, but it is rampant is some sectors. In public housing, some officials ask for enveloppes of money to be given directly. For car inspection, some service centers will be pleased if you leave a gift or bills of cash on the passenger seat.<br><br>Read more under <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> at Cooking Budgets.",
-      "body@es": "",
+      "body@es": "Los sobornos en Europa no son tan comunes como en otras partes del mundo, pero están al alza en algunos sectores. En la vivienda pública, algunos funcionarios piden recibir directamente dinero en efectivo para adjudicar un piso. En las inspecciones de vehículos, algunos centros estarán encantados si les dejas un regalo o unos billetes en el asiento del pasahero. Lee más en: <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> at Cooking Budgets.",
       "body@de": "In Europa ist Bestechung nicht so weit verbreitet wie in anderen Regionen der Welt, mit Ausnahme bestimmter Bereiche. Im sozialen Wohungsbau oder bei Fahrzeuguntersuchungen sind Bestechungen durchaus üblich.<br><br>Mehr zum Thema erfahren Sie unter <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> von Cooking Budgets.",
       "body@fr":"Les bakchichs ne sont pas aussi fréquents en Europe que dans d'autres régions du monde, à l'exception de certains secteurs. Pour déterminer qui obtient un logement social, certains fonctionnaires n'hésitent pas à demander des enveloppes d'argent de la main à la main. Pour passer le contrôle technique automobile, certains centres de contrôle ferment les yeux en échange d'un cadeau sur le siège passager.<br><br>Lisez <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> [en anglais] sur Cooking Budgets pour en savoir plus."
     },
@@ -3579,7 +3579,7 @@
       "title@de": "Korruption bei Grundstücksverkäufen",
       "title@fr": "La corruption dans les ventes immobilières",
       "body@en": "Cities often own large plots of land. They can either sell them at market prices or at lower prices, to make a gift to the buyer. It is usually hard to spot such transactions, because there isn't much of a market for big sales of land in a city.",
-      "body@es": "",
+      "body@es": "Las ciudades a menudo poseen grandes terrenos. Pueden venderlos a precio de mercado o a un precio más bajo, para hacer un favor al comprador. Por lo general, es complejo detectar estas transacciones, porque no hay mucho espacio para grandes ventas de terrenos en una ciudad.",
       "body@de": "Städte sind häufig im Besitz großer Grundstücke und Immobilien. Diese können zu Marktpreisen verkauft werden oder aber zu günstigeren Konditionen, etwa um für potentielle Käufer zusätzliche Anreize zu schaffen. Solche Gefallen sind äußerst schwierig aufzudecken, denn häufig gibt es gar keinen Markt für zumeist große Gebäude oder Grundstücke im Stadtzentrum. Es fällt daher entsprechend schwer den Marktpreis zu bestimmen.",
       "body@fr": "Les villes possèdent souvent des terrains et des immeubles. Ces biens peuvent être vendus au prix du marché ou à des prix plus bas, pour faire un cadeau à l'acheteur. Il est fort difficile d'identifier ces transactions frauduleuses car, le plus souvent, il n'existe pas vraiment de marché pour un immeuble entier ou un grand terrain en centre ville."
     },
@@ -3589,7 +3589,7 @@
       "title@de": "Interessenkonflikt",
       "title@fr": "Conflits d'intérêts",
       "body@en": "People in politics or in the administration can own companies that receive public contracts. In some countries, it is forbidden for companies owned by public servants or politiciants to receive money from public contracts.",
-      "body@es": "",
+      "body@es": "Quienes trabajan en política o en la administración pública pueden poseer compañías que reciban contratos públicos. En algunos países, sin embargo, está prohibido que participen en licitaciones públicas.",
       "body@de": "Beamte und Politiker können Firmen besitzen, die von öffentlichen Ausschreibungen profitieren. In bestimmten Ländern ist es zwar verboten, dass eine Firma, die einem Politiker gehört, öffentliche Aufträge annimmt. Das kann jedoch mit Hilfe einer Strohfirma recht einfach umgangen werden.",
       "body@fr": "Des élus ou des fonctionnaires peuvent posséder des entreprises qui bénéficient de contrats publics. Dans certains pays, ce mélange des genres est interdit, mais le bénéficiaire final d'une société peut toujours être masqué par un prête-nom ou par une société-écran."
     },
@@ -3599,7 +3599,7 @@
       "title@de": "Kreditkarten im öffentlichen Sektor",
       "title@fr": "Utiliser la carte bleue officielle",
       "body@en": "It can be tempting to use the credit card of the city or the government to buy stuff for you. Because it's very easy to trace, it can be dangerous!<br><br>Read more under <a href='http://www.cookingbudgets.com/the-credit-card/' target='_blank'>The Credit Card</a> at Cooking Budgets.",
-      "body@es": "",
+      "body@es": "Puede ser tentador utilizar la tarjeta de crédito de la ciudad o del gobierno para compras personales. Pero es muy peligroso, ya que es deja siempre un rastro. Lee más en <a href='http://www.cookingbudgets.com/the-credit-card/' target='_blank'>The Credit Card</a> en Cooking Budgets. ",
       "body@de": "Eine Kreditkarte, die direkt mit der Staatskasse verbunden ist, kann schon verführerisch sein. Da aber die damit getätigten Einkäufe sehr leicht nachverfolgt werden können, birgt sie auch ihre Gefahren!<br><br>Mehr zum Thema finden Sie unter <a href='http://www.cookingbudgets.com/the-credit-card/' target='_blank'>The Credit Card</a> von Cooking Budgets.",
       "body@fr":"On peut être tenté d'utiliser la carte bleue de sa mairie ou de son gouvernement pour faire ses courses. Mais comme les dépenses en carte sont très faciles à tracer, cela peut être dangereux!<br><br>Lisez <a href='http://www.cookingbudgets.com/the-credit-card/' target='_blank'>The Credit Card</a> [en anglais] sur Cooking Budgets pour en savoir plus."
     },
@@ -3609,7 +3609,7 @@
       "title@de": "Politische Werbung durch den Einsatz öffentlicher Gelder",
       "title@fr": "La communication politique sur fonds publics",
       "body@en": "Politicians can control public companies, either directly or through patronage networks. They might require them to buy advertising in newspapers that advertise their performance as a politician and not the company itself. It's very hard for prosecutors to prove that the advertising was not done in the interest of the company.<br><br>Read more under <a href='http://www.cookingbudgets.com/ads/' target='_blank'>Ads, ads, ads</a> at Cooking Budgets.",
-      "body@es": "",
+      "body@es": "Los políticos pueden controlar empresas públicas, directamente o a través de redes de patrocinio. Pueden pedirles que adquieran publicidad en los periódicos para publicitar su labor como político en lugar del trabajo de la empresa. Es muy difícil para una fiscalía demostrar que los anuncios no se hicieron en el interés de la compañía.",
       "body@de": "Politiker können ihren Einfluß auf öffentliche Organisationen und Firmen und Firmen sowohl direkt als auch durch sogenannten Klientelismus ausüben. So können Sie etwa von Firmen verlangen Werbung für Sie zu machen. Für den Staatsanwalt ist es dabei äußerst schwierig nachzuweisen, dass die Firma nicht aus Eigeninteresse handelt.<br><br>Mehr zum Thema finden Sie unter <a href='http://www.cookingbudgets.com/ads/' target='_blank'>Ads, ads, ads</a> von Cooking Budgets.",
       "body@fr": "Les élus peuvent contrôler des sociétés publiques, soit directement, soit via des liens de clientélisme. Ils peuvent demander à ces sociétés d'acheter des espaces publicitaires dans des journaux pour faire faire leur propre promotion. C'est très difficile pour un procureur de prouver que la publicité était faite dans l'intérêt de l'élu et non pas dans l'intérêt de la société elle-même.<br><br>Lisez <a href='http://www.cookingbudgets.com/ads/' target='_blank'>Ads, ads, ads</a> [en anglais] sur Cooking Budgets pour en savoir plus."
     },
@@ -3619,7 +3619,7 @@
       "title@de": "Die Vermietung öffentlicher Immobilien",
       "title@fr": "Louer des biens publics à des sociétés privées",
       "body@en": "The easiest way to support a private company for a politician is to buy their building with public funds and rent it back to the company at a low price. The operation is hard to trace and fully legal.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-emphyteutic-scam/' target='_blank'>The Emphyteutic Scam</a> at Cooking Budgets.",
-      "body@es": "",
+      "body@es": "La forma más fácil que tiene un político de ayudar una empresa privada es comprar sus edificios con fondos públicos y volver a alquilárselos a un precio más bajo. La operación es difícil de rastrear y totalmente legal. Lee más en <a href='http://www.cookingbudgets.com/the-emphyteutic-scam/' target='_blank'>The Emphyteutic Scam</a> en Cooking Budgets.  ",
       "body@de": "Der einfachste Weg für einen Politiker, eine private Firma zu unterstützen ist, eines ihrer Gebäude zu kaufen, und es anschließend an sie zu vermieten. Solche Operationen sind schwer nach zu verfolgen und völlig legal.<br><br>Mehr zum Thema finden Sie unter <a href='http://www.cookingbudgets.com/the-emphyteutic-scam/' target='_blank'>The Emphyteutic Scam</a> von Cooking Budgets.",
       "body@fr": "L'une des manières les plus simples pour un élu ou un fonctionnaire de subventionner une société privée est de lui acheter un bien immobilier puis de la lui louer à un très bas prix. L'opération est complexe à tracer et complètement légale.<br><br>Lisez <a href='http://www.cookingbudgets.com/the-emphyteutic-scam/' target='_blank'>The Emphyteutic Scam</a> [en anglais] sur Cooking Budgets pour en savoir plus."
     },
@@ -3629,7 +3629,7 @@
       "title@de": "Scheinaufträge",
       "title@fr": "Les faux contrats publics",
       "body@en": "It can happen that contracts are passed to renovate a place or a road that does not exist. It can be risky, because it is easy to prove the contract is bogus.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-invisible-public-work/' target='_blank'>The Invisible Public Work</a> at Cooking Budgets.",
-      "body@es": "",
+      "body@es": "Puede ocurrir que se convoquen licitaciones para renovar una plaza o una calle que no existen. Es arriesgado, porque es fácil demostrar que el contrato es falso. <br><br>Lee más en  <a href='http://www.cookingbudgets.com/the-invisible-public-work/' target='_blank'>The Invisible Public Work</a>en Cooking Budgets. ",
       "body@de": "Manchmal kommt es vor, dass Aufträge vergeben werden, um nicht-existierende Straßen zu renovieren oder eine Software zu aktualisieren, die gar nicht genutzt wird. Das ist jedoch ausnahmsweise recht leicht nachzuweisen und daher riskant.<br><br>Mehr zum Thema finden Sie unter <a href='http://www.cookingbudgets.com/the-invisible-public-work/' target='_blank'>The Invisible Public Work</a> von Cooking Budgets.",
       "body@fr": "Il arrive parfois que des administrations passent des appels d'offres pour rénover des routes qui n'existent pas ou pour mettre à jour des logiciels fantômes. C'est risqué, car il est facile de prouver que le contrat est un faux.<br><br>Lisez <a href='http://www.cookingbudgets.com/the-invisible-public-work/' target='_blank'>The Invisible Public Work</a> [en anglais] sur Cooking Budgets pour en savoir plus."
     },
@@ -3639,7 +3639,7 @@
       "title@de": "Öffentlich-Private Partnerschaften",
       "title@fr": "Les partenariats public-privé",
       "body@en": "Since the 1980's, it is popular for public administrations to do public-private partnerships. Such partnerships involve a private company doing some of the work, usually building a equipment or operating it, while the administration contributes to the costs. In exchange, the private company can keep the revenues of the equipment it built.<br><br>The goal was to allow public administrations to provide public services without spending much money. In practice, private companies take almost no risks with such contracts and public administrations end up paying as much as they would have without the partnership. But it is usually hidden in the accounts of the public administration.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-public-private-partnership/' target='_blank'>The Public-Private Partnership</a> at Cooking Budgets.",
-      "body@es": "",
+      "body@es": "Desde los años '80 es común ver asociaciones público-privadas. Este tipo de colaboración suele implicar que la compañía privada hace una parte del trabajo, como construir equipamiento o gestionarlo, mientras la administración se encarga de los costes. En cambio, la empresa privada se queda con los beneficios de lo que ha construido o de lo que gestiona. El objetivo original era de permitir que las administraciones públicas ofrecieran servicios públicos sin gastar dinero. En la práctica, las empresas privadas no asumen ningún riego en este tipo de contratos, mientras la administración acaba pagando lo mismo que habría pagado sin la asociación. Pero todo suele quedar escondido en las cuentas públicas. Lee más en <a href='http://www.cookingbudgets.com/the-public-private-partnership/' target='_blank'>The Public-Private Partnership</a> en Cooking Budgets. ",
       "body@de": "Seit den 80er-Jahren sind die sogenannten Öffentlich-Private Partnerschaften (ÖPP) in Mode. Dahinter steckt die Idee, dass private Firmen die Kosten und das Risiko eines Projekts mit dem öffentlichen Sektor teilen. Dafür bekommen die Firmen einen Teil der Einnahmen des Projekts zurückerstattet.<br><br> Das Ziel dabei ist, dass der öffentliche Sektor ohne finanziellen Mehraufwand höhere Investitionen tätigen kann. Tatsächlich gehen private Firmen aber ohnehin fast kein Risiko ein, weil sie vom öffentlichen Sektor entsprechende Garantien verlangen. Im Endeffekt zahlt der öffentliche Sektor daher oft mehr als er ohne die ÖPP gezahlt hätte.<br><br>Mehr zum Thema finden Sie unter <a href='http://www.cookingbudgets.com/the-public-private-partnership/' target='_blank'>The Public-Private Partnership</a> von Cooking Budgets.",
       "body@fr": "Depuis les années 1980, les partenariats public-privé sont à la mode. Un tel partenariat implique qu'une société privée réalise un investissement, en général la construction d'un équipement public (route, stade, pont). En échange, la société privée peut garder tout ou partie des revenus d'exploitation de l'équipement.<br><br>L'objectif était que les administrations puissent investir dans de nouveaux équipements sans rien payer. En réalité, les administrations s'engagent souvent à payer un loyer à la société privée, dont le montant total dépasse la valeur de l'investissement ! Comme ces loyers sont étalés dans le temps, on ne voit pas que le partenariat public-privé a en fait coûté plus cher à la collectivité qu'un investissement traditionnel.<br><br>Lisez <a href='http://www.cookingbudgets.com/the-public-private-partnership/' target='_blank'>The Public-Private Partnership</a> [en anglais] sur Cooking Budgets pour en savoir plus."
     },
@@ -3649,7 +3649,7 @@
       "title@de": "Liberalisierung und Privatisierung",
       "title@fr": "Libéralisation et privatisation",
       "body@en": "Public administrations have transfered a lot of their competencies to private companies, either via public-private partnerships or via deregulation. It offers a lot of opportunities for conflicts of interests.<br><br>It is hard to know how much a service costs to the city because it can involve people from different departments (e.g some municipal employees can work for the trash collection one day and for another department the next). To do such estimates would require analytical accounting, which cities rarely do.",
-      "body@es": "",
+      "body@es": "Las administraciones públicas han transferido muchas de sus competencias a empresas privadas, ya sea a través de asociaciones público-privadas o mediante la desregulación. Esto abre la puesta a mucho conflictos de intereses. Es difícil saber cuánto un servicio cuesta a una ciudad por el hecho de involucrar a personas de diferentes departamentos (por ejemplo, algunos empleados municipales pueden trabajar en la recogida de basura un día y por otro departamente el siguiente). Para hacer este cálculo harían falta analizar a fondo las cuentas, cosas que los ayuntamientos rara vez hacen.",
       "body@de": "Die Regierungen haben viele Kompetenzen an private Unternehmen übertragen, sei es durch öffentlich-private Partnerschaften oder durch das Outsourcing von Dienstleistungen. Doch jede Interaktion mit einem privaten Unternehmen birgt die Gefahr von Interessenkonflikten.<br><br>Es ist äußerst schwierig für die Städtische Verwaltung herauszufinden wie viel eine Dienstleistung kostet und ob die von den privaten Dienstleitern in Rechnung gestellten Kosten angemessen sind. Präzise Kalkulationen setzen eine analytische Buchführung voraus, die von den Städten nur selten durchgeführt wird.",
       "body@fr": "Les administrations publiques ont transféré de nombreuses compétences à des sociétés privées, que ce soit via des partenariats public-privé ou via l'externalisation de services. Chaque interaction avec une société privée offre de nouvelles possibilités de conflits d'intérêts.<br><br>Il est difficile pour une ville de savoir combien un service coûte et de comparer ce coût avec le prix payé à une société privée, car la fourniture d'un service public implique souvent plusieurs départements (par exemple, un employé municipal peut travailler à la collecte des ordures un jour et aux jardins un autre jour). Faire de telles estimations nécessite une comptabilité analytique, ce que les villes font rarement."
     },
@@ -3659,7 +3659,7 @@
       "title@de": "Das Kleingedruckte",
       "title@fr": "Le détail des contrats publics",
       "body@en": "Building contracts usually involve a series of clauses, such as penalties for delays. However, the client (in this case, the city) must activate the clause, or, if the contractor refuses to pay, take it to court. Legal teams are used to such situations, but for a small administration, or in case of politically sensitive issues, it is easy to ignore some clauses in the contract.",
-      "body@es": "",
+      "body@es": "Los contratos de construcción generalmente incluyen una serie de cláusulas, como por ejemplo las sanciones por retrasos. Sin embargo, el cliente (en este caso, la ciudad) debe activar la cláusula, o, si el contratista se niega a pagar, llevarle a juicio. Los equipos legales están acostumbrados a estas situaciones, pero para una administración pequeña, o en caso de asuntos políticamente delicados, es fácil ignorar algunos detalles del contrato.",
       "body@de": "Bauverträge enthalten normalerweise eine Vielzahl von Klauseln, wie z.B. den Verspätungszuschlag. Der Auftraggeber (in diesem Fall, die Stadt) sollte diese Klausel berücksichtigen und wenn der Auftragnehmer nicht zahlt, einen entsprechenden Prozess anstreben. Rechtsabteilungen von privaten Firmen sind an das Prozedere gewöhnt, aber kleineren Städten fehlen häufig die Ressourcen für eine Schadensersatzklage. Auch im Fall politisch sensibler Themen ist eine Klage häufig zu riskant und das Anliegen wird lieber unter den Tisch gekehrt.",
       "body@fr": "Les contrats de construction publique ont en général de nombreuses clauses, comme des pénalités de retard. Pour qu'elles prennent effet, le client (en l'occurence, la ville), doit activer la clause, ou, si l'industriel refuse de payer, l'assigner en justice. Ces situations sont normales pour des équipes de juristes aguérris, mais, pour des petites villes, ou sur des sujets politiquement sensibles, il est plus facile de les ignorer."
     },
@@ -3669,7 +3669,7 @@
       "title@de": "Der Verkauf von Universitätsdiplomen",
       "title@fr": "La vente de diplômes",
       "body@en": "The sale of university degree is not uncommon in Europe. As with any story of corruption, people have an incentive to keep silent, because it would make the whole university look bad if it became news.<br><br>Read more under <a href='http://www.cookingbudgets.com/grilled-degrees/' target='_blank'>The Grilled Degrees</a> at Cooking Budgets.",
-      "body@es": "",
+      "body@es": "La venta de títulos universitarios no es infrecuente en Europa. Al igual que con cualquier asunto de corrupción, la gente tiene un incentivo para guardar silencio, porque, al convertirse en noticia, tendría repercusiones negativas sobre toda la universidad. <br> <br> Lee más en <a href = 'http: //www.cookingbudgets .com / grilled-degrees / 'target =' _ blank '> The Grilled Degrees </a> en Cooking Budgets.",
       "body@de": "Der Handel mit Hochschulzugangsberechtigungen ist in Europa nichts Ungewöhnliches. Wie seit jeher in der Geschichte der Korruption, haben die beteiligten Personen ein außerordentliches Interesse daran über die Sache Stillschweigen zu bewahren, um ihre eigene und die Reputation der Hochschule zu wahren. Es liegt ein Band des Schweigens über den ehren Mauern der Universitäten. Der Handel mit akademischen Titeln ist daher nur sehr schwer aufzudecken.<br><br>Mehr zum Thema finden Sie unter <a href='http://www.cookingbudgets.com/grilled-degrees/' target='_blank'>The Grilled Degrees</a> von Cooking Budgets.",
       "body@fr": "La vente de diplômes et la vente du droit d'entrée à l'université ne sont pas rares en Europe. Comme toujours dans les histoires de corruption, les personnes impliquées ont intérêt à garder le silence car c'est la réputation de toute l'université qui serait impactée si un scandale devait voir le jour. Lisez <a href='http://www.cookingbudgets.com/grilled-degrees/' target='_blank'>The Grilled Degrees</a> [en anglais] sur Cooking Budgets pour en savoir plus."
     },
@@ -3679,7 +3679,7 @@
       "title@de": "Buchhaltungstricks",
       "title@fr": "Astuces comptables",
       "body@en": "Contrary to popular belief, accounting is very flexible. It has to be flexible, because it needs to honestly represent the financial situation of an institutions and specific situations can be very different from one another.<br><br>One trick consists in considering that all future revenues from a specific revenue stream are actually just one big sum of money that can be accounted for as a lump sum, even if it is paid later.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-capitalized-rents/' target='_blank'>The Capitalized Rents</a> at Cooking Budgets.",
-      "body@es": "",
+      "body@es": "Contrariamente a lo que se suele pensar, la contabilidad es muy flexible. Tiene que ser flexible, ya que necesita representar honestamente la situación financiera de las instituciones y estas pueden ser muy diferentes entre sí. Un truco consiste en considerar que todos los ingresos futuros de un determinado flujo de son en realidad sólo una gran suma de dinero que se puede contabilizar como tal, incluso si se paga más tarde. Lee más en <br> <br><a href='http://www.cookingbudgets.com/the-capitalized-rents/' target='_blank'>The Capitalized Rents</a> en Cooking Budgets.",
       "body@de": "Entgegen der landläufigen Meinung ist die Buchhaltung eine recht flexible Angelegenheit. Ja sie muss sogar flexibel sein, um sich an die jeweils spezifische Situation einer Organisation anpassen zu können. Doch kann diese Flexibilität ebenso gut missbraucht werden.<br><br>Ein Buchhalter kann beispielsweise alle zukünftigen Einnahmen aus einem Objekt als Einmalzahlung verbuchen. Das ist manchmal legitim, etwa wenn Aktien verkauft werden. Bei Mieteinnahmen aus Sozialwohnungen ist dieses Prozedere hingegen unzulässig.<br><br>Mehr zum Thema finden Sie unter <a href='http://www.cookingbudgets.com/the-capitalized-rents/' target='_blank'>The Capitalized Rents</a> von Cooking Budgets.",
       "body@fr": "Contrairement à une idée reçue, la comptabilité est très flexible. Elle doit être flexible car elle doit s'adapter à la situation de chaque institution. Cette flexibilité peut être utilisée à mauvais escient.<br><br>Une astuce comptable consiste à considérer que tous les revenus futurs d'un bien en location ne sont en fait qu'une seule somme d'argent qui peut être comptabilisée d'un coup, même si elle sera payée dans le futur.<br><br>Lisez <a href='http://www.cookingbudgets.com/the-capitalized-rents/' target='_blank'>The Capitalized Rents</a> [en anglais] sur Cooking Budgets pour en savoir plus."
     },
@@ -3689,7 +3689,7 @@
       "title@de": "Vetternwirtschaft",
       "title@fr": "Embaucher des proches",
       "body@en": "In some countries, it is forbidden to hire a relative as an assistant. While it might not be a legal risk (after all, your spouse might be the most qualified person for a job), it is a political one. It is safer to ask one of the companies you're in friendly terms with to do the hire (you can then award a public contract to the company in question to finance the new position).",
-      "body@es": "",
+      "body@es": "En algunos países está prohibido está prohibido contratar a un familiar como asistente. Aunque puede no ser un riesgo legal (al fin y al cabo, tu pareja puede ser la persona más cualificada para un determinado puesto), sí es un asunto delicado desde el punto de vista político. Es más fácil pedir que le contraten a alguna de las compañías con las que te llevas bien (luego podrás adjudicar un contrato público a la empresa en cuestión para financiar ese nuevo puesto). ",
       "body@de": "In mänchen Ländern ist es der öffentlichen Verwaltung untersagt Familienangehörige einzustellen. Selbst wenn es kein juristisches Risiko birgt (ihr Partner kann der Beste für den Job sein), so besteht ein politisches Restrisiko. Um Ihre Verwandten zu versorgen tun Sie besser daran bei einer Ihnen wohlgesonnenen Firma anzufragen. Zum Dank können Sie der Firma einen Auftrag erteilen, so dass die für die neue Stelle benötigten Gelder rasch zur Verfügungen stehen.",
       "body@fr":"Dans certains pays, il est interdit d'embaucher des proches en tant qu'assistant. Quand bien même il n'y aurait pas de risque légal (après tout, votre partenaire peut être le plus qualifié pour le job), cela reste un risque politique. Pour caser vos proches, il vaut mieux demander à une société avec laquelle vous êtes en bons termes de l'embaucher (vous pouvez ensuite donner un contrat public à cette société pour financer le nouveau poste qu'elle a du créer)."
     },
@@ -3699,7 +3699,7 @@
       "title@de": "Das Stellenkarussell",
       "title@fr": "Le pantouflage",
       "body@en": "After a career in the administration, public officials can be invited to work in the private sectors. Their contacts and their in-depth knowledge of how an administration works are very valuable for a private company. Sometimes, the promise of having a plump job is enough to convince a public official to take a decision in favor of a private company.<br><br>Read more under <a href='http://www.cookingbudgets.com/the-revolving-door/' target='_blank'>The Revolving Door</a> at Cooking Budgets.",
-      "body@es": "",
+      "body@es": "Después de una carrera en la administración, los funcionarios públicos pueden ser invitados a trabajar en los sectores privados. Sus contactos y su profundo conocimiento de cómo funciona una administración son muy valiosos para una empresa privada. A veces, la promesa de tener un trabajo bien remunerado es suficiente para convencer a un funcionario público a tomar una decisión a favor de una empresa privada.<br><br>Lee más en <a href='http://www.cookingbudgets.com/the-revolving-door/' target='_blank'>The Revolving Door</a> en Cooking Budgets.",
       "body@de": "Im Anschluss an eine Karriere im öffentlichen Sektor werden hohen Beamten häufig Stellen in der Privatwirtschaft angeboten. Ihre Kontakte und ihr Fachwissen werden dort sehr geschätzt. Und manchmal genügt schon ein in Aussicht gestellter hoher Posten, um einen Beamten ausreichend zu beeinflussen noch während seiner Amtszeit Entscheidungen zu treffen, die dem Unternehmen zu Gute kommen.<br><br>Mehr zum Thema finden Sie unter <a href='http://www.cookingbudgets.com/the-revolving-door/' target='_blank'>The Revolving Door</a> von Cooking Budgets.",
       "body@fr": "Après une carrière dans l'administration publique, certains fonctionnaires sont invités à travailler dans le secteur privé. Leurs contacts et leur connaissance du fonctionnement de l'administration sont très utiles à une société privée. Parfois, la promesse de recevoir un poste bien doté suffit à convaincre un élu ou un fonctionnaire de prendre une décision favorable à cette société privée.<br><br>Lisez <a href='http://www.cookingbudgets.com/the-revolving-door/' target='_blank'>The Revolving Door</a> [en anglais] sur Cooking Budgets pour en savoir plus."
     }
