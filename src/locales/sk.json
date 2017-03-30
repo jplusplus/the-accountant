@@ -1,0 +1,51 @@
+{
+  "app": {
+    "title": "Dobrák, zloduch a účtovník",
+    "url": "https://jplusplus.github.io/the-accountant/",
+    "description": "Dokážete riadiť mesto bez toho, aby ste sa nechali zlákať na zlé chodníčky? Otestujte sa a zahrajte si hru Dobrák, zloduch a účtovník.",
+    "image": "https://jplusplus.github.io/the-accountant/images/share-en.png",
+    "share": {
+      "tweet": {
+        "via": "jplusplus_",
+        "text": "Ako dlho sa udržíte na skorumpovanej radnici? Vyskúšajte svoje šťastie."
+      }
+    }
+  },
+  "main": {
+    "back": "Späť do hry",
+    "intro": {
+      "heading": "Dobrák, zloduch<br /> a účtovník",
+      "meta": "— od <a href='http://jplusplus.org' target='_blank'>Journalism++</a>",
+      "description": "<p>Ste riaditeľom finančného odboru veľkého mesta. Ak si chcete udržať miesto a uskutočniť svoje zámery, budete musieť balansovať na hrane medzi tým, čo je ešte morálne a čo je už korupcia. Nech sa deje čokoľvek, nedovoľte, aby vás pristihli!</p><p>Všetky príbehy vychádzajú zo skutočnej udalosti v zahraničí.</p>",
+      "new-game": "Spustiť novú hru",
+      "continue": "Pokračovať"
+    },
+    "steps": {
+      "undo": "Vrátiť  <span class='hidden-xs-down'>poslednú akciu</span>",
+      "over": {
+        "undo": "Vrátiť sa o krok späť",
+        "again": "Hrať znova",
+        "share": "Spreneverili ste sumu <a ui-sref='main.vars'>{{amount}} v rokoch {{years}}</a>. Vyzvite priateľov, aby vás prekonali!"
+      }
+    },
+    "toolbar": {
+      "heading": "Dobrák, zloduch<br /> a účtovník",
+      "links": {
+        "chats": "Konverzácie",
+        "hints": "Tipy a rady",
+        "indicators": "Indikátory",
+        "about": "O hre"
+      },
+      "share": {
+        "label": "Zdieľať",
+        "twitter": "Zdieľajte na Twitteri",
+        "facebook": "Zdieľajte na Facebooku",
+        "reddit": "Zdieľajte na Reddite"
+      }
+    },
+    "hints": {
+      "none": "Zatiaľ nemáte žiadne tipy a rady",
+      "description": "V priebehu hry získavate tipy a rady"
+    }
+  }
+}
