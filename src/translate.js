@@ -8,19 +8,19 @@ module.exports.translateConfig = function translateConfig($translateProvider, tm
       prefix: 'locales/',
       suffix: '.json'
     })
-    .registerAvailableLanguageKeys(['en', 'fr', 'de', 'es', 'sk'], {
-      'en_US': 'en',
-      'en_UK': 'en',
-      'en-US': 'en',
-      'en-UK': 'en',
-      'fr_FR': 'fr',
-      'fr_BE': 'fr',
-      'de_DE': 'de',
+    .registerAvailableLanguageKeys(['es'], {
       'es_ES': 'es',
-      'sk_SK': 'sk'
+      'en_US': 'es',
+      'en_UK': 'es',
+      'en-US': 'es',
+      'en-UK': 'es',
+      'fr_FR': 'es',
+      'fr_BE': 'es',
+      'de_DE': 'es',
+      'sk_SK': 'es'
     })
     .determinePreferredLanguage()
-    .fallbackLanguage('en')
+    .fallbackLanguage('es')
     .useLocalStorage()
     .useSanitizeValueStrategy(null);
 };
