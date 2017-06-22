@@ -400,7 +400,7 @@
               "text@en": "Lia is your assistant.",
               "text@de": "Frau Salzwedel ist Ihre Assistentin.",
               "text@fr": "Madame Lambert est votre assistante.",
-              "text@sl": "Gospa Lia Lambert je vaša asistentka."
+              "text@sl": "Gospa Mateja Skovir je vaša asistentka."
             },
             {
               "character": "mayor",
@@ -421,7 +421,7 @@
               "text@en": "I'll help you get up to speed.",
               "text@de": "Ich werde Ihnen helfen sich zurecht zu finden.",
               "text@fr": "Je suis là pour vous aider.",
-              "text@sl": "Pomagala vam bo spoznati položaj pri nas."
+              "text@sl": "Pomagala vam bo spoznati razmere pri nas."
             },
             {
               "character": "helper",
@@ -631,7 +631,7 @@
           "text@en": "By the way, do you want this new BMW? I bought it last month but don't really need it.",
           "text@de": "Ach ja: hast du Interesse an einem nagelneuen BMW? Ich habe ihn mir erst vergangenen Monat gekauft, brauche ihn aber eigentlich nicht.",
           "text@fr": "D'ailleurs, tu veux cette BMW ? Je l'ai acheté le mois passé mais je ne m'en sers pas.",
-          "text@sl": "Mimogrede, bi si želeli nov BMW. Prejšnji mesec sem kupil enega, a ga v resnici ne potrebujem."
+          "text@sl": "Mimogrede, bi si želeli nov BMW? Prejšnji mesec sem kupil enega, a ga v resnici ne potrebujem."
         }
       ],
       "helper": [
@@ -888,7 +888,7 @@
           "text@en": "I need to expand the training facilities of my... I mean our, the city's football team.",
           "text@de": "Ich muss das Trainingscenter meines... ich meine: des städtischen Fußballclubs vergrößern.",
           "text@fr": "J'ai besoin d'agrandir le centre d'entraînement de mon... je veux dire, de notre club.",
-          "text@sl": "Razširiti bi bilo treba površine za trening mojega... hočem reči našega, mestnega nogometnega kluba."
+          "text@sl": "Razširiti bi bilo treba površine za trening mojega ... hočem reči našega, mestnega nogometnega kluba."
         },
         {
           "character": "football-boss",
@@ -1086,21 +1086,21 @@
               "text@en": "Cartels rotate the company that wins the tender.",
               "text@de": "In einem Kartell wird vorher bestimmt, welche Firma die Ausschreibung gewinnt. Dabei wechseln sich die Firmen ab.",
               "text@fr": "Dans un cartel, la société qui remporte l'appel d'offre change régulièrement.",
-              "text@sl": "Cartels rotate the company that wins the tender."
+              "text@sl": "Člani kartela, ki so uspešni pri oddaji ponudbe, se menjajo od poziva do poziva."
             },
             {
               "character": "helper",
               "text@en": "The winner then pays off other members of the cartel.",
               "text@de": "Diejenige Firma, welche gewonnen hat, bezahlt daraufhin anteilig die anderen Mitglieder des Kartells.",
               "text@fr": "Elle paye ensuite les autres membres du cartel.",
-              "text@sl": "The winner then pays off other members of the cartel."
+              "text@sl": "Zmagovalec nato izplača deleže še ostalim članom kartela."
             },
             {
               "character": "helper",
               "text@en": "By not choosing the company that should have won, you're embarassing Gerber.",
               "text@de": "Sie haben sich nicht für die Firma entschieden, die hätte gewinnen sollen. Damit haben Sie die Meinhardt GmbH in Schwierigkeiten gebracht.",
               "text@fr": "En ne choisissant pas la société qui aurait dû gagner, vous embarrassez Guillory.",
-              "text@sl": "By not choosing the company that should have won, you're embarassing Gerber."
+              "text@sl": "Gospoda Mavčarja ste spravili v zadrego, saj niste izbrali podjetja, ki bi moralo zmagati."
             }
           ]
         },
@@ -1846,7 +1846,7 @@
           "text@en": "I was thinking... The city could buy me back the plot of land you sold me, back in 1996.",
           "text@de": "Ich habe mir gedacht ... Die Stadt könnte das Grundstück zurückkaufen, welches sie mir 1996 verkauft hat.",
           "text@fr": "Je me disais... La ville pourrait me racheter le terrain que vous m'avez vendu en 1996.",
-          "text@sl": "Razmišljal sem... Mesto bi lahko od kluba odkupilo zemljišče, ki nam ga je prodalo leta 1996."
+          "text@sl": "Razmišljal sem ... Mesto bi lahko od kluba odkupilo zemljišče, ki nam ga je prodalo leta 1996."
         },
         {
           "character": "football-boss",
@@ -1860,7 +1860,7 @@
           "text@en": "That'd make everybody happy, wouldn't it? Voters would hate it if their team had to leave.",
           "text@de": "Damit wären alle zufriedengestellt. Und die Wähler wären doch sicher sehr enttäuscht, wenn Ihr Verein Konkurs anmelden müsste.",
           "text@fr": "Tout le monde serait content. Les électeurs seraient très déçus si leur club faisait faillite.",
-          "text@sl": "s tem bi bili vsi zadovoljni, kajne. Volilci imajo radi svoj nogometni klub in ne bi želeli, da propade."
+          "text@sl": "S tem bi bili vsi zadovoljni, kajne. Volivci imajo radi svoj nogometni klub in ne bi želeli, da propade."
         }
       ],
       "helper": [
@@ -1884,7 +1884,7 @@
           "text@en": "Buy back the plot of land.",
           "text@de": "Das Grundstück zurückkaufen.",
           "text@fr": "Racheter le terrain.",
-          "text@sl": "Odkupite zemljo od kluba",
+          "text@sl": "Odkupite zemljo od kluba.",
           "var_changes": {
             "reserves": -12,
             "resources": 0.2
@@ -1990,7 +1990,7 @@
           "text@en": "Give me the contract...",
           "text@de": "Du erteilst mir den Zuschlag ...",
           "text@fr": "Tu me passes le contrat...",
-          "text@sl": "Če naše podjetje dobi pogodbo..."
+          "text@sl": "Če naše podjetje dobi pogodbo ..."
         },
         {
           "character": "construction-boss",
@@ -2071,7 +2071,7 @@
               "text@en": "Careful, buddy...",
               "text@de": "Pass auf, meine Liebe!",
               "text@fr": "Fais gaffe à toi...",
-              "text@sl": "Le počasi..."
+              "text@sl": "Le počasi ..."
             },
             {
               "character": "construction-boss",
@@ -2160,6 +2160,7 @@
           "text@en": "No, we can't afford this.",
           "text@de": "Nein, das kann ich mir nicht leisten.",
           "text@fr": "Non, on ne peut pas se le permettre.",
+          "text@sl": "Žal, tega si ne morem dovoliti.",
           "var_changes": {
             "risk_contractors": 1
           },
@@ -3570,7 +3571,7 @@
       "body@en": "Bribery is not as common in Europe as in other parts of the world, but it is rampant is some sectors. In public housing, some officials ask for enveloppes of money to be given directly. For car inspection, some service centers will be pleased if you leave a gift or bills of cash on the passenger seat.<br><br>Read more under <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> at Cooking Budgets.",
       "body@de": "In Europa ist Bestechung nicht so weit verbreitet wie in anderen Regionen der Welt, mit Ausnahme bestimmter Bereiche. Im sozialen Wohungsbau oder bei Fahrzeuguntersuchungen sind Bestechungen durchaus üblich.<br><br>Mehr zum Thema erfahren Sie unter <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> von Cooking Budgets.",
       "body@fr": "Les bakchichs ne sont pas aussi fréquents en Europe que dans d'autres régions du monde, à l'exception de certains secteurs. Pour déterminer qui obtient un logement social, certains fonctionnaires n'hésitent pas à demander des enveloppes d'argent de la main à la main. Pour passer le contrôle technique automobile, certains centres de contrôle ferment les yeux en échange d'un cadeau sur le siège passager.<br><br>Lisez <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> [en anglais] sur Cooking Budgets pour en savoir plus.",
-      "body@sl": "Podkupnine v EU niso tako pogoste kot v drugih delih sveta, a so vseeno precej razbohotene v določenih sektorjih. Na področju neprofitnih stanovanj nekateri uradniki želijo neposredno gotovino v kuverti. Pri tehničnih pregledih avtomobilov se bankovce pogosto pusti na zadnjem sedežu pred pregledom.<br><br>Več o tem si preberite na <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> pri Cooking Budgets."
+      "body@sl": "Podkupnine v EU niso tako pogoste kot v drugih delih sveta, a so vseeno precej razbohotene v določenih sektorjih. Na področju neprofitnih stanovanj želijo nekateri uradniki gotovino neposredno v kuverti. Pri tehničnih pregledih avtomobilov se pred pregledom bankovce pogosto pusti na zadnjem sedežu.<br><br>Več o tem si preberite na <a href='http://www.cookingbudgets.com/good-ol-bribe/' target='_blank'>A Good Ol' Bribe</a> pri Cooking Budgets."
     },
     "land_sales": {
       "title@en": "Spotting corruption in land sales",
@@ -3610,7 +3611,7 @@
       "body@en": "Politicians can control public companies, either directly or through patronage networks. They might require them to buy advertising in newspapers that advertise their performance as a politician and not the company itself. It's very hard for prosecutors to prove that the advertising was not done in the interest of the company.<br><br>Read more under <a href='http://www.cookingbudgets.com/ads/' target='_blank'>Ads, ads, ads</a> at Cooking Budgets.",
       "body@de": "Politiker können ihren Einfluß auf öffentliche Organisationen und Firmen und Firmen sowohl direkt als auch durch sogenannten Klientelismus ausüben. So können Sie etwa von Firmen verlangen Werbung für Sie zu machen. Für den Staatsanwalt ist es dabei äußerst schwierig nachzuweisen, dass die Firma nicht aus Eigeninteresse handelt.<br><br>Mehr zum Thema finden Sie unter <a href='http://www.cookingbudgets.com/ads/' target='_blank'>Ads, ads, ads</a> von Cooking Budgets.",
       "body@fr": "Les élus peuvent contrôler des sociétés publiques, soit directement, soit via des liens de clientélisme. Ils peuvent demander à ces sociétés d'acheter des espaces publicitaires dans des journaux pour faire faire leur propre promotion. C'est très difficile pour un procureur de prouver que la publicité était faite dans l'intérêt de l'élu et non pas dans l'intérêt de la société elle-même.<br><br>Lisez <a href='http://www.cookingbudgets.com/ads/' target='_blank'>Ads, ads, ads</a> [en anglais] sur Cooking Budgets pour en savoir plus.",
-      "body@sl": "Politiki lahko nadzorujejo javna podjetja neposredno ali preko mreže zaupnikov. Od njih lahko zahtevajo zakup oglasnega prostora, s katerim se nato oglašuje njihovo politično delovanje in ne delovanja podjetja. Tožilcem je izjemno težko dokazati, da oglaševanje ni bilo v skladu z interesi podjetja.<br><br>Več na <a href='http://www.cookingbudgets.com/ads/' target='_blank'>Ads, ads, ads</a> pri Cooking Budgets."
+      "body@sl": "Politiki lahko nadzorujejo javna podjetja neposredno ali prek mreže zaupnikov. Od njih lahko zahtevajo zakup oglasnega prostora, s katerim se nato oglašuje njihovo politično delovanje in ne delovanja podjetja. Tožilcem je izjemno težko dokazati, da oglaševanje ni bilo v skladu z interesi podjetja.<br><br>Več na <a href='http://www.cookingbudgets.com/ads/' target='_blank'>Ads, ads, ads</a> pri Cooking Budgets."
     },
     "emphyteutic": {
       "title@en": "Leasing public space to private companies",
