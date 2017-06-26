@@ -12,10 +12,10 @@
     }
   },
   "main": {
-    "back": "Back to the game",
+    "back": "Nazaj",
     "intro": {
       "heading": "Dobri, umazani<br /> in računovodja",
-      "meta": "— by <a href='http://jplusplus.org' target='_blank'>Journalism++</a>",
+      "meta": "— <a href='http://jplusplus.org' target='_blank'>Journalism++</a>",
       "description": "<p>Znašli ste se v vlogi vodje občinske uprave v večjem mestu. Želite si ohraniti svojo službo in hkrati za mesto narediti kar največ. Pri svojem delu pa morate spretno krmariti med etičnim delovanjem in korupcijskimi pritiski. Naj se zgodi karkoli, ne smete dovoliti, da vas ujamejo. </p><p>Vsi primeri v tej igri temeljijo na resničnih zgodbah.</p>",
       "new-game": "Pričnite novo igro",
       "continue": "Nadaljuj"
@@ -34,7 +34,7 @@
         "chats": "Pogovori",
         "hints": "Namigi",
         "indicators": "Indikatorji",
-        "about": "O"
+        "about": "O igri"
       },
       "share": {
         "label": "Deli",
