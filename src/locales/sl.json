@@ -21,7 +21,7 @@
       "continue": "Nadaljuj"
     },
     "steps": {
-      "undo": "Razveljavi <span class='hidden-xs-down'>last action</span>",
+      "undo": "Razveljavi <span class='hidden-xs-down'>zadnje dejanje</span>",
       "over": {
         "undo": "Razveljavi zadnje dejanje",
         "again": "Ponovno igraj",
