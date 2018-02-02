@@ -83,7 +83,7 @@
     "test:auto": "./node_modules/.bin/gulp test:auto"
   },
   "engines": {
-    "node": "6.9.4"
+    "node": ">=6.9.4"
   },
   "eslintConfig": {
     "globals": {
